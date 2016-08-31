@@ -23,6 +23,7 @@
     position: absolute;
 	-webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
     font-family: 'Fira Sans';
     
@@ -92,13 +93,17 @@
     width: 100%;
     height:100%;
     overflow:auto;
+    background-color: #00aaff;
+    /* margin: 0 auto; */
+    /* position: relative; */
 }
 .lightbox-defaultTab{
     width: 100%;
-    height:100%;
+    height: 100%;
     min-height: 250px;
     min-width: 500px;
-    position: relative;
+    /* position: relative; */
+    /* margin: 0px; */
     background-image:url(../images/banner1.jpg);
 }
 .lightbox-defaultTab.box1BG{
@@ -128,32 +133,17 @@
 
 .lightbox-title{
     width: 93%;
-    height: 50px;
-    border: 1px solid #ccc;
-    border-top:0px;
     position:absolute;
     top:0px;
     left: 50%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
     transform: translateX(-50%);
 }
-
-.lightbox-footer{
-    width: 93%;
-    height: 50px;
-    border: 1px solid #ccc;
-    border-bottom:0px;
-    position:absolute;
-    bottom:0px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-    background-color: #fff;
-    opacity:0.15;
+.lightbox-defaultTab .lightbox-title .titleImg{
+    width:100%;
 }
-
 .lighbox-boxedMenu{
     width: 93%;
     height: calc(100% - 120px);
@@ -162,6 +152,7 @@
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     background-color: rgba(255,255,255,0.15);
 }
@@ -210,14 +201,47 @@
     position:relative;
     color: #fff;
     font-family: 'Conv_JADIWA';
-
+    overflow: hidden;
 }
 .lightbox-menuItem-boxed .lighbox-menuContent .defaultContent{
     position: absolute;
     bottom: 14px;
     right:15px;
     text-align: right;
-    /* font-size: 20px; */
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out; 
+    -o-transition: all 0.5s ease-in-out; 
+}
+.lightbox-menuItem-boxed.hover .lighbox-menuContent .defaultContent{
+    transform: translate(0,-35%);
+    -webkit-transform: translate(0,-35%);
+    -o-transform: translate(0,-35%);
+    -moz-transform: translate(0,-35%);
+}
+
+.lightbox-menuItem-boxed .lighbox-menuContent .downArrow{
+    visibility: hidden;
+  opacity: 0;
+    position:absolute;
+    bottom:0px;
+    left: 50%;
+    margin-left:-12px;
+
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out; 
+    -o-transition: all 0.5s ease-in-out; 
+}
+.lightbox-menuItem-boxed.hover .lighbox-menuContent .downArrow{
+    transform: translate(0,-50%);
+    -webkit-transform: translate(0,-50%);
+    -o-transform: translate(0,-50%);
+    -moz-transform: translate(0,-50%);
+    visibility: visible;
+    opacity: 1;
 }
 .lightbox-menuItem-boxed .lighbox-menuContent .defaultContent .smallCaseTitle{
     font-size: 44px;
@@ -228,25 +252,63 @@
 }
 .lightbox-menuItem-boxed .lighbox-menuContent .defaultContent .capitalCaseTitle{
     font-size: 22px;
-    font-size: 1.5em;
+    font-size: 1.3em;
+    font-weight: 500;
+    letter-spacing: 3px;
 }
 
-.lightbox-menuItem-boxed.hover .lighbox-menuContent .defaultContent{
-    display:none;
-}
+
 
 .lightbox-menuItem-boxed .lighbox-menuContent .hoverContent{
+    visibility: hidden;
+    opacity: 0;
     position: absolute;
-    bottom: 0px;
-    right:15px;
+    top: 50%;
     text-align: right;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.lightbox-menuItem-boxed.hover .lighbox-menuContent .hoverContent{
+    visibility: visible;
+    opacity: 1;
+    /* margin-bottom:1px; */
+}
+.lightbox-menuItem-boxed .lighbox-menuContent .hoverContent .menubox-description{
+    font-family: 'Fira Sans';
+    text-align: right;
+    vertical-align: bottom;
+    /* margin-bottom: 4px; */
+    width: 50%;
+    margin-right: 15px;
+    font-size: 0.9em;
+    margin-top: 10px;
+    float: right;
+}
+.lightbox-menuItem-boxed .lighbox-menuContent .hoverContent .menubox-logo{
+    float: left;
+    margin-left: -75px;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+.lightbox-menuItem-boxed.hover .lighbox-menuContent .hoverContent .menubox-logo{
+   transform: translate(110px,0);
+    -webkit-transform: translate(110px,0);
+    -o-transform: translate(110px,0); 
+    -moz-transform: translate(110px,0);
     
 }
-
 .lightbox-vertical-gridLine{
     height:1px;
     width:100%;
-    
 }
 
 .lightbox-horizontal-gridLine{
@@ -254,3 +316,62 @@
     height:100%;
 }
 
+
+.lighbox-container .lightbox-footer{
+    width: 93%;
+    height: 50px;
+    /* border: 1px solid #ccc; */
+    border-bottom:0px;
+    position:absolute;
+    bottom:0px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: rgba(255,255,255,0.15);
+}
+
+
+.lighbox-container .lightbox-footer .lightbox-footer-container{
+    width:100%;
+    height:100%;
+    position:relative;
+}
+.lighbox-container .lightbox-footer .lightbox-footer-container .right-footer{
+    float: right;
+    margin-right: 2.151%;
+    width:29.677%;
+    height:100%;
+    position: relative;
+}
+.lighbox-container .lightbox-footer .lightbox-footer-container .right-footer .footer-logo{
+    width:100%;
+    vertical-align:middle;
+}
+    .lighbox-container .lightbox-footer .lightbox-footer-container .right-footer .footer-discover-logo{
+        /* float:left; */
+        width: 48.188%;
+        position: absolute;
+        top: 52%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        transform: translateY(-50%);
+        /* height: 100%; */
+    }
+    .lighbox-container .lightbox-footer .lightbox-footer-container .right-footer .footer-wa-logo{
+        /* float:right; */
+        width:37.319%;
+        position: absolute;
+        right: 0px;
+        top: 52%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
+.lighbox-container .lightbox-detailsPage{
+    display:none;
+}

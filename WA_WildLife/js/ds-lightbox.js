@@ -28,6 +28,28 @@
         $(".lightbox-defaultTab").removeClass($(this).attr("data-tab") + "BG");
         $(this).removeClass($(this).attr("data-tab") + "Hover");
         $(this).removeClass("hover");
+    });
+
+    $(".lighbox-container .lightbox-defaultTab .lightbox-menuItem-boxed").click(function (e) {
+        e.stopPropagation();
+        showTab($(this).attr("data-tab").replace("box", ''));
     })
+
+    function showTab(tabId)
+    {
+        if ($(".lighbox-container .lightbox-detailsPage .lightbox-tab" + tabId).is(":visible"))
+        {
+            return;
+        }
+        var defaultVisible = $(".lighbox-container .lightbox-defaultTab").is(":visible");
+        var detailsVisible = $(".lighbox-container .lightbox-detailsPage").is(":visible");
+        if(defaultVisible)
+        {
+            $(".lighbox-container .lightbox-defaultTab").fadeOut();
+            $(".lighbox-container .lightbox-detailsPage").fadeIn();
+        }
+        $(".lighbox-container .lightbox-detailsPage .tab.active").fadeOut();
+        $(".lighbox-container .lightbox-detailsPage .lightbox-tab" + tabId).fadeIn();
+    }
 
 });
