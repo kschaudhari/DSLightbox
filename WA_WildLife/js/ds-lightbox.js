@@ -33,6 +33,11 @@
     $(".lighbox-container .lightbox-defaultTab .lightbox-menuItem-boxed").click(function (e) {
         e.stopPropagation();
         showTab($(this).attr("data-tab").replace("box", ''));
+    });
+
+    $(".lighbox-container .lightbox-detailsPage .lightbox-top-menu-item").click(function (e) {
+        e.stopPropagation();
+        showTab($(this).attr("data-tab").replace("tab", ''));
     })
 
     function showTab(tabId)
@@ -50,6 +55,10 @@
         }
         $(".lighbox-container .lightbox-detailsPage .tab.active").fadeOut();
         $(".lighbox-container .lightbox-detailsPage .lightbox-tab" + tabId).fadeIn();
+        
+        $(".lighbox-container .lightbox-detailsPage .lightbox-tab" + tabId).addClass("active");
+        $(".lighbox-container .lightbox-detailsPage .lightbox-top-menu-item").removeClass("active");
+        $(".lighbox-container .lightbox-detailsPage .lightbox-top-menu-item[data-tab='tab" + tabId + "'").addClass("active");
     }
 
     function showDefaultView()

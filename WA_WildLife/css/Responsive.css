@@ -34,7 +34,7 @@
     }
     .lightbox-defaultTab{
         display:none;
-    }
+}
     .lightbox-defaultTab{
         display:none;
     }
@@ -53,7 +53,8 @@
 }
 @media screen and (min-width: 768px) and (max-width: 870px) {
     #mydiv-content{
-        width:90%;
+        max-height: 440px;
+        width: 86%;
     }
 }
 /* Safari CSS */
