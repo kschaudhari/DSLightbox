@@ -1,20 +1,3 @@
-/*  Debug edit back up  */
-body {
-    height: 100%;
-    background-color: #F0F0F0;
-    font-family: Arial, sans-serif;
-	position:relative;
-	height:1000px;
-	margin:0;
-	padding:0;
-}
-a {
-    color: #5874BF;
-    text-decoration: none;
-}
-a:hover {
-    color: #112763;
-}
 .clear{ clear:both;}
 #mydiv {
     width: 100%;
@@ -25,6 +8,7 @@ a:hover {
     position:fixed;
     z-index: 200;
 	background:rgba(0,0,0,0.7);
+
 }
 #mydiv-content {
     width: 100%;
@@ -40,6 +24,8 @@ a:hover {
 	-webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
+    font-family: 'Fira Sans';
+    
 }
 .CloseBtn{
 	position:absolute;
@@ -223,12 +209,26 @@ a:hover {
     height:100%;
     position:relative;
     color: #fff;
+    font-family: 'Conv_JADIWA';
+
 }
 .lightbox-menuItem-boxed .lighbox-menuContent .defaultContent{
     position: absolute;
     bottom: 14px;
     right:15px;
     text-align: right;
+    /* font-size: 20px; */
+}
+.lightbox-menuItem-boxed .lighbox-menuContent .defaultContent .smallCaseTitle{
+    font-size: 44px;
+    margin-right: 10px;
+    top: 6px;
+    position: relative;
+    font-size: 2.5em;
+}
+.lightbox-menuItem-boxed .lighbox-menuContent .defaultContent .capitalCaseTitle{
+    font-size: 22px;
+    font-size: 1.5em;
 }
 
 .lightbox-menuItem-boxed.hover .lighbox-menuContent .defaultContent{
@@ -240,6 +240,7 @@ a:hover {
     bottom: 0px;
     right:15px;
     text-align: right;
+    
 }
 
 .lightbox-vertical-gridLine{
