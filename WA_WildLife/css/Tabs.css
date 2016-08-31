@@ -135,13 +135,18 @@ nav ul li a .Menu {
     font-size:73px;
     width: 36%;
     margin: 0 auto;
+    line-height: 71px;
+    padding-top: 4%;
+    padding-bottom: 3.7%;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
 }
 .TextBanner .SmallBnnerText {
     display:block;
     padding-left:10%;
+    line-height: 45px;
 }
 .TextBanner .BigBnnerText {
-
+    font-size: 73px;
 }
 .TextContainer {
     width:100%;
