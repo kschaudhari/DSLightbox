@@ -39,7 +39,9 @@
         display:none;
     }
     .lightbox-detailsPage{
-        display:block;
+        display:block !important;
+        opacity: 1;
+        visibility:visible;
     }	
 }
 

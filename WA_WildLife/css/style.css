@@ -30,12 +30,12 @@
 }
 .CloseBtn{
 	position:absolute;
-	right:-35px;
-	top:-35px;
+	top: -8px;
+	right: -41px;
 	z-index:12;
-	width:70px;
-	height:70px;
-	background-image:url(../images/closeBtn.png);
+	width: 60px;
+	height: 60px;
+	background-image:url(../images/close.png);
 	display:block;
 }
 .MobMenuBtn{

@@ -1,5 +1,5 @@
 ﻿$(document).ready(function () {
-
+    
     // popup show Hide
     $("#ShwoPopUp").click(function () {
         var vid = $("#myVideo");
@@ -50,6 +50,12 @@
         }
         $(".lighbox-container .lightbox-detailsPage .tab.active").fadeOut();
         $(".lighbox-container .lightbox-detailsPage .lightbox-tab" + tabId).fadeIn();
+    }
+
+    function showDefaultView()
+    {
+        $(".lighbox-container .lightbox-defaultTab").fadeIn();
+        $(".lighbox-container .lightbox-detailsPage").fadeOut();
     }
 
 });
