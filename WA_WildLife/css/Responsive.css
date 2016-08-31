@@ -43,11 +43,7 @@
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     #mydiv-content{
         max-height: 440px;
-    }
-}
-@media screen and (min-width: 768px) and (max-width: 1290px) {
-	#mydiv-content {
-       width: 92%;
+        width: 86%;
     }
 }
 /* Safari CSS */
