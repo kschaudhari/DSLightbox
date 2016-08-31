@@ -1,0 +1,16 @@
+﻿
+@font-face {
+	font-family: 'Conv_JADIWA';
+	src: url('fonts/JADIWA.eot');
+	src: local('☺'), url('fonts/JADIWA.woff') format('woff'), url('fonts/JADIWA.ttf') format('truetype'), url('fonts/JADIWA.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_JADIWA-Webfont-Large';
+	src: url('fonts/JADIWA-Webfont-Large.eot');
+	src: local('☺'), url('fonts/JADIWA-Webfont-Large.woff') format('woff'), url('fonts/JADIWA-Webfont-Large.ttf') format('truetype'), url('fonts/JADIWA-Webfont-Large.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
