@@ -1,0 +1,61 @@
+@media screen and (max-width: 767px) {
+	#mydiv-content {
+       top: 0;
+       -webkit-transform: translate(-50%, 0%);
+       -ms-transform: translate(-50%, 0%);
+	    transform: translate(-50%, 0%);
+		height:100vh;
+    }
+	.MobMenuBtn{
+		z-index:10;
+		display:block;
+	}
+	.topMobMenuBar{
+		background-color:#000;
+		background-repeat:repeat;
+		background-size: contain;
+		position:fixed;
+		height:40px;
+        width: 100%;
+        z-index: 10;
+		top:0px;
+	}
+	
+	.CloseBtn{
+		background-size: 100% auto;
+        height: 31px;
+        right: 11px;
+        top: 5px;
+        width: 31px;
+	}
+	.MenuMob {
+         display: table;
+         width: 100%;
+    }
+	
+}
+
+@media screen and (min-width: 768px) {
+	.mobMenuContainer{
+		display:none !important;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    #mydiv-content{
+        max-height: 440px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1290px) {
+	#mydiv-content {
+       width: 92%;
+    }
+}
+/* Safari CSS */
+@media screen and (min-color-index:0) 
+and(-webkit-min-device-pixel-ratio:0) { @media
+{
+	@media screen and (max-width: 767px) {
+    
+	}
+}}
+/* Safari CSS end */	

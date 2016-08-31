@@ -1,0 +1,81 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lightbox</title>
+<link rel="stylesheet" type="text/css" href="css/font.css" />
+<link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/Responsive.css" />
+<script src="js/jquery-1.12.1.min.js" ></script>
+</head>
+<body>
+   
+<a href="#" id="ShwoPopUp"  >Open Box</a>
+<div id="mydiv" style="display:none;">
+   <div id="mydiv-content">
+     <a href="#" class="CloseBtn" ></a>    
+       <div class="topMobMenuBar">
+           <div id="mobMenu" class="MobMenuBtn"> </div>
+           <div class="mobMenuContainer">
+               <div class="MenuMob">
+                   <ul>
+                       <li class="HideCurruntMenu"><a href="#" class="h1">Lorem Ipsum 1</a></li>
+                       <li><a href="#" class="h2">Lorem Ipsum 2</a></li>
+                       <li><a href="#" class="h3">Lorem Ipsum 3</a></li>
+                       <li><a href="#" class="h4">Lorem Ipsum 4</a></li>
+                       <li><a href="#" class="h4">Lorem Ipsum 5</a></li>
+                       <li><a href="#" class="h4">Lorem Ipsum 6</a></li>
+                   </ul>
+               </div>
+           </div>
+       </div>
+       
+       
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+   
+// popup show Hide
+	$("#ShwoPopUp").click(function () {
+	    var vid = $("#myVideo");
+        $("#mydiv").fadeIn("slow");    
+    });
+	$(".CloseBtn").click(function () {
+        $("#mydiv").fadeOut("slow");
+    });
+// popup show Hide end 
+	$('.MobMenuBtn').off("click");
+	$('.MobMenuBtn').click(function (e) {
+	    e.stopPropagation();
+	    var content = $(".mobMenuContainer");
+	    if ($(content).is(":visible")) {
+	        $(content).slideUp("slow");
+	    } else {
+	        $(content).slideDown("slow");
+	    }
+	});
+
+});
+    
+// scrollbar  start
+(function ($) {
+    $(window).on("load", function () {
+        //var windowWidth = $(window).width();
+        //if (windowWidth > 767){
+        $.mCustomScrollbar.defaults.theme = "light-2";
+
+        $(".demo-y").mCustomScrollbar();
+        //}
+
+    });
+})(jQuery);
+// scrollbar  end
+
+</script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+</body>
+</html>
