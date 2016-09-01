@@ -59,6 +59,12 @@
         $(".lighbox-container .lightbox-detailsPage .lightbox-tab" + tabId).addClass("active");
         $(".lighbox-container .lightbox-detailsPage .lightbox-top-menu-item").removeClass("active");
         $(".lighbox-container .lightbox-detailsPage .lightbox-top-menu-item[data-tab='tab" + tabId + "'").addClass("active");
+
+        $(".lighbox-container .lightbox-detailsPage .lightbox-tab" + tabId).find(".MainContaintArea").scrollbar({
+            "autoScrollSize": false,
+            "scrollx": $('.external-scroll_x'),
+            "scrolly": $('.external-scroll_y')
+        });
     }
 
     function showDefaultView()
