@@ -1,4 +1,4 @@
-.lightbox-tab1{
+.tab{
  width: 93%;
     height: calc(100% - 120px);
     position: absolute;
@@ -9,6 +9,30 @@
     transform: translate(-50%, -50%);
     background-color: rgba(255,255,255,0.15);
         overflow: hidden;
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+}
+.lightbox-tab1 {
+     background-image: url('../images/tab1ContentBg.jpg');
+}
+.lightbox-tab2 {
+     background-image: url('../images/tab2ContentBg.jpg');
+}
+.lightbox-tab2 {
+     background-image: url('../images/tab2ContentBg.jpg');
+}
+.lightbox-tab3 {
+     background-image: url('../images/tab3ContentBg.jpg');
+}
+.lightbox-tab4 {
+     background-image: url('../images/tab4ContentBg.jpg');
+}
+.lightbox-tab5 {
+     background-image: url('../images/tab5ContentBg.jpg');
+}
+.lightbox-tab6 {
+     background-image: url('../images/tab6ContentBg.jpg');
 }
 .MainTabs {
     height: 50px;
@@ -119,13 +143,8 @@ nav ul li a .Menu {
 }
 .MainContaintArea {
      display: block;
-}
-.BigbagImg {
-     width:100%;
-     height:100%;
-     position:relative;
-     background-image:url('../images/tab1ContentBg.jpg');
-     background-repeat:no-repeat;
+     height: 100%;
+     overflow:hidden;
 }
 .BigbagImg img {
     width:100%;
@@ -134,10 +153,10 @@ nav ul li a .Menu {
 .TextBanner {
     font-family: 'Conv_JADIWA';
     color:#fff;
-    font-size:73px;
+    font-size:4.56em;
     width: 36%;
     margin: 0 auto;
-    line-height: 71px;
+    line-height: 81px;
     padding-top: 4%;
     padding-bottom: 3.7%;
     text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
@@ -148,7 +167,7 @@ nav ul li a .Menu {
     line-height: 45px;
 }
 .TextBanner .BigBnnerText {
-    font-size: 73px;
+    /*font-size: 1em;*/
 }
 .TextContainer {
     width:100%;
@@ -161,52 +180,192 @@ nav ul li a .Menu {
     padding:0px 14px;
     position:relative;
 }
-.ContentTextBox p{
+.ContentTextBox .DetailDescription p.DescriptionTextTab1 {
     color:#00324f;
     line-height: 23px;
-    font-size:15px;
+    font-size:0.95em;
+    letter-spacing: 0.01px;
     font-family: 'Fira Sans', sans-serif;
-    margin:0px;
+    margin:15px 0 22px;
     padding:0px;
+}
+.ContentTextBox .DetailDescription p.DescriptionTextTab2{
+    color:#00324f;
+    line-height: 25px;
+    font-size:0.95em;
+    letter-spacing: 0.01px;
+    font-family: 'Fira Sans', sans-serif;
+    margin:15px 0 22px;
+    padding:0px;
+}
+.ContentTextBox .DetailDescription h3.DescriptionTextHeading {
+    color: #288dc8;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.3em;
+    font-weight:500;
+    display: inline-block;
+    width: 100%;
+    margin: 9px 0px 5px 0px;
+}
+.NeedToKnowBox {
+   text-align:center;
+   position:relative;
+   background-image:url('../images/pattern.jpg');
+   background-repeat:repeat;
+   margin-bottom:34px;
+}
+
+.NeedToKnowBox .NeedtoHeading {
+    color:#fff;
+    font-family: 'Conv_JADIWA-Webfont-Large';
+    font-size: 1.7em;
+    font-weight: 500;
+    margin:0px;
+    display: inline-block;
+    margin-top: 15px;
+}
+.NeedToKnowBox .NeedDesc {
+    color:#fff;
+    line-height: 25px;
+    font-size:0.95em;
+    letter-spacing: 0.01px;
+    padding: 0px 19px;
+}
+.NeedToKnowBox a {
+    color:#f4c32d;
+    font-size:0.95em;
+    text-decoration:none;
+    letter-spacing: 0.01px;
+}
+.NeedToKnowBox a:hover, .NeedToKnowBox a:active {
+    color:#f4c32d;
 }
 .OtherBox {
     width:100%;
     display:block;
     float:left;
+    border-bottom: 1px solid #288dc8;
 }
 .OtherBox .LeftImgBox {
-    position:absolute;
-    max-width:140px;
-    width:140px;
-    height:138px;
-    /*top: 50%;*/
-    -webkit-transform: translateY(-53%);
-    -ms-transform: translateY(-53%);
-    transform: translateY(-53%);
-      /* background-image:url('../images/lyn.jpg');*/
-          border:5px solid #fff;
-          -webkit-box-shadow: 0px 2px 2px 0px rgba(12,67,99,1);
--moz-box-shadow: 0px 2px 2px 0px rgba(12,67,99,1);
-box-shadow: 0px 2px 2px 0px rgba(12,67,99,1);
+    width:23.3%;
+    float:left;
+    position:relative;
+
 }
 .OtherBox .LeftImgBox img {
 
 }
+.OtherBox .LeftImgBox .OtherImg {
+    position:absolute;
+    max-width:140px;
+    top: 50%;
+    -webkit-transform: translateY(-53%);
+    -ms-transform: translateY(-53%);
+    transform: translateY(-53%);
+          border:5px solid #fff;
+          -webkit-box-shadow: 0px 2px 2px 0px rgba(12,67,99,1);
+-moz-box-shadow: 0px 2px 2px 0px rgba(12,67,99,1);
+box-shadow: 0px 2px 2px 0px rgba(12,67,99,1);
+border-bottom: 0;
+}
 
 .OtherBox .OtherDetailBox {
-    width:73%;
-    float:left;
-    padding-left: 27%;
+    width: 74.7%;
+    float:right;
+    padding-left: 0%;
     color:#288dc8;
-     font-size:20px;
-     border-bottom:1px solid #288dc8;
+     font-size: 1.3em;
      margin-top:27px;
-     padding-bottom:19px;
-     margin-bottom:14px;
+     margin-bottom:17px;
 }
 .OtherBox .OtherName {
     font-weight:500;
+    margin-bottom: 2px;
 }
 .OtherBox .OtherDesignation {
     font-weight:400;
 }
+.ContentTextBox .WhaleText {
+    color: #288dc8;
+    font-size: 1.3em;
+    border-bottom: 1px solid #288dc8;
+    padding-top: 27px;
+    padding-bottom: 19px;
+}
+.TextBanner .tab2SmalltextAlignmnt {
+    padding-left:33%;
+}
+/*  scrol bar */
+.scrollbar-external_wrapper {
+   /* position:absolute;*/
+}
+.scrollbar-external {
+   /* height: 590px; !important;*/
+    overflow: auto;
+    overflow: hidden;
+}
+ 
+/******************* EXTERNAL SCROLLBAR *******************/
+ 
+.external-scroll_x,
+.external-scroll_y {
+    cursor: pointer;
+    display: none;
+    position: absolute;
+	border-radius: 0px;
+	background-color: #fff;
+	width:6px !important;
+}
+ 
+.external-scroll_x.scroll-scrollx_visible {
+    display: block;
+    height: 10px;
+    left: 0;
+    top: 410px;
+    width: 200px;
+}
+ 
+.external-scroll_y.scroll-scrolly_visible {
+    display: block;
+    height: 150px;
+    right: -31px;
+    width: 10px;
+    position: fixed;
+        top: 71%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+ 
+.external-scroll_x div,
+.external-scroll_y div
+{
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+}
+ 
+.external-scroll_x .scroll-bar,
+.external-scroll_y .scroll-bar {
+    z-index: 12;
+	width: 6px;
+	border-radius:0px;
+	background-color: #288dc8;
+}
+ 
+.external-scroll_x .scroll-bar {
+    width: 100px;
+}
+.external-scroll_y .scroll-bar {
+    height: 50px;
+}
+.scroll-content {
+    overflow: scroll !important;
+}
+.scroll-wrapper > .scroll-content::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+}
+/*  scroll bar end  */
