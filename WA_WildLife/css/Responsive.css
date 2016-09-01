@@ -11,22 +11,14 @@
 		display:block;
 	}
 	.topMobMenuBar{
-		background-color:#000;
-		background-repeat:repeat;
-		background-size: contain;
-		position:fixed;
-		height:40px;
-        width: 100%;
-        z-index: 10;
-		top:0px;
+		display:block;
 	}
 	
 	.CloseBtn{
-		background-size: 100% auto;
-        height: 31px;
-        right: 11px;
-        top: 5px;
-        width: 31px;
+		display: none;
+	}
+    .topMobMenuBar .CloseBtn{
+		display: block;
 	}
 	.MenuMob {
          display: table;
@@ -43,6 +35,12 @@
         opacity: 1;
         visibility:visible;
     }	
+    .lightbox-bootmGrad{
+        display:none;
+    }
+    .lightbox-footer{
+        display:none;
+    }
 }
 
 @media screen and (min-width: 768px) {

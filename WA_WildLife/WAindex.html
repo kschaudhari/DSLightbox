@@ -10,7 +10,8 @@
 <link rel="stylesheet" type="text/css" href="css/font.css" />
 <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css" />
 <link rel="stylesheet" type="text/css" href="css/style.css" />
-<link rel="stylesheet" type="text/css" href="css/Tabs.css"
+<link rel="stylesheet" type="text/css" href="css/Tabs.css"/>
+    <link rel="stylesheet" type="text/css" href="css/mobile.css" />
 <link rel="stylesheet" type="text/css" href="css/Responsive.css" />
 <script src="js/jquery-1.12.1.min.js" ></script>
 </head>
@@ -19,21 +20,38 @@
 <a href="#" id="ShwoPopUp"  >Open Box</a>
 <div id="mydiv" style="display:none;">
    <div id="mydiv-content">
-     <a href="#" class="CloseBtn" ></a>    
+     <a href="#" class="CloseBtn removePopup" ></a>    
        <div class="topMobMenuBar">
-           <div id="mobMenu" class="MobMenuBtn"> </div>
-           <div class="mobMenuContainer">
-               <div class="MenuMob">
-                   <ul>
-                       <li class="HideCurruntMenu"><a href="#" class="h1">Lorem Ipsum 1</a></li>
-                       <li><a href="#" class="h2">Lorem Ipsum 2</a></li>
-                       <li><a href="#" class="h3">Lorem Ipsum 3</a></li>
-                       <li><a href="#" class="h4">Lorem Ipsum 4</a></li>
-                       <li><a href="#" class="h4">Lorem Ipsum 5</a></li>
-                       <li><a href="#" class="h4">Lorem Ipsum 6</a></li>
-                   </ul>
+           <div class="topMobItem MobMenuBar">
+               <div class="mobMenu">
+                   <div class="mobMenuIcon menuElement">
+                       <img src="images/mobMenu.svg" />
+                   </div>
+               </div>
+               <div class="mobMenuLogos menuElement">
+                   <div class="mobDiscoverLogo">
+                       <img src="images/mobDiscoverLogo.png" />
+                   </div>
+                   <div class="mobWALogo">
+                       <img src="images/mobWALogo.png" />
+                   </div>
+               </div>
+               <div class="mobMenuClose menuElement">
+                   <img class="removePopup" src="images/mobClose.png" />
                </div>
            </div>
+           <div class="mobDropdownMenu">
+               <div class="mobDropdownMenuItem" data-tab="tab1"></div>
+               <div class="mobDropdownMenuItem" data-tab="tab2"></div>
+               <div class="mobDropdownMenuItem" data-tab="tab3"></div>
+               <div class="mobDropdownMenuItem" data-tab="tab4"></div>
+               <div class="mobDropdownMenuItem" data-tab="tab5"></div>
+               <div class="mobDropdownMenuItem" data-tab="tab6"></div>
+           </div>
+           <div class="topMobItem MobNvigator">
+
+           </div>
+           
        </div>
        <div class="lighbox-container">
            <div class="lightbox-defaultTab box1BG">
@@ -225,6 +243,9 @@
                <div class="tab lightbox-tab6"></div>
                
            </div>
+           <div class="lightbox-bootmGrad">
+
+           </div>
            <div class="lightbox-footer">
                <div class="lightbox-footer-container">
                    <div class="left-footer"></div>
@@ -240,9 +261,7 @@
                    </div>
                </div>
            </div>
-           <div class="lightbox-bootmGrad">
-
-           </div>
+           
        </div>
        <div id="preloadImages" style="display:none">
            <img src="images/banner2.jpg" />
