@@ -155,6 +155,7 @@
     -moz-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     background-color: rgba(255,255,255,0.15);
+    box-shadow: 0px 1px 0.99px 0.01px rgba(0, 0, 0, 0.8);
 }
 
 .lightbox-menuItem-boxed{
@@ -358,10 +359,10 @@
         -ms-transform: translateY(-50%);
         -moz-transform: translateY(-50%);
         transform: translateY(-50%);
-        /* height: 100%; */
+        
     }
     .lighbox-container .lightbox-footer .lightbox-footer-container .right-footer .footer-wa-logo{
-        /* float:right; */
+        
         width:37.319%;
         position: absolute;
         right: 0px;
@@ -372,6 +373,19 @@
         transform: translateY(-50%);
     }
 
+
 .lighbox-container .lightbox-detailsPage{
     display:none;
+}
+.lighbox-container .lightbox-bootmGrad{
+    background-image:url(../images/BannerBGGradbottom.png);
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right:0px;
+    width:100%;
+    height: 71px;
+    background-position-y:bottom;
+    background-repeat:repeat-x;
+    border: 0px;
 }
