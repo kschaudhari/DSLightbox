@@ -74,6 +74,8 @@ nav ul li a .Menu {
     height:100%;
     background-repeat:no-repeat;
     display:block;
+    background-size: contain;
+    background-position: center;
 }
     nav ul li a .Menu1 {
         background-image:url("../images/menu1.png");
