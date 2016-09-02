@@ -150,13 +150,16 @@ nav ul li a .Menu {
     width:100%;
      height:100%;
 }
+.BannerContentBox {
+    height: 265px;    
+}
 .TextBanner {
     font-family: 'Conv_JADIWA';
     color:#fff;
     font-size:4.56em;
     width: 36%;
     margin: 0 auto;
-    line-height: 81px;
+    line-height: 74px;
     padding-top: 4%;
     padding-bottom: 3.7%;
     text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
@@ -213,12 +216,14 @@ nav ul li a .Menu {
    background-image:url('../images/pattern.jpg');
    background-repeat:repeat;
    margin-bottom:34px;
+   padding-bottom: 11px;
 }
 
 .NeedToKnowBox .NeedtoHeading {
     color:#fff;
     font-family: 'Conv_JADIWA-Webfont-Large';
     font-size: 1.7em;
+    letter-spacing: 1px;
     font-weight: 500;
     margin:0px;
     display: inline-block;
@@ -230,15 +235,27 @@ nav ul li a .Menu {
     font-size:0.95em;
     letter-spacing: 0.01px;
     padding: 0px 19px;
+    margin-bottom: 13px;
 }
-.NeedToKnowBox a {
+.NeedToKnowBox a, .PTagAncher {
     color:#f4c32d;
     font-size:0.95em;
     text-decoration:none;
     letter-spacing: 0.01px;
 }
-.NeedToKnowBox a:hover, .NeedToKnowBox a:active {
+.NeedToKnowBox a:hover, .NeedToKnowBox a:active, .PTagAncher:hover, .PTagAncher:active {
     color:#f4c32d;
+}
+.LearnmoreBox {
+    color: #fff;
+    font-family: 'Conv_JADIWA-Webfont-Large';
+    font-size: 1.1em;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.LearnmoreBox img {
+    width:auto;
+    margin-top: 5px;
 }
 .OtherBox {
     width:100%;
@@ -294,6 +311,33 @@ border-bottom: 0;
 }
 .TextBanner .tab2SmalltextAlignmnt {
     padding-left:33%;
+}
+.TextBanner .tab3BigtextAligning {
+    padding-left:27%;
+}
+.TextBanner .tab4Bannersmalltesxt1 {
+    padding-left: 6%;
+}
+.TextBanner .tab4Bannersmalltesxt2 {
+    padding-left: 50%;
+}
+.TextBanner .tab4BannerBigtesxt1 {
+    padding-left: 29%;
+}
+.TextBanner .tab4BannerBigtesxt2{
+    padding-left: 17%;
+}
+.TextBanner .tab5Bannersmalltesxt1 {
+    padding-left: 11%;
+}
+.TextBanner .tab5Bannersmalltesxt2 {
+    padding-left: 56%;
+}
+.TextBanner .tab5BannerBigtesxt1 {
+    padding-left: 5%;
+}
+.TextBanner .tab5BannerBigtesxt2{
+    padding-left: 19%;
 }
 /*  scrol bar */
 .scrollbar-external_wrapper {
@@ -369,3 +413,139 @@ border-bottom: 0;
     width: 0;
 }
 /*  scroll bar end  */
+.ShareBox {
+    width: 50%;
+    float: left;
+}
+.ShareBox .Sharelabel {
+    background-color:#00314f;
+    line-height:40px;
+    height:40px;
+    padding: 0px 12.89%;
+    color:#fff;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1em;
+    font-weight:400;
+    display: block;
+    float: left;
+}
+.ShareBox a {
+    width:20px;
+    height:20px;
+    display:block;
+    background-color:#00314f;
+    line-height:40px;
+    height:40px;
+    border-left:1px solid #d2dbe0;
+    background-position:center center;
+    background-repeat:no-repeat;
+    padding: 0 11.2%;
+    float:left;
+}
+.ShareBox a.tweet{
+    background-image:url('../images/tweet.png');
+}
+.ShareBox a.fb {
+    background-image:url('../images/fb.png');
+}
+.readNextBox{
+    margin-bottom:30px;
+    float:right;
+    background-color:#0f9ed6;
+    border-bottom-left-radius:30px;
+    width:50%;
+    height:62px;
+}
+.readNextBox img {
+    width:27px;
+    height:20px;
+    position:relative;
+     top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    float:right;
+    margin-right:2%;
+    margin-right: 5%;
+}
+.readNextBox .ReadNext{
+    line-height: 62px;
+    color:#fff;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1em;
+    font-weight:400;
+    padding-left:8%;
+    position: relative;
+    top: -17px;
+}
+.readNextBox .NextTabLabel{
+    color: #fff;
+    font-family: 'Conv_JADIWA-Webfont-Large';
+    font-weight: 500;
+    letter-spacing: 1px;
+    display: inline-block;
+    width: 46%;
+    line-height: 31px;
+    text-align: right;
+}
+.readNextBox .NextTabLabel .topLineText {
+    font-size: 2.5em;
+    display: block;
+    letter-spacing: 4px;
+}
+.readNextBox .NextTabLabel .BottomlineText {
+    font-size: 1.3em;
+    letter-spacing: 1px;
+}
+.lightbox-tab1 .TextBanner{
+   
+}
+.lightbox-tab2 .TextBanner{
+   padding-top: 4.9%;
+}
+.lightbox-tab3 .TextBanner {
+   padding:6.8% 0% 3%;
+}
+.lightbox-tab4 .TextBanner{
+    padding-top: 1%;
+}
+.lightbox-tab3 .TextBanner .BigBnnerText {
+    line-height: 91px;
+}
+.lightbox-tab5 .TextBanner {
+    padding-top:3%;
+    font-size: 2.9em;
+    line-height: 67px;
+}
+.DetailDescription .tab5Heading {
+    font-family: 'Conv_JADIWA';
+    color:#288dc8;
+    font-size: 1.5em;
+    font-weight: 100;
+    margin: 7px 0px;
+    position: relative;
+}
+.DetailDescription .tab5Heading .LoareCaseHeading {
+    color:#00324f;
+    font-size: 1.5em;
+    line-height: 0;
+    position: relative;
+    top: 5px;
+}
+.Tab5DescBox {
+    padding-top:12px;
+}
+.Tab5DescBox .TabBText {
+    display:inline-block;
+}
+.Tab5DescBox h2.MonthBorderBottom:after {
+    background-image: url("../images/MonthUnderline.png");
+    background-repeat: no-repeat;
+    position:absolute;
+    content: " ";
+    width:100%;
+    height:3px;
+    left:0px;
+    top: 34px;
+    background-size: 100%;
+}
