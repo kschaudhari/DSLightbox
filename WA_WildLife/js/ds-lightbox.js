@@ -59,12 +59,14 @@
             "scrollx": $('.external-scroll_x'),
             "scrolly": $('.external-scroll_y')
         });
+        $(".lightbox-footer .BackToMain").show();
     }
 
     function showDefaultView()
     {
         $(".lighbox-container .lightbox-defaultTab").fadeIn();
         $(".lighbox-container .lightbox-detailsPage").fadeOut();
+        $(".lightbox-footer .BackToMain").hide();
     }
 
     // popup show Hide end 

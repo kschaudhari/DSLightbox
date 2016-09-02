@@ -57,30 +57,30 @@
     min-width: 500px;
     /* position: relative; */
     /* margin: 0px; */
-    background-image:url(../images/banner1.jpg);
+    background-image:url(../images/Banners/WelcomeScreen-1000x650-bkg-bluepatern.jpg);
 }
 .lightbox-defaultTab.box1BG{
-    background-image:url(../images/banner1.jpg);
+    background-image:url(../images/Banners/WelcomeScreen-1000x650-bkg-tab1.jpg);
 }
 
 .lightbox-defaultTab.box2BG{
-    background-image:url(../images/banner2.jpg);
+    background-image:url(../images/Banners/WelcomeScreen-1000x650-bkg-tab2.jpg);
 }
 
 .lightbox-defaultTab.box3BG{
-    background-image:url(../images/banner3.jpg);
+    background-image:url(../images/Banners/WelcomeScreen-1000x650-bkg-tab3.jpg);
 }
 
 .lightbox-defaultTab.box4BG{
-    background-image:url(../images/banner4.jpg);
+    background-image:url(../images/Banners/WelcomeScreen-1000x650-bkg-tab4.jpg);
 }
 
 .lightbox-defaultTab.box5BG{
-    background-image:url(../images/banner5.jpg);
+    background-image:url(../images/Banners/WelcomeScreen-1000x650-bkg-tab5.jpg);
 }
 
 .lightbox-defaultTab.box6BG{
-    background-image:url(../images/banner6.jpg);
+    background-image:url(../images/Banners/WelcomeScreen-1000x650-bkg-tab6.jpg);
 }
 
 

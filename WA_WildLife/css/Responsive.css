@@ -60,6 +60,9 @@
     .lighbox-container .lightbox-detailsPage .ContentTextBox
     {
         width: 93%;
+        margin: 0 auto;
+        padding:0px;
+        float: inherit;
     }
         .lighbox-container .lightbox-detailsPage .tab .BannerContentBox{
             background-repeat: no-repeat;
@@ -77,6 +80,22 @@
     .lighbox-container .lightbox-detailsPage .lightbox-tab2 .BannerContentBox
     {
         background-image: url(../images/MobTabBanner2.jpg);
+    }
+    .lighbox-container .lightbox-detailsPage .lightbox-tab3 .BannerContentBox
+    {
+        background-image: url(../images/Banners/WelcomeScreen-1000x650-bkg-tab3.jpg);
+    }
+    .lighbox-container .lightbox-detailsPage .lightbox-tab4 .BannerContentBox
+    {
+        background-image: url(../images/Banners/WelcomeScreen-1000x650-bkg-tab4.jpg);
+    }
+    .lighbox-container .lightbox-detailsPage .lightbox-tab5 .BannerContentBox
+    {
+        background-image: url(../images/Banners/WelcomeScreen-1000x650-bkg-tab5.jpg);
+    }
+    .lighbox-container .lightbox-detailsPage .lightbox-tab6 .BannerContentBox
+    {
+        background-image: url(../images/Banners/WelcomeScreen-1000x650-bkg-tab6.jpg);
     }
     .lighbox-container .lightbox-detailsPage .tab .BannerContentBox .TextBanner{
         vertical-align: middle;

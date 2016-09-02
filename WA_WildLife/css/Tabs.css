@@ -14,22 +14,19 @@
     background-position:center;
 }
 .lightbox-tab1 {
-     background-image: url('../images/tab1ContentBg.jpg');
+     background-image:url(../images/Banners/ExpandedScreen-930x530-bkg-tab1.jpg);
 }
 .lightbox-tab2 {
-     background-image: url('../images/tab2ContentBg.jpg');
-}
-.lightbox-tab2 {
-     background-image: url('../images/tab2ContentBg.jpg');
+     background-image: url(../images/Banners/ExpandedScreen-930x530-bkg-tab2a.jpg);
 }
 .lightbox-tab3 {
-     background-image: url('../images/tab3ContentBg.jpg');
+     background-image: url(../images/Banners/ExpandedScreen-930x530-bkg-tab3a.jpg);
 }
 .lightbox-tab4 {
-     background-image: url('../images/tab4ContentBg.jpg');
+     background-image: url(../images/Banners/ExpandedScreen-930x530-bkg-tab4a.jpg);
 }
 .lightbox-tab5 {
-     background-image: url('../images/tab5ContentBg.jpg');
+     background-image: url(../images/Banners/ExpandedScreen-930x530-bkg-tab5a.jpg);
 }
 .lightbox-tab6 {
      background-image: url('../images/tab6ContentBg.jpg');
