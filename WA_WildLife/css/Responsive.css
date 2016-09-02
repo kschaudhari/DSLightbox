@@ -40,6 +40,7 @@
         display:none;
     }
     .lighbox-container{
+        margin-top:36%;
         height:100vh;
         position:relative;
     }
