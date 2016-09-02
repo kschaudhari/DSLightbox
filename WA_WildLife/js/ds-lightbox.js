@@ -13,7 +13,9 @@
     $(".removePopup").click(function () {
         $("#mydiv").fadeOut("slow");
     });
-    
+    $(".BackToMain").click(function () {
+        showDefaultView();
+    });
     $(".lightbox-defaultTab .lighbox-boxedMenu .lightbox-menuItem-boxed").hover(function () {
         $(".lightbox-defaultTab").addClass($(this).attr("data-tab") + "BG");
         $(this).addClass($(this).attr("data-tab") + "Hover");
