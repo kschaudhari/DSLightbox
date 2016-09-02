@@ -194,12 +194,15 @@ nav ul li a .Menu {
 }
 .ContentTextBox .DetailDescription p.DescriptionTextTab2{
     color:#00324f;
-    line-height: 25px;
+    line-height: 25.5px;
     font-size:0.95em;
     letter-spacing: 0.01px;
     font-family: 'Fira Sans', sans-serif;
     margin:15px 0 22px;
     padding:0px;
+}
+.ContentTextBox .DetailDescription p.Description4FirstP {
+    margin-top:0px;
 }
 .ContentTextBox .DetailDescription h3.DescriptionTextHeading {
     color: #288dc8;
@@ -309,11 +312,21 @@ border-bottom: 0;
     padding-top: 27px;
     padding-bottom: 19px;
 }
+.TextBanner .tab1Bannersmalltesxt{
+}
+.TextBanner .tab1BannerBigtesxt1{
+}
+.TextBanner .tab1BannerBigtesxt2 {
+    padding-left:5%;
+}
 .TextBanner .tab2SmalltextAlignmnt {
     padding-left:33%;
+} 
+.TextBanner .tab3Bannersmalltesxt {
+    padding-left:4%;
 }
 .TextBanner .tab3BigtextAligning {
-    padding-left:27%;
+    padding-left:21%;
 }
 .TextBanner .tab4Bannersmalltesxt1 {
     padding-left: 6%;
@@ -520,7 +533,7 @@ border-bottom: 0;
 .DetailDescription .tab5Heading {
     font-family: 'Conv_JADIWA';
     color:#288dc8;
-    font-size: 1.5em;
+    font-size: 1.4em;
     font-weight: 100;
     margin: 7px 0px;
     position: relative;
@@ -548,4 +561,42 @@ border-bottom: 0;
     left:0px;
     top: 34px;
     background-size: 100%;
+}
+.ContentTextBox .DetailDescription .Tab6ContDiv p.DescriptionTextTab2{
+    line-height: 27px;
+}
+.Tab6Desc .TextLinkStyle{
+    text-decoration:none;
+    font-style:italic;
+    color:#3190c9;
+}
+.Tab6Desc .HeadingLink {
+    text-decoration:none
+}
+.Tab6Desc .HeadingLink .tab5Heading{
+    font-size: 1.3em;
+}
+.SubHeadBoxTab6{
+    color:#288dc8;
+    font-size: 0.95em;
+    letter-spacing: 0.01px;
+    font-family: 'Fira Sans', sans-serif;
+}
+.HeighLights {
+
+}
+.HeighLights ul {
+}
+.HeighLights ul li {
+    color: #00324f;
+    line-height: 25px;
+    font-size: 0.95em;
+    letter-spacing: 0.01px;
+    font-family: 'Fira Sans', sans-serif;
+}
+.HeighLights .DiscoverLink {
+    text-decoration:none;
+    color:#3190c9;
+    font-size: 0.95em;
+    line-height: 25px;
 }
