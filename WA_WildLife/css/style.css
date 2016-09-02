@@ -37,54 +37,8 @@
 	background-image:url(../images/close.png);
 	display:block;
 }
-.MobMenuBtn{
-	height:25px;
-	width:25px;
-    position:absolute;
-	left: 12px;
-    top: 9px;
-	z-index:1;
-	background-image:url(../images/mobMenu.png);
-	cursor:pointer;
-	display:none;
-}
 .togglecone.expandedcone{
 	background-color:green;
-}
-
-
-.mobMenuContainer{
-	margin-left:0px;
-	width: 100%;
-	z-index:9;
-	display:none;
-	position: absolute;
-    top:40px;
-	background-color:#666;
-}
-.MenuMob{
-}
-.MenuMob ul{
-	list-style-type:none;
-	padding: 0;
-	display: table-cell;
-}
-.MenuMob ul li{
-		background-color:#666;
-	background-repeat:repeat;
-	border-bottom: 1px solid #ccc;
-    float: left;
-    padding: 15px 0;
-    text-align: center;
-    width: 100%;
-    position: relative;
-}
-.MenuMob ul li:first-child {
-    border-top: none;
-}
-.MenuMob ul li a{
-	text-decoration:none;
-	color:#fff;
 }
 
 .lighbox-container
@@ -154,7 +108,9 @@
     -moz-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     background-color: rgba(255,255,255,0.15);
-    box-shadow: 0px 1px 0.99px 0.01px rgba(0, 0, 0, 0.8);
+    -webkit-box-shadow: 0px 1px 2px 0.01px rgba(0,0,0,0.6);
+-moz-box-shadow: 0px 1px 1px 0.01px rgba(0,0,0,0.6);
+box-shadow: 0px 1px 1px 0.01px rgba(0,0,0,0.6);
 }
 
 .lightbox-menuItem-boxed{
@@ -214,6 +170,7 @@
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out; 
     -o-transition: all 0.5s ease-in-out; 
+    -webkit-backface-visibility: hidden;
 }
 .lightbox-menuItem-boxed.hover .lighbox-menuContent .defaultContent{
     transform: translate(0,-35%);
@@ -234,6 +191,7 @@
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out; 
     -o-transition: all 0.5s ease-in-out; 
+    -webkit-backface-visibility: hidden;
 }
 .lightbox-menuItem-boxed.hover .lighbox-menuContent .downArrow{
     transform: translate(0,-50%);
@@ -266,14 +224,18 @@
     top: 50%;
     text-align: right;
     width: 100%;
+
     transition: all 0.5s ease-in-out;
-    -webkit-transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
+    -webkit-backface-visibility: hidden;
+
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     transform: translateY(-50%);
+    
 }
 .lightbox-menuItem-boxed.hover .lighbox-menuContent .hoverContent{
     visibility: visible;
@@ -298,6 +260,7 @@
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
+    -webkit-backface-visibility: hidden;
 }
 .lightbox-menuItem-boxed.hover .lighbox-menuContent .hoverContent .menubox-logo{
    transform: translate(110px,0);

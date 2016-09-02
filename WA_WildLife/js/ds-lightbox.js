@@ -5,7 +5,7 @@
         var vid = $("#myVideo");
         $("#mydiv").fadeIn("slow");
     });
-    $(".CloseBtn").click(function () {
+    $(".removePopup").click(function () {
         $("#mydiv").fadeOut("slow");
     });
     // popup show Hide end 
