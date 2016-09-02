@@ -39,6 +39,70 @@
     .lightbox-footer{
         display:none;
     }
+    .lighbox-container{
+        margin-top:20vh;
+        position:relative;
+    }
+    .lighbox-container .lightbox-title{
+        display:none;
+    }
+    .lighbox-container .lightbox-detailsPage .tab{
+        top: 0;
+        transform: initial;
+        left: 0;
+        width: 100%;
+        /* bottom: 0; */
+        /* height: 105%; */
+        padding-bottom: 20px;
+        background: #fff;
+    }
+    .lighbox-container .lightbox-detailsPage .ContentTextBox
+    {
+        width: 93%;
+    }
+        .lighbox-container .lightbox-detailsPage .tab .BannerContentBox{
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            display: table;
+            height: 40vh;
+            width: 100%;
+        }
+    .lighbox-container .lightbox-detailsPage .lightbox-tab1 .BannerContentBox
+    {
+        background-image: url(../images/tab1ContentBg.jpg);
+    }
+    .lighbox-container .lightbox-detailsPage .tab .BannerContentBox .TextBanner{
+        vertical-align: middle;
+        padding-left: 14px;
+        margin: 0;
+        padding-top: 9.5%;
+    }
+    .lighbox-container .lightbox-detailsPage .tab .BannerContentBox .TextBanner .SmallBnnerText{
+        line-height: 28px;
+        font-size: 0.5em;
+        display: block;
+        padding-left: 2%;
+    }
+    .lighbox-container .lightbox-detailsPage .tab .BannerContentBox .TextBanner .BigBnnerText{
+        line-height: 39px;
+        font-size: 0.5em;
+        display: block;
+    }
+    .OtherBox .LeftImgBox .OtherImg{
+        border: none;
+        -webkit-transform: translateY(-39%);
+        -ms-transform: translateY(-39%);
+        transform: translateY(-39%);
+        -moz-transform: translateY(-39%);
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+    }
+    .OtherBox .OtherDetailBox
+    {
+
+    }
 }
 
 @media screen and (min-width: 768px) {

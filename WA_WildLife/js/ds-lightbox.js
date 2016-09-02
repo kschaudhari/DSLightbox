@@ -26,7 +26,7 @@
 
     $(".lighbox-container .lightbox-defaultTab .lightbox-menuItem-boxed").click(function (e) {
         e.stopPropagation();
-        handleMobNavigation($(this).attr("data-tab").replace("box", ''));
+        handleMobNavigation($(this).attr("data-tab").replace("box", ''), true);
     });
 
     $(".lighbox-container .lightbox-detailsPage .lightbox-top-menu-item").click(function (e) {
@@ -106,15 +106,16 @@
         handleMobNavigation(newTabId);
     });
 
-    function handleMobNavigation(tabId)
+    function handleMobNavigation(tabId, allowReLoad)
     {
         var activeTab = $(".topMobMenuBar .mobNavigatorContent .mobCurrentTab .mobTab.active");
-        var activTabData = activeTab.attr("data-tab");
-        if (activTabData.replace("tab", '') == tabId)
-            return;
-        $(".topMobMenuBar").removeClass(activTabData + "Active");
-        $(".topMobMenuBar").addClass("tab" + tabId + "Active");
-
+        if (activeTab.length > 0) {
+            var activTabData = activeTab.attr("data-tab");
+            if (!allowReLoad && activTabData.replace("tab", '') == tabId)
+                return;
+            $(".topMobMenuBar").removeClass(activTabData + "Active");
+            $(".topMobMenuBar").addClass("tab" + tabId + "Active");
+        }
         $(".topMobMenuBar .mobNavigatorContent .mobCurrentTab .mobTab.active").removeClass("active");
         $(".topMobMenuBar .mobNavigatorContent .mobCurrentTab .mobTab[data-tab='tab" + tabId + "']").addClass("active");
 
