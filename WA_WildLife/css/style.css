@@ -40,7 +40,7 @@
 .togglecone.expandedcone{
 	background-color:green;
 }
-
+.mobDetector{display:none;}
 .lighbox-container
 {
     width: 100%;
