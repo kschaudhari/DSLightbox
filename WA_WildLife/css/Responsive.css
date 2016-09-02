@@ -17,6 +17,7 @@
 	.CloseBtn{
 		display: none;
 	}
+    .mobDetector{display:block;}
     .topMobMenuBar .CloseBtn{
 		display: block;
 	}
@@ -25,10 +26,7 @@
          width: 100%;
     }
     .lightbox-defaultTab{
-        display:none;
-}
-    .lightbox-defaultTab{
-        display:none;
+        display:none !important;
     }
     .lightbox-detailsPage{
         display:block !important;
