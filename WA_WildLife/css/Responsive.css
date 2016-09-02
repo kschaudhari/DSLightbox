@@ -40,7 +40,7 @@
         display:none;
     }
     .lighbox-container{
-        margin-top:100vh;
+        height:100vh;
         position:relative;
     }
     .lighbox-container .lightbox-title{
