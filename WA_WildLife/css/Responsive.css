@@ -146,6 +146,9 @@
     .OtherBox .OtherDetailBox {
         margin-top: 24px;
     }
+    .readNextBox {
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 768px) {

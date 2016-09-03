@@ -80,9 +80,13 @@ nav ul li a {
     padding: 0;
     height: 100%;
 }
-nav ul li a:hover, nav ul li a:active, nav ul li.active {
+
+nav ul li a:hover, nav ul li.active {
     color:#fff;
     background-color:#0f9fd6;
+}
+nav ul li a:active{
+    background-color:#0D8CBF;
 }
 nav ul li a .smallCaseTitle {
     display:block;
@@ -252,6 +256,11 @@ nav ul li a .Menu {
     font-size: 1.1em;
     font-weight: 500;
     letter-spacing: 1px;
+    width: auto;
+    display: inline-block;
+}
+.LearnmoreBox a, .LearnmoreBox a:hover, .LearnmoreBox a:active{
+    color: #fff;
 }
 .LearnmoreBox img {
     width:auto;
@@ -423,6 +432,10 @@ border-bottom: 0;
     width: 0;
 }
 /*  scroll bar end  */
+.ContentFooter {
+    display:inline-block;
+    width: 100%;
+}
 .ShareBox {
     width: 50%;
     float: left;
@@ -497,15 +510,37 @@ border-bottom: 0;
     width: 46%;
     line-height: 31px;
     text-align: right;
+    position:relative;
 }
 .readNextBox .NextTabLabel .topLineText {
     font-size: 2.5em;
     display: block;
-    letter-spacing: 4px;
+    letter-spacing: 3px;
 }
 .readNextBox .NextTabLabel .BottomlineText {
     font-size: 1.3em;
     letter-spacing: 1px;
+}
+.readNextBox .NextTabLabel .TextAlignforNext {
+    position:absolute;
+    top: 21px;
+    width: 100%;
+}
+.readNextBox .NextTabLabel .Nexttab6Ttextalign {
+    font-size: 0.9em;
+}
+.readNextBox .NextTabLabel .TextAlignforNext .BottomlineText {
+    text-align:left;
+    display:inline-block;
+    font-size: 0.9em;
+    float: left;
+}
+.readNextBox .NextTabLabel .TextAlignforNext .topLineText {
+     display:inline-block;
+     text-align:right;
+     font-size: 1.5em;
+    letter-spacing: 2px;
+    padding-left: 6%;
 }
 .lightbox-tab1 .TextBanner{
    
@@ -594,7 +629,12 @@ border-bottom: 0;
 }
 .HeighLights .DiscoverLink {
     text-decoration:none;
-    color:#3190c9;
+    color:#fff;
+    display: inline-block;
     font-size: 0.95em;
     line-height: 25px;
+    background-color: #00314f;
+    line-height: 40px;
+    height: 40px;
+    padding: 0 5%;
 }
