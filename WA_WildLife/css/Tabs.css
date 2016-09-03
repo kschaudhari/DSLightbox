@@ -63,7 +63,7 @@ nav ul li {
     border-left: 1px solid #7ea7bd;
     background-color:#abd5ef;
     width: 16.6667%; /* fallback for non-calc() browsers */
-    width: calc(100% / 6);
+   /* width: calc(100% / 6);*/
     box-sizing: border-box;
     font-family: 'Conv_JADIWA';
     height: 50px;
@@ -358,6 +358,13 @@ border-bottom: 0;
 .TextBanner .tab5BannerBigtesxt2{
     padding-left: 19%;
 }
+.TextBanner .tab6Bannersmalltesxt {
+    padding-left: 3%;
+} 
+.TextBanner .tab6BannerBigtesxt {
+    padding-left: 1.5%;
+    line-height:1.2em;
+}
 /*  scrol bar */
 .scrollbar-external_wrapper {
    /* position:absolute;*/
@@ -561,6 +568,9 @@ border-bottom: 0;
     padding-top:3%;
     font-size: 2.9em;
     line-height: 67px;
+}
+.lightbox-tab6 .TextBanner {
+    padding-top:5%;
 }
 .DetailDescription .tab5Heading {
     font-family: 'Conv_JADIWA';

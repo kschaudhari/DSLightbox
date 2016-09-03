@@ -101,19 +101,21 @@
         vertical-align: middle;
         padding-left: 14px;
         margin: 0;
-        padding-top: 9.5%;
+        /*padding-top: 9.5%;*/
+        display:table-cell;
     }
     .lighbox-container .lightbox-detailsPage .tab .BannerContentBox .TextBanner .SmallBnnerText{
         line-height: 28px;
         font-size: 0.5em;
         display: block;
-        padding-left: 2%;
+        /*padding-left: 2%;*/
     }
     .lighbox-container .lightbox-detailsPage .tab .BannerContentBox .TextBanner .BigBnnerText{
         line-height: 39px;
         font-size: 0.5em;
         display: block;
     }
+    
     .OtherBox .LeftImgBox .OtherImg{
         border: none;
         -webkit-transform: translateY(-39%);
@@ -131,11 +133,11 @@
         height: 11.5vh;
     }
     .ShareBox .Sharelabel {
-        padding: 0px 11%;
+        padding: 0px 10%;
         font-size: 0.7em;
     }
     .ShareBox a {
-        padding: 0 7%;
+        padding: 0 6%;
     }
     .OtherBox .OtherName {
         font-size: 0.55em;
@@ -154,6 +156,49 @@
         margin-top: -10px;
         margin-bottom: 7px;
     }
+    .TextBanner .tab1Bannersmalltesxt {
+        padding-left: 2%;
+    }
+    .TextBanner .tab2SmalltextAlignmnt1 {
+        padding-left: 2%;
+    }
+    .TextBanner .tab2SmalltextAlignmnt {
+        padding-left: 18%;
+    }
+    .TextBanner .tab3BigtextAligning {
+        padding-left: 13%;
+    }
+    .TextBanner .tab4Bannersmalltesxt1 {
+        padding-left: 0%;
+    }
+    .TextBanner .tab4Bannersmalltesxt2 {
+        padding-left: 26%;
+    }
+    .TextBanner .tab4BannerBigtesxt1 {
+        padding-left: 15%;
+    }
+    .TextBanner .tab4BannerBigtesxt2{
+        padding-left: 9%;
+    }
+    .TextBanner .tab5Bannersmalltesxt1 {
+        padding-left: 4%;
+    }
+    .TextBanner .tab5Bannersmalltesxt2 {
+        padding-left: 28%;
+    }
+    .TextBanner .tab5BannerBigtesxt1 {
+        padding-left: 0%;
+    }
+    .TextBanner .tab5BannerBigtesxt2{
+        padding-left: 9%;
+    }
+    .TextBanner .tab6Bannersmalltesxt {
+        padding-left: 2%;
+    } 
+    .TextBanner .tab6BannerBigtesxt {
+        padding-left: 1%;
+    }
+
 }
 
 @media screen and (min-width: 768px) {
