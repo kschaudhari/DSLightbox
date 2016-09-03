@@ -59,11 +59,13 @@
     }
     .lighbox-container .lightbox-detailsPage .ContentTextBox
     {
-        width: 93%;
+        width: 100%;
         margin: 0 auto;
         padding:0px;
         float: inherit;
+        text-align:center;
     }
+    
         .lighbox-container .lightbox-detailsPage .tab .BannerContentBox{
             background-repeat: no-repeat;
             background-size: cover;
@@ -163,6 +165,7 @@
     }
     .OtherBox .OtherDetailBox {
         margin-top: 24px;
+        text-align: left;
     }
     .readNextBox {
         width: 100%;
@@ -214,7 +217,52 @@
     .TextBanner .tab6BannerBigtesxt {
         padding-left: 1%;
     }
-
+    .ContentTextBox .DetailDescription h3.DescriptionTextHeading {
+        padding:0px 10px;
+            text-align: left;
+    }
+    .ContentTextBox .DetailDescription p.DescriptionTextTab2, .ContentTextBox .DetailDescription p.DescriptionTextTab1 {
+        padding:0px 10px;
+            text-align: left;
+    }
+    .ContentFooter{
+        width: calc(100% - 20px);
+    }
+    .NeedToKnowBox {
+        width: calc(100% - 20px);
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .OtherBox{
+        width: calc(100% - 20px);
+        margin: 0 auto;
+        display: inline-block;
+        float: inherit;
+    }
+    .ContentTextBox .WhaleText {
+        width: calc(100% - 20px);
+        margin: 0 auto;
+        text-align:left;
+    }
+    .HeighLights, .SubHeadBoxTab6 {
+        text-align:left;
+        width: calc(100% - 20px);
+        margin: 0 auto;
+        text-align:left;
+    }
+    .Tab6Desc .HeadingLink .tab5Heading {
+      text-align:left;
+      padding: 0px 10px;
+     }
+    .Tab5DescBox {
+        text-align:left;
+    }
+    .Tab5DescBox .TabBText, .Tab5DescBox .tab5Heading {
+        padding:0px 10px;
+    }
+    .Tab2Headingsplit2lines {
+        width:100%;
+    }
 }
 
 @media screen and (min-width: 768px) {

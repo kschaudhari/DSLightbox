@@ -673,3 +673,7 @@ border-bottom: 0;
     padding: 0 5%;
 }
 .lighbox-container .lightbox-detailsPage .tab .readNextBox{cursor:pointer}
+.Tab2Headingsplit2lines {
+    width: 73%;
+    display: inline-block;
+}
