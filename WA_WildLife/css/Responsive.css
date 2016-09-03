@@ -149,6 +149,11 @@
     .readNextBox {
         width: 100%;
     }
+    .TextBgImg img.TextBgImageMob {
+        display:block;
+        margin-top: -10px;
+        margin-bottom: 7px;
+    }
 }
 
 @media screen and (min-width: 768px) {

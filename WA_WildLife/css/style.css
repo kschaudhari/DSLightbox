@@ -375,3 +375,6 @@ box-shadow: 0px 1px 1px 0.01px rgba(0,0,0,0.6);
 .BackToMain .BackMenuTextAlignin {
     padding-left:8px;
 }
+.TextBgImg img.TextBgImageMob {
+    display:none;
+}
