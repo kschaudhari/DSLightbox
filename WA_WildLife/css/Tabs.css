@@ -458,13 +458,14 @@ border-bottom: 0;
     background-color:#00314f;
     line-height:40px;
     height:40px;
-    padding: 0px 12.89%;
     color:#fff;
     font-family: 'Fira Sans', sans-serif;
     font-size: 1em;
     font-weight:400;
     display: block;
     float: left;
+    width: 41%;
+    text-align: center;
 }
 .ShareBox a {
     width:20px;
@@ -476,8 +477,9 @@ border-bottom: 0;
     border-left:1px solid #d2dbe0;
     background-position:center center;
     background-repeat:no-repeat;
-    padding: 0 11.2%;
     float:left;
+    text-align: center;
+    width: 29%;
 }
 .ShareBox a.tweet{
     background-image:url('../images/tweet.png');
@@ -509,22 +511,37 @@ border-bottom: 0;
     line-height: 62px;
     color:#fff;
     font-family: 'Fira Sans', sans-serif;
-    font-size: 1em;
+    font-size: 0.73em;
     font-weight:400;
-    padding-left:8%;
+    padding-left:6%;
     position: relative;
-    top: -17px;
+    float:left;
+    width:26%;
 }
 .readNextBox .NextTabLabel{
-    color: #fff;
+  /*  color: #fff;
     font-family: 'Conv_JADIWA-Webfont-Large';
     font-weight: 500;
     letter-spacing: 1px;
     display: inline-block;
     width: 46%;
-    line-height: 31px;
+    line-height: 31px;*/
     text-align: right;
     position:relative;
+
+    height:38px;
+    float: left;
+    width: 46.8965%;
+
+         top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.readNextBox .NextTabLabel img.NextLogo {
+    width:100%;
+    margin:0px;
+    height: auto;
 }
 .readNextBox .NextTabLabel .topLineText {
     font-size: 2.5em;
