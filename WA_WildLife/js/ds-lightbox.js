@@ -20,10 +20,15 @@
         $(".lightbox-defaultTab").addClass($(this).attr("data-tab") + "BG");
         $(this).addClass($(this).attr("data-tab") + "Hover");
         $(this).addClass("hover");
+        $(".lightbox-defaultTab").addClass("BGScale")//.delay(1000).removeClass("BGScale");
+        setTimeout(function () {
+            $(".lightbox-defaultTab").removeClass("BGScale");
+        }, 50);
     }, function () {
         $(".lightbox-defaultTab").removeClass($(this).attr("data-tab") + "BG");
         $(this).removeClass($(this).attr("data-tab") + "Hover");
         $(this).removeClass("hover");
+        $(".lightbox-defaultTab").removeClass("BGScale");
     });
 
     $(".lighbox-container .lightbox-defaultTab .lightbox-menuItem-boxed").click(function (e) {
