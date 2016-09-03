@@ -54,10 +54,27 @@
     height: 100%;
     min-height: 250px;
     min-width: 500px;
+    /* position: relative; */
+    /* margin: 0px; */
+    transition: background-size  0.5s ease;
+    -moz-transition: background-size  0.5s ease;
+    -ms-transition: background-size  0.5s ease;
+    -webkit-transition: background-size  0.5s ease;
+    -o-transition: background-size  0.5s ease;
+    background-size: 100% 100%;
     background-image:url(../images/Banners/WelcomeScreen-1000x650-bkg-tab1.jpg);
 }
 .lightbox-defaultTab.box1BG{
     background-image:url(../images/Banners/WelcomeScreen-1000x650-bkg-tab1.jpg);
+}
+
+.lightbox-defaultTab.BGScale {
+  background-size: 125% 125%;
+  transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -webkit-transition: none;
+    -o-transition: none;
 }
 
 .lightbox-defaultTab.box2BG{

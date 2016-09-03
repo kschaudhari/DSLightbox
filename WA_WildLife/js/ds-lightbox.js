@@ -1,11 +1,15 @@
 ﻿$(document).ready(function () {
     
+    function isMobile()
+    {
+        return $(".mobDetector").is(":visible");
+    }
     // popup show Hide
     $("#ShwoPopUp").click(function () {
         var vid = $("#myVideo");
         $("#mydiv").fadeIn("slow");
         
-        if ($(".mobDetector").is(":visible"))
+        if (isMobile())
             handleMobNavigation(1);
         else
             showDefaultView();
@@ -20,10 +24,15 @@
         $(".lightbox-defaultTab").addClass($(this).attr("data-tab") + "BG");
         $(this).addClass($(this).attr("data-tab") + "Hover");
         $(this).addClass("hover");
+        $(".lightbox-defaultTab").addClass("BGScale")//.delay(1000).removeClass("BGScale");
+        setTimeout(function () {
+            $(".lightbox-defaultTab").removeClass("BGScale");
+        }, 50);
     }, function () {
         $(".lightbox-defaultTab").removeClass($(this).attr("data-tab") + "BG");
         $(this).removeClass($(this).attr("data-tab") + "Hover");
         $(this).removeClass("hover");
+        $(".lightbox-defaultTab").removeClass("BGScale");
     });
 
     $(".lighbox-container .lightbox-defaultTab .lightbox-menuItem-boxed").click(function (e) {
@@ -34,6 +43,11 @@
     $(".lighbox-container .lightbox-detailsPage .lightbox-top-menu-item").click(function (e) {
         e.stopPropagation();
         handleMobNavigation($(this).attr("data-tab").replace("tab", ''));
+    })
+
+    $(".lighbox-container .lightbox-detailsPage .tab .readNextBox").click(function (e) {
+        e.stopPropagation();
+        moveToNext();
     })
 
     function showTab(tabId)
@@ -53,13 +67,14 @@
         $(".lighbox-container .lightbox-detailsPage .lightbox-tab" + tabId).addClass("active");
         $(".lighbox-container .lightbox-detailsPage .lightbox-top-menu-item").removeClass("active");
         $(".lighbox-container .lightbox-detailsPage .lightbox-top-menu-item[data-tab='tab" + tabId + "'").addClass("active");
-
+        
         $(".lighbox-container .lightbox-detailsPage .lightbox-tab" + tabId).find(".MainContaintArea").scrollbar({
             "autoScrollSize": false,
             "scrollx": $('.external-scroll_x'),
             "scrolly": $('.external-scroll_y')
         });
         $(".lightbox-footer .BackToMain").show();
+        $(".lighbox-container .lightbox-detailsPage .tab.active .MainContaintArea").scrollTop(0)
     }
 
     function showDefaultView()
@@ -103,12 +118,17 @@
 
     $(".topMobMenuBar .mobNavigator .mobNextTab .navArrow").click(function (e) {
         e.stopPropagation();
+        moveToNext();
+    });
+
+    function moveToNext()
+    {
         var activeTabId = parseInt($(".topMobMenuBar .mobNavigatorContent .mobCurrentTab .mobTab.active").attr("data-tab").replace("tab", ''));
         var newTabId = activeTabId + 1;
         if (newTabId == 7)
             newTabId = 1;
         handleMobNavigation(newTabId);
-    });
+    }
 
     function handleMobNavigation(tabId, allowReLoad)
     {
@@ -126,4 +146,39 @@
         showTab(tabId);
     }
 
+    $(".lighbox-container .lightbox-detailsPage .tab .MainContaintArea").scroll(function (e) {
+        if (isMobile())
+            return;
+        var activeTab = $(this);
+        var images = activeTab.find(".TextContainer .TextBgImg img.TextBgImageMob");
+        var divScrollTop = activeTab.scrollTop();
+        var scrollHeight = activeTab.innerHeight();
+        var imageFound = false;
+        images.each(function (__, image) {
+            var textContainer = $(image).closest(".TextBgImg");
+            var elementTop = textContainer.position().top;
+            if ((divScrollTop + scrollHeight) > (elementTop + scrollHeight))
+            {
+                activeTab.closest(".tab").css("background-image", "url(" + $(image).attr("src") + ")");
+                imageFound = true;
+            }
+            
+        });
+        if (!imageFound)
+        {
+            activeTab.closest(".tab").removeStyle("background-image");
+        }
+    })
 });
+
+(function ($) {
+    $.fn.removeStyle = function (style) {
+        var search = new RegExp(style + '[^;]+;?', 'g');
+
+        return this.each(function () {
+            $(this).attr('style', function (i, style) {
+                return style.replace(search, '');
+            });
+        });
+    };
+}(jQuery));

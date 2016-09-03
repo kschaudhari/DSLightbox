@@ -12,6 +12,13 @@
         background-repeat: no-repeat;
     background-size: cover;
     background-position:center;
+
+    /*transition: background-image  0.5s ease-in-out;
+    -moz-transition: background-image 0.5s ease-in-out;
+    -ms-transition: background-image 0.5s ease-in-out;
+    -webkit-transition: background-image 0.5s ease-in-out;
+    -o-transition: background-image 0.5s ease-in-out;*/
+    
 }
 .lightbox-tab1 {
      background-image:url(../images/Banners/ExpandedScreen-930x530-bkg-tab1.jpg);
@@ -648,3 +655,4 @@ border-bottom: 0;
     height: 40px;
     padding: 0 5%;
 }
+.lighbox-container .lightbox-detailsPage .tab .readNextBox{cursor:pointer}
