@@ -49,6 +49,9 @@
     }
     .lighbox-container .lightbox-detailsPage .tab{
         top: 0;
+		-webkit-transform: initial;
+		-moz-transform: initial;
+    	-ms-transform: initial;
         transform: initial;
         left: 0;
         width: 100%;
@@ -91,7 +94,7 @@
     {
         background-image: url(../images/Banners/WelcomeScreen-1000x650-bkg-tab4.jpg);
     }
-    .lighbox-container .lightbox-detailsPage .lightbox-tab5 .BannerContentBox
+   .lighbox-container .lightbox-detailsPage .lightbox-tab5 .BannerContentBox
     {
         background-image: url(../images/Banners/WelcomeScreen-1000x650-bkg-tab5.jpg);
     }
@@ -120,9 +123,12 @@
     .OtherBox .LeftImgBox {
         width:25%;
         float:left;
+		max-width:100px;
     }
     .OtherBox .OtherDetailBox {
-        width:72%;
+        width:68%;
+		float:left;
+		margin-left:4%;
     }
     .OtherBox .LeftImgBox .OtherImg{
         border: none;
@@ -226,26 +232,36 @@
             text-align: left;
     }
     .ContentFooter{
+		width: -webkit-calc(100% - 20px);
+		width: -moz-calc(100% - 20px);
         width: calc(100% - 20px);
     }
     .NeedToKnowBox {
+		width: -webkit-calc(100% - 20px);
+		width: -moz-calc(100% - 20px);
         width: calc(100% - 20px);
         margin-left:auto;
         margin-right:auto;
     }
     .OtherBox{
+		width: -webkit-calc(100% - 20px);
+		width: -moz-calc(100% - 20px);
         width: calc(100% - 20px);
         margin: 0 auto;
         display: inline-block;
         float: inherit;
     }
     .ContentTextBox .WhaleText {
+		width: -webkit-calc(100% - 20px);
+		width: -moz-calc(100% - 20px);
         width: calc(100% - 20px);
         margin: 0 auto;
         text-align:left;
     }
     .HeighLights, .SubHeadBoxTab6 {
         text-align:left;
+		width: -webkit-calc(100% - 20px);
+		width: -moz-calc(100% - 20px);
         width: calc(100% - 20px);
         margin: 0 auto;
         text-align:left;

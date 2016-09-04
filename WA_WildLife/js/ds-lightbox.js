@@ -8,9 +8,9 @@
     $("#ShwoPopUp").click(function () {
         var vid = $("#myVideo");
         $("#mydiv").fadeIn("slow");
-        
+	
         if (isMobile())
-            handleMobNavigation(1);
+            handleMobNavigation(1, true);
         else
             showDefaultView();
     });
@@ -50,9 +50,9 @@
         moveToNext();
     })
 
-    function showTab(tabId)
+    function showTab(tabId, allowReLoad)
     {
-        if ($(".lighbox-container .lightbox-detailsPage .lightbox-tab" + tabId).is(":visible"))
+        if (!allowReLoad && $(".lighbox-container .lightbox-detailsPage .lightbox-tab" + tabId).is(":visible"))
         {
             return;
         }
@@ -66,7 +66,7 @@
         
         $(".lighbox-container .lightbox-detailsPage .lightbox-tab" + tabId).addClass("active");
         $(".lighbox-container .lightbox-detailsPage .lightbox-top-menu-item").removeClass("active");
-        $(".lighbox-container .lightbox-detailsPage .lightbox-top-menu-item[data-tab='tab" + tabId + "'").addClass("active");
+        $(".lighbox-container .lightbox-detailsPage .lightbox-top-menu-item[data-tab='tab" + tabId + "']").addClass("active");
         
         $(".lighbox-container .lightbox-detailsPage .lightbox-tab" + tabId).find(".MainContaintArea").scrollbar({
             "autoScrollSize": false,
@@ -143,7 +143,7 @@
         $(".topMobMenuBar .mobNavigatorContent .mobCurrentTab .mobTab.active").removeClass("active");
         $(".topMobMenuBar .mobNavigatorContent .mobCurrentTab .mobTab[data-tab='tab" + tabId + "']").addClass("active");
 
-        showTab(tabId);
+        showTab(tabId,allowReLoad);
     }
 
     $(".lighbox-container .lightbox-detailsPage .tab .MainContaintArea").scroll(function (e) {

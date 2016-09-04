@@ -113,7 +113,10 @@
 }
 .lighbox-boxedMenu{
     width: 93%;
-    height: calc(100% - 120px);
+    height:81.538461%;
+	height: -webkit-calc(100% - 120px);
+	height: -moz-calc(100% - 120px);
+	height: calc(100% - 120px);
     position: absolute;
     top:50%;
     left: 50%;
@@ -128,8 +131,14 @@ box-shadow: 0px 1px 1px 0.01px rgba(0,0,0,0.6);
 }
 
 .lightbox-menuItem-boxed{
+	width:33.3301%;
+	widht: -webkit-calc((100% - 3px)/3);
+	widht: -moz-calc((100% - 3px)/3);
     width: calc((100% - 3px)/3);
     float:left;
+	height:50%;
+	height: -webkit-calc((100% - 1px)/2);
+	height: -moz-calc((100% - 1px)/2);
     height: calc((100% - 1px)/2);
     border:0px;
     cursor:pointer;
