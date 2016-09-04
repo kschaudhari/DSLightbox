@@ -293,7 +293,7 @@
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .lightbox-menuItem-boxed .lighbox-menuContent .hoverContent {
-        top: 24%;
+        top: 27%;
     }
 }
 @media screen and (min-width: 768px) and (max-width: 1120px) {
