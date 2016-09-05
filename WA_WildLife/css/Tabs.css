@@ -229,8 +229,14 @@ nav ul li a .Menu {
    background-repeat:repeat;
    margin-bottom:34px;
    padding-bottom: 11px;
+   cursor: pointer;
 }
-
+.NeedToKnowBox:hover {
+    background-image:url(../images/patternHover.png);
+}
+.NeedToKnowBox:active {
+    background-image:url(../images/patternActive.png);
+}
 .NeedToKnowBox .NeedtoHeading {
     color:#fff;
     font-family: 'Conv_JADIWA-Webfont-Large';
@@ -461,7 +467,7 @@ border-bottom: 0;
     height:40px;
     color:#fff;
     font-family: 'Fira Sans', sans-serif;
-    font-size: 1em;
+    font-size: 0.73em;
     font-weight:400;
     display: block;
     float: left;
@@ -482,6 +488,9 @@ border-bottom: 0;
     text-align: center;
     width: 29%;
 }
+.ShareBox a:active {
+    background-color:#00263D;
+}
 .ShareBox a.tweet{
     background-image:url('../images/tweet.png');
 }
@@ -496,6 +505,10 @@ border-bottom: 0;
     width:50%;
     height:62px;
 }
+.readNextBox:active {
+    background-color:#0D8CBF;
+}
+
 .readNextBox img {
     width:27px;
     height:20px;
