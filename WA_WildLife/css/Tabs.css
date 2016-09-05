@@ -488,6 +488,9 @@ border-bottom: 0;
     text-align: center;
     width: 29%;
 }
+.ShareBox a:hover{
+    background-color:#003F66;
+}
 .ShareBox a:active {
     background-color:#00263D;
 }
@@ -505,6 +508,10 @@ border-bottom: 0;
     width:50%;
     height:62px;
 }
+.readNextBox:hover {
+    background-color:#10A9E5;
+}
+
 .readNextBox:active {
     background-color:#0D8CBF;
 }
@@ -685,6 +692,12 @@ border-bottom: 0;
     line-height: 40px;
     height: 40px;
     padding: 0 5%;
+}
+.HeighLights .DiscoverLink:hover{
+    background-color:#003F66;
+}
+.HeighLights .DiscoverLink:active {
+    background-color:#00263D;
 }
 .lighbox-container .lightbox-detailsPage .tab .readNextBox{cursor:pointer}
 .Tab2Headingsplit2lines {
