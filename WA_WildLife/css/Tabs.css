@@ -414,7 +414,7 @@ border-bottom: 0;
     height: 150px;
     right: -31px;
     width: 10px;
-    position: fixed;
+    position: absolute;
         top: 71%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
@@ -712,4 +712,7 @@ border-bottom: 0;
 a.NeedToKnowBoxLink {
     display: block;
     text-decoration:none;
+}
+.HeighLights ul {
+    margin-top: 0px;
 }
