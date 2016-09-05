@@ -8,7 +8,7 @@
     $("#ShwoPopUp").click(function () {
         var vid = $("#myVideo");
         $("#mydiv").fadeIn("slow");
-	
+        ga('send', 'pageview');
         if (isMobile())
             handleMobNavigation(1, true);
         else
@@ -196,11 +196,11 @@
         swipedetect(tabPage, function (swipedir) {
             if(swipedir == "left")
             {
-                moveToPrevious();
+                moveToNext();
             }
             else if (swipedir == "right")
             {
-                moveToNext();
+                moveToPrevious();
             }
         })
     });

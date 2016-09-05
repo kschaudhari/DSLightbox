@@ -255,7 +255,7 @@ nav ul li a .Menu {
     padding: 0px 19px;
     margin-bottom: 13px;
 }
-.NeedToKnowBox a, .PTagAncher {
+.PTagAncher {
     color:#f4c32d;
     font-size:0.95em;
     text-decoration:none;
@@ -694,4 +694,8 @@ border-bottom: 0;
 .Tab6SeprationBorder {
     border-bottom: 1px solid #288dc8;
     margin-top:15px;
+}
+a.NeedToKnowBoxLink {
+    display: block;
+    text-decoration:none;
 }
