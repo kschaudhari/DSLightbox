@@ -178,7 +178,7 @@
                 var elementTop = textContainer.position().top;
                 var delay = parseInt($(image).attr("data-delay"));
                 if (!delay)
-                    delay = 0;
+                    delay = textContainer.innerHeight() + 100;
                 if ((divScrollTop + scrollHeight) > (elementTop + delay + scrollHeight)) {
                     activeTab.closest(".tab").css("background-image", "url(" + $(image).attr("src") + ")");
                     imageFound = true;
