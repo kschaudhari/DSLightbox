@@ -85,7 +85,9 @@
             duration:10
         });
         $(".lightbox-footer .BackToMain").show();
-        $(".lighbox-container .lightbox-detailsPage .tab.active .MainContaintArea").scrollTop(0)
+        $(".lighbox-container .lightbox-detailsPage .tab.active .MainContaintArea").scrollTop(0);
+        if(!isMobile())
+            $(".lighbox-container .external-scroll_y").show();
     }
 
     function showDefaultView()
@@ -93,6 +95,7 @@
         $(".lighbox-container .lightbox-defaultTab").fadeIn();
         $(".lighbox-container .lightbox-detailsPage").fadeOut();
         $(".lightbox-footer .BackToMain").hide();
+        $(".lighbox-container .external-scroll_y").hide();
     }
 
     // popup show Hide end 
