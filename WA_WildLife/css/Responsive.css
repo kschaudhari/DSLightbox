@@ -88,19 +88,19 @@
     }
     .lighbox-container .lightbox-detailsPage .lightbox-tab3 .BannerContentBox
     {
-        background-image: url(../images/Banners/WelcomeScreen-1000x650-bkg-tab3.jpg);
+        background-image: url(../images/Banners/ExpandedScreen-930x530-bkg-tab3a.jpg);
     }
     .lighbox-container .lightbox-detailsPage .lightbox-tab4 .BannerContentBox
     {
-        background-image: url(../images/Banners/WelcomeScreen-1000x650-bkg-tab4.jpg);
+        background-image: url(../images/Banners/ExpandedScreen-930x530-bkg-tab4a.jpg);
     }
    .lighbox-container .lightbox-detailsPage .lightbox-tab5 .BannerContentBox
     {
-        background-image: url(../images/Banners/WelcomeScreen-1000x650-bkg-tab5.jpg);
+        background-image: url(../images/Banners/ExpandedScreen-930x530-bkg-tab5a.jpg);
     }
     .lighbox-container .lightbox-detailsPage .lightbox-tab6 .BannerContentBox
     {
-        background-image: url(../images/Banners/WelcomeScreen-1000x650-bkg-tab6.jpg);
+           background-image: url('../images/tab6ContentBg.jpg');
     }
     .lighbox-container .lightbox-detailsPage .tab .BannerContentBox .TextBanner{
         vertical-align: middle;
@@ -264,7 +264,13 @@
 		width: -moz-calc(100% - 20px);
         width: calc(100% - 20px);
         margin: 0 auto;
-        text-align:left;
+    }
+    .Tab6SeprationBorder {
+        width: -webkit-calc(100% - 20px);
+		width: -moz-calc(100% - 20px);
+        width: calc(100% - 20px);
+        margin-left:auto;
+        margin-right:auto;
     }
     .Tab6Desc .HeadingLink .tab5Heading {
       text-align:left;

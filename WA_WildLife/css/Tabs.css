@@ -691,3 +691,7 @@ border-bottom: 0;
     width: 73%;
     display: inline-block;
 }
+.Tab6SeprationBorder {
+    border-bottom: 1px solid #288dc8;
+    margin-top:15px;
+}
