@@ -34,7 +34,7 @@
 	z-index:12;
 	width: 60px;
 	height: 60px;
-	background-image:url(../images/close.png);
+	background-image:url(../images/Close.png);
 	display:block;
 }
 .togglecone.expandedcone{
