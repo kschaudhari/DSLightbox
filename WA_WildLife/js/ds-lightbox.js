@@ -1,4 +1,5 @@
 ﻿$(document).ready(function () {
+    var type = window.location.hash.substr(1);
     
     function isMobile()
     {
@@ -9,11 +10,19 @@
         var vid = $("#myVideo");
         $("#mydiv").fadeIn("slow");
         ga('send', 'pageview');
-        if (isMobile())
-            handleMobNavigation(1, true);
+        var defaultTab = 1;
+        if (type)
+            defaultTab = type.replace("tab", '');
+        if (defaultTab > 6 || defaultTab < 1)
+            type = "";
+        if (type || isMobile())
+            handleMobNavigation(defaultTab, true);
         else
             showDefaultView();
     });
+    if (type) {
+        $("#ShwoPopUp").trigger("click");
+    }
     $(".removePopup").click(function () {
         $("#mydiv").fadeOut("slow");
     });
@@ -183,7 +192,7 @@
                 var elementTop = textContainer.position().top;
                 var delay = parseInt($(image).attr("data-delay"));
                 if (!delay)
-                    delay = textContainer.innerHeight() + 100;
+                    delay = textContainer.innerHeight() + 10;
                 if ((divScrollTop + scrollHeight) > (elementTop + delay + scrollHeight)) {
                     activeTab.closest(".tab").css("background-image", "url(" + $(image).attr("src") + ")");
                     imageFound = true;
