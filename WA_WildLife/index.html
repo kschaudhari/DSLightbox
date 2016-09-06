@@ -6,15 +6,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Lightbox</title>
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,500i" rel="stylesheet">
-<!-- font-family: 'Fira Sans', sans-serif; -->
-<link rel="stylesheet" type="text/css" href="css/font.css" />
-<link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css" />
-<link rel="stylesheet" type="text/css" href="css/style.css" />
-<link rel="stylesheet" type="text/css" href="css/Tabs.css"/>
-    <link rel="stylesheet" type="text/css" href="css/mobile.css" />
-<link rel="stylesheet" type="text/css" href="css/Responsive.css" />
-<script src="js/jquery-1.12.1.min.js" ></script>
+<link rel="stylesheet" type="text/css" href="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/css/font.css" />
+<link rel="stylesheet" type="text/css" href="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/css/jquery.mCustomScrollbar.css" />
+<link rel="stylesheet" type="text/css" href="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/css/style.css" />
+<link rel="stylesheet" type="text/css" href="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/css/Tabs.css"/>
+<link rel="stylesheet" type="text/css" href="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/css/mobile.css" />
+<link rel="stylesheet" type="text/css" href="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/css/Responsive.css" />
 
+    <script src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/js/jquery-1.12.1.min.js" ></script>
+    <script src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/js/customscroll.js"></script>
+    <script src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/js/ds-lightbox.js"></script>
     <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -29,7 +30,7 @@
   var clickTagWhalesAndWine = "https://www.discover-the-world.co.uk/destinations/australia-holidays/whales-and-wine-of-the-south-west?utm_source=twa&utm_medium=display&utm_content=whales-wine&utm_campaign=wa-wild201617";
   var clickTagKimberleyComplete = "https://www.discover-the-world.co.uk/destinations/australia-holidays/kimberley-complete?utm_source=twa&utm_medium=display&utm_content=kimberley-complete&utm_campaign=wa-wild201617";
   var clickTagDiscoverWesternAustralia = "https://www.discover-the-world.co.uk/destinations/australia-holidays/western-australia?utm_source=twa&utm_medium=display&utm_content=discover-more&utm_campaign=wa-wild201617";
-  
+
   var clickTagTweet = "http://twitter.com/WestAustralia";
   var clickTagFb = "http://www.facebook.com/ExtraordinaryWesternAustralia";
   var clickTagInsta = "http://www.instagram.com/westernaustralia/";
@@ -42,24 +43,24 @@
 <a href="#" id="ShwoPopUp"  >Open Box</a>
 <div id="mydiv" style="display:none;">
    <div id="mydiv-content">
-     <a href="#" class="CloseBtn removePopup" ></a>    
+     <a href="#" id="lightbox-exit" class="CloseBtn removePopup" ></a>    
        <div class="topMobMenuBar tab1Active">
            <div class="topMobItem MobMenuBar">
                <div class="mobMenu">
                    <div class="mobMenuIcon menuElement">
-                       <img src="images/mobMenu.png" />
+                       <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/mobMenu.png" />
                    </div>
                </div>
                <div class="mobMenuLogos menuElement">
                    <div class="mobDiscoverLogo">
-                       <img src="images/mobDiscoverLogo.png" />
+                       <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/mobDiscoverLogo.png" />
                    </div>
                    <div class="mobWALogo">
-                       <img src="images/mobWALogo.png" />
+                       <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/mobWALogo.png" />
                    </div>
                </div>
                <div class="mobMenuClose menuElement">
-                   <img class="removePopup" src="images/mobClose.png" />
+                   <img class="removePopup" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/mobClose.png" />
                </div>
            </div>
            <div class="mobDropdownMenu">
@@ -77,40 +78,40 @@
                <div class="mobNavigatorContent">
                    <div class="mobPrevTab">
                        <div class="navArrow">
-                           <img src="images/mobArrow.png" />
+                           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/mobArrow.png" />
                        </div>
                    </div>
                    <div class="mobNextTab">
                        <div class="navArrow">
-                           <img src="images/mobArrow.png" />
+                           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/mobArrow.png" />
                        </div>
                    </div>
                    <div class="mobCurrentTab">
                        <div class="mobNavigationTabs">
                            <div class="mobTab1 mobTab active" data-tab="tab1">
                                <div class="mobCurrentTabLogo">
-                                   <img src="images/tab1Hover.png" />
+                                   <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/tab1Hover.png" />
                                    <span class="smallCaseTitle leftDistance"><span>why</span></span>
                                     <span class="capitalCaseTitle">WESTERN AUSTRALIA</span>
                                </div>
                            </div>
                            <div class="mobTab2 mobTab" data-tab="tab2">
                                <div class="mobCurrentTabLogo">
-                                   <img src="images/tab2Hover.png" />
+                                   <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/tab2Hover.png" />
                                    <span class="smallCaseTitle leftDistance"><span>whale</span></span>
                                    <span class="capitalCaseTitle">WATCHING</span>
                                </div>
                            </div>
                            <div class="mobTab3 mobTab" data-tab="tab3">
                                <div class="mobCurrentTabLogo">
-                                   <img src="images/tab3Hover.png" />
+                                   <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/tab3Hover.png" />
                                    <span class="smallCaseTitle leftDistance"><span>ningaloo</span></span>
                                    <span class="capitalCaseTitle">REEF</span>
                                </div>
                            </div>
                            <div class="mobTab4 mobTab" data-tab="tab4">
                                <div class="mobCurrentTabLogo">
-                                   <img src="images/tab4Hover.png" />
+                                   <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/tab4Hover.png" />
                                    <span class="smallCaseTitle leftDistance"><span>epic</span></span>
                                    <span class="capitalCaseTitle">WILDLIFE</span>
                                    <span class="smallCaseTitle"><span>journeys</span></span>
@@ -118,14 +119,14 @@
                            </div>
                            <div class="mobTab1 mobTab" data-tab="tab5">
                                <div class="mobCurrentTabLogo">
-                                   <img src="images/tab5Hover.png" />
+                                   <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/tab5Hover.png" />
                                    <span class="smallCaseTitle leftDistance"><span>where to go</span></span>
                                    <span class="capitalCaseTitle">AND WHEN</span>
                                </div>
                            </div>
                            <div class="mobTab6 mobTab" data-tab="tab6">
                                <div class="mobCurrentTabLogo">
-                                   <img src="images/tab5Hover.png" />
+                                   <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/tab5Hover.png" />
                                    <span class="smallCaseTitle leftDistance"><span>holiday</span></span>
                                    <span class="capitalCaseTitle">IDEAS</span>
                                </div>
@@ -141,7 +142,7 @@
        <div class="lighbox-container">
            <div class="lightbox-defaultTab box1BG">
                <div class="lightbox-title">
-                   <img src="images/TipStrip.png" class="titleImg"/>
+                   <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/TipStrip.png" class="titleImg"/>
                </div>
                <div class="lighbox-boxedMenu">
                    <div class="lightbox-menuItem-boxed bottomBorder box1Hover hover" data-tab="box1">
@@ -152,13 +153,13 @@
                                <span class="capitalCaseTitle">WESTERN AUSTRALIA</span>
                            </div>
                            <div class="hoverContent">
-                               <img class="menubox-logo" src="images/tab1Hover.png" />
+                               <img class="menubox-logo" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/tab1Hover.png" />
                                <div class="menubox-description">
                                    Incredible wildlife encounters await around every corner...
                                </div>
                            </div>
                            <span class="downArrow">
-                               <img src="images/WhiteDownArrow.png" />
+                               <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/WhiteDownArrow.png" />
                            </span>
                        </div>
                    </div>
@@ -169,13 +170,13 @@
                                <span class="capitalCaseTitle">WATCHING</span>
                            </div>
                            <div class="hoverContent">
-                               <img class="menubox-logo" src="images/tab2Hover.png" />
+                               <img class="menubox-logo" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/tab2Hover.png" />
                                <div class="menubox-description">
                                    Whales come so close in Western Australia you can almost ...
                                </div>
                            </div>
                            <span class="downArrow">
-                               <img src="images/WhiteDownArrow.png" />
+                               <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/WhiteDownArrow.png" />
                            </span>
                        </div>
                    </div>
@@ -187,13 +188,13 @@
                                
                            </div>
                            <div class="hoverContent">
-                               <img class="menubox-logo" src="images/tab3Hover.png" />
+                               <img class="menubox-logo" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/tab3Hover.png" />
                                <div class="menubox-description">
                                    One of the longest on Earth – are a magnet for whale sharks ...
                                </div>
                            </div>
                            <span class="downArrow">
-                               <img src="images/WhiteDownArrow.png" />
+                               <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/WhiteDownArrow.png" />
                            </span>
                        </div>
                    </div>
@@ -205,13 +206,13 @@
                                <span class="smallCaseTitle" style="margin-left:10px">journeys</span>
                            </div>
                            <div class="hoverContent">
-                               <img class="menubox-logo" src="images/tab4Hover.png" />
+                               <img class="menubox-logo" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/tab4Hover.png" />
                                <div class="menubox-description">
                                    Western Australia’s wildlife is simply astonishing ...
                                </div>
                            </div>
                            <span class="downArrow">
-                               <img src="images/WhiteDownArrow.png" />
+                               <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/WhiteDownArrow.png" />
                            </span>
                        </div>
                    </div>
@@ -222,13 +223,13 @@
                                <span class="capitalCaseTitle">AND WHEN</span>
                            </div>
                            <div class="hoverContent">
-                               <img class="menubox-logo" src="images/tab5Hover.png" />
+                               <img class="menubox-logo" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/tab5Hover.png" />
                                <div class="menubox-description">
                                    A wealth of native flora and fauna can be seen in the biodiverse ...
                                </div>
                            </div>
                            <span class="downArrow">
-                               <img src="images/WhiteDownArrow.png" />
+                               <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/WhiteDownArrow.png" />
                            </span>
                        </div>
                    </div>
@@ -239,13 +240,13 @@
                                <span class="capitalCaseTitle">IDEAS</span>
                            </div>
                            <div class="hoverContent">
-                               <img class="menubox-logo" src="images/tab6Hover.png" />
+                               <img class="menubox-logo" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/tab6Hover.png" />
                                <div class="menubox-description">
                                    Discover the World offer a wide choice of itineraries ...
                                </div>
                            </div>
                            <span class="downArrow">
-                               <img src="images/WhiteDownArrow.png" />
+                               <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/WhiteDownArrow.png" />
                            </span>
                        </div>
                    </div>
@@ -307,7 +308,7 @@
                                 <div class="ContentTextBox">
                                     <div class="OtherBox">
                                         <div class="LeftImgBox">&nbsp;
-                                            <div class="OtherImg"><img src="images/lyn.jpg" /></div>
+                                            <div class="OtherImg"><img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/lyn.jpg" /></div>
                                         </div>
                                         <div class="OtherDetailBox">
                                             <div class="OtherName">Lyn Beazley</div>
@@ -345,9 +346,9 @@
                                         <div class="readNextBox">
                                             <span class="ReadNext">read next:</span>
                                             <span class="NextTabLabel">
-                                                <img class="NextLogo" src="images/footertab2.png" />
+                                                <img class="NextLogo" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/footertab2.png" />
                                             </span>
-                                            <img src="images/readNextArrow.png" />
+                                            <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/readNextArrow.png" />
                                         </div>
                                     </div>
                                 </div>
@@ -382,7 +383,7 @@
                                                     humpbacks and southern right whales travelling up the coast of Western Australia to mate and give birth in the
                                                     Kimberley’s tropical waters. The whales oblige with a show to take your breath away.
                                                 </p>
-                                                <img class="TextBgImageMob" data-delay="300" src="images/Banners/ExpandedScreen-930x530-bkg-tab2b.jpg" />
+                                                <img class="TextBgImageMob" data-delay="300" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab2b.jpg" />
                                             </div>
                                             <div class="TextBgImg">
                                                 <h3 class="DescriptionTextHeading">Spot the difference</h3>
@@ -401,7 +402,7 @@
                                                     the head, and individual to each animal. The name came from whalers who considered it the ‘right’ whale because it was
                                                     slow and easy to hunt.
                                                 </p>
-                                                <img class="TextBgImageMob" data-delay="300" src="images/Banners/ExpandedScreen-930x530-bkg-tab2c.jpg" />
+                                                <img class="TextBgImageMob" data-delay="300" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab2c.jpg" />
                                             </div>
                                             <div class="TextBgImg">
                                                 <p class="DescriptionTextTab2">
@@ -436,7 +437,7 @@
                                                     <div class="LearnmoreBox">
                                                         
                                                             <span>LEARN MORE</span></br>
-                                                            <img src="images/needrightArrow.png" />
+                                                            <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/needrightArrow.png" />
                                                         
                                                     </div>
                                                 </div>
@@ -458,9 +459,9 @@
                                                     <div class="readNextBox">
                                                         <span class="ReadNext">read next:</span>
                                                         <span class="NextTabLabel">
-                                                            <img class="NextLogo" src="images/footertab3.png" />
+                                                            <img class="NextLogo" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/footertab3.png" />
                                                         </span>
-                                                        <img src="images/readNextArrow.png" />
+                                                        <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/readNextArrow.png" />
                                                     </div>
                                                 </div>
                                             </div>
@@ -495,7 +496,7 @@
                                                    6,000 litres of seawater an hour. Yet despite their size, these filter-feeding leviathans are astonishingly graceful and
                                                    placid. And there’s no better place to meet them than Ningaloo, a two hour flight from Perth in Western Australia.
                                                </p>
-                                               <img class="TextBgImageMob" data-delay="600" src="images/Banners/ExpandedScreen-930x530-bkg-tab3b.jpg" />
+                                               <img class="TextBgImageMob" data-delay="600" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab3b.jpg" />
                                                </div>
                                            <div class="TextBgImg">
                                                <p class="DescriptionTextTab2">
@@ -555,7 +556,7 @@
                                                <div class="LearnmoreBox">
                                                    
                                                        <span>LEARN MORE</span></br>
-                                                       <img src="images/needrightArrow.png" />
+                                                       <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/needrightArrow.png" />
                                                    
                                                </div>
                                            </div>
@@ -575,9 +576,9 @@
                                            <div class="readNextBox">
                                                <span class="ReadNext">read next:</span>
                                                <span class="NextTabLabel">
-                                                   <img class="NextLogo" src="images/footertab4.png" />
+                                                   <img class="NextLogo" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/footertab4.png" />
                                                </span>
-                                               <img src="images/readNextArrow.png" />
+                                               <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/readNextArrow.png" />
                                            </div>
                                        </div>
                                    </div>
@@ -612,7 +613,7 @@
                                                stingrays in the shallows of Thomson Bay or spot bottlenose dolphins in Salmon Bay.  And don’t forget to meet the
                                                quokkas, unique to Western Australia!
                                            </p>
-                                           <img class="TextBgImageMob" src="images/Banners/ExpandedScreen-930x530-bkg-tab4e.jpg" />
+                                           <img class="TextBgImageMob" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab4e.jpg" />
                                            </div>
                                        <div class="TextBgImg">
                                            <h3 class="DescriptionTextHeading">Cruise The Kimberley coast  </h3>
@@ -624,7 +625,7 @@
                                                enough to glide under cascading waterfalls and navigate narrow turquoise rivers. Helicopters and speedboats are on
                                                hand to whisk you over the world’s only Horizontal Waterfalls and up to the stunning Montgomery Reef.
                                            </p>
-                                           <img class="TextBgImageMob" src="images/Banners/ExpandedScreen-930x530-bkg-tab4b.jpg" />
+                                           <img class="TextBgImageMob" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab4b.jpg" />
                                            </div>
                                        <div class="TextBgImg">
                                            <h3 class="DescriptionTextHeading">Walk The Cape to Cape Track, Australia’s South West </h3>
@@ -635,7 +636,7 @@
                                                black cockatoos and purple-crowned lorikeets to western brush wallabies, kangaroos and brush-tailed possums. The whole
                                                trail takes five days but there are a number of guided options which showcase the highlights in one or two days.
                                            </p>
-                                           <img class="TextBgImageMob" src="images/Banners/ExpandedScreen-930x530-bkg-tab4f.jpg" />
+                                           <img class="TextBgImageMob" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab4f.jpg" />
                                            </div>
                                        <div class="TextBgImg">
                                            <h3 class="DescriptionTextHeading">Kayak Ningaloo Reef </h3>
@@ -646,7 +647,7 @@
                                                for great snorkelling. Along with turtles there are manta rays, over 500 species of tropical fish and colourful coral
                                                gardens. Hire equipment and dive in on your own, or follow a local guide for an amazing underwater experience.
                                            </p>
-                                           <img class="TextBgImageMob" src="images/Banners/ExpandedScreen-930x530-bkg-tab4c.jpg" />
+                                           <img class="TextBgImageMob" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab4c.jpg" />
                                            </div>
                                        <div class="TextBgImg">
                                            <h3 class="DescriptionTextHeading">4WD The Gibb River Road</h3>
@@ -658,7 +659,7 @@
                                                freshwater crocodiles in their natural habitat, as well as admiring ancient aboriginal rock art sites and the World
                                                Heritage-listed Bungle Bungle Range.
                                            </p>
-                                           <img class="TextBgImageMob" src="images/Banners/ExpandedScreen-930x530-bkg-tab4d.jpg" />
+                                           <img class="TextBgImageMob" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab4d.jpg" />
                                            </div>
                                        </div>
                                    <div class="clear"></div>
@@ -676,9 +677,9 @@
                                        <div class="readNextBox">
                                            <span class="ReadNext">read next:</span>
                                            <span class="NextTabLabel">
-                                               <img class="NextLogo" src="images/footertab5.png" />
+                                               <img class="NextLogo" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/footertab5.png" />
                                            </span>
-                                           <img src="images/readNextArrow.png" />
+                                           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/readNextArrow.png" />
                                        </div>
                                    </div>
                                </div>
@@ -717,7 +718,7 @@
                                                 sea birds.
                                            </p>
                                            <div class="Tab5MontSaprator"></div>
-                                           <img class="TextBgImageMob" src="images/Banners/ExpandedScreen-930x530-bkg-tab5b.jpg" />
+                                           <img class="TextBgImageMob" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5b.jpg" />
                                        </div>
                                        <div class="Tab5DescBox TextBgImg">
                                            <div class="TabBText">
@@ -730,7 +731,7 @@
                                                 Rottnest Island, where they charm visitors with a willingness to interact. 
                                            </p>
                                            <div class="Tab5MontSaprator"></div>
-                                           <img class="TextBgImageMob" src="images/Banners/ExpandedScreen-930x530-bkg-tab5c.jpg" />
+                                           <img class="TextBgImageMob" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5c.jpg" />
                                        </div>
                                        <div class="Tab5DescBox TextBgImg">
                                            <div class="TabBText">
@@ -743,7 +744,7 @@
                                                 in larger fish like the giant whale shark which basks on the reef from March to July.
                                            </p>
                                            <div class="Tab5MontSaprator"></div>
-                                           <img class="TextBgImageMob" src="images/Banners/ExpandedScreen-930x530-bkg-tab5d.jpg" />
+                                           <img class="TextBgImageMob" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5d.jpg" />
                                        </div>
                                        <div class="Tab5DescBox TextBgImg">
                                            <div class="TabBText">
@@ -756,7 +757,7 @@
                                                 Windjana Gorge you’ll find fossils in the gorge walls, fruit bats and fresh water crocs around the waterhole. 
                                            </p>
                                            <div class="Tab5MontSaprator"></div>
-                                           <img class="TextBgImageMob" src="images/Banners/ExpandedScreen-930x530-bkg-tab5e.jpg" />
+                                           <img class="TextBgImageMob" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5e.jpg" />
                                        </div>
                                        <div class="Tab5DescBox TextBgImg">
                                            <div class="TabBText">
@@ -769,7 +770,7 @@
                                                 waters. Cruises and land-based lookouts operate May-December and you can swim with them at Ningaloo Reef August-October. 
                                            </p>
                                            <div class="Tab5MontSaprator"></div>
-                                           <img class="TextBgImageMob" src="images/Banners/ExpandedScreen-930x530-bkg-tab5f.jpg" />
+                                           <img class="TextBgImageMob" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5f.jpg" />
                                        </div>
                                        <div class="Tab5DescBox TextBgImg">
                                            <div class="TabBText">
@@ -781,7 +782,7 @@
                                                From April to October the moon rises over mudflats and creates an optical illusion of stairs. Best seen from Roebuck Bay in Broome. 
                                            </p>
                                            <div class="Tab5MontSaprator"></div>
-                                           <img class="TextBgImageMob" src="images/Banners/ExpandedScreen-930x530-bkg-tab5july.jpg" />
+                                           <img class="TextBgImageMob" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5july.jpg" />
                                        </div>
                                        <div class="Tab5DescBox TextBgImg">
                                            <div class="TabBText">
@@ -794,7 +795,7 @@
                                                Fitzgerald National Park is a top spot from September to November.
                                            </p>
                                            <div class="Tab5MontSaprator"></div>
-                                           <img class="TextBgImageMob" src="images/Banners/ExpandedScreen-930x530-bkg-tab5h.jpg" />
+                                           <img class="TextBgImageMob" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5h.jpg" />
                                        </div>
                                        <div class="Tab5DescBox TextBgImg">
                                                <div class="TabBText">
@@ -807,7 +808,7 @@
                                                    Rare Gouldian finches inhabit the Dampier Peninsula.
                                                </p>
                                            <div class="Tab5MontSaprator"></div>
-                                           <img class="TextBgImageMob" src="images/Banners/ExpandedScreen-930x530-bkg-tab5i.jpg" />
+                                           <img class="TextBgImageMob" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5i.jpg" />
                                            </div>
                                        <div class="Tab5DescBox TextBgImg">
                                                <div class="TabBText">
@@ -820,7 +821,7 @@
                                                    Abrolhos islands, Albany and Esperance, along with New Zealand fur seals.
                                                </p>
                                            <div class="Tab5MontSaprator"></div>
-                                           <img class="TextBgImageMob" src="images/Banners/ExpandedScreen-930x530-bkg-tab5j.jpg" />
+                                           <img class="TextBgImageMob" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5j.jpg" />
                                            </div>
                                        <div class="Tab5DescBox TextBgImg">
                                                <div class="TabBText">
@@ -834,7 +835,7 @@
                                                    beachfront interaction.
                                                </p>
                                            <div class="Tab5MontSaprator"></div>
-                                           <img class="TextBgImageMob" src="images/Banners/ExpandedScreen-930x530-bkg-tab5nov.jpg" /> 
+                                           <img class="TextBgImageMob" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5nov.jpg" /> 
                                            </div>
                                        <div class="Tab5DescBox TextBgImg">
                                                 <div class="TabBText">
@@ -847,7 +848,7 @@
                                                     ad to Shark Bay, while western greys are easily spotted in the South West. Don’t miss Lucky Bay where they laze about on Australia’s whitest beach.
                                                 </p>
                                            <div class="Tab5MontSaprator"></div>
-                                             <img class="TextBgImageMob" src="images/Banners/ExpandedScreen-930x530-bkg-tab5k.jpg" />
+                                             <img class="TextBgImageMob" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5k.jpg" />
                                            </div>
                                        <div class="Tab5DescBox TextBgImg">
                                                <div class="TabBText">
@@ -860,7 +861,7 @@
                                                    More turtle rookeries are in the Dampier Archipelago, on Broome’s Eighty Mile and Reddell Beaches.
                                                </p>
                                            <div class="Tab5MontSaprator"></div>
-                                           <img class="TextBgImageMob" src="images/Banners/ExpandedScreen-930x530-bkg-tab5l.jpg" />
+                                           <img class="TextBgImageMob" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5l.jpg" />
                                            </div>
 
                                        <div class="Tab5DescBox TextBgImg">
@@ -889,9 +890,9 @@
                                            <div class="readNextBox">
                                                <span class="ReadNext">read next:</span>
                                                <span class="NextTabLabel">
-                                                   <img class="NextLogo" src="images/footertab6.png" />
+                                                   <img class="NextLogo" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/footertab6.png" />
                                                </span>
-                                               <img src="images/readNextArrow.png" />
+                                               <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/readNextArrow.png" />
                                            </div>
                                        </div>
                                    </div>
@@ -1005,9 +1006,9 @@
                                            <div class="readNextBox" id="TabbackToMain">
                                                <span class="ReadNext">read next:</span>
                                                <span class="NextTabLabel">
-                                                   <img class="NextLogo" src="images/footertab6.png" />
+                                                   <img class="NextLogo" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/footertab6.png" />
                                                </span>
-                                               <img src="images/readNextArrow.png" />
+                                               <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/readNextArrow.png" />
                                            </div>
                                        </div>
                                    </div>
@@ -1026,17 +1027,17 @@
                <div class="lightbox-footer-container">
                    <div class="left-footer">
                        <div class="BackToMain" style="display:none;">
-                           <img class="BackArrowImg" src="images/BackmenuImg.png" />
+                           <img class="BackArrowImg" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/BackmenuImg.png" />
                            <span class="BackMenuTextAlignin">main menu</span>
                        </div>
                    </div>
                    <div class="right-footer">
 
                        <div class="footer-discover-logo">
-                           <img class="footer-logo" src="images/DiscoverLogo.png" />
+                           <img class="footer-logo" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/DiscoverLogo.png" />
                        </div>
                        <div class="footer-wa-logo">
-                           <img class="footer-logo" src="images/WAlogo.png" />
+                           <img class="footer-logo" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/WAlogo.png" />
                        </div>
 
                    </div>
@@ -1055,51 +1056,50 @@
 
            </div>
        <div id="preloadImages" style="display:none">
-           <img src="images/banner2.jpg" />
-           <img src="images/banner3.jpg" />
-           <img src="images/banner4.jpg" />
-           <img src="images/banner5.jpg" />
-           <img src="images/banner6.jpg" />
+           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/banner2.jpg" />
+           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/banner3.jpg" />
+           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/banner4.jpg" />
+           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/banner5.jpg" />
+           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/banner6.jpg" />
 
-           <img src="images/patternHover.png" />
-           <img src="images/patternActive.png" />
+           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/patternHover.png" />
+           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/patternActive.png" />
 
-           <img src="images/Banners/ExpandedScreen-930x530-bkg-tab1.jpg" />
+           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab1.jpg" />
 
-           <img src="images/Banners/ExpandedScreen-930x530-bkg-tab2a.jpg" />
-           <img src="images/Banners/ExpandedScreen-930x530-bkg-tab2b.jpg" />
-           <img src="images/Banners/ExpandedScreen-930x530-bkg-tab2b.jpg" />
-           <img src="images/Banners/ExpandedScreen-930x530-bkg-tab2c.jpg" />
+           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab2a.jpg" />
+           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab2b.jpg" />
+           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab2b.jpg" />
+           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab2c.jpg" />
 
-           <img src="images/Banners/ExpandedScreen-930x530-bkg-tab3a.jpg" />
+           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab3a.jpg" />
 
-           <img src="images/Banners/ExpandedScreen-930x530-bkg-tab4a.jpg" />
-           <img src="images/Banners/ExpandedScreen-930x530-bkg-tab4b.jpg" />
-           <img src="images/Banners/ExpandedScreen-930x530-bkg-tab4c.jpg" />
-           <img src="images/Banners/ExpandedScreen-930x530-bkg-tab4d.jpg" />
-           <img src="images/Banners/ExpandedScreen-930x530-bkg-tab4e.jpg" />
-           <img src="images/Banners/ExpandedScreen-930x530-bkg-tab4f.jpg" />
+           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab4a.jpg" />
+           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab4b.jpg" />
+           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab4c.jpg" />
+           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab4d.jpg" />
+           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab4e.jpg" />
+           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab4f.jpg" />
 
-           <img src="images/Banners/ExpandedScreen-930x530-bkg-tab5a.jpg" />
-           <img src="images/Banners/ExpandedScreen-930x530-bkg-tab5b.jpg" />
-           <img src="images/Banners/ExpandedScreen-930x530-bkg-tab5c.jpg" />
-           <img src="images/Banners/ExpandedScreen-930x530-bkg-tab5d.jpg" />
-           <img src="images/Banners/ExpandedScreen-930x530-bkg-tab5e.jpg" />
-           <img src="images/Banners/ExpandedScreen-930x530-bkg-tab5f.jpg" />
-           <img src="images/Banners/ExpandedScreen-930x530-bkg-tab5july.jpg" />
-           <img src="images/Banners/ExpandedScreen-930x530-bkg-tab5h.jpg" />
-           <img src="images/Banners/ExpandedScreen-930x530-bkg-tab5i.jpg" />
-           <img src="images/Banners/ExpandedScreen-930x530-bkg-tab5j.jpg" />
-           <img src="images/Banners/ExpandedScreen-930x530-bkg-tab5k.jpg" />
-           <img src="images/Banners/ExpandedScreen-930x530-bkg-tab5l.jpg" />
-           <img src="images/Banners/ExpandedScreen-930x530-bkg-tab5nov.jpg" />
+           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5a.jpg" />
+           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5b.jpg" />
+           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5c.jpg" />
+           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5d.jpg" />
+           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5e.jpg" />
+           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5f.jpg" />
+           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5july.jpg" />
+           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5h.jpg" />
+           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5i.jpg" />
+           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5j.jpg" />
+           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5k.jpg" />
+           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5l.jpg" />
+           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5nov.jpg" />
 
        </div>
        <div class="mobDetector"></div>
     </div>
 </div>
 
-    <script src="js/customscroll.js"></script>
-    <script src="js/ds-lightbox.js"></script>
+    
 </body>
 </html>
