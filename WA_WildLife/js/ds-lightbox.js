@@ -97,7 +97,9 @@
         $(".lightbox-footer .BackToMain").hide();
         $(".lighbox-container .external-scroll_y").hide();
     }
-
+    $("#TabbackToMain").click(function () {
+        showDefaultView();
+    });
     // popup show Hide end 
     $('.topMobMenuBar .mobMenu').off("click");
     $('.topMobMenuBar .mobMenu').click(function (e) {
