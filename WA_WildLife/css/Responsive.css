@@ -151,7 +151,11 @@
         width: 95%;
         max-width: 100px;
     }
-    .ShareBox .Sharelabel {
+    .ShareBox {
+       width: 100%;
+       float: left;
+    }
+    /*.ShareBox .Sharelabel {
         font-size: 0.7em;
         width:40%;
     }
@@ -163,6 +167,7 @@
         background-image:url('../images/mobFbIcon.png');
         background-size:22px;
     }
+        */
     .OtherBox .OtherName {
         font-size: 0.55em;
     }
