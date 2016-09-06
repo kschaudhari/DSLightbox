@@ -632,7 +632,7 @@ border-bottom: 0;
     padding-top:5%;
 }
 .DetailDescription .tab5Heading {
-    font-family: 'Conv_JADIWA';
+    /*font-family: 'Conv_JADIWA';*/
     color:#288dc8;
     font-size: 1.4em;
     font-weight: 100;
@@ -641,11 +641,11 @@ border-bottom: 0;
 }
 .DetailDescription .tab5Heading .LoareCaseHeading {
     color:#00324f;
-    font-size: 1.5em;
+    /*font-size: 1.5em;*/
     line-height: 0;
     position: relative;
-    top: 5px;
-    padding-right: 7px;
+    /*top: 5px;*/
+    padding-right: 5px;
 }
 .Tab5DescBox {
     padding-top:12px;
@@ -654,7 +654,7 @@ border-bottom: 0;
     display:inline-block;
 }
 .Tab5DescBox h2.MonthBorderBottom:after {
-    background-image: url("../images/MonthUnderline.png");
+/*    background-image: url("../images/MonthUnderline.png");
     background-repeat: no-repeat;
     position:absolute;
     content: " ";
@@ -662,7 +662,7 @@ border-bottom: 0;
     height:3px;
     left:0px;
     top: 34px;
-    background-size: 100%;
+    background-size: 100%;*/
 }
 .ContentTextBox .DetailDescription .Tab6ContDiv p.DescriptionTextTab2{
     line-height: 27px;
@@ -729,4 +729,7 @@ a.NeedToKnowBoxLink {
 }
 .HeighLights ul {
     margin-top: 0px;
+}
+.Tab5MontSaprator {
+    border-bottom: 1px solid #288dc8;
 }
