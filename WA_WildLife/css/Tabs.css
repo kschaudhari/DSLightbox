@@ -472,8 +472,15 @@ border-bottom: 0;
     font-weight:400;
     display: block;
     float: left;
-    width: 41%;
+    width: 28%;
     text-align: center;
+}
+.SocialBox {
+    width: -webkit-calc(100% - 28%);
+	width: -moz-calc(100% -  28%);
+	width: calc(100% -  28%);
+    float:left;
+    display: inline-flex;
 }
 .ShareBox a {
     width:20px;
@@ -487,7 +494,7 @@ border-bottom: 0;
     background-repeat:no-repeat;
     float:left;
     text-align: center;
-    width: 29%;
+    width: 24.599%;
 }
 .ShareBox a:hover{
     background-color:#003F66;
@@ -495,11 +502,17 @@ border-bottom: 0;
 .ShareBox a:active {
     background-color:#00263D;
 }
-.ShareBox a.tweet{
-    background-image:url('../images/tweet.png');
+.ShareBox a.tweet {
+    background-image: url('../images/twiiter.png');
 }
 .ShareBox a.fb {
-    background-image:url('../images/fb.png');
+    background-image: url('../images/fbN.png');
+}
+.ShareBox a.insta { 
+    background-image: url('../images/insta.png');
+}
+.ShareBox a.youtube {
+    background-image: url('../images/youTube.png');
 }
 .readNextBox{
     margin-bottom:30px;
@@ -619,7 +632,7 @@ border-bottom: 0;
     padding-top:5%;
 }
 .DetailDescription .tab5Heading {
-    font-family: 'Conv_JADIWA';
+    /*font-family: 'Conv_JADIWA';*/
     color:#288dc8;
     font-size: 1.4em;
     font-weight: 100;
@@ -628,11 +641,11 @@ border-bottom: 0;
 }
 .DetailDescription .tab5Heading .LoareCaseHeading {
     color:#00324f;
-    font-size: 1.5em;
+    /*font-size: 1.5em;*/
     line-height: 0;
     position: relative;
-    top: 5px;
-    padding-right: 7px;
+    /*top: 5px;*/
+    padding-right: 5px;
 }
 .Tab5DescBox {
     padding-top:12px;
@@ -641,7 +654,7 @@ border-bottom: 0;
     display:inline-block;
 }
 .Tab5DescBox h2.MonthBorderBottom:after {
-    background-image: url("../images/MonthUnderline.png");
+/*    background-image: url("../images/MonthUnderline.png");
     background-repeat: no-repeat;
     position:absolute;
     content: " ";
@@ -649,7 +662,7 @@ border-bottom: 0;
     height:3px;
     left:0px;
     top: 34px;
-    background-size: 100%;
+    background-size: 100%;*/
 }
 .ContentTextBox .DetailDescription .Tab6ContDiv p.DescriptionTextTab2{
     line-height: 27px;
@@ -716,4 +729,7 @@ a.NeedToKnowBoxLink {
 }
 .HeighLights ul {
     margin-top: 0px;
+}
+.Tab5MontSaprator {
+    border-bottom: 1px solid #288dc8;
 }
