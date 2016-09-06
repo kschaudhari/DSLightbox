@@ -1,0 +1,199 @@
+
+body, body * {
+  vertical-align: baseline;
+  border: 0 none;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 9pt;
+  color: #333;
+}
+
+.border {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  position: absolute;
+  background: transparent;
+}
+
+#invitation-state {
+  position: absolute;
+  width: 300px;
+  height: 250px;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+  cursor: pointer;
+  text-align: center;
+  background-color: #EEE;
+  box-sizing: border-box;
+}
+
+#lightbox-state {
+  position: absolute;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background-color: #F1F1F1;
+  z-index: 200;
+  display: none;
+}
+
+#lightbox-exit {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  cursor: pointer;
+  /* IE10 needs a background color otherwise he won't capture clicks */
+  background-color: #FFF;
+  opacity: 0;
+  z-index: 400;
+  display: none;
+}
+
+.button {
+  position: absolute;
+  cursor: pointer;
+  z-index: 500;
+  font-family: Arial, sans-serif;
+  font-size: 10pt;
+}
+
+#expand-button {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+#expand-button span {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 3px 0;
+  background-color: #339933;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 12pt;
+  font-weight: bold;
+  font-family: Arial;
+}
+
+.feature-invitation {
+  top: 37px;
+  left: 10px;
+  width: 280px;
+  height: 175.5px;
+  position: absolute;
+  overflow: hidden;
+}
+
+.feature-lightbox {
+  top: 50px;
+  left: 49px;
+  width: 501.3333333333333px;
+  height: 300px;
+  position: absolute;
+  overflow: hidden;
+}
+
+/* Media Queries for the Expanded Div(s) */
+
+/* Desktop Expanded Panel: More than 600px width */
+@media screen and (min-width: 600px) {
+  #lightbox-state {
+    background-color: red;
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.5) 35px, rgba(255,255,255,.5) 70px) !important;
+  }
+
+  .feature-lightbox {
+    position: absolute;
+    border: 0px;
+    width: 600px;
+    height: 340px;
+    top: 50%;
+    left:50%;
+    margin-left: -300px;
+    margin-top: -170px;
+  }
+}
+
+/* Tablet Expanded Panel */
+@media screen and (max-width: 600px) {
+  #lightbox-state {
+    background-color: lightgray;
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.5) 35px, rgba(255,255,255,.5) 70px) !important;
+  }
+
+  .feature-lightbox {
+    position: absolute;
+    border: 0px;
+    width: 300px;
+    height: 200px;
+    top: 50%;
+    left:50%;
+    margin-left: -150px;
+    margin-top: -100px;
+  }
+}
+
+/* Mobile Phone Expanded Panel */
+@media screen and (max-width: 320px) {
+  #lightbox-state {
+    background-color: purple;
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.5) 35px, rgba(255,255,255,.5) 70px) !important;
+  }
+
+  .feature-lightbox {
+    position: absolute;
+    border: 0px;
+    width: 280px;
+    height: 200px;
+    top: 50%;
+    left:50%;
+    margin-left: -140px;
+    margin-top: -100px;
+  }
+}
+#main-img-0 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(dclk.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+#main-img-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(dclk.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+:focus {
+  outline:none;
+}
+::-moz-focus-inner {
+  border:0;
+}
