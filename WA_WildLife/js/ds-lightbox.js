@@ -1,27 +1,16 @@
-﻿$(document).ready(function () {
+﻿function isMobile() {
+    return $(".mobDetector").is(":visible");
+}
+$(document).ready(function () {
     var type = window.location.hash.substr(1);
     
-    function isMobile()
-    {
-        return $(".mobDetector").is(":visible");
-    }
+    
     // popup show Hide
     $("#ShwoPopUp").click(function () {
-        var vid = $("#myVideo");
-        $("#mydiv").fadeIn("slow");
-        ga('send', 'pageview');
-        var defaultTab = 1;
-        if (type)
-            defaultTab = type.replace("tab", '');
-        if (defaultTab > 6 || defaultTab < 1)
-            type = "";
-        if (type || isMobile())
-            handleMobNavigation(defaultTab, true);
-        else
-            showDefaultView();
+        showLightboxPopup(type);
     });
     if (type) {
-        $("#ShwoPopUp").trigger("click");
+        showLightboxPopup(type);
     }
     $(".removePopup").click(function () {
         $("#mydiv").fadeOut("slow");
@@ -30,6 +19,7 @@
         showDefaultView();
     });
     $(".lightbox-defaultTab .lighbox-boxedMenu .lightbox-menuItem-boxed").hover(function () {
+        removeHoverClassOfBox($(this));
         $(".lightbox-defaultTab").addClass($(this).attr("data-tab") + "BG");
         $(this).addClass($(this).attr("data-tab") + "Hover");
         $(this).addClass("hover");
@@ -37,13 +27,22 @@
         setTimeout(function () {
             $(".lightbox-defaultTab").removeClass("BGScale");
         }, 50);
-    }, function () {
-        $(".lightbox-defaultTab").removeClass($(this).attr("data-tab") + "BG");
-        $(this).removeClass($(this).attr("data-tab") + "Hover");
-        $(this).removeClass("hover");
-        $(".lightbox-defaultTab").removeClass("BGScale");
+    },
+    function () {
+        removeHoverClassOfBox($(this));
     });
 
+    function removeHoverClassOfBox(element)
+    {
+        var container = $(element).closest(".lightbox-defaultTab");
+        container.removeClass();
+        container.addClass("lightbox-defaultTab");
+        container.find(".lighbox-boxedMenu .lightbox-menuItem-boxed.hover").each(function (__, item) {
+            $(item).removeClass($(item).attr("data-tab") + "Hover");
+            $(item).removeClass("hover");
+        })
+        
+    }
     $(".lighbox-container .lightbox-defaultTab .lightbox-menuItem-boxed").click(function (e) {
         e.stopPropagation();
         handleMobNavigation($(this).attr("data-tab").replace("box", ''), true);
@@ -59,53 +58,9 @@
         moveToNext();
     })
 
-    function showTab(tabId, allowReLoad, slideDir)
-    {
-        if (!allowReLoad && $(".lighbox-container .lightbox-detailsPage .lightbox-tab" + tabId).is(":visible"))
-        {
-            return;
-        }
-        var defaultVisible = $(".lighbox-container .lightbox-defaultTab").is(":visible");
-        var detailsVisible = $(".lighbox-container .lightbox-detailsPage").is(":visible");
-            $(".lighbox-container .lightbox-defaultTab").fadeOut();
-            $(".lighbox-container .lightbox-detailsPage").fadeIn();
+    
 
-            if (slideDir)
-            {
-                hideDir = (slideDir == "left" ? "right" : "left");
-                $(".lighbox-container .lightbox-detailsPage .tab.active").hide("slide", { direction: hideDir }, 500);
-                $(".lighbox-container .lightbox-detailsPage .lightbox-tab" + tabId).show("slide", { direction: slideDir }, 500);;
-            }
-            else
-            {
-                $(".lighbox-container .lightbox-detailsPage .tab.active").fadeOut();
-                $(".lighbox-container .lightbox-detailsPage .lightbox-tab" + tabId).fadeIn();
-            }
-        
-        
-        $(".lighbox-container .lightbox-detailsPage .lightbox-tab" + tabId).addClass("active");
-        $(".lighbox-container .lightbox-detailsPage .lightbox-top-menu-item").removeClass("active");
-        $(".lighbox-container .lightbox-detailsPage .lightbox-top-menu-item[data-tab='tab" + tabId + "']").addClass("active");
-        
-        $(".lighbox-container .lightbox-detailsPage .lightbox-tab" + tabId).find(".MainContaintArea").scrollbar({
-            "autoScrollSize": false,
-            "scrollx": $('.external-scroll_x'),
-            "scrolly": $('.external-scroll_y'),
-            duration:10
-        });
-        $(".lightbox-footer .BackToMain").show();
-        $(".lighbox-container .lightbox-detailsPage .tab.active .MainContaintArea").scrollTop(0);
-        if(!isMobile())
-            $(".lighbox-container .external-scroll_y").show();
-    }
-
-    function showDefaultView()
-    {
-        $(".lighbox-container .lightbox-defaultTab").fadeIn();
-        $(".lighbox-container .lightbox-detailsPage").fadeOut();
-        $(".lightbox-footer .BackToMain").hide();
-        $(".lighbox-container .external-scroll_y").hide();
-    }
+    
     $("#TabbackToMain").click(function () {
         showDefaultView();
     });
@@ -136,42 +91,13 @@
         e.stopPropagation();
         moveToPrevious();
     });
-    function moveToPrevious(slideDir) {
-        var activeTabId = parseInt($(".topMobMenuBar .mobNavigatorContent .mobCurrentTab .mobTab.active").attr("data-tab").replace("tab", ''));
-        var newTabId = activeTabId - 1;
-        if (newTabId == 0)
-            newTabId = 6;
-        handleMobNavigation(newTabId, false, slideDir);
-    }
+    
     $(".topMobMenuBar .mobNavigator .mobNextTab .navArrow").click(function (e) {
         e.stopPropagation();
         moveToNext();
     });
 
-    function moveToNext(slideDir)
-    {
-        var activeTabId = parseInt($(".topMobMenuBar .mobNavigatorContent .mobCurrentTab .mobTab.active").attr("data-tab").replace("tab", ''));
-        var newTabId = activeTabId + 1;
-        if (newTabId == 7)
-            newTabId = 1;
-        handleMobNavigation(newTabId, false, slideDir);
-    }
-
-    function handleMobNavigation(tabId, allowReLoad, slideDir)
-    {
-        var activeTab = $(".topMobMenuBar .mobNavigatorContent .mobCurrentTab .mobTab.active");
-        if (activeTab.length > 0) {
-            var activTabData = activeTab.attr("data-tab");
-            if (!allowReLoad && activTabData.replace("tab", '') == tabId)
-                return;
-            $(".topMobMenuBar").removeClass(activTabData + "Active");
-            $(".topMobMenuBar").addClass("tab" + tabId + "Active");
-        }
-        $(".topMobMenuBar .mobNavigatorContent .mobCurrentTab .mobTab.active").removeClass("active");
-        $(".topMobMenuBar .mobNavigatorContent .mobCurrentTab .mobTab[data-tab='tab" + tabId + "']").addClass("active");
-
-        showTab(tabId, allowReLoad, slideDir);
-    }
+    
 
     var scrollTimeOut = null;
     $(".lighbox-container .lightbox-detailsPage .tab .MainContaintArea").scroll(function (e) {
@@ -219,6 +145,79 @@
         })
     });
 });
+function showTab(tabId, allowReLoad, slideDir) {
+    if (!allowReLoad && $(".lighbox-container .lightbox-detailsPage .lightbox-tab" + tabId).is(":visible")) {
+        return;
+    }
+    var defaultVisible = $(".lighbox-container .lightbox-defaultTab").is(":visible");
+    var detailsVisible = $(".lighbox-container .lightbox-detailsPage").is(":visible");
+    $(".lighbox-container .lightbox-defaultTab").fadeOut();
+    $(".lighbox-container .lightbox-detailsPage").fadeIn();
+
+    if (slideDir) {
+        hideDir = (slideDir == "left" ? "right" : "left");
+        $(".lighbox-container .lightbox-detailsPage .tab.active").hide("slide", { direction: hideDir }, 500);
+        $(".lighbox-container .lightbox-detailsPage .lightbox-tab" + tabId).show("slide", { direction: slideDir }, 500);;
+    }
+    else {
+        $(".lighbox-container .lightbox-detailsPage .tab.active").fadeOut();
+        $(".lighbox-container .lightbox-detailsPage .lightbox-tab" + tabId).fadeIn();
+    }
+
+
+    $(".lighbox-container .lightbox-detailsPage .lightbox-tab" + tabId).addClass("active");
+    $(".lighbox-container .lightbox-detailsPage .lightbox-top-menu-item").removeClass("active");
+    $(".lighbox-container .lightbox-detailsPage .lightbox-top-menu-item[data-tab='tab" + tabId + "']").addClass("active");
+
+    window.setTimeout(function () {
+        $(".lighbox-container .lightbox-detailsPage .lightbox-tab" + tabId).find(".MainContaintArea").scrollbar({
+            "autoScrollSize": false,
+            "scrollx": $('.external-scroll_x'),
+            "scrolly": $('.external-scroll_y'),
+            duration: 10
+        });
+    }, 500);
+    
+    $(".lightbox-footer .BackToMain").show();
+    $(".lighbox-container .lightbox-detailsPage .tab.active .MainContaintArea").scrollTop(0);
+    if (!isMobile())
+        $(".lighbox-container .external-scroll_y").show();
+}
+function showDefaultView() {
+    $(".lighbox-container .lightbox-defaultTab").fadeIn();
+    $(".lighbox-container .lightbox-detailsPage").fadeOut();
+    $(".lightbox-footer .BackToMain").hide();
+    $(".lighbox-container .external-scroll_y").hide();
+}
+function moveToPrevious(slideDir) {
+    var activeTabId = parseInt($(".topMobMenuBar .mobNavigatorContent .mobCurrentTab .mobTab.active").attr("data-tab").replace("tab", ''));
+    var newTabId = activeTabId - 1;
+    if (newTabId == 0)
+        newTabId = 6;
+    handleMobNavigation(newTabId, false, slideDir);
+}
+function moveToNext(slideDir) {
+    var activeTabId = parseInt($(".topMobMenuBar .mobNavigatorContent .mobCurrentTab .mobTab.active").attr("data-tab").replace("tab", ''));
+    var newTabId = activeTabId + 1;
+    if (newTabId == 7)
+        newTabId = 1;
+    handleMobNavigation(newTabId, false, slideDir);
+}
+
+function handleMobNavigation(tabId, allowReLoad, slideDir) {
+    var activeTab = $(".topMobMenuBar .mobNavigatorContent .mobCurrentTab .mobTab.active");
+    if (activeTab.length > 0) {
+        var activTabData = activeTab.attr("data-tab");
+        if (!allowReLoad && activTabData.replace("tab", '') == tabId)
+            return;
+        $(".topMobMenuBar").removeClass(activTabData + "Active");
+        $(".topMobMenuBar").addClass("tab" + tabId + "Active");
+    }
+    $(".topMobMenuBar .mobNavigatorContent .mobCurrentTab .mobTab.active").removeClass("active");
+    $(".topMobMenuBar .mobNavigatorContent .mobCurrentTab .mobTab[data-tab='tab" + tabId + "']").addClass("active");
+
+    showTab(tabId, allowReLoad, slideDir);
+}
 
 (function ($) {
     $.fn.removeStyle = function (style) {
@@ -278,4 +277,25 @@ function swipedetect(el, callback) {
         if (swipedir == "left" || swipedir == "right")
         e.preventDefault()
     }, false)
+}
+
+function showLightboxPopup(type)
+{
+    var vid = $("#myVideo");
+    $("#mydiv").fadeIn("slow");
+    ga('send', 'pageview');
+    var defaultTab = 1;
+    if (type)
+        defaultTab = type.replace("tab", '');
+    if (defaultTab > 6 || defaultTab < 1)
+        type = "";
+    if (type || isMobile())
+        handleMobNavigation(defaultTab, true);
+    else
+        showDefaultView();
+}
+
+function hideLightboxPopup()
+{
+    $(".removePopup").trigger("click");
 }
