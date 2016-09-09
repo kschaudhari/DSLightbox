@@ -296,6 +296,9 @@ function showLightboxPopup(type)
         handleMobNavigation(defaultTab, true);
     else
         showDefaultView();
+
+    //pixel to track
+    
 }
 
 function hideLightboxPopup()
