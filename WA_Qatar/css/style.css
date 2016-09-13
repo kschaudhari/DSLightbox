@@ -388,6 +388,7 @@ transform:rotate(-180deg);
     background-image:url(../images/Tab5-flythereinstyle.png);
 }
 
+
 .BannerContentBox {
     height: auto;    
     top: 50%;
@@ -424,4 +425,38 @@ transform:rotate(-180deg);
 }
 .tab2Bannersmalltesxt {
     padding-right:31%;
+}
+
+.FollowBox {
+    width: 69px;
+    margin: 0 auto;
+    float: right;
+    margin-top:14px;
+    text-align:center;
+}
+.FollowBox .follwText {
+    font-family: 'Conv_JADIWA';
+    color:#5e6a71;
+    font-size: 2em;
+    line-height: 0px;
+}
+.FollowBox .SocialIconbox {
+    background-position: center center;
+    background-repeat: no-repeat;
+    display:inline-block;
+    height: 21px;
+    line-height: 40px;
+    text-align: center;
+    width: 22px;
+    background-image:url(../images/socialIcons.png);
+}
+.FollowBox .SocialIconbox .socialIcon{
+}
+.FollowBox .SocialIconbox .socialIcon.fb {
+}
+.FollowBox .SocialIconbox .socialIcon.tweet {
+}
+.FollowBox .SocialIconbox .socialIcon.youtube {
+}
+.FollowBox .SocialIconbox .socialIcon.insta {
 }
