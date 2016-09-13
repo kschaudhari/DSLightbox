@@ -1,0 +1,214 @@
+.clear{ clear:both;}
+#mydiv {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    left: 0%;
+    top: 0%;
+    position:fixed;
+    z-index: 200;
+    background-color:rgba(0,0,0,0.6);
+}
+#mydiv-content {
+    width: 100%;
+    max-width: 940px;
+    height: 85vh;
+    max-height:650px;
+    margin:0 auto;
+    padding: 0px;
+    background-color: #fff;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-family: 'Fira Sans';
+}
+.CloseBtn{
+	position:absolute;
+	top: -8px;
+	right: -52px;
+	z-index:12;
+	width: 60px;
+	height: 60px;
+	background-image:url(../images/Close.png);
+	display:block;
+}
+.togglecone.expandedcone{
+	background-color:green;
+}
+.mobDetector{display:none;}
+.lighbox-container
+{
+    width: 88.30%;
+    width: -webkit-calc(100%-110px);
+    width: -moz-calc(100%-110px);
+    width: calc(100%-110px);
+    height: 93.85%;
+    height: -webkit-calc(100%-40px);
+	height: -moz-calc(100%-40px);
+    height: calc(100%-40px);
+    
+    background-image:url(../images/Banners/WelcomeScreen-1000x650-bkg-bluepatern.jpg);
+    /* background: #fff; */
+    padding:20px;
+    padding-left:90px;
+}
+.lighbox-container .lightbox-content {
+    width:100%;
+    height:100%;
+    background-color: #fff;
+    
+}
+.lighbox-container .lightbox-content .lightbox-tab-menu{
+    position:absolute;
+    width: 140px;
+    height: 340px;
+    left: 0;
+    top:50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+.lighbox-container .lightbox-content .lightbox-tab-menu .lightbox-tab-menu-item{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width:100%;
+    height: 60px;
+    border: 1px solid #000;
+}
+.lighbox-container .lightbox-content .lightbox-tab-menu .lightbox-tab-menu-item.active{
+    background-color: #ff6a00;
+}
+.lighbox-container .lightbox-content .lightbox-defaultTab{
+    width:100%;
+    height:100%;
+    position: relative;
+}
+
+.lighbox-container .lightbox-content .lightbox-defaultTab .welcomeTab {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.lighbox-container .lightbox-content .lightbox-defaultTab .welcomeTab[data-tab="tab1"]{
+    background-color:#f00;
+}
+.lighbox-container .lightbox-content .lightbox-defaultTab .welcomeTab[data-tab="tab2"]{
+    background-color:#0f0;
+}
+.lighbox-container .lightbox-content .lightbox-defaultTab .welcomeTab[data-tab="tab3"]{
+    background-color:#808080;
+}
+.lighbox-container .lightbox-content .lightbox-defaultTab .welcomeTab[data-tab="tab4"]{
+    background-color:#288dc8;
+}
+.lighbox-container .lightbox-content .lightbox-defaultTab .welcomeTab[data-tab="tab5"]{
+    background-color:#00f;
+}
+.lighbox-container .lightbox-content .lightbox-defaultTab .welcomeTab.active{
+    display: block;
+}
+.lighbox-container .lightbox-content .lightbox-defaultTab .bullet-container{
+    position:absolute;
+    left: 50%;
+    bottom: 5.58%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 34.94%;
+}
+.lightbox-defaultTab .bullet-container:after{
+    clear:both;
+}
+.lightbox-defaultTab .bullet-container .bullet{
+    height: 2px;
+    width: 17.241%;
+    background-color:#fff;
+    float: left;
+    margin-right: 3.448%;
+}
+.lightbox-defaultTab .bullet-container .bullet.no-margin{
+	margin-right: 0px;
+}
+.lightbox-defaultTab .bullet-container .bullet .bullet-progress{
+    width: 0px;
+    background-color: #288dc8;
+    height: 100%;
+}
+.lightbox-defaultTab .default-navigator{
+    position:absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 24.1%;
+    /* display:table; */
+    height: 11.475%;
+    max-height: 70px;
+    min-height: 38px;
+    background-color: #fff;
+    max-width:200px;
+}
+.lightbox-defaultTab .default-navigator .default-navigator-container{
+    position:absolute;
+    width:100%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
+} 
+    .lightbox-defaultTab .default-navigator .prevTab {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        margin-top: 10px;
+        width: 30%;
+        cursor:pointer;
+    }
+    .lightbox-defaultTab .default-navigator .readMore {
+        display:table-cell;
+        vertical-align: middle;
+        text-align: center;
+        margin-top:1.64%;
+        width: 40%;
+        width: -webkit-calc(40%-2px);
+        width: -moz-calc(40%-2px);
+        width: calc(40%-2px);
+        border: 1px solid #dddddd;
+        border-top: 0px;
+        border-bottom: 0px;
+        cursor:pointer;
+    }
+    .lightbox-defaultTab .default-navigator .nextTab {
+        display:table-cell;
+        vertical-align: middle;
+        text-align: center;
+        margin-top:1.64%;
+        width: 30%;
+        cursor:pointer;
+    }
+.lightbox-menuItem-boxed .lighbox-menuContent .defaultContent .smallCaseTitle{
+    font-size: 44px;
+    margin-right: 10px;
+    top: 6px;
+    position: relative;
+    font-size: 2.5em;
+}
+.lightbox-menuItem-boxed .lighbox-menuContent .defaultContent .capitalCaseTitle{
+    font-size: 22px;
+    font-size: 1.3em;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+.lighbox-container .lightbox-content .lightbox-detailsPage{
+    width:100%;
+    height:100%;
+    position: relative;
+    display:none;
+}

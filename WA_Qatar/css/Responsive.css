@@ -1,0 +1,338 @@
+@media screen and (max-width: 767px) {
+	#mydiv-content {
+       top: 0;
+       -webkit-transform: translate(-50%, 0%);
+       -ms-transform: translate(-50%, 0%);
+	    transform: translate(-50%, 0%);
+		height:100vh;
+    }
+	.MobMenuBtn{
+		z-index:10;
+		display:block;
+	}
+	.topMobMenuBar{
+		display:block;
+	}
+	
+	.CloseBtn{
+		display: none;
+	}
+    .mobDetector{display:block;}
+    .topMobMenuBar .CloseBtn{
+		display: block;
+	}
+	.MenuMob {
+         display: table;
+         width: 100%;
+    }
+    .lightbox-defaultTab{
+        display:none !important;
+    }
+    .lightbox-detailsPage{
+        display:block !important;
+        opacity: 1;
+        visibility:visible;
+    }	
+    .lightbox-bootmGrad{
+        display:none;
+    }
+    .lightbox-footer{
+        display:none;
+    }
+    .lighbox-container{
+        margin-top:20vh;
+        height:100vh;
+        position:relative;
+    }
+    .lighbox-container .lightbox-title{
+        display:none;
+    }
+    .lighbox-container .lightbox-detailsPage .tab{
+        top: 0;
+		-webkit-transform: initial;
+		-moz-transform: initial;
+    	-ms-transform: initial;
+        transform: initial;
+        left: 0;
+        width: 100%;
+        /* bottom: 0; */
+        /* height: 105%; */
+        padding-bottom: 20px;
+        background: #fff;
+    }
+    .lighbox-container .lightbox-detailsPage .ContentTextBox
+    {
+        width: 100%;
+        margin: 0 auto;
+        padding:0px;
+        float: inherit;
+        text-align:center;
+    }
+    
+        .lighbox-container .lightbox-detailsPage .tab .BannerContentBox{
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            display: table;
+            height: 40vh;
+            width: 100%;
+            background-size: 100% 100%;
+        }
+    .lighbox-container .lightbox-detailsPage .lightbox-tab1 .BannerContentBox
+    {
+        background-image: url(../images/MobTabBanner1.jpg);
+    }
+    .lighbox-container .lightbox-detailsPage .lightbox-tab2 .BannerContentBox
+    {
+        background-image: url(../images/MobTabBanner2.jpg);
+    }
+    .lighbox-container .lightbox-detailsPage .lightbox-tab3 .BannerContentBox
+    {
+        background-image: url(../images/Banners/ExpandedScreen-930x530-bkg-tab3a.jpg);
+    }
+    .lighbox-container .lightbox-detailsPage .lightbox-tab4 .BannerContentBox
+    {
+        background-image: url(../images/Banners/ExpandedScreen-930x530-bkg-tab4a.jpg);
+    }
+   .lighbox-container .lightbox-detailsPage .lightbox-tab5 .BannerContentBox
+    {
+        background-image: url(../images/Banners/ExpandedScreen-930x530-bkg-tab5a.jpg);
+    }
+    .lighbox-container .lightbox-detailsPage .lightbox-tab6 .BannerContentBox
+    {
+           background-image: url('../images/tab6ContentBg.jpg');
+    }
+    .lighbox-container .lightbox-detailsPage .tab .BannerContentBox .TextBanner{
+        vertical-align: middle;
+        padding-left: 14px;
+        margin: 0;
+        /*padding-top: 9.5%;*/
+        display:table-cell;
+    }
+    .lighbox-container .lightbox-detailsPage .tab .BannerContentBox .TextBanner .SmallBnnerText{
+        line-height: 28px;
+        font-size: 0.5em;
+        display: block;
+        /*padding-left: 2%;*/
+    }
+    .lighbox-container .lightbox-detailsPage .tab .BannerContentBox .TextBanner .BigBnnerText{
+        line-height: 39px;
+        font-size: 0.5em;
+        display: block;
+    }
+    .OtherBox .LeftImgBox {
+        width:25%;
+        float:left;
+		max-width:100px;
+    }
+    .OtherBox .OtherDetailBox {
+        width:68%;
+		float:left;
+		margin-left:4%;
+    }
+    .OtherBox .LeftImgBox .OtherImg{
+        border: none;
+       /* -webkit-transform: translateY(-39%);
+        -ms-transform: translateY(-39%);
+        transform: translateY(-39%);
+        -moz-transform: translateY(-39%);*/
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+
+    
+    }
+    .OtherBox .LeftImgBox img {
+        border: 2px solid #fff;
+        webkit-box-shadow: 0px 1px 2px 0px rgba(12,67,99,1);
+        -moz-box-shadow: 0px 1px 2px 0px rgba(12,67,99,1);
+        box-shadow: 0px 1px 2px 0px rgba(12,67,99,1);
+        height: 95%;
+        width: 95%;
+        max-width: 100px;
+    }
+    .ShareBox {
+       width: 100%;
+       float: left;
+    }
+    /*.ShareBox .Sharelabel {
+        font-size: 0.7em;
+        width:40%;
+    }
+    .ShareBox a.tweet{
+        background-image:url('../images/mobTweetIcon.png');
+        background-size:22px;
+    }
+    .ShareBox a.fb {
+        background-image:url('../images/mobFbIcon.png');
+        background-size:22px;
+    }
+        */
+    .OtherBox .OtherName {
+        font-size: 0.55em;
+    }
+    .OtherBox .OtherDesignation {
+        font-size: 0.55em;
+    }
+    .OtherBox .OtherDetailBox {
+        margin-top: 24px;
+        text-align: left;
+    }
+    .readNextBox {
+        width: 100%;
+    }
+    .TextBgImg img.TextBgImageMob {
+        display:block;
+        margin-top: -10px;
+        margin-bottom: 7px;
+    }
+    .TextBanner .tab1Bannersmalltesxt {
+        padding-left: 2%;
+    }
+    .TextBanner .tab2SmalltextAlignmnt1 {
+        padding-left: 2%;
+    }
+    .TextBanner .tab2SmalltextAlignmnt {
+        padding-left: 18%;
+    }
+    .TextBanner .tab3BigtextAligning {
+        padding-left: 13%;
+    }
+    .TextBanner .tab4Bannersmalltesxt1 {
+        padding-left: 0%;
+    }
+    .TextBanner .tab4Bannersmalltesxt2 {
+        padding-left: 26%;
+    }
+    .TextBanner .tab4BannerBigtesxt1 {
+        padding-left: 15%;
+    }
+    .TextBanner .tab4BannerBigtesxt2{
+        padding-left: 9%;
+    }
+    .TextBanner .tab5Bannersmalltesxt1 {
+        padding-left: 4%;
+    }
+    .TextBanner .tab5Bannersmalltesxt2 {
+        padding-left: 28%;
+    }
+    .TextBanner .tab5BannerBigtesxt1 {
+        padding-left: 0%;
+    }
+    .TextBanner .tab5BannerBigtesxt2{
+        padding-left: 9%;
+    }
+    .TextBanner .tab6Bannersmalltesxt {
+        padding-left: 2%;
+    } 
+    .TextBanner .tab6BannerBigtesxt {
+        padding-left: 1%;
+    }
+    .ContentTextBox .DetailDescription h3.DescriptionTextHeading {
+        padding:0px 10px;
+            text-align: left;
+    }
+    .ContentTextBox .DetailDescription p.DescriptionTextTab2, .ContentTextBox .DetailDescription p.DescriptionTextTab1 {
+        padding:0px 10px;
+            text-align: left;
+    }
+    .ContentFooter{
+		width: -webkit-calc(100% - 20px);
+		width: -moz-calc(100% - 20px);
+        width: calc(100% - 20px);
+    }
+    .NeedToKnowBox {
+		width: -webkit-calc(100% - 20px);
+		width: -moz-calc(100% - 20px);
+        width: calc(100% - 20px);
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .OtherBox{
+		width: -webkit-calc(100% - 20px);
+		width: -moz-calc(100% - 20px);
+        width: calc(100% - 20px);
+        margin: 0 auto;
+        display: inline-block;
+        float: inherit;
+    }
+    .ContentTextBox .WhaleText {
+		width: -webkit-calc(100% - 20px);
+		width: -moz-calc(100% - 20px);
+        width: calc(100% - 20px);
+        margin: 0 auto;
+        text-align:left;
+    }
+    .HeighLights, .SubHeadBoxTab6 {
+        text-align:left;
+		width: -webkit-calc(100% - 20px);
+		width: -moz-calc(100% - 20px);
+        width: calc(100% - 20px);
+        margin: 0 auto;
+    }
+    .Tab6SeprationBorder {
+        width: -webkit-calc(100% - 20px);
+		width: -moz-calc(100% - 20px);
+        width: calc(100% - 20px);
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .Tab6Desc .HeadingLink .tab5Heading {
+      text-align:left;
+      padding: 0px 10px;
+     }
+    .Tab5DescBox {
+        text-align:left;
+    }
+    .Tab5DescBox .TabBText, .Tab5DescBox .tab5Heading {
+        padding:0px 10px;
+    }
+    .Tab2Headingsplit2lines {
+        width:100%;
+    }
+    .lightbox-detailsPage .MainContaintArea .BigbagImg{
+        width: 100%;
+        overflow: hidden;
+    }
+    .lighbox-container .external-scroll_y.scroll-scrolly_visible{
+
+        display:none !important;
+    }
+    .Tab5MontSaprator {
+        width: -webkit-calc(100% - 20px);
+		width: -moz-calc(100% - 20px);
+        width: calc(100% - 20px);
+        margin-left:auto;
+        margin-right:auto;
+        margin-bottom: 40px;
+    }
+    #TabbackToMain {
+        display:none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+	.mobMenuContainer{
+		display:none !important;
+	}
+
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .lightbox-menuItem-boxed .lighbox-menuContent .hoverContent {
+        top: 27%;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1120px) {
+    #mydiv-content{
+        width: 86%;
+    }
+
+}
+/* Safari CSS */
+@media screen and (min-color-index:0) and (webkit-min-device-pixel-ratio:0) { @media
+{
+	@media screen and (max-width: 767px) {
+    
+	}
+}}
+/* Safari CSS end */	

@@ -1,0 +1,306 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lightbox</title>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,500i" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/font.css" />
+<link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/Tabs.css"/>
+<link rel="stylesheet" type="text/css" href="css/mobile.css" />
+<link rel="stylesheet" type="text/css" href="css/Responsive.css" />
+
+    <script src="js/jquery-1.12.1.min.js" ></script>
+    <script src="js/customscroll.js"></script>
+    <script src="js/ds-lightbox.js"></script>
+    <script>
+  
+    </script>
+    <!-- url prefix for s3 https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/ -->
+</head>
+<body style="height:1000px;">
+
+<div id="mydiv" >
+   <div id="mydiv-content">
+     <a href="javascript:void(0)" id="lightbox-exit" class="CloseBtn removePopup" ></a>    
+       <div class="topMobMenuBar tab1Active">
+           <div class="topMobItem MobMenuBar">
+               <div class="mobMenu">
+                   <div class="mobMenuIcon menuElement">
+                       <img src="mobMenu.png" />
+                   </div>
+               </div>
+               <div class="mobMenuLogos menuElement">
+                   <div class="mobDiscoverLogo">
+                       <img src="mobDiscoverLogo.png" />
+                   </div>
+                   <div class="mobWALogo">
+                       <img src="mobWALogo.png" />
+                   </div>
+               </div>
+               <div id="lightbox-mobile-exit" class="mobMenuClose menuElement">
+                   <img class="removePopup" src="mobClose.png" />
+               </div>
+           </div>
+           <div class="mobDropdownMenu">
+               <div class="mobDropdownMenuItem" data-tab="tab1">
+                   why WESTERN AUSTRALIA
+               </div>
+               <div class="mobDropdownMenuItem" data-tab="tab2">whale WATCHING</div>
+               <div class="mobDropdownMenuItem" data-tab="tab3">ningaloo REEF</div>
+               <div class="mobDropdownMenuItem" data-tab="tab4">epic WILDLIFE journeys</div>
+               <div class="mobDropdownMenuItem" data-tab="tab5">where to go AND WHEN</div>
+               <div class="mobDropdownMenuItem" data-tab="tab6">holiday IDEAS</div>
+               </div>
+           <div class="topMobItem mobNavigator">
+
+               <div class="mobNavigatorContent">
+                   <div class="mobPrevTab">
+                       <div class="navArrow">
+                           <img src="mobArrow.png" />
+                       </div>
+                   </div>
+                   <div class="mobNextTab">
+                       <div class="navArrow">
+                           <img src="mobArrow.png" />
+                       </div>
+                   </div>
+                   <div class="mobCurrentTab">
+                       <div class="mobNavigationTabs">
+                           <div class="mobTab1 mobTab active" data-tab="tab1">
+                               <div class="mobCurrentTabLogo">
+                                   <img src="tab1Hover.png" />
+                                   <span class="smallCaseTitle leftDistance"><span>why</span></span>
+                                    <span class="capitalCaseTitle">WESTERN AUSTRALIA</span>
+                               </div>
+                           </div>
+                           <div class="mobTab2 mobTab" data-tab="tab2">
+                               <div class="mobCurrentTabLogo">
+                                   <img src="tab2Hover.png" />
+                                   <span class="smallCaseTitle leftDistance"><span>whale</span></span>
+                                   <span class="capitalCaseTitle">WATCHING</span>
+                               </div>
+                           </div>
+                           <div class="mobTab3 mobTab" data-tab="tab3">
+                               <div class="mobCurrentTabLogo">
+                                   <img src="tab3Hover.png" />
+                                   <span class="smallCaseTitle leftDistance"><span>ningaloo</span></span>
+                                   <span class="capitalCaseTitle">REEF</span>
+                               </div>
+                           </div>
+                           <div class="mobTab4 mobTab" data-tab="tab4">
+                               <div class="mobCurrentTabLogo">
+                                   <img src="tab4Hover.png" />
+                                   <span class="smallCaseTitle leftDistance"><span>epic</span></span>
+                                   <span class="capitalCaseTitle">WILDLIFE</span>
+                                   <span class="smallCaseTitle"><span>journeys</span></span>
+                               </div>
+                           </div>
+                           <div class="mobTab1 mobTab" data-tab="tab5">
+                               <div class="mobCurrentTabLogo">
+                                   <img src="tab5Hover.png" />
+                                   <span class="smallCaseTitle leftDistance"><span>where to go</span></span>
+                                   <span class="capitalCaseTitle">AND WHEN</span>
+                               </div>
+                           </div>
+                           <div class="mobTab6 mobTab" data-tab="tab6">
+                               <div class="mobCurrentTabLogo">
+                                   <img src="tab5Hover.png" />
+                                   <span class="smallCaseTitle leftDistance"><span>holiday</span></span>
+                                   <span class="capitalCaseTitle">IDEAS</span>
+                               </div>
+                           </div>
+                       </div>
+                       
+                   </div>
+                   
+               </div>
+           </div>
+           
+       </div>
+       <div class="lighbox-container">
+           
+           <div class="lightbox-content">
+               <div class="lightbox-tab-menu">
+                   <div class="lightbox-tab-menu-item active"  data-tab="tab1">
+                       <div class="lightbox-tab-menu-item-logo">
+
+                       </div>
+                       <div class="lightbox-tab-menu-item-text">
+                           <span class="smallCaseTitle">Tab1</span>
+                           <span class="capitalCaseTitle"></span>
+                       </div>
+                   </div>
+                   <div class="lightbox-tab-menu-item" data-tab="tab2">
+                       <div class="lightbox-tab-menu-item-logo">
+
+                       </div>
+                       <div class="lightbox-tab-menu-item-text">
+                           <span class="smallCaseTitle">Tab2</span>
+                           <span class="capitalCaseTitle"></span>
+                       </div>
+                   </div>
+                   <div class="lightbox-tab-menu-item" data-tab="tab3">
+                       <div class="lightbox-tab-menu-item-logo">
+
+                       </div>
+                       <div class="lightbox-tab-menu-item-text">
+                           <span class="smallCaseTitle">Tab3</span>
+                           <span class="capitalCaseTitle"></span>
+                       </div>
+                   </div>
+                   <div class="lightbox-tab-menu-item" data-tab="tab4">
+                       <div class="lightbox-tab-menu-item-logo">
+
+                       </div>
+                       <div class="lightbox-tab-menu-item-text">
+                           <span class="smallCaseTitle">Tab4</span>
+                           <span class="capitalCaseTitle"></span>
+                       </div>
+                   </div>
+                   <div class="lightbox-tab-menu-item" data-tab="tab5">
+                       <div class="lightbox-tab-menu-item-logo">
+
+                       </div>
+                       <div class="lightbox-tab-menu-item-text">
+                           <span class="smallCaseTitle">Tab5</span>
+                           <span class="capitalCaseTitle"></span>
+                       </div>
+                   </div>
+               </div>
+               <div class="lightbox-defaultTab">
+                   <div class="welcomeTab active" data-tab="tab1">
+                       Tab1
+                   </div>
+                   <div class="welcomeTab" data-tab="tab2">
+                       Tab2
+                   </div>
+                   <div class="welcomeTab" data-tab="tab3">
+                       Tab3
+                   </div>
+                   <div class="welcomeTab" data-tab="tab4">
+                       Tab4
+                   </div>
+                   <div class="welcomeTab" data-tab="tab5">
+                       Tab5
+                   </div>
+
+                   <div class="bullet-container">
+                       <div class="bullet" data-tab="tab1">
+                           <div class="bullet-progress"></div>
+                       </div>
+                       <div class="bullet" data-tab="tab2">
+                           <div class="bullet-progress"></div>
+                       </div>
+                       <div class="bullet" data-tab="tab3">
+                           <div class="bullet-progress"></div>
+                       </div>
+                       <div class="bullet" data-tab="tab4">
+                           <div class="bullet-progress"></div>
+                       </div>
+                       <div class="bullet no-margin" data-tab="tab5">
+                           <div class="bullet-progress"></div>
+                       </div>
+                   </div>
+                   <div class="default-navigator">
+                       <div class="default-navigator-container">
+                           <div class="prevTab">PREV</div>
+                           <div class="readMore">READ MORE</div>
+                           <div class="nextTab">NEXT</div>
+                       </div>
+                   </div>
+               </div>
+               <div class="lightbox-detailsPage">
+                   <div class="tab active" data-tab="tab1">
+                       Tab 1 Content
+                   </div>
+                   <div class="tab" data-tab="tab2">
+                       Tab 2 Content
+                   </div>
+                   <div class="tab" data-tab="tab3">
+                       Tab 3 Content
+                   </div>
+                   <div class="tab" data-tab="tab4">
+                       Tab 4 Content
+                   </div>
+                   <div class="tab" data-tab="tab5">
+                       Tab 5 Content
+                   </div>
+               </div>
+           </div>
+           <div class="lightbox-bootmGrad">
+
+           </div>
+           
+
+           <div class="external-scroll_y">
+               <div style="position:relative">
+                   <div class="scroll-element_outer">
+                       <div class="scroll-element_size"></div>
+                       <div class="scroll-element_track"></div>
+                       <div class="scroll-bar"></div>
+                   </div>
+               </div>
+           </div>
+
+           </div>
+       <div id="preloadImages" style="display:none">
+           <img src="Banners/WelcomeScreen-1000x650-bkg-tab1.jpg" />
+           <img src="Banners/WelcomeScreen-1000x650-bkg-tab2.jpg" />
+           <img src="Banners/WelcomeScreen-1000x650-bkg-tab3.jpg" />
+           <img src="Banners/WelcomeScreen-1000x650-bkg-tab4.jpg" />
+           <img src="Banners/WelcomeScreen-1000x650-bkg-tab5.jpg" />
+           <img src="Banners/WelcomeScreen-1000x650-bkg-tab6.jpg" />
+           
+           <img src="patternHover.png" />
+           <img src="patternActive.png" />
+
+           <img src="Banners/ExpandedScreen-930x530-bkg-tab1.jpg" />
+
+           <img src="Banners/ExpandedScreen-930x530-bkg-tab2a.jpg" />
+           <img src="Banners/ExpandedScreen-930x530-bkg-tab2b.jpg" />
+           <img src="Banners/ExpandedScreen-930x530-bkg-tab2b.jpg" />
+           <img src="Banners/ExpandedScreen-930x530-bkg-tab2c.jpg" />
+
+           <img src="Banners/ExpandedScreen-930x530-bkg-tab3a.jpg" />
+
+           <img src="Banners/ExpandedScreen-930x530-bkg-tab4a.jpg" />
+           <img src="Banners/ExpandedScreen-930x530-bkg-tab4b.jpg" />
+           <img src="Banners/ExpandedScreen-930x530-bkg-tab4c.jpg" />
+           <img src="Banners/ExpandedScreen-930x530-bkg-tab4d.jpg" />
+           <img src="Banners/ExpandedScreen-930x530-bkg-tab4e.jpg" />
+           <img src="Banners/ExpandedScreen-930x530-bkg-tab4f.jpg" />
+           <img src="Banners/tab4wdcrossing.jpg" />
+
+           <img src="Banners/tab5June.jpg" />
+           <img src="Banners/ExpandedScreen-930x530-bkg-tab5a.jpg" />
+           <img src="Banners/ExpandedScreen-930x530-bkg-tab5b.jpg" />
+           <img src="Banners/ExpandedScreen-930x530-bkg-tab5c.jpg" />
+           <img src="Banners/ExpandedScreen-930x530-bkg-tab5d.jpg" />
+           <img src="Banners/ExpandedScreen-930x530-bkg-tab5e.jpg" />
+           <img src="Banners/ExpandedScreen-930x530-bkg-tab5f.jpg" />
+           <img src="Banners/ExpandedScreen-930x530-bkg-tab5july.jpg" />
+           <img src="Banners/ExpandedScreen-930x530-bkg-tab5h.jpg" />
+           <img src="Banners/ExpandedScreen-930x530-bkg-tab5i.jpg" />
+           <img src="Banners/ExpandedScreen-930x530-bkg-tab5j.jpg" />
+           <img src="Banners/ExpandedScreen-930x530-bkg-tab5k.jpg" />
+           <img src="Banners/ExpandedScreen-930x530-bkg-tab5l.jpg" />
+           <img src="Banners/ExpandedScreen-930x530-bkg-tab5nov.jpg" />
+
+       </div>
+       <div class="mobDetector"></div>
+    </div>
+</div>
+    <script>
+        (function (d, p) {
+            var a = new Image(); a.onload = function () { a = null }; a.src =
+
+        (d.location.protocol == "https:" ? "https:" : "http:") + "//rs.gwallet.com/r1/pixel/x" + p + "r" + Math.round(1E9 * Math.random())
+        })(document, "39051")
+    </script>
+    
+</body>
+</html>
