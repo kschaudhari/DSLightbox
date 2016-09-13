@@ -183,6 +183,36 @@ function showTab(tabId, allowReLoad, slideDir) {
     $(".lighbox-container .lightbox-detailsPage .tab.active .MainContaintArea").scrollTop(0);
     if (!isMobile())
         $(".lighbox-container .external-scroll_y").show();
+
+    var tabName = "why WESTERN AUSTRALIA";
+    switch(parseInt(tabId))
+    {
+        case 1:
+            tabName = "why WESTERN AUSTRALIA";
+            break;
+        case 2:
+            tabName = "whale WATCHING";
+            break;
+        case 3:
+            tabName = "ningaloo REEF";
+            break;
+        case 4:
+            tabName = "epic WILDLIFE journeys";
+            break;
+        case 5:
+            tabName = "where to go AND WHEN";
+            break;
+        case 6:
+            tabName = "holiday IDEAS";
+            break;
+    }
+    ga('send', {
+        hitType: 'event',
+        eventCategory: 'Tab',
+        eventAction: 'TabView',
+        eventLabel: 'tab ' + tabId + ' - ' + tabName,
+        transport: 'beacon'
+    });
 }
 function showDefaultView() {
     $(".lighbox-container .lightbox-defaultTab").fadeIn();
