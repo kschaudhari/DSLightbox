@@ -29,3 +29,10 @@
 	font-weight: normal;
 	font-style: normal;
 }
+@font-face {
+	font-family: 'Proxima-Nova';
+    src: url('../fonts/Proxima-Nova.eot');
+	src: local('☺'), url('../fonts/Proxima-Nova.woff') format('woff'), url('../fonts/Proxima-Nova.ttf') format('truetype'), url('../fonts/Proxima-Nova.svg') format('svg'), url(../fonts/Proxima-Nova.otf) format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}

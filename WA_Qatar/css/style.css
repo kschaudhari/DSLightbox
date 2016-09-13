@@ -48,18 +48,17 @@
     width: calc(100%-110px);
     height: 93.85%;
     height: -webkit-calc(100%-40px);
-	height: -moz-calc(100%-40px);
+    height: -moz-calc(100%-40px);
     height: calc(100%-40px);
-    
     background-image:url(../images/QatarBg.jpg);
     /* background: #fff; */
     padding:20px;
     padding-left:90px;
+    position: relative;
 }
 .lighbox-container .lightbox-content {
     width:100%;
     height:100%;
-    
 }
 .lighbox-container .lightbox-content .lightbox-default-booklet, .lighbox-container .lightbox-content .lightbox-detail-booklet{
     width:100%;
@@ -73,13 +72,14 @@
 .lighbox-container .lightbox-content .lightbox-tab-menu{
     position:absolute;
     width: 140px;
-   /* height: 340px;*/
+    /* height: 340px;*/
     left: 0;
-    top:50%;
-    -webkit-transform: translate(-42%,-50%);
-    -ms-transform: translate(-42%,-50%);
-    -moz-transform: translate(-42%,-50%);
-    transform: translate(-42%,-50%);
+    /*top:50%;*/
+    -webkit-transform: translate(-42%);
+    -ms-transform: translate(-42%);
+    -moz-transform: translate(-42%);
+    transform: translate(-42%);
+    bottom: 14px;
 }
 .lighbox-container .lightbox-content .lightbox-tab-menu .lightbox-tab-menu-item{
 /*    margin-top: 9px;*/
@@ -190,8 +190,8 @@ box-shadow: 0px 1px 10px 0px rgba(110,128,138, 0.8);
 }
 .lightbox-default-booklet .default-navigator{
     position:absolute;
-    bottom: 0px;
-    right: 0px;
+    bottom: -1px;
+    right: -1px;
     width: 24.1%;
     /* display:table; */
     height: 11.475%;
@@ -199,7 +199,6 @@ box-shadow: 0px 1px 10px 0px rgba(110,128,138, 0.8);
     min-height: 38px;
     background-image:url(../images/navigaterBg.png);
     max-width:200px;
-    
 }
 .lightbox-default-booklet .default-navigator .default-navigator-container{
     position:absolute;
@@ -230,6 +229,7 @@ box-shadow: 0px 1px 10px 0px rgba(110,128,138, 0.8);
 .lightbox-default-booklet .default-navigator .default-navigator-container .NextImg {
         vertical-align: middle;
         float:right;
+            margin-top: 1px;
     }
     .lightbox-default-booklet .default-navigator .readMore {
         display:table-cell;
@@ -398,12 +398,12 @@ transform:rotate(-180deg);
 
 
 .BannerContentBox {
-    height: auto;    
+    height: auto;
     top: 50%;
     position:absolute;
     right: 0;
     text-align: right;
-    width: 45%;
+    width: 318px;
     margin-right: 5%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
@@ -435,6 +435,37 @@ transform:rotate(-180deg);
     padding-right:31%;
 }
 
+.BannerBottomRightLogo {
+    height: auto;
+    position: absolute;
+    right: 0;
+    bottom: 14.5%;
+    width: 191px;
+}
+.BannerBottomRightLogo .BottomLogoimgBox {
+    margin-top:21px;
+    display: inline-block;
+    width: 100%;
+}
+.BannerBottomRightLogo .BottomLogoimgBox .LogoBox {
+    width:46%;
+    float:left;
+}
+.BannerBottomRightLogo .BottomLogoimgBox .WALogo {
+    
+}
+.BannerBottomRightLogo .BottomLogoimgBox .QatarLogo {
+    
+}
+.BannerBottomRightLogo .BottomLogoTitle {
+    font-family: 'Proxima-Nova';
+    letter-spacing:1px;
+    font-size:0.8em;
+    font-style:italic;
+    color:#fff;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+
 .FollowBox {
     width: 69px;
     margin: 0 auto;
@@ -449,7 +480,13 @@ transform:rotate(-180deg);
     line-height: 0px;
 }
 .FollowBox .SocialIconbox {
-    background-position: center center;
+       margin-left:auto;
+       margin-right:auto;
+       margin-top: 26px;
+       width: 22px;
+}
+.FollowBox .SocialIconbox .socialIcon{
+     background-position: center center;
     background-repeat: no-repeat;
     display:inline-block;
     height: 21px;
@@ -457,14 +494,19 @@ transform:rotate(-180deg);
     text-align: center;
     width: 22px;
     background-image:url(../images/socialIcons.png);
-}
-.FollowBox .SocialIconbox .socialIcon{
+    cursor:pointer;
 }
 .FollowBox .SocialIconbox .socialIcon.fb {
+    background-position: 0px -2px;
 }
 .FollowBox .SocialIconbox .socialIcon.tweet {
+    background-position: 0px -29px;
+    height: 18px;
 }
 .FollowBox .SocialIconbox .socialIcon.youtube {
+    background-position: 0px -53px;
+    height: 15px;
 }
 .FollowBox .SocialIconbox .socialIcon.insta {
+    background-position: 0px -72px;
 }
