@@ -2,6 +2,12 @@
 {
     var images = $(imageContainer).find(".image-item");
     
+    if (images.length <= 1)
+    {
+        $(bulletContainer).closest(".image-carousel-controls").hide();
+        return;
+    }
+    $(bulletContainer).closest(".image-carousel-controls").show();
     $(bulletContainer).html('');
     for(var index = 0; index < images.length; index++)
     {
