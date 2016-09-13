@@ -133,7 +133,7 @@ $(document).ready(function () {
 var $bookBlockDefault = null;
 function setBookLetViewForReadMore()
 {
-    $bookBlockDefault = $('.lighbox-default-booklet').bookblock({
+    $bookBlockDefault = $('.lightbox-default-booklet').bookblock({
         speed : 500,
         perspective : 2000,
         shadowSides	: 0.8,
