@@ -40,9 +40,13 @@
         display:none;
     }
     .lighbox-container{
-        margin-top:20vh;
-        height:100vh;
-        position:relative;
+            margin: 0px auto;
+    margin-top: 20vh;
+    height: 100vh;
+    position: relative;
+    padding: 0px;
+    padding-top: 20px;
+    width: 95%;
     }
     .lighbox-container .lightbox-title{
         display:none;
@@ -308,6 +312,15 @@
     }
     #TabbackToMain {
         display:none;
+    }
+    .lighbox-container .lightbox-content .lightbox-tab-menu{
+        display:none;
+    }
+    .lightbox-detailsPage .lightbox-detail-booklet .page-background-images{
+        display:none;
+    }
+    .lightbox-detailsPage .lightbox-detail-booklet .page-content{
+        width:100%;
     }
 }
 

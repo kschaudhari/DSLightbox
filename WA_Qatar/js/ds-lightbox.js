@@ -40,7 +40,9 @@ $(document).ready(function () {
         showMoreDetails();
     });
 
-
+    $(".lighbox-container .lightbox-detailsPage .detail-navigator .mainMenu").click(function (e) {
+        showDefaultView();
+    });
     $("#TabbackToMain").click(function () {
         showDefaultView();
     });
@@ -138,6 +140,9 @@ function setBookLetViewForReadMore()
         shadowFlip	: 0.4,
         onEndFlip : function(old, page, isLimit) {
             current = page;
+            if ($(".lighbox-container .lightbox-content .lightbox-defaultTab").is(":visible")) {
+                autoChangeTab();
+            }
         }
     } )
 }
@@ -162,6 +167,7 @@ function setBookLetViewForDetails() {
             $(".lighbox-container .lightbox-detailsPage .tab.active .MainContaintArea").scrollTop(0);
             if (!isMobile())
                 $(".lighbox-container .external-scroll_y").show();
+            
         }
     })
 }
@@ -239,14 +245,16 @@ function showTab(tabId, allowReLoad, slideDir) {
     $(".lighbox-container .lightbox-detailsPage .lightbox-top-menu-item").removeClass("active");
     $(".lighbox-container .lightbox-detailsPage .lightbox-top-menu-item[data-tab='tab" + tabId + "']").addClass("active");
 
+    if (detailsVisible)
     $bookBlockPage.bookblock('jump', tabId);
 
-    
+    setImageCarousel($(".lighbox-container .lightbox-detailsPage .tab.active .page-background-images"), $(".lighbox-container .lightbox-detailsPage .image-bullet-container"), $(".lighbox-container .lightbox-detailsPage .next-image"), $(".lighbox-container .lightbox-detailsPage .prev-image"));
 }
 function showDefaultView() {
     $(".lighbox-container .lightbox-defaultTab").fadeIn();
     $(".lighbox-container .lightbox-detailsPage").fadeOut();
-    autoChangeTab();
+    
+    $bookBlockDefault.bookblock('jump', 1);
     //$(".lightbox-footer .BackToMain").hide();
 }
 
