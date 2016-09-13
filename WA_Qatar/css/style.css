@@ -51,7 +51,7 @@
 	height: -moz-calc(100%-40px);
     height: calc(100%-40px);
     
-    background-image:url(../images/Banners/WelcomeScreen-1000x650-bkg-bluepatern.jpg);
+    background-image:url(../images/QatarBg.jpg);
     /* background: #fff; */
     padding:20px;
     padding-left:90px;
@@ -59,7 +59,7 @@
 .lighbox-container .lightbox-content {
     width:100%;
     height:100%;
-	 
+    
 }
 .lighbox-container .lightbox-content .lighbox-default-booklet, .lighbox-container .lightbox-content .lightbox-detail-booklet{
     width:100%;
@@ -73,23 +73,38 @@
 .lighbox-container .lightbox-content .lightbox-tab-menu{
     position:absolute;
     width: 140px;
-    height: 340px;
+   /* height: 340px;*/
     left: 0;
     top:50%;
-    -webkit-transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-    -moz-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-42%,-50%);
+    -ms-transform: translate(-42%,-50%);
+    -moz-transform: translate(-42%,-50%);
+    transform: translate(-42%,-50%);
 }
 .lighbox-container .lightbox-content .lightbox-tab-menu .lightbox-tab-menu-item{
-    margin-top: 5px;
-    margin-bottom: 5px;
+/*    margin-top: 9px;*/
+    margin-bottom: 9px;
     width:100%;
     height: 60px;
-    border: 1px solid #000;
+ /*   border: 1px solid #000;*/
+ -webkit-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.2);
+-moz-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.2);
+box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.2);
+position:relative;
+background-color:#fff;
+cursor:pointer;
+}
+.lighbox-container .lightbox-content .lightbox-tab-menu .lightbox-tab-menu-item:last-child {
+    margin-bottom:0px;
+}
+.lighbox-container .lightbox-content .lightbox-tab-menu .lightbox-tab-menu-item:first-child .lightbox-tab-menu-item-text .capitalCaseTitle{
+    top:0px;
 }
 .lighbox-container .lightbox-content .lightbox-tab-menu .lightbox-tab-menu-item.active{
-    background-color: #ff6a00;
+    /*background-color: #ff6a00;*/
+    -webkit-box-shadow: 0px 1px 10px 0px rgba(110,128,138,0.8);
+-moz-box-shadow: 0px 1px 10px 0px rgba(110,128,138, 0.8);
+box-shadow: 0px 1px 10px 0px rgba(110,128,138, 0.8);
 }
 .lighbox-container .lightbox-content .lightbox-defaultTab{
     width:100%;
@@ -102,12 +117,28 @@
     width: 100%;
     height: 100%;
     display: none;
+    background-size:cover;
+    background-position:center center;
 }
-.lighbox-container .lightbox-content .lighbox-default-booklet .welcomeTab[data-tab="tab1"]{
-    background-color:#f00;
+.lighbox-container .lightbox-content .lightbox-default-booklet .welcomeTab .OverlayImg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left:0px;
+    background-size:cover;
+    background-position:center center;
 }
-.lighbox-container .lightbox-content .lighbox-default-booklet .welcomeTab[data-tab="tab2"]{
-    background-color:#0f0;
+.lighbox-container .lightbox-content .lightbox-default-booklet .welcomeTab[data-tab="tab1"] .OverlayImg {
+    /*background-image:url(../images/Banner/welcomeTab1Overlay.png);*/
+}
+.lighbox-container .lightbox-content .lightbox-default-booklet .welcomeTab[data-tab="tab1"]{
+    /*background-color:#f00;*/
+    /*background-image:url(../images/Banner/welcomeScreeenTab1.jpg);*/
+    background-image:url(../images/Banner/tab1-WelcomeAustraliawithshaddow.jpg); 
+}
+.lighbox-container .lightbox-content .lightbox-default-booklet .welcomeTab[data-tab="tab2"]{
+    /*background-color:#0f0;*/
+    background-image:url(../images/Banner/welcomeScreeenTab2.jpg);
 }
 .lighbox-container .lightbox-content .lighbox-default-booklet .welcomeTab[data-tab="tab3"]{
     background-color:#808080;
@@ -158,7 +189,7 @@
     height: 11.475%;
     max-height: 70px;
     min-height: 38px;
-    background-color: #fff;
+    background-image:url(../images/navigaterBg.png);
     max-width:200px;
     
 }
@@ -178,6 +209,19 @@
         margin-top: 10px;
         width: 30%;
         cursor:pointer;
+        font-size:0.7em;
+        font-family: 'Proxima-Nova-Condensed-Light';
+        color:#a9aeb2;
+       /* background-image:url(../images/Control-arrow-Prev.png);
+        background-repeat:no-repeat;
+        background-position: left center;*/
+    }
+.lightbox-default-booklet .default-navigator .default-navigator-container .PrevImg {
+        vertical-align: middle;
+}
+.lightbox-default-booklet .default-navigator .default-navigator-container .NextImg {
+        vertical-align: middle;
+        float:right;
     }
     .lighbox-default-booklet .default-navigator .readMore {
         display:table-cell;
@@ -192,6 +236,11 @@
         border-top: 0px;
         border-bottom: 0px;
         cursor:pointer;
+        color:#288dc8;
+        font-family: 'Proxima-Nova-Condensed-Semibold';
+        font-size: 1.2em;
+        font-style: italic;
+        line-height: 1.2em;
     }
     .lighbox-default-booklet .default-navigator .nextTab {
         display:table-cell;
@@ -200,6 +249,13 @@
         margin-top:1.64%;
         width: 30%;
         cursor:pointer;
+        font-size:0.7em;
+        font-family: 'Proxima-Nova-Condensed-Light';
+        /*background-image:url(../images/Control-arrow-Next.png);
+        background-repeat:no-repeat;
+        background-position: right center;*/
+        color:#a9aeb2;
+        line-height: 2em;
     }
 .lightbox-menuItem-boxed .lighbox-menuContent .defaultContent .smallCaseTitle{
     font-size: 44px;
@@ -220,4 +276,114 @@
     height:100%;
     position: relative;
     display:none;
+}
+.lighbox-container .lightbox-content .lightbox-tab-menu .lightbox-tab-menu-item-text {
+   width:75px;
+   float:right;
+   font-family: 'Conv_JADIWA';
+   color:#5e6a71;
+   position: relative;
+   left:0px;
+      top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.lighbox-container .lightbox-content .lightbox-tab-menu .lightbox-tab-menu-item-text .smallCaseTitle {
+    font-size: 1.9em;
+    width:100%;
+    display: inline-block;
+    line-height: 1;
+}
+.lighbox-container .lightbox-content .lightbox-tab-menu .lightbox-tab-menu-item .ActiveArrow {
+    width:11px;
+    height:18px;
+    display:block;
+    position:absolute;
+    right:-4px;
+     top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background-image:url(../images/LeftTabHoverArrow.png);
+    display:none;
+}
+.lighbox-container .lightbox-content .lightbox-tab-menu .lightbox-tab-menu-item.active .ActiveArrow,
+.lighbox-container .lightbox-content .lightbox-tab-menu .lightbox-tab-menu-item:hover .ActiveArrow {
+    display:block;
+}
+.lighbox-container .lightbox-content .lightbox-tab-menu .lightbox-tab-menu-item-text .capitalCaseTitle{
+    font-size: 1em;
+    top: -6px;
+    position: relative;
+}
+.lighbox-container .lightbox-content .lightbox-tab-menu .lightbox-tab-menu-item.active .lightbox-tab-menu-item-text,
+.lighbox-container .lightbox-content .lightbox-tab-menu .lightbox-tab-menu-item:hover .lightbox-tab-menu-item-text{
+    color:#00324f;
+}
+.lighbox-container .lightbox-content .lightbox-tab-menu .lightbox-tab-menu-item .lightbox-tab-menu-item-logo {
+    position:absolute;
+    height:50px;
+    left:5px;
+    z-index: 0;
+      top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.lighbox-container .lightbox-content .lightbox-tab-menu .lightbox-tab-menu-item.active .lightbox-tab-menu-item-logo .LeftImage,
+.lighbox-container .lightbox-content .lightbox-tab-menu .lightbox-tab-menu-item:hover .lightbox-tab-menu-item-logo .LeftImage{
+    width:120px;
+}
+.lighbox-container .lightbox-content .lightbox-tab-menu .lightbox-tab-menu-item.active .lightbox-tab-menu-item-logo .LeftImage:after,
+.lighbox-container .lightbox-content .lightbox-tab-menu .lightbox-tab-menu-item:hover .lightbox-tab-menu-item-logo .LeftImage:after {
+    content:"";
+    /*
+-webkit-box-shadow: inset -17px 0px 19px 0px rgba(255,255,255,1);
+-moz-box-shadow: inset -17px 0px 19px 0px rgba(255,255,255,1);
+box-shadow: inset -17px 0px 19px 0px rgba(255,255,255,1);
+        */
+width:30px;
+height:100%;
+position:absolute;
+right:-1px;
+background: -moz-linear-gradient(left,  rgba(255,255,255,1) 0%, rgba(125,185,232,0.01) 99%, rgba(125,185,232,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(125,185,232,0.01) 99%,rgba(125,185,232,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(125,185,232,0.01) 99%,rgba(125,185,232,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#007db9e8',GradientType=1 ); /* IE6-9 */
+-webkit-transform:rotate(-180deg);
+-moz-transform:rotate(-180deg);
+-ms-transform:rotate(-180deg);
+transform:rotate(-180deg);
+
+}
+
+.lighbox-container .lightbox-content .lightbox-tab-menu .lightbox-tab-menu-item .lightbox-tab-menu-item-logo .LeftImage {
+    width:55px;
+    height:50px;
+    background-position:top left;
+    display:inline-block;
+    background-repeat:no-repeat;
+}
+.lighbox-container .lightbox-content .lightbox-tab-menu .lightbox-tab-menu-item[data-tab="tab1"] .lightbox-tab-menu-item-logo .LeftImage{
+    background-image:url(../images/Tab1-westernAustralia.jpg);
+}
+.lighbox-container .lightbox-content .lightbox-tab-menu .lightbox-tab-menu-item[data-tab="tab2"] .lightbox-tab-menu-item-logo .LeftImage{
+    background-image:url(../images/Tab2-food&wine.jpg);
+}
+.lighbox-container .lightbox-content .lightbox-tab-menu .lightbox-tab-menu-item[data-tab="tab2"].active .lightbox-tab-menu-item-logo .LeftImage,
+.lighbox-container .lightbox-content .lightbox-tab-menu .lightbox-tab-menu-item[data-tab="tab2"]:hover .lightbox-tab-menu-item-logo .LeftImage {
+    width:80px;
+}
+.lighbox-container .lightbox-content .lightbox-tab-menu .lightbox-tab-menu-item[data-tab="tab3"] .lightbox-tab-menu-item-logo .LeftImage{
+    background-image:url(../images/Tab3-coastal&aquatic.png);
+}
+.lighbox-container .lightbox-content .lightbox-tab-menu .lightbox-tab-menu-item[data-tab="tab4"] .lightbox-tab-menu-item-logo .LeftImage{
+    background-image:url(../images/Tab4-adventure&nature.png);
+}
+.lighbox-container .lightbox-content .lightbox-tab-menu .lightbox-tab-menu-item[data-tab="tab5"] .lightbox-tab-menu-item-logo .LeftImage{
+    background-image:url(../images/Tab5-flythereinstyle.png);
 }
