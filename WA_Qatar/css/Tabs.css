@@ -1,16 +1,16 @@
-.lighbox-container .lightbox-detailsPage .tab{
+.lighbox-container .tab{
     width: 100%;
     height: 100%;
     position: relative;
     display:none;
 }
-.lightbox-detailsPage .lightbox-detail-booklet .page-background-images{
+.lightbox-detail-booklet .page-background-images{
     position: absolute;
     height:100%;
     width:100%;
     z-index:0;
 }
-.lightbox-detailsPage .lightbox-detail-booklet .page-background-images .page-background{
+.lightbox-detail-booklet .page-background-images .page-background{
     height:100%;
     width:100%;
     display:none;
@@ -19,29 +19,50 @@
     top: 0;
     left: 0;
 }
-.lightbox-detailsPage .lightbox-detail-booklet .page-content{
+.lightbox-detail-booklet .page-content{
     position:absolute;
     top: 0;
     right:0;
     width:50%;
     height:100%;
     background-color: rgba(255,255,255, 0.6);
+    -webkit-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.35) inset;
+    -moz-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.35) inset;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.35) inset;
+    
+
 }
 
 .MainContaintArea {
      display: block;
      height: 100%;
      overflow:hidden;
+     margin: 0px auto;
+     width: 89.16%;
+     
+    margin-left: 4.82%;
+    margin-right: 6.0241%;
+     
 }
-.lightbox-detailsPage .lightbox-detail-booklet .bb-content {
+.MainContaintArea .detail-page-text{
+    width:100%;
+    margin-top:50px;
+    margin-bottom:25px;
+}
+
+.lightbox-detail-booklet .bb-content {
 	width: 200% !important;
 }
-.lightbox-detailsPage .lightbox-detail-booklet  .bb-content .page-content
+.lightbox-detail-booklet  .bb-content .page-content
 {
     left: 0px;
 }
-.lightbox-detailsPage .lightbox-detail-booklet .bb-page .bb-back  .bb-content .page-content{
+.lightbox-detail-booklet .bb-page .bb-back  .bb-content .page-content{
     left:initial;
+}
+
+.lightbox-default-booklet .bb-item{
+    background:transparent;
 }
 
 .lightbox-detailsPage .detail-navigator{
@@ -56,6 +77,7 @@
     background-color: #fff;
     max-width:200px;
     z-index:105;
+    background-image: url(../images/navigaterBg.png);
 }
 .lightbox-detailsPage .detail-navigator .detail-navigator-container{
     position:absolute;
@@ -131,3 +153,81 @@
         width: 26.85%;
         cursor:pointer;
 }
+
+/******************* EXTERNAL SCROLLBAR *******************/
+/*  scrol bar */
+.scrollbar-external_wrapper {
+   /* position:absolute;*/
+   height: 150px;
+   right: -31px;
+   width: 4px;
+   position: absolute;
+   top: 50%;
+   -webkit-transform: translateY(-50%);
+   -ms-transform: translateY(-50%);
+   transform: translateY(-50%);
+   display:none;
+}
+.scrollbar-external {
+   /* height: 590px; !important;*/
+    overflow: auto;
+    overflow: hidden;
+}
+ 
+
+ 
+.external-scroll_x,
+.external-scroll_y {
+    cursor: pointer;
+    display: none;
+    /* position: absolute; */
+    border-radius: 0px;
+    background-color: #a9aeb2;
+    width: 4px !important;
+}
+ 
+.external-scroll_x.scroll-scrollx_visible {
+    display: block;
+    height: 10px;
+    left: 0;
+    top: 410px;
+    width: 200px;
+}
+ 
+.external-scroll_y.scroll-scrolly_visible {
+    display: block;
+    height: 100%;
+}
+ 
+.external-scroll_x div,
+.external-scroll_y div
+{
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+}
+ 
+.external-scroll_x .scroll-bar,
+.external-scroll_y .scroll-bar {
+    z-index: 12;
+    width: 4px;
+    border-radius:0px;
+    background-color: #fff;
+}
+ 
+.external-scroll_x .scroll-bar {
+    width: 100px;
+}
+.external-scroll_y .scroll-bar {
+    height: 50px;
+}
+.scroll-content {
+    overflow: scroll !important;
+}
+.scroll-wrapper > .scroll-content::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+}
+/*  scroll bar end  */
