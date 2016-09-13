@@ -221,11 +221,11 @@ function showDefaultTab(tabId, allowReLoad) {
         return;
     }
     $(".lighbox-container .lightbox-content .lightbox-tab-menu-item.active").removeClass("active");
-    $(".lighbox-container .lightbox-content .lightbox-defaultTab .welcomeTab.active").fadeOut();
+    //$(".lighbox-container .lightbox-content .lightbox-defaultTab .welcomeTab.active").fadeOut();
     $(".lighbox-container .lightbox-content .lightbox-defaultTab .welcomeTab.active").removeClass("active");
     $(".lighbox-container .lightbox-content .lightbox-tab-menu-item[data-tab='tab" + tabId + "']").addClass("active");
     $(".lighbox-container .lightbox-content .lightbox-defaultTab .welcomeTab[data-tab='tab" + tabId + "']").addClass("active");
-    $(".lighbox-container .lightbox-content .lightbox-defaultTab .welcomeTab[data-tab='tab" + tabId + "']").fadeIn();
+    //$(".lighbox-container .lightbox-content .lightbox-defaultTab .welcomeTab[data-tab='tab" + tabId + "']").fadeIn();
     if ($(".lighbox-container .lightbox-content .lightbox-defaultTab").is(":visible")) {
         autoChangeTab();
     }
