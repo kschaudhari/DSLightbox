@@ -148,23 +148,35 @@ nav ul li a .Menu {
      height:100%;
 }
 .BannerContentBox {
-    height: 265px;    
+    height: auto;    
+    top: 50%;
+    position:absolute;
+    right: 0;
+    text-align: right;
+    width: 45%;
+    margin-right: 5%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 .TextBanner {
-    font-family: 'Conv_JADIWA';
+  	font-family: 'Proxima-Nova-Condensed-Semibold';
     color:#fff;
-    font-size:4.56em;
-    width: 36%;
-    margin: 0 auto;
-    line-height: 74px;
-    padding-top: 4%;
-    padding-bottom: 3.7%;
+    font-size:3em;
+    width: 100%;
+    float:right;
+    text-align: right;
+    margin-right: 6.5%;
+    line-height: 43px;
     text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
 }
 .TextBanner .SmallBnnerText {
     display:block;
     padding-left:10%;
     line-height: 45px;
+    font-family: 'Proxima-Nova-Condensed-Light';
+    font-style:italic;
 }
 .TextBanner .BigBnnerText {
     /*font-size: 1em;*/
@@ -325,7 +337,7 @@ border-bottom: 0;
 .TextBanner .tab1BannerBigtesxt1{
 }
 .TextBanner .tab1BannerBigtesxt2 {
-    padding-left:5%;
+    padding-left:0%;
 }
 .TextBanner .tab2SmalltextAlignmnt {
     padding-left:33%;
@@ -720,4 +732,10 @@ a.NeedToKnowBoxLink {
 }
 .Tab5MontSaprator {
     border-bottom: 1px solid #288dc8;
+}
+.tab1Bannersmalltesxt {
+        padding-bottom: 10px;
+}
+.tab2Bannersmalltesxt {
+    padding-right:31%;
 }
