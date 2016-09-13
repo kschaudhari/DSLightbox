@@ -59,8 +59,16 @@
 .lighbox-container .lightbox-content {
     width:100%;
     height:100%;
-    background-color: #fff;
-    
+	 
+}
+.lighbox-container .lightbox-content .lighbox-default-booklet, .lighbox-container .lightbox-content .lightbox-detail-booklet{
+    width:100%;
+    height:100%;
+    z-index: 100;
+	-webkit-perspective: 1300px;
+	perspective: 1300px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;   
 }
 .lighbox-container .lightbox-content .lightbox-tab-menu{
     position:absolute;
@@ -89,31 +97,31 @@
     position: relative;
 }
 
-.lighbox-container .lightbox-content .lightbox-defaultTab .welcomeTab {
+.lighbox-container .lightbox-content .lighbox-default-booklet .welcomeTab {
     position: absolute;
     width: 100%;
     height: 100%;
     display: none;
 }
-.lighbox-container .lightbox-content .lightbox-defaultTab .welcomeTab[data-tab="tab1"]{
+.lighbox-container .lightbox-content .lighbox-default-booklet .welcomeTab[data-tab="tab1"]{
     background-color:#f00;
 }
-.lighbox-container .lightbox-content .lightbox-defaultTab .welcomeTab[data-tab="tab2"]{
+.lighbox-container .lightbox-content .lighbox-default-booklet .welcomeTab[data-tab="tab2"]{
     background-color:#0f0;
 }
-.lighbox-container .lightbox-content .lightbox-defaultTab .welcomeTab[data-tab="tab3"]{
+.lighbox-container .lightbox-content .lighbox-default-booklet .welcomeTab[data-tab="tab3"]{
     background-color:#808080;
 }
-.lighbox-container .lightbox-content .lightbox-defaultTab .welcomeTab[data-tab="tab4"]{
+.lighbox-container .lightbox-content .lighbox-default-booklet .welcomeTab[data-tab="tab4"]{
     background-color:#288dc8;
 }
-.lighbox-container .lightbox-content .lightbox-defaultTab .welcomeTab[data-tab="tab5"]{
+.lighbox-container .lightbox-content .lighbox-default-booklet .welcomeTab[data-tab="tab5"]{
     background-color:#00f;
 }
-.lighbox-container .lightbox-content .lightbox-defaultTab .welcomeTab.active{
+.lighbox-container .lightbox-content .lighbox-default-booklet .welcomeTab.active{
     display: block;
 }
-.lighbox-container .lightbox-content .lightbox-defaultTab .bullet-container{
+.lighbox-container .lightbox-content .lighbox-default-booklet .bullet-container{
     position:absolute;
     left: 50%;
     bottom: 5.58%;
@@ -123,25 +131,25 @@
     transform: translateX(-50%);
     width: 34.94%;
 }
-.lightbox-defaultTab .bullet-container:after{
+.lighbox-default-booklet .bullet-container:after{
     clear:both;
 }
-.lightbox-defaultTab .bullet-container .bullet{
+.lighbox-default-booklet .bullet-container .bullet{
     height: 2px;
     width: 17.241%;
     background-color:#fff;
     float: left;
     margin-right: 3.448%;
 }
-.lightbox-defaultTab .bullet-container .bullet.no-margin{
+.lighbox-default-booklet .bullet-container .bullet.no-margin{
 	margin-right: 0px;
 }
-.lightbox-defaultTab .bullet-container .bullet .bullet-progress{
+.lighbox-default-booklet .bullet-container .bullet .bullet-progress{
     width: 0px;
     background-color: #288dc8;
     height: 100%;
 }
-.lightbox-defaultTab .default-navigator{
+.lighbox-default-booklet .default-navigator{
     position:absolute;
     bottom: 0px;
     right: 0px;
@@ -153,7 +161,7 @@
     background-color: #fff;
     max-width:200px;
 }
-.lightbox-defaultTab .default-navigator .default-navigator-container{
+.lighbox-default-booklet .default-navigator .default-navigator-container{
     position:absolute;
     width:100%;
     top: 50%;
@@ -162,7 +170,7 @@
     -moz-transform: translateY(-50%);
     transform: translateY(-50%);
 } 
-    .lightbox-defaultTab .default-navigator .prevTab {
+    .lighbox-default-booklet .default-navigator .prevTab {
         display: table-cell;
         vertical-align: middle;
         text-align: center;
@@ -170,7 +178,7 @@
         width: 30%;
         cursor:pointer;
     }
-    .lightbox-defaultTab .default-navigator .readMore {
+    .lighbox-default-booklet .default-navigator .readMore {
         display:table-cell;
         vertical-align: middle;
         text-align: center;
@@ -184,7 +192,7 @@
         border-bottom: 0px;
         cursor:pointer;
     }
-    .lightbox-defaultTab .default-navigator .nextTab {
+    .lighbox-default-booklet .default-navigator .nextTab {
         display:table-cell;
         vertical-align: middle;
         text-align: center;

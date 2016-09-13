@@ -8,13 +8,16 @@
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,500i" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/font.css" />
 <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css" />
+    <link rel="stylesheet" type="text/css" href="css/bookblock.css" />
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 <link rel="stylesheet" type="text/css" href="css/Tabs.css"/>
 <link rel="stylesheet" type="text/css" href="css/mobile.css" />
 <link rel="stylesheet" type="text/css" href="css/Responsive.css" />
 
     <script src="js/jquery-1.12.1.min.js" ></script>
+    <script src="js/modernizr.custom.js"></script>
     <script src="js/customscroll.js"></script>
+    <script src="js/jquery.bookblock.js"></script>
     <script src="js/ds-lightbox.js"></script>
     <script>
   
@@ -171,7 +174,8 @@
                        </div>
                    </div>
                </div>
-               <div class="lightbox-defaultTab">
+               <div class="lighbox-default-booklet bb-bookblock ">
+               <div class="lightbox-defaultTab bb-item">
                    <div class="welcomeTab active" data-tab="tab1">
                        Tab1
                    </div>
@@ -213,22 +217,52 @@
                        </div>
                    </div>
                </div>
-               <div class="lightbox-detailsPage">
-                   <div class="tab active" data-tab="tab1">
-                       Tab 1 Content
+               <div class="lightbox-detailsPage bb-item">
+                   <div class="lightbox-detail-booklet bb-bookblock">
+                       <div class="tab active bb-item" data-tab="tab1">
+                           <div class="page-background-images">
+                               <div class="page-background active">
+
+                               </div>
+                           </div>
+                           <div class="page-content">
+                               <div class="MainContaintArea">
+                                   here is page 1 content
+                               </div>
+                           </div>
+                       </div>
+                       <div class="tab bb-item" data-tab="tab2">
+                           <div class="page-background-images">
+                               <div class="page-background active">
+
+                               </div>
+                           </div>
+                           <div class="page-content">
+                               <div class="MainContaintArea">
+                                   here is page 2 content
+                               </div>
+                           </div>
+                       </div>
+                       <div class="tab bb-item" data-tab="tab3">
+                           <div class="page-background-images">
+                               <div class="page-background active">
+
+                               </div>
+                           </div>
+                           <div class="page-content">
+                               <div class="MainContaintArea">
+                                   here is page 3 content
+                               </div>
+                           </div>
+                       </div>
+                       <div class="tab bb-item" data-tab="tab4">
+                           Tab 4 Content
+                       </div>
+                       <div class="tab bb-item" data-tab="tab5">
+                           Tab 5 Content
+                       </div>
                    </div>
-                   <div class="tab" data-tab="tab2">
-                       Tab 2 Content
-                   </div>
-                   <div class="tab" data-tab="tab3">
-                       Tab 3 Content
-                   </div>
-                   <div class="tab" data-tab="tab4">
-                       Tab 4 Content
-                   </div>
-                   <div class="tab" data-tab="tab5">
-                       Tab 5 Content
-                   </div>
+               </div>
                </div>
            </div>
            <div class="lightbox-bootmGrad">
@@ -248,59 +282,12 @@
 
            </div>
        <div id="preloadImages" style="display:none">
-           <img src="Banners/WelcomeScreen-1000x650-bkg-tab1.jpg" />
-           <img src="Banners/WelcomeScreen-1000x650-bkg-tab2.jpg" />
-           <img src="Banners/WelcomeScreen-1000x650-bkg-tab3.jpg" />
-           <img src="Banners/WelcomeScreen-1000x650-bkg-tab4.jpg" />
-           <img src="Banners/WelcomeScreen-1000x650-bkg-tab5.jpg" />
-           <img src="Banners/WelcomeScreen-1000x650-bkg-tab6.jpg" />
            
-           <img src="patternHover.png" />
-           <img src="patternActive.png" />
-
-           <img src="Banners/ExpandedScreen-930x530-bkg-tab1.jpg" />
-
-           <img src="Banners/ExpandedScreen-930x530-bkg-tab2a.jpg" />
-           <img src="Banners/ExpandedScreen-930x530-bkg-tab2b.jpg" />
-           <img src="Banners/ExpandedScreen-930x530-bkg-tab2b.jpg" />
-           <img src="Banners/ExpandedScreen-930x530-bkg-tab2c.jpg" />
-
-           <img src="Banners/ExpandedScreen-930x530-bkg-tab3a.jpg" />
-
-           <img src="Banners/ExpandedScreen-930x530-bkg-tab4a.jpg" />
-           <img src="Banners/ExpandedScreen-930x530-bkg-tab4b.jpg" />
-           <img src="Banners/ExpandedScreen-930x530-bkg-tab4c.jpg" />
-           <img src="Banners/ExpandedScreen-930x530-bkg-tab4d.jpg" />
-           <img src="Banners/ExpandedScreen-930x530-bkg-tab4e.jpg" />
-           <img src="Banners/ExpandedScreen-930x530-bkg-tab4f.jpg" />
-           <img src="Banners/tab4wdcrossing.jpg" />
-
-           <img src="Banners/tab5June.jpg" />
-           <img src="Banners/ExpandedScreen-930x530-bkg-tab5a.jpg" />
-           <img src="Banners/ExpandedScreen-930x530-bkg-tab5b.jpg" />
-           <img src="Banners/ExpandedScreen-930x530-bkg-tab5c.jpg" />
-           <img src="Banners/ExpandedScreen-930x530-bkg-tab5d.jpg" />
-           <img src="Banners/ExpandedScreen-930x530-bkg-tab5e.jpg" />
-           <img src="Banners/ExpandedScreen-930x530-bkg-tab5f.jpg" />
-           <img src="Banners/ExpandedScreen-930x530-bkg-tab5july.jpg" />
-           <img src="Banners/ExpandedScreen-930x530-bkg-tab5h.jpg" />
-           <img src="Banners/ExpandedScreen-930x530-bkg-tab5i.jpg" />
-           <img src="Banners/ExpandedScreen-930x530-bkg-tab5j.jpg" />
-           <img src="Banners/ExpandedScreen-930x530-bkg-tab5k.jpg" />
-           <img src="Banners/ExpandedScreen-930x530-bkg-tab5l.jpg" />
-           <img src="Banners/ExpandedScreen-930x530-bkg-tab5nov.jpg" />
-
        </div>
        <div class="mobDetector"></div>
     </div>
 </div>
-    <script>
-        (function (d, p) {
-            var a = new Image(); a.onload = function () { a = null }; a.src =
-
-        (d.location.protocol == "https:" ? "https:" : "http:") + "//rs.gwallet.com/r1/pixel/x" + p + "r" + Math.round(1E9 * Math.random())
-        })(document, "39051")
-    </script>
+   
     
 </body>
 </html>
