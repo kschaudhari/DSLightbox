@@ -217,9 +217,7 @@ function showNextDefaultTab() {
     handleMobNavigation(nextTabId, false);
 }
 function showDefaultTab(tabId, allowReLoad) {
-    if (!allowReLoad && $(".lighbox-container .lightbox-content .lightbox-defaultTab .welcomeTab[data-tab='tab" + tabId + "']").is(":visible")) {
-        return;
-    }
+    
     $(".lighbox-container .lightbox-content .lightbox-tab-menu-item.active").removeClass("active");
     //$(".lighbox-container .lightbox-content .lightbox-defaultTab .welcomeTab.active").fadeOut();
     $(".lighbox-container .lightbox-content .lightbox-defaultTab .welcomeTab.active").removeClass("active");
