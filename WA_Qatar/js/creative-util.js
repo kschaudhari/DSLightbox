@@ -1,12 +1,11 @@
 ﻿
 function showLightboxPopup(type) {
-    var vid = $("#myVideo");
-    $("#mydiv").fadeIn("slow");
-    ga('send', 'pageview');
+    if (typeof ga !== "undefined")
+        ga('send', 'pageview');
     var defaultTab = 1;
     if (type)
         defaultTab = type.replace("tab", '');
-    if (defaultTab > 6 || defaultTab < 1)
+    if (defaultTab > 5 || defaultTab < 1)
         type = "";
     if (type || isMobile())
         handleMobNavigation(defaultTab, true);

@@ -19,9 +19,13 @@
     <script src="js/customscroll.js"></script>
     <script src="js/jquery.bookblock.js"></script>
     <script src="js/ds-image-carousel.js"></script>
+    <script src="js/creative-util.js"></script>
     <script src="js/ds-lightbox.js"></script>
     <script>
-  
+        var clickTagTweet = "https://twitter.com/WestAustralia";
+        var clickTagFb = "https://www.facebook.com/ExtraordinaryWesternAustralia";
+        var clickTagInsta = "https://www.instagram.com/westernaustralia/";
+        var clickTagYou = "https://www.youtube.com/user/westernaustralia";
     </script>
     <!-- url prefix for s3 https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/ -->
 </head>
@@ -38,11 +42,12 @@
                    </div>
                </div>
                <div class="mobMenuLogos menuElement">
-                   <div class="mobDiscoverLogo">
-                       <img src="images/mobDiscoverLogo.png" />
-                   </div>
+                   
                    <div class="mobWALogo">
                        <img src="images/mobWALogo.png" />
+                   </div>
+                   <div class="mobDiscoverLogo">
+                       <img src="images/mobQatarLogo.png" />
                    </div>
                </div>
                <div id="lightbox-mobile-exit" class="mobMenuClose menuElement">
@@ -51,13 +56,12 @@
            </div>
            <div class="mobDropdownMenu">
                <div class="mobDropdownMenuItem" data-tab="tab1">
-                   why WESTERN AUSTRALIA
+                   WESTERN AUSTRALIA
                </div>
-               <div class="mobDropdownMenuItem" data-tab="tab2">whale WATCHING</div>
-               <div class="mobDropdownMenuItem" data-tab="tab3">ningaloo REEF</div>
-               <div class="mobDropdownMenuItem" data-tab="tab4">epic WILDLIFE journeys</div>
-               <div class="mobDropdownMenuItem" data-tab="tab5">where to go AND WHEN</div>
-               <div class="mobDropdownMenuItem" data-tab="tab6">holiday IDEAS</div>
+               <div class="mobDropdownMenuItem" data-tab="tab2">food & WINE</div>
+               <div class="mobDropdownMenuItem" data-tab="tab3">coastal & ACQUATIC</div>
+               <div class="mobDropdownMenuItem" data-tab="tab4">adventure & NATURE</div>
+               <div class="mobDropdownMenuItem" data-tab="tab5">fly there IN STYLE</div>
                </div>
            <div class="topMobItem mobNavigator">
 
@@ -76,45 +80,31 @@
                        <div class="mobNavigationTabs">
                            <div class="mobTab1 mobTab active" data-tab="tab1">
                                <div class="mobCurrentTabLogo">
-                                   <img src="images/tab1Hover.png" />
-                                   <span class="smallCaseTitle leftDistance"><span>why</span></span>
-                                    <span class="capitalCaseTitle">WESTERN AUSTRALIA</span>
+                                   <span class="capitalCaseTitle">WESTERN AUSTRALIA</span>
                                </div>
                            </div>
                            <div class="mobTab2 mobTab" data-tab="tab2">
                                <div class="mobCurrentTabLogo">
-                                   <img src="images/tab2Hover.png" />
-                                   <span class="smallCaseTitle leftDistance"><span>whale</span></span>
-                                   <span class="capitalCaseTitle">WATCHING</span>
+                                   <span class="smallCaseTitle leftDistance"><span>food</span></span>
+                                   <span class="capitalCaseTitle"><span>& WINE</span></span>
                                </div>
                            </div>
                            <div class="mobTab3 mobTab" data-tab="tab3">
                                <div class="mobCurrentTabLogo">
-                                   <img src="images/tab3Hover.png" />
-                                   <span class="smallCaseTitle leftDistance"><span>ningaloo</span></span>
-                                   <span class="capitalCaseTitle">REEF</span>
+                                   <span class="smallCaseTitle leftDistance"><span>coastal</span></span>
+                                   <span class="capitalCaseTitle"><span>& AQUATIC</span></span>
                                </div>
                            </div>
                            <div class="mobTab4 mobTab" data-tab="tab4">
                                <div class="mobCurrentTabLogo">
-                                   <img src="images/tab4Hover.png" />
-                                   <span class="smallCaseTitle leftDistance"><span>epic</span></span>
-                                   <span class="capitalCaseTitle">WILDLIFE</span>
-                                   <span class="smallCaseTitle"><span>journeys</span></span>
+                                   <span class="smallCaseTitle leftDistance"><span>adventure</span></span>
+                                   <span class="capitalCaseTitle"><span>& NATURE</span></span>
                                </div>
                            </div>
-                           <div class="mobTab1 mobTab" data-tab="tab5">
+                           <div class="mobTab5 mobTab" data-tab="tab5">
                                <div class="mobCurrentTabLogo">
-                                   <img src="images/tab5Hover.png" />
-                                   <span class="smallCaseTitle leftDistance"><span>where to go</span></span>
-                                   <span class="capitalCaseTitle">AND WHEN</span>
-                               </div>
-                           </div>
-                           <div class="mobTab6 mobTab" data-tab="tab6">
-                               <div class="mobCurrentTabLogo">
-                                   <img src="images/tab5Hover.png" />
-                                   <span class="smallCaseTitle leftDistance"><span>holiday</span></span>
-                                   <span class="capitalCaseTitle">IDEAS</span>
+                                   <span class="smallCaseTitle leftDistance"><span>fly there</span></span>
+                                   <span class="capitalCaseTitle"><span>IN STYLE</span></span>
                                </div>
                            </div>
                        </div>
@@ -183,10 +173,10 @@
                     <div class="FollowBox">
                         <div class="follwText">follow us</div>
                         <div class="SocialIconbox">
-                            <span class="socialIcon fb"></span>
-                            <span class="socialIcon tweet"></span>
-                            <span class="socialIcon youtube"></span>
-                            <span class="socialIcon insta"></span>
+                            <span onclick="javascript:window.open(window.clickTagFb);" class="socialIcon fb"></span>
+                            <span onclick="javascript:window.open(window.clickTagTweet);" class="socialIcon tweet"></span>
+                            <span onclick="javascript:window.open(window.clickTagYou);" class="socialIcon youtube"></span>
+                            <span onclick="javascript: window.open(window.clickTagInsta);" class="socialIcon insta"></span>
                         </div>
                     </div>
                </div>

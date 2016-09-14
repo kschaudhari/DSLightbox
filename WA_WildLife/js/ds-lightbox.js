@@ -9,9 +9,9 @@ $(document).ready(function () {
     $("#ShwoPopUp").click(function () {
         showLightboxPopup(type);
     });
-    if (type) {
+    
         showLightboxPopup(type);
-    }
+    
     $(".removePopup").click(function () {
         $("#mydiv").fadeOut("slow");
     });
@@ -315,18 +315,19 @@ function swipedetect(el, callback) {
 function showLightboxPopup(type)
 {
     var vid = $("#myVideo");
-    $("#mydiv").fadeIn("slow");
-    ga('send', 'pageview');
-    var defaultTab = 1;
-    if (type)
-        defaultTab = type.replace("tab", '');
-    if (defaultTab > 6 || defaultTab < 1)
-        type = "";
-    if (type || isMobile())
-        handleMobNavigation(defaultTab, true);
-    else
-        showDefaultView();
-
+    if ($("#mydiv").length > 0) {
+        $("#mydiv").fadeIn("slow");
+        ga('send', 'pageview');
+        var defaultTab = 1;
+        if (type)
+            defaultTab = type.replace("tab", '');
+        if (defaultTab > 6 || defaultTab < 1)
+            type = "";
+        if (type || isMobile())
+            handleMobNavigation(defaultTab, true);
+        else
+            showDefaultView();
+    }
     //pixel to track
     
 }
