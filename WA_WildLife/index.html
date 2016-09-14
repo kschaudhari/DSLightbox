@@ -1,19 +1,19 @@
 ﻿<!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Lightbox</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lightbox</title>
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,500i" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="css/font.css" />
-<link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css" />
-<link rel="stylesheet" type="text/css" href="css/style.css" />
-<link rel="stylesheet" type="text/css" href="css/Tabs.css"/>
-<link rel="stylesheet" type="text/css" href="css/mobile.css" />
-<link rel="stylesheet" type="text/css" href="css/Responsive.css" />
+    <link rel="stylesheet" type="text/css" href="css/font.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/Tabs.css" />
+    <link rel="stylesheet" type="text/css" href="css/mobile.css" />
+    <link rel="stylesheet" type="text/css" href="css/Responsive.css" />
 
-    <script src="js/jquery-1.12.1.min.js" ></script>
+    <script src="js/jquery-1.12.1.min.js"></script>
     <script src="js/customscroll.js"></script>
     <script src="js/ds-lightbox.js"></script>
     <script>
@@ -23,19 +23,19 @@
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
   ga('create', 'UA-75055673-11', 'auto');
-  
-  var clickTagNeedToKnow = "https://www.discover-the-world.co.uk/destinations/australia-holidays/western-australia";
-  var clickTagDiscoverWorld = "https://www.discover-the-world.co.uk/?utm_source=twa&utm_medium=display&utm_content=intro-dtw-hp&utm_campaign=wa-wild201617";
-  var clickTagNingalooShark = "https://www.discover-the-world.co.uk/destinations/australia-holidays/ningaloo-and-shark-bay-discovery?utm_source=twa&utm_medium=display&utm_content=ningaloo-shark-bay&utm_campaign=wa-wild201617";
-  var clickTagWhalesAndWine = "https://www.discover-the-world.co.uk/destinations/australia-holidays/whales-and-wine-of-the-south-west?utm_source=twa&utm_medium=display&utm_content=whales-wine&utm_campaign=wa-wild201617";
-  var clickTagKimberleyComplete = "https://www.discover-the-world.co.uk/destinations/australia-holidays/kimberley-complete?utm_source=twa&utm_medium=display&utm_content=kimberley-complete&utm_campaign=wa-wild201617";
-  var clickTagDiscoverWesternAustralia = "https://www.discover-the-world.co.uk/destinations/australia-holidays/western-australia?utm_source=twa&utm_medium=display&utm_content=discover-more&utm_campaign=wa-wild201617";
-        
-  var clickTagTweet = "https://twitter.com/WestAustralia";
-  var clickTagFb = "https://www.facebook.com/ExtraordinaryWesternAustralia";
-  var clickTagInsta = "https://www.instagram.com/westernaustralia/";
-  var clickTagYou = "https://www.youtube.com/user/westernaustralia";
-  var clickTagDiscoverAltered = "https://www.discover-the-world.co.uk/destinations/australia-holidays/?utm_source=twa&utm_medium=display&utm_content=intro-dtw&utm_campaign=wa-wild201617"
+
+  var clickTagNeedToKnow = "https://po.st/9IoirF";
+  var clickTagDiscoverWorld = "https://po.st/bjdRJP";
+  var clickTagNingalooShark = "https://po.st/qQERL3";
+  var clickTagWhalesAndWine = "https://po.st/zj6e0f";
+  var clickTagKimberleyComplete = "https://po.st/J3zamm";
+  var clickTagDiscoverWesternAustralia = "https://po.st/PJSOLD";
+
+  var clickTagTweet = "https://po.st/a3Xu0w";
+  var clickTagFb = "https://po.st/tyjWdr";
+  var clickTagInsta = "https://po.st/BXGUuH";
+  var clickTagYou = "https://po.st/kN97XI";
+  var clickTagDiscoverAltered = "https://po.st/GWWr8L"
     </script>
     <!-- url prefix for s3 https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/ -->
 </head>
@@ -45,338 +45,340 @@
              style="display:none;visibility:hidden" />
     </noscript>
 
-<div id="mydiv" >
-   <div id="mydiv-content">
-     <a href="javascript:void(0)" id="lightbox-exit" class="CloseBtn removePopup" ></a>    
-       <div class="topMobMenuBar tab1Active">
-           <div class="topMobItem MobMenuBar">
-               <div class="mobMenu">
-                   <div class="mobMenuIcon menuElement">
-                       <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/mobMenu.png" />
-                   </div>
-               </div>
-               <div class="mobMenuLogos menuElement">
-                   <div class="mobDiscoverLogo">
-                       <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/mobDiscoverLogo.png" />
-                   </div>
-                   <div class="mobWALogo">
-                       <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/mobWALogo.png" />
-                   </div>
-               </div>
-               <div id="lightbox-mobile-exit" class="mobMenuClose menuElement">
-                   <img class="removePopup" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/mobClose.png" />
-               </div>
-           </div>
-           <div class="mobDropdownMenu">
-               <div class="mobDropdownMenuItem" data-tab="tab1">
-                   why WESTERN AUSTRALIA
-               </div>
-               <div class="mobDropdownMenuItem" data-tab="tab2">whale WATCHING</div>
-               <div class="mobDropdownMenuItem" data-tab="tab3">ningaloo REEF</div>
-               <div class="mobDropdownMenuItem" data-tab="tab4">epic WILDLIFE journeys</div>
-               <div class="mobDropdownMenuItem" data-tab="tab5">where to go AND WHEN</div>
-               <div class="mobDropdownMenuItem" data-tab="tab6">holiday IDEAS</div>
-               </div>
-           <div class="topMobItem mobNavigator">
+    <div id="mydiv">
+        <div id="mydiv-content">
+            <a href="javascript:window.parent.postMessage('LB_CLOSE','*');" id="lightbox-exit" class="CloseBtn "></a>
+            <div class="topMobMenuBar tab1Active">
+                <div class="topMobItem MobMenuBar">
+                    <div class="mobMenu">
+                        <div class="mobMenuIcon menuElement">
+                            <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/mobMenu.png" />
+                        </div>
+                    </div>
+                    <div class="mobMenuLogos menuElement">
+                        <div class="mobDiscoverLogo">
+                            <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/mobDiscoverLogo.png" />
+                        </div>
+                        <div class="mobWALogo">
+                            <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/mobWALogo.png" />
+                        </div>
+                    </div>
+                    <div id="lightbox-mobile-exit" onclick="javascript:window.parent.postMessage('LB_CLOSE','*');" class="mobMenuClose menuElement">
+                        <img class="" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/mobClose.png" />
+                    </div>
+                </div>
+                <div class="mobDropdownMenu">
+                    <div class="mobDropdownMenuItem" data-tab="tab1">
+                        why WESTERN AUSTRALIA
+                    </div>
+                    <div class="mobDropdownMenuItem" data-tab="tab2">whale WATCHING</div>
+                    <div class="mobDropdownMenuItem" data-tab="tab3">ningaloo REEF</div>
+                    <div class="mobDropdownMenuItem" data-tab="tab4">epic WILDLIFE journeys</div>
+                    <div class="mobDropdownMenuItem" data-tab="tab5">where to go AND WHEN</div>
+                    <div class="mobDropdownMenuItem" data-tab="tab6">holiday IDEAS</div>
+                </div>
+                <div class="topMobItem mobNavigator">
 
-               <div class="mobNavigatorContent">
-                   <div class="mobPrevTab">
-                       <div class="navArrow">
-                           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/mobArrow.png" />
-                       </div>
-                   </div>
-                   <div class="mobNextTab">
-                       <div class="navArrow">
-                           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/mobArrow.png" />
-                       </div>
-                   </div>
-                   <div class="mobCurrentTab">
-                       <div class="mobNavigationTabs">
-                           <div class="mobTab1 mobTab active" data-tab="tab1">
-                               <div class="mobCurrentTabLogo">
-                                   <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/tab1Hover.png" />
-                                   <span class="smallCaseTitle leftDistance"><span>why</span></span>
-                                    <span class="capitalCaseTitle">WESTERN AUSTRALIA</span>
-                               </div>
-                           </div>
-                           <div class="mobTab2 mobTab" data-tab="tab2">
-                               <div class="mobCurrentTabLogo">
-                                   <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/tab2Hover.png" />
-                                   <span class="smallCaseTitle leftDistance"><span>whale</span></span>
-                                   <span class="capitalCaseTitle">WATCHING</span>
-                               </div>
-                           </div>
-                           <div class="mobTab3 mobTab" data-tab="tab3">
-                               <div class="mobCurrentTabLogo">
-                                   <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/tab3Hover.png" />
-                                   <span class="smallCaseTitle leftDistance"><span>ningaloo</span></span>
-                                   <span class="capitalCaseTitle">REEF</span>
-                               </div>
-                           </div>
-                           <div class="mobTab4 mobTab" data-tab="tab4">
-                               <div class="mobCurrentTabLogo">
-                                   <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/tab4Hover.png" />
-                                   <span class="smallCaseTitle leftDistance"><span>epic</span></span>
-                                   <span class="capitalCaseTitle">WILDLIFE</span>
-                                   <span class="smallCaseTitle"><span>journeys</span></span>
-                               </div>
-                           </div>
-                           <div class="mobTab1 mobTab" data-tab="tab5">
-                               <div class="mobCurrentTabLogo">
-                                   <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/tab5Hover.png" />
-                                   <span class="smallCaseTitle leftDistance"><span>where to go</span></span>
-                                   <span class="capitalCaseTitle">AND WHEN</span>
-                               </div>
-                           </div>
-                           <div class="mobTab6 mobTab" data-tab="tab6">
-                               <div class="mobCurrentTabLogo">
-                                   <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/tab5Hover.png" />
-                                   <span class="smallCaseTitle leftDistance"><span>holiday</span></span>
-                                   <span class="capitalCaseTitle">IDEAS</span>
-                               </div>
-                           </div>
-                       </div>
-                       
-                   </div>
-                   
-               </div>
-           </div>
-           
-       </div>
-       <div class="lighbox-container">
-           <div class="lightbox-defaultTab box1BG">
-               <div class="lightbox-title">
-                   <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/TipStrip.png" class="titleImg"/>
-               </div>
-               <div class="lighbox-boxedMenu">
-                   <div class="lightbox-menuItem-boxed bottomBorder box1Hover hover" data-tab="box1">
-                       <div class="lighbox-menuContent">
-                           
-                           <div class="defaultContent">
-                               <span class="smallCaseTitle">why</span>
-                               <span class="capitalCaseTitle">WESTERN AUSTRALIA</span>
-                           </div>
-                           <div class="hoverContent">
-                               <img class="menubox-logo" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/tab1Hover.png" />
-                               <div class="menubox-description">
-                                   Incredible wildlife encounters await around every corner...
-                               </div>
-                           </div>
-                           <span class="downArrow">
-                               <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/WhiteDownArrow.png" />
-                           </span>
-                       </div>
-                   </div>
-                   <div class="lightbox-menuItem-boxed sideBorders bottomBorder" data-tab="box2">
-                       <div class="lighbox-menuContent">
-                           <div class="defaultContent">
-                               <span class="smallCaseTitle">whale</span>
-                               <span class="capitalCaseTitle">WATCHING</span>
-                           </div>
-                           <div class="hoverContent">
-                               <img class="menubox-logo" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/tab2Hover.png" />
-                               <div class="menubox-description">
-                                   Whales come so close in Western Australia you can almost ...
-                               </div>
-                           </div>
-                           <span class="downArrow">
-                               <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/WhiteDownArrow.png" />
-                           </span>
-                       </div>
-                   </div>
-                   <div class="lightbox-menuItem-boxed bottomBorder" data-tab="box3">
-                       <div class="lighbox-menuContent">
-                           <div class="defaultContent">
-                               <span class="smallCaseTitle">ningaloo</span>
-                               <span class="capitalCaseTitle">REEF</span>
-                               
-                           </div>
-                           <div class="hoverContent">
-                               <img class="menubox-logo" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/tab3Hover.png" />
-                               <div class="menubox-description">
-                                   Ningaloo is amagnet for whale sharks, manta rays and ...
-                               </div>
-                           </div>
-                           <span class="downArrow">
-                               <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/WhiteDownArrow.png" />
-                           </span>
-                       </div>
-                   </div>
-                   <div class="lightbox-menuItem-boxed" data-tab="box4">
-                       <div class="lighbox-menuContent">
-                           <div class="defaultContent">
-                               <span class="smallCaseTitle">epic</span>
-                               <span class="capitalCaseTitle">WILDLIFE</span>
-                               <span class="smallCaseTitle" style="margin-left:10px">journeys</span>
-                           </div>
-                           <div class="hoverContent">
-                               <img class="menubox-logo" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/tab4Hover.png" />
-                               <div class="menubox-description">
-                                   Western Australia’s wildlife is simply astonishing ...
-                               </div>
-                           </div>
-                           <span class="downArrow">
-                               <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/WhiteDownArrow.png" />
-                           </span>
-                       </div>
-                   </div>
-                   <div class="lightbox-menuItem-boxed sideBorders" data-tab="box5">
-                       <div class="lighbox-menuContent">
-                           <div class="defaultContent">
-                               <span class="smallCaseTitle">where to go</span>
-                               <span class="capitalCaseTitle">AND WHEN</span>
-                           </div>
-                           <div class="hoverContent">
-                               <img class="menubox-logo" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/tab5Hover.png" />
-                               <div class="menubox-description">
-                                   A wealth of native flora and fauna can be seen in the biodiverse ...
-                               </div>
-                           </div>
-                           <span class="downArrow">
-                               <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/WhiteDownArrow.png" />
-                           </span>
-                       </div>
-                   </div>
-                   <div class="lightbox-menuItem-boxed" data-tab="box6">
-                       <div class="lighbox-menuContent">
-                           <div class="defaultContent">
-                               <span class="smallCaseTitle">holiday</span>
-                               <span class="capitalCaseTitle">IDEAS</span>
-                           </div>
-                           <div class="hoverContent">
-                               <img class="menubox-logo" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/tab6Hover.png" />
-                               <div class="menubox-description">
-                                   Discover the World offer a wide choice of itineraries ...
-                               </div>
-                           </div>
-                           <span class="downArrow">
-                               <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/WhiteDownArrow.png" />
-                           </span>
-                       </div>
-                   </div>
-
-               </div>
-               
-           </div>
-           <div class="lightbox-detailsPage">
-               <div class="lightbox-title">
-                   <div class="MainTabs lightbox-top-menu">
-                       <nav>
-                           <ul>
-                               <li class="lightbox-top-menu-item" data-tab="tab1">
-                                   <a href="#">
-                                       <span class="Menu Menu1"></span>
-                                   </a>
-                               </li>
-                               <li class="lightbox-top-menu-item" data-tab="tab2">
-                                   <a href="#">
-                                       <span class="Menu Menu2"></span>
-                                   </a>
-                               </li>
-                               <li class="lightbox-top-menu-item" data-tab="tab3">
-                                   <a href="#">
-                                       <span class="Menu Menu3"></span>
-                                   </a>
-                               </li>
-                               <li class="lightbox-top-menu-item" data-tab="tab4">
-                                   <a href="#">
-                                       <span class="Menu Menu4"></span>
-                                   </a>
-                               </li>
-                               <li class="lightbox-top-menu-item" data-tab="tab5">
-                                   <a href="#">
-                                       <span class="Menu Menu5"></span>
-                                   </a>
-                               </li>
-                               <li class="lightbox-top-menu-item" data-tab="tab6">
-                                   <a href="#">
-                                       <span class="Menu Menu6"></span>
-                                   </a>
-                               </li>
-                           </ul>
-                       </nav>
-                   </div>
-               </div>
-               <div class="tab lightbox-tab1 active" style="display:block">
-                   
-                  <div class="MainContaintArea">
-                        <div class="BigbagImg">
-                            <div class="BannerContentBox">
-                                <div class="TextBanner">
-                                    <span class="SmallBnnerText tab1Bannersmalltesxt">welcome to</span>
-                                    <span class="BigBnnerText tab1BannerBigtesxt1">WESTERN</span>
-                                    <span class="BigBnnerText tab1BannerBigtesxt2">AUSTRALIA</span>
+                    <div class="mobNavigatorContent">
+                        <div class="mobPrevTab">
+                            <div class="navArrow">
+                                <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/mobArrow.png" />
+                            </div>
+                        </div>
+                        <div class="mobNextTab">
+                            <div class="navArrow">
+                                <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/mobArrow.png" />
+                            </div>
+                        </div>
+                        <div class="mobCurrentTab">
+                            <div class="mobNavigationTabs">
+                                <div class="mobTab1 mobTab active" data-tab="tab1">
+                                    <div class="mobCurrentTabLogo">
+                                        <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/tab1Hover.png" />
+                                        <span class="smallCaseTitle leftDistance"><span>why</span></span>
+                                        <span class="capitalCaseTitle">WESTERN AUSTRALIA</span>
+                                    </div>
+                                </div>
+                                <div class="mobTab2 mobTab" data-tab="tab2">
+                                    <div class="mobCurrentTabLogo">
+                                        <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/tab2Hover.png" />
+                                        <span class="smallCaseTitle leftDistance"><span>whale</span></span>
+                                        <span class="capitalCaseTitle">WATCHING</span>
+                                    </div>
+                                </div>
+                                <div class="mobTab3 mobTab" data-tab="tab3">
+                                    <div class="mobCurrentTabLogo">
+                                        <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/tab3Hover.png" />
+                                        <span class="smallCaseTitle leftDistance"><span>ningaloo</span></span>
+                                        <span class="capitalCaseTitle">REEF</span>
+                                    </div>
+                                </div>
+                                <div class="mobTab4 mobTab" data-tab="tab4">
+                                    <div class="mobCurrentTabLogo">
+                                        <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/tab4Hover.png" />
+                                        <span class="smallCaseTitle leftDistance"><span>epic</span></span>
+                                        <span class="capitalCaseTitle">WILDLIFE</span>
+                                        <span class="smallCaseTitle"><span>journeys</span></span>
+                                    </div>
+                                </div>
+                                <div class="mobTab1 mobTab" data-tab="tab5">
+                                    <div class="mobCurrentTabLogo">
+                                        <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/tab5Hover.png" />
+                                        <span class="smallCaseTitle leftDistance"><span>where to go</span></span>
+                                        <span class="capitalCaseTitle">AND WHEN</span>
+                                    </div>
+                                </div>
+                                <div class="mobTab6 mobTab" data-tab="tab6">
+                                    <div class="mobCurrentTabLogo">
+                                        <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/tab5Hover.png" />
+                                        <span class="smallCaseTitle leftDistance"><span>holiday</span></span>
+                                        <span class="capitalCaseTitle">IDEAS</span>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="TextContainer">
-                                <div class="ContentTextBox">
-                                    <div class="OtherBox">
-                                        <div class="LeftImgBox">&nbsp;
-                                            <div class="OtherImg"><img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/lyn.jpg" /></div>
-                                        </div>
-                                        <div class="OtherDetailBox">
-                                            <div class="OtherName">Lyn Beazley</div>
-                                            <div class="OtherDesignation">Former chief scientist of Western Australia</div>
-                                        </div>
-                                    </div>
-                                    <div class="clear"></div>
-                                    <div class="DetailDescription">
-                                        <p class="DescriptionTextTab1">
-                                            As a biology graduate and scientist, I thought I had a pretty good understanding of the Earth’s natural history.
-                                    When I first arrived in Western Australia, though, I was in for a huge surprise - I may as well have been on another
-                                            planet. I couldn’t recognise a single species of plant and there was a host of peculiar marsupials to get to know.
-                                        </p>
-                                        <p class="DescriptionTextTab1">
-                                            Indeed, Western Australia’s wildlife is simply astonishing (the southwest ranks among the world’s 34 biodiversity hotspots),
-                                            boasting a treasure trove of species, from the strange to the spectacular. Particularly enthralling is its marine life,
-                                            and over the coming pages we’ll introduce just some of these gems: bottlenose dolphins in Perth’s Swan River, humpback
-                                            whales off Rottnest Island, whale sharks around Ningaloo Reef and dugongs in Shark Bay (both of which are World Heritage Sites),
-                                            not to mention the breathtaking and still largely untrodden wilderness in the Kimberley. Western Australia is home to far
-                                            more than just kangaroos. It’s a whole new world, and it’s full of surprise and delight.
-                                        </p>
-                                    </div>
-                                    <div class="clear"></div>
-                                    <div class="ContentFooter">
-                                        <div class="ShareBox">
-                                            <span class="Sharelabel">follow:</span>
-                                            <span class="SocialBox">
-                                                <a href="javascript:window.open(window.clickTagTweet)" class="tweet"></a>
-                                                <a href="javascript:window.open(window.clickTagFb)" class="fb"></a>
-                                                <a href="javascript:window.open(window.clickTagInsta)" class="insta"></a>
-                                                <a href="javascript:window.open(window.clickTagYou)" class="youtube"></a>
-                                            </span>
-                                        </div>
-                                        <div class="clear"></div>
-                                        <div class="readNextBox">
-                                            <span class="ReadNext">read next:</span>
-                                            <span class="NextTabLabel">
-                                                <img class="NextLogo" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/footertab2.png" />
-                                            </span>
-                                            <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/readNextArrow.png" />
-                                        </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="lighbox-container">
+                <div class="lightbox-defaultTab box1BG">
+                    <div class="lightbox-title">
+                        <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/TipStrip.png" class="titleImg" />
+                    </div>
+                    <div class="lighbox-boxedMenu">
+                        <div class="lightbox-menuItem-boxed bottomBorder box1Hover hover" data-tab="box1">
+                            <div class="lighbox-menuContent">
+
+                                <div class="defaultContent">
+                                    <span class="smallCaseTitle">why</span>
+                                    <span class="capitalCaseTitle">WESTERN AUSTRALIA</span>
+                                </div>
+                                <div class="hoverContent">
+                                    <img class="menubox-logo" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/tab1Hover.png" />
+                                    <div class="menubox-description">
+                                        Incredible wildlife encounters await around every corner...
                                     </div>
                                 </div>
+                                <span class="downArrow">
+                                    <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/WhiteDownArrow.png" />
+                                </span>
+                            </div>
+                        </div>
+                        <div class="lightbox-menuItem-boxed sideBorders bottomBorder" data-tab="box2">
+                            <div class="lighbox-menuContent">
+                                <div class="defaultContent">
+                                    <span class="smallCaseTitle">whale</span>
+                                    <span class="capitalCaseTitle">WATCHING</span>
+                                </div>
+                                <div class="hoverContent">
+                                    <img class="menubox-logo" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/tab2Hover.png" />
+                                    <div class="menubox-description">
+                                        Whales come so close in Western Australia you can almost ...
+                                    </div>
+                                </div>
+                                <span class="downArrow">
+                                    <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/WhiteDownArrow.png" />
+                                </span>
+                            </div>
+                        </div>
+                        <div class="lightbox-menuItem-boxed bottomBorder" data-tab="box3">
+                            <div class="lighbox-menuContent">
+                                <div class="defaultContent">
+                                    <span class="smallCaseTitle">ningaloo</span>
+                                    <span class="capitalCaseTitle">REEF</span>
+
+                                </div>
+                                <div class="hoverContent">
+                                    <img class="menubox-logo" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/tab3Hover.png" />
+                                    <div class="menubox-description">
+                                        Ningaloo is amagnet for whale sharks, manta rays and ...
+                                    </div>
+                                </div>
+                                <span class="downArrow">
+                                    <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/WhiteDownArrow.png" />
+                                </span>
+                            </div>
+                        </div>
+                        <div class="lightbox-menuItem-boxed" data-tab="box4">
+                            <div class="lighbox-menuContent">
+                                <div class="defaultContent">
+                                    <span class="smallCaseTitle">epic</span>
+                                    <span class="capitalCaseTitle">WILDLIFE</span>
+                                    <span class="smallCaseTitle" style="margin-left:10px">journeys</span>
+                                </div>
+                                <div class="hoverContent">
+                                    <img class="menubox-logo" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/tab4Hover.png" />
+                                    <div class="menubox-description">
+                                        Western Australia’s wildlife is simply astonishing ...
+                                    </div>
+                                </div>
+                                <span class="downArrow">
+                                    <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/WhiteDownArrow.png" />
+                                </span>
+                            </div>
+                        </div>
+                        <div class="lightbox-menuItem-boxed sideBorders" data-tab="box5">
+                            <div class="lighbox-menuContent">
+                                <div class="defaultContent">
+                                    <span class="smallCaseTitle">where to go</span>
+                                    <span class="capitalCaseTitle">AND WHEN</span>
+                                </div>
+                                <div class="hoverContent">
+                                    <img class="menubox-logo" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/tab5Hover.png" />
+                                    <div class="menubox-description">
+                                        A wealth of native flora and fauna can be seen in the biodiverse ...
+                                    </div>
+                                </div>
+                                <span class="downArrow">
+                                    <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/WhiteDownArrow.png" />
+                                </span>
+                            </div>
+                        </div>
+                        <div class="lightbox-menuItem-boxed" data-tab="box6">
+                            <div class="lighbox-menuContent">
+                                <div class="defaultContent">
+                                    <span class="smallCaseTitle">holiday</span>
+                                    <span class="capitalCaseTitle">IDEAS</span>
+                                </div>
+                                <div class="hoverContent">
+                                    <img class="menubox-logo" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/tab6Hover.png" />
+                                    <div class="menubox-description">
+                                        Discover the World offer a wide choice of itineraries ...
+                                    </div>
+                                </div>
+                                <span class="downArrow">
+                                    <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/WhiteDownArrow.png" />
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="lightbox-detailsPage">
+                    <div class="lightbox-title">
+                        <div class="MainTabs lightbox-top-menu">
+                            <nav>
+                                <ul>
+                                    <li class="lightbox-top-menu-item" data-tab="tab1">
+                                        <a href="#">
+                                            <span class="Menu Menu1"></span>
+                                        </a>
+                                    </li>
+                                    <li class="lightbox-top-menu-item" data-tab="tab2">
+                                        <a href="#">
+                                            <span class="Menu Menu2"></span>
+                                        </a>
+                                    </li>
+                                    <li class="lightbox-top-menu-item" data-tab="tab3">
+                                        <a href="#">
+                                            <span class="Menu Menu3"></span>
+                                        </a>
+                                    </li>
+                                    <li class="lightbox-top-menu-item" data-tab="tab4">
+                                        <a href="#">
+                                            <span class="Menu Menu4"></span>
+                                        </a>
+                                    </li>
+                                    <li class="lightbox-top-menu-item" data-tab="tab5">
+                                        <a href="#">
+                                            <span class="Menu Menu5"></span>
+                                        </a>
+                                    </li>
+                                    <li class="lightbox-top-menu-item" data-tab="tab6">
+                                        <a href="#">
+                                            <span class="Menu Menu6"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="tab lightbox-tab1 active" style="display:block">
+
+                        <div class="MainContaintArea">
+                            <div class="BigbagImg">
+                                <div class="BannerContentBox">
+                                    <div class="TextBanner">
+                                        <span class="SmallBnnerText tab1Bannersmalltesxt">welcome to</span>
+                                        <span class="BigBnnerText tab1BannerBigtesxt1">WESTERN</span>
+                                        <span class="BigBnnerText tab1BannerBigtesxt2">AUSTRALIA</span>
+                                    </div>
+                                </div>
+                                <div class="TextContainer">
+                                    <div class="ContentTextBox">
+                                        <div class="OtherBox">
+                                            <div class="LeftImgBox">
+                                                &nbsp;
+                                                <div class="OtherImg"><img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/lyn.jpg" /></div>
+                                            </div>
+                                            <div class="OtherDetailBox">
+                                                <div class="OtherName">Lyn Beazley</div>
+                                                <div class="OtherDesignation">Former chief scientist of Western Australia</div>
+                                            </div>
+                                        </div>
+                                        <div class="clear"></div>
+                                        <div class="DetailDescription">
+                                            <p class="DescriptionTextTab1">
+                                                As a biology graduate and scientist, I thought I had a pretty good understanding of the Earth’s natural history.
+                                                When I first arrived in Western Australia, though, I was in for a huge surprise - I may as well have been on another
+                                                planet. I couldn’t recognise a single species of plant and there was a host of peculiar marsupials to get to know.
+                                            </p>
+                                            <p class="DescriptionTextTab1">
+                                                Indeed, Western Australia’s wildlife is simply astonishing (the southwest ranks among the world’s 34 biodiversity hotspots),
+                                                boasting a treasure trove of species, from the strange to the spectacular. Particularly enthralling is its marine life,
+                                                and over the coming pages we’ll introduce just some of these gems: bottlenose dolphins in Perth’s Swan River, humpback
+                                                whales off Rottnest Island, whale sharks around Ningaloo Reef and dugongs in Shark Bay (both of which are World Heritage Sites),
+                                                not to mention the breathtaking and still largely untrodden wilderness in the Kimberley. Western Australia is home to far
+                                                more than just kangaroos. It’s a whole new world, and it’s full of surprise and delight.
+                                            </p>
+                                        </div>
+                                        <div class="clear"></div>
+                                        <div class="ContentFooter">
+                                            <div class="ShareBox">
+                                                <span class="Sharelabel">follow:</span>
+                                                <span class="SocialBox">
+                                                    <a href="javascript:window.open(window.clickTagTweet)" class="tweet"></a>
+                                                    <a href="javascript:window.open(window.clickTagFb)" class="fb"></a>
+                                                    <a href="javascript:window.open(window.clickTagInsta)" class="insta"></a>
+                                                    <a href="javascript:window.open(window.clickTagYou)" class="youtube"></a>
+                                                </span>
+                                            </div>
+                                            <div class="clear"></div>
+                                            <div class="readNextBox">
+                                                <span class="ReadNext">read next:</span>
+                                                <span class="NextTabLabel">
+                                                    <img class="NextLogo" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/footertab2.png" />
+                                                </span>
+                                                <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/readNextArrow.png" />
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-               
-                   
-                   </div>
-               <div class="tab lightbox-tab2">
 
-                    <div class="MainContaintArea">
-                        <div class="BigbagImg">
-                            <div class="BannerContentBox">
-                                <div class="TextBanner">
-                                    <span class="SmallBnnerText tab2SmalltextAlignmnt1">have a </span>
-                                    <span class="BigBnnerText"> WHALE </span>
-                                    <span class="SmallBnnerText tab2SmalltextAlignmnt">of a time!</span>
+
+                    </div>
+                    <div class="tab lightbox-tab2">
+
+                        <div class="MainContaintArea">
+                            <div class="BigbagImg">
+                                <div class="BannerContentBox">
+                                    <div class="TextBanner">
+                                        <span class="SmallBnnerText tab2SmalltextAlignmnt1">have a </span>
+                                        <span class="BigBnnerText"> WHALE </span>
+                                        <span class="SmallBnnerText tab2SmalltextAlignmnt">of a time!</span>
+                                    </div>
                                 </div>
-                           </div>
-                           <div class="TextContainer">
+                                <div class="TextContainer">
                                     <div class="ContentTextBox">
                                         <div class="WhaleText">
-                                            <span class="Tab2Headingsplit2lines">Whales come so close in Western Australia you can almost touch them.</span></div>
+                                            <span class="Tab2Headingsplit2lines">Whales come so close in Western Australia you can almost touch them.</span>
+                                        </div>
                                         <div class="clear"></div>
                                         <div class="DetailDescription">
                                             <div class="TextBgImg">
@@ -439,679 +441,680 @@
                                                         <span class="PTagAncher">www.discover-the-world.co.uk</span>
                                                     </p>
                                                     <div class="LearnmoreBox">
-                                                        
-                                                            <span>LEARN MORE</span></br>
-                                                            <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/needrightArrow.png" />
-                                                        
+
+                                                        <span>LEARN MORE</span></br>
+                                                        <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/needrightArrow.png" />
+
                                                     </div>
                                                 </div>
                                             </a>
 
-                                        
+
+                                            <div class="clear"></div>
+                                            <div class="ContentFooter">
+                                                <div class="ShareBox">
+                                                    <span class="Sharelabel">follow:</span>
+                                                    <span class="SocialBox">
+                                                        <a href="javascript:window.open(window.clickTagTweet)" class="tweet"></a>
+                                                        <a href="javascript:window.open(window.clickTagFb)" class="fb"></a>
+                                                        <a href="javascript:window.open(window.clickTagInsta)" class="insta"></a>
+                                                        <a href="javascript:window.open(window.clickTagYou)" class="youtube"></a>
+                                                    </span>
+                                                </div>
                                                 <div class="clear"></div>
-                                                <div class="ContentFooter">
-                                                    <div class="ShareBox">
-                                                        <span class="Sharelabel">follow:</span>
-                                                        <span class="SocialBox">
-                                                            <a href="javascript:window.open(window.clickTagTweet)" class="tweet"></a>
-                                                            <a href="javascript:window.open(window.clickTagFb)" class="fb"></a>
-                                                            <a href="javascript:window.open(window.clickTagInsta)" class="insta"></a>
-                                                            <a href="javascript:window.open(window.clickTagYou)" class="youtube"></a>
-                                                        </span>
-                                                    </div>
-                                                    <div class="clear"></div>
-                                                    <div class="readNextBox">
-                                                        <span class="ReadNext">read next:</span>
-                                                        <span class="NextTabLabel">
-                                                            <img class="NextLogo" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/footertab3.png" />
-                                                        </span>
-                                                        <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/readNextArrow.png" />
-                                                    </div>
+                                                <div class="readNextBox">
+                                                    <span class="ReadNext">read next:</span>
+                                                    <span class="NextTabLabel">
+                                                        <img class="NextLogo" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/footertab3.png" />
+                                                    </span>
+                                                    <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/readNextArrow.png" />
                                                 </div>
                                             </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                   </div>
+                        </div>
 
-               </div>
-               <div class="tab lightbox-tab3">
+                    </div>
+                    <div class="tab lightbox-tab3">
 
-                   <div class="MainContaintArea">
-                       <div class="BigbagImg">
-                           <div class="BannerContentBox">
-                               <div class="TextBanner">
-                                   <span class="SmallBnnerText tab3Bannersmalltesxt">swimming with</span>
-                                   <span class="BigBnnerText tab3BigtextAligning">GIANTS!</span>
-                               </div>
-                               </div>
-                               <div class="TextContainer">
-                                   <div class="ContentTextBox">
-                                       <div class="WhaleText">
-                                           Ningaloo’s pristine waters and spectacular fringing reef – one of the longest on Earth – are a magnet for whale sharks,
+                        <div class="MainContaintArea">
+                            <div class="BigbagImg">
+                                <div class="BannerContentBox">
+                                    <div class="TextBanner">
+                                        <span class="SmallBnnerText tab3Bannersmalltesxt">swimming with</span>
+                                        <span class="BigBnnerText tab3BigtextAligning">GIANTS!</span>
+                                    </div>
+                                </div>
+                                <div class="TextContainer">
+                                    <div class="ContentTextBox">
+                                        <div class="WhaleText">
+                                            Ningaloo’s pristine waters and spectacular fringing reef – one of the longest on Earth – are a magnet for whale sharks,
                                             manta rays and turtles.
-                                       </div>
-                                       <div class="clear"></div>
-                                       <div class="DetailDescription">
-                                           <div class="TextBgImg">
-                                               <p class="DescriptionTextTab2">
-                                                   Polls to find the world’s best wildlife-watching adventures invariably feature snorkelling with whale sharks. Everything
-                                                   about these gentle giants is superlative – they average 7–8m long, their huge jaws span up to 1.5m and they can strain
-                                                   6,000 litres of seawater an hour. Yet despite their size, these filter-feeding leviathans are astonishingly graceful and
-                                                   placid. And there’s no better place to meet them than Ningaloo, a two hour flight from Perth in Western Australia.
-                                               </p>
-                                               <img class="TextBgImageMob" data-delay="600" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab3b.jpg" />
-                                               </div>
-                                           <div class="TextBgImg">
-                                               <p class="DescriptionTextTab2">
-                                                   Stretching 260km, the reef has been declared a World Heritage Site in recognition of its incredible marine biodiversity,
-                                                   and in particular it has become legendary for reliable sightings of whale sharks from mid-March, with the prime season
-                                                   April to July.
-                                               </p>
-                                              </div>
-                                           <div class="TextBgImg">
-                                               <p class="DescriptionTextTab2">
-                                                   Ningaloo has an enviable reputation for the quality of its responsible whale shark tourism, with numerous tour operators
-                                                   based in Exmouth offering day trips to snorkel with the sharks. Boats follow a strict code that sets out how many
-                                                   snorkellers are in the water and how close you can swim. A spotter plane locates the sharks each morning, so boats are
-                                                   able to guarantee sightings.
-                                               </p>
-                                               </div>
-                                           <div class="TextBgImg">
-                                               <p class="DescriptionTextTab2">
-                                                   Ningaloo is also famous for its manta rays, present year-round, with numbers peaking from May to September. To mingle
-                                                   with these serene, approachable fish is an unforgettable experience and encounters with half-a-dozen at a time are not
-                                                   uncommon at Ningaloo. The best place to see them is Coral Bay, a snorkeller’s paradise about 150km south-west of
-                                                   Exmouth – a leisurely three-hour drive through the bush. Wildlife you might spot en-route includes red kangaroos, emus
-                                                   and wedge-tailed eagles (Australia’s largest bird of prey).
-                                               </p>
-                                               </div>
-                                           <div class="TextBgImg">
-                                               <p class="DescriptionTextTab2">
-                                                   One of the great attractions of Ningaloo is that it is a fringing reef. So you can walk in off the white-sand beaches
-                                                   anywhere you like and start snorkelling straight away in the shallows, marvelling at the coral gardens and myriad
-                                                   rainbow-coloured fish.
-                                               </p>
-                                               </div>
-                                           <div class="TextBgImg">
-                                               <p class="DescriptionTextTab2">
-                                                   While snorkelling you also have an excellent chance of spotting turtles, with five of the world’s seven marine species
-                                                   found here. Green, loggerhead and hawksbill turtles are what you’re most likely to see, while a healthy population of
-                                                   about 30,000 humpback whales migrates along the Western Australian seaboard between July and October. This year the
-                                                   State trialled its first licences for swimming with humpbacks at Ningaloo Reef.
-                                               </p>
-                                               </div>
-                                           <div class="TextBgImg">
-                                               <p class="DescriptionTextTab2">
-                                                   Above all, Ningaloo has managed to retain its undeveloped, wild nature. There’s pristine coral, crystal-clear water and
-                                                   a warm welcome waiting, not to mention the chance to meet some of the biggest creatures in the ocean. Just don’t expect
-                                                   the crowds.
-                                               </p>
-                                               </div>
-                                           </div>
-                                       <a class="NeedToKnowBoxLink" href="javascript:window.open(window.clickTagNeedToKnow)" >
-                                           <div class="NeedToKnowBox">
-                                               <h3 class="NeedtoHeading">NEED TO KNOW</h3>
-                                               <p class="NeedDesc">
-                                                   Discover the World offers a road trip from Perth to Exmouth, from £1,052 pp (twin share, excl flights) for 11 nights.
-                                                   visit</br>
-                                                   <span class="PTagAncher">www.discover-the-world.co.uk</span>
-                                               </p>
-                                               <div class="LearnmoreBox">
-                                                   
-                                                       <span>LEARN MORE</span></br>
-                                                       <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/needrightArrow.png" />
-                                                   
-                                               </div>
-                                           </div>
-                                       </a>
-                                       <div class="clear"></div>
-                                       <div class="ContentFooter">
-                                           <div class="ShareBox">
-                                               <span class="Sharelabel">follow:</span>
-                                               <span class="SocialBox">
-                                                   <a href="javascript:window.open(window.clickTagTweet)" class="tweet"></a>
-                                                   <a href="javascript:window.open(window.clickTagFb)" class="fb"></a>
-                                                   <a href="javascript:window.open(window.clickTagInsta)" class="insta"></a>
-                                                   <a href="javascript:window.open(window.clickTagYou)" class="youtube"></a>
-                                               </span>
-                                           </div>
-                                           <div class="clear"></div>
-                                           <div class="readNextBox">
-                                               <span class="ReadNext">read next:</span>
-                                               <span class="NextTabLabel">
-                                                   <img class="NextLogo" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/footertab4.png" />
-                                               </span>
-                                               <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/readNextArrow.png" />
-                                           </div>
-                                       </div>
-                                   </div>
-                               </div>
-                           </div>
-                   </div>
+                                        </div>
+                                        <div class="clear"></div>
+                                        <div class="DetailDescription">
+                                            <div class="TextBgImg">
+                                                <p class="DescriptionTextTab2">
+                                                    Polls to find the world’s best wildlife-watching adventures invariably feature snorkelling with whale sharks. Everything
+                                                    about these gentle giants is superlative – they average 7–8m long, their huge jaws span up to 1.5m and they can strain
+                                                    6,000 litres of seawater an hour. Yet despite their size, these filter-feeding leviathans are astonishingly graceful and
+                                                    placid. And there’s no better place to meet them than Ningaloo, a two hour flight from Perth in Western Australia.
+                                                </p>
+                                                <img class="TextBgImageMob" data-delay="600" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab3b.jpg" />
+                                            </div>
+                                            <div class="TextBgImg">
+                                                <p class="DescriptionTextTab2">
+                                                    Stretching 260km, the reef has been declared a World Heritage Site in recognition of its incredible marine biodiversity,
+                                                    and in particular it has become legendary for reliable sightings of whale sharks from mid-March, with the prime season
+                                                    April to July.
+                                                </p>
+                                            </div>
+                                            <div class="TextBgImg">
+                                                <p class="DescriptionTextTab2">
+                                                    Ningaloo has an enviable reputation for the quality of its responsible whale shark tourism, with numerous tour operators
+                                                    based in Exmouth offering day trips to snorkel with the sharks. Boats follow a strict code that sets out how many
+                                                    snorkellers are in the water and how close you can swim. A spotter plane locates the sharks each morning, so boats are
+                                                    able to guarantee sightings.
+                                                </p>
+                                            </div>
+                                            <div class="TextBgImg">
+                                                <p class="DescriptionTextTab2">
+                                                    Ningaloo is also famous for its manta rays, present year-round, with numbers peaking from May to September. To mingle
+                                                    with these serene, approachable fish is an unforgettable experience and encounters with half-a-dozen at a time are not
+                                                    uncommon at Ningaloo. The best place to see them is Coral Bay, a snorkeller’s paradise about 150km south-west of
+                                                    Exmouth – a leisurely three-hour drive through the bush. Wildlife you might spot en-route includes red kangaroos, emus
+                                                    and wedge-tailed eagles (Australia’s largest bird of prey).
+                                                </p>
+                                            </div>
+                                            <div class="TextBgImg">
+                                                <p class="DescriptionTextTab2">
+                                                    One of the great attractions of Ningaloo is that it is a fringing reef. So you can walk in off the white-sand beaches
+                                                    anywhere you like and start snorkelling straight away in the shallows, marvelling at the coral gardens and myriad
+                                                    rainbow-coloured fish.
+                                                </p>
+                                            </div>
+                                            <div class="TextBgImg">
+                                                <p class="DescriptionTextTab2">
+                                                    While snorkelling you also have an excellent chance of spotting turtles, with five of the world’s seven marine species
+                                                    found here. Green, loggerhead and hawksbill turtles are what you’re most likely to see, while a healthy population of
+                                                    about 30,000 humpback whales migrates along the Western Australian seaboard between July and October. This year the
+                                                    State trialled its first licences for swimming with humpbacks at Ningaloo Reef.
+                                                </p>
+                                            </div>
+                                            <div class="TextBgImg">
+                                                <p class="DescriptionTextTab2">
+                                                    Above all, Ningaloo has managed to retain its undeveloped, wild nature. There’s pristine coral, crystal-clear water and
+                                                    a warm welcome waiting, not to mention the chance to meet some of the biggest creatures in the ocean. Just don’t expect
+                                                    the crowds.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <a class="NeedToKnowBoxLink" href="javascript:window.open(window.clickTagNeedToKnow)">
+                                            <div class="NeedToKnowBox">
+                                                <h3 class="NeedtoHeading">NEED TO KNOW</h3>
+                                                <p class="NeedDesc">
+                                                    Discover the World offers a road trip from Perth to Exmouth, from £1,052 pp (twin share, excl flights) for 11 nights.
+                                                    visit</br>
+                                                    <span class="PTagAncher">www.discover-the-world.co.uk</span>
+                                                </p>
+                                                <div class="LearnmoreBox">
 
-               </div>
-               <div class="tab lightbox-tab4">
+                                                    <span>LEARN MORE</span></br>
+                                                    <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/needrightArrow.png" />
 
-                   <div class="MainContaintArea">
-                       <div class="BigbagImg">
-                           <div class="BannerContentBox">
-                               <div class="TextBanner">
-                                   <span class="SmallBnnerText tab4Bannersmalltesxt1">choose your</span>
-                                   <span class="BigBnnerText tab4BannerBigtesxt1">EPIC</span>
-                                   <span class="SmallBnnerText tab4Bannersmalltesxt2">wildlife</span>
-                                   <span class="BigBnnerText tab4BannerBigtesxt2">JOURNEY</span>
-                               </div>
-                           </div>
-                           <div class="TextContainer">
-                               <div class="ContentTextBox">
-                                   <div class="WhaleText">Take an extraordinary wildlife wander around this stunning region with one of these five epic journeys</div>
-                                   <div class="clear"></div>
-                                   <div class="DetailDescription">
-                                       <div class="TextBgImg">
-                                           <h3 class="DescriptionTextHeading">Cycle Rottnest Island </h3>
-                                           <p class="DescriptionTextTab2 Description4FirstP">
-                                               “Rotto”, as the locals call it, is an island paradise just a 30 minute ferry ride from Perth. An A Class Nature Reserve,
-                                               it’s home to 63 secluded beaches, 20 bays, and 50km of road to explore by pedal power. Free-wheel between beaches
-                                               before exploring Rottnest’s natural underwater sculptures, 400 species of fish and 20 species of coral. Watch for
-                                               stingrays in the shallows of Thomson Bay or spot bottlenose dolphins in Salmon Bay.  And don’t forget to meet the
-                                               quokkas, unique to Western Australia!
-                                           </p>
-                                           <img class="TextBgImageMob" data-delay="350" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab4e.jpg" />
-                                           </div>
-                                       <div class="TextBgImg">
-                                           <h3 class="DescriptionTextHeading">Cruise The Kimberley coast  </h3>
-                                           <p class="DescriptionTextTab2">
-                                               The Great Kimberley Marine Park will soon be one of the largest interconnected system of marine and terrestrial parks in
-                                               Australia, covering five million hectares. Here one of the world’s largest humpback whale nurseries has been discovered,
-                                               where 30,000 animals come from Antarctica to breed in August. On an expedition cruise you can explore islands with
-                                               fringing coral reefs, mangrove-lined creeks and bays with dugongs, sawfish and turtles. The cruise ships are small
-                                               enough to glide under cascading waterfalls and navigate narrow turquoise rivers. Helicopters and speedboats are on
-                                               hand to whisk you over the world’s only Horizontal Waterfalls and up to the stunning Montgomery Reef.
-                                           </p>
-                                           <img class="TextBgImageMob" data-delay="470"  src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab4c.jpg" />
-                                           </div>
-                                       <div class="TextBgImg">
-                                           <h3 class="DescriptionTextHeading">Walk The Cape to Cape Track, Australia’s South West </h3>
-                                           <p class="DescriptionTextTab2">
-                                               The Cape to Cape Track is a 135-kilometre trail meandering along the stunning coastline of Australia’s South West. You’ll
-                                               alternate spectacular cliff-top views of dolphins and humpback whales cavorting close to shore, with inland loops which
-                                               take in towering karri forests.  This is Australia’s only biodiversity hotspot, with everything from ospreys, red-tailed
-                                               black cockatoos and purple-crowned lorikeets to western brush wallabies, kangaroos and brush-tailed possums. The whole
-                                               trail takes five days but there are a number of guided options which showcase the highlights in one or two days.
-                                           </p>
-                                           <img class="TextBgImageMob" data-delay="450" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab4d.jpg" />
-                                           </div>
-                                       <div class="TextBgImg">
-                                           <h3 class="DescriptionTextHeading">Kayak Ningaloo Reef </h3>
-                                           <p class="DescriptionTextTab2">
-                                               A new sea-kayaking trail is being developed along the World Heritage-listed Ningaloo Reef, the longest fringing reef in
-                                               the world and one of Australia’s best wildlife spots. The trail, run by the Department of Parks and Wildlife, currently
-                                               consists of 10 moorings and provides an easy way to experience the reef, pinpointing locations to paddle to and jump in
-                                               for great snorkelling. Along with turtles there are manta rays, over 500 species of tropical fish and colourful coral
-                                               gardens. Hire equipment and dive in on your own, or follow a local guide for an amazing underwater experience.
-                                           </p>
-                                           <img class="TextBgImageMob" data-delay="400"  src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/tab4wdcrossing.jpg" />
-                                           </div>
-                                       <div class="TextBgImg">
-                                           <h3 class="DescriptionTextHeading">4WD The Gibb River Road</h3>
-                                           <p class="DescriptionTextTab2">
-                                               This is the Outback of dreams. Rust-red gorges, thundering waterfalls tumbling into crystal-clear waterholes, Livistona
-                                               palm forests sheltering natural hot springs, and cloudless skies. The Kimberley’s Gibb River Road follows an old stockman
-                                               route through the heart of the region. You can tackle it yourself in a 4WD or get a knowledgeable local guide to whisk
-                                               you around, staying at exclusive safari camps. This will leave you free to spot wallabies, brolgas, herons, kites and
-                                               freshwater crocodiles in their natural habitat, as well as admiring ancient aboriginal rock art sites and the World
-                                               Heritage-listed Bungle Bungle Range.
-                                           </p>
-                                           </div>
-                                       </div>
-                                   <div class="clear"></div>
-                                   <div class="ContentFooter">
-                                       <div class="ShareBox">
-                                           <span class="Sharelabel">follow:</span>
-                                           <span class="SocialBox">
-                                               <a href="javascript:window.open(window.clickTagTweet)" class="tweet"></a>
-                                               <a href="javascript:window.open(window.clickTagFb)" class="fb"></a>
-                                               <a href="javascript:window.open(window.clickTagInsta)" class="insta"></a>
-                                               <a href="javascript:window.open(window.clickTagYou)" class="youtube"></a>
-                                           </span>
-                                       </div>
-                                       <div class="clear"></div>
-                                       <div class="readNextBox">
-                                           <span class="ReadNext">read next:</span>
-                                           <span class="NextTabLabel">
-                                               <img class="NextLogo" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/footertab5.png" />
-                                           </span>
-                                           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/readNextArrow.png" />
-                                       </div>
-                                   </div>
-                               </div>
-                           </div>
-                       </div>
-                   </div>
-
-               </div>
-               <div class="tab lightbox-tab5">
-
-                   <div class="MainContaintArea">
-                       <div class="BigbagImg">
-                           <div class="BannerContentBox">
-                               <div class="TextBanner">
-                                   <span class="SmallBnnerText tab5Bannersmalltesxt1">12 months of</span>
-                                   <span class="BigBnnerText tab5BannerBigtesxt1">EXTRAORDINARY</span>
-                                   <span class="SmallBnnerText tab5Bannersmalltesxt2">wildlife</span>
-                                   <span class="BigBnnerText tab5BannerBigtesxt2">ENCOUNTERS</span>
-                               </div>
-                           </div>
-                           <div class="TextContainer">
-                               <div class="ContentTextBox">
-                                   <div class="WhaleText">A wealth of native flora and fauna can be seen in the biodiverse habitats of Western Australia
-                                    but where and when? </div>
-                                   <div class="clear"></div>
-                                   <div class="DetailDescription">
-                                       <div class="Tab5DescBox TextBgImg">
-                                           <div class="TabBText">
-                                               <h2 class="tab5Heading MonthBorderBottom">January</h2>
-                                           </div>
-                                           <h2 class="tab5Heading"><span class="LoareCaseHeading">what</span>Orcas</h2>
-                                           <h2 class="tab5Heading"><span class="LoareCaseHeading">where</span>Bremer bay</h2>
-                                           <p class="DescriptionTextTab2">
-                                               From January to April this remote spot hosts the largest known group of killer whales in the Southern Hemisphere.
-                                                A leak from a hydrocarbon pocket under the seabed sparks a food chain also attracting giant squid, sperm whales and
-                                                sea birds.
-                                           </p>
-                                           <div class="Tab5MontSaprator"></div>
-                                           <img class="TextBgImageMob" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5b.jpg" />
-                                       </div>
-                                       <div class="Tab5DescBox TextBgImg">
-                                           <div class="TabBText">
-                                               <h2 class="tab5Heading MonthBorderBottom">February</h2>
-                                           </div>
-                                           <h2 class="tab5Heading"><span class="LoareCaseHeading">what</span>Quokkas</h2>
-                                           <h2 class="tab5Heading"><span class="LoareCaseHeading">where</span>Rottnest</h2>
-                                           <p class="DescriptionTextTab2">
-                                               These furry, kangaroo-like marsupials can only be found in Western Australia. The best place to spot them is on
-                                                Rottnest Island, where they charm visitors with a willingness to interact. 
-                                           </p>
-                                           <div class="Tab5MontSaprator"></div>
-                                           <img class="TextBgImageMob" data-delay="300" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab3a.jpg" />
-                                       </div>
-                                       <div class="Tab5DescBox TextBgImg">
-                                           <div class="TabBText">
-                                               <h2 class="tab5Heading MonthBorderBottom">March</h2>
-                                           </div>
-                                           <h2 class="tab5Heading"><span class="LoareCaseHeading">what</span>Coral spawning and whale sharks</h2>
-                                           <h2 class="tab5Heading"><span class="LoareCaseHeading">where</span>Ningaloo</h2>
-                                           <p class="DescriptionTextTab2">
-                                               One night in March the waters of Ningaloo Reef come alive as 200 species of coral spawn. This attracts krill, that draws
-                                                in larger fish like the giant whale shark which basks on the reef from March to July.
-                                           </p>
-                                           <div class="Tab5MontSaprator"></div>
-                                           <img class="TextBgImageMob" data-delay="300" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5d.jpg" />
-                                       </div>
-                                       <div class="Tab5DescBox TextBgImg">
-                                           <div class="TabBText">
-                                               <h2 class="tab5Heading MonthBorderBottom">April</h2>
-                                           </div>
-                                           <h2 class="tab5Heading"><span class="LoareCaseHeading">what</span> Crocodiles </h2>
-                                           <h2 class="tab5Heading"><span class="LoareCaseHeading">where</span>The Kimberley</h2>
-                                           <p class="DescriptionTextTab2">
-                                               Saltwater and freshwater crocodiles can be seen in the Kimberley in the dry season (April to October), and in
-                                                Windjana Gorge you’ll find fossils in the gorge walls, fruit bats and fresh water crocs around the waterhole. 
-                                           </p>
-                                           <div class="Tab5MontSaprator"></div>
-                                           <img class="TextBgImageMob" data-delay="300" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5e.jpg" />
-                                       </div>
-                                       <div class="Tab5DescBox TextBgImg">
-                                           <div class="TabBText">
-                                               <h2 class="tab5Heading MonthBorderBottom">May</h2>
-                                           </div>
-                                           <h2 class="tab5Heading"><span class="LoareCaseHeading">what</span>Whale migration </h2>
-                                           <h2 class="tab5Heading"><span class="LoareCaseHeading">where</span>State-wide </h2>
-                                           <p class="DescriptionTextTab2">
-                                               May sees the humpback and southern right whale migration from the Southern Ocean to breeding grounds in the Kimberley
-                                                waters. Cruises and land-based lookouts operate May-December and you can swim with them at Ningaloo Reef August-October. 
-                                           </p>
-                                           <div class="Tab5MontSaprator"></div>
-                                           <img class="TextBgImageMob" data-delay="300" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/tab5June.jpg" />
-                                       </div>
-                                       <div class="Tab5DescBox TextBgImg">
-                                           <div class="TabBText">
-                                               <h2 class="tab5Heading MonthBorderBottom">June</h2>
-                                           </div>
-                                           <h2 class="tab5Heading"><span class="LoareCaseHeading">what</span>Staircase to the moon</h2>
-                                           <h2 class="tab5Heading"><span class="LoareCaseHeading">where</span>The Kimberley</h2>
-                                           <p class="DescriptionTextTab2">
-                                               From April to October the moon rises over mudflats and creates an optical illusion of stairs. Best seen from Roebuck Bay in Broome. 
-                                           </p>
-                                           <div class="Tab5MontSaprator"></div>
-                                           <img class="TextBgImageMob" data-delay="300" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5july.jpg" />
-                                       </div>
-                                       <div class="Tab5DescBox TextBgImg">
-                                           <div class="TabBText">
-                                               <h2 class="tab5Heading MonthBorderBottom">July</h2>
-                                           </div>
-                                           <h2 class="tab5Heading"><span class="LoareCaseHeading">what</span>Wildflowers</h2>
-                                           <h2 class="tab5Heading"><span class="LoareCaseHeading">where</span>State-wide </h2>
-                                           <p class="DescriptionTextTab2">
-                                               From Kalbarri National Park on the Coral Coast to the forests of the South West, wildflowers are abundant from July. 
-                                               Fitzgerald National Park is a top spot from September to November.
-                                           </p>
-                                           <div class="Tab5MontSaprator"></div>
-                                           <img class="TextBgImageMob" data-delay="300" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5h.jpg" />
-                                       </div>
-                                       <div class="Tab5DescBox TextBgImg">
-                                               <div class="TabBText">
-                                                    <h2 class="tab5Heading MonthBorderBottom">August </h2>
-                                               </div>
-                                               <h2 class="tab5Heading"><span class="LoareCaseHeading">what</span>Migratory birds</h2>
-                                               <h2 class="tab5Heading"><span class="LoareCaseHeading">where</span>State-wide</h2>
-                                               <p class="DescriptionTextTab2">
-                                                   Broome’s Roebuck Bay is home to 175,000 shore birds until November. Wetlands in the Kimberley host dozens of species.
-                                                   Rare Gouldian finches inhabit the Dampier Peninsula.
-                                               </p>
-                                           <div class="Tab5MontSaprator"></div>
-                                           <img class="TextBgImageMob" data-delay="300" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5i.jpg" />
-                                           </div>
-                                       <div class="Tab5DescBox TextBgImg">
-                                               <div class="TabBText">
-                                                    <h2 class="tab5Heading MonthBorderBottom">September</h2>
-                                               </div>
-                                               <h2 class="tab5Heading"><span class="LoareCaseHeading">what</span>Seals & sea lions</h2>
-                                               <h2 class="tab5Heading"><span class="LoareCaseHeading">where</span>Rockingham</h2>
-                                               <p class="DescriptionTextTab2">
-                                                   Rare Australian sea lions are easily found in the Shoalwater Marine Park, outside Perth, and at Jurien Bay, the
-                                                   Abrolhos islands, Albany and Esperance, along with New Zealand fur seals.
-                                               </p>
-                                           <div class="Tab5MontSaprator"></div>
-                                           <img class="TextBgImageMob" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5j.jpg" />
-                                           </div>
-                                       <div class="Tab5DescBox TextBgImg">
-                                               <div class="TabBText">
-                                                    <h2 class="tab5Heading MonthBorderBottom">October</h2>
-                                               </div>
-                                               <h2 class="tab5Heading"><span class="LoareCaseHeading">what</span>Dolphins</h2>
-                                               <h2 class="tab5Heading"><span class="LoareCaseHeading">where</span>State-wide</h2>
-                                               <p class="DescriptionTextTab2">
-                                                   Koombana Bay in Bunbury is a social spot for 100+ bottlenose dolphins. Learn about them at the Dolphin Interpretive
-                                                   Centre daily to April, or swim with them at Rockingham. Monkey Mia is another hotspot where rangers supervise
-                                                   beachfront interaction.
-                                               </p>
-                                           <div class="Tab5MontSaprator"></div>
-                                           <img class="TextBgImageMob"  src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5nov.jpg" /> 
-                                           </div>
-                                       <div class="Tab5DescBox TextBgImg">
-                                                <div class="TabBText">
-                                                      <h2 class="tab5Heading MonthBorderBottom">November</h2>
                                                 </div>
-                                               <h2 class="tab5Heading"><span class="LoareCaseHeading">what</span>Kangaroos</h2>
-                                               <h2 class="tab5Heading"><span class="LoareCaseHeading">where</span>State-wide</h2>
+                                            </div>
+                                        </a>
+                                        <div class="clear"></div>
+                                        <div class="ContentFooter">
+                                            <div class="ShareBox">
+                                                <span class="Sharelabel">follow:</span>
+                                                <span class="SocialBox">
+                                                    <a href="javascript:window.open(window.clickTagTweet)" class="tweet"></a>
+                                                    <a href="javascript:window.open(window.clickTagFb)" class="fb"></a>
+                                                    <a href="javascript:window.open(window.clickTagInsta)" class="insta"></a>
+                                                    <a href="javascript:window.open(window.clickTagYou)" class="youtube"></a>
+                                                </span>
+                                            </div>
+                                            <div class="clear"></div>
+                                            <div class="readNextBox">
+                                                <span class="ReadNext">read next:</span>
+                                                <span class="NextTabLabel">
+                                                    <img class="NextLogo" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/footertab4.png" />
+                                                </span>
+                                                <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/readNextArrow.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tab lightbox-tab4">
+
+                        <div class="MainContaintArea">
+                            <div class="BigbagImg">
+                                <div class="BannerContentBox">
+                                    <div class="TextBanner">
+                                        <span class="SmallBnnerText tab4Bannersmalltesxt1">choose your</span>
+                                        <span class="BigBnnerText tab4BannerBigtesxt1">EPIC</span>
+                                        <span class="SmallBnnerText tab4Bannersmalltesxt2">wildlife</span>
+                                        <span class="BigBnnerText tab4BannerBigtesxt2">JOURNEY</span>
+                                    </div>
+                                </div>
+                                <div class="TextContainer">
+                                    <div class="ContentTextBox">
+                                        <div class="WhaleText">Take an extraordinary wildlife wander around this stunning region with one of these five epic journeys</div>
+                                        <div class="clear"></div>
+                                        <div class="DetailDescription">
+                                            <div class="TextBgImg">
+                                                <h3 class="DescriptionTextHeading">Cycle Rottnest Island </h3>
+                                                <p class="DescriptionTextTab2 Description4FirstP">
+                                                    “Rotto”, as the locals call it, is an island paradise just a 30 minute ferry ride from Perth. An A Class Nature Reserve,
+                                                    it’s home to 63 secluded beaches, 20 bays, and 50km of road to explore by pedal power. Free-wheel between beaches
+                                                    before exploring Rottnest’s natural underwater sculptures, 400 species of fish and 20 species of coral. Watch for
+                                                    stingrays in the shallows of Thomson Bay or spot bottlenose dolphins in Salmon Bay.  And don’t forget to meet the
+                                                    quokkas, unique to Western Australia!
+                                                </p>
+                                                <img class="TextBgImageMob" data-delay="350" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab4e.jpg" />
+                                            </div>
+                                            <div class="TextBgImg">
+                                                <h3 class="DescriptionTextHeading">Cruise The Kimberley coast  </h3>
+                                                <p class="DescriptionTextTab2">
+                                                    The Great Kimberley Marine Park will soon be one of the largest interconnected system of marine and terrestrial parks in
+                                                    Australia, covering five million hectares. Here one of the world’s largest humpback whale nurseries has been discovered,
+                                                    where 30,000 animals come from Antarctica to breed in August. On an expedition cruise you can explore islands with
+                                                    fringing coral reefs, mangrove-lined creeks and bays with dugongs, sawfish and turtles. The cruise ships are small
+                                                    enough to glide under cascading waterfalls and navigate narrow turquoise rivers. Helicopters and speedboats are on
+                                                    hand to whisk you over the world’s only Horizontal Waterfalls and up to the stunning Montgomery Reef.
+                                                </p>
+                                                <img class="TextBgImageMob" data-delay="470" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab4c.jpg" />
+                                            </div>
+                                            <div class="TextBgImg">
+                                                <h3 class="DescriptionTextHeading">Walk The Cape to Cape Track, Australia’s South West </h3>
+                                                <p class="DescriptionTextTab2">
+                                                    The Cape to Cape Track is a 135-kilometre trail meandering along the stunning coastline of Australia’s South West. You’ll
+                                                    alternate spectacular cliff-top views of dolphins and humpback whales cavorting close to shore, with inland loops which
+                                                    take in towering karri forests.  This is Australia’s only biodiversity hotspot, with everything from ospreys, red-tailed
+                                                    black cockatoos and purple-crowned lorikeets to western brush wallabies, kangaroos and brush-tailed possums. The whole
+                                                    trail takes five days but there are a number of guided options which showcase the highlights in one or two days.
+                                                </p>
+                                                <img class="TextBgImageMob" data-delay="450" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab4d.jpg" />
+                                            </div>
+                                            <div class="TextBgImg">
+                                                <h3 class="DescriptionTextHeading">Kayak Ningaloo Reef </h3>
+                                                <p class="DescriptionTextTab2">
+                                                    A new sea-kayaking trail is being developed along the World Heritage-listed Ningaloo Reef, the longest fringing reef in
+                                                    the world and one of Australia’s best wildlife spots. The trail, run by the Department of Parks and Wildlife, currently
+                                                    consists of 10 moorings and provides an easy way to experience the reef, pinpointing locations to paddle to and jump in
+                                                    for great snorkelling. Along with turtles there are manta rays, over 500 species of tropical fish and colourful coral
+                                                    gardens. Hire equipment and dive in on your own, or follow a local guide for an amazing underwater experience.
+                                                </p>
+                                                <img class="TextBgImageMob" data-delay="400" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/tab4wdcrossing.jpg" />
+                                            </div>
+                                            <div class="TextBgImg">
+                                                <h3 class="DescriptionTextHeading">4WD The Gibb River Road</h3>
+                                                <p class="DescriptionTextTab2">
+                                                    This is the Outback of dreams. Rust-red gorges, thundering waterfalls tumbling into crystal-clear waterholes, Livistona
+                                                    palm forests sheltering natural hot springs, and cloudless skies. The Kimberley’s Gibb River Road follows an old stockman
+                                                    route through the heart of the region. You can tackle it yourself in a 4WD or get a knowledgeable local guide to whisk
+                                                    you around, staying at exclusive safari camps. This will leave you free to spot wallabies, brolgas, herons, kites and
+                                                    freshwater crocodiles in their natural habitat, as well as admiring ancient aboriginal rock art sites and the World
+                                                    Heritage-listed Bungle Bungle Range.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="clear"></div>
+                                        <div class="ContentFooter">
+                                            <div class="ShareBox">
+                                                <span class="Sharelabel">follow:</span>
+                                                <span class="SocialBox">
+                                                    <a href="javascript:window.open(window.clickTagTweet)" class="tweet"></a>
+                                                    <a href="javascript:window.open(window.clickTagFb)" class="fb"></a>
+                                                    <a href="javascript:window.open(window.clickTagInsta)" class="insta"></a>
+                                                    <a href="javascript:window.open(window.clickTagYou)" class="youtube"></a>
+                                                </span>
+                                            </div>
+                                            <div class="clear"></div>
+                                            <div class="readNextBox">
+                                                <span class="ReadNext">read next:</span>
+                                                <span class="NextTabLabel">
+                                                    <img class="NextLogo" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/footertab5.png" />
+                                                </span>
+                                                <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/readNextArrow.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tab lightbox-tab5">
+
+                        <div class="MainContaintArea">
+                            <div class="BigbagImg">
+                                <div class="BannerContentBox">
+                                    <div class="TextBanner">
+                                        <span class="SmallBnnerText tab5Bannersmalltesxt1">12 months of</span>
+                                        <span class="BigBnnerText tab5BannerBigtesxt1">EXTRAORDINARY</span>
+                                        <span class="SmallBnnerText tab5Bannersmalltesxt2">wildlife</span>
+                                        <span class="BigBnnerText tab5BannerBigtesxt2">ENCOUNTERS</span>
+                                    </div>
+                                </div>
+                                <div class="TextContainer">
+                                    <div class="ContentTextBox">
+                                        <div class="WhaleText">
+                                            A wealth of native flora and fauna can be seen in the biodiverse habitats of Western Australia
+                                            but where and when?
+                                        </div>
+                                        <div class="clear"></div>
+                                        <div class="DetailDescription">
+                                            <div class="Tab5DescBox TextBgImg">
+                                                <div class="TabBText">
+                                                    <h2 class="tab5Heading MonthBorderBottom">January</h2>
+                                                </div>
+                                                <h2 class="tab5Heading"><span class="LoareCaseHeading">what</span>Orcas</h2>
+                                                <h2 class="tab5Heading"><span class="LoareCaseHeading">where</span>Bremer bay</h2>
+                                                <p class="DescriptionTextTab2">
+                                                    From January to April this remote spot hosts the largest known group of killer whales in the Southern Hemisphere.
+                                                    A leak from a hydrocarbon pocket under the seabed sparks a food chain also attracting giant squid, sperm whales and
+                                                    sea birds.
+                                                </p>
+                                                <div class="Tab5MontSaprator"></div>
+                                                <img class="TextBgImageMob" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5b.jpg" />
+                                            </div>
+                                            <div class="Tab5DescBox TextBgImg">
+                                                <div class="TabBText">
+                                                    <h2 class="tab5Heading MonthBorderBottom">February</h2>
+                                                </div>
+                                                <h2 class="tab5Heading"><span class="LoareCaseHeading">what</span>Quokkas</h2>
+                                                <h2 class="tab5Heading"><span class="LoareCaseHeading">where</span>Rottnest</h2>
+                                                <p class="DescriptionTextTab2">
+                                                    These furry, kangaroo-like marsupials can only be found in Western Australia. The best place to spot them is on
+                                                    Rottnest Island, where they charm visitors with a willingness to interact.
+                                                </p>
+                                                <div class="Tab5MontSaprator"></div>
+                                                <img class="TextBgImageMob" data-delay="300" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab3a.jpg" />
+                                            </div>
+                                            <div class="Tab5DescBox TextBgImg">
+                                                <div class="TabBText">
+                                                    <h2 class="tab5Heading MonthBorderBottom">March</h2>
+                                                </div>
+                                                <h2 class="tab5Heading"><span class="LoareCaseHeading">what</span>Coral spawning and whale sharks</h2>
+                                                <h2 class="tab5Heading"><span class="LoareCaseHeading">where</span>Ningaloo</h2>
+                                                <p class="DescriptionTextTab2">
+                                                    One night in March the waters of Ningaloo Reef come alive as 200 species of coral spawn. This attracts krill, that draws
+                                                    in larger fish like the giant whale shark which basks on the reef from March to July.
+                                                </p>
+                                                <div class="Tab5MontSaprator"></div>
+                                                <img class="TextBgImageMob" data-delay="300" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5d.jpg" />
+                                            </div>
+                                            <div class="Tab5DescBox TextBgImg">
+                                                <div class="TabBText">
+                                                    <h2 class="tab5Heading MonthBorderBottom">April</h2>
+                                                </div>
+                                                <h2 class="tab5Heading"><span class="LoareCaseHeading">what</span> Crocodiles </h2>
+                                                <h2 class="tab5Heading"><span class="LoareCaseHeading">where</span>The Kimberley</h2>
+                                                <p class="DescriptionTextTab2">
+                                                    Saltwater and freshwater crocodiles can be seen in the Kimberley in the dry season (April to October), and in
+                                                    Windjana Gorge you’ll find fossils in the gorge walls, fruit bats and fresh water crocs around the waterhole.
+                                                </p>
+                                                <div class="Tab5MontSaprator"></div>
+                                                <img class="TextBgImageMob" data-delay="300" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5e.jpg" />
+                                            </div>
+                                            <div class="Tab5DescBox TextBgImg">
+                                                <div class="TabBText">
+                                                    <h2 class="tab5Heading MonthBorderBottom">May</h2>
+                                                </div>
+                                                <h2 class="tab5Heading"><span class="LoareCaseHeading">what</span>Whale migration </h2>
+                                                <h2 class="tab5Heading"><span class="LoareCaseHeading">where</span>State-wide </h2>
+                                                <p class="DescriptionTextTab2">
+                                                    May sees the humpback and southern right whale migration from the Southern Ocean to breeding grounds in the Kimberley
+                                                    waters. Cruises and land-based lookouts operate May-December and you can swim with them at Ningaloo Reef August-October.
+                                                </p>
+                                                <div class="Tab5MontSaprator"></div>
+                                                <img class="TextBgImageMob" data-delay="300" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/tab5June.jpg" />
+                                            </div>
+                                            <div class="Tab5DescBox TextBgImg">
+                                                <div class="TabBText">
+                                                    <h2 class="tab5Heading MonthBorderBottom">June</h2>
+                                                </div>
+                                                <h2 class="tab5Heading"><span class="LoareCaseHeading">what</span>Staircase to the moon</h2>
+                                                <h2 class="tab5Heading"><span class="LoareCaseHeading">where</span>The Kimberley</h2>
+                                                <p class="DescriptionTextTab2">
+                                                    From April to October the moon rises over mudflats and creates an optical illusion of stairs. Best seen from Roebuck Bay in Broome.
+                                                </p>
+                                                <div class="Tab5MontSaprator"></div>
+                                                <img class="TextBgImageMob" data-delay="300" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5july.jpg" />
+                                            </div>
+                                            <div class="Tab5DescBox TextBgImg">
+                                                <div class="TabBText">
+                                                    <h2 class="tab5Heading MonthBorderBottom">July</h2>
+                                                </div>
+                                                <h2 class="tab5Heading"><span class="LoareCaseHeading">what</span>Wildflowers</h2>
+                                                <h2 class="tab5Heading"><span class="LoareCaseHeading">where</span>State-wide </h2>
+                                                <p class="DescriptionTextTab2">
+                                                    From Kalbarri National Park on the Coral Coast to the forests of the South West, wildflowers are abundant from July.
+                                                    Fitzgerald National Park is a top spot from September to November.
+                                                </p>
+                                                <div class="Tab5MontSaprator"></div>
+                                                <img class="TextBgImageMob" data-delay="300" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5h.jpg" />
+                                            </div>
+                                            <div class="Tab5DescBox TextBgImg">
+                                                <div class="TabBText">
+                                                    <h2 class="tab5Heading MonthBorderBottom">August </h2>
+                                                </div>
+                                                <h2 class="tab5Heading"><span class="LoareCaseHeading">what</span>Migratory birds</h2>
+                                                <h2 class="tab5Heading"><span class="LoareCaseHeading">where</span>State-wide</h2>
+                                                <p class="DescriptionTextTab2">
+                                                    Broome’s Roebuck Bay is home to 175,000 shore birds until November. Wetlands in the Kimberley host dozens of species.
+                                                    Rare Gouldian finches inhabit the Dampier Peninsula.
+                                                </p>
+                                                <div class="Tab5MontSaprator"></div>
+                                                <img class="TextBgImageMob" data-delay="300" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5i.jpg" />
+                                            </div>
+                                            <div class="Tab5DescBox TextBgImg">
+                                                <div class="TabBText">
+                                                    <h2 class="tab5Heading MonthBorderBottom">September</h2>
+                                                </div>
+                                                <h2 class="tab5Heading"><span class="LoareCaseHeading">what</span>Seals & sea lions</h2>
+                                                <h2 class="tab5Heading"><span class="LoareCaseHeading">where</span>Rockingham</h2>
+                                                <p class="DescriptionTextTab2">
+                                                    Rare Australian sea lions are easily found in the Shoalwater Marine Park, outside Perth, and at Jurien Bay, the
+                                                    Abrolhos islands, Albany and Esperance, along with New Zealand fur seals.
+                                                </p>
+                                                <div class="Tab5MontSaprator"></div>
+                                                <img class="TextBgImageMob" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5j.jpg" />
+                                            </div>
+                                            <div class="Tab5DescBox TextBgImg">
+                                                <div class="TabBText">
+                                                    <h2 class="tab5Heading MonthBorderBottom">October</h2>
+                                                </div>
+                                                <h2 class="tab5Heading"><span class="LoareCaseHeading">what</span>Dolphins</h2>
+                                                <h2 class="tab5Heading"><span class="LoareCaseHeading">where</span>State-wide</h2>
+                                                <p class="DescriptionTextTab2">
+                                                    Koombana Bay in Bunbury is a social spot for 100+ bottlenose dolphins. Learn about them at the Dolphin Interpretive
+                                                    Centre daily to April, or swim with them at Rockingham. Monkey Mia is another hotspot where rangers supervise
+                                                    beachfront interaction.
+                                                </p>
+                                                <div class="Tab5MontSaprator"></div>
+                                                <img class="TextBgImageMob" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5nov.jpg" />
+                                            </div>
+                                            <div class="Tab5DescBox TextBgImg">
+                                                <div class="TabBText">
+                                                    <h2 class="tab5Heading MonthBorderBottom">November</h2>
+                                                </div>
+                                                <h2 class="tab5Heading"><span class="LoareCaseHeading">what</span>Kangaroos</h2>
+                                                <h2 class="tab5Heading"><span class="LoareCaseHeading">where</span>State-wide</h2>
                                                 <p class="DescriptionTextTab2">
                                                     For the iconic ‘big red’ he
                                                     ad to Shark Bay, while western greys are easily spotted in the South West. Don’t miss Lucky Bay where they laze about on Australia’s whitest beach.
                                                 </p>
-                                           <div class="Tab5MontSaprator"></div>
-                                             <img class="TextBgImageMob" data-delay="300" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5k.jpg" />
-                                           </div>
-                                       <div class="Tab5DescBox TextBgImg">
-                                               <div class="TabBText">
-                                                     <h2 class="tab5Heading MonthBorderBottom">December</h2>
-                                               </div>
-                                               <h2 class="tab5Heading"><span class="LoareCaseHeading">what</span>Turtles </h2>
-                                               <h2 class="tab5Heading"><span class="LoareCaseHeading">where</span>Ningaloo & Broome</h2>
-                                               <p class="DescriptionTextTab2">
-                                                   December to February view egg-laying and hatching of green, loggerhead, hawksbill and flatbacks on Ningaloo Reef.
-                                                   More turtle rookeries are in the Dampier Archipelago, on Broome’s Eighty Mile and Reddell Beaches.
-                                               </p>
-                                           <div class="Tab5MontSaprator"></div>
-                                           <img class="TextBgImageMob" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5l.jpg" />
-                                           </div>
+                                                <div class="Tab5MontSaprator"></div>
+                                                <img class="TextBgImageMob" data-delay="300" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5k.jpg" />
+                                            </div>
+                                            <div class="Tab5DescBox TextBgImg">
+                                                <div class="TabBText">
+                                                    <h2 class="tab5Heading MonthBorderBottom">December</h2>
+                                                </div>
+                                                <h2 class="tab5Heading"><span class="LoareCaseHeading">what</span>Turtles </h2>
+                                                <h2 class="tab5Heading"><span class="LoareCaseHeading">where</span>Ningaloo & Broome</h2>
+                                                <p class="DescriptionTextTab2">
+                                                    December to February view egg-laying and hatching of green, loggerhead, hawksbill and flatbacks on Ningaloo Reef.
+                                                    More turtle rookeries are in the Dampier Archipelago, on Broome’s Eighty Mile and Reddell Beaches.
+                                                </p>
+                                                <div class="Tab5MontSaprator"></div>
+                                                <img class="TextBgImageMob" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5l.jpg" />
+                                            </div>
 
-                                       <div class="Tab5DescBox TextBgImg">
-                                           <div class="TabBText">
-                                               <h2 class="tab5Heading MonthBorderBottom">Year-round </h2>
-                                           </div>
-                                           <h2 class="tab5Heading"><span class="LoareCaseHeading">what</span>Manta rays </h2>
-                                           <h2 class="tab5Heading"><span class="LoareCaseHeading">where</span>Coral bay</h2>
-                                           <p class="DescriptionTextTab2">
-                                               Whichever month you visit Coral Bay, these majestic creatures can be seen gliding by elegantly and barrel rolling
-                                                as they scoop plankton and krill from nutrient-rich waters. 
-                                           </p>
-                                       </div>
-                                       <div class="clear"></div>
-                                       <div class="ContentFooter">
-                                           <div class="ShareBox">
-                                               <span class="Sharelabel">follow:</span>
-                                               <span class="SocialBox">
-                                                   <a href="javascript:window.open(window.clickTagTweet)" class="tweet"></a>
-                                                   <a href="javascript:window.open(window.clickTagFb)" class="fb"></a>
-                                                   <a href="javascript:window.open(window.clickTagInsta)" class="insta"></a>
-                                                   <a href="javascript:window.open(window.clickTagYou)" class="youtube"></a>
-                                               </span>
-                                           </div>
-                                           <div class="clear"></div>
-                                           <div class="readNextBox">
-                                               <span class="ReadNext">read next:</span>
-                                               <span class="NextTabLabel">
-                                                   <img class="NextLogo" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/footertab6.png" />
-                                               </span>
-                                               <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/readNextArrow.png" />
-                                           </div>
-                                       </div>
-                                   </div>
-                               </div>
-                           </div>
-                       </div>
-                   </div>
+                                            <div class="Tab5DescBox TextBgImg">
+                                                <div class="TabBText">
+                                                    <h2 class="tab5Heading MonthBorderBottom">Year-round </h2>
+                                                </div>
+                                                <h2 class="tab5Heading"><span class="LoareCaseHeading">what</span>Manta rays </h2>
+                                                <h2 class="tab5Heading"><span class="LoareCaseHeading">where</span>Coral bay</h2>
+                                                <p class="DescriptionTextTab2">
+                                                    Whichever month you visit Coral Bay, these majestic creatures can be seen gliding by elegantly and barrel rolling
+                                                    as they scoop plankton and krill from nutrient-rich waters.
+                                                </p>
+                                            </div>
+                                            <div class="clear"></div>
+                                            <div class="ContentFooter">
+                                                <div class="ShareBox">
+                                                    <span class="Sharelabel">follow:</span>
+                                                    <span class="SocialBox">
+                                                        <a href="javascript:window.open(window.clickTagTweet)" class="tweet"></a>
+                                                        <a href="javascript:window.open(window.clickTagFb)" class="fb"></a>
+                                                        <a href="javascript:window.open(window.clickTagInsta)" class="insta"></a>
+                                                        <a href="javascript:window.open(window.clickTagYou)" class="youtube"></a>
+                                                    </span>
+                                                </div>
+                                                <div class="clear"></div>
+                                                <div class="readNextBox">
+                                                    <span class="ReadNext">read next:</span>
+                                                    <span class="NextTabLabel">
+                                                        <img class="NextLogo" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/footertab6.png" />
+                                                    </span>
+                                                    <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/readNextArrow.png" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-               </div>
-               <div class="tab lightbox-tab6">
+                    </div>
+                    <div class="tab lightbox-tab6">
 
-                   <div class="MainContaintArea">
-                       <div class="BigbagImg">
-                           <div class="BannerContentBox">
-                               <div class="TextBanner">
-                                   <span class="SmallBnnerText tab6Bannersmalltesxt">tailor made</span>
-                                   <span class="BigBnnerText tab6BannerBigtesxt">HOLIDAYS</span>
-                               </div>
-                           </div>
-                           <div class="TextContainer">
-                               <div class="ContentTextBox">
-                                   <div class="DetailDescription Tab6Desc">
-                                       <div class="Tab6ContDiv">
-                                           <p class="DescriptionTextTab2">
-                                               Tailor made holiday specialists <a class="TextLinkStyle" href="javascript:window.open(window.clickTagDiscoverAltered)">Discover the World</a> offer a wide choice of itineraries and experiences
-                                               throughout Western Australia. Explore forests and wineries, rugged outback landscapes and pristine coral reefs
-                                               surrounded by a variety of marine wildlife. Be guided by their 30+ years’ experience to plan your own WA holiday, whether
-                                               by self-drive, rail, cruise or small group tour. Below are just a few of their favourite itineraries, and you can
-                                               find the full collection on their website.
-                                           </p>
-                                           <a class="HeadingLink" href="javascript:window.open(window.clickTagNingalooShark)" ><h2 class="tab5Heading">NINGALOO AND SHARK BAY DISCOVERY</h2></a>
-                                           <div class="SubHeadBoxTab6">
-                                               Self-Drive | Departs Mar-Oct | 8 days | from £749pp (excl flights)
-                                           </div>
-                                           <p class="DescriptionTextTab2">
-                                               Discover the very best of the spectacular Coral Coast. Search for whale sharks or humpback whales, turtles, dolphins,
-                                               dugongs, manta rays and more.
-                                           </p>
-                                           <h3 class="DescriptionTextHeading">Highlights</h3>
-                                           <div class="HeighLights">
-                                               <ul>
-                                                   <li>Visit two UNESCO World Heritage Sites – Shark Bay and the Ningaloo Coast</li>
-                                                   <li>Discover Shark Bay’s flora, fauna & indigenous history with a local guide</li>
-                                                   <li>Marvel at Hamelin Pool’s ancient stromatolites</li>
-                                                   <li>Snorkel at colourful Ningaloo Reef and perhaps even swim with a whale shark</li>
-                                               </ul>
-                                               <a class="DiscoverLink" href="javascript:window.open(window.clickTagNingalooShark)">Discover more</a>
-                                           </div>
-                                           <div class="Tab6SeprationBorder"></div>
-                                       </div>
-                                       <div class="clear"></div>
-                                       <div class="Tab6ContDiv">
-                                       <a class="HeadingLink" href="javascript:window.open(window.clickTagWhalesAndWine)" ><h2 class="tab5Heading">WHALES AND WINE OF THE SOUTH WEST</h2></a>
-                                       <div class="SubHeadBoxTab6">
-                                           Self-Drive | Departs May-Dec | 13 days | from £1,228pp (excl flights)
-                                       </div>
-                                       <p class="DescriptionTextTab2">
-                                           Enjoy close encounters with whales, dolphins and more as you explore rugged coastlines, lush green forests and fertile 
-                                           vineyards. Uncover the history of WA’s first settlement and visit the Southern Hemisphere’s longest jetty.
-                                       </p>
-                                       <h3 class="DescriptionTextHeading">Highlights</h3>
-                                       <div class="HeighLights">
-                                           <ul>
-                                               <li>Cruise Shoalwater Islands Marine Park with dolphins, penguins and sea lions</li>
-                                               <li>Join a whale watching cruise in search of humpback and southern right whales</li>
-                                               <li>Take a guided winery tour around Margaret River’s favourite vineyards</li>
-                                               <li>Explore national parks and deserted beaches at leisure</li>
-                                           </ul>
-                                           <a class="DiscoverLink" href="javascript:window.open(window.clickTagWhalesAndWine)">Discover more</a>
-                                       </div>
-                                           <div class="Tab6SeprationBorder"></div>
-                                      </div>
-                                       <div class="clear"></div>
-                                       <div class="Tab6ContDiv">
-                                           <a class="HeadingLink" href="javascript:window.open(window.clickTagKimberleyComplete)"><h2 class="tab5Heading">KIMBERLEY COMPLETE</h2></a>
-                                           <div class="SubHeadBoxTab6">
-                                               Escorted Tour | Departs Apr-Oct | 15 days | from £4,995 pp (excl flights)
-                                           </div>
-                                           <p class="DescriptionTextTab2">
-                                               Explore Australia’s last frontier: the untouched Kimberley region. This fully escorted small group 4WD tour takes in 
-                                               breath-taking gorges, hidden caves, secret water holes and an array of spectacular wonders including the Bungle
-                                                Bungles and remarkable Mitchell Falls.
-                                           </p>
-                                           <h3 class="DescriptionTextHeading">Highlights</h3>
-                                           <div class="HeighLights">
-                                               <ul>
-                                                   <li>Travel the renowned Gibb River Road through the wild heart of the Kimberley</li>
-                                                   <li>Explore spectacular Windjana Gorge and the caves of Tunnel Creek</li>
-                                                   <li>Admire the unmistakeable Bungle Bungles of Purnululu National Park</li>
-                                                   <li>Watch the sun set over Cable Beach and the Indian Ocean </li>
-                                               </ul>
-                                               <a class="DiscoverLink" href="javascript:window.open(window.clickTagKimberleyComplete)" >Discover more</a>
-                                           </div>
-                                           <div class="Tab6SeprationBorder"></div>
-                                           <p class="DescriptionTextTab2">
-                                               Visit <a class="TextLinkStyle" href="javascript:window.open(window.clickTagDiscoverWesternAustralia)">Discover the World</a>  or call their team of Aussie Specialists on <b>01737 214 288</b>
-                                           </p>
-                                       </div>
-                                       <div class="clear"></div>
-                                       <div class="ContentFooter">
-                                           <div class="ShareBox">
-                                               <span class="Sharelabel">follow:</span>
-                                               <span class="SocialBox">
-                                                   <a href="javascript:window.open(window.clickTagTweet)" class="tweet"></a>
-                                                   <a href="javascript:window.open(window.clickTagFb)" class="fb"></a>
-                                                   <a href="javascript:window.open(window.clickTagInsta)" class="insta"></a>
-                                                   <a href="javascript:window.open(window.clickTagYou)" class="youtube"></a>
-                                               </span>
-                                           </div>
-                                           <div class="clear"></div>
-                                           <div class="readNextBox" id="TabbackToMain">
-                                               <span class="ReadNext">read next:</span>
-                                               <span class="NextTabLabel">
-                                                   <img class="NextLogo" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/footertab6BackTomain.png" />
-                                               </span>
-                                               <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/readNextArrow.png" />
-                                           </div>
-                                       </div>
-                                   </div>
-                               </div>
-                           </div>
-                       </div>
-                   </div>
+                        <div class="MainContaintArea">
+                            <div class="BigbagImg">
+                                <div class="BannerContentBox">
+                                    <div class="TextBanner">
+                                        <span class="SmallBnnerText tab6Bannersmalltesxt">tailor made</span>
+                                        <span class="BigBnnerText tab6BannerBigtesxt">HOLIDAYS</span>
+                                    </div>
+                                </div>
+                                <div class="TextContainer">
+                                    <div class="ContentTextBox">
+                                        <div class="DetailDescription Tab6Desc">
+                                            <div class="Tab6ContDiv">
+                                                <p class="DescriptionTextTab2">
+                                                    Tailor made holiday specialists <a class="TextLinkStyle" href="javascript:window.open(window.clickTagDiscoverAltered)">Discover the World</a> offer a wide choice of itineraries and experiences
+                                                    throughout Western Australia. Explore forests and wineries, rugged outback landscapes and pristine coral reefs
+                                                    surrounded by a variety of marine wildlife. Be guided by their 30+ years’ experience to plan your own WA holiday, whether
+                                                    by self-drive, rail, cruise or small group tour. Below are just a few of their favourite itineraries, and you can
+                                                    find the full collection on their website.
+                                                </p>
+                                                <a class="HeadingLink" href="javascript:window.open(window.clickTagNingalooShark)"><h2 class="tab5Heading">NINGALOO AND SHARK BAY DISCOVERY</h2></a>
+                                                <div class="SubHeadBoxTab6">
+                                                    Self-Drive | Departs Mar-Oct | 8 days | from £749pp (excl flights)
+                                                </div>
+                                                <p class="DescriptionTextTab2">
+                                                    Discover the very best of the spectacular Coral Coast. Search for whale sharks or humpback whales, turtles, dolphins,
+                                                    dugongs, manta rays and more.
+                                                </p>
+                                                <h3 class="DescriptionTextHeading">Highlights</h3>
+                                                <div class="HeighLights">
+                                                    <ul>
+                                                        <li>Visit two UNESCO World Heritage Sites – Shark Bay and the Ningaloo Coast</li>
+                                                        <li>Discover Shark Bay’s flora, fauna & indigenous history with a local guide</li>
+                                                        <li>Marvel at Hamelin Pool’s ancient stromatolites</li>
+                                                        <li>Snorkel at colourful Ningaloo Reef and perhaps even swim with a whale shark</li>
+                                                    </ul>
+                                                    <a class="DiscoverLink" href="javascript:window.open(window.clickTagNingalooShark)">Discover more</a>
+                                                </div>
+                                                <div class="Tab6SeprationBorder"></div>
+                                            </div>
+                                            <div class="clear"></div>
+                                            <div class="Tab6ContDiv">
+                                                <a class="HeadingLink" href="javascript:window.open(window.clickTagWhalesAndWine)"><h2 class="tab5Heading">WHALES AND WINE OF THE SOUTH WEST</h2></a>
+                                                <div class="SubHeadBoxTab6">
+                                                    Self-Drive | Departs May-Dec | 13 days | from £1,228pp (excl flights)
+                                                </div>
+                                                <p class="DescriptionTextTab2">
+                                                    Enjoy close encounters with whales, dolphins and more as you explore rugged coastlines, lush green forests and fertile
+                                                    vineyards. Uncover the history of WA’s first settlement and visit the Southern Hemisphere’s longest jetty.
+                                                </p>
+                                                <h3 class="DescriptionTextHeading">Highlights</h3>
+                                                <div class="HeighLights">
+                                                    <ul>
+                                                        <li>Cruise Shoalwater Islands Marine Park with dolphins, penguins and sea lions</li>
+                                                        <li>Join a whale watching cruise in search of humpback and southern right whales</li>
+                                                        <li>Take a guided winery tour around Margaret River’s favourite vineyards</li>
+                                                        <li>Explore national parks and deserted beaches at leisure</li>
+                                                    </ul>
+                                                    <a class="DiscoverLink" href="javascript:window.open(window.clickTagWhalesAndWine)">Discover more</a>
+                                                </div>
+                                                <div class="Tab6SeprationBorder"></div>
+                                            </div>
+                                            <div class="clear"></div>
+                                            <div class="Tab6ContDiv">
+                                                <a class="HeadingLink" href="javascript:window.open(window.clickTagKimberleyComplete)"><h2 class="tab5Heading">KIMBERLEY COMPLETE</h2></a>
+                                                <div class="SubHeadBoxTab6">
+                                                    Escorted Tour | Departs Apr-Oct | 15 days | from £4,995 pp (excl flights)
+                                                </div>
+                                                <p class="DescriptionTextTab2">
+                                                    Explore Australia’s last frontier: the untouched Kimberley region. This fully escorted small group 4WD tour takes in
+                                                    breath-taking gorges, hidden caves, secret water holes and an array of spectacular wonders including the Bungle
+                                                    Bungles and remarkable Mitchell Falls.
+                                                </p>
+                                                <h3 class="DescriptionTextHeading">Highlights</h3>
+                                                <div class="HeighLights">
+                                                    <ul>
+                                                        <li>Travel the renowned Gibb River Road through the wild heart of the Kimberley</li>
+                                                        <li>Explore spectacular Windjana Gorge and the caves of Tunnel Creek</li>
+                                                        <li>Admire the unmistakeable Bungle Bungles of Purnululu National Park</li>
+                                                        <li>Watch the sun set over Cable Beach and the Indian Ocean </li>
+                                                    </ul>
+                                                    <a class="DiscoverLink" href="javascript:window.open(window.clickTagKimberleyComplete)">Discover more</a>
+                                                </div>
+                                                <div class="Tab6SeprationBorder"></div>
+                                                <p class="DescriptionTextTab2">
+                                                    Visit <a class="TextLinkStyle" href="javascript:window.open(window.clickTagDiscoverWesternAustralia)">Discover the World</a>  or call their team of Aussie Specialists on <b>01737 214 288</b>
+                                                </p>
+                                            </div>
+                                            <div class="clear"></div>
+                                            <div class="ContentFooter">
+                                                <div class="ShareBox">
+                                                    <span class="Sharelabel">follow:</span>
+                                                    <span class="SocialBox">
+                                                        <a href="javascript:window.open(window.clickTagTweet)" class="tweet"></a>
+                                                        <a href="javascript:window.open(window.clickTagFb)" class="fb"></a>
+                                                        <a href="javascript:window.open(window.clickTagInsta)" class="insta"></a>
+                                                        <a href="javascript:window.open(window.clickTagYou)" class="youtube"></a>
+                                                    </span>
+                                                </div>
+                                                <div class="clear"></div>
+                                                <div class="readNextBox" id="TabbackToMain">
+                                                    <span class="ReadNext">read next:</span>
+                                                    <span class="NextTabLabel">
+                                                        <img class="NextLogo" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/footertab6BackTomain.png" />
+                                                    </span>
+                                                    <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/readNextArrow.png" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-               </div>
-               
-           </div>
-           <div class="lightbox-bootmGrad">
+                    </div>
 
-           </div>
-           <div class="lightbox-footer">
-               <div class="lightbox-footer-container">
-                   <div class="left-footer">
-                       <div class="BackToMain" style="display:none;">
-                           <img class="BackArrowImg" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/BackmenuImg.png" />
-                           <span class="BackMenuTextAlignin">main menu</span>
-                       </div>
-                   </div>
-                   <div class="right-footer">
+                </div>
+                <div class="lightbox-bootmGrad">
 
-                       <div class="footer-discover-logo">
-                           <img class="footer-logo" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/DiscoverLogo.png" />
-                       </div>
-                       <div class="footer-wa-logo">
-                           <img class="footer-logo" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/WAlogo.png" />
-                       </div>
+                </div>
+                <div class="lightbox-footer">
+                    <div class="lightbox-footer-container">
+                        <div class="left-footer">
+                            <div class="BackToMain" style="display:none;">
+                                <img class="BackArrowImg" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/BackmenuImg.png" />
+                                <span class="BackMenuTextAlignin">main menu</span>
+                            </div>
+                        </div>
+                        <div class="right-footer">
 
-                   </div>
-               </div>
-           </div>
+                            <div class="footer-discover-logo">
+                                <img class="footer-logo" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/DiscoverLogo.png" />
+                            </div>
+                            <div class="footer-wa-logo">
+                                <img class="footer-logo" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/WAlogo.png" />
+                            </div>
 
-           <div class="external-scroll_y">
-               <div style="position:relative">
-                   <div class="scroll-element_outer">
-                       <div class="scroll-element_size"></div>
-                       <div class="scroll-element_track"></div>
-                       <div class="scroll-bar"></div>
-                   </div>
-               </div>
-           </div>
+                        </div>
+                    </div>
+                </div>
 
-           </div>
-       <div id="preloadImages" style="display:none">
-           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/WelcomeScreen-1000x650-bkg-tab1.jpg" />
-           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/WelcomeScreen-1000x650-bkg-tab2.jpg" />
-           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/WelcomeScreen-1000x650-bkg-tab3.jpg" />
-           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/WelcomeScreen-1000x650-bkg-tab4.jpg" />
-           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/WelcomeScreen-1000x650-bkg-tab5.jpg" />
-           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/WelcomeScreen-1000x650-bkg-tab6.jpg" />
-           
-           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/patternHover.png" />
-           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/patternActive.png" />
+                <div class="external-scroll_y">
+                    <div style="position:relative">
+                        <div class="scroll-element_outer">
+                            <div class="scroll-element_size"></div>
+                            <div class="scroll-element_track"></div>
+                            <div class="scroll-bar"></div>
+                        </div>
+                    </div>
+                </div>
 
-           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab1.jpg" />
+            </div>
+            <div id="preloadImages" style="display:none">
+                <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/WelcomeScreen-1000x650-bkg-tab1.jpg" />
+                <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/WelcomeScreen-1000x650-bkg-tab2.jpg" />
+                <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/WelcomeScreen-1000x650-bkg-tab3.jpg" />
+                <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/WelcomeScreen-1000x650-bkg-tab4.jpg" />
+                <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/WelcomeScreen-1000x650-bkg-tab5.jpg" />
+                <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/WelcomeScreen-1000x650-bkg-tab6.jpg" />
 
-           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab2a.jpg" />
-           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab2b.jpg" />
-           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab2b.jpg" />
-           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab2c.jpg" />
+                <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/patternHover.png" />
+                <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/patternActive.png" />
 
-           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab3a.jpg" />
+                <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab1.jpg" />
 
-           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab4a.jpg" />
-           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab4b.jpg" />
-           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab4c.jpg" />
-           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab4d.jpg" />
-           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab4e.jpg" />
-           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab4f.jpg" />
-           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/tab4wdcrossing.jpg" />
+                <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab2a.jpg" />
+                <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab2b.jpg" />
+                <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab2b.jpg" />
+                <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab2c.jpg" />
 
-           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/tab5June.jpg" />
-           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5a.jpg" />
-           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5b.jpg" />
-           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5c.jpg" />
-           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5d.jpg" />
-           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5e.jpg" />
-           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5f.jpg" />
-           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5july.jpg" />
-           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5h.jpg" />
-           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5i.jpg" />
-           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5j.jpg" />
-           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5k.jpg" />
-           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5l.jpg" />
-           <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5nov.jpg" />
+                <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab3a.jpg" />
 
-       </div>
-       <div class="mobDetector"></div>
+                <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab4a.jpg" />
+                <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab4b.jpg" />
+                <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab4c.jpg" />
+                <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab4d.jpg" />
+                <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab4e.jpg" />
+                <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab4f.jpg" />
+                <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/tab4wdcrossing.jpg" />
+
+                <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/tab5June.jpg" />
+                <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5a.jpg" />
+                <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5b.jpg" />
+                <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5c.jpg" />
+                <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5d.jpg" />
+                <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5e.jpg" />
+                <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5f.jpg" />
+                <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5july.jpg" />
+                <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5h.jpg" />
+                <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5i.jpg" />
+                <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5j.jpg" />
+                <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5k.jpg" />
+                <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5l.jpg" />
+                <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/Banners/ExpandedScreen-930x530-bkg-tab5nov.jpg" />
+
+            </div>
+            <div class="mobDetector"></div>
+        </div>
     </div>
-</div>
     <script>
-        (function (d, p) {
-            var a = new Image(); a.onload = function () { a = null }; a.src =
+         (function (d, p) {
+             var a = new Image(); a.onload = function () { a = null }; a.src =
 
-        (d.location.protocol == "https:" ? "https:" : "http:") + "//rs.gwallet.com/r1/pixel/x" + p + "r" + Math.round(1E9 * Math.random())
-        })(document, "39051")
+         (d.location.protocol == "https:" ? "https:" : "http:") + "//rs.gwallet.com/r1/pixel/x" + p + "r" + Math.round(1E9 * Math.random())
+         })(document, "39051")
     </script>
-    
 </body>
 </html>
