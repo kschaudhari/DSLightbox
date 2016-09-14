@@ -139,22 +139,19 @@ box-shadow: 0px 1px 10px 0px rgba(110,128,138, 0.8);
     /*background-image:url(../images/Banner/welcomeTab1Overlay.png);*/
 }
 .lighbox-container .lightbox-content .lightbox-default-booklet .welcomeTab[data-tab="tab1"]{
-    /*background-color:#f00;*/
-    /*background-image:url(../images/Banner/welcomeScreeenTab1.jpg);*/
     background-image:url(../images/Banner/tab1-WelcomeAustraliawithshaddow.jpg); 
 }
 .lighbox-container .lightbox-content .lightbox-default-booklet .welcomeTab[data-tab="tab2"]{
-    /*background-color:#0f0;*/
     background-image:url(../images/Banner/welcomeScreeenTab2.jpg);
 }
 .lighbox-container .lightbox-content .lightbox-default-booklet .welcomeTab[data-tab="tab3"]{
-    background-color:#808080;
+    background-image:url(../images/Banner/tab1-WelcomeAustraliawithshaddow.jpg); 
 }
 .lighbox-container .lightbox-content .lightbox-default-booklet .welcomeTab[data-tab="tab4"]{
-    background-color:#288dc8;
+    background-image:url(../images/Banner/welcomeScreeenTab2.jpg);
 }
 .lighbox-container .lightbox-content .lightbox-default-booklet .welcomeTab[data-tab="tab5"]{
-    background-color:#00f;
+   background-image:url(../images/Banner/tab1-WelcomeAustraliawithshaddow.jpg); 
 }
 .lighbox-container .lightbox-content .lightbox-default-booklet .welcomeTab.active{
     visibility: visible;
