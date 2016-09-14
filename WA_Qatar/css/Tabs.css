@@ -14,10 +14,13 @@
     height:100%;
     width:100%;
     display:none;
-    background-color:antiquewhite;
+   /* background-color:antiquewhite;*/
     position: absolute;
     top: 0;
     left: 0;
+    background-position:center center;
+    background-size:cover;
+    background-repeat:no-repeat;
 }
 .lightbox-detail-booklet .page-content{
     position:absolute;
@@ -25,7 +28,7 @@
     right:0;
     width:50%;
     height:100%;
-    background-color: rgba(255,255,255, 0.6);
+    background-color: rgba(255,255,255, 0.8);
     -webkit-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.35) inset;
     -moz-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.35) inset;
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.35) inset;
@@ -33,20 +36,18 @@
 
 }
 
-.MainContaintArea {
+.MainContentBox {
      display: block;
      height: 100%;
      overflow:hidden;
      margin: 0px auto;
-     width: 89.16%;
-     
-    margin-left: 4.82%;
-    margin-right: 6.0241%;
-     
+     width: 94.5%;
+     margin-left: 2.4%;
+     margin-right: 0;
 }
-.MainContaintArea .detail-page-text{
+.MainContentBox .detail-page-text{
     width:100%;
-    margin-top:50px;
+    margin-top:47px;
     margin-bottom:25px;
 }
 
@@ -95,6 +96,9 @@
         margin-top: 1.64%;
         width: 25%;
         cursor:pointer;
+         font-family: 'Fira Sans';
+         font-size:0.9em;
+         color:#5e6a71;
     }
     .lightbox-detailsPage .detail-navigator .image-carousel-controls {
         display:table-cell;
@@ -122,6 +126,20 @@
         text-align: center;
         width: 26.85%;
         cursor:pointer;
+        background-repeat:no-repeat;
+        background-position:center;
+        background-image:url(../images/Control-arrow-Prev.png);
+}
+.detail-navigator .image-carousel-controls .next-image{
+    display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        width: 26.85%;
+        cursor:pointer;
+        background-repeat:no-repeat;
+        background-position:center;
+        background-image:url(../images/Control-arrow-Next.png);
+
 }
 .detail-navigator .image-carousel-controls .image-bullet-container{
     display: table-cell;
@@ -145,22 +163,38 @@
     -moz-transform: scale(1.5);
     -webkit-transform: scale(1.5); /* Safari */
     transform: scale(1.5);
+    background-color:#5e6a71;
 }
-.detail-navigator .image-carousel-controls .next-image{
-    display: table-cell;
-        vertical-align: middle;
-        text-align: center;
-        width: 26.85%;
-        cursor:pointer;
+ 
+.MainContentBox .detail-page-text .detail-page-header {
+    border-bottom: 1px solid #a9aeb2;
+    color:#00324f;
+    font-size: 1.3em;
+    padding-bottom: 15px;
+    padding-top: 0px;
+    font-weight:500;
 }
-
+.MainContentBox .detail-page-text .detail-page-header span.Tab1Headingsplit {
+    display: inline-block;
+    width: 73%;
+}
+.MainContentBox .detail-page-text p.DescriptionText{
+    font-family: "Fira Sans",sans-serif;
+    font-size: 0.92em;
+    letter-spacing: 0.01px;
+    line-height: 25.5px;
+    margin: 15px 0;
+    padding: 0;
+    color:#00324f;
+    text-align:justify;
+}
 /******************* EXTERNAL SCROLLBAR *******************/
 /*  scrol bar */
 .scrollbar-external_wrapper {
    /* position:absolute;*/
    height: 150px;
-   right: -31px;
-   width: 4px;
+   right: -27px;
+   width: 2px;
    position: absolute;
    top: 50%;
    -webkit-transform: translateY(-50%);
@@ -182,8 +216,8 @@
     display: none;
     /* position: absolute; */
     border-radius: 0px;
-    background-color: #a9aeb2;
-    width: 4px !important;
+    background-color: #5e6a71;
+    width: 2px !important;
 }
  
 .external-scroll_x.scroll-scrollx_visible {
@@ -212,16 +246,19 @@
 .external-scroll_x .scroll-bar,
 .external-scroll_y .scroll-bar {
     z-index: 12;
-    width: 4px;
+    width: 2px;
     border-radius:0px;
     background-color: #fff;
+    -webkit-box-shadow: 0px 0px 14px 0px rgba(255,255,255,1);
+-moz-box-shadow: 0px 0px 14px 0px rgba(255,255,255,1);
+box-shadow: 0px 0px 14px 0px rgba(255,255,255,1);
 }
  
 .external-scroll_x .scroll-bar {
     width: 100px;
 }
 .external-scroll_y .scroll-bar {
-    height: 50px;
+    height: 70px;
 }
 .scroll-content {
     overflow: scroll !important;
@@ -231,3 +268,173 @@
     width: 0;
 }
 /*  scroll bar end  */
+.DetailBannerText {
+    position:absolute;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:-100%;
+    z-index:1;
+}
+.DetailBannerText .BannerContentBox {
+    height: auto;
+    top: 17px;
+    position:absolute;
+    left: 20px;
+    text-align: right;
+    width: 318px;
+    margin-right: 0;
+}
+.DetailBannerText .TextBanner {
+  	font-family: 'Proxima-Nova-Condensed-Semibold';
+    color:#fff;
+    font-size:2.5em;
+    width: 100%;
+    float:right;
+    text-align: left;
+    line-height: 36px;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+.DetailBannerText .TextBanner .SmallBnnerText {
+    display:block;
+    padding-left:0%;
+    line-height: 45px;
+    font-family: 'Proxima-Nova-Condensed-Light';
+    font-style:italic;
+}
+.DetailBannerText .tab1Bannersmalltesxt {
+        padding-bottom: 10px;
+}
+.DetailBannerText .tab2Bannersmalltesxt {
+    padding-right:31%;
+}
+
+.DetailBannerText .BannerBottomRightLogo {
+    height: auto;
+    position: absolute;
+    left: 19px;
+    bottom: 14.5%;
+    width: 191px;
+}
+.DetailBannerText .BannerBottomRightLogo .BottomLogoimgBox {
+    margin-top:21px;
+    display: inline-block;
+    width: 100%;
+}
+.DetailBannerText .BannerBottomRightLogo .BottomLogoimgBox .LogoBox {
+    width:46%;
+    float:left;
+} 
+.DetailBannerText .BannerBottomRightLogo .BottomLogoimgBox .WALogo {
+    
+}
+.DetailBannerText .BannerBottomRightLogo .BottomLogoimgBox .QatarLogo {
+    
+}
+.DetailBannerText .BannerBottomRightLogo .BottomLogoTitle {
+    font-family: 'Proxima-Nova';
+    letter-spacing:1px;
+    font-size:0.8em;
+    font-style:italic;
+    color:#fff;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+.DetailBannerText .TextBanner .tab1Bannersmalltesxt  {
+}
+.DetailBannerText .TextBanner .tab1BannerBigtesxt1  {
+    padding-left: 27.5%;
+}
+.DetailBannerText .TextBanner .tab1BannerBigtesxt2  {
+    padding-left: 22%;
+}
+.DetailBannerText .TextBanner .tab1BannerBigtesxt3  {
+     padding-left: 45%;
+} 
+.DetailBannerText .DetailTextTab2 .TextBanner .tab2Bannersmalltesxt {
+    padding-left: 7%;
+}
+.DetailBannerText .DetailTextTab2 .TextBanner .tab1BannerBigtesxt1  {
+    padding-left: 5.5%;
+}
+.DetailBannerText .DetailTextTab2 .TextBanner .tab1BannerBigtesxt2  {
+    padding-left: -0;
+}
+.DetailBannerText .DetailTextTab2 .TextBanner .tab1BannerBigtesxt3  {
+    padding-left: 11.5%;
+}
+
+.readNextBox {
+    background-image:url(../images/readNextBg.png);
+    float: right;
+    height: 62px;
+    margin-bottom: 30px;
+    width: 50%;
+    background-size: cover;
+}
+
+.readNextBox img {
+    float: right;
+    height: 20px;
+    margin-right: 5%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 27px;
+}
+.readNextBox .ReadNext {
+    color: #0f9fd6;
+    float: left;
+    font-family: "Fira Sans",sans-serif;
+    font-size: 0.73em;
+    font-weight: 400;
+    line-height: 62px;
+    padding-left: 6%;
+    position: relative;
+    /*width: 26%;*/
+    width:30%;
+}
+.readNextBox .NextTabLabel {
+    float: left;
+    height: 38px;
+    position: relative;
+    text-align: right;
+    top: 50%;
+    transform: translateY(-50%);
+    /*width: 46.8965%;*/
+    width:36%;
+}
+.readNextBox .NextTabLabel img.NextLogo {
+    height: auto;
+    margin: 0;
+    width: 100%;
+}
+.readNextBox .NextTabLabel .topLineText {
+    display: block;
+    font-size: 2.5em;
+    letter-spacing: 3px;
+}
+.readNextBox .NextTabLabel .BottomlineText {
+    font-size: 1.3em;
+    letter-spacing: 1px;
+}
+.readNextBox .NextTabLabel .TextAlignforNext {
+    position: absolute;
+    top: 21px;
+    width: 100%;
+}
+.readNextBox .NextTabLabel .Nexttab6Ttextalign {
+    font-size: 0.9em;
+}
+.readNextBox .NextTabLabel .TextAlignforNext .BottomlineText {
+    display: inline-block;
+    float: left;
+    font-size: 0.9em;
+    text-align: left;
+}
+.readNextBox .NextTabLabel .TextAlignforNext .topLineText {
+    display: inline-block;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    padding-left: 6%;
+    text-align: right;
+}
