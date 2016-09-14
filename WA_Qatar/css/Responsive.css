@@ -334,6 +334,7 @@
     .MainContentBox {
         width:100%;
         margin-left:0px;
+        overflow:auto !important;
     }
     .MainContentBox .detail-page-text {
         width: -webkit-calc(100% - 20px);
@@ -342,6 +343,7 @@
         margin-left:auto;
         margin-right:auto;
         margin-top: 11px;
+        margin-bottom: 50px;
     }
     .BannerContentBox {
         left:0px;
@@ -379,7 +381,7 @@
          padding-left: 17%;
     }
     .MainContentBox .detail-page-text .detail-page-header{
-       color:#288dc8
+       
            color: #288dc8;
            font-size: 1.1em;
            font-weight: 400;
