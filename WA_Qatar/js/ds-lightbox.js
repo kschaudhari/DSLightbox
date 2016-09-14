@@ -143,8 +143,10 @@ function setBookLetViewForReadMore()
                 autoChangeTab();
                 $(".lighbox-container .scrollbar-external_wrapper").hide();
             }
-            else
+            else {
                 handleDetailBookletEnd();
+                detailPageLoaded();
+            }
         }
     } )
 }
@@ -158,9 +160,22 @@ function setBookLetViewForDetails() {
         onEndFlip: function (old, page, isLimit) {
             current = page + 1;
             
-            
+            detailPageLoaded();
         }
     })
+}
+
+function detailPageLoaded()
+{
+    var iframes = $(".lighbox-container .lightbox-detailsPage .tab.active .ContentVideo .embed-container iframe:visible");
+    if (iframes.length > 0) {
+        var player = iframes.data("videoPlayer");
+        if (!player) {
+            player = new Vimeo.Player(iframes);
+            iframes.data("videoPlayer", player);
+        }
+        player.play();
+    }
 }
 
 function handleDetailBookletEnd()
@@ -243,7 +258,7 @@ function showTab(tabId, allowReLoad, slideDir) {
     var defaultVisible = $(".lighbox-container .lightbox-defaultTab").is(":visible");
     var detailsVisible = $(".lighbox-container .lightbox-detailsPage").is(":visible");
     
-
+    var previousTab = $(".lighbox-container .lightbox-detailsPage .tab.active");
     $(".lighbox-container .lightbox-detailsPage .tab.active").hide();
     $(".lighbox-container .lightbox-detailsPage .tab[data-tab='tab" + tabId + "']").show();
 
@@ -255,6 +270,18 @@ function showTab(tabId, allowReLoad, slideDir) {
     if (detailsVisible) {
         handleDetailBookletEnd();
         $bookBlockPage.bookblock('jump', tabId);
+        
+    }
+    var privousVideos = previousTab.find(".ContentVideo .embed-container iframe");
+    if (privousVideos.length > 0)
+    {
+        for (var i = 0; i < privousVideos.length; i++) {
+            previousFrame = $(privousVideos[i]);
+            var oldPlayer = previousFrame.data("videoPlayer");
+            if (oldPlayer) {
+                oldPlayer.pause();
+            }
+        }
     }
     setImageCarousel($(".lighbox-container .lightbox-detailsPage .tab.active .page-background-images"), $(".lighbox-container .lightbox-detailsPage .image-bullet-container"), $(".lighbox-container .lightbox-detailsPage .next-image"), $(".lighbox-container .lightbox-detailsPage .prev-image"));
 }

@@ -7,8 +7,10 @@ function showLightboxPopup(type) {
         defaultTab = type.replace("tab", '');
     if (defaultTab > 5 || defaultTab < 1)
         type = "";
-    if (type || isMobile())
+    if (type || isMobile()) {
+        showMoreDetails();
         handleMobNavigation(defaultTab, true);
+    }
     else
         showDefaultView();
 
