@@ -271,7 +271,6 @@ box-shadow: 0px 0px 14px 0px rgba(255,255,255,1);
     right:0px;
     bottom:0px;
     left:-100%;
-    z-index:1;
 }
 .DetailBannerText .BannerContentBox {
     height: auto;
@@ -376,8 +375,10 @@ box-shadow: 0px 0px 14px 0px rgba(255,255,255,1);
     float: right;
     height: 62px;
     margin-bottom: 30px;
-    width: 50%;
+    width: 185px;
     background-size: cover;
+    display: inline-block;
+    cursor: pointer;
 }
 
 .readNextBox img {
@@ -399,7 +400,7 @@ box-shadow: 0px 0px 14px 0px rgba(255,255,255,1);
     padding-left: 6%;
     position: relative;
     /*width: 26%;*/
-    width:30%;
+    width: 36%;
 }
 .readNextBox .NextTabLabel {
     float: left;
@@ -409,7 +410,21 @@ box-shadow: 0px 0px 14px 0px rgba(255,255,255,1);
     top: 50%;
     transform: translateY(-50%);
     /*width: 46.8965%;*/
-    width:36%;
+    width: 38%;
+    color:#0f9fd6;
+    font-family: 'Conv_JADIWA';
+    text-align:left;
+}
+.readNextBox .NextTabLabel .smallLabelforNext {
+    font-size: 1.9em;
+    width: 100%;
+    display: inline-block;
+    line-height: 0;
+}
+.readNextBox .NextTabLabel .BigLabelforNext {
+    font-size: 1em;
+    top: -6px;
+    position: relative;
 }
 .readNextBox .NextTabLabel img.NextLogo {
     height: auto;
