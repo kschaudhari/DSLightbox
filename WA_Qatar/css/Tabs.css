@@ -223,9 +223,6 @@
 .external-scroll_y .scroll-bar {
     height: 50px;
 }
-.scroll-content {
-    overflow: scroll !important;
-}
 .scroll-wrapper > .scroll-content::-webkit-scrollbar {
     height: 0;
     width: 0;

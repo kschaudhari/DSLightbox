@@ -5,13 +5,13 @@ $(document).ready(function () {
     var type = window.location.hash.substr(1);
     
     autoChangeTab();
+    setBookLetViewForReadMore();
+    setBookLetViewForDetails();
     // popup show Hide
     $("#ShwoPopUp").click(function () {
         showLightboxPopup(type);
     });
-    if (type) {
-        showLightboxPopup(type);
-    }
+    showLightboxPopup(type);
     $(".removePopup").click(function () {
         $("#mydiv").fadeOut("slow");
     });
@@ -127,8 +127,7 @@ $(document).ready(function () {
         })
     });
 
-    setBookLetViewForReadMore();
-    setBookLetViewForDetails();
+    
 });
 var $bookBlockDefault = null;
 function setBookLetViewForReadMore()

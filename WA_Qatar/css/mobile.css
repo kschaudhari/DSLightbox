@@ -12,6 +12,7 @@
     display:none;
     z-index:10;
     min-height: 91px;
+    background-color: rgba(15,159,214,1) !important;
 }
 .topMobMenuBar.tab1Active {
     background-color: rgba(143,88,87,1)
@@ -44,7 +45,7 @@
     position:relative;
 }
 .topMobMenuBar .topMobItem.MobMenuBar{
-    border-bottom:1px solid #666b7c;
+    border-bottom: 1px solid #fff;
     overflow:hidden;
 }
 .topMobMenuBar .topMobItem .menuElement{
@@ -83,12 +84,12 @@
 }
 
 .topMobMenuBar .topMobItem .mobMenuLogos .mobDiscoverLogo{
-    float:left;
+    float:right;
     width: 48.67%;
 }
 
 .topMobMenuBar .topMobItem .mobMenuLogos .mobWALogo{
-    float:right;
+    float:left;
     width: 37.33%;
     margin-top: 2px;
 }
@@ -192,15 +193,18 @@
     font-family: 'Conv_JADIWA';
 }
 .topMobMenuBar .mobNavigator .mobNavigatorContent .mobCurrentTab .mobTab .mobCurrentTabLogo img{width: 15%;position: relative;top: -1px;max-width: 53px;}
-.topMobMenuBar .mobNavigator .mobNavigatorContent .mobCurrentTab .mobTab .mobCurrentTabLogo .smallCaseTitle{position:relative;top:3px;padding-left: 3px;}
+.topMobMenuBar .mobNavigator .mobNavigatorContent .mobCurrentTab .mobTab .mobCurrentTabLogo .smallCaseTitle{position:relative;top: -4px;padding-left: 3px;}
 .topMobMenuBar .mobNavigator .mobNavigatorContent .mobCurrentTab .mobTab .mobCurrentTabLogo .smallCaseTitle.leftDistance{padding-left:8px}
 .topMobMenuBar .mobNavigator .mobNavigatorContent .mobCurrentTab .mobTab .mobCurrentTabLogo .smallCaseTitle span{
-    font-size: 1.5em;
-    padding-top:2px;
+    font-size: 2.5em;
+    /* padding-top:2px; */
 }
 .topMobMenuBar .mobNavigator .mobNavigatorContent .mobCurrentTab .mobTab .mobCurrentTabLogo .capitalCaseTitle{
-    font-size: 0.7em;
-    margin-left: 3px;
+    font-size: 1.3em;
+    margin-left: 5px;
     letter-spacing: 2px;
-    
+}
+.topMobMenuBar .mobNavigator .mobNavigatorContent .mobCurrentTab .mobTab .mobCurrentTabLogo .capitalCaseTitle span{
+    position: relative;
+    top: -9px;
 }
