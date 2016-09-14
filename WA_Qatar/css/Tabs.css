@@ -74,7 +74,7 @@
     /* display:table; */
     height: 11.475%;
     max-height: 70px;
-    min-height: 38px;
+    min-height: 70px;
     background-color: #fff;
     max-width:200px;
     z-index:105;
@@ -193,8 +193,8 @@
 .scrollbar-external_wrapper {
    /* position:absolute;*/
    height: 150px;
-   right: -27px;
-   width: 2px;
+   right: -30px;
+   width: 4px;
    position: absolute;
    top: 50%;
    -webkit-transform: translateY(-50%);
@@ -217,7 +217,7 @@
     /* position: absolute; */
     border-radius: 0px;
     background-color: #5e6a71;
-    width: 2px !important;
+    width: 4px !important;
 }
  
 .external-scroll_x.scroll-scrollx_visible {
@@ -246,7 +246,7 @@
 .external-scroll_x .scroll-bar,
 .external-scroll_y .scroll-bar {
     z-index: 12;
-    width: 2px;
+    width: 4px;
     border-radius:0px;
     background-color: #fff;
     -webkit-box-shadow: 0px 0px 14px 0px rgba(255,255,255,1);
@@ -310,7 +310,7 @@ box-shadow: 0px 0px 14px 0px rgba(255,255,255,1);
     height: auto;
     position: absolute;
     left: 19px;
-    bottom: 14.5%;
+    bottom: 16.9%;
     width: 191px;
 }
 .DetailBannerText .BannerBottomRightLogo .BottomLogoimgBox {
@@ -359,7 +359,18 @@ box-shadow: 0px 0px 14px 0px rgba(255,255,255,1);
 .DetailBannerText .DetailTextTab2 .TextBanner .tab1BannerBigtesxt3  {
     padding-left: 11.5%;
 }
-
+.image-Caption {
+    position:absolute;
+    bottom:0px;
+    font-size:0.9em;
+    color:#fff;
+    font-family: 'Proxima-Nova-Condensed-Semibold';
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+        width: 26%;
+        text-align:center;
+        bottom:29px;
+        left:24.1%;
+}
 .readNextBox {
     background-image:url(../images/readNextBg.png);
     float: right;

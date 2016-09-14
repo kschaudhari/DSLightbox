@@ -385,6 +385,9 @@
            font-size: 1.1em;
            font-weight: 400;
     }
+    .image-Caption {
+        display:none;
+    }
     .HideMob {
          display:none;
     }
@@ -402,6 +405,26 @@
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .lightbox-menuItem-boxed .lighbox-menuContent .hoverContent {
         top: 27%;
+    }
+    .DetailBannerText .TextBanner {
+        font-size:1.8em;
+        line-height: 28px;
+    }
+    .DetailBannerText .TextBanner .SmallBnnerText {
+        line-height: 25px;
+    }
+    .DetailBannerText .TextBanner .tab1BannerBigtesxt1 {
+         padding-left: 19.5%;
+    }
+    .DetailBannerText .TextBanner .tab1BannerBigtesxt2 {
+         padding-left: 16%;
+    }
+    .DetailBannerText .TextBanner .tab1BannerBigtesxt3 {
+        padding-left: 28%;
+    }   
+    .DetailBannerText .DetailTextTab2 .TextBanner .tab1BannerBigtesxt1 {
+        padding-left: 5.5%;
+        display: block;
     }
 }
 @media screen and (max-width: 1078px) and (min-width: 768px) {
