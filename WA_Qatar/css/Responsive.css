@@ -1,4 +1,4 @@
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) , screen and (max-height: 570px){
 	#mydiv-content {
        top: 0;
        -webkit-transform: translate(-50%, 0%);
@@ -348,4 +348,5 @@
     
 	}
 }}
-/* Safari CSS end */	
+/* Safari CSS end */
+  
