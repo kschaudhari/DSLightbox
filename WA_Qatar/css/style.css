@@ -7,7 +7,7 @@
     top: 0%;
     position:fixed;
     z-index: 200;
-    background-color:rgba(0,0,0,0.6);
+    background-color:rgba(0,0,0,0.7);
 }
 #mydiv-content {
     width: 100%;
@@ -397,7 +397,7 @@ transform:rotate(-180deg);
 }
 
 
-.BannerContentBox {
+.welcomeTab .BannerContentBox {
     height: auto;
     top: 50%;
     position:absolute;
@@ -410,7 +410,7 @@ transform:rotate(-180deg);
     -moz-transform: translateY(-50%);
     transform: translateY(-50%);
 }
-.TextBanner {
+.welcomeTab .TextBanner {
   	font-family: 'Proxima-Nova-Condensed-Semibold';
     color:#fff;
     font-size:3em;
@@ -421,43 +421,43 @@ transform:rotate(-180deg);
     line-height: 43px;
     text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
 }
-.TextBanner .SmallBnnerText {
+.welcomeTab .TextBanner .SmallBnnerText {
     display:block;
     padding-left:10%;
     line-height: 45px;
     font-family: 'Proxima-Nova-Condensed-Light';
     font-style:italic;
 }
-.tab1Bannersmalltesxt {
+.welcomeTab .tab1Bannersmalltesxt {
         padding-bottom: 10px;
 }
-.tab2Bannersmalltesxt {
+.welcomeTab .tab2Bannersmalltesxt {
     padding-right:31%;
 }
 
-.BannerBottomRightLogo {
+.welcomeTab .BannerBottomRightLogo {
     height: auto;
     position: absolute;
     right: 0;
     bottom: 14.5%;
     width: 191px;
 }
-.BannerBottomRightLogo .BottomLogoimgBox {
+.welcomeTab .BannerBottomRightLogo .BottomLogoimgBox {
     margin-top:21px;
     display: inline-block;
     width: 100%;
 }
-.BannerBottomRightLogo .BottomLogoimgBox .LogoBox {
+.welcomeTab .BannerBottomRightLogo .BottomLogoimgBox .LogoBox {
     width:46%;
     float:left;
-}
-.BannerBottomRightLogo .BottomLogoimgBox .WALogo {
+} 
+.welcomeTab .BannerBottomRightLogo .BottomLogoimgBox .WALogo {
     
 }
-.BannerBottomRightLogo .BottomLogoimgBox .QatarLogo {
+.welcomeTab .BannerBottomRightLogo .BottomLogoimgBox .QatarLogo {
     
 }
-.BannerBottomRightLogo .BottomLogoTitle {
+.welcomeTab .BannerBottomRightLogo .BottomLogoTitle {
     font-family: 'Proxima-Nova';
     letter-spacing:1px;
     font-size:0.8em;

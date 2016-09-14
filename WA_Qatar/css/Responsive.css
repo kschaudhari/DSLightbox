@@ -41,10 +41,10 @@
     }
     .lighbox-container{
             margin: 0px auto;
-            margin-top: 20vh;
-            height: 100vh;
-            position: relative;
-            padding: 0px;
+    margin-top: 16.4vh;
+    height: 100vh;
+    position: relative;
+    padding: 0px;
             padding-top: 0px;
             width: 100%;
     }
@@ -77,10 +77,11 @@
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
-            display: table;
-            height: 40vh;
+            /* display: table; */
+            height: 100%;
             width: 100%;
             background-size: 100% 100%;
+            /* position: absolute; */
         }
     .lighbox-container .lightbox-detailsPage .lightbox-tab1 .BannerContentBox
     {
@@ -114,13 +115,13 @@
         display:table-cell;
     }
     .lighbox-container .lightbox-detailsPage .tab .BannerContentBox .TextBanner .SmallBnnerText{
-        line-height: 28px;
+        line-height: 20px;
         font-size: 0.5em;
         display: block;
         /*padding-left: 2%;*/
     }
     .lighbox-container .lightbox-detailsPage .tab .BannerContentBox .TextBanner .BigBnnerText{
-        line-height: 39px;
+        line-height: 21px;
         font-size: 0.5em;
         display: block;
     }
@@ -321,16 +322,67 @@
     }
     .lightbox-detailsPage .lightbox-detail-booklet .page-content{
         width:100%;
-        box-shadow: none;
+        box-shadow:none;
     }
-    .MainContaintArea{
-        overflow:auto !important;
-        margin: 0px;
-        width: 95%;
+
+    .DetailBannerText {
+        left:0px;
     }
-    .MainContaintArea .detail-page-text{
-        margin-bottom: 150px;
-        margin-top: 0px;
+    .lighbox-container .lightbox-detailsPage .tab .BannerContentBox {
+    /*    background-image:url(../images/Banner/details-page-Tab1.jpg);*/
+    }
+    .MainContentBox {
+        width:100%;
+        margin-left:0px;
+    }
+    .MainContentBox .detail-page-text {
+        width: -webkit-calc(100% - 20px);
+		width: -moz-calc(100% - 20px);
+        width: calc(100% - 20px);
+        margin-left:auto;
+        margin-right:auto;
+        margin-top: 11px;
+    }
+    .BannerContentBox {
+        left:0px;
+    }
+    .DetailBannerText {
+        position:relative;
+    }
+    .BannerBottomRightLogo {
+        display:none;
+    }
+    .ShoowMob {
+        display:block !important;
+        width: 100%;
+    }
+    .DetailBannerText .BannerContentBox {
+        left:0px;
+        position: absolute;
+        top: 0;
+    }
+    .DetailBannerText .BannerContentBox .TextBanner{
+         top: 50%;
+         -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        transform: translateY(-50%);
+        position:absolute;
+    }
+    .DetailBannerText .TextBanner .tab1BannerBigtesxt1 {
+         padding-left: 12.5%;
+    }
+    .DetailBannerText .TextBanner .tab1BannerBigtesxt2 {
+         padding-left: 10%;
+    }
+    .DetailBannerText .TextBanner .tab1BannerBigtesxt3 {
+         padding-left: 17%;
+    }
+    .MainContentBox .detail-page-text .detail-page-header{
+       color:#288dc8
+           color: #288dc8;
+           font-size: 1.1em;
+           font-weight: 400;
     }
 }
 
