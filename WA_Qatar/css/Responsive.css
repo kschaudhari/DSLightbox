@@ -125,6 +125,7 @@
         /*padding-top: 9.5%;*/
         display:table-cell;
         z-index: 1;
+        width:37%;
     }
     .lighbox-container .lightbox-detailsPage .tab .BannerContentBox .TextBanner .SmallBnnerText{
         line-height: 20px;
