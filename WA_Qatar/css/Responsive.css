@@ -335,6 +335,8 @@
     .lightbox-detailsPage .lightbox-detail-booklet .page-content{
         width:100%;
         box-shadow:none;
+        position: relative;
+        overflow: auto;
     }
 
     .DetailBannerText {
@@ -346,7 +348,7 @@
     .MainContentBox {
         width:100%;
         margin-left:0px;
-        overflow: auto !important;
+        overflow: initial !important;
     }
     .MainContentBox .detail-page-text {
         /*width: -webkit-calc(100% - 20px);
@@ -417,7 +419,7 @@
         display:none;
     }
     .HideMob {
-         display:none;
+         display: block;
     }
     .BannerTextShowmob {
          display:block;

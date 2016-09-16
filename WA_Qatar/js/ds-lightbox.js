@@ -193,7 +193,7 @@ function handleDetailBookletEnd()
         });
         window.setTimeout(function () {
             detailPageLoaded();
-        }, 1000);
+        }, 100);
     }, 500);
 
     $(".lighbox-container .lightbox-detailsPage .tab.active .MainContaintArea").scrollTop(0);
