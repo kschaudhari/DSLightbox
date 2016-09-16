@@ -358,6 +358,15 @@
         margin-top: 11px;
         margin-bottom:280px;
     }
+    .FooterBox {
+        width: -webkit-calc(100% - 20px);
+		width: -moz-calc(100% - 20px);
+        width: calc(100% - 20px);
+        margin-left:auto;
+        margin-right:auto;
+        float:none;
+        display: block;
+    }
     .BannerContentBox {
         left:0px;
     }
@@ -402,6 +411,7 @@
     }
     .MainContentBox .detail-page-text p.DescriptionText {
         padding:0px 10px;
+        text-align: left;
     }
     .image-Caption {
         display:none;
