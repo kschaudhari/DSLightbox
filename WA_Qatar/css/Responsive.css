@@ -358,6 +358,15 @@
         margin-top: 11px;
         margin-bottom:280px;
     }
+    .FooterBox {
+        width: -webkit-calc(100% - 20px);
+		width: -moz-calc(100% - 20px);
+        width: calc(100% - 20px);
+        margin-left:auto;
+        margin-right:auto;
+        float:none;
+        display: block;
+    }
     .BannerContentBox {
         left:0px;
     }
@@ -377,6 +386,7 @@
         top: 0;
     }
     .DetailBannerText .BannerContentBox .TextBanner{
+        width:95%;
          top: 50%;
          -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
@@ -401,6 +411,7 @@
     }
     .MainContentBox .detail-page-text p.DescriptionText {
         padding:0px 10px;
+        text-align: left;
     }
     .image-Caption {
         display:none;
@@ -411,73 +422,76 @@
     .BannerTextShowmob {
          display:block;
     }
-.ShareBox {
-    float: left;
-    width: 100%;
-    display:block !important;
-}
-.ShareBox .Sharelabel {
-    background-color: #00314f;
-    color: #fff;
-    display: block;
-    float: left;
-    font-family: "Fira Sans",sans-serif;
-    font-size: 0.73em;
-    font-weight: 400;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    width: 28%;
-}
-.SocialBox {
-    display: inline-flex;
-    float: left;
-    width: calc(100% - 28%);
-}
-.ShareBox a {
-    background-color: #00314f;
-    background-position: center center;
-    background-repeat: no-repeat;
-    border-left: 1px solid #d2dbe0;
-    display: block;
-    float: left;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    width: 24.5%;
-}
-.ShareBox a:hover {
-    background-color: #003f66;
-}
-.ShareBox a:active {
-    background-color: #00263d;
-}
-.ShareBox a.fb {
-    background-image: url("../images/fbN.png");
-}
-.ShareBox a.tweet {
-    background-image: url("../images/twiiter.png");
-}
-.ShareBox a.youtube {
-    background-image: url("../images/youTube.png");
-}
-.ShareBox a.insta {
-    background-image: url("../images/insta.png");
-}
-.ContentVideo {
-    display: inline-table;
-    position: absolute;
-    width: 80%;
-    margin: 0 auto;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    z-index: 0;
-}
-
+    .ShareBox {
+        float: left;
+        width: 100%;
+        display:block !important;
+    }
+    .ShareBox .Sharelabel {
+        background-color: #00314f;
+        color: #fff;
+        display: block;
+        float: left;
+        font-family: "Fira Sans",sans-serif;
+        font-size: 0.73em;
+        font-weight: 400;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        width: 28%;
+    }
+    .SocialBox {
+        display: inline-flex;
+        float: left;
+        width: calc(100% - 28%);
+    }
+    .ShareBox a {
+        background-color: #00314f;
+        background-position: center center;
+        background-repeat: no-repeat;
+        border-left: 1px solid #d2dbe0;
+        display: block;
+        float: left;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        width: 24.5%;
+    }
+    .ShareBox a:hover {
+        background-color: #003f66;
+    }
+    .ShareBox a:active {
+        background-color: #00263d;
+    }
+    .ShareBox a.fb {
+        background-image: url("../images/fbN.png");
+    }
+    .ShareBox a.tweet {
+        background-image: url("../images/twiiter.png");
+    }
+    .ShareBox a.youtube {
+        background-image: url("../images/youTube.png");
+    }
+    .ShareBox a.insta {
+        background-image: url("../images/insta.png");
+    }
+    .ContentVideo {
+        display: inline-table;
+        position: absolute;
+        width: 80%;
+        margin: 0 auto;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        z-index: 0;
+    }
+    .UnderContentImage {
+         width:100%;
+        display:block;
+    }
 
 }
 
