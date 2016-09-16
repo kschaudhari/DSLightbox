@@ -145,7 +145,7 @@ function setBookLetViewForReadMore()
             }
             else {
                 handleDetailBookletEnd();
-                detailPageLoaded();
+                //detailPageLoaded();
             }
         }
     } )
@@ -159,8 +159,8 @@ function setBookLetViewForDetails() {
         shadowFlip: 0.4,
         onEndFlip: function (old, page, isLimit) {
             current = page + 1;
-            
-            detailPageLoaded();
+            handleDetailBookletEnd();
+            //
         }
     })
 }
@@ -174,19 +174,26 @@ function detailPageLoaded()
             player = new Vimeo.Player(iframes);
             iframes.data("videoPlayer", player);
         }
-        player.play();
+       
+                player.play();
+        
     }
 }
 
 function handleDetailBookletEnd()
 {
     window.setTimeout(function () {
+
         $(".lighbox-container .lightbox-detailsPage .tab.active .MainContaintArea").scrollbar({
             "autoScrollSize": false,
             "scrollx": $('.external-scroll_x'),
             "scrolly": $('.external-scroll_y'),
+            ignoreMobile: true,
             duration: 10
         });
+        window.setTimeout(function () {
+            detailPageLoaded();
+        }, 1000);
     }, 500);
 
     $(".lighbox-container .lightbox-detailsPage .tab.active .MainContaintArea").scrollTop(0);
@@ -268,9 +275,11 @@ function showTab(tabId, allowReLoad, slideDir) {
     $(".lighbox-container .lightbox-detailsPage .lightbox-top-menu-item[data-tab='tab" + tabId + "']").addClass("active");
 
     if (detailsVisible) {
-        handleDetailBookletEnd();
-        $bookBlockPage.bookblock('jump', tabId);
         
+        if (!isMobile())
+            $bookBlockPage.bookblock('jump', tabId);
+        else
+            handleDetailBookletEnd();
     }
     var privousVideos = previousTab.find(".ContentVideo .embed-container iframe");
     if (privousVideos.length > 0)
@@ -337,6 +346,7 @@ function showMoreDetails()
 
     handleMobNavigation(activeTabId, true);
     handleDetailBookletEnd();
+    if(!isMobile())
     $bookBlockDefault.bookblock('jump', 2);
     
 }
