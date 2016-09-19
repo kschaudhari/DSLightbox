@@ -183,9 +183,7 @@
     text-align: justify;
     font-family: "expo-sans-pro",sans-serif;
 }
-.page-content p.DescriptionText{
-    
-}
+
 .page-content .readMore{
     height:25px;
     width:100%;
@@ -251,7 +249,7 @@
     padding-left:20px;
     background-image: url(../images/paraBullet.png);
     background-repeat:no-repeat;
-    background-position-y: 5.5px;
+    background-position-y: 4px;
     margin-bottom:20px;
 }
 .page-content .para-tag-line{
@@ -259,18 +257,40 @@
     font-size: 1.2em;
     color: #288dc8;
 }
+
 .page-content .para-heading-separator {
     width:100%;
-    max-width:100px;
+    max-width: 185px;
     margin-top:20px;
     margin-bottom:20px;
     height:1px;
     background-color:#288dc8;
 }
+
+.page-content.tab5-page-content{
+    font-family:'Jotia-Regular';
+
+}
 .page-content .para-description-tag-line{
     font-size: 1.02em;
     color: #288dc8;
     width:100%;
+}
+.page-content.tab5-page-content p.DescriptionText{
+    font-family:'Jotia-Regular';
+    color:#3d0421;
+    font-size: 0.95em;
+}
+.tab5-page-content .para-heading {
+    color:#662046;
+    background-image:none;
+    font-style:normal;
+    padding-left:0px;
+    font-size: 1.6em;
+}
+.tab5-page-content .para-heading-separator 
+{
+    background-color:#a9aeb2
 }
 /******************* EXTERNAL SCROLLBAR *******************/
 /*  scrol bar */
