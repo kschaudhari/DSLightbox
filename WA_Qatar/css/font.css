@@ -36,3 +36,10 @@
 	font-weight: normal;
 	font-style: normal;
 }
+@font-face {
+	font-family: 'Proxima-Nova-Condensed';
+    src: url('../fonts/Proxima-Nova-Condensed.eot');
+	src: local('☺'), url('../fonts/Proxima-Nova-Condensed.woff') format('woff'), url('../fonts/Proxima-Nova-Condensed.ttf') format('truetype'), url('../fonts/Proxima-Nova-Condensed.svg') format('svg'), url(../fonts/Proxima-Nova-Condensed.otf) format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
