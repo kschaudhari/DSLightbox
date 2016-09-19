@@ -566,3 +566,21 @@ width: 100%;
 .FollowBox .SocialIconbox .socialIcon.insta {
     background-position: 0px -72px;
 }
+.page-background-images .OverlayImg {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-image: url(../images/Banner/bannerOverlay.png);
+    opacity: 0.5;
+    -webkit-box-shadow: inset 0px 2px 7px 0 rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 2px 7px 0 rgba(0,0,0,0.75);
+    box-shadow: inset 0px 2px 7px 0 rgba(0,0,0,0.75);
+    z-index:1;
+}
+.page-background-images .OverlayImg.tab5Overlay {
+    background-image:url(../images/Banner/Detailpagetab5bannerOverlay.png);
+}
