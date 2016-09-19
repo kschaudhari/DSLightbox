@@ -19,7 +19,9 @@ function showLightboxPopup(type) {
 }
 
 function hideLightboxPopup() {
-    $(".removePopup").trigger("click");
+    //$(".removePopup").trigger("click");
+    var activeTabVideo = $(".lighbox-container .lightbox-detailsPage .tab.active .ContentVideo .embed-container iframe")
+    stopVideos(activeTabVideo);
 }
 
 var lightboxCounter = null;

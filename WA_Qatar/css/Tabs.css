@@ -45,7 +45,7 @@
 .MainContentBox .detail-page-text{
     width:93%;
     margin: 0px auto;
-    margin-top:47px;
+    margin-top:30px;
     margin-bottom:25px;
 }
 
@@ -64,11 +64,11 @@
     background:transparent;
 }
 
-.lightbox-detailsPage .detail-navigator{
+.lightbox-default-booklet .detail-navigator{
     position:absolute;
-    bottom: 0px;
+    bottom: -1px;
     left: 0px;
-    width: 24.1%;
+    width: 200px;
     /* display:table; */
     height: 11.475%;
     max-height: 70px;
@@ -78,7 +78,7 @@
     z-index:105;
     background-image: url(../images/navigaterBg.png);
 }
-.lightbox-detailsPage .detail-navigator .detail-navigator-container{
+.lightbox-default-booklet .detail-navigator .detail-navigator-container{
     position:absolute;
     width:100%;
     top: 50%;
@@ -87,7 +87,7 @@
     -moz-transform: translateY(-50%);
     transform: translateY(-50%);
 } 
-    .lightbox-detailsPage .detail-navigator .mainMenu {
+    .lightbox-default-booklet .detail-navigator .mainMenu {
         display: table-cell;
         vertical-align: middle;
         text-align: center;
@@ -98,7 +98,7 @@
          font-size:0.9em;
          color:#5e6a71;
     }
-    .lightbox-detailsPage .detail-navigator .image-carousel-controls {
+    .lightbox-default-booklet .detail-navigator .image-carousel-controls {
         display:table-cell;
         vertical-align: middle;
         text-align: center;
@@ -113,7 +113,7 @@
         border-right: 0px;
         /* cursor:pointer; */
     }
-    .lightbox-detailsPage .detail-navigator .image-carousel-controls .image-carousel-control-container{
+    .lightbox-default-booklet .detail-navigator .image-carousel-controls .image-carousel-control-container{
         display:table;
         width:100%;
         height:100%;
@@ -163,28 +163,114 @@
     transform: scale(1.5);
     background-color:#5e6a71;
 }
- 
-.MainContentBox .detail-page-text .detail-page-header {
-    border-bottom: 1px solid #a9aeb2;
-    color:#00324f;
-    font-size: 1.3em;
-    padding-bottom: 15px;
-    padding-top: 0px;
-    font-weight:500;
+ .lightbox-default-booklet .page-content{
+    font-family: "expo-sans-pro-condensed",sans-serif;
+    
 }
-.MainContentBox .detail-page-text .detail-page-header span.Tab1Headingsplit {
-    display: inline-block;
-    width: 73%;
+.MainContentBox .detail-page-text .detail-page-header {
+    font-size: 1.2em;
+    color: #288dc8;
+    font-weight:bold;
+    
 }
 .MainContentBox .detail-page-text p.DescriptionText{
-    font-family: "Fira Sans",sans-serif;
-    font-size: 0.92em;
+    font-size: 1.02em;
     letter-spacing: 0.01px;
     line-height: 25.5px;
     margin: 15px 0;
     padding: 0;
-    color:#00324f;
-    text-align:justify;
+    color: #00324f;
+    text-align: justify;
+    font-family: "expo-sans-pro",sans-serif;
+}
+.page-content p.DescriptionText{
+    
+}
+.page-content .readMore{
+    height:25px;
+    width:100%;
+    display: table;
+    font-weight:bold;
+    font-style:italic;
+    margin-bottom:20px;
+}
+.page-content .readMore .readMoreLine{
+    width: 100%;
+    display: table-cell;
+    vertical-align:middle;
+    height: 100%;
+    padding-right: 20px;
+}
+.page-content .readMore .readMoreLine div{
+    background-color:#0f9fd6;
+    height:1px;
+    width:100%;
+}
+.page-content .readMore .buttonPart{
+    display: table-cell;
+    vertical-align:middle;
+    text-align: right;
+    min-width: 150px;
+    max-width: 150px;
+    position: relative;
+    /* padding-left: 20px; */
+    background-color: #6eb7d3;
+    border-radius: 12.5px;
+    cursor: pointer;
+}.page-content .readMore .buttonPart:after{
+     clear:both;
+ }
+.page-content .readMore .buttonPart .button{
+    color: #fff;
+    background-color:#22a4d5;
+    text-align:center;
+    border-radius: 12.5px;
+    float:left;
+    /* margin-left: 20px; */
+    width: 130px;
+    height: 100%;
+    vertical-align: middle;
+    line-height: 24px;
+    z-index: 1;
+}
+.page-content .readMore .buttonPart .plus{
+    float:right;
+    width: 20px;
+    height: 100%;
+    background-image: url(../images/plusIcon.png);
+    background-repeat:no-repeat;
+    background-position: 4px 7px;
+    right: 0px;
+    z-index: 0;
+    border-radius: 12.5px;
+}
+.page-content .para-heading{
+    font-style:italic;
+    font-size: 1.2em;
+    color: #288dc8;
+    padding-left:20px;
+    background-image: url(../images/paraBullet.png);
+    background-repeat:no-repeat;
+    background-position-y: 5.5px;
+    margin-bottom:20px;
+}
+.page-content .para-tag-line{
+    font-style:italic;
+    font-size: 1.2em;
+    color: #288dc8;
+}
+.page-content .para-heading-separator {
+    width:100%;
+    max-width:100px;
+    margin-top:20px;
+    margin-bottom:20px;
+    height:1px;
+    background-color:#288dc8;
+}
+.page-content .para-description-tag-line{
+    font-size: 1.02em;
+    color: #288dc8;
+    width:100%;
 }
 /******************* EXTERNAL SCROLLBAR *******************/
 /*  scrol bar */
@@ -369,14 +455,16 @@ box-shadow: 0px 0px 14px 0px rgba(255,255,255,1);
         left:24.1%;
 }
 .readNextBox {
-    background-image:url(../images/readNextBg.png);
-    float: right;
-    height: 62px;
-    margin-bottom: 30px;
+    background-image: url(../images/QatarBg.jpg);
+    /* float: right; */
+    height: 70px;
+    /* margin-bottom: 30px; */
     width: 185px;
     background-size: cover;
-    display: inline-block;
+    display: block;
     cursor: pointer;
+    margin: 0px auto;
+    width: 200px;
 }
 
 .readNextBox img {
@@ -394,7 +482,7 @@ box-shadow: 0px 0px 14px 0px rgba(255,255,255,1);
     font-family: "Fira Sans",sans-serif;
     font-size: 0.73em;
     font-weight: 400;
-    line-height: 62px;
+    line-height: 70px;
     padding-left: 6%;
     position: relative;
     /*width: 26%;*/
@@ -499,9 +587,24 @@ box-shadow: 0px 0px 14px 0px rgba(255,255,255,1);
     height: 100%; 
 }
 .FooterBox {
-    display:inline-block;
-    float:right;
+    display: block;
+    /* float:right; */
+    width: 100%;
+    background-image: url(../images/QatarBg.jpg);
 }
 .MainContaintArea.MainContentBox.scroll-content.scroll-scrolly_visible{
     overflow: scroll;
+}
+
+.lightbox-default-booklet.bb-bookblock .bb-page:nth-child(2) .bb-front .bb-content{
+    left: -100%;
+}
+.lightbox-default-booklet.bb-bookblock .bb-page:nth-child(3)  .bb-content{
+    left: -100%;
+}
+.lightbox-detail-booklet.bb-bookblock .bb-page:nth-child(2) .bb-front .bb-content{
+    left: 0;
+}
+.lightbox-detail-booklet.bb-bookblock .bb-page:nth-child(3)  .bb-content{
+    left: 0;
 }

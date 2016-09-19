@@ -13,6 +13,7 @@ $(document).ready(function () {
     });
     showLightboxPopup(type);
     $(".removePopup").click(function () {
+        hideLightboxPopup();
         $("#mydiv").fadeOut("slow");
     });
     $(".BackToMain").click(function () {
@@ -256,6 +257,7 @@ function showDefaultTab(tabId, allowReLoad) {
     if ($(".lighbox-container .lightbox-content .lightbox-defaultTab").is(":visible")) {
         autoChangeTab();
     }
+    
 }
 
 function showTab(tabId, allowReLoad, slideDir) {
@@ -282,8 +284,15 @@ function showTab(tabId, allowReLoad, slideDir) {
             handleDetailBookletEnd();
     }
     var privousVideos = previousTab.find(".ContentVideo .embed-container iframe");
-    if (privousVideos.length > 0)
-    {
+    stopVideos(privousVideos);
+    setImageCarousel($(".lighbox-container .lightbox-detailsPage .tab.active .page-background-images"), $(".lighbox-container .lightbox-detailsPage .image-bullet-container"), $(".lighbox-container .lightbox-detailsPage .next-image"), $(".lighbox-container .lightbox-detailsPage .prev-image"));
+}
+
+function stopVideos(privousVideos)
+{
+    if (!privousVideos)
+        privousVideos = $(".lighbox-container .lightbox-detailsPage .tab.active .ContentVideo .embed-container iframe");
+    if (privousVideos.length > 0) {
         for (var i = 0; i < privousVideos.length; i++) {
             previousFrame = $(privousVideos[i]);
             var oldPlayer = previousFrame.data("videoPlayer");
@@ -292,7 +301,6 @@ function showTab(tabId, allowReLoad, slideDir) {
             }
         }
     }
-    setImageCarousel($(".lighbox-container .lightbox-detailsPage .tab.active .page-background-images"), $(".lighbox-container .lightbox-detailsPage .image-bullet-container"), $(".lighbox-container .lightbox-detailsPage .next-image"), $(".lighbox-container .lightbox-detailsPage .prev-image"));
 }
 function showDefaultView() {
     $(".lighbox-container .lightbox-defaultTab").fadeIn();
@@ -300,6 +308,7 @@ function showDefaultView() {
     
     $bookBlockDefault.bookblock('jump', 1);
     //$(".lightbox-footer .BackToMain").hide();
+    stopVideos();
 }
 
 function moveToPrevious(slideDir) {

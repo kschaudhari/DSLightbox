@@ -359,16 +359,17 @@
         margin-left:auto;
         margin-right:auto;
         margin-top: 11px;
-        margin-bottom:280px;
+        /* margin-bottom:280px; */
     }
     .FooterBox {
         width: -webkit-calc(100% - 20px);
-		width: -moz-calc(100% - 20px);
+        width: -moz-calc(100% - 20px);
         width: calc(100% - 20px);
         margin-left:auto;
         margin-right:auto;
         float:none;
         display: block;
+        margin-bottom: 120px;
     }
     .BannerContentBox {
         left:0px;
@@ -413,8 +414,11 @@
                margin: 0px 10px;
     }
     .MainContentBox .detail-page-text p.DescriptionText {
-        padding:0px 10px;
+        
         text-align: left;
+    }
+    .MainContentBox .detail-page-text .detail-page-description{
+        padding: 0px 10px;
     }
     .image-Caption {
         display:none;
@@ -426,9 +430,10 @@
          display:block;
     }
     .ShareBox {
-        float: left;
+        float: none;
         width: 100%;
         display:block !important;
+        height: 40px;
     }
     .ShareBox .Sharelabel {
         background-color: #00314f;
@@ -495,7 +500,6 @@
          width:100%;
         display:block;
     }
-
 }
 
 @media screen and (min-width: 768px) {
