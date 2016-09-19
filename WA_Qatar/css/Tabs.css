@@ -128,6 +128,12 @@
         background-position:center;
         background-image:url(../images/Control-arrow-Prev.png);
 }
+.detail-navigator .image-carousel-controls .prev-image:hover {
+    background-image:url(../images/Control-arrow-PrevHover.png);
+}
+.detail-navigator .image-carousel-controls .prev-image:active {
+    background-image:url(../images/Control-arrow-PrevActive.png);
+}
 .detail-navigator .image-carousel-controls .next-image{
     display: table-cell;
         vertical-align: middle;
@@ -139,6 +145,13 @@
         background-image:url(../images/Control-arrow-Next.png);
 
 }
+.detail-navigator .image-carousel-controls .next-image:hover {
+    background-image:url(../images/Control-arrow-NextHover.png);
+}
+.detail-navigator .image-carousel-controls .next-image:active {
+    background-image:url(../images/Control-arrow-NextActive.png);
+}
+
 .detail-navigator .image-carousel-controls .image-bullet-container{
     display: table-cell;
         vertical-align: middle;
