@@ -98,6 +98,12 @@
          font-size:0.9em;
          color:#5e6a71;
     }
+.lightbox-default-booklet .detail-navigator .mainMenu:hover {
+    color:#7A8890;
+}
+.lightbox-default-booklet .detail-navigator .mainMenu:active {
+    color:#4A5459;
+}
     .lightbox-default-booklet .detail-navigator .image-carousel-controls {
         display:table-cell;
         vertical-align: middle;
@@ -243,6 +249,12 @@
     vertical-align: middle;
     line-height: 24px;
     z-index: 1;
+}
+.page-content .readMore .buttonPart .button:hover {
+    background-color:#50BBE2;
+}
+.page-content .readMore .buttonPart .button:active {
+    background-color:#3D97B8;
 }
 .page-content .readMore .buttonPart .plus{
     float:right;
@@ -494,15 +506,39 @@ box-shadow: 0px 0px 14px 0px rgba(255,255,255,1);
 }
 .readNextBox {
     background-image: url(../images/QatarBg.jpg);
-    /* float: right; */
     height: 70px;
-    /* margin-bottom: 30px; */
     width: 185px;
     background-size: cover;
     display: block;
     cursor: pointer;
     margin: 0px auto;
-    width: 200px;
+    width: 230px;
+}
+.NextTabArrow {
+    float: right;
+    height: 20px;
+    margin-right: 5%;
+    position: relative;
+    top: 50%;
+    -mz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 27px;
+    display:inline-block;
+    background-image:url(../images/NextTabArrow.png);
+}
+.readNextBox:hover .NextTabArrow{
+    background-image:url(../images/NextTabArrowHover.png);
+}
+.readNextBox:active .NextTabArrow{
+    background-image:url(../images/NextTabArrowActive.png);
+}
+.readNextBox:hover .NextTabLabel, .readNextBox:hover .ReadNext {
+    color:#2DB9F0;
+}
+.readNextBox:active .NextTabLabel, .readNextBox:active .ReadNext{
+    color:#0B7099;
 }
 
 .readNextBox img {
