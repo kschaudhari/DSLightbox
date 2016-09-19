@@ -1,23 +1,8 @@
 ﻿
 @font-face {
-	font-family: 'Conv_JADIWA';
-	src: url('../fonts/JADIWA.eot');
-	src: local('☺'), url('../fonts/jadiwa.woff') format('woff'), url('../fonts/JADIWA.ttf') format('truetype'), url('../fonts/JADIWA.svg') format('svg'), url('../fonts/JADIWA.otf') format('opentype');
-	font-weight: normal;
-	font-style: normal;
-}
-@font-face {
-	font-family: 'Conv_JADIWA-Webfont-Large';
-	src: url('../fonts/JADIWA-Webfont-Large.eot');
-	src: local('☺'), url('../fonts/JADIWA-Webfont-Large.woff') format('woff'), url('../fonts/JADIWA-Webfont-Large.ttf') format('truetype'), url('../fonts/JADIWA-Webfont-Large.svg') format('svg'), url(../fonts/JADIWA-Webfont-Large.otf) format('opentype');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Proxima-Nova-Condensed-Light';
-    src: url('../fonts/Proxima-Nova-Condensed-Light.eot');
-	src: local('☺'), url('../fonts/Proxima-Nova-Condensed-Light.woff') format('woff'), url('../fonts/Proxima-Nova-Condensed-Light.ttf') format('truetype'), url('../fonts/Proxima-Nova-Condensed-Light.svg') format('svg'), url(../fonts/Proxima-Nova-Condensed-Light.otf) format('opentype');
+	font-family: 'Jotia-Regular';
+	src: url('../fonts/Jotia-Regular.eot');
+	src: local('☺'), url('../fonts/Jotia-Regular.woff') format('woff'), url('../fonts/Jotia-Regular.ttf') format('truetype'), url('../fonts/Jotia-Regular.svg') format('svg'), url('../fonts/Jotia-Regular.otf') format('opentype');
 	font-weight: normal;
 	font-style: normal;
 }

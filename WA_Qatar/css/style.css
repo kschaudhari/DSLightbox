@@ -221,7 +221,7 @@ box-shadow: inset 0px 2px 7px 0 rgba(0,0,0,0.75);
         width: 30%;
         cursor:pointer;
         font-size:0.7em;
-        font-family: 'Proxima-Nova-Condensed-Light';
+        font-family: 'Proxima-Nova-Condensed';
         color:#a9aeb2;
      }
 .lightbox-default-booklet .default-navigator .default-navigator-container .PrevNextImg {
@@ -292,7 +292,7 @@ box-shadow: inset 0px 2px 7px 0 rgba(0,0,0,0.75);
     width: 30%;
     cursor:pointer;
     font-size:0.7em;
-    font-family: 'Proxima-Nova-Condensed-Light';
+    font-family: 'Proxima-Nova-Condensed';
     color:#a9aeb2;
     line-height: 2em;
 }
@@ -474,7 +474,7 @@ width: 100%;
     display:block;
     padding-left:10%;
     line-height: 45px;
-    font-family: 'Proxima-Nova-Condensed-Light';
+    font-family: 'Proxima-Nova-Condensed';
     font-style:italic;
 }
 .welcomeTab .tab1Bannersmalltesxt {
@@ -524,7 +524,7 @@ width: 100%;
     text-align:center;
 }
 .FollowBox .follwText {
-    font-family: 'Proxima-Nova-Condensed-Light';
+    font-family: 'Proxima-Nova-Condensed';
     color:#5e6a71;
     font-size: 0.9em;
     font-style:italic;
