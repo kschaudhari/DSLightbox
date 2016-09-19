@@ -120,13 +120,14 @@
     }
     .lighbox-container .lightbox-detailsPage .tab .BannerContentBox .TextBanner{
         vertical-align: middle;
-        padding-left: 14px;
+        padding-left: 0px;
         margin: 0;
         /*padding-top: 9.5%;*/
         display:table-cell;
         z-index: 1;
-        width:37%;
+        width:50%;
     }
+
     .lighbox-container .lightbox-detailsPage .tab .BannerContentBox .TextBanner .SmallBnnerText{
         line-height: 20px;
         font-size: 0.5em;
@@ -391,13 +392,17 @@
     }
     .DetailBannerText .BannerContentBox .TextBanner{
         width:95%;
-         top: 50%;
-         -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        -moz-transform: translateY(-50%);
-        transform: translateY(-50%);
+         top:10px;
+         left:50%;
+         -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        transform: translateX(-50%);
         position:absolute;
     }
+.lighbox-container .lightbox-detailsPage .tab .BannerContentBox .TextBanner .detailtabTitleImg {
+    width:100%;
+}
     .DetailBannerText .TextBanner .tab1BannerBigtesxt1 {
          padding-left: 12.5%;
     }
