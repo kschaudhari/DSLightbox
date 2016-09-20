@@ -312,6 +312,7 @@ function showTab(tabId, allowReLoad, slideDir) {
     $(".lighbox-container .lightbox-detailsPage .lightbox-top-menu-item").removeClass("active");
     $(".lighbox-container .lightbox-detailsPage .lightbox-top-menu-item[data-tab='tab" + tabId + "']").addClass("active");
     setScrollBar();
+    stopVideos(privousVideos);
     if (detailsVisible) {
         
         if (!isMobile())
@@ -320,7 +321,7 @@ function showTab(tabId, allowReLoad, slideDir) {
             handleDetailBookletEnd();
     }
     var privousVideos = previousTab.find(".ContentVideo .embed-container iframe");
-    stopVideos(privousVideos);
+    
     setImageCarousel($(".lighbox-container .lightbox-detailsPage .tab.active .page-background-images"), $(".lighbox-container .lightbox-detailsPage .image-bullet-container"), $(".lighbox-container .lightbox-detailsPage .next-image"), $(".lighbox-container .lightbox-detailsPage .prev-image"));
 }
 
