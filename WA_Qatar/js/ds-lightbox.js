@@ -160,7 +160,7 @@ function setBookLetViewForDetails() {
         shadowFlip: 0.4,
         onEndFlip: function (old, page, isLimit) {
             current = page + 1;
-            handleDetailBookletEnd();
+            handleDetailBookletEnd(checkIfScrollApplied);
             //
         }
     })
@@ -207,10 +207,19 @@ function stopVideos(privousVideos) {
     }
 }
 
-function handleDetailBookletEnd()
+function handleDetailBookletEnd(checkIfScrollApplied)
 {
-    window.setTimeout(function () {
+    
+    setScrollBar(checkIfScrollApplied);
 
+    $(".lighbox-container .lightbox-detailsPage .tab.active .MainContaintArea").scrollTop(0);
+    if (!isMobile())
+        $(".lighbox-container .scrollbar-external_wrapper").show();
+}
+
+function setScrollBar(checkIfScrollApplied)
+{
+    if (!checkIfScrollApplied || !$(".lighbox-container .lightbox-detailsPage .tab.active .MainContaintArea:first").hasClass("scroll-wrapper")) {
         $(".lighbox-container .lightbox-detailsPage .tab.active .MainContaintArea").scrollbar({
             "autoScrollSize": false,
             "scrollx": $('.external-scroll_x'),
@@ -218,14 +227,11 @@ function handleDetailBookletEnd()
             ignoreMobile: true,
             duration: 10
         });
+    }
         window.setTimeout(function () {
             detailPageLoaded();
         }, 100);
-    }, 500);
-
-    $(".lighbox-container .lightbox-detailsPage .tab.active .MainContaintArea").scrollTop(0);
-    if (!isMobile())
-        $(".lighbox-container .scrollbar-external_wrapper").show();
+    
 }
 var autoChangeTimer = null;
 var autoChangeTimeInterval = 100;
@@ -301,7 +307,7 @@ function showTab(tabId, allowReLoad, slideDir) {
     $(".lighbox-container .lightbox-detailsPage .tab[data-tab='tab" + tabId + "']").addClass("active");
     $(".lighbox-container .lightbox-detailsPage .lightbox-top-menu-item").removeClass("active");
     $(".lighbox-container .lightbox-detailsPage .lightbox-top-menu-item[data-tab='tab" + tabId + "']").addClass("active");
-
+    setScrollBar();
     if (detailsVisible) {
         
         if (!isMobile())
