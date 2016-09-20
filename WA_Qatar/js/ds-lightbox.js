@@ -172,12 +172,38 @@ function detailPageLoaded()
     if (iframes.length > 0) {
         var player = iframes.data("videoPlayer");
         if (!player) {
-            player = new Vimeo.Player(iframes);
+            player = new YT.Player(iframes.attr("id"), {
+                events: {
+                    'onReady': startVideo
+                }
+            });
             iframes.data("videoPlayer", player);
         }
-       
-                player.play();
+        else
+        {
+            startVideo({ target: player });
+        }
+                
         
+    }
+}
+
+function startVideo(event) {
+    var iframe = $(event.target.getIframe());
+    if(iframe.is(":visible"))
+        event.target.playVideo();
+}
+function stopVideos(privousVideos) {
+    if (!privousVideos)
+        privousVideos = $(".lighbox-container .lightbox-detailsPage .tab.active .ContentVideo .embed-container iframe");
+    if (privousVideos.length > 0) {
+        for (var i = 0; i < privousVideos.length; i++) {
+            previousFrame = $(privousVideos[i]);
+            var oldPlayer = previousFrame.data("videoPlayer");
+            if (oldPlayer) {
+                oldPlayer.stopVideo();
+            }
+        }
     }
 }
 
@@ -288,20 +314,7 @@ function showTab(tabId, allowReLoad, slideDir) {
     setImageCarousel($(".lighbox-container .lightbox-detailsPage .tab.active .page-background-images"), $(".lighbox-container .lightbox-detailsPage .image-bullet-container"), $(".lighbox-container .lightbox-detailsPage .next-image"), $(".lighbox-container .lightbox-detailsPage .prev-image"));
 }
 
-function stopVideos(privousVideos)
-{
-    if (!privousVideos)
-        privousVideos = $(".lighbox-container .lightbox-detailsPage .tab.active .ContentVideo .embed-container iframe");
-    if (privousVideos.length > 0) {
-        for (var i = 0; i < privousVideos.length; i++) {
-            previousFrame = $(privousVideos[i]);
-            var oldPlayer = previousFrame.data("videoPlayer");
-            if (oldPlayer) {
-                oldPlayer.pause();
-            }
-        }
-    }
-}
+
 function showDefaultView() {
     $(".lighbox-container .lightbox-defaultTab").fadeIn();
     $(".lighbox-container .lightbox-detailsPage").fadeOut();
