@@ -20,8 +20,12 @@ function showLightboxPopup(type) {
 
 function hideLightboxPopup() {
     //$(".removePopup").trigger("click");
-    var activeTabVideo = $(".lighbox-container .lightbox-detailsPage .tab.active .ContentVideo .embed-container iframe")
-    stopVideos(activeTabVideo);
+    if (window.parent) {
+        var activeTabVideo = $(".lighbox-container .lightbox-detailsPage .tab.active .ContentVideo .embed-container iframe")
+        stopVideos(activeTabVideo);
+        
+        window.parent.postMessage('LB_CLOSE', '*');
+    }
 }
 
 var lightboxCounter = null;

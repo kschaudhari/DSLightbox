@@ -14,7 +14,7 @@ $(document).ready(function () {
     showLightboxPopup(type);
     $(".removePopup").click(function () {
         hideLightboxPopup();
-        $("#mydiv").fadeOut("slow");
+        
     });
     $(".BackToMain").click(function () {
         showDefaultView();
@@ -438,6 +438,7 @@ function swipedetect(el, callback) {
         e.preventDefault()
     }, false)
 }
+
 
 
 

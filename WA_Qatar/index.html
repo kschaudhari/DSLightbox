@@ -237,7 +237,7 @@
                        <span class="OverlayImg"></span>
                        <div class="BannerContentBox">
                            <div class="TextBanner">
-                               <img class="welcometabTitleImg" src="images/welcometab2Title.png" />
+                               <img class="welcometabTitleImg" src="/images/welcometab2Title.png" />
                            </div>
                        </div>
                        <div class="BannerBottomRightLogo">
@@ -1234,6 +1234,20 @@
     </div>
 </div>
    
-    
+    <script>
+
+        function inIframe() {
+            try {
+                return window.self !== window.top;
+            } catch (e) {
+                return true;
+            }
+        }
+        if (!inIframe())
+        {
+            var ligthbox = document.getElementById("mydiv");
+            ligthbox.style.backgroundColor = "rgba(0,0,0,0.7)";
+        }
+    </script>
 </body>
 </html>

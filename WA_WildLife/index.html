@@ -1116,5 +1116,20 @@
          (d.location.protocol == "https:" ? "https:" : "http:") + "//rs.gwallet.com/r1/pixel/x" + p + "r" + Math.round(1E9 * Math.random())
          })(document, "39051")
     </script>
+    <script>
+
+        function inIframe() {
+            try {
+                return window.self !== window.top;
+            } catch (e) {
+                return true;
+            }
+        }
+        if (!inIframe())
+        {
+            var ligthbox = document.getElementById("mydiv");
+            ligthbox.style.backgroundColor = "rgba(0,0,0,0.7)";
+        }
+    </script>
 </body>
 </html>
