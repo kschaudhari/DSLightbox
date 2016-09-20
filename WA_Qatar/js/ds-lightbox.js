@@ -160,7 +160,7 @@ function setBookLetViewForDetails() {
         shadowFlip: 0.4,
         onEndFlip: function (old, page, isLimit) {
             current = page + 1;
-            handleDetailBookletEnd(checkIfScrollApplied);
+            handleDetailBookletEnd(true);
             //
         }
     })
