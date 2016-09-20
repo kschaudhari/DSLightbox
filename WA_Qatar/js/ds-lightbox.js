@@ -140,14 +140,17 @@ function setBookLetViewForReadMore()
         shadowFlip	: 0.4,
         onEndFlip : function(old, page, isLimit) {
             current = page;
-            if ($(".lighbox-container .lightbox-content .lightbox-defaultTab").is(":visible")) {
-                autoChangeTab();
-                $(".lighbox-container .scrollbar-external_wrapper").hide();
-            }
-            else {
-                handleDetailBookletEnd();
-                //detailPageLoaded();
-            }
+            window.setTimeout(function () {
+                if ($(".lighbox-container .lightbox-content .lightbox-defaultTab").is(":visible")) {
+                    autoChangeTab();
+                    $(".lighbox-container .scrollbar-external_wrapper").hide();
+                }
+                else {
+                    handleDetailBookletEnd(true);
+                    //detailPageLoaded();
+                }
+            }, 200);
+            
         }
     } )
 }
@@ -160,7 +163,8 @@ function setBookLetViewForDetails() {
         shadowFlip: 0.4,
         onEndFlip: function (old, page, isLimit) {
             current = page + 1;
-            handleDetailBookletEnd(true);
+            window.setTimeout(function () { handleDetailBookletEnd(true); }, 200);
+            
             //
         }
     })

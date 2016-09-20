@@ -147,7 +147,7 @@
             };
             this.transEndEventName = transEndEventNames[Modernizr.prefixed('transition')] + '.bookblock';
             // support css 3d transforms && css transitions && Modernizr.csstransformspreserve3d
-            this.support = Modernizr.csstransitions && Modernizr.csstransforms3d ;//&& Modernizr.csstransformspreserve3d;
+            this.support = Modernizr.csstransitions && Modernizr.csstransforms3d;// && Modernizr.csstransformspreserve3d;
             // initialize/bind some events
             this._initEvents();
             // start slideshow
@@ -250,22 +250,43 @@
 
             this.$items.hide();
             this.$el.prepend($s_left, $s_middle, $s_right);
+            var preserve3Dsupported = Modernizr.csstransformspreserve3d;
 
-            $s_middle.css({
-                transitionDuration: speed + 'ms',
-                transitionTimingFunction: this.options.easing
-            }).on(this.transEndEventName, function (event) {
-                if ($(event.target).hasClass('bb-page')) {
-                    self.$el.children('.bb-page').remove();
-                    self.$nextItem.show();
-                    self.end = false;
-                    self.isAnimating = false;
-                    var isLimit = dir === 'next' && self.current === self.itemsCount - 1 || dir === 'prev' && self.current === 0;
-                    // callback trigger
-                    self.options.onEndFlip(self.previous, self.current, isLimit);
-                }
-            });
-
+            if (preserve3Dsupported) {
+                $s_middle.css({
+                    transitionDuration: speed + 'ms',
+                    transitionTimingFunction: this.options.easing
+                }).on(this.transEndEventName, function (event) {
+                    if ($(event.target).hasClass('bb-page')) {
+                        self.$el.children('.bb-page').remove();
+                        self.$nextItem.show();
+                        self.end = false;
+                        self.isAnimating = false;
+                        var isLimit = dir === 'next' && self.current === self.itemsCount - 1 || dir === 'prev' && self.current === 0;
+                        // callback trigger
+                        self.options.onEndFlip(self.previous, self.current, isLimit);
+                    }
+                });
+                
+            }
+            else
+            {
+                $s_middle.css({
+                    transitionDuration: speed + 'ms',
+                    transitionTimingFunction: this.options.easing
+                });
+                window.setTimeout(function () {
+                    if ($($s_middle).hasClass('bb-page')) {
+                        self.$el.children('.bb-page').remove();
+                        self.$nextItem.show();
+                        self.end = false;
+                        self.isAnimating = false;
+                        var isLimit = dir === 'next' && self.current === self.itemsCount - 1 || dir === 'prev' && self.current === 0;
+                        // callback trigger
+                        self.options.onEndFlip(self.previous, self.current, isLimit);
+                    }
+                }, 250)
+            }
             if (dir === 'prev') {
                 $s_middle.addClass('bb-flip-initial');
             }
