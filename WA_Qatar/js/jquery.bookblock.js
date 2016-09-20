@@ -147,7 +147,7 @@
             };
             this.transEndEventName = transEndEventNames[Modernizr.prefixed('transition')] + '.bookblock';
             // support css 3d transforms && css transitions && Modernizr.csstransformspreserve3d
-            this.support = Modernizr.csstransitions && Modernizr.csstransforms3d;// && Modernizr.csstransformspreserve3d;
+            this.support = Modernizr.csstransitions && Modernizr.csstransforms3d && Modernizr.csstransformspreserve3d;
             // initialize/bind some events
             this._initEvents();
             // start slideshow
