@@ -438,12 +438,14 @@ transform:rotate(-180deg);
 .lighbox-container .lightbox-content .lightbox-tab-menu .lightbox-tab-menu-item[data-tab="tab5"]:hover .lightbox-tab-menu-item-logo .LeftImage {
     width:83px;
 }
-
+.welcomeTab {
+    overflow:hidden;
+}
 .welcomeTab .BannerContentBox {
     height: auto;
     top: 50%;
     position:absolute;
-    right: 0;
+    right: -100%;
     text-align: right;
     /* width: 318px; */
     margin-right: 21px;
@@ -451,6 +453,16 @@ transform:rotate(-180deg);
     -ms-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     transform: translateY(-50%);
+
+        transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -webkit-backface-visibility: hidden;
+
+}
+.welcomeTab.active .BannerContentBox{
+    right:0px;
 }
 .welcomeTab .TextBanner {
   	font-family: 'Proxima-Nova-Condensed-Semibold';
