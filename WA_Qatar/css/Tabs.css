@@ -317,6 +317,17 @@
 {
     background-color:#a9aeb2
 }
+.feature-list{
+    font-family:'Jotia-Regular';
+    color:#3d0421;
+    font-size: 0.95em;
+}
+.conditions-appiled{
+    font-family:'Jotia-Regular';
+    color:#3d0421;
+    font-size: 0.7em;
+    text-align:right;
+}
 /******************* EXTERNAL SCROLLBAR *******************/
 /*  scrol bar */
 .scrollbar-external_wrapper {
@@ -577,6 +588,7 @@ box-shadow: 0px 0px 14px 0px rgba(255,255,255,1);
     color:#0f9fd6;
     font-family: 'Proxima-Nova';
     text-align:left;
+    font-size:1em;
 }
 .readNextBox .NextTabLabel .smallLabelforNext {
     width: 100%;
@@ -584,7 +596,7 @@ box-shadow: 0px 0px 14px 0px rgba(255,255,255,1);
     line-height: 2.1;
 }
 .readNextBox .NextTabLabel .BigLabelforNext {
-    font-size: 1em;
+    
     top: -6px;
     position: relative;
 }
