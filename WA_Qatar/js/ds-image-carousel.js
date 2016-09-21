@@ -4,6 +4,7 @@
     
     if (images.length <= 1)
     {
+        images.show();
         $(bulletContainer).closest(".image-carousel-controls").hide();
         return;
     }

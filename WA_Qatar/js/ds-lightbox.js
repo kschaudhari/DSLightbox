@@ -199,7 +199,7 @@ function startVideo(event) {
 }
 function stopVideos(privousVideos) {
     if (!privousVideos)
-        privousVideos = $(".lighbox-container .lightbox-detailsPage .tab.active .ContentVideo .embed-container iframe");
+        privousVideos = $(".lighbox-container .lightbox-detailsPage .tab .ContentVideo .embed-container iframe");
     if (privousVideos.length > 0) {
         for (var i = 0; i < privousVideos.length; i++) {
             previousFrame = $(privousVideos[i]);
