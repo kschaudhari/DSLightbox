@@ -1,6 +1,6 @@
 .lighbox-container .tab{
     width: 100%;
-    height: 100%;
+    height: 99.9%;
     position: relative;
     display:none;
 }
@@ -68,7 +68,7 @@
     position:absolute;
     bottom: -1px;
     left: 0px;
-    width: 200px;
+    width: 70px;
     /* display:table; */
     height: 11.475%;
     max-height: 70px;
@@ -317,6 +317,31 @@
 {
     background-color:#a9aeb2
 }
+.tab5-page-content .readMore .readMoreLine div
+{
+    display:none;
+}
+.tab5-page-content .readMore .buttonPart
+{
+    min-width: 240px;
+    max-width: 240px;
+    background-color: #780842;
+}
+.tab5-page-content .readMore .buttonPart .button{
+    width: 220px;
+    background-color: #3d0421;
+}
+.tab5-page-content .readMore .buttonPart .button:hover
+{
+    background-color: #600634;
+}
+.tab5-page-content .readMore .buttonPart .button:active
+{
+    background-color: #30031a;
+}
+.tab5-page-content .readMore .buttonPart .plus{
+    height: 20px;
+}
 .feature-list{
     font-family:'Jotia-Regular';
     color:#3d0421;
@@ -527,7 +552,7 @@ box-shadow: 0px 0px 14px 0px rgba(255,255,255,1);
 }
 .NextTabArrow {
     float: right;
-    height: 20px;
+    height: 19px;
     margin-right: 5%;
     position: relative;
     top: 50%;
@@ -535,15 +560,15 @@ box-shadow: 0px 0px 14px 0px rgba(255,255,255,1);
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    width: 27px;
+    width: 10px;
     display:inline-block;
-    background-image:url(../images/NextTabArrow.png);
+    background-image: url(../images/Control-arrow-Next.png);
 }
 .readNextBox:hover .NextTabArrow{
-    background-image:url(../images/NextTabArrowHover.png);
+    background-image: url(../images/Control-arrow-NextHover.png);
 }
 .readNextBox:active .NextTabArrow{
-    background-image:url(../images/NextTabArrowActive.png);
+    background-image: url(../images/Control-arrow-NextActive.png);
 }
 .readNextBox:hover .NextTabLabel, .readNextBox:hover .ReadNext {
     color:#2DB9F0;
@@ -698,7 +723,6 @@ box-shadow: 0px 0px 14px 0px rgba(255,255,255,1);
 .lightbox-detail-booklet.bb-bookblock .bb-page:nth-child(3)  .bb-content{
     left: 0;
 }
-
 /*  ie Only  */
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -706,6 +730,6 @@ box-shadow: 0px 0px 14px 0px rgba(255,255,255,1);
         max-height:100% !important;
     }
     .MainContaintArea {
-        height:103.7% !important;
+        height:103.8% !important;
     }
 }
