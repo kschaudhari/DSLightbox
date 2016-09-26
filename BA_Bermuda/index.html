@@ -1,0 +1,320 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lightbox</title>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,500i" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="fonts/font.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css" />
+    <!--<link rel="stylesheet" type="text/css" href="css/bookblock.css" />-->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!--<link rel="stylesheet" type="text/css" href="css/Tabs.css" />-->
+    <link rel="stylesheet" type="text/css" href="css/mobile.css" />
+    <link rel="stylesheet" type="text/css" href="css/Responsive.css" />
+    
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <script src="js/customscroll.js"></script>
+    <script src="js/creative-util.js"></script>
+    <script src="js/ds-lightbox.js"></script>
+    <script>
+        var clickTagTweet = "https://twitter.com/WestAustralia";
+        var clickTagFb = "https://www.facebook.com/ExtraordinaryWesternAustralia";
+        var clickTagInsta = "https://www.instagram.com/westernaustralia/";
+        var clickTagYou = "https://www.youtube.com/user/westernaustralia";
+    </script>
+    
+</head>
+<body style="height:1000px;">
+
+    <div id="mydiv">
+        <div id="mydiv-content">
+
+            <div class="topMobMenuBar tab1Active">
+                <div class="topMobItem MobMenuBar">
+                    <div class="mobMenu">
+                        <div class="mobMenuIcon menuElement">
+                            <img src="images/mobMenu.png" />
+                        </div>
+                    </div>
+                    <div class="mobMenuLogos menuElement">
+
+                        <div class="mobWALogo">
+                            <img src="images/mobWALogo.png" />
+                        </div>
+                        <div class="mobDiscoverLogo">
+                            <img src="images/mobQatarLogo.png" />
+                        </div>
+                    </div>
+                    <div id="lightbox-mobile-exit" class="mobMenuClose menuElement">
+                        <img class="removePopup" src="images/mobClose.png" />
+                    </div>
+                </div>
+                <div class="mobDropdownMenu">
+                    <div class="mobDropdownMenuItem" data-tab="tab1">
+                        WESTERN AUSTRALIA
+                    </div>
+                    <div class="mobDropdownMenuItem" data-tab="tab2">food & WINE</div>
+                    <div class="mobDropdownMenuItem" data-tab="tab3">coastal & ACQUATIC</div>
+                    <div class="mobDropdownMenuItem" data-tab="tab4">adventure & NATURE</div>
+                    <div class="mobDropdownMenuItem" data-tab="tab5">fly there IN STYLE</div>
+                </div>
+                <div class="topMobItem mobNavigator">
+
+                    <div class="mobNavigatorContent">
+                        <div class="mobPrevTab">
+                            <div class="navArrow">
+                                <img src="images/mobArrow.png" />
+                            </div>
+                        </div>
+                        <div class="mobNextTab">
+                            <div class="navArrow">
+                                <img src="images/mobArrow.png" />
+                            </div>
+                        </div>
+                        <div class="mobCurrentTab">
+                            <div class="mobNavigationTabs">
+                                <div class="mobTab1 mobTab active" data-tab="tab1">
+                                    <div class="mobCurrentTabLogo">
+                                        <span class="capitalCaseTitle">WESTERN AUSTRALIA</span>
+                                    </div>
+                                </div>
+                                <div class="mobTab2 mobTab" data-tab="tab2">
+                                    <div class="mobCurrentTabLogo">
+                                        <span class="capitalCaseTitle">FOOD & WINE</span>
+                                    </div>
+                                </div>
+                                <div class="mobTab3 mobTab" data-tab="tab3">
+                                    <div class="mobCurrentTabLogo">
+                                        <span class="capitalCaseTitle">COASTAL & AQUATIC</span>
+                                    </div>
+                                </div>
+                                <div class="mobTab4 mobTab" data-tab="tab4">
+                                    <div class="mobCurrentTabLogo">
+                                        <span class="capitalCaseTitle">ADVENTURE & NATURE</span>
+                                    </div>
+                                </div>
+                                <div class="mobTab5 mobTab" data-tab="tab5">
+                                    <div class="mobCurrentTabLogo">
+                                        <span class="capitalCaseTitle">FLY THERE IN STYLE</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="lighbox-container">
+
+                <div class="lightbox-content">
+                    <a href="javascript:void(0)" id="lightbox-exit" class="CloseBtn removePopup"></a>
+                    <div class="tab-container lightbox-detailsPage">
+                        <div class="tab-rectangle">
+                            <div class="tabs first-tab-container">
+                                <div class="tab tab1 parallelogram1" data-tab="tab1">
+                                    <div class="tab-content-container">
+                                        <div class="tab-content">
+                                            <div class="content-background-image">
+
+                                            </div>
+                                            <div class="default-tab-content">
+                                                <div class="default-title">
+                                                    <img src="images/Title-tab1.png" />
+                                                </div>
+                                                <div class="default-description">
+                                                    This island isn’t designed for squares (triangles, maybe), so pack your adventurous side...
+                                                </div>
+                                                <div class="explore-container">
+                                                    <div class="explore-outer">
+                                                        <div class="explore-inner">
+                                                            <span class="explore-text">
+                                                                explore
+                                                            </span>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-details">
+                                                <div class="MainContaintArea MainContentBox">
+                                                    <div class="tab-detail-title">
+                                                        <img src="images/Title-tab1.png" />
+                                                    </div>
+                                                    <div class="detail-container">
+                                                        <div class="detail-container-background"></div>
+                                                        
+                                                        <div class="detail-page-head-line">
+                                                            This island isn’t designed for squares (triangles, maybe), so pack your adventurous side
+                                                        </div>
+                                                        <div class="description-para">
+                                                            Having a bold streak has always come in handy when visiting Bermuda – its first settlers were shipwrecked explorers, after all, and we all know about its famous Triangle. These days, you don’t need to tangle with a coral reef or vanish entirely in order to enjoy the island’s wild side, though a healthy appreciation for being on, and under, water helps.
+                                                            <br /><br />
+                                                            Wannabe mermaids and mermen are spoiled for choice: go scuba or helmet diving, snorkelling and deep-sea fishing; try stand-up paddle boarding and kayaking; set off on a sunset sailing trip. Jet ski past shipwrecks, coral coves and tiny inlets (keeping your eyes peeled for sea turtles, rays and floundering vessels), swim with dolphins at Dolphin Quest and step into a shark cave at Bermuda Underwater Exploration Institute. In 2017, Bermuda’s turquoise waters will provide a natural amphitheatre for the nautical hijinks of the 35th America Cup.
+
+                                                        </div>
+                                                        <div class="description-image">
+                                                            <div class="description-image-rectangle" style="background-image:url(images/tab1/image1.jpg)">
+                                                                <div class="description-image-caption">Shipwrecks to Explore in Bermuda</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="description-para">
+                                                            There’s plenty to please landlubbers, too: the world’s oldest British colony is also a designated UNESCO World Heritage Site. Start by exploring historic Hamilton, admiring the capital’s colonial architecture and cobbled streets. Those iconic red telephone boxes, British-style bobbies and English place names might have you thinking you’re back home, as will the emphasis on afternoon tea (the wonderful weather should provide a firm reminder of your distance from the motherland).
+                                                        </div>
+                                                        <div class="description-image">
+                                                            <div class="description-image-rectangle" style="background-image:url(images/tab1/image2.jpg)">
+                                                                <div class="description-image-caption">Dock Life, City of Hamilton</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="description-para">
+                                                            Gawp at wildlife at Spittal Pond Nature Reserve (look out for wildflowers, white long tails and even whales), perfect your swing on one of the island’s famous golf courses, hike up Fort Scaur (Bermuda’s highest hilltop) and explore the stalactite-stuffed crystal caves near Castle Harbour. Walk or cycle over the Bermuda Railway Trail, which spans from one end of the island to the other, with the majority of the 18-mile track traversing Bermuda’s scenic northern shore. (You’ll have earned at least three rum swizzles each by the time you’ve ticked off the track’s entirety).
+                                                        </div>
+                                                        <div class="description-image">
+                                                            <div class="description-image-rectangle" style="background-image:url(images/tab1/image3.jpg)">
+                                                                <div class="description-image-caption dont-miss">
+                                                                    <div class="heading"><span>Don’t miss</span></div>
+                                                                    A trip to Gibb’s Hill Lighthouse<br /> – enjoy panoramic Bermy views from the top
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab tab2 parallelogram2" data-tab="tab2">
+                                    <div class="tab-content-container">
+                                        <div class="tab-content">
+                                            <div class="content-background-image">
+
+                                            </div>
+                                            <div class="default-tab-content">
+                                                <div class="explore-container">
+                                                    <div class="explore-outer">
+                                                        <div class="explore-inner">
+                                                            <span class="explore-text">
+                                                                explore
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="default-description">
+                                                    This island isn’t designed for squares (triangles, maybe), so pack your adventurous side...
+                                                </div>
+                                                <div class="default-title">
+                                                    <img src="images/Title-tab2.png" />
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs second-tab-container">
+                                <div class="tab tab3 parallelogram1" data-tab="tab3">
+                                    <div class="tab-content-container">
+                                        <div class="tab-content">
+                                            <div class="content-background-image">
+
+                                            </div>
+                                            <div class="default-tab-content">
+                                                <div class="default-title">
+                                                    <img src="images/Title-tab3.png" />
+                                                </div>
+                                                <div class="default-description">
+                                                    This island isn’t designed for squares (triangles, maybe), so pack your adventurous side...
+                                                </div>
+                                                <div class="explore-container">
+                                                    <div class="explore-outer">
+                                                        <div class="explore-inner">
+                                                            <span class="explore-text">
+                                                                explore
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab tab4 parallelogram2" data-tab="tab4">
+                                    <div class="tab-content-container">
+                                        <div class="tab-content">
+                                            <div class="content-background-image">
+
+                                            </div>
+                                            <div class="default-tab-content">
+                                                
+                                                <div class="explore-container">
+                                                    <div class="explore-outer">
+                                                        <div class="explore-inner">
+                                                            <span class="explore-text">
+                                                                explore
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="default-description">
+                                                    This island isn’t designed for squares (triangles, maybe), so pack your adventurous side...
+                                                </div>
+                                                <div class="default-title">
+                                                    <img src="images/Title-tab4.png" />
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lightbox-bootmGrad">
+
+                </div>
+                <div class="lightbox-footer">
+
+                </div>
+
+                <div class="scrollbar-external_wrapper">
+                    <div class="external-scroll_y">
+                        <div style="position:relative">
+                            <div class="scroll-element_outer">
+                                <div class="scroll-element_size"></div>
+                                <div class="scroll-element_track"></div>
+                                <div class="scroll-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div id="preloadImages" style="display:none">
+                
+            </div>
+            <div class="mobDetector"></div>
+        </div>
+    </div>
+
+    <script>
+
+        function inIframe() {
+            try {
+                return window.self !== window.top;
+            } catch (e) {
+                return true;
+            }
+        }
+        if (!inIframe())
+        {
+            var ligthbox = document.getElementById("mydiv");
+            ligthbox.style.backgroundColor = "rgba(0,0,0,0.7)";
+        }
+    </script>
+</body>
+</html>

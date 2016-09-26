@@ -1,0 +1,81 @@
+﻿<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+<style>
+
+</style>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<div class="tab-container">
+    <div class="tabs first-tab-container">
+        <div class="tab-rectangle">
+            <div class="tab tab1 parallelogram1">
+                <div class="tab-content-container">
+                    <div class="tab-content">
+                        <div class="content-background-image">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab tab2 parallelogram2">
+                <div class="tab-content-container">
+                    <div class="tab-content">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tabs second-tab-container">
+        <div class="tab-rectangle">
+            <div class="tab tab3 parallelogram1">
+                <div class="tab-content-container">
+                    <div class="tab-content">
+
+                    </div>
+                </div>
+            </div>
+            <div class="tab tab4 parallelogram2">
+                <div class="tab-content-container">
+                    <div class="tab-content">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $(".tab").hover(function () {
+            if ($(".tab-container").hasClass("expanded"))
+                return;
+            $(this).addClass("hover");
+            var nextElement = $(this).prev();
+            if (!nextElement || nextElement.length == 0)
+                nextElement = $(this).next();
+            nextElement.addClass("hoverAnother");
+        },
+            function () {
+                removeHoverClasses(this);
+            })
+
+        $(".tab").click(function (e) {
+
+            removeHoverClasses(this);
+            $(".tab-container").addClass("expanded");
+            $(".tab-container .active").removeClass("active")
+            $(this).addClass("active");
+            $(this).closest(".tabs").addClass("active");
+        })
+
+        function removeHoverClasses(element) {
+            $(element).removeClass("hover");
+            var nextElement = $(element).prev();
+            if (!nextElement || nextElement.length == 0)
+                nextElement = $(element).next();
+            nextElement.removeClass("hoverAnother");
+        }
+
+
+    });
+</script>
