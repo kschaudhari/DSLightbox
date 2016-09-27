@@ -32,6 +32,7 @@ body {
     -ms-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    backface-visibility: hidden;
     font-family: 'Fira Sans';
 }
 
@@ -110,22 +111,19 @@ body {
     height: calc(100% - 6px);
     background: transparent;
     overflow: hidden;
+    -webkit-transform:  translateZ(0) skewX(-20deg);
+    -moz-transform:  translateZ(0) skewX(-20deg);
+    -o-transform:  translateZ(0) skewX(-20deg);
+    transform:  translateZ(0) skewX(-20deg);
+    backface-visibility: hidden;
 }
 
 .tabs  .tab.parallelogram1 {
     left: -50.3%;
-    -webkit-transform: skewX(-20deg);
-    -moz-transform: skewX(-20deg);
-    -o-transform: skewX(-20deg);
-    transform: skewX(-20deg);
 }
 
 .tabs  .tab.parallelogram2 {
     left: 51%;
-    -webkit-transform: skewX(-20deg);
-    -moz-transform: skewX(-20deg);
-    -o-transform: skewX(-20deg);
-    transform: skewX(-20deg);
     z-index: 1;
 }
 
@@ -145,22 +143,23 @@ body {
     border: 3px solid #cde3a6;
 }
 
+.tabs  .tab.hover
+{
+    -webkit-transform:  translateZ(0) skewX(-15deg);
+    -moz-transform:  translateZ(0) skewX(-15deg);
+    -o-transform:  translateZ(0) skewX(-15deg);
+    transform:  translateZ(0) skewX(-15deg);
+    backface-visibility: hidden;
+}
 .tabs  .tab.parallelogram1.hover {
     z-index: 3;
     left: -44.5%;
-    -webkit-transform: skewX(-15deg);
-    -moz-transform: skewX(-15deg);
-    -o-transform: skewX(-15deg);
-    transform: skewX(-15deg);
 }
 
 .tabs .tab.parallelogram2.hover {
     z-index: 3;
     left: 45%;
-    -webkit-transform: skewX(-15deg);
-    -moz-transform: skewX(-15deg);
-    -o-transform: skewX(-15deg);
-    transform: skewX(-15deg);
+    
 }
 
 .first-tab-container {
@@ -181,15 +180,19 @@ body {
     width: 100%;
 }
 
+.tab .tab-content {
+    -webkit-transform:  translateZ(0) skewX(20deg);
+    -moz-transform:  translateZ(0) skewX(20deg);
+    -o-transform:  translateZ(0) skewX(20deg);
+    transform:  translateZ(0) skewX(20deg);
+    backface-visibility: hidden;
+}
 .parallelogram1 .tab-content {
     width: 100%;
     height: 100%;
     position: absolute;
     right: -24%;
-    -webkit-transform: skewX(20deg);
-    -moz-transform: skewX(20deg);
-    -o-transform: skewX(20deg);
-    transform: skewX(20deg);
+    
 }
 
 .parallelogram2 .tab-content {
@@ -197,10 +200,6 @@ body {
     height: 100%;
     position: absolute;
     right: 22%;
-    -webkit-transform: skewX(20deg);
-    -moz-transform: skewX(20deg);
-    -o-transform: skewX(20deg);
-    transform: skewX(20deg);
 }
 
 .tab1 .tab-content {
@@ -227,51 +226,49 @@ body {
     background-size: cover;
 }
 
+.tabs  .tab.hover .tab-content
+{
+    -webkit-transform:  translateZ(0) skewX(15deg);
+    -moz-transform:  translateZ(0) skewX(15deg);
+    -o-transform:  translateZ(0) skewX(15deg);
+    transform:  translateZ(0) skewX(15deg);
+    backface-visibility: hidden;
+}
 .tabs  .tab.parallelogram1.hover .tab-content {
-    -webkit-transform: skewX(15deg);
-    -moz-transform: skewX(15deg);
-    -o-transform: skewX(15deg);
-    transform: skewX(15deg);
+    
     right: -18.35%;
 }
 
 .tabs  .tab.parallelogram2.hover .tab-content {
-    -webkit-transform: skewX(15deg);
-    -moz-transform: skewX(15deg);
-    -o-transform: skewX(15deg);
-    transform: skewX(15deg);
     right: 16%;
 }
-
+.tabs .tab.hoverAnother {
+    -webkit-transform:  translateZ(0) skewX(-15deg);
+    -moz-transform:  translateZ(0) skewX(-15deg);
+    -o-transform:  translateZ(0) skewX(-15deg);
+    transform:  translateZ(0) skewX(-15deg);
+    backface-visibility: hidden;
+}
+.tabs .tab.hoverAnother .tab-content {
+    -webkit-transform:  translateZ(0) skewX(15deg);
+        -moz-transform:  translateZ(0) skewX(15deg);
+        -o-transform:  translateZ(0) skewX(15deg);
+        transform:  translateZ(0) skewX(15deg);
+        backface-visibility: hidden;
+}
 .tabs  .tab.parallelogram1.hoverAnother {
     left: -56.2%;
-    -webkit-transform: skewX(-15deg);
-    -moz-transform: skewX(-15deg);
-    -o-transform: skewX(-15deg);
-    transform: skewX(-15deg);
 }
 
     .tabs  .tab.parallelogram1.hoverAnother .tab-content {
-        -webkit-transform: skewX(15deg);
-        -moz-transform: skewX(15deg);
-        -o-transform: skewX(15deg);
-        transform: skewX(15deg);
         right: -30%;
     }
 
 .tabs  .tab.parallelogram2.hoverAnother {
     left: 56.5%;
-    -webkit-transform: skewX(-15deg);
-    -moz-transform: skewX(-15deg);
-    -o-transform: skewX(-15deg);
-    transform: skewX(-15deg);
 }
 
     .tabs  .tab.parallelogram2.hoverAnother .tab-content {
-        -webkit-transform: skewX(15deg);
-        -moz-transform: skewX(15deg);
-        -o-transform: skewX(15deg);
-        transform: skewX(15deg);
         right: 27.5%;
     }
 
@@ -287,6 +284,7 @@ body {
     -ms-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
     transform: translateX(-50%);
+    backface-visibility: hidden;
 }
 .parallelogram2 .default-tab-content {
     position: absolute;
@@ -296,6 +294,7 @@ body {
     -ms-transform: translateX(-63%);
     -moz-transform: translateX(-63%);
     transform: translateX(-63%);
+    backface-visibility: hidden;
 }
 
 .tab1.parallelogram1 .default-tab-content {
@@ -303,12 +302,14 @@ body {
     -ms-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
     transform: translateX(-46%);
+    backface-visibility: hidden;
 }
 .tab3.parallelogram1 .default-tab-content {
     -webkit-transform: translateX(-55%);
     -ms-transform: translateX(-55%);
     -moz-transform: translateX(-55%);
     transform: translateX(-55%);
+    backface-visibility: hidden;
 }
 
 
@@ -465,28 +466,17 @@ body {
 
 .tabs.active  .tab.parallelogram1.active .tab-content {
     right: -4%;
-    -webkit-transform: skewX(5deg);
-    -moz-transform: skewX(5deg);
-    -o-transform: skewX(5deg);
-    transform: skewX(5deg);
+    backface-visibility: hidden;
     background-size: cover;
 }
 
 .tabs.active  .tab.parallelogram2 {
-    -webkit-transform: skewX(-5deg);
-    -moz-transform: skewX(-5deg);
-    -o-transform: skewX(-5deg);
-    transform: skewX(-5deg);
     z-index: 1;
     left: 85%;
 }
 
 .tabs.active .tab.parallelogram2 .tab-content {
     right: 22%;
-    -webkit-transform: skewX(5deg);
-    -moz-transform: skewX(5deg);
-    -o-transform: skewX(5deg);
-    transform: skewX(5deg);
 }
 
 .tab-container.expanded .tabs.active .tab.parallelogram2.active {
@@ -495,18 +485,10 @@ body {
 
 .tab-container.expanded .tabs.active  .tab.parallelogram1 {
     left: -17.4%;
-    -webkit-transform: skewX(-5deg);
-    -moz-transform: skewX(-5deg);
-    -o-transform: skewX(-5deg);
-    transform: skewX(-5deg);
 }
 
     .tabs.active  .tab.parallelogram1 .tab-content {
         right: -11%;
-        -webkit-transform: skewX(5deg);
-        -moz-transform: skewX(5deg);
-        -o-transform: skewX(5deg);
-        transform: skewX(5deg);
     }
 
 
@@ -514,43 +496,31 @@ body {
     right: 4%;
     background-size: cover;
 }
-
-.tab-container.expanded .tabs  .tab.parallelogram1 {
-    -webkit-transform: skewX(-5deg);
-    -moz-transform: skewX(-5deg);
-    -o-transform: skewX(-5deg);
-    transform: skewX(-5deg);
+.tab-container.expanded .tabs  .tab.parallelogram1{
     left: -51.6%;
+}
+.tab-container.expanded .tabs  .tab {
+    -webkit-transform:  translateZ(0) skewX(-5deg);
+    -moz-transform:  translateZ(0) skewX(-5deg);
+    -o-transform:  translateZ(0) skewX(-5deg);
+    transform:  translateZ(0) skewX(-5deg);
+    backface-visibility: hidden;
+    z-index: 6;
 }
 
             .tab-container.expanded .tabs.active .tab.active {
                 left: -4%;
-                -webkit-transform: skewX(-5deg);
-                -moz-transform: skewX(-5deg);
-                -o-transform: skewX(-5deg);
-                transform: skewX(-5deg);
-                z-index: 5;
+                z-index: 1;
             }
-    .tab-container.expanded .tabs  .tab.parallelogram1 .tab-content {
-        -webkit-transform: skewX(5deg);
-        -moz-transform: skewX(5deg);
-        -o-transform: skewX(5deg);
-        transform: skewX(5deg);
+    .tab-container.expanded .tabs  .tab .tab-content {
+        -webkit-transform:  translateZ(0) skewX(5deg);
+        -moz-transform:  translateZ(0) skewX(5deg);
+        -o-transform:  translateZ(0) skewX(5deg);
+        transform:  translateZ(0) skewX(5deg);
+        backface-visibility: hidden;
     }
 
-.tab-container.expanded .tabs  .tab.parallelogram2 {
-    -webkit-transform: skewX(-5deg);
-    -moz-transform: skewX(-5deg);
-    -o-transform: skewX(-5deg);
-    transform: skewX(-5deg);
-}
 
-    .tab-container.expanded .tabs  .tab.parallelogram2 .tab-content {
-        -webkit-transform: skewX(5deg);
-        -moz-transform: skewX(5deg);
-        -o-transform: skewX(5deg);
-        transform: skewX(5deg);
-    }
 
 .tab-container.expanded .tabs .tab-content {
     transition: width 0.5s ease-in-out, left 0.5s ease-in-out, right 0.5s ease-in-out;
@@ -560,25 +530,41 @@ body {
     -webkit-backface-visibility: hidden;
 }
 
-.tab-container .tab .tab-details{
-    display:none;
+.tab-page-details {
+    /* display: none; */
+    position:absolute;
+    top:0;
+    left: 0px;
+    width:0px;
+    height:100%;
+    transition: width 0.5s ease-in-out, left 0.5s ease-in-out, right 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out, left 0.5s ease-in-out, right 0.5s ease-in-out;
+    -moz-transition: width 0.5s ease-in-out, left 0.5s ease-in-out, right 0.5s ease-in-out;
+    -o-transition: width 0.5s ease-in-out, left 0.5s ease-in-out, right 0.5s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    z-index: 6;
 }
-.tab-container.expanded .tab.active .tab-details{
+.tab-page-details.active{
+    /* display:block; */
+    width: 88%;
+    transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    -webkit-transition: all 0.6s ease;
+}
+.tab-page-details .tab-details{
     display: block;
-    float:left;
     width:100%;
     height:100%;
     overflow:hidden;
 }
-
-.tab-container.expanded .tab.active .tab-details{
-    display: block;
-    
-    width:100%;
-    height:100%;
-    overflow:hidden;
+.tab-page-details .detail-margin{
+    height:380px;
 }
-
+.tab-page-details.active .detail-margin{
+    height:240px;
+    width:100%;
+}
 .tab-container .tab .tab-details{
 
 }
@@ -590,21 +576,24 @@ body {
 }
 .tab-details .tab-detail-title{
     /* float:left; */
+    display: none;
     margin-top:40px;
     position:relative;
     left:3%;
 }
-
+.tab-page-details.active .tab-details .tab-detail-title{
+    display:block;
+}
 .tab-details .tab-detail-title .img{
     width:100%;
 }
 .tab-details .detail-container{
-    width: 87.5%;
-    /* height:300px; */
-    margin-top: 44%;
+    width: 86%;
+    margin: 0px auto;
+    /* margin-top: 44%; */
     position: relative;
     left: 50%;
-    transform: translateX(-54%);
+    transform: translateX(-62%);
 }
 .tab-details .detail-container .detail-container-background {
     position: absolute;
@@ -687,7 +676,7 @@ body {
     border-bottom: 5px solid #fff;
     -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 1);
     -moz-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 1);
-    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 1); 
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 1);
 }
 
 

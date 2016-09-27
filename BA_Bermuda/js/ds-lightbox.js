@@ -116,7 +116,7 @@ function removeHoverClasses(element) {
 function setScrollBar(checkIfScrollApplied)
 {
     if (!checkIfScrollApplied || !$(".lighbox-container .lightbox-detailsPage .tab.active .MainContaintArea:first").hasClass("scroll-wrapper")) {
-        $(".lighbox-container .lightbox-detailsPage .tab.active .MainContaintArea").scrollbar({
+        $(".lighbox-container .lightbox-detailsPage .tab-page-details.active .MainContaintArea").scrollbar({
             "autoScrollSize": false,
             "scrollx": $('.external-scroll_x'),
             "scrolly": $('.external-scroll_y'),
@@ -140,7 +140,11 @@ function showTab(tabId, allowReLoad, slideDir) {
     $(".lighbox-container .lightbox-detailsPage .tab[data-tab='tab" + tabId + "']").addClass("active");
     newTab.closest(".tabs").addClass("active");
 
+    
+    $(".lighbox-container .lightbox-detailsPage .tab-page-details[data-tab='tab" + tabId + "']").addClass("active");
+    $(".lighbox-container .lightbox-detailsPage .tab-page-details.active").scrollTop(0);
     setScrollBar();
+    
     
 }
 var totalTabs = 4;
