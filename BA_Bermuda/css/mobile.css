@@ -68,12 +68,13 @@
 }
     
 .topMobMenuBar .topMobItem .mobMenuLogos{
-    left:50%;
+    left:51%;
     -webkit-transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
     -moz-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
-    width: 46.875%;
+    width: 68%;
+    max-width:235px;
 }
 
 .topMobMenuBar .topMobItem .mobMenuLogos .mobDiscoverLogo{
@@ -90,6 +91,7 @@
 {
     right: 3.125%;
     width: 9.375%;
+    max-width: 50px;
 }
 .topMobMenuBar .topMobItem .mobMenuIcon img,.topMobMenuBar .topMobItem .mobMenuLogos img, .topMobMenuBar .topMobItem .mobMenuClose img{
     width:100%;
@@ -135,6 +137,7 @@
     -moz-transform: translateY(-50%);
     transform: translateY(-50%);
     z-index:1;
+    max-width: 50px;
 }
 .topMobMenuBar .mobNavigator .mobNavigatorContent .mobPrevTab .navArrow{left: 3.75%;}
 .topMobMenuBar .mobNavigator .mobNavigatorContent .mobNextTab .navArrow{right: 3.75%;}
@@ -185,7 +188,7 @@
     color: #fff;
     font-family: 'Proxima-Nova-Condensed-Semibold';
 }
-.topMobMenuBar .mobNavigator .mobNavigatorContent .mobCurrentTab .mobTab .mobCurrentTabLogo img{width: 37%;position: relative;top: -1px;/* max-width: 53px; */}
+.topMobMenuBar .mobNavigator .mobNavigatorContent .mobCurrentTab .mobTab .mobCurrentTabLogo img{width: 37%;position: relative;top: -1px; max-width: 125px;}
 .topMobMenuBar .mobNavigator .mobNavigatorContent .mobCurrentTab .mobTab .mobCurrentTabLogo .smallCaseTitle{position:relative;top: -4px;padding-left: 3px;}
 .topMobMenuBar .mobNavigator .mobNavigatorContent .mobCurrentTab .mobTab .mobCurrentTabLogo .smallCaseTitle.leftDistance{padding-left:8px}
 .topMobMenuBar .mobNavigator .mobNavigatorContent .mobCurrentTab .mobTab .mobCurrentTabLogo .smallCaseTitle span{
@@ -200,4 +203,27 @@
 .topMobMenuBar .mobNavigator .mobNavigatorContent .mobCurrentTab .mobTab .mobCurrentTabLogo .capitalCaseTitle span{
     position: relative;
     top: -10px;
+}
+
+.topMobMenuBar .topMobItem .mobMenuLogos .bermuda-logo {
+        width: 30%;
+    float: left;
+    position: relative;
+    top: 27px;
+    -webkit-transform: translateY(-50%); 
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.topMobMenuBar .topMobItem .mobMenuLogos .bermuda-logo .bermudamobLogo {
+    width:100%;   
+}
+.topMobMenuBar .topMobItem .mobMenuLogos .ShareBox {
+    width: 67%;
+    float: left;
+    padding-left: 5px;
+}
+.topMobMenuBar .topMobItem .mobMenuLogos .ShareBox .Sharelabel {
+    font-size:0.7em;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }

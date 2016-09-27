@@ -22,7 +22,7 @@ $(document).ready(function () {
         handleMobNavigation($(this).attr("data-tab").replace("tab", ''), true);
     });
 
-    $(".lighbox-container .lightbox-detailsPage .tab .readNextBox").click(function (e) {
+    $(".lighbox-container .tab-page-details .detail-container .mob-footer .readNextBox").click(function (e) {
         e.stopPropagation();
         moveToNext();
     })
@@ -86,7 +86,6 @@ $(document).ready(function () {
     $(".default-tab-content").click(function (e) {
        tabId = $(this).attr("data-tab").replace("tab", "");
        showhandleMobNavigationTab(tabId, false);
-
     });
     $(".default-tab-content").hover(function () {
         addHoverClasses(this)

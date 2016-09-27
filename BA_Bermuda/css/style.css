@@ -201,7 +201,7 @@ body {
 }
 
 .tab1 .tab-content {
-    background: url(../images/tab1New.jpg) center top no-repeat;
+    background: url(../images/tab1.jpg) center top no-repeat;
     background-position: 50%;
 }
 
@@ -209,7 +209,7 @@ body {
     
 }
 .tab2 .tab-content {
-    background: url(../images/tab2New.jpg) center top no-repeat;
+    background: url(../images/tab2.jpg) center top no-repeat;
     background-position: 50%;
 }
 
@@ -847,10 +847,10 @@ padding-bottom: 2px;
     background-image: url('../images/socialIcons.png');
 }
 .ShareBox a:hover{
-    background-color:#003F66;
+   /* background-color:#003F66;*/
 }
 .ShareBox a:active {
-    background-color:#00263D;
+   /* background-color:#00263D;*/
 }
 .ShareBox a.fb {
     background-position: 5px 1px;
@@ -908,4 +908,10 @@ padding-bottom: 2px;
 }
 .right-footer .footer-FindYourflight .findFlightArrow {
     margin-left: 11px;
+}
+.ShowMobBanner {
+ background:none;
+}
+.mob-footer {
+    display:none;
 }
