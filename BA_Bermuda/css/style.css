@@ -113,6 +113,7 @@ body {
     -o-transform:  translateZ(0) skewX(-20deg);
     transform:  translateZ(0) skewX(-20deg);
     backface-visibility: hidden;
+    cursor:pointer;
 }
 
 .tabs  .tab.parallelogram1 {
@@ -204,6 +205,9 @@ body {
     background-position: 50%;
 }
 
+.tab1.active .tab-content{
+    
+}
 .tab2 .tab-content {
     background: url(../images/tab2New.jpg) center top no-repeat;
     background-position: 50%;
@@ -272,18 +276,20 @@ body {
 .default-tab-content {
     position: absolute;
     top: 40px;
-    left: 3%;
+    left: 8px;
     backface-visibility: hidden;
-    z-index:4;
-    width: 40%;
+    z-index: 8;
+    width: 47%;
+    cursor:pointer;
 }
 .default-tab-content.default2 {
     position: absolute;
     top: auto;
     left: auto;
     bottom:30px;
-    right: 5%;
+    right: 9px;
     backface-visibility: hidden;
+    /* z-index: 7; */
 }
 .tab3.parallelogram1 .default-tab-content {
     -webkit-transform: translateX(-55%);
@@ -310,7 +316,7 @@ body {
     width: 100px;
     height:33px;
     border-radius: 15px;
-    
+    position: relative;
 }
 .explore-outer .explore-inner{
     width: 74px;
@@ -330,9 +336,14 @@ body {
     position:relative;
 }
 .default-tab-content.hover .explore-outer{
-    -webkit-box-shadow: 0px 0px 3px 5px #f2e1f2;
-    -moz-box-shadow: 0px 0px 3px 5px #f2e1f2;
-    box-shadow: 0px 0px 5px 3px #f2e1f2;
+    -webkit-box-shadow: 0px 0px 2px 2px #f2e1f2;
+    -moz-box-shadow: 0px 0px 2px 2px #f2e1f2;
+    box-shadow: 0px 0px 2px 2px #f2e1f2;
+}
+.explore-outer.hover{
+    -webkit-box-shadow: 0px 0px 2px 2px #f2e1f2;
+    -moz-box-shadow: 0px 0px 2px 2px #f2e1f2;
+    box-shadow: 0px 0px 2px 2px #f2e1f2;
 }
 .default-tab-content[data-tab="tab1"] .explore-outer {
     background-color: rgba(244,153,184,0.6);
@@ -362,12 +373,14 @@ body {
     background-color: rgba(196,215,160,0.8);
 }
 .default-tab-content .explore-container {
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+    
+position: relative;
+    
+margin-left: 2px;
+    
+padding-bottom: 2px;
 }
-.default-tab-content .explore-container {position: relative;margin-left: 44%;}
+.default-tab-content.default2 .explore-container {margin-left: 44%;}
 .default-tab-content.hover .explore-container {
     margin-top: 30px;
     -webkit-transition: all 0.5s ease;
@@ -411,13 +424,7 @@ body {
 }
 .default-tab-content.default2.hover .default-description {
     margin-bottom: 20px;
-}
-.parallelogram2.hover .default-tab-content .default-description {
-    padding-bottom: 30px;
-    -webkit-transition: max-height 0.5s ease, padding-bottom 0.5s ease;
-    -moz-transition: max-height 0.5s ease, padding-bottom 0.5s ease;
-    -o-transition: max-height 0.5s ease, padding-bottom 0.5s ease;
-    transition: max-height 0.5s ease, padding-bottom 0.5s ease;
+    margin-left: 8%;
 }
 
 .tab-container.expanded .tab.active .default-tab-content {
@@ -461,6 +468,54 @@ body {
 
 .tabs.active .tab.parallelogram2 .tab-content {
     right: 22%;
+}
+
+.tab-container.expanded .tabs .default-tab-content {
+     -webkit-transition: none !important;
+     -moz-transition: none !important;
+     -o-transition: none !important;
+     transition: none !important;
+     min-width: 110px;
+     max-width: 110px;
+}
+
+.tabs.active .default-tab-content {
+    width: 14%;
+    left: 7px;
+}
+
+
+.tabs.active .default-tab-content.default2 {
+    width: 15.5%;
+    right: 14px;
+    left: auto;
+}
+.tabs.active .default-tab-content.default2[data-tab="tab4"] {
+    width: 14%;
+}
+.tab-container.expanded  .explore-container {
+    margin-top: 158%;
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+}
+.tab-container.expanded .tabs.active  .explore-container {
+    margin-top: 158%;
+    margin-left: -1%;
+}
+.tab-container.expanded .default2 .explore-container {
+    margin-left: 13px;
+    /* position: absolute; */
+    margin-bottom: 166%;
+}
+.tab-container.expanded .tabs.active .default2 .explore-container {
+    margin-bottom: 171%;
+    margin-left: 17%;
+}
+.tabs.active .default-tab-content.default2[data-tab="tab4"] .explore-container {
+    margin-left: 16%;
+    margin-bottom: 166%;
 }
 
 .tab-container.expanded .tabs.active .tab.parallelogram2.active {
@@ -549,10 +604,10 @@ body {
     overflow:hidden;
 }
 .tab-page-details .detail-margin{
-    height:380px;
+    height: 380px;
 }
 .tab-page-details.active .detail-margin{
-    height:240px;
+    height: 231px;
     width:100%;
 }
 .tab-container .tab .tab-details{

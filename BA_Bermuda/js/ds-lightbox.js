@@ -80,12 +80,12 @@ $(document).ready(function () {
             return;
 
         tabId = $(this).attr("data-tab").replace("tab", "");
-        showTab(tabId, false);
+        handleMobNavigation(tabId, false);
 
     });
     $(".default-tab-content").click(function (e) {
        tabId = $(this).attr("data-tab").replace("tab", "");
-        showTab(tabId, false);
+       showhandleMobNavigationTab(tabId, false);
 
     });
     $(".default-tab-content").hover(function () {
@@ -94,7 +94,7 @@ $(document).ready(function () {
         function () {
             removeHoverClasses(this);
         });
-    $(".lighbox-container .lightbox-detailsPage .tab").each(function (__, tabPage) {
+    $(".lighbox-container .lightbox-detailsPage .tab-page-details").each(function (__, tabPage) {
         swipedetect(tabPage, function (swipedir) {
             if(swipedir == "left")
             {
@@ -112,8 +112,11 @@ $(document).ready(function () {
 
 function addHoverClasses(element)
 {
-    if ($(".tab-container").hasClass("expanded"))
+    if ($(".tab-container").hasClass("expanded")) {
+        var tabId = $(element).attr("data-tab");
+        $(".default-tab-content[data-tab='" + tabId + "'] .explore-outer").addClass("hover");
         return;
+    }
 
     $(element).addClass("hover");
     var tabId = $(element).attr("data-tab");
@@ -130,6 +133,7 @@ function addHoverClasses(element)
 function removeHoverClasses(element) {
     $(element).removeClass("hover");
     $(".default-tab-content").removeClass("hover");
+    $(".explore-outer").removeClass("hover");
     var tabs = $(element).closest(".tabs");
     var nextElement = tabs.find(".tab").not(element);
     nextElement.removeClass("hoverAnother");
@@ -168,6 +172,8 @@ function showTab(tabId, allowReLoad, slideDir) {
     $(".lighbox-container .lightbox-detailsPage .tab-page-details.active .MainContaintArea").scrollTop(0);
     setScrollBar();
     
+    $(".default-tab-content").show();
+    $(".default-tab-content[data-tab='tab" + tabId + "']").hide();
     
 }
 var totalTabs = 4;
@@ -187,9 +193,7 @@ function moveToNext(slideDir) {
 }
 
 function handleMobNavigation(tabId, allowReLoad, slideDir) {
-    window.clearTimeout(autoChangeTimer);
-    $(".lighbox-container .lightbox-content .bullet-container .bullet .bullet-progress").css("width", "0px");
-
+    
     var activeTab = $(".topMobMenuBar .mobNavigatorContent .mobCurrentTab .mobTab.active");
     if (activeTab.length > 0) {
         var activTabData = activeTab.attr("data-tab");
