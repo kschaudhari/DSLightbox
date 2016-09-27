@@ -65,10 +65,7 @@ body {
         width: 100%;
         /* height: 100%; */
     }
-    .lightbox-footer{
-        width:100%;
-        height:50px;
-    }
+    
 .tab-container {
     max-width: 1000px;
     max-height: 600px;
@@ -272,36 +269,20 @@ body {
         right: 27.5%;
     }
 
-.tab .default-tab-content {
-     
-    
-}
-.parallelogram1 .default-tab-content {
+.default-tab-content {
     position: absolute;
     top: 40px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    transform: translateX(-50%);
+    left: 3%;
     backface-visibility: hidden;
+    z-index:4;
+    width: 40%;
 }
-.parallelogram2 .default-tab-content {
+.default-tab-content.default2 {
     position: absolute;
-    bottom: 30px;
-    left: 50%;
-    -webkit-transform: translateX(-63%);
-    -ms-transform: translateX(-63%);
-    -moz-transform: translateX(-63%);
-    transform: translateX(-63%);
-    backface-visibility: hidden;
-}
-
-.tab1.parallelogram1 .default-tab-content {
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    transform: translateX(-46%);
+    top: auto;
+    left: auto;
+    bottom:30px;
+    right: 5%;
     backface-visibility: hidden;
 }
 .tab3.parallelogram1 .default-tab-content {
@@ -314,7 +295,8 @@ body {
 
 
 .default-tab-content .default-title{
-    /* width: 44%; */
+    /* width: 81%; */
+    /* margin: 0px; */
 }
 .default-tab-content .default-title img{
     width:100%;
@@ -347,39 +329,36 @@ body {
     font-size:1em;
     position:relative;
 }
-.tab.hover .explore-outer{
+.default-tab-content.hover .explore-outer{
     -webkit-box-shadow: 0px 0px 3px 5px #f2e1f2;
     -moz-box-shadow: 0px 0px 3px 5px #f2e1f2;
     box-shadow: 0px 0px 5px 3px #f2e1f2;
 }
-.tab.hover .explore-outer .explore-inner{
-    line-height:22.5px;
-}
-.tab1 .explore-outer {
+.default-tab-content[data-tab="tab1"] .explore-outer {
     background-color: rgba(244,153,184,0.6);
 }
-.tab1 .explore-outer .explore-inner{
+.default-tab-content[data-tab="tab1"] .explore-outer .explore-inner{
     background-color: rgba(244,153,184,0.8);
 }
-.tab2 .explore-outer {
+.default-tab-content[data-tab="tab2"] .explore-outer {
     background-color: rgba(122,201,202,0.6);
 }
-.tab2 .explore-outer .explore-inner{
+.default-tab-content[data-tab="tab2"] .explore-outer .explore-inner{
     background-color: rgba(122,201,202,0.8);
 }
 
-.tab3 .explore-outer {
+.default-tab-content[data-tab="tab3"] .explore-outer {
     background-color: rgba(240,221,152,0.6);
 }
-.tab3 .explore-outer .explore-inner{
+.default-tab-content[data-tab="tab3"] .explore-outer .explore-inner{
     background-color: rgba(240,221,152,0.8);
 }
 
-.tab4 .explore-outer {
+.default-tab-content[data-tab="tab4"] .explore-outer {
     background-color: rgba(196,215,160,0.6);
     
 }
-.tab4 .explore-outer .explore-inner{
+.default-tab-content[data-tab="tab4"] .explore-outer .explore-inner{
     background-color: rgba(196,215,160,0.8);
 }
 .default-tab-content .explore-container {
@@ -388,8 +367,8 @@ body {
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
-.parallelogram2 .default-tab-content .explore-container {position: relative;margin-left: 44%;}
-.hover .default-tab-content .explore-container {
+.default-tab-content .explore-container {position: relative;margin-left: 44%;}
+.default-tab-content.hover .explore-container {
     margin-top: 30px;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -410,23 +389,28 @@ body {
     padding-top: 20px;
     /* padding-bottom: 30px; */
     /* display: none; */
-    -webkit-transition: max-height 0.5s ease, padding-bottom 0.5s ease;
-    -moz-transition: max-height 0.5s ease, padding-bottom 0.5s ease;
-    -o-transition: max-height 0.5s ease, padding-bottom 0.5s ease;
-    transition: max-height 0.5s ease, padding-bottom 0.5s ease;
+    -webkit-transition: max-height 0.5s ease, padding-bottom 0.5s ease, margin-bottom 0.5s ease;
+    -moz-transition: max-height 0.5s ease, padding-bottom 0.5s ease, margin-bottom 0.5s ease;
+    -o-transition: max-height 0.5s ease, padding-bottom 0.5s ease, margin-bottom 0.5s ease;
+    transition: max-height 0.5s ease, padding-bottom 0.5s ease, margin-bottom 0.5s ease;
+    text-align: left;
+    /* width: 25%; */
 }
-.parallelogram2 .default-tab-content .default-description {
+.default-tab-content.default2 .default-description {
     text-align: right;
     position: relative;
-    margin-left: 10%;
+    /* margin-left: 10%; */
 }
-.hover .default-tab-content .default-description{
+.default-tab-content.hover .default-description{
     max-height:400px;
     /* display: block; */
-    -webkit-transition: max-height 0.5s ease;
-    -moz-transition: max-height 0.5s ease;
-    -o-transition: max-height 0.5s ease;
-    transition: max-height 0.5s ease;
+    -webkit-transition: max-height 0.5s ease, margin-bottom 0.5s ease;
+    -moz-transition: max-height 0.5s ease, margin-bottom 0.5s ease;
+    -o-transition: max-height 0.5s ease, margin-bottom 0.5s ease;
+    transition: max-height 0.5s ease, margin-bottom 0.5s ease;
+}
+.default-tab-content.default2.hover .default-description {
+    margin-bottom: 20px;
 }
 .parallelogram2.hover .default-tab-content .default-description {
     padding-bottom: 30px;
@@ -533,7 +517,8 @@ body {
 .tab-page-details {
     /* display: none; */
     position:absolute;
-    top:0;
+    top:3px;
+    bottom:3px;
     left: 0px;
     width:0px;
     height:100%;
@@ -543,6 +528,11 @@ body {
     -o-transition: width 0.5s ease-in-out, left 0.5s ease-in-out, right 0.5s ease-in-out;
     -webkit-backface-visibility: hidden;
     z-index: 6;
+    overflow:hidden;
+}
+.tab-page-details.details2{
+    left:auto;
+    right: 0px;
 }
 .tab-page-details.active{
     /* display:block; */
@@ -581,6 +571,9 @@ body {
     position:relative;
     left:3%;
 }
+.details2 .tab-details .tab-detail-title{
+    left: 10%;
+}
 .tab-page-details.active .tab-details .tab-detail-title{
     display:block;
 }
@@ -593,7 +586,16 @@ body {
     /* margin-top: 44%; */
     position: relative;
     left: 50%;
+    -o-transform: translateX(-62%);
+    -moz-transform: translateX(-62%);
+    -webkit-transform: translateX(-62%);
     transform: translateX(-62%);
+}
+.details2 .tab-details .detail-container {
+    -o-transform: translateX(-55.5%);
+    -moz-transform: translateX(-55.5%);
+    -webkit-transform: translateX(-55.5%);
+    transform: translateX(-55.5%);
 }
 .tab-details .detail-container .detail-container-background {
     position: absolute;
@@ -630,6 +632,9 @@ body {
     overflow:hidden;
     position:relative;
 }
+.description-image.no-top{
+    margin-top:0px;
+}
 .description-image:before{
         content: "";
         display: block;
@@ -663,9 +668,8 @@ body {
     font-family:'Playfair Display';
     font-size: 2em;
     color:#fff;
-    
     font-style:italic;
-    line-height:80px;
+    line-height: 86px;
     -webkit-text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.8);
     -moz-text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.8);
     text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.8);
@@ -679,4 +683,53 @@ body {
     box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 1);
 }
 
+.ba-boxout{
+    background-image:url(../images/blue-ba-boxout-bkg.jpg);
+    color:#fff;
+}
+.ba-boxout .ba-boxout-heading{
+    min-height:60px;
+    font-family:'Playfair Display';
+    font-style:italic;
+    font-weight:bold;
+    font-size: 1.2em;
+    border-bottom: 1px solid #042538;
+    padding-left:20px;
+    line-height: 60px;
+}
+.ba-boxout .description-para{
+    color:#fff;
+}
+.ba-boxout .ba-boxout-discover{
+    font-family:'Playfair Display';
+    font-style:italic;
+    font-weight:bold;
+    font-size: 0.9em;
+    text-align:right;
+    padding-right:20px;
+    padding-bottom: 20px;
+    letter-spacing: 1px;
+}
+.ba-boxout .ba-boxout-discover img{
+    vertical-align:middle;
+    margin-left: 10px;
+}
+.lightbox-footer{
+    width:100%;
+    height:50px;
+    background-color:#013f62;
+    color:#fff;
+    font-family:'Montserrat';
+    font-size:0.9em;
+}
 
+.lightbox-footer .bermuda-logo{
+    width:14%;
+    padding:13px;
+}
+    .lightbox-footer .bermuda-logo img {
+        width:100%;
+    }
+.follow-us{
+
+}

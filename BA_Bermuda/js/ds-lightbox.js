@@ -70,13 +70,7 @@ $(document).ready(function () {
 
     
     $(".tab").hover(function () {
-            if ($(".tab-container").hasClass("expanded"))
-                return;
-            $(this).addClass("hover");
-            var nextElement = $(this).prev();
-            if (!nextElement || nextElement.length == 0)
-                nextElement = $(this).next();
-            nextElement.addClass("hoverAnother");
+        addHoverClasses(this)
         },
         function () {
             removeHoverClasses(this);
@@ -84,11 +78,22 @@ $(document).ready(function () {
     $(".tab").click(function (e) {
         if ($(this).hasClass("active"))
             return;
-        
-        tabId = $(this).attr("data-tab").replace("tab","");
+
+        tabId = $(this).attr("data-tab").replace("tab", "");
         showTab(tabId, false);
-        
-    })
+
+    });
+    $(".default-tab-content").click(function (e) {
+       tabId = $(this).attr("data-tab").replace("tab", "");
+        showTab(tabId, false);
+
+    });
+    $(".default-tab-content").hover(function () {
+        addHoverClasses(this)
+    },
+        function () {
+            removeHoverClasses(this);
+        });
     $(".lighbox-container .lightbox-detailsPage .tab").each(function (__, tabPage) {
         swipedetect(tabPage, function (swipedir) {
             if(swipedir == "left")
@@ -105,11 +110,28 @@ $(document).ready(function () {
     
 });
 
+function addHoverClasses(element)
+{
+    if ($(".tab-container").hasClass("expanded"))
+        return;
+
+    $(element).addClass("hover");
+    var tabId = $(element).attr("data-tab");
+    var tabs = $(element).closest(".tabs");
+    var tab = tabs.find(".tab[data-tab='" + tabId + "']")
+    $(tab).addClass("hover");
+
+    var nextElement = tabs.find(".tab").not(tab);
+    nextElement.addClass("hoverAnother");
+
+    var tabDefaultContent = tabs.find(".default-tab-content[data-tab='" + tabId + "']");
+    tabDefaultContent.addClass("hover");
+}
 function removeHoverClasses(element) {
     $(element).removeClass("hover");
-    var nextElement = $(element).prev();
-    if (!nextElement || nextElement.length == 0)
-        nextElement = $(element).next();
+    $(".default-tab-content").removeClass("hover");
+    var tabs = $(element).closest(".tabs");
+    var nextElement = tabs.find(".tab").not(element);
     nextElement.removeClass("hoverAnother");
 }
 
@@ -139,10 +161,11 @@ function showTab(tabId, allowReLoad, slideDir) {
     $(".lighbox-container .lightbox-detailsPage .tab").removeClass("active");
     $(".lighbox-container .lightbox-detailsPage .tab[data-tab='tab" + tabId + "']").addClass("active");
     newTab.closest(".tabs").addClass("active");
-
+    $(".tab-container .tab").css({ 'z-index': '6' });
+    $(".tab-container .tab").not(".active").css({ 'z-index': '7' });
     
     $(".lighbox-container .lightbox-detailsPage .tab-page-details[data-tab='tab" + tabId + "']").addClass("active");
-    $(".lighbox-container .lightbox-detailsPage .tab-page-details.active").scrollTop(0);
+    $(".lighbox-container .lightbox-detailsPage .tab-page-details.active .MainContaintArea").scrollTop(0);
     setScrollBar();
     
     
