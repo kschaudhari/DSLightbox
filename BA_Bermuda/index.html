@@ -19,10 +19,10 @@
     <script src="js/creative-util.js"></script>
     <script src="js/ds-lightbox.js"></script>
     <script>
-        var clickTagTweet = "https://twitter.com/WestAustralia";
         var clickTagFb = "https://www.facebook.com/ExtraordinaryWesternAustralia";
-        var clickTagInsta = "https://www.instagram.com/westernaustralia/";
+        var clickTagTweet = "https://twitter.com/WestAustralia";
         var clickTagYou = "https://www.youtube.com/user/westernaustralia";
+        var clickTagInsta = "https://www.instagram.com/westernaustralia/";
 
         var clickTagPage1Discover1 = "http://www.britishairways.com/bermuda/";
         var clickTagPage2Discover1 = "http://www.britishairways.com/bermuda/";
@@ -516,12 +516,32 @@
 
                 </div>
                 <div class="lightbox-footer">
-                    <div>
+                    <div class="left-footer">
                         <span class="bermuda-logo">
-                            
+                            <img src="images/footerBermudaLogo.png" />   
                         </span>
+                        <div class="ShareBox">
+                            <span class="Sharelabel">follow us</span>
+                            <span class="SocialBox">
+                                <a href="javascript:window.open(window.clickTagFb)" class="fb"></a>
+                                <a href="javascript:window.open(window.clickTagTweet)" class="tweet"></a>
+                                <a href="javascript:window.open(window.clickTagYou)" class="youtube"></a> 
+                                <a href="javascript:window.open(window.clickTagInsta)" class="insta"></a>
+                            </span>
+                        </div>
                     </div>
-                </div>
+                    <div class="right-footer">
+                        <div class="footer-British-logo">
+                            <img class="footer-logo" src="images/britishAirwaysLogo.png" />
+                        </div>
+                        <div class="footer-FindYourflight">
+                            <span>
+                                From &#163;699 return
+                                find your flight <img class="findFlightArrow" src="images/findYourFlightArrow.png" />
+                            </span>
+                        </div>
+                    </div>
+               </div>
 
                 <div class="scrollbar-external_wrapper">
                     <div class="external-scroll_y">

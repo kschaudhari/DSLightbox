@@ -779,12 +779,133 @@ padding-bottom: 2px;
 }
 
 .lightbox-footer .bermuda-logo{
-    width:14%;
-    padding:13px;
+    width: 23%;
+    padding-left: 13px;
+    display: inline-block;
+    top: 53%;
+    position: relative;
+    float: left;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
+
 }
     .lightbox-footer .bermuda-logo img {
         width:100%;
     }
 .follow-us{
 
+}
+.left-footer {
+    width: 50%;
+    float: left;
+       height: 50px;
+}
+.right-footer{
+    float: right;
+    /* margin-right: 2.151%; */
+    width: 40%;
+}
+.ShareBox {
+    width: 64%;
+    display: inline-block;
+    height:50px;
+    padding-left: 16px;
+}
+.ShareBox .Sharelabel {
+    line-height:50px;
+    height:50px;
+    color:#fff;
+    font-family: 'Montserrat-Regular';
+    font-size:0.8em;
+    font-weight:400;
+    display: block;
+    float: left;
+    width: 53px;
+    text-align: center;
+}
+.SocialBox {
+	width: 63%;
+    float:left;
+    top: 50%;
+    position: relative;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin-left: 2%;
+}
+.ShareBox a {
+    width:20px;
+    height:20px;
+    display:block;  
+    background-position:center center;
+    background-repeat:no-repeat;
+    float:left;
+    text-align: center;
+    background-image: url('../images/socialIcons.png');
+}
+.ShareBox a:hover{
+    background-color:#003F66;
+}
+.ShareBox a:active {
+    background-color:#00263D;
+}
+.ShareBox a.fb {
+    background-position: 5px 1px;
+}
+.ShareBox a.tweet {
+   background-position: -20px 1px;
+   margin-right: 7%;
+   margin-left: 3%;
+}
+.ShareBox a.youtube {
+   background-position: -52px 1px;
+   margin-right: 6%;   
+}
+.ShareBox a.insta { 
+   background-position: -83px 1px;
+}
+
+.right-footer {
+    float: right;
+    padding-right: 1.151%;
+    width: 48%;
+    height: 100%;
+    position: relative;
+}
+.right-footer .footer-British-logo {
+    /* float: left; */
+    min-width: 156px;
+    width: 50.612%;
+    position: absolute;
+    max-width: 156px;
+    top: 46%;
+    right: 157px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.right-footer .footer-FindYourflight {
+    width: 44.439%;
+    position: absolute;
+    min-width: 136px;
+    max-width: 136px;
+    right: 0px;
+    top: 46%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-family: 'Montserrat-Regular';
+    font-size: 0.87em;
+}
+.right-footer .footer-logo {
+    width: 100%;
+    vertical-align: middle;
+}
+.right-footer .footer-FindYourflight .findFlightArrow {
+    margin-left: 11px;
 }
