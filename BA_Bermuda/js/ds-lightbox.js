@@ -139,10 +139,11 @@ function showTab(tabId, allowReLoad, slideDir) {
     $(".lighbox-container .lightbox-detailsPage .tab").removeClass("active");
     $(".lighbox-container .lightbox-detailsPage .tab[data-tab='tab" + tabId + "']").addClass("active");
     newTab.closest(".tabs").addClass("active");
-
+    $(".tab-container .tab").css({ 'z-index': '6' });
+    $(".tab-container .tab").not(".active").css({ 'z-index': '7' });
     
     $(".lighbox-container .lightbox-detailsPage .tab-page-details[data-tab='tab" + tabId + "']").addClass("active");
-    $(".lighbox-container .lightbox-detailsPage .tab-page-details.active").scrollTop(0);
+    $(".lighbox-container .lightbox-detailsPage .tab-page-details.active .MainContaintArea").scrollTop(0);
     setScrollBar();
     
     
