@@ -12,26 +12,19 @@
     display:none;
     z-index:10;
     min-height: 91px;
-    background-color: rgba(15,159,214,1) !important;
+    background-color: rgba(244,153,184,1);
 }
 .topMobMenuBar.tab1Active {
-    background-color: rgba(143,88,87,1)
+    background-color: rgba(244,153,184,1)
 }
 .topMobMenuBar.tab2Active {
-    background-color: rgba(43,64,92,1)
+    background-color: rgba(122,201,202,1)
 }
 .topMobMenuBar.tab3Active {
-    background-color: rgba(53,150,205,1)
+    background-color: rgba(240,221,152,1)
 }
 .topMobMenuBar.tab4Active {
-    background-color: rgba(56,94,50,1)
-}
-.topMobMenuBar.tab5Active {
-    background-color: rgba(32,129,124,1)
-}
-
-.topMobMenuBar.tab6Active {
-    background-color: rgba(35,175,185,1)
+    background-color: rgba(196,215,160,1)
 }
 .topMobMenuBar img{
     vertical-align:middle;
@@ -192,7 +185,7 @@
     color: #fff;
     font-family: 'Proxima-Nova-Condensed-Semibold';
 }
-.topMobMenuBar .mobNavigator .mobNavigatorContent .mobCurrentTab .mobTab .mobCurrentTabLogo img{width: 15%;position: relative;top: -1px;max-width: 53px;}
+.topMobMenuBar .mobNavigator .mobNavigatorContent .mobCurrentTab .mobTab .mobCurrentTabLogo img{width: 37%;position: relative;top: -1px;/* max-width: 53px; */}
 .topMobMenuBar .mobNavigator .mobNavigatorContent .mobCurrentTab .mobTab .mobCurrentTabLogo .smallCaseTitle{position:relative;top: -4px;padding-left: 3px;}
 .topMobMenuBar .mobNavigator .mobNavigatorContent .mobCurrentTab .mobTab .mobCurrentTabLogo .smallCaseTitle.leftDistance{padding-left:8px}
 .topMobMenuBar .mobNavigator .mobNavigatorContent .mobCurrentTab .mobTab .mobCurrentTabLogo .smallCaseTitle span{

@@ -107,7 +107,13 @@ $(document).ready(function () {
         })
     });
 
-    
+    $(window).resize(function (e) {
+        if(isMobile())
+        {
+            activeTabId = $(".topMobMenuBar .mobNavigatorContent .mobCurrentTab .mobTab.active").attr("data-tab").replace("tab", "");
+            handleMobNavigation(activeTabId, true);
+        }
+    })
 });
 
 function addHoverClasses(element)
@@ -270,6 +276,7 @@ function swipedetect(el, callback) {
         e.preventDefault()
     }, false)
 }
+
 
 
 

@@ -70,6 +70,12 @@
     .lighbox-container .lightbox-title{
         display:none;
     }
+    .tabs{
+        transition: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    }
     .lighbox-container .lightbox-detailsPage .tabs {
         width:100%;
         border:0;
@@ -117,6 +123,10 @@
         -moz-transform: none;
         -o-transform: none;
         transform: none;
+        transition: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
     }
     .tabs.active  .tab.parallelogram1.active .tab-content{
         left: 0px;
@@ -143,7 +153,12 @@
         top: 0;
         bottom: 0;
         height: 100%;
+        transition: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
     }
+    
     .tab-details .detail-container{
         width:100%;
         left: auto;
