@@ -422,6 +422,10 @@ padding-bottom: 2px;
     -o-transition: max-height 0.5s ease, margin-bottom 0.5s ease;
     transition: max-height 0.5s ease, margin-bottom 0.5s ease;
 }
+.default-tab-content.default2 .default-description {
+    margin-left: 8%;
+}
+
 .default-tab-content.default2.hover .default-description {
     margin-bottom: 20px;
     margin-left: 8%;
@@ -827,7 +831,7 @@ padding-bottom: 2px;
 }
 .SocialBox {
 	width: 63%;
-    float:left;
+    display: inline-block;
     top: 50%;
     position: relative;
     -webkit-transform: translateY(-50%);
@@ -901,6 +905,9 @@ padding-bottom: 2px;
     transform: translateY(-50%);
     font-family: 'Montserrat-Regular';
     font-size: 0.87em;
+}
+.footer-FindYourflight .findfligntLink{
+    cursor:pointer;
 }
 .right-footer .footer-logo {
     width: 100%;
