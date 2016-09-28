@@ -109,6 +109,7 @@
     z-index: 2;
 }
     .topMobMenuBar .mobDropdownMenu .mobDropdownMenuItem {
+        font-weight: 400;
         height:10vh;
         max-height:150px;
         border-bottom:1px solid #0f9fd6;
