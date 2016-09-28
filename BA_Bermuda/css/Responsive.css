@@ -201,12 +201,12 @@
     }
     .mob-footer {
         float: left;
-        padding-right: 1.151%;
+        padding-right: 0;
         width: 100%;
         position: relative;
         display:block;
         height: 180px;
-        margin-bottom: 15px;
+        margin-bottom:10px;
     }
     .mob-footer .footer-British-logo {
         min-width: 91px;
@@ -351,12 +351,12 @@
     }
     .topMobMenuBar .topMobItem .mobMenuLogos .ShareBox a.tweet {
        background-position: -27px 1px;
-       margin-right: 7%;
-       margin-left: 3%;
+       margin-right: 5%;
+       margin-left: 2%;
     }
     .topMobMenuBar .topMobItem .mobMenuLogos .ShareBox a.youtube {
        background-position: -65px 1px;
-       margin-right: 9%;
+       margin-right: 4%;
     }
     .topMobMenuBar .topMobItem .mobMenuLogos .ShareBox a.insta { 
        background-position: -104px 1px;

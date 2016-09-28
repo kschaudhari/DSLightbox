@@ -85,7 +85,7 @@ $(document).ready(function () {
     });
     $(".default-tab-content").click(function (e) {
        tabId = $(this).attr("data-tab").replace("tab", "");
-       showhandleMobNavigationTab(tabId, false);
+       handleMobNavigation(tabId, false);
     });
     $(".default-tab-content").hover(function () {
         addHoverClasses(this)
