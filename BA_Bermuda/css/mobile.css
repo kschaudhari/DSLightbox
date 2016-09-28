@@ -74,7 +74,6 @@
     -moz-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
     width: 70%;
-    max-width:235px;
 }
 
 .topMobMenuBar .topMobItem .mobMenuLogos .mobDiscoverLogo{
@@ -96,6 +95,7 @@
 .topMobMenuBar .topMobItem .mobMenuIcon img,.topMobMenuBar .topMobItem .mobMenuLogos img, .topMobMenuBar .topMobItem .mobMenuClose img{
     width:100%;
     vertical-align: middle;
+    max-height: 44px;
 }
 
 .topMobMenuBar .mobDropdownMenu{
@@ -221,14 +221,32 @@
 }
 .topMobMenuBar .topMobItem .mobMenuLogos .ShareBox {
     width: 68%;
-    float: left;
+    float: right;
     padding-left: 2%;
+    text-align: right;
 }
 .topMobMenuBar .topMobItem .mobMenuLogos .ShareBox .Sharelabel {
-    font-size: 0.6em;
+    font-size: 0.8em;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-    width: 45px;
+    width: 42%;
+    float: none;
+    display: inline-block;
+    top: 13%;
+    position: relative;
+    transform: translateY(-50%);
 }
 .topMobMenuBar .topMobItem .mobMenuLogos .ShareBox .SocialBox {
     margin-left:0px;
+    float: none;
+    text-align: right;
+    display: inline-block;
+    width: 50%;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    height: 50px;
+    line-height: 50px;
 }

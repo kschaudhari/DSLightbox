@@ -334,34 +334,35 @@
         letter-spacing: 2px;
         padding-left: 6%;
     }
-
+    
    .topMobMenuBar .topMobItem .mobMenuLogos .ShareBox a {
-        width:20px;
-        height:20px;
-        display:block;  
+        width: 22%;
+        height:auto;
+        display:block;
         background-position:center center;
         background-repeat:no-repeat;
-        float:left;
+        display:inline-block;
         text-align: center;
-        background-image: url('../images/mobSocial.png');
+        /*background-image: url('../images/mobSocial.png');*/
+        background-image:none;
         background-size:cover;
+        margin:0;
     }
+   
     .topMobMenuBar .topMobItem .mobMenuLogos .ShareBox a.fb {
         background-position: 5px 0px;
     }
     .topMobMenuBar .topMobItem .mobMenuLogos .ShareBox a.tweet {
-       background-position: -27px 1px;
        margin-right: 4%;
        margin-left: 1%;
     }
     .topMobMenuBar .topMobItem .mobMenuLogos .ShareBox a.youtube {
-       background-position: -65px 1px;
        margin-right: 6%;
     }
     .topMobMenuBar .topMobItem .mobMenuLogos .ShareBox a.insta { 
-       background-position: -104px 1px;
+   
     }
-
+   
 
 }
 /*
