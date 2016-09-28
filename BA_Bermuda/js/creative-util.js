@@ -1,7 +1,6 @@
 ﻿
 function showLightboxPopup(type) {
-    if (typeof ga !== "undefined")
-        ga('send', 'pageview');
+    sendTrackerInfo();
     var defaultTab = 1;
     if (type)
         defaultTab = type.replace("tab", '');
@@ -23,6 +22,20 @@ function hideLightboxPopup() {
         
         window.parent.postMessage('LB_CLOSE', '*');
     }
+}
+
+var loadedTimerForTracker = null;
+function sendTrackerInfo()
+{
+    if($(".lighbox-container").is(":visible"))
+    {
+        window.clearTimeout(loadedTimerForTracker);
+        if (typeof ga !== "undefined")
+            ga('send', 'pageview');
+        //add any pixel info to track
+        return;
+    }
+    loadedTimerForTracker = window.setTimeout(sendTrackerInfo, 500);
 }
 
 var lightboxCounter = null;

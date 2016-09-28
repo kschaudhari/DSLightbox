@@ -180,6 +180,15 @@ function showTab(tabId, allowReLoad, slideDir) {
     $(".default-tab-content").show();
     $(".default-tab-content[data-tab='tab" + tabId + "']").hide();
     
+    loadTabImages($(".lighbox-container .lightbox-detailsPage .tab-page-details[data-tab='tab" + tabId + "']"));
+}
+
+function loadTabImages(tabElement)
+{
+    $(tabElement).find(".description-image-rectangle[data-image]").each(function (__, item) {
+        var $item = $(item);
+        $item.css({ 'background-image': 'url(' + $item.attr("data-image") + ')' });
+    })
 }
 var totalTabs = 4;
 function moveToPrevious(slideDir) {
@@ -275,6 +284,7 @@ function swipedetect(el, callback) {
         e.preventDefault()
     }, false)
 }
+
 
 
 
