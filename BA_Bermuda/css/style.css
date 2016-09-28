@@ -769,6 +769,9 @@ padding-bottom: 2px;
     padding-bottom: 20px;
     letter-spacing: 1px;
 }
+.ba-boxout .ba-boxout-discover span {
+    cursor:pointer;
+}
 .ba-boxout .ba-boxout-discover img{
     vertical-align:middle;
     margin-left: 10px;
