@@ -193,13 +193,16 @@ function sendEvent() {
         var tabName = "Island adventure";
         switch (parseInt(tabId)) {
             case 1:
-                tabName = "Bermy style";
+                tabName = "Island adventure";
                 break;
             case 2:
-                tabName = "Food & drink";
+                tabName = "Bermy style";
                 break;
             case 3:
-                tabName = "COASTAL & AQUATIC";
+                tabName = "Food & drink";
+                break;
+            case 4:
+                tabName = "Couple's retreat";
                 break;
             
         }
