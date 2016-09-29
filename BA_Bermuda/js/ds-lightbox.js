@@ -153,13 +153,15 @@ function removeHoverClasses(element) {
 function setScrollBar(checkIfScrollApplied)
 {
     if (!checkIfScrollApplied || !$(".lighbox-container .lightbox-detailsPage .tab.active .MainContaintArea:first").hasClass("scroll-wrapper")) {
-        $(".lighbox-container .lightbox-detailsPage .tab-page-details.active .MainContaintArea").scrollbar({
-            "autoScrollSize": false,
-            "scrollx": $('.external-scroll_x'),
-            "scrolly": $('.external-scroll_y'),
-            ignoreMobile: true,
-            duration: 10
-        });
+       
+        window.setTimeout(function () {
+            $(".lighbox-container .lightbox-detailsPage .tab-page-details.active .MainContaintArea").scrollbar({
+                "autoScrollSize": false,
+                "scrollx": $('.external-scroll_x'),
+                "scrolly": $('.external-scroll_y'),
+                duration: 10
+            });
+        }, 500);
     }
     $(".scrollbar-external_wrapper").show();
 }
