@@ -759,7 +759,7 @@ padding-bottom: 2px;
 .ba-boxout .description-para{
     color:#fff;
 }
-.ba-boxout .ba-boxout-discover{
+.ba-boxout .ba-boxout-discover, .ba-boxout .ba-smith-discover{
     font-family:'Playfair Display';
     font-style:italic;
     font-weight:bold;
@@ -769,10 +769,10 @@ padding-bottom: 2px;
     padding-bottom: 20px;
     letter-spacing: 1px;
 }
-.ba-boxout .ba-boxout-discover span {
+.ba-boxout .ba-boxout-discover span, .ba-boxout .ba-smith-discover span {
     cursor:pointer;
 }
-.ba-boxout .ba-boxout-discover img{
+.ba-boxout .ba-boxout-discover img, .ba-boxout .ba-smith-discover img{
     vertical-align:middle;
     margin-left: 10px;
 }
