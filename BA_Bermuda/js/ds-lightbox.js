@@ -3,7 +3,13 @@
 }
 $(document).ready(function () {
     var type = window.location.hash.substr(1);
-    
+    if (document.referrer) {
+        var is_mrs_reffer = document.referrer.indexOf("mrandmrssmith.com") > -1;
+        if (is_mrs_reffer) {
+            $(".lighbox-container").addClass("smithSource");
+        }
+    }
+
     // popup show Hide
     $("#ShwoPopUp").click(function () {
         showLightboxPopup(type);
