@@ -181,7 +181,38 @@ function showTab(tabId, allowReLoad, slideDir) {
     $(".default-tab-content[data-tab='tab" + tabId + "']").hide();
     
     loadTabImages($(".lighbox-container .lightbox-detailsPage .tab-page-details[data-tab='tab" + tabId + "']"));
+    sendEvent()
 }
+
+function sendEvent() {
+    var detailsVisible = $(".lighbox-container .lightbox-detailsPage").is(":visible");
+
+    if (detailsVisible) {
+        var tabId = $(".lighbox-container .lightbox-detailsPage .tab.active").attr("data-tab").replace("tab", "");
+
+        var tabName = "Island adventure";
+        switch (parseInt(tabId)) {
+            case 1:
+                tabName = "Bermy style";
+                break;
+            case 2:
+                tabName = "Food & drink";
+                break;
+            case 3:
+                tabName = "COASTAL & AQUATIC";
+                break;
+            
+        }
+        ga('send', {
+            hitType: 'event',
+            eventCategory: 'Tab',
+            eventAction: 'TabView',
+            eventLabel: 'tab ' + tabId + ' - ' + tabName,
+            transport: 'beacon'
+        });
+    }
+}
+
 
 function loadTabImages(tabElement)
 {
