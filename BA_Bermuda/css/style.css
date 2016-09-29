@@ -303,6 +303,8 @@ body {
 .default-tab-content .default-title{
     /* width: 81%; */
     /* margin: 0px; */
+    /* position: absolute; */
+    /* bottom: 0px; */
 }
 .default-tab-content .default-title img{
     width:100%;
@@ -481,6 +483,7 @@ padding-bottom: 2px;
      transition: none !important;
      min-width: 110px;
      max-width: 110px;
+     bottom: 0px;
 }
 
 .tabs.active .default-tab-content {
@@ -497,25 +500,49 @@ padding-bottom: 2px;
 .tabs.active .default-tab-content.default2[data-tab="tab4"] {
     width: 14%;
 }
+.tab-container.expanded .default-tab-content .default-title {
+    position: absolute;
+    top: 0px;
+}
+
+.tab-container.expanded .default-tab-content.default2 .default-title {
+    bottom: 0px;
+    top: auto;
+}
+
+.tab-container.expanded .tabs .default-tab-content.default2 {
+    bottom: 30px;
+    top: 0px;
+}
 .tab-container.expanded  .explore-container {
-    margin-top: 158%;
+    /*margin-top: 158%;*/
+    margin-top: 0;
     -webkit-transition: none !important;
     -moz-transition: none !important;
     -o-transition: none !important;
     transition: none !important;
+    position: absolute;
+    top: 43.2%;
 }
 .tab-container.expanded .tabs.active  .explore-container {
-    margin-top: 158%;
+    /*margin-top: 158%;*/
+    margin: 0;
     margin-left: -1%;
 }
 .tab-container.expanded .default2 .explore-container {
     margin-left: 13px;
-    /* position: absolute; */
-    margin-bottom: 166%;
+    position: absolute;
+    margin: 0;
+    margin-left: 13px;
+    top: 49.5%;
 }
 .tab-container.expanded .tabs.active .default2 .explore-container {
-    margin-bottom: 166%;
+    margin-bottom: 0;
     margin-left: 17%;
+    margin-top: 0;
+    bottom: 44.6%;
+    position: absolute;
+    transform: translateY();
 }
 .tabs.active .default-tab-content.default2[data-tab="tab4"] .explore-container {
     margin-left: 16%;
@@ -931,3 +958,4 @@ padding-bottom: 2px;
 .smithSource .ba-boxout-discover{
     display:none;
 }
+	
