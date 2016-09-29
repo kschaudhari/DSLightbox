@@ -3,7 +3,12 @@
 }
 $(document).ready(function () {
     var type = window.location.hash.substr(1);
-    
+    var is_mrs_reffer = document.referrer.indexOf("bizminds.io") > -1;
+    if (is_mrs_reffer)
+    {
+        $(".lighbox-container").addClass("smithSource");
+    }
+
     // popup show Hide
     $("#ShwoPopUp").click(function () {
         showLightboxPopup(type);
