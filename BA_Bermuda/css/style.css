@@ -925,3 +925,9 @@ padding-bottom: 2px;
 .mob-footer {
     display:none;
 }
+.smithSource .ba-smith-discover{
+    display:block !important;
+}
+.smithSource .ba-boxout-discover{
+    display:none;
+}
