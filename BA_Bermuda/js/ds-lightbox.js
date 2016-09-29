@@ -89,6 +89,34 @@ $(document).ready(function () {
         handleMobNavigation(tabId, false);
 
     });
+
+    $(".tab1").hover(function () {
+        $(this).closest(".first-tab-container").addClass("hovertab1");
+    },
+        function () {
+            $(this).closest(".first-tab-container").removeClass("hovertab1");
+        });
+    $(".tab2").hover(function () {
+        $(this).closest(".first-tab-container").addClass("hovertab2");
+    },
+        function () {
+            $(this).closest(".first-tab-container").removeClass("hovertab2");
+        });
+    $(".tab3").hover(function () {
+        $(this).closest(".second-tab-container").addClass("hovertab3");
+    },
+        function () {
+            $(this).closest(".second-tab-container").removeClass("hovertab3");
+        });
+    $(".tab4").hover(function () {
+        $(this).closest(".second-tab-container").addClass("hovertab4");
+    },
+        function () {
+            $(this).closest(".second-tab-container").removeClass("hovertab4");
+        });
+
+
+
     $(".default-tab-content").click(function (e) {
        tabId = $(this).attr("data-tab").replace("tab", "");
        handleMobNavigation(tabId, false);
