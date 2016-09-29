@@ -737,9 +737,9 @@ padding-bottom: 2px;
 
     padding-bottom:10px;
     border-bottom: 5px solid #fff;
-    -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 1);
-    -moz-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 1);
-    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 1);
+    -webkit-box-shadow: -1px 2px 1px -2px rgba(0, 0, 0, 1);
+    -moz-box-shadow: -1px 2px 1px -2px rgba(0, 0, 0, 1);
+    box-shadow: -1px 2px 1px -2px rgba(0, 0, 0, 1);
 }
 
 .ba-boxout{
@@ -768,6 +768,9 @@ padding-bottom: 2px;
     padding-right:20px;
     padding-bottom: 20px;
     letter-spacing: 1px;
+}
+.ba-boxout .ba-boxout-discover span {
+    cursor:pointer;
 }
 .ba-boxout .ba-boxout-discover img{
     vertical-align:middle;
