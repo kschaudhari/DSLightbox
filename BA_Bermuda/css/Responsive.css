@@ -362,7 +362,7 @@
     .topMobMenuBar .topMobItem .mobMenuLogos .ShareBox a.insta { 
    
     }
-    .description-para {
+    .description-para, .detail-page-head-line{
         padding: 20px 10px;
     }
 
