@@ -33,6 +33,16 @@ function sendTrackerInfo()
         if (typeof ga !== "undefined")
             ga('send', 'pageview');
         //add any pixel info to track
+        //trackloadpixel();
+        (function () {
+            var s = document.createElement('script');
+            s.type = 'text/javascript';
+            s.async = true;
+            s.src = ('https:' == document.location.protocol ? 'https://s' : 'http://i')
+              + '.po.st/static/v4/post-widget.js#publisherKey=hd5fpp4mmp986324f5rl';
+            var x = document.getElementsByTagName('script')[0];
+            x.parentNode.insertBefore(s, x);
+        })();
         return;
     }
     loadedTimerForTracker = window.setTimeout(sendTrackerInfo, 500);
