@@ -136,26 +136,34 @@ body {
 
 .tabs  .tab1 {
     border: 3px solid #f499b8;
+    border-bottom: 4px solid #f499b8;
     border-right:0px;
     /*background-color:#f499b8;*/
+    bottom:-1px;
 }
 
 .tabs  .tab2 {
     border: 3px solid #78cdd1;
+    border-bottom: 4px solid #78cdd1;
     border-left:0px;
     /*background-color:#78cdd1;*/
+    bottom:-1px;
 }
 
 .tabs  .tab3 {
     border: 3px solid #ffea9f;
+    border-bottom: 4px solid #ffea9f;
     border-right:0px;
     /*background-color:#ffea9f;*/
+    bottom:-1px;
 }
 
 .tabs  .tab4 {
     border: 3px solid #cde3a6;
+    border-bottom: 4px solid #cde3a6;
     border-left:0px;
     /*background-color:#cde3a6;*/
+    bottom:-1px;
 }
 
 .tabs  .tab.hover
