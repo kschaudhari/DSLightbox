@@ -227,8 +227,8 @@ body {
 }
 
 .tab1 .tab-content {
-    background: url(../images/tab1.jpg) center top no-repeat;
-    background-position: 50%;
+    background: url(../images/tab1.jpg)  no-repeat;
+    background-position: 50% 99%;
 }
 
 .tab1.active .tab-content{
@@ -245,8 +245,9 @@ body {
 }
 
 .tab4 .tab-content {
-    background: url(../images/tab4.jpg) center top no-repeat;
-    background-position: 50%;
+    background-image: url(../images/tab4.jpg);
+    background-position: 40% 75%;
+    background-size: initial !important;
 }
 
 .tab .tab-content {
@@ -305,7 +306,7 @@ right: -18.55%;
     left: 8px;
     backface-visibility: hidden;
     z-index: 8;
-    width: 47%;
+    width: 53%;
     cursor:pointer;
 }
 .default-tab-content.default2 {
@@ -316,6 +317,7 @@ right: -18.55%;
     right: 9px;
     backface-visibility: hidden;
     /* z-index: 7; */
+    width:50%;
 }
 .tab3.parallelogram1 .default-tab-content {
     -webkit-transform: translateX(-55%);
@@ -327,7 +329,7 @@ right: -18.55%;
 
 
 .default-tab-content .default-title{
-    /* width: 81%; */
+    width: 90%;
     /* margin: 0px; */
     /* position: absolute; */
     /* bottom: 0px; */
@@ -422,7 +424,7 @@ padding-bottom: 2px;
     font-size: 1em;
     font-family:'Montserrat';
     font-weight:bold;
-    max-width: 180px;
+    max-width: 280px;
     max-height:0;
     overflow:hidden;
     color:#fff;
@@ -774,14 +776,34 @@ padding-bottom: 2px;
     -moz-text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.8);
     text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.8);
     line-height:20px;
+    display:none;
 }
+    .description-image-caption.dont-miss {
+        display:block;
+        position:unset;
+        padding: 20px;
+        padding-top:0px;
+        color: #042538;
+        margin-top: -22px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        text-shadow: none;
+        -webkit-text-shadow: none;
+        -moz-text-shadow: none;
+    }
+.description-image-caption.dont-miss .heading {
+    color: #042538;
 
+}
+    .description-image-caption.dont-miss .heading span {
+        border-color:#042538;
+    }
 .description-image-caption .heading{
     font-family:'Playfair Display';
     font-size: 2em;
     color:#fff;
     font-style:italic;
-    line-height: 86px;
+    line-height: 80px;
     -webkit-text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.8);
     -moz-text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.8);
     text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.8);
@@ -964,6 +986,7 @@ padding-bottom: 2px;
 }
 .footer-FindYourflight .findfligntLink{
     cursor:pointer;
+    /* width: 200px; */
 }
 .right-footer .footer-logo {
     width: 100%;
@@ -971,6 +994,7 @@ padding-bottom: 2px;
 }
 .right-footer .footer-FindYourflight .findFlightArrow {
     margin-left: 11px;
+    vertical-align: middle;
 }
 .ShowMobBanner {
  background:none;
