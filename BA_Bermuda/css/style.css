@@ -80,9 +80,9 @@ body {
     }
 .tabs {
     position: relative;
-    width: -webkit-calc(50% - 5px);
-    width: -moz-calc(50% - 5px);
-    width: calc(50% - 5px);
+    width: -webkit-calc(50% - 6px);
+    width: -moz-calc(50% - 6px);
+    width: calc(50% - 6px);
     overflow: hidden;
     float: left;
     overflow: hidden;
@@ -1026,4 +1026,26 @@ padding-bottom: 2px;
   */
 .expanded .BorderDiv {
     right:0px;
+}
+.hovertab1 {
+    background-color:#f499b8;
+}
+.hovertab2 {
+    background-color:#78cdd1;
+}
+.hovertab3 {
+    background-color:#ffea9f;
+}
+.hovertab4 {
+    background-color:#cde3a6;
+}
+
+.tabs.first-tab-container.active {
+    background-color:#78cdd1;
+}
+.expanded .tabs.first-tab-container {
+     background-color:#f499b8;
+}
+.expanded .tabs.second-tab-container {
+    background-color:#cde3a6;
 }

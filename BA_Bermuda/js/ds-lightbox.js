@@ -90,30 +90,7 @@ $(document).ready(function () {
 
     });
 
-    $(".tab1").hover(function () {
-        $(this).closest(".first-tab-container").addClass("hovertab1");
-    },
-        function () {
-            $(this).closest(".first-tab-container").removeClass("hovertab1");
-        });
-    $(".tab2").hover(function () {
-        $(this).closest(".first-tab-container").addClass("hovertab2");
-    },
-        function () {
-            $(this).closest(".first-tab-container").removeClass("hovertab2");
-        });
-    $(".tab3").hover(function () {
-        $(this).closest(".second-tab-container").addClass("hovertab3");
-    },
-        function () {
-            $(this).closest(".second-tab-container").removeClass("hovertab3");
-        });
-    $(".tab4").hover(function () {
-        $(this).closest(".second-tab-container").addClass("hovertab4");
-    },
-        function () {
-            $(this).closest(".second-tab-container").removeClass("hovertab4");
-        });
+   
 
 
 
@@ -168,6 +145,8 @@ function addHoverClasses(element)
 
     var tabDefaultContent = tabs.find(".default-tab-content[data-tab='" + tabId + "']");
     tabDefaultContent.addClass("hover");
+
+    $(".first-tab-container").addClass("hover" + tabId);
 }
 function removeHoverClasses(element) {
     $(element).removeClass("hover");
@@ -180,6 +159,7 @@ function removeHoverClasses(element) {
     var nextElement = tabs.find(".tab").not(tab);
     nextElement.removeClass("hoverAnother");
 
+    $(".first-tab-container").removeClass("hover" + tabId);
     
 }
 
