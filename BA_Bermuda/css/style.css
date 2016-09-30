@@ -71,7 +71,7 @@ body {
     max-height: 600px;
     overflow: hidden;
     position: relative;
-    
+    /* background-color: #013f62; */
 }
 .tab-container:before{
         content: "";
@@ -80,9 +80,9 @@ body {
     }
 .tabs {
     position: relative;
-    width: -webkit-calc(50% - 6px);
-    width: -moz-calc(50% - 6px);
-    width: calc(50% - 6px);
+    /* width: -webkit-calc(50% - 6px); */
+    /* width: 50%; */
+    width: 50%;
     overflow: hidden;
     float: left;
     overflow: hidden;
@@ -92,6 +92,9 @@ body {
     -moz-transition: width 0.5s ease-in-out, left 0.5s ease-in-out, right 0.5s ease-in-out;
     -o-transition: width 0.5s ease-in-out, left 0.5s ease-in-out, right 0.5s ease-in-out;
     -webkit-backface-visibility: hidden;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 .tab-rectangle
  {
@@ -100,7 +103,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    display: inline-flex;
+    /* display: inline-flex; */
 }
 
 .tabs .tab {
@@ -134,21 +137,25 @@ body {
 .tabs  .tab1 {
     border: 3px solid #f499b8;
     border-right:0px;
+    /*background-color:#f499b8;*/
 }
 
 .tabs  .tab2 {
     border: 3px solid #78cdd1;
     border-left:0px;
+    /*background-color:#78cdd1;*/
 }
 
 .tabs  .tab3 {
     border: 3px solid #ffea9f;
     border-right:0px;
+    /*background-color:#ffea9f;*/
 }
 
 .tabs  .tab4 {
     border: 3px solid #cde3a6;
     border-left:0px;
+    /*background-color:#cde3a6;*/
 }
 
 .tabs  .tab.hover
@@ -448,9 +455,7 @@ padding-bottom: 2px;
     display:none;
 }
 .tab-container.expanded .tabs {
-    width: -webkit-calc(24% - 6px);
-    width: -moz-calc(24% - 6px);
-    width: calc(24% - 6px);
+    width: 24%;
 }
 
     .tab-container.expanded .tabs .tab {
@@ -462,9 +467,7 @@ padding-bottom: 2px;
     }
 
     .tab-container.expanded .tabs.active {
-        width: -webkit-calc(76% - 6px);
-        width: -moz-calc(76% - 6px);
-        width: calc(76% - 6px);
+        width: 76%;
     }
 
         .tab-container.expanded .tabs.active .tab {

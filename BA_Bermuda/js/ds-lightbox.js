@@ -146,7 +146,7 @@ function addHoverClasses(element)
     var tabDefaultContent = tabs.find(".default-tab-content[data-tab='" + tabId + "']");
     tabDefaultContent.addClass("hover");
 
-    $(".first-tab-container").addClass("hover" + tabId);
+    tabs.addClass("hover" + tabId);
 }
 function removeHoverClasses(element) {
     $(element).removeClass("hover");
@@ -159,7 +159,7 @@ function removeHoverClasses(element) {
     var nextElement = tabs.find(".tab").not(tab);
     nextElement.removeClass("hoverAnother");
 
-    $(".first-tab-container").removeClass("hover" + tabId);
+    tabs.removeClass("hover" + tabId);
     
 }
 
