@@ -174,8 +174,13 @@ function removeHoverClasses(element) {
     $(".default-tab-content").removeClass("hover");
     $(".explore-outer").removeClass("hover");
     var tabs = $(element).closest(".tabs");
-    var nextElement = tabs.find(".tab").not(element);
+    var tabId = $(element).attr("data-tab");
+    var tab = tabs.find(".tab[data-tab='" + tabId + "']")
+    $(tab).removeClass("hover");
+    var nextElement = tabs.find(".tab").not(tab);
     nextElement.removeClass("hoverAnother");
+
+    
 }
 
 function setScrollBar(checkIfScrollApplied)

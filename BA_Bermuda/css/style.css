@@ -123,28 +123,32 @@ body {
 }
 
 .tabs  .tab.parallelogram1 {
-    left: -50.3%;
+    left: -50%;
 }
 
 .tabs  .tab.parallelogram2 {
-    left: 51%;
+    left: 50%;
     z-index: 1;
 }
 
 .tabs  .tab1 {
     border: 3px solid #f499b8;
+    border-right:0px;
 }
 
 .tabs  .tab2 {
     border: 3px solid #78cdd1;
+    border-left:0px;
 }
 
 .tabs  .tab3 {
     border: 3px solid #ffea9f;
+    border-right:0px;
 }
 
 .tabs  .tab4 {
     border: 3px solid #cde3a6;
+    border-left:0px;
 }
 
 .tabs  .tab.hover
@@ -244,11 +248,11 @@ body {
 }
 .tabs  .tab.parallelogram1.hover .tab-content {
     
-    right: -18.35%;
+right: -18.55%;
 }
 
 .tabs  .tab.parallelogram2.hover .tab-content {
-    right: 16%;
+    right: 17%;
 }
 .tabs .tab.hoverAnother {
     -webkit-transform:  translateZ(0) skewX(-15deg);
@@ -265,19 +269,19 @@ body {
         backface-visibility: hidden;
 }
 .tabs  .tab.parallelogram1.hoverAnother {
-    left: -56.2%;
+    left: -55%;
 }
 
     .tabs  .tab.parallelogram1.hoverAnother .tab-content {
-        right: -30%;
+        right: -29%;
     }
 
 .tabs  .tab.parallelogram2.hoverAnother {
-    left: 56.5%;
+    left: 56.1%;
 }
 
     .tabs  .tab.parallelogram2.hoverAnother .tab-content {
-        right: 27.5%;
+        right: 28.11%;
     }
 
 .default-tab-content {
@@ -468,7 +472,7 @@ padding-bottom: 2px;
         }
 
             .tab-container.expanded .tabs.active .tab.active {
-                width: 88%;
+                width: 88.55%;
             }
 
 
@@ -565,7 +569,7 @@ padding-bottom: 2px;
 }
 
 .tab-container.expanded .tabs.active  .tab.parallelogram1 {
-    left: -17.4%;
+    left: -16.89%;
 }
 
     .tabs.active  .tab.parallelogram1 .tab-content {
@@ -578,7 +582,7 @@ padding-bottom: 2px;
     background-size: cover;
 }
 .tab-container.expanded .tabs  .tab.parallelogram1{
-    left: -51.6%;
+    left: -51.27%;
 }
 .tab-container.expanded .tabs  .tab {
     -webkit-transform:  translateZ(0) skewX(-5deg);
@@ -970,34 +974,56 @@ padding-bottom: 2px;
     display:none;
 }
 
-/*
-.hovertab1 {
-    background-color:#f499b8;
-} 	
-.hovertab2 {
-    background-color:#78cdd1;
-} 	
-.hovertab3 {
-    background-color:#ffea9f;
-} 	
-.hovertab4 {
-    background-color:#cde3a6;
-} 
-    */	
-.tabs .tab1.parallelogram1 {
-    left: -50.1%;
+.BorderDiv {
+    position: absolute;
+    right: 3px;
+    width: 2px;
+    height: 100%;
+    z-index: 1;
+    outline: 1px solid #000;
+    background-color: #000;
+}    
+.tabs .tab1 .BorderDiv{
+    outline: 1px solid #f499b8;
+    background-color: #f499b8;
 }
-
+.tabs .tab1.parallelogram1.hover .BorderDiv{
+    right:0px;
+}
+.tabs .tab2 .BorderDiv{
+    outline: 1px solid #78cdd1;
+    background-color: #78cdd1;
+    left:0px;
+}
+.tabs .tab3 .BorderDiv{
+    outline: 1px solid #ffea9f;
+    background-color: #ffea9f;
+}
+.tabs .tab3.parallelogram1.hover .BorderDiv{
+    right:0px;
+}
+.tabs .tab4 .BorderDiv{
+    outline: 1px solid #cde3a6;
+    background-color: #cde3a6;
+    left:0px;
+}
+/*
 .tabs .tab1.parallelogram1.hover .tab-content {
-    right: -18.44%;
+    right: -18.33%;
 }
 .tabs .tab1.parallelogram1.hoverAnother .tab-content {
-    right: -30.11%;
+    right: -29.22%;
 }
-.tabs .tab3.parallelogram1.hover .tab-content {
-    right: -18.22%;
+.tabs .tab2.parallelogram2.hover .tab-content {
+    right: 17.11%;
 }
-.tabs .tab3.parallelogram1.hoverAnother .tab-content {
-    right: -30%;
+.tabs .tab1.parallelogram1.hover {
+    left: -44.2%;
 }
-    
+.tabs.first-tab-container .tab2.parallelogram2.hoverAnother .tab-content {
+    right: 28.66%;
+}
+  */
+.expanded .BorderDiv {
+    right:0px;
+}
