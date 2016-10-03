@@ -124,10 +124,7 @@ body {
     backface-visibility: hidden;
     cursor:pointer;
 
-    -webkit-transition:  0.3s all;
-    -moz-transition:  0.3s all;
-    -o-transition:  0.3s all;
-    transition: 0.3s all;
+    
 }
 
 .tabs  .tab.parallelogram1 {
