@@ -123,6 +123,11 @@ body {
     transform:  translateZ(0) skewX(-20deg);
     backface-visibility: hidden;
     cursor:pointer;
+
+    -webkit-transition:  0.3s all;
+    -moz-transition:  0.3s all;
+    -o-transition:  0.3s all;
+    transition: 0.3s all;
 }
 
 .tabs  .tab.parallelogram1 {
@@ -173,6 +178,7 @@ body {
     -o-transform:  translateZ(0) skewX(-15deg);
     transform:  translateZ(0) skewX(-15deg);
     backface-visibility: hidden;
+
 }
 .tabs  .tab.parallelogram1.hover {
     z-index: 3;
@@ -283,6 +289,7 @@ right: -18.55%;
         -o-transform:  translateZ(0) skewX(15deg);
         transform:  translateZ(0) skewX(15deg);
         backface-visibility: hidden;
+
 }
 .tabs  .tab.parallelogram1.hoverAnother {
     left: -55%;
