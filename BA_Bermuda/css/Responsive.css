@@ -365,7 +365,9 @@
     .description-para, .detail-page-head-line{
         padding: 20px 10px;
     }
-
+    .description-image-caption.dont-miss {
+        padding: 20px 10px;
+    }
 }
 /*
 @media screen and (max-width: 1078px) and (min-width: 768px) {
