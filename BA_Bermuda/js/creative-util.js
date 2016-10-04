@@ -1,6 +1,6 @@
 ﻿
 function showLightboxPopup(type) {
-    sendTrackerInfo();
+    
     var defaultTab = 1;
     if (type)
         defaultTab = type.replace("tab", '');
@@ -44,6 +44,15 @@ function sendTrackerInfo()
         return;
     }
     loadedTimerForTracker = window.setTimeout(sendTrackerInfo, 500);
+}
+
+window.addEventListener("message", receiveMessage, false);
+function receiveMessage(event) {
+    switch (event.data) {
+        case "Slide_open":
+            sendTrackerInfo();
+            break;
+    }
 }
 
 var lightboxCounter = null;
