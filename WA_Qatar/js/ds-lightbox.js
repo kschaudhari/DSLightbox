@@ -39,6 +39,7 @@ $(document).ready(function () {
 
     $(".lighbox-container .lightbox-defaultTab .default-navigator .readMore").click(function (e) {
         showMoreDetails();
+
     });
 
     $(".lighbox-container .lightbox-detailsPage .detail-navigator .mainMenu").click(function (e) {
@@ -314,15 +315,59 @@ function showTab(tabId, allowReLoad, slideDir) {
     setScrollBar();
     stopVideos(privousVideos);
     if (detailsVisible) {
-        
         if (!isMobile())
             $bookBlockPage.bookblock('jump', tabId);
         else
             handleDetailBookletEnd();
+        sendEvent();
     }
     var privousVideos = previousTab.find(".ContentVideo .embed-container iframe");
     
     setImageCarousel($(".lighbox-container .lightbox-detailsPage .tab.active .page-background-images"), $(".lighbox-container .lightbox-detailsPage .image-bullet-container"), $(".lighbox-container .lightbox-detailsPage .next-image"), $(".lighbox-container .lightbox-detailsPage .prev-image"));
+
+    
+}
+
+function sendEvent() {
+    var detailsVisible = $(".lighbox-container .lightbox-detailsPage").is(":visible");
+
+    if (detailsVisible) {
+        var tabId = $(".lighbox-container .lightbox-detailsPage .tab.active").attr("data-tab").replace("tab", "");
+        
+        var tabName = "WESTERN AUSTRALIA";
+        switch (parseInt(tabId)) {
+            case 1:
+                tabName = "WESTERN AUSTRALIA";
+                break;
+            case 2:
+                tabName = "FOOD & WINE";
+                break;
+            case 3:
+                tabName = "COASTAL & AQUATIC";
+                break;
+            case 4:
+                tabName = "ADVENTURE & NATURE";
+                break;
+            case 5:
+                tabName = "FLY THERE IN STYLE";
+                break;
+        }
+        ga('send', {
+            hitType: 'event',
+            eventCategory: 'Tab',
+            eventAction: 'TabView',
+            eventLabel: 'tab ' + tabId + ' - ' + tabName,
+            transport: 'beacon'
+        });
+
+        var isPixelSent = $(".lighbox-container .lightbox-detailsPage .tab.active").attr("data-is-pixel-sent") == "true";
+        if(!isPixelSent)
+        {
+            (function (d, p) { var a = new Image(); a.onload = function () { a = null }; a.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//rs.gwallet.com/r1/pixel/x" + p + "r" + Math.round(1E9 * Math.random()) })(document, "40229");
+            $(".lighbox-container .lightbox-detailsPage .tab.active").attr("data-is-pixel-sent", "true");
+        }
+
+    }
 }
 
 
@@ -333,6 +378,7 @@ function showDefaultView() {
     $bookBlockDefault.bookblock('jump', 1);
     //$(".lightbox-footer .BackToMain").hide();
     stopVideos();
+
 }
 
 function moveToPrevious(slideDir) {
@@ -381,7 +427,7 @@ function showMoreDetails()
     handleDetailBookletEnd();
     if(!isMobile())
     $bookBlockDefault.bookblock('jump', 2);
-    
+    sendEvent();
 }
 
 (function ($) {

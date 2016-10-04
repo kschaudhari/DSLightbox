@@ -1237,18 +1237,18 @@
 
     <script>
 
-         function inIframe() {
-             try {
-                 return window.self !== window.top;
-             } catch (e) {
-                 return true;
-             }
-         }
-         if (!inIframe())
-         {
-             var ligthbox = document.getElementById("mydiv");
-             ligthbox.style.backgroundColor = "rgba(0,0,0,0.7)";
-         }
+        function inIframe() {
+            try {
+                return window.self !== window.top;
+            } catch (e) {
+                return true;
+            }
+        }
+        if (!inIframe())
+        {
+            var ligthbox = document.getElementById("mydiv");
+            ligthbox.style.backgroundColor = "rgba(0,0,0,0.7)";
+        }
     </script>
 </body>
 </html>
