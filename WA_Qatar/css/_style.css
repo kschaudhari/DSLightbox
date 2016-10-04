@@ -7,7 +7,7 @@
     top: 0%;
     position:fixed;
     z-index: 200;
-    /*background-color:rgba(0,0,0,0.7);*/
+    background-color:rgba(0,0,0,0.7);
 }
 #mydiv-content {
     width: 100%;
