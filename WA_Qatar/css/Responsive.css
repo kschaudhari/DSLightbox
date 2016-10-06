@@ -509,6 +509,7 @@
     .page-content.tab5-page-content .detail-page-text
     {
         padding:0px 10px;
+        width:auto;
     }
 }
 
