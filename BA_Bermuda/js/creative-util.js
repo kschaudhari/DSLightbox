@@ -1,6 +1,9 @@
 ﻿
 function showLightboxPopup(type) {
-    
+    if (!inIframe()) {
+        sendTrackerInfo();
+    }
+
     var defaultTab = 1;
     if (type)
         defaultTab = type.replace("tab", '');
