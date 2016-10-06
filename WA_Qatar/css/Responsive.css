@@ -509,7 +509,9 @@
     .page-content.tab5-page-content .detail-page-text
     {
         padding:0px 10px;
-        width:auto;
+         width: -webkit-calc(100% - 20px);
+        width: -moz-calc(100% - 20px);
+        width: calc(100% - 20px);
     }
 }
 
