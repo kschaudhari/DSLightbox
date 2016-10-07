@@ -131,4 +131,42 @@
         background-image:url(../images/banners/mobContentImag-LastSec.jpg) !important;
         background-size: 100% 100% !important;
     }
+    .ShareBox {
+        display:none;
+    }
+    .MobileFooter {
+        display:block !important;
+        width: 100%;
+        display: inline-block;
+        font-family: 'DurhamSans-Normal';
+        text-align: left;
+        margin-top: 29px;
+    }
+    .mobileShareLabel {
+        font-family: Arial;
+        font-weight: bold;
+        color: #fff;
+        font-size: 1.3em;
+        top: 3px;
+        position: relative;
+    }
+    .MobileFooter .SocialBox a {
+        width:40px;
+        display: inline-block;
+        text-align: center;
+        margin-left: 13px;
+    }
+    .MobileFooter .SocialBox a.fb img.socialImg {
+        width:35%;
+    }
+    .MobileFooter .SocialBox a img.socialImg{
+        vertical-align:middle;
+        width: 68%;
+        top:0;
+       -webkit-transform: translateY(0%);
+       -ms-transform: translateY(0%);
+       -moz-transform: translateY(0%);
+        transform: translateY(0%);
+    }
+   
 }
