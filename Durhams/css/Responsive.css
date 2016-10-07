@@ -65,14 +65,15 @@
     .lighbox-container .lightbox-content .Container{
         float:none;
         margin: 0px auto;
-        width:90%;
+        width:100%;
     }
-    .lighbox-container .lightbox-content .page-details{
-        margin-top:0px;
+    .lighbox-container .lightbox-content .ContentBox{
+        width:90%;
     }
     .lighbox-container .lightbox-title{
         display:none;
     }
+    
     .content-para{
         background: #9f3a0d !important;
         width: auto;
