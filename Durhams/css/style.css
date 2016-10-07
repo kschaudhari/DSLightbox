@@ -158,7 +158,6 @@ body {
      height: 0; 
      overflow: hidden; 
      max-width: 100%; 
-     background-color:#000;
 } 
 .embed-container iframe, .embed-container object, .embed-container embed { 
     position: absolute; 
