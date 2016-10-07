@@ -127,5 +127,8 @@
     .content-image img{
         width:100%;
     }
-    
+    .LastImgBGTextBox {
+        background-image:url(../images/banners/mobContentImag-LastSec.jpg) !important;
+        background-size: 100% 100% !important;
+    }
 }
