@@ -136,7 +136,7 @@ body {
     font-size: 3.8em;
     margin: 0px;
 }
-.DescriptionBox .DescriptionText {
+.DescriptionBox .DescriptionText, .content-para .DescriptionText{
     color:#fff;
     font-size:0.9em;
 }
@@ -174,4 +174,5 @@ body {
     right: 0px;
     bottom: 0px;
     left: 0px;
+    opacity:0.3;
 }
