@@ -1,11 +1,41 @@
+.LeftBox .center-aling{
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.LeftBox .page-title {
+    position: absolute;
+    top: 20px;
+    
+}
 
-/*  ie Only  */
+.LeftBox .follow-us {
+    position: absolute;
+    top: 90px;
+}
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    .scroll-wrapper.MainContentBox {
-        max-height:100% !important;
-    }
-    .MainContaintArea {
-        height:103.8% !important;
-    }
+.LeftBox .follow-us-title {
+    font-family: Arial;
+    color: #FFF;
+    font-size:0.9em;
+    -ms-text-shadow: 0px 1px 1.96px rgba(0, 0, 0, 0.5);
+    -webkit-text-shadow: 0px 1px 1.96px rgba(0, 0, 0, 0.5);
+    -moz-text-shadow: 0px 1px 1.96px rgba(0, 0, 0, 0.5);
+    text-shadow: 0px 1px 1.96px rgba(0, 0, 0, 0.5);
+}
+
+.LeftBox .follow-us-icon {
+    text-align: center;
+    margin-top: 34px;
+}
+.LeftBox .follow-us-icon img{
+    cursor:pointer;
+    border:0px;
+}
+
+.LeftBox .tag-line {
+    position: absolute;
+    bottom: 20px;
 }
