@@ -1329,10 +1329,9 @@ yx-axis
     z-index: 12;
     width: 4px;
     border-radius:0px;
-    background-color: #042538;
-    -webkit-box-shadow: 0px 0px 14px 0px rgba(255,255,255,1);
-    -moz-box-shadow: 0px 0px 14px 0px rgba(255,255,255,1);
-    box-shadow: 0px 0px 14px 0px rgba(255,255,255,1);
+    background-color: #01492c;
+    
+    /
 }
  
 .external-scroll_x .scroll-bar {

@@ -18,6 +18,7 @@ function showLightboxPopup(type) {
 
 function hideLightboxPopup() {
     //$(".removePopup").trigger("click");
+    stopVideos();
     if (window.parent) {
         
         window.parent.postMessage('LB_CLOSE', '*');
@@ -41,11 +42,7 @@ function sendTrackerInfo() {
     }
     loadedTimerForTracker = window.setTimeout(sendTrackerInfo, 500);
 }
-function autoplayVideo() {
-    window.setTimeout(function () {
-        detailPageLoaded();
-    }, 500);
-}
+
 window.addEventListener("message", receiveMessage, false);
 function receiveMessage(event) {
     switch (event.data) {

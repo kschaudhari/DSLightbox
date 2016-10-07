@@ -129,39 +129,40 @@ $(document).ready(function () {
 });
 
 function detailPageLoaded() {
-    var iframes = $(".lighbox-container .Container .ContentBox .ContentVideo .embed-container iframe");
+    var iframes = $(".lighbox-container .Container .ContentBox .ContentVideo .embed-container");
     if (iframes.length > 0) {
         var player = iframes.data("videoPlayer");
         if (!player) {
-            player = new YT.Player(iframes.attr("id"), {
-                events: {
-                    'onReady': startVideo
-                }
-            });
+            player = new Vimeo.Player('video1Player', { id: 185791701 });
             iframes.data("videoPlayer", player);
+            startVideo(player);
         }
         else {
-            startVideo({ target: player });
+            startVideo(player);
         }
 
 
     }
 }
 
-function startVideo(event) {
-    var iframe = $(event.target.getIframe());
-    if (iframe.is(":visible"))
-        event.target.playVideo();
+function autoplayVideo() {
+    window.setTimeout(function () {
+        detailPageLoaded();
+    }, 500);
+}
+
+function startVideo(player) {
+    player.play();
 }
 function stopVideos(privousVideos) {
     if (!privousVideos)
-        privousVideos = $(".lighbox-container .Container .ContentBox .ContentVideo .embed-container iframe");
+        privousVideos = $(".lighbox-container .Container .ContentBox .ContentVideo .embed-container");
     if (privousVideos.length > 0) {
         for (var i = 0; i < privousVideos.length; i++) {
             previousFrame = $(privousVideos[i]);
             var oldPlayer = previousFrame.data("videoPlayer");
             if (oldPlayer) {
-                oldPlayer.stopVideo();
+                oldPlayer.pause();
             }
         }
     }

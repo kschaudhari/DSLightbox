@@ -1,12 +1,12 @@
 @media screen and (max-height: 670px)  {
     .ContentVideo {
-        position: absolute;
-        width: 37%;
-        left:25%;
-        -webkit-transform: translate(-50%, -50%);
+        /* position: absolute; */
+        /* width: 37%; */
+        /* left:25%; */
+        /* -webkit-transform: translate(-50%, -50%); */
         -ms-transform: translate(-50%, -50%);
         -moz-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
+        /* transform: translate(-50%, -50%); */
     }
 }
 @media screen and (max-width: 1023px) , screen and (max-height: 570px){
