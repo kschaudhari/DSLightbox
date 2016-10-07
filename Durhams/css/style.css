@@ -92,8 +92,9 @@ body {
     float: right;
     height: 100%;
     overflow: hidden;
-     background-image: url(../images/contentBg.jpg);
-     position:relative;
+    background-image: url(../images/contentBg.jpg);
+    position:relative;
+    width: 100%;
 }
 .ContentBox{
     width:83.1%;
@@ -102,12 +103,15 @@ body {
     top: 40px;
     height: 93.8%;
     background: #ccc;
+    /* max-width: 660px; */
 }
 .MainContentBox {
      display: block;
      height: 100% !important;
      overflow:hidden;
      margin: 0px auto;
+     width: 100%;
+     max-width: 660px;
 }
 .VideoBox {
    /* height:337px;*/
