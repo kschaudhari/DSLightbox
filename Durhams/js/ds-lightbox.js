@@ -161,11 +161,12 @@ function lazyLoadImages()
         });
     }
     else {
-        $('.lighbox-container div[data-image-src]').each(function (__, item) {
-            var $item = $(item);
-            if ($item.find('img').length == 0) {
-                $item.append('<img src="' + $item.attr("data-image-src") + '"/>');
-            }
+        $('.lighbox-container div[data-background-image]').each(function (__, item) {
+            var $item = $(item).find('.content-image');
+            $item.css("background-image", 'url(' + $(item).attr("data-background-image") + ')');
+            //if ($item.find('img').length == 0) {
+            //    $item.append('<img src="' + $(item).attr("data-background-image") + '"/>');
+            //}
         });
     }
 }
