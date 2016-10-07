@@ -97,12 +97,11 @@ body {
     width: 100%;
 }
 .ContentBox{
-    width:83.1%;
+    /* width:83.1%; */
     margin: 0px auto 0;
     position: relative;
-    top: 40px;
-    height: 93.8%;
-    background: #ccc;
+    height: 100%;
+    /* background: #ccc; */
     /* max-width: 660px; */
 }
 .MainContentBox {
@@ -111,7 +110,15 @@ body {
      overflow:hidden;
      margin: 0px auto;
      width: 100%;
-     max-width: 660px;
+     /* max-width: 660px; */
+}
+.page-details{
+    -webkit-box-shadow: 0px 0px 16px 4px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0px 0px 16px 4px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 0px 16px 4px rgba(0, 0, 0, 0.35);
+    max-width: 660px;
+    margin: 0px auto;
+    margin-top: 40px;
 }
 .VideoBox {
    /* height:337px;*/
