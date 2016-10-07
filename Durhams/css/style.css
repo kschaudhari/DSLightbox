@@ -135,7 +135,9 @@ body {
     padding-bottom: 13px;
 }
 .DescriptionBox {
-    padding:0px 31px;
+    padding: 0px 31px;
+    display: table-cell;
+    vertical-align: middle;
 }
 .DescriptionBox .BigHeading {
     color: #fff;
@@ -188,8 +190,13 @@ body {
     opacity:0.3;
 }
 .content-para {
-    background-size:cover;
-    background-repeat:no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 180px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: table;
+    width: 100%;
 }
 .section2 .BigHeading{
     font-size: 3.7em;
@@ -199,7 +206,24 @@ body {
 .CommonSec {
 }
 .CommonSec .DescriptionText {
-    text-align: center;
-    max-width: 363px;
-    margin:0 auto;
+   text-align: center;
+    max-width: 417px;
+    margin: 0 auto;
+}
+.LastImgBGTextBox {
+    padding-bottom: 79px;
+}
+.LastImgBGTextBox .BigHeading{
+    font-size: 3.7em;
+    line-height: 57px;
+    padding-top: 29px;
+}
+.ItalicHeading {
+    color: #fff;
+    font-family: 'DurhamSans-ThinItalic';
+    font-size: 1.6em;
+    margin: 0px;
+    font-weight: normal;
+    padding-right: 10%;
+    line-height: 28px;
 }
