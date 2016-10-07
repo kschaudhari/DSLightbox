@@ -79,5 +79,10 @@
     .DescriptionBox .BigHeading{
         font-size: 1.5em;
     }
-
+    .content-para{
+        background: #9f3a0d !important;
+    }
+    .FirstImgBGTextBox{
+        background: #839e25 !important;
+    }
 }
