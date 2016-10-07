@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+#mydiv {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    left: 0%;
+    top: 0%;
+    position: fixed;
+    z-index: 200;
+
+}
+
+#mydiv-content {
+    width: 100%;
+    max-width: 1000px;
+    max-height: 650px;
+    margin: 0 auto;
+    padding: 0px;
+/*    background-color: #fff;*/
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    backface-visibility: hidden;
+    font-family: 'Fira Sans';
+}
+
+.CloseBtn {
+    position: absolute;
+    top: -8px;
+    right: -52px;
+    z-index: 12;
+    width: 60px;
+    height: 60px;
+    background-image: url(../images/Close.png);
+    display: block;
+}
+
+.togglecone.expandedcone {
+    background-color: green;
+}
+
+.mobDetector {
+    display: none;
+}
+
+.lighbox-container {
+    width: 100%;
+    /* height: 100%; */
+    position: relative;
+}
+
+.tab-container {
+    max-width: 1000px;
+    max-height: 600px;
+    overflow: hidden;
+    position: relative;
+    /* background-color: #013f62; */
+}
+.tab-container:before{
+        content: "";
+        display: block;
+        padding-top: 60%;
+}
+.lighbox-container .lightbox-content {
+        width: 100%;
+        height:650px;
+}
+.lighbox-container .lightbox-content .LeftBox {
+    width: 200px;
+    height: 650px;
+    position: fixed;
+    overflow: hidden;
+    background-image: url(../images/leftBar.jpg);
+}
+.lighbox-container .lightbox-content .Container {
+    max-width: 795px;
+    /*margin-left: 205px;*/
+    float: right;
+    height: 100%;
+    overflow: hidden;
+     background-image: url(../images/contentBg.jpg);
+}
+.ContentBox{
+    width:83.1%;
+    margin: 0px auto 0;
+    position: relative;
+    top: 40px;
+    height: 93.8%;
+    background: #ccc;
+}
+.MainContentBox {
+     display: block;
+     height: 100% !important;
+     overflow:hidden;
+     margin: 0px auto;
+}
+.VideoBox {
+   /* height:337px;*/
+    width:100%;
+    position: relative;
+    background-color:rgba(0,0,0,0.6);
+}
+.FirstImgBGTextBox {
+}
+.DescriptionBox {
+    padding:0px 31px;
+}
+.DescriptionBox .BigHeading {
+    color: #fff;
+    font-size: 3.8em;
+    margin: 0px;
+}
+.DescriptionBox .DescriptionText {
+    color:#fff;
+    font-size:0.9em;
+}
+.ContentVideo {
+    /*position: absolute;*/
+    width: 100%;
+    margin: 0 auto;
+/*    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);*/
+   
+}
+.embed-container {
+     position: relative; 
+     padding-bottom: 56.25%; 
+     height: 0; 
+     overflow: hidden; 
+     max-width: 100%; 
+     background-color:#000;
+} 
+.embed-container iframe, .embed-container object, .embed-container embed { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+}
+.LeftBox .OverlayBg {
+    opacity:0.4;
+}
+.OverlayBg {
+   background-image: url(../images/leftBarGradiant.png);
+   background-repeat:repeat;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}

@@ -1,0 +1,11 @@
+
+/*  ie Only  */
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .scroll-wrapper.MainContentBox {
+        max-height:100% !important;
+    }
+    .MainContaintArea {
+        height:103.8% !important;
+    }
+}

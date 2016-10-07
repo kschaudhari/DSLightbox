@@ -1,0 +1,402 @@
+@media screen and (max-height: 670px)  {
+    .ContentVideo {
+        position: absolute;
+        width: 37%;
+        left:25%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+}
+@media screen and (max-width: 1023px) , screen and (max-height: 570px){
+	#mydiv-content {
+       top: 0;
+       -webkit-transform: translate(-50%, 0%);
+       -ms-transform: translate(-50%, 0%);
+	    transform: translate(-50%, 0%);
+		height:100vh;
+    }
+	.MobMenuBtn{
+		z-index:10;
+		display:block;
+	}
+	.topMobMenuBar{
+		display:block;
+	}
+	
+	.CloseBtn{
+		display: none;
+	}
+    .mobDetector{display:block;}
+    .topMobMenuBar .CloseBtn{
+		display: block;
+	}
+	.MenuMob {
+         display: table;
+         width: 100%;
+    }
+    .lightbox-defaultTab{
+        display:none !important;
+    }
+    .lightbox-detailsPage{
+        display:block !important;
+        opacity: 1;
+        visibility:visible;
+        height:100%;
+    }	
+    .lightbox-detailsPage:before{
+        content:none;
+    }
+    .lightbox-bootmGrad{
+        display:none;
+    }
+    .lightbox-footer{
+        display:none;
+    }
+
+    .lighbox-container{
+            margin: 0px auto;
+    margin-top: 20vh;
+    height: 100vh;
+    position: relative;
+    padding: 0px;
+            padding-top: 0px;
+            width: 100%;
+    }
+    .lighbox-container .lightbox-content{
+        height:100%;
+    }
+    .lighbox-container .lightbox-title{
+        display:none;
+    }
+    .tabs{
+        transition: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    }
+    .lighbox-container .lightbox-detailsPage .tabs {
+        width:100%;
+        border:0;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -o-transform: none;
+        transform: none;
+        display: none;
+    }
+    
+
+    .lighbox-container .tab-container.expanded .tabs.active{
+        width:100%;
+        display:block;
+    }
+    .lighbox-container .lightbox-detailsPage .tab{
+        top: 0;
+		-webkit-transform: initial;
+		-moz-transform: initial;
+    	-ms-transform: initial;
+        transform: initial;
+        left: 0;
+        width: 100%;
+        /* bottom: 0; */
+        /* height: 105%; */
+        padding-bottom: 20px;
+        background: #fff;
+    }
+    .tab-container.expanded .tabs.active .tab.active{
+        width:100%;
+        left: 0;
+        height: 100%;
+        display: block;
+    }
+    .tab-container.expanded .tabs  .tab{
+        -webkit-transform: none;
+        -moz-transform: none;
+        -o-transform: none;
+        transform: none;
+        display: none;
+        border: 0;
+    }
+    .tab-container.expanded .tabs  .tab .tab-content{
+        -webkit-transform: none;
+        -moz-transform: none;
+        -o-transform: none;
+        transform: none;
+        transition: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    }
+    .tabs.active  .tab.parallelogram1.active .tab-content{
+        left: 0px;
+        background:none;
+    }
+    .tab-page-details.active .tab-details .tab-detail-title{
+        left:0px;
+    }
+    .tab-container.expanded .tabs.active .tab.parallelogram2.active .tab-content{
+        left:0px;
+        background:none;
+    }
+    .tabs.active .default-tab-content{
+        display:none !important;
+    }
+    .tab-page-details.active{
+        left:0;
+        width:100%;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -o-transform: none;
+        transform: none;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        transition: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    }
+    
+    .tab-details .detail-container{
+        width:100%;
+        left: auto;
+        -o-transform: none;
+        -moz-transform: none;
+        -webkit-transform: none;
+        transform: none;
+        padding-bottom: 108px;
+    }
+    .details2 .tab-details .detail-container{
+        -o-transform: none;
+        -moz-transform: none;
+        -webkit-transform: none;
+        transform: none;
+    }
+    .MainContaintArea{
+        overflow:scroll;
+    }
+    .tab-details .tab-detail-title {
+        margin-top:0px;
+    }
+    .tab-page-details .ShowMobBanner {
+        padding-top:20px;  
+        background-size: cover !important;
+    }
+    .tab-page-details.active[data-tab="tab1"] .ShowMobBanner {
+         background: url(../images/tab1.jpg) center top no-repeat;
+    }
+    .tab-page-details.active[data-tab="tab2"] .ShowMobBanner {
+         background: url(../images/tab2.jpg) center top no-repeat;
+    }
+    .tab-page-details.active[data-tab="tab3"] .ShowMobBanner {
+         background: url(../images/tab3.jpg) center top no-repeat;
+    }
+    .tab-page-details.active[data-tab="tab4"] .ShowMobBanner {
+         background: url(../images/tab4.jpg) center top no-repeat;
+    }
+    .tab-page-details.active[data-tab="tab4"] .mob-footer {
+         height: 140px;
+    }
+    .mob-footer {
+        float: left;
+        padding-right: 0;
+        width: 100%;
+        position: relative;
+        display:block;
+        height: 180px;
+        margin-bottom:10px;
+    }
+    .mob-footer .footer-British-logo {
+        min-width: 91px;
+        width: 36%;
+        position: absolute;
+        max-width: 156px;
+        top: 46%;
+        left: 7%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    .mob-footer .footer-FindYourflight {
+        width: 44.439%;
+        position: absolute;
+        min-width: 136px;
+        max-width: 136px;
+        right: 0px;
+        top: 46%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        transform: translateY(-50%);
+        font-family: 'Montserrat-Regular';
+        font-size: 0.8em;
+        color:#fff;
+        right: 10%;
+    }
+    .mob-footer .footer-logo {
+        width: 100%;
+        vertical-align: middle;
+    }
+    .mob-footer .footer-FindYourflight .findFlightArrow {
+        margin-left: 11px;
+    }
+    .mobFooter2 {
+        height:40px;
+        background-color: #013f62;
+        position:relative;
+    }
+    .readNextBox{
+        background-color:#78cdd1;
+        width:100%;
+        height:40px;
+        cursor: pointer;
+    }
+    .readNextBox:hover {
+        /*background-color:#10A9E5;*/
+    }
+    .readNextBox:active {
+        /*background-color:#0D8CBF;*/
+    }
+    .readNextBox img {
+        width:27px;
+        height:20px;
+        position:relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        float:right;
+        margin-right:2%;
+        margin-right: 10%;
+    }
+    .readNextBox .ReadNext{
+        line-height: 40px;
+        color:#fff;
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 0.9em;
+        font-weight: 400;
+        font-style: italic;
+        padding-left:6%;
+        position: relative;
+        float:left;
+        letter-spacing: 0px;
+        width: 36%;
+        text-align: right;
+    }
+    .readNextBox .NextTabLabel{
+        text-align: right;
+        position:relative;
+        height:38px;
+        float: left;
+        width: 27%;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        margin-left: 3%;
+    }
+    .readNextBox .NextTabLabel img.NextLogo {
+        width:100%;
+        margin:0px;
+        height: auto;
+        max-width: 85px;
+    }
+    .readNextBox .NextTabLabel .topLineText {
+        font-size: 2.5em;
+        display: block;
+        letter-spacing: 3px;
+    }
+    .readNextBox .NextTabLabel .BottomlineText {
+        font-size: 1.3em;
+        letter-spacing: 1px;
+    }
+    .readNextBox .NextTabLabel .TextAlignforNext {
+        position:absolute;
+        top: 21px;
+        width: 100%;
+    }
+    .readNextBox .NextTabLabel .Nexttab6Ttextalign {
+        font-size: 0.9em;
+    }
+    .readNextBox .NextTabLabel .TextAlignforNext .BottomlineText {
+        text-align:left;
+        display:inline-block;
+        font-size: 0.9em;
+        float: left;
+    }
+    .readNextBox .NextTabLabel .TextAlignforNext .topLineText {
+         display:inline-block;
+         text-align:right;
+         font-size: 1.5em;
+        letter-spacing: 2px;
+        padding-left: 6%;
+    }
+    
+   .topMobMenuBar .topMobItem .mobMenuLogos .ShareBox a {
+        width: 22%;
+        height:auto;
+        display:block;
+        background-position:center center;
+        background-repeat:no-repeat;
+        display:inline-block;
+        text-align: center;
+        /*background-image: url('../images/mobSocial.png');*/
+        background-image:none;
+        background-size:cover;
+        margin:0;
+    }
+   
+    .topMobMenuBar .topMobItem .mobMenuLogos .ShareBox a.fb {
+        background-position: 5px 0px;
+    }
+    .topMobMenuBar .topMobItem .mobMenuLogos .ShareBox a.tweet {
+       margin-right: 4%;
+       margin-left: 1%;
+    }
+    .topMobMenuBar .topMobItem .mobMenuLogos .ShareBox a.youtube {
+       margin-right: 6%;
+    }
+    .topMobMenuBar .topMobItem .mobMenuLogos .ShareBox a.insta { 
+   
+    }
+    .description-para, .detail-page-head-line{
+        padding: 20px 10px;
+    }
+    .description-image-caption.dont-miss {
+        padding: 20px 10px;
+    }
+    .tab-details .detail-container .detail-container-background{
+        opacity:1;
+    }
+}
+@media screen and (max-width: 1023px) and (orientation: landscape), screen and (max-height: 570px) and (orientation: landscape){
+    .topMobMenuBar{
+        height:91px;
+    }
+    .lighbox-container{
+        margin-top: 91px;
+    }
+    .lightbox-detailsPage{
+        height:100%;
+    }
+    .topMobMenuBar .mobNavigator .mobNavigatorContent .mobCurrentTab .mobTab .mobCurrentTabLogo img{
+        width:17%;
+    }
+}
+/*
+@media screen and (max-width: 1078px) and (min-width: 768px) {
+    #mydiv-content{
+        width: 75%;
+    }
+
+}
+*/
+@media screen and (max-width: 1120px) and (min-width: 1024px) {
+    #mydiv-content{
+        width: 90%;
+    }
+
+}

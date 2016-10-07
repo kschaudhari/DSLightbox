@@ -1,0 +1,167 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lightbox</title>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,500i" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="fonts/font.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css" />
+    <!--<link rel="stylesheet" type="text/css" href="css/bookblock.css" />-->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!--<link rel="stylesheet" type="text/css" href="css/Tabs.css" />-->
+    <link rel="stylesheet" type="text/css" href="css/mobile.css" />
+    <link rel="stylesheet" type="text/css" href="css/Responsive.css" />
+
+   
+
+    <script type="text/javascript">
+        var tag = document.createElement('script');
+        tag.id = 'iframe-demo';
+        tag.src = 'https://www.youtube.com/iframe_api';
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    </script>
+
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/customscroll.js"></script>
+    <script src="js/creative-util.js"></script>
+    <script src="js/ds-lightbox.js"></script>
+    <script>
+        var clickTagFb = "https://www.facebook.com/bermudatourism/?fref=ts";
+        var clickTagTweet = "https://twitter.com/Bermuda";
+        var clickTagYou = "https://www.youtube.com/user/GoToBermuda1609";
+        var clickTagInsta = "https://www.instagram.com/bermuda/";
+
+        var clickTagFindFlight = "http://www.britishairways.com/bermuda/";
+
+        var clickTagFindFlight = "http://po.st/NL814s";
+
+        var clickTagPage1Discover1 = "http://po.st/NL814s";
+        var clickTagPage2Discover1 = "http://po.st/NL814s";
+        var clickTagPage3Discover1 = "http://po.st/NL814s";
+        var clickTagPage4Discover1 = "http://po.st/NL814s";
+
+        var clickTagPage1SmithDiscover1 = "http://po.st/DxLOiH";
+        var clickTagPage2SmithDiscover1 = "http://po.st/DxLOiH";
+        var clickTagPage3SmithDiscover1 = "http://po.st/DxLOiH";
+        var clickTagPage4SmithDiscover1 = "http://po.st/DxLOiH";
+    </script>
+    
+</head>
+<body style="height:1000px;">
+
+    <div id="mydiv">
+        <div id="mydiv-content">
+
+            <div class="topMobMenuBar tab1Active">
+                <div class="topMobItem MobMenuBar">
+                    <div class="mobMenu">
+                        <div class="mobMenuIcon menuElement">
+                            <img src="images/mobMenu.png" />
+                        </div>
+                    </div>
+                    <div id="lightbox-mobile-exit" class="mobMenuClose menuElement">
+                        <img class="removePopup" src="images/mobClose.png" />
+                    </div>
+                </div>
+                <div class="mobDropdownMenu">
+                    <div class="mobDropdownMenuItem" data-tab="tab1">
+                        Island adventure
+                    </div>
+                    <div class="mobDropdownMenuItem" data-tab="tab2">Bermy style</div>
+                    <div class="mobDropdownMenuItem" data-tab="tab3">Food & drink</div>
+                    <div class="mobDropdownMenuItem" data-tab="tab4">Couple's retreat</div>
+                </div>
+               
+
+            </div>
+            <div class="lighbox-container">
+
+                <div class="lightbox-content">
+                    <a href="javascript:void(0)" id="lightbox-exit" class="CloseBtn removePopup"></a>
+                    <div class="LeftBox">
+                        <div class="OverlayBg"></div>
+                        leftbox
+                    </div>
+                    <div class="Container">
+                        <div class="OverlayBg"></div>
+                        <div class="ContentBox">
+                            <div class="MainContaintArea MainContentBox">
+                                <div class="VideoBox">
+                                    <div class="ContentVideo">
+                                        <div class="embed-container">
+                                            <iframe id="video1Player" src="//www.youtube.com/embed/fYHuXnl3d_k?enablejsapi=1" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="FirstImgBGTextBox">
+                                   <div class="DescriptionBox">  
+                                    <h1 class="BigHeading">DURHAM'S GREAT OUTDOORS</h1>
+                                    <p class="DescriptionText">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
+                                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
+                                        scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into 
+                                        electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release 
+                                        of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+                                         Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                    <p class="DescriptionText">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                                        scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+                                        electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
+                                        of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+                                        Aldus PageMaker including versions of Lorem Ipsum.
+                                    </p>
+                                    </div>
+                                </div>
+                                lorem
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="scrollbar-external_wrapper">
+                    <div class="external-scroll_y">
+                        <div style="position:relative">
+                            <div class="scroll-element_outer">
+                                <div class="scroll-element_size"></div>
+                                <div class="scroll-element_track"></div>
+                                <div class="scroll-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div id="preloadImages" style="display:none">
+                
+            </div>
+            <div class="mobDetector"></div>
+        </div>
+    </div>
+    
+   
+
+    <script>
+
+        function inIframe() {
+            try {
+                return window.self !== window.top;
+            } catch (e) {
+                return true;
+            }
+        }
+        if (!inIframe())
+        {
+            var ligthbox = document.getElementById("mydiv");
+            ligthbox.style.backgroundColor = "rgba(0,0,0,0.7)";
+        }
+    </script>
+
+</body>
+</html>
