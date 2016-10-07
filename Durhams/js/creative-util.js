@@ -28,7 +28,7 @@ function hideLightboxPopup() {
 var loadedTimerForTracker = null;
 function sendTrackerAndAutoplayVideo() {
     sendTrackerInfo();
-    autoplayVideo();
+    loadTab();
 }
 function sendTrackerInfo() {
     if ($(".lighbox-container").is(":visible")) {

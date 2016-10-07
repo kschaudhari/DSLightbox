@@ -119,13 +119,7 @@ $(document).ready(function () {
         })
     });
 
-    $(window).resize(function (e) {
-        if(isMobile())
-        {
-            activeTabId = $(".topMobMenuBar .mobNavigatorContent .mobCurrentTab .mobTab.active").attr("data-tab").replace("tab", "");
-            handleMobNavigation(activeTabId, true);
-        }
-    })
+    
 });
 
 function detailPageLoaded() {
@@ -145,10 +139,35 @@ function detailPageLoaded() {
     }
 }
 
-function autoplayVideo() {
+function loadTab() {
+    // load video
     window.setTimeout(function () {
         detailPageLoaded();
     }, 500);
+
+    lazyLoadImages();
+
+    $(window).resize(function (e) {
+        lazyLoadImages();
+    })
+}
+
+function lazyLoadImages()
+{
+    if (!isMobile()) {
+        $('.lighbox-container div[data-background-image]').each(function (__, item) {
+            var $item = $(item);
+            $item.css("background-image", 'url(' + $item.attr("data-background-image") + ')');
+        });
+    }
+    else {
+        $('.lighbox-container div[data-image-src]').each(function (__, item) {
+            var $item = $(item);
+            if ($item.find('img').length == 0) {
+                $item.append('<img src="' + $item.attr("data-image-src") + '"/>');
+            }
+        });
+    }
 }
 
 function startVideo(player) {
