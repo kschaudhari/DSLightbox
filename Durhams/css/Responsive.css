@@ -131,6 +131,9 @@
         background-image:url(../images/banners/mobContentImag-LastSec.jpg) !important;
         background-size: 100% 100% !important;
     }
+    .ItalicHeading{
+        padding-top:20px;
+    }
     .ShareBox {
         display:none;
     }
