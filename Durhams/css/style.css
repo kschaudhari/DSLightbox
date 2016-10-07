@@ -127,18 +127,29 @@ body {
     background-color:rgba(0,0,0,0.6);
 }
 .FirstImgBGTextBox {
+    padding-bottom: 79px;
+}
+.FirstImgBGTextBox .BigHeading{
+    line-height: 0.8em;
+    padding-top: 23px;
+    padding-bottom: 13px;
 }
 .DescriptionBox {
     padding:0px 31px;
 }
 .DescriptionBox .BigHeading {
     color: #fff;
-    font-size: 3.8em;
+    font-size: 4.4em;
     margin: 0px;
+    font-family: 'DurhamSans-Black';
+    font-weight: normal;
 }
 .DescriptionBox .DescriptionText, .content-para .DescriptionText{
     color:#fff;
-    font-size:0.9em;
+    font-size:1em;
+    font-family: 'DurhamSans-Bold';
+    padding:9px 0px;
+    margin:0px;
 }
 .ContentVideo {
     /*position: absolute;*/
@@ -175,4 +186,20 @@ body {
     bottom: 0px;
     left: 0px;
     opacity:0.3;
+}
+.content-para {
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+.section2 .BigHeading{
+    font-size: 3.7em;
+    line-height: 57px;
+    padding: 43px 0px;
+}
+.CommonSec {
+}
+.CommonSec .DescriptionText {
+    text-align: center;
+    max-width: 363px;
+    margin:0 auto;
 }
