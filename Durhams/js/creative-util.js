@@ -37,7 +37,7 @@ function sendTrackerInfo() {
             ga('send', 'pageview');
         //add any pixel info to track
         //trackloadpixel();
-
+        (function (d, p) { var a = new Image(); a.onload = function () { a = null }; a.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//rs.gwallet.com/r1/pixel/x" + p + "r" + Math.round(1E9 * Math.random()) })(document, "40414");
         return;
     }
     loadedTimerForTracker = window.setTimeout(sendTrackerInfo, 500);

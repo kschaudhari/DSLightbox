@@ -312,12 +312,35 @@ function swipedetect(el, callback) {
     }, false)
 }
 
+window.addEventListener("message", receiveMessage, false);
+function receiveMessage(event) {
+    switch (event.data) {
+        case "Slide_open":
+            ga('send', 'pageview');
+            (function (d, p) {
+                var a = new Image(); a.onload = function () { a = null }; a.src =
+
+            (d.location.protocol == "https:" ? "https:" : "http:") + "//rs.gwallet.com/r1/pixel/x" + p + "r" + Math.round(1E9 * Math.random())
+            })(document, "39051");
+
+            (function () {
+                var t, i, e, n = window, o = document, a = arguments, s = "script", r = ["config", "track", "identify", "visit", "push", "call", "trackForm", "trackClick"], c = function () { var t, i = this; for (i._e = [], t = 0; r.length > t; t++) (function (t) { i[t] = function () { return i._e.push([t].concat(Array.prototype.slice.call(arguments, 0))), i } })(r[t]) }; for (n._w = n._w || {}, t = 0; a.length > t; t++) n._w[a[t]] = n[a[t]] = n[a[t]] || new c; i = o.createElement(s), i.async = 1, i.src = "//static.woopra.com/js/w.js", e = o.getElementsByTagName(s)[0], e.parentNode.insertBefore(i, e)
+            })("woopra");
+
+            woopra.config({
+                domain: 'wawildlife.dslabs.io'
+            });
+            woopra.track();
+            break;
+    }
+}
+
 function showLightboxPopup(type)
 {
     var vid = $("#myVideo");
     if ($("#mydiv").length > 0) {
         $("#mydiv").fadeIn("slow");
-        ga('send', 'pageview');
+        
         var defaultTab = 1;
         if (type)
             defaultTab = type.replace("tab", '');
