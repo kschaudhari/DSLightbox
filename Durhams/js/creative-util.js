@@ -22,6 +22,11 @@ function hideLightboxPopup() {
     if (window.parent) {
         
         window.parent.postMessage('LB_CLOSE', '*');
+        ga('send', 'event', { 'sessionControl': 'end' });
+        var trackers = ga.getAll();
+        trackers.forEach(function (tracker) {
+            ga.remove(tracker.get('name'));
+        });
     }
 }
 
@@ -33,8 +38,10 @@ function sendTrackerAndAutoplayVideo() {
 function sendTrackerInfo() {
     if ($(".lighbox-container").is(":visible")) {
         window.clearTimeout(loadedTimerForTracker);
-        if (typeof ga !== "undefined")
-            ga('send', 'pageview');
+        if (typeof ga !== "undefined") {
+            ga('create', 'UA-75055673-16', 'auto');
+            ga('send', 'pageview', {'sessionControl': 'start'});
+        }
         //add any pixel info to track
         //trackloadpixel();
         (function (d, p) { var a = new Image(); a.onload = function () { a = null }; a.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//rs.gwallet.com/r1/pixel/x" + p + "r" + Math.round(1E9 * Math.random()) })(document, "40414");
