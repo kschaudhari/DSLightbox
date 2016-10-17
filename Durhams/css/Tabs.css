@@ -17,9 +17,9 @@
 }
 
 .LeftBox .follow-us-title {
-    font-family: Arial;
+     font-family: 'DurhamSans-Bold';
     color: #FFF;
-    font-size:0.9em;
+    font-size: 0.8em;
     -ms-text-shadow: 0px 1px 1.96px rgba(0, 0, 0, 0.5);
     -webkit-text-shadow: 0px 1px 1.96px rgba(0, 0, 0, 0.5);
     -moz-text-shadow: 0px 1px 1.96px rgba(0, 0, 0, 0.5);
@@ -43,7 +43,7 @@
     display:none;
 }
 .content-para{
-        background: #9f3a0d !important;
+       /* background: #9f3a0d !important;*/
         width: auto;
         display: block;
         padding-bottom: 0px;
@@ -52,18 +52,23 @@
     }
 .FirstImgBGTextBox {
     /* background: #839e25 !important;*/
-    background: url('../images/banners/detail-Sec1Bg.jpg') !important;
+    background: url('../images/banners/New-detail-Sec1Bg.jpg') !important;
 }
 .content-para.section2 {
-        background: url('../images/banners/detail-Sec2Bg.jpg') !important;
+        background: url('../images/banners/New-detail-Sec2Bg.jpg') !important;
         background-size: cover !important;
         margin-bottom: -2px;
 }
     
     .DescriptionBox{
-            padding: 0px 5%;
+            padding: 0;
+    display: block;
+    max-width: 557px;
+    width: 100%;
+    margin: 0 auto;
+           /* padding: 0px 8%;
             display: block;
-            width: auto;
+            width: auto;*/
             text-align: left;
     }
     .FirstImgBGTextBox .DescriptionBox{

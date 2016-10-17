@@ -148,7 +148,7 @@ body {
 }
 .DescriptionBox .DescriptionText, .content-para .DescriptionText{
     color:#fff;
-    font-size:1em;
+    font-size: 0.94em;
     font-family: 'DurhamSans-Bold';
     padding:9px 0px;
     margin:0px;
@@ -224,6 +224,7 @@ body {
 }
 .LastImgBGTextBox .DescriptionText {
     padding:0px;
+    ont-size: 0.93em;
 }
 .ItalicHeading {
     color: #fff;
@@ -339,4 +340,9 @@ outline:none;
 }
 .wheelsBgColor {
     background-color:#813009;
+}
+.CommonSec .DescriptionBox .DescriptionText{
+    font-size: 1.1em;
+    line-height: 22px;
+    letter-spacing: 0.3px;
 }
