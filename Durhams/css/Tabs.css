@@ -42,3 +42,62 @@
 .content-image{
     display:none;
 }
+.content-para{
+        background: #9f3a0d !important;
+        width: auto;
+        display: block;
+        padding-bottom: 0px;
+        padding-top: 0px;
+        min-height: initial;
+    }
+.FirstImgBGTextBox {
+    /* background: #839e25 !important;*/
+    background: url('../images/banners/detail-Sec1Bg.jpg') !important;
+}
+.content-para.section2 {
+        background: url('../images/banners/detail-Sec2Bg.jpg') !important;
+        background-size: cover !important;
+        margin-bottom: -2px;
+}
+    
+    .DescriptionBox{
+            padding: 0px 5%;
+            display: block;
+            width: auto;
+            text-align: left;
+    }
+    .FirstImgBGTextBox .DescriptionBox{
+        padding-bottom:30px;
+    }
+    .LastImgBGTextBox .DescriptionBox{
+        padding-bottom: 136px;
+    }
+    .CommonSec .DescriptionText{
+        text-align:left;
+        /*padding-bottom: 30px;*/
+        padding-bottom: 80px;
+        padding-top: 0px;
+    }
+    .content-image{
+        display: block;
+        /* width: 100%; */
+        padding-bottom: 0px;
+        overflow: hidden;
+        max-width: 1000px;
+        max-height: 620px;
+        overflow: hidden;
+        position: relative;
+        background-position:center;
+        background-size:cover;
+    }
+    .content-image:before{
+        content: "";
+        display: block;
+        padding-top: 40%;
+    }
+    .content-image img{
+        width:100%;
+    }
+.LastImgBGTextBox {
+    background: url('../images/banners/detail-Sec8Bg.jpg') !important;
+}
