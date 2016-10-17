@@ -131,7 +131,7 @@ body {
 }
 .FirstImgBGTextBox .BigHeading{
     line-height: 0.8em;
-    padding-top: 10px;
+    padding-top: 21px;
     padding-bottom: 13px;
 }
 .DescriptionBox {
@@ -202,13 +202,15 @@ body {
 .section2 .BigHeading{
     font-size: 3.7em;
     line-height: 57px;
-    padding: 43px 0px;
+    padding: 34px 0px 5px;
+}
+.section2 .DescriptionBox .DescriptionText {
+    padding-bottom:50px;
 }
 .CommonSec {
 }
 .CommonSec .DescriptionText {
    text-align: center;
-    max-width: 417px;
     margin: 0 auto;
 }
 .LastImgBGTextBox {
@@ -242,6 +244,8 @@ body {
 .EnterBtn {
     width:150px;
     height:49px;
+    margin-top: 24px;
+    margin-bottom: 5px;
     font-size:1em;
     color:#fff;
     cursor:pointer;
@@ -316,4 +320,23 @@ outline:none;
     -ms-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     transform: translateY(-50%);
+}
+.CommonSec .DescriptionBox .BigHeading {
+    color: #fff;
+    font-size: 3em;
+    margin: 0px;
+    font-family: 'DurhamSans-Bold';
+    font-weight: normal;
+    padding-top: 40px;
+    padding-bottom: 7px;
+}
+
+.walkingBgColor {
+    background-color:#813009;
+}
+.waterBgColor {
+    background-color:#9f3a0d;
+}
+.wheelsBgColor {
+    background-color:#813009;
 }

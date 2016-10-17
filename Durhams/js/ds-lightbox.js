@@ -154,13 +154,7 @@ function loadTab() {
 
 function lazyLoadImages()
 {
-    if (!isMobile()) {
-        $('.lighbox-container div[data-background-image]').each(function (__, item) {
-            var $item = $(item);
-            $item.css("background-image", 'url(' + $item.attr("data-background-image") + ')');
-        });
-    }
-    else {
+    
         $('.lighbox-container div[data-background-image]').each(function (__, item) {
             var $item = $(item).find('.content-image');
             $item.css("background-image", 'url(' + $(item).attr("data-background-image") + ')');
@@ -168,7 +162,7 @@ function lazyLoadImages()
             //    $item.append('<img src="' + $(item).attr("data-background-image") + '"/>');
             //}
         });
-    }
+    
 }
 
 function startVideo(player) {
