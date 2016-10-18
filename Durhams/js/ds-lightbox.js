@@ -127,9 +127,12 @@ function detailPageLoaded() {
     if (iframes.length > 0) {
         var player = iframes.data("videoPlayer");
         if (!player) {
-            player = new Vimeo.Player('video1Player', { id: 185791701 });
+            player = new Vimeo.Player('video1Player');
             iframes.data("videoPlayer", player);
-            startVideo(player);
+            player.ready().then(function () {
+                startVideo(player);
+            });
+            
         }
         else {
             startVideo(player);
@@ -166,7 +169,10 @@ function lazyLoadImages()
 }
 
 function startVideo(player) {
-    player.play();
+    window.setTimeout(function () {
+        player.play();
+    }, 500);
+    
 }
 function stopVideos(privousVideos) {
     if (!privousVideos)
