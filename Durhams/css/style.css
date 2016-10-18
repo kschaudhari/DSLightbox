@@ -148,11 +148,12 @@ body {
 }
 .DescriptionBox .DescriptionText, .content-para .DescriptionText{
     color:#fff;
-    font-size:1em;
+    font-size: 1.1em;
+    line-height: 22px;
     font-family: 'DurhamSans-Bold';
     padding:9px 0px;
     margin:0px;
-    line-height: 18px;
+   
 }
 .ContentVideo {
     /*position: absolute;*/
@@ -224,6 +225,7 @@ body {
 }
 .LastImgBGTextBox .DescriptionText {
     padding:0px;
+    /*font-size: 0.93em;*/
 }
 .ItalicHeading {
     color: #fff;
@@ -339,4 +341,9 @@ outline:none;
 }
 .wheelsBgColor {
     background-color:#813009;
+}
+.CommonSec .DescriptionBox .DescriptionText{
+    font-size: 1.1em;
+    line-height: 22px;
+    letter-spacing: 0.3px;
 }
