@@ -118,16 +118,24 @@ $(document).ready(function () {
             }
         })
     });
-
+    $(".lighbox-container .Container .ContentBox .ContentVideo .embed-container").click(function (e) {
+        if(isVideoPlaying)
+        {
+            var player = $(this).data("videoPlayer");
+            stopVideos();
+        }
+    });
     
 });
-
+var isVideoPlaying = false;
 function detailPageLoaded() {
     var iframes = $(".lighbox-container .Container .ContentBox .ContentVideo .embed-container");
     if (iframes.length > 0) {
         var player = iframes.data("videoPlayer");
         if (!player) {
             player = new Vimeo.Player('video1Player');
+            player.on('play', function () { isVideoPlaying = true });
+            player.on('pause', function () { isVideoPlaying = false });
             iframes.data("videoPlayer", player);
             player.ready().then(function () {
                 startVideo(player);
@@ -174,6 +182,7 @@ function startVideo(player) {
     }, 500);
     
 }
+
 function stopVideos(privousVideos) {
     if (!privousVideos)
         privousVideos = $(".lighbox-container .Container .ContentBox .ContentVideo .embed-container");
@@ -230,12 +239,22 @@ function setScrollBar(checkIfScrollApplied)
     if (!checkIfScrollApplied || !$(".lighbox-container .Container .ContentBox .MainContaintArea:first").hasClass("scroll-wrapper")) {
        
         window.setTimeout(function () {
-            $(".lighbox-container .Container .ContentBox .MainContaintArea").scrollbar({
-                "autoScrollSize": false,
-                "scrollx": $('.external-scroll_x'),
-                "scrolly": $('.external-scroll_y'),
-                duration: 10
-            });
+            if (!isMobile())
+            {
+                $(".lighbox-container .Container .ContentBox .MainContaintArea").scrollbar({
+                    "autoScrollSize": false,
+                    "scrollx": $('.external-scroll_x'),
+                    "scrolly": $('.external-scroll_y'),
+                    duration: 10
+                });
+                $(".lighbox-container .Container .ContentBox .MainContaintArea").removeStyle("overflow");
+                $(".lighbox-container .Container .ContentBox .MainContaintArea").removeStyle("overflow-x");
+            }
+            else
+            {
+                $(".lighbox-container .Container .ContentBox .MainContaintArea").css("overflow", "scroll");
+                $(".lighbox-container .Container .ContentBox .MainContaintArea").css("overflow-x", "hidden");
+            }
         }, 500);
     }
     $(".scrollbar-external_wrapper").show();

@@ -56,6 +56,9 @@ function receiveMessage(event) {
         case "Slide_open":
             sendTrackerAndAutoplayVideo();
             break;
+        case "Slide_close":
+            stopVideos();
+            break;
     }
 }
 
@@ -111,4 +114,17 @@ function renderProgress(progress) {
     if (progress >= 100) {
 
     }
+}
+
+function openNewWindow(url)
+{
+    stopVideos();
+    window.open(url);
+}
+
+function handleStopEvent()
+{
+    $("#mydiv-content").click(function (e) {
+        e.stopPropagation()
+    })
 }

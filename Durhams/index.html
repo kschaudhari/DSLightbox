@@ -36,6 +36,8 @@
         var clickTagEnterNow = "http://po.st/WiZQQR";
         var clickTagFindMore = "http://po.st/qSxJUS";
 
+        var clickTagShareTweet = "http://hrefshare.com/f0932";
+        var clickTagShareFb = "http://hrefshare.com/dc6e7";
     </script>
     <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -55,7 +57,7 @@
         }(document, 'script', 'facebook-jssdk'));
     </script>
 </head>
-<body style="height:1000px;">
+<body>
 
     <div id="mydiv">
         <div id="mydiv-content">
@@ -77,16 +79,16 @@
                             FOLLOW US
                         </div>
                             <div class="mob-follow-us-icon">
-                                <img src="images/fbIcon.png" onclick="javascript:window.open(window.clickTagFb)" />
+                                <img src="images/fbIcon.png" onclick="javascript:openNewWindow(window.clickTagFb)" />
                             </div>
                             <div class="mob-follow-us-icon">
-                                <img src="images/tweet.png" onclick="javascript:window.open(window.clickTagTweet)" />
+                                <img src="images/tweet.png" onclick="javascript:openNewWindow(window.clickTagTweet)" />
                             </div>
                             <div class="mob-follow-us-icon">
-                                <img src="images/instaIcon.png" onclick="javascript:window.open(window.clickTagInsta)" />
+                                <img src="images/instaIcon.png" onclick="javascript:openNewWindow(window.clickTagInsta)" />
                             </div>
                             <div class="mob-follow-us-icon">
-                                <img src="images/youtubeIcon.png" onclick="javascript: window.open(window.clickTagYouT)" />
+                                <img src="images/youtubeIcon.png" onclick="javascript: openNewWindow(window.clickTagYouT)" />
                             </div>
                         
                     </div>
@@ -109,16 +111,16 @@
                                 </div>
                                 <div class="follow-us-icons">
                                     <div class="follow-us-icon">
-                                        <img src="images/fbIcon.png"  onclick="javascript:window.open(window.clickTagFb)"/>
+                                        <img src="images/fbIcon.png"  onclick="javascript:openNewWindow(window.clickTagFb)"/>
                                     </div>
                                     <div class="follow-us-icon" >
-                                        <img src="images/tweet.png" onclick="javascript:window.open(window.clickTagTweet)"/>
+                                        <img src="images/tweet.png" onclick="javascript:openNewWindow(window.clickTagTweet)"/>
                                     </div>
                                     <div class="follow-us-icon" >
-                                        <img src="images/instaIcon.png" onclick="javascript:window.open(window.clickTagInsta)"/>
+                                        <img src="images/instaIcon.png" onclick="javascript:openNewWindow(window.clickTagInsta)"/>
                                     </div>
                                     <div class="follow-us-icon" >
-                                        <img src="images/youtubeIcon.png" onclick="javascript:window.open(window.clickTagYouT)"/>
+                                        <img src="images/youtubeIcon.png" onclick="javascript:openNewWindow(window.clickTagYouT)"/>
                                     </div>                                    
                                 </div>
                             </div>
@@ -153,7 +155,7 @@
                                                 <img src="images/durhamLogo.png">
                                             </div>
                                             <div>
-                                                <button class="EnterBtn" onclick="javascript:window.open(window.clickTagFindMore)">FIND OUT MORE</button>
+                                                <button class="EnterBtn" onclick="javascript:openNewWindow(window.clickTagFindMore)">FIND OUT MORE</button>
                                             </div>
                                         </div>
                                     </div>
@@ -206,13 +208,13 @@
                                             </p>
                                             
                                             <div class="EnterNowBox">
-                                                <button class="EnterBtn" onclick="javascript:window.open(window.clickTagEnterNow)">ENTER NOW</button>
+                                                <button class="EnterBtn" onclick="javascript:openNewWindow(window.clickTagEnterNow)">ENTER NOW</button>
                                             </div>
                                             <div class="ShareBox">
                                                 <span class="Sharelabel">SHARE THIS ARTICLE:</span>
                                                 <span class="SocialBox">
-                                                    <a href="http://hrefshare.com/f0932"  target="_blank" class="tweet">TWITTER<img class="socialImg" src="images/tweet.png" /></a>
-                                                    <a href="http://hrefshare.com/dc6e7" target="_blank" class="fb fb-share-button">FACEBOOK<img class="socialImg" src="images/fbIcon.png" /></a>
+                                                    <a href="javascript:openNewWindow('http://hrefshare.com/f0932')"  class="tweet">TWITTER<img class="socialImg" src="images/tweet.png" /></a>
+                                                    <a href="javascript:openNewWindow('http://hrefshare.com/dc6e7')" class="fb fb-share-button">FACEBOOK<img class="socialImg" src="images/fbIcon.png" /></a>
                                                 </span>
                                             </div>
                                         </div>
