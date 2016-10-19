@@ -349,3 +349,8 @@ outline:none;
     line-height: 22px;
     letter-spacing: 0.3px;
 }
+.MainContaintArea.MainContentBox.scroll-content.scroll-scrolly_visible{
+    overflow-x:hidden;
+    overflow-y:auto;
+    
+}
