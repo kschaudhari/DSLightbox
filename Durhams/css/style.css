@@ -79,7 +79,8 @@ body {
         height:650px;
 }
 .lighbox-container .lightbox-content .LeftBox {
-    width: 200px;
+    width: 20%;
+    max-width: 200px;
     height: 650px;
     position: fixed;
     overflow: hidden;
@@ -89,14 +90,14 @@ body {
     background-color:#152b36;
 }
 .lighbox-container .lightbox-content .Container {
-    max-width: 795px;
-    /*margin-left: 205px;*/
+    /*max-width: 795px;*/
     float: right;
     height: 100%;
     overflow: hidden;
     background-image: url(../images/contentBg.jpg);
+        background-size: cover;
     position:relative;
-    width: 100%;
+    width: 79.5%;
 }
 .ContentBox{
     /* width:83.1%; */

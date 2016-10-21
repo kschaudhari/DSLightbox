@@ -1,3 +1,4 @@
+
 @media screen and (max-width: 1023px) , screen and (max-height: 570px){
     #mydiv{
         position:fixed;
@@ -159,17 +160,11 @@
         padding-top:0px;
     }
 }
-@media screen and (max-height: 520px) {
-    
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    #mydiv-content {
-        max-width:900px;
+
+@media screen and (min-width : 1024px) and (max-width : 1100px)  {
+    .lighbox-container {
+        width: 92%;
+        margin: 0 auto;
     }
-    .lighbox-container .lightbox-content .LeftBox {
-        width: 20%;
-    }
-    .lighbox-container .lightbox-content .Container {
-        max-width: 79.5%;
-    }
+
 }
