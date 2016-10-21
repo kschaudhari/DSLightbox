@@ -162,3 +162,14 @@
 @media screen and (max-height: 520px) {
     
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    #mydiv-content {
+        max-width:900px;
+    }
+    .lighbox-container .lightbox-content .LeftBox {
+        width: 20%;
+    }
+    .lighbox-container .lightbox-content .Container {
+        max-width: 79.5%;
+    }
+}
