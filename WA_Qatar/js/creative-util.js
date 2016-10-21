@@ -52,6 +52,10 @@ function sendTrackerInfo() {
         });
         woopra.track();
 
+        var my_awesome_script = document.createElement('script');
+        my_awesome_script.setAttribute('src', 'https://ad.doubleclick.net/ddm/trackimpj/N3643.497583DIGITALSPRING/B10173311.140174400;dc_trk_aid=312388085;dc_trk_cid=75566080;ord=[timestamp];dc_lat=;dc_rdid=;tag_for_child_directed_treatment=?');
+        document.head.appendChild(my_awesome_script);
+
         return;
     }
     loadedTimerForTracker = window.setTimeout(sendTrackerInfo, 500);
