@@ -1345,8 +1345,7 @@ yx-axis
     width: 0;
 }
 /*  scroll bar end  */
-.MainContaintArea.MainContentBox.scroll-content.scroll-scrolly_visible{
-    overflow: scroll;
-    overflow-x:hidden;
+.scroll-content{
+    overflow: scroll !important;
 }
 

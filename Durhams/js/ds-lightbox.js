@@ -154,6 +154,7 @@ function loadTab() {
     // load video
     window.setTimeout(function () {
         detailPageLoaded();
+        setScrollBar();
     }, 500);
 
     lazyLoadImages();
@@ -277,7 +278,7 @@ function showTab(tabId, allowReLoad, slideDir) {
     
     $(".lighbox-container .lightbox-detailsPage .tab-page-details[data-tab='tab" + tabId + "']").addClass("active");
     $(".lighbox-container .Container .ContentBox .MainContaintArea").scrollTop(0);
-    setScrollBar();
+    
     
     $(".default-tab-content").show();
     $(".default-tab-content[data-tab='tab" + tabId + "']").hide();

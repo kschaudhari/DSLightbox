@@ -74,7 +74,9 @@
     .lighbox-container .lightbox-title{
         display:none;
     }
-    
+    .MainContentBox{
+        overflow:scroll !important;
+    }
     .content-para{
         width: auto;
         display: block;
