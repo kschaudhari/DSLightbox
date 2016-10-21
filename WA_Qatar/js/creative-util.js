@@ -27,11 +27,7 @@ function hideLightboxPopup() {
         stopVideos(activeTabVideo);
         
         window.parent.postMessage('LB_CLOSE', '*');
-        ga('send', 'event', { 'sessionControl': 'end' });
-        var trackers = ga.getAll();
-        trackers.forEach(function (tracker) {
-            ga.remove(tracker.get('name'));
-        });
+        ga('send', 'pageview', { 'sessionControl': 'end' });
     }
 }
 
