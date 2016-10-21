@@ -318,6 +318,38 @@
 	}
 
 }
+@media screen and (max-width: 768px) and (orientation : landscape) {
+    .topMobMenuBar{
+        height:91px;
+    }
+    .lighbox-container{
+        margin-top: 91px;
+    }
+    .lightbox-detailsPage{
+        height:100%;
+    }
+    .lighbox-container .lightbox-detailsPage .tab{
+        height: 100%;
+        padding-bottom: 60px;
+    }
+	.lighbox-container .lightbox-detailsPage .tab .BannerContentBox{
+        height: 47vh;
+        min-height:180px;
+	}
+    .lighbox-container .lightbox-detailsPage .tab .BannerContentBox .TextBanner{
+        padding-top:0px;
+    }
+    .readNextBox .NextTabLabel{
+        width:35%;
+    }
+    .ShareBox a{
+        width:25%;
+    }
+    .ShareBox a:last-child{
+        width:25%;
+        border-right:0px;
+    }
+}
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .lightbox-menuItem-boxed .lighbox-menuContent .hoverContent {
         top: 27%;

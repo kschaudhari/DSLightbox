@@ -22,7 +22,6 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-75055673-11', 'auto');
 
   var clickTagNeedToKnow = "https://po.st/9IoirF";
   var clickTagDiscoverWorld = "https://po.st/bjdRJP";
@@ -47,7 +46,7 @@
 
     <div id="mydiv">
         <div id="mydiv-content">
-            <a href="javascript:window.parent.postMessage('LB_CLOSE','*');" id="lightbox-exit" class="CloseBtn "></a>
+            <a href="javascript:void(0);" id="lightbox-exit" class="CloseBtn removePopup"></a>
             <div class="topMobMenuBar tab1Active">
                 <div class="topMobItem MobMenuBar">
                     <div class="mobMenu">
@@ -63,7 +62,7 @@
                             <img src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/mobWALogo.png" />
                         </div>
                     </div>
-                    <div id="lightbox-mobile-exit" onclick="javascript:window.parent.postMessage('LB_CLOSE','*');" class="mobMenuClose menuElement">
+                    <div id="lightbox-mobile-exit" class="mobMenuClose menuElement removePopup">
                         <img class="" src="https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/images/mobClose.png" />
                     </div>
                 </div>
@@ -1109,13 +1108,7 @@
             <div class="mobDetector"></div>
         </div>
     </div>
-    <script>
-         (function (d, p) {
-             var a = new Image(); a.onload = function () { a = null }; a.src =
-
-         (d.location.protocol == "https:" ? "https:" : "http:") + "//rs.gwallet.com/r1/pixel/x" + p + "r" + Math.round(1E9 * Math.random())
-         })(document, "39051")
-    </script>
+    
     <script>
 
         function inIframe() {

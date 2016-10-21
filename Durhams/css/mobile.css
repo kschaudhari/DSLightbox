@@ -1,0 +1,140 @@
+.removePopup{
+    cursor: pointer;
+}
+.topMobMenuBar{
+    width:100%;
+    position: fixed;
+    top:0;
+    width:100%;
+    height: 104px;
+    background-color:#1a213a;
+    position:fixed;
+    display:none;
+    z-index:10;
+    min-height: 104px;
+    background-color: #152b36;
+}
+.topMobMenuBar img{
+    vertical-align:middle;
+}
+.topMobMenuBar .topMobItem{
+    width:100%;
+    height: 50%;
+    position:relative;
+}
+.topMobMenuBar .topMobItem.MobMenuBar{
+    /* border-bottom: 1px solid #fff; */
+    overflow:hidden;
+}
+.topMobMenuBar .topMobItem .menuElement{
+    position: absolute;
+}
+    .topMobMenuBar .topMobItem .mobMenu {
+        width: 100%;
+        left:0px;
+        position: absolute;
+        height:100%;
+        /* cursor: pointer; */
+    }
+.topMobMenuBar .topMobItem .mobMenuIcon{
+    left: 50%;
+    /* width: 55.56%; */
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: 43%;
+}
+    
+.topMobMenuBar .topMobItem .mobMenuLogos{
+    left:51%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    width: 70%;
+}
+.topMobMenuBar .topMobItem .mobMenuClose
+{
+    right: 10px;
+    width: 9.375%;
+    max-width: 50px;
+    top: 10px;
+}
+.mob-follow-us.center-aling {
+    display: inline-block;
+    color: #fff;
+    margin: 0px auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 500px;
+}
+
+.mob-follow-us div {
+    float: left;
+    vertical-align: middle;
+    width: 17%;
+}
+.mob-follow-us .mob-follow-us-title{
+    font-family: Arial;
+    color: #FFF;
+    font-size:0.9em;
+    -ms-text-shadow: 0px 1px 1.96px rgba(0, 0, 0, 0.5);
+    -webkit-text-shadow: 0px 1px 1.96px rgba(0, 0, 0, 0.5);
+    -moz-text-shadow: 0px 1px 1.96px rgba(0, 0, 0, 0.5);
+    text-shadow: 0px 1px 1.96px rgba(0, 0, 0, 0.5);
+    min-width: 86px;
+}
+.mob-follow-us .mob-follow-us-icon {
+    /* display: inline-block; */
+    /* float: left; */
+    text-align: right;
+}
+.mob-follow-us .mob-follow-us-icon img{
+    vertical-align:middle;
+    cursor: pointer;
+}
+.topMobMenuBar .topMobItem .mobMenuIcon img,.topMobMenuBar .topMobItem .mobMenuLogos img, .topMobMenuBar .topMobItem .mobMenuClose img{
+    width:100%;
+    vertical-align: middle;
+    max-height: 44px;
+}
+
+
+.topMobMenuBar .topMobItem .mobMenuLogos .ShareBox {
+    width: 68%;
+    float: right;
+    padding-left: 2%;
+    text-align: right;
+}
+.topMobMenuBar .topMobItem .mobMenuLogos .ShareBox .Sharelabel {
+    font-size: 0.8em;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    width: 42%;
+    float: none;
+    display: inline-block;
+    top: 13%;
+    position: relative;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.topMobMenuBar .topMobItem .mobMenuLogos .ShareBox .SocialBox {
+    margin-left:0px;
+    float: none;
+    text-align: right;
+    display: inline-block;
+    width: 50%;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    height: 50px;
+    line-height: 50px;
+}

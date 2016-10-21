@@ -509,6 +509,9 @@
     .page-content.tab5-page-content .detail-page-text
     {
         padding:0px 10px;
+         width: -webkit-calc(100% - 20px);
+        width: -moz-calc(100% - 20px);
+        width: calc(100% - 20px);
     }
 }
 
@@ -548,6 +551,21 @@
         width: 75%;
     }
 
+}
+
+@media screen and (max-width: 767px)  and (orientation : landscape) , screen and (max-height: 570px) and (orientation : landscape) {
+    .topMobMenuBar{
+        height:91px;
+    }
+    .lighbox-container{
+        margin-top: 91px;
+    }
+    .lightbox-detailsPage{
+        height:100%;
+    }
+    .lighbox-container .lightbox-detailsPage .tab .BannerContentBox{
+        min-height:400px;
+    }
 }
 /* Safari CSS */
 @media screen and (min-color-index:0) and (webkit-min-device-pixel-ratio:0) { @media

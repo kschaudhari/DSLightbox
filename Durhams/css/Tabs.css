@@ -1,0 +1,108 @@
+.LeftBox .center-aling{
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.LeftBox .page-title {
+    position: absolute;
+    top: 20px;
+    
+}
+
+.LeftBox .follow-us {
+    position: absolute;
+    top: 90px;
+}
+
+.LeftBox .follow-us-title {
+     font-family: 'DurhamSans-Bold';
+    color: #FFF;
+    font-size: 0.8em;
+    -ms-text-shadow: 0px 1px 1.96px rgba(0, 0, 0, 0.5);
+    -webkit-text-shadow: 0px 1px 1.96px rgba(0, 0, 0, 0.5);
+    -moz-text-shadow: 0px 1px 1.96px rgba(0, 0, 0, 0.5);
+    text-shadow: 0px 1px 1.96px rgba(0, 0, 0, 0.5);
+}
+
+.LeftBox .follow-us-icon {
+    text-align: center;
+    margin-top: 34px;
+}
+.LeftBox .follow-us-icon img{
+    cursor:pointer;
+    border:0px;
+}
+
+.LeftBox .tag-line {
+    position: absolute;
+    bottom: 60px;
+}
+.content-image{
+    display:none;
+}
+.content-para{
+       /* background: #9f3a0d !important;*/
+        width: auto;
+        display: block;
+        padding-bottom: 0px;
+        padding-top: 0px;
+        min-height: initial;
+    }
+.FirstImgBGTextBox {
+    /* background: #839e25 !important;*/
+    background: url('../images/banners/New-detail-Sec1Bg.jpg') !important;
+}
+.content-para.section2 {
+        background: url('../images/banners/New-detail-Sec2Bg.jpg') !important;
+        background-size: cover !important;
+        margin-bottom: -2px;
+}
+    
+    .DescriptionBox{
+            padding: 0;
+    display: block;
+    max-width: 557px;
+    width: 100%;
+    margin: 0 auto;
+           /* padding: 0px 8%;
+            display: block;
+            width: auto;*/
+            text-align: left;
+    }
+    .FirstImgBGTextBox .DescriptionBox{
+        padding-bottom:30px;
+    }
+    .LastImgBGTextBox .DescriptionBox{
+        padding-bottom: 136px;
+    }
+    .CommonSec .DescriptionText{
+        text-align:left;
+        /*padding-bottom: 30px;*/
+        padding-bottom: 80px;
+        padding-top: 0px;
+    }
+    .content-image{
+        display: block;
+        /* width: 100%; */
+        padding-bottom: 0px;
+        overflow: hidden;
+        max-width: 1000px;
+        max-height: 620px;
+        overflow: hidden;
+        position: relative;
+        background-position:center;
+        background-size:cover;
+    }
+    .content-image:before{
+        content: "";
+        display: block;
+        padding-top: 40%;
+    }
+    .content-image img{
+        width:100%;
+    }
+.LastImgBGTextBox {
+    background: url('../images/banners/detail-Sec8Bg.jpg') !important;
+}

@@ -1,7 +1,7 @@
 ﻿
 function showLightboxPopup(type) {
     if (!inIframe()) {
-        sendTrackerInfo();
+        sendTrackerAndAutoplayVideo();
     }
     var defaultTab = 1;
     if (type)
@@ -18,6 +18,7 @@ function showLightboxPopup(type) {
 
 function hideLightboxPopup() {
     //$(".removePopup").trigger("click");
+    stopVideos();
     if (window.parent) {
         
         window.parent.postMessage('LB_CLOSE', '*');
@@ -30,26 +31,20 @@ function hideLightboxPopup() {
 }
 
 var loadedTimerForTracker = null;
-function sendTrackerInfo()
-{
-    if($(".lighbox-container").is(":visible"))
-    {
+function sendTrackerAndAutoplayVideo() {
+    sendTrackerInfo();
+    loadTab();
+}
+function sendTrackerInfo() {
+    if ($(".lighbox-container").is(":visible")) {
         window.clearTimeout(loadedTimerForTracker);
         if (typeof ga !== "undefined") {
-            ga('create', 'UA-75055673-14', 'auto');
-            ga('send', 'pageview', { 'sessionControl': 'start' });
+            ga('create', 'UA-75055673-16', 'auto');
+            ga('send', 'pageview', {'sessionControl': 'start'});
         }
         //add any pixel info to track
         //trackloadpixel();
-        (function () {
-            var s = document.createElement('script');
-            s.type = 'text/javascript';
-            s.async = true;
-            s.src = ('https:' == document.location.protocol ? 'https://s' : 'http://i')
-              + '.po.st/static/v4/post-widget.js#publisherKey=hd5fpp4mmp986324f5rl';
-            var x = document.getElementsByTagName('script')[0];
-            x.parentNode.insertBefore(s, x);
-        })();
+        (function (d, p) { var a = new Image(); a.onload = function () { a = null }; a.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//rs.gwallet.com/r1/pixel/x" + p + "r" + Math.round(1E9 * Math.random()) })(document, "40414");
         return;
     }
     loadedTimerForTracker = window.setTimeout(sendTrackerInfo, 500);
@@ -59,7 +54,10 @@ window.addEventListener("message", receiveMessage, false);
 function receiveMessage(event) {
     switch (event.data) {
         case "Slide_open":
-            sendTrackerInfo();
+            sendTrackerAndAutoplayVideo();
+            break;
+        case "Slide_close":
+            stopVideos();
             break;
     }
 }
@@ -116,4 +114,17 @@ function renderProgress(progress) {
     if (progress >= 100) {
 
     }
+}
+
+function openNewWindow(url)
+{
+    stopVideos();
+    window.open(url);
+}
+
+function handleStopEvent()
+{
+    $("#mydiv-content").click(function (e) {
+        e.stopPropagation()
+    })
 }

@@ -1,0 +1,269 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lightbox</title>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,500i" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="fonts/font.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css" />
+    <!--<link rel="stylesheet" type="text/css" href="css/bookblock.css" />-->
+    <meta property="og:url" content="http://www.thisisdurham.com/outdoors?utm_source=Digital%20Spring&amp;utm_medium=Lightbox&amp;utm_campaign=Durham_Explore" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="WIN A TRIP TO DURHAM!" />
+    <meta property="og:description" content="If we asked you to imagine Ben Fogle jumping off a waterfall, mountain-biking through forests, paddle-boarding on choppy waves and striding along rugged coastlines, you could reasonably assume we’d sent him to some far-flung destination. Instead, he’s just got back from a trip to Durham; less than three hours by train from London.<br/><br/> Feeling inspired? We’re giving away a two-night stay at the Rose &amp; Crown: an 18th-century coaching inn that occupies a prime patch of the Durham Dales." />
+    <meta property="og:image" content="http://www.your-domain.com/path/image.jpg" />
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/Tabs.css" />
+    <link rel="stylesheet" type="text/css" href="css/mobile.css" />
+    <link rel="stylesheet" type="text/css" href="css/Responsive.css" />
+
+    <script src="https://player.vimeo.com/api/player.js"></script>
+
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/customscroll.js"></script>
+    <script src="js/creative-util.js"></script>
+    <script src="js/ds-lightbox.js"></script>
+    <script>
+        var clickTagFb = "http://po.st/JaPtQ2";
+        var clickTagTweet = "http://po.st/OJ58Ym";
+        var clickTagInsta = "http://po.st/OydDgj";
+        var clickTagYouT = "http://po.st/zg7Cgg";
+
+        var clickTagEnterNow = "http://po.st/WiZQQR";
+        var clickTagFindMore = "http://po.st/qSxJUS";
+
+        var clickTagShareTweet = "http://hrefshare.com/f0932";
+        var clickTagShareFb = "http://hrefshare.com/dc6e7";
+    </script>
+    <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+          
+    </script>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+</head>
+<body>
+
+    <div id="mydiv">
+        <div id="mydiv-content">
+
+            <div class="topMobMenuBar tab1Active">
+                <div class="topMobItem MobMenuBar">
+                    <div class="mobMenu">
+                        <div class="mobMenuIcon menuElement">
+                            <img src="images/durhamLogo.png" />
+                        </div>
+                    </div>
+                    <div id="lightbox-mobile-exit" class="mobMenuClose menuElement">
+                        <img class="removePopup" src="images/mobClose.png" />
+                    </div>
+                </div>
+                <div class="topMobItem MobMenuBar">
+                    <div class="mob-follow-us center-aling">
+                        <div class="mob-follow-us-title">
+                            FOLLOW US
+                        </div>
+                            <div class="mob-follow-us-icon">
+                                <img src="images/fbIcon.png" onclick="javascript:openNewWindow(window.clickTagFb)" />
+                            </div>
+                            <div class="mob-follow-us-icon">
+                                <img src="images/tweet.png" onclick="javascript:openNewWindow(window.clickTagTweet)" />
+                            </div>
+                            <div class="mob-follow-us-icon">
+                                <img src="images/instaIcon.png" onclick="javascript:openNewWindow(window.clickTagInsta)" />
+                            </div>
+                            <div class="mob-follow-us-icon">
+                                <img src="images/youtubeIcon.png" onclick="javascript: openNewWindow(window.clickTagYouT)" />
+                            </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+            <div class="lighbox-container">
+
+                <div class="lightbox-content">
+                    <a href="javascript:void(0)" id="lightbox-exit" class="CloseBtn removePopup"></a>
+                    <div class="LeftBox">
+                        <div class="OverlayBg"></div>
+                        <div class="LeftBox-Container">
+                            <div class="page-title center-aling">
+                                <img src="images/durhamLogo.png" />
+                            </div>
+                            <div class="follow-us center-aling">
+                                <div class="follow-us-title">
+                                    FOLLOW US
+                                </div>
+                                <div class="follow-us-icons">
+                                    <div class="follow-us-icon">
+                                        <img src="images/fbIcon.png"  onclick="javascript:openNewWindow(window.clickTagFb)"/>
+                                    </div>
+                                    <div class="follow-us-icon" >
+                                        <img src="images/tweet.png" onclick="javascript:openNewWindow(window.clickTagTweet)"/>
+                                    </div>
+                                    <div class="follow-us-icon" >
+                                        <img src="images/instaIcon.png" onclick="javascript:openNewWindow(window.clickTagInsta)"/>
+                                    </div>
+                                    <div class="follow-us-icon" >
+                                        <img src="images/youtubeIcon.png" onclick="javascript:openNewWindow(window.clickTagYouT)"/>
+                                    </div>                                    
+                                </div>
+                            </div>
+                            <div class="tag-line center-aling">
+                                <img src="images/durhamBottomLogo.png" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Container">
+                        <div class="OverlayBg"></div>
+                        <div class="ContentBox">
+                            <div class="MainContaintArea MainContentBox">
+                                <div class="page-details">
+                                    <div class="VideoBox">
+                                        <div class="ContentVideo">
+                                            <div class="embed-container" >
+                                                <iframe id="video1Player" src="//player.vimeo.com/video/185791701" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="content-para FirstImgBGTextBox" data-background-image="images/banners/detail-Sec1Bg.jpg">
+                                        <div class="DescriptionBox">
+                                            <h1 class="BigHeading">Durham's Great Outdoors</h1>
+                                            <p class="DescriptionText">
+                                                If we asked you to imagine Ben Fogle jumping off a waterfall, mountain-biking through forests, paddle-boarding on choppy waves and striding along rugged coastlines, you could reasonably assume we’d sent him to some far-flung destination. Instead, he’s just got back from a trip to Durham (less than three hours by train from London), where he discovered the county’s wild side (and got a bit wet). If you weren’t familiar with Durham’s adventures, let us introduce you. This is your bite-size guide to what to do, here in this picturesque patch of North East England. Whether you’re into walks, wheels, water or all three, we’ve got you covered. 
+                                            </p>
+                                            <p class="DescriptionText">
+                                                In need of inspiration? Watch what Ben did on his recent trip to Durham. If you pay attention (and answer one easy question), you could even win a high-octane, two-night getaway for you and a friend… 
+                                            </p>
+                                            <p class="DescriptionText">Enjoy.</p>
+                                            <div class="page-title">
+                                                <img src="images/durhamLogo.png">
+                                            </div>
+                                            <div>
+                                                <button class="EnterBtn" onclick="javascript:openNewWindow(window.clickTagFindMore)">FIND OUT MORE</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                        <div class="content-para section2" data-background-image="images/banners/New-detail-Sec2Bg.jpg">
+                                            <div class="DescriptionBox">
+                                                <h1 class="BigHeading"> Durham adventures</h1>
+                                                <p class="DescriptionText">
+                                                    There’s more to Durham than a UNESCO-listed cathedral and castle (as incredible as they are). Landscapes with truly special status (the North Pennines Area of Outstanding Natural Beauty and Durham Heritage Coast), for example. It’s up to you how you experience Durham’s spectacular tapestry of woodlands, waterfalls, moorlands, forests, fields, beaches and more, but here are some ideas to get you started. 
+                                                </p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="content-para CommonSec walkingBgColor" data-background-image="images/banners/walkingdetail-Sec5Bg.jpg">
+                                            <div class="content-image">
+                                            </div>
+                                             <div class="DescriptionBox ">
+                                                <h1 class="BigHeading">Walking</h1>
+                                                <p class="DescriptionText">
+                                                    Set your own pace and take in the county’s incredible views on two feet. In the Durham Dales, look out for feathered locals (merlin, black grouse, golden plover, curlew, ring ouzel, kingfishers, dippers, buzzards and more) on the Weardale Way, which follows the River Wear. If you prefer waterfalls to wildlife, tick off both Low and High Force on the Waterfalls Walk (refuel at the Bowlees Visitor Centre, conquering cake and tea). For majestic moorland views, stride past upland sheep farms and across country on the Waskerley Way, keeping your eyes peeled for rare, jewel-bright butterflies (especially between May and late autumn). Coastal walks don’t get much more jaw-dropping than the one that takes in Blackhall Rocks and Nose’s Point en route to the lively harbour town of Seaham; enjoy a stroll around the marina and a well-deserved ice-cream on Durham’s Heritage Coast.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="content-para CommonSec  waterBgColor" data-background-image="images/banners/waterdetail-Sec4Bg.jpg">
+                                            <div class="content-image">
+                                            </div>
+                                            <div class="DescriptionBox">
+                                                <h1 class="BigHeading">Water</h1>
+                                                <p class="DescriptionText">
+                                                    There’s plenty for budding mermen and mermaids to do in Durham. Start by chasing waterfalls (safely) with Kingsway Adventure Centre, where a gorge walk will lead you to spectacular sights, such as Low Force. If you’re feeling brave enough, follow in Ben Fogle’s footsteps and try some waterfall jumping or white-water swimming for liquid thrills (don’t attempt either without expert supervision). Discover a different side to Durham’s Heritage Coast and learn some piratical skills with the help of the Seaham Harbour Activity Centre, which is opening soon, where you can go surfing, kayaking, canoeing, windsurfing, paddle-boarding and more. 
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="content-para CommonSec wheelsBgColor" data-background-image="images/banners/Forest-detail-Sec6Bg.jpg">
+                                            <div class="content-image">
+                                            </div>
+                                            <div class="DescriptionBox ">
+                                                <h1 class="BigHeading">Wheels</h1>
+                                                <p class="DescriptionText">
+                                                    Durham’s varied landscapes are guaranteed to make cyclists’ hearts skip a beat. Criss-crossing the county, hundreds of miles of cycle paths, disused railway lines, quiet country lanes and off-road trails are waiting to be explored, with options for every age and ability. Routes to tick off include: the W2W Cycle Route, which passes through wonderful countryside; the wildlife-rich Derwent Reservoir Multi-User Path and the C2C Cycle Route, one of the most popular cycle routes in the UK. Spend an afternoon exploring Hamsterley Forest, which is home to roughly 30 miles of loopy mountain bike trails, with different trail-levels marked out amid the evergreens, from blue (beginner) to black (advanced). Don’t just keep your eyes on the track: the trails come with eye-popping views across the Durham Dales and the North Pennines Area of Outstanding Natural Beauty (a UNESCO European and Global Geopark). Finally, if you’d like to give your legs an easy ride, hop on an electric bike and wheel around the Durham Dales without tensing a tendon.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        
+                                    <div class="content-para LastImgBGTextBox" data-background-image="images/banners/detail-Sec8Bg.jpg">
+                                        <div class="DescriptionBox">
+                                            <h1 class="BigHeading">WIN a 2 night<br /> adventure break for two in Durham</h1>
+                                            <h3 class="ItalicHeading">A gorge walking experience for two with Kingsway Adventure Centre and a free water sports session for two at Seaham Marina on the Durham Coast and a Durham VIP pass, worth £400.</h3>
+                                            <p class="DescriptionText">
+                                                Feeling inspired by Ben’s adventures? There’s plenty of room for you in Durham, too, where a warm welcome awaits. We’re giving away a two-night stay at the Rose & Crown: an 18th-century coaching inn that occupies a prime patch of the Durham Dales. The Rose & Crown rubs shoulders with a Saxon church in the pretty village of Romaldkirk, near the picturesque market town of Barnard Castle; it also has an award-winning restaurant, where the winner – plus a friend – will be treated to dinner on one night. In celebration of Durham’s wild side, the prize includes local adventures: a gorge-walking experience for two with Kingsway Adventure Centre, plus a free watersports session for two at the Seaham Harbour Activity Centre on the Durham Heritage Coast. Last but not least, the winner will be given a Durham VIP Pass (worth £400), so that they can discover even more of this incredible county. To be in with a chance of winning, just watch Ben’s adventure and answer one easy question here…
+                                            </p>
+                                            
+                                            <div class="EnterNowBox">
+                                                <button class="EnterBtn" onclick="javascript:openNewWindow(window.clickTagEnterNow)">ENTER NOW</button>
+                                            </div>
+                                            <div class="ShareBox">
+                                                <span class="Sharelabel">SHARE THIS ARTICLE:</span>
+                                                <span class="SocialBox">
+                                                    <a href="javascript:openNewWindow('https://twitter.com/intent/tweet?text=There%E2%80%99s+more+to+Durham+than+a+UNESCO-listed+cathedral+and+castle.+If+you+weren%E2%80%99t+familiar+with+Durham%E2%80%99s+adventures%2C+let+us+introduce+you.&url=http%3A%2F%2Fgoo.gl%2Fq1TzBO')"  class="tweet">TWITTER<img class="socialImg" src="images/tweet.png" /></a>
+                                                    <a href="javascript:openNewWindow('http://hrefshare.com/dc6e7')" class="fb fb-share-button">FACEBOOK<img class="socialImg" src="images/fbIcon.png" /></a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="scrollbar-external_wrapper">
+                    <div class="external-scroll_y">
+                        <div style="position:relative">
+                            <div class="scroll-element_outer">
+                                <div class="scroll-element_size"></div>
+                                <div class="scroll-element_track"></div>
+                                <div class="scroll-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div id="preloadImages" style="display:none">
+                
+            </div>
+            <div class="mobDetector"></div>
+        </div>
+    </div>
+    
+   
+
+    <script>
+
+        function inIframe() {
+            try {
+                return window.self !== window.top;
+            } catch (e) {
+                return true;
+            }
+        }
+        if (!inIframe())
+        {
+            var ligthbox = document.getElementById("mydiv");
+            ligthbox.style.backgroundColor = "rgba(0,0,0,0.7)";
+        }
+    </script>
+
+</body>
+</html>

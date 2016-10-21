@@ -365,7 +365,26 @@
     .description-para, .detail-page-head-line{
         padding: 20px 10px;
     }
-
+    .description-image-caption.dont-miss {
+        padding: 20px 10px;
+    }
+    .tab-details .detail-container .detail-container-background{
+        opacity:1;
+    }
+}
+@media screen and (max-width: 1023px) and (orientation: landscape), screen and (max-height: 570px) and (orientation: landscape){
+    .topMobMenuBar{
+        height:91px;
+    }
+    .lighbox-container{
+        margin-top: 91px;
+    }
+    .lightbox-detailsPage{
+        height:100%;
+    }
+    .topMobMenuBar .mobNavigator .mobNavigatorContent .mobCurrentTab .mobTab .mobCurrentTabLogo img{
+        width:17%;
+    }
 }
 /*
 @media screen and (max-width: 1078px) and (min-width: 768px) {

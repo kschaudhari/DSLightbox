@@ -805,7 +805,8 @@ padding-bottom: 2px;
 }
     .description-image-caption.dont-miss {
         display:block;
-        position:unset;
+        position:relative;
+        left:0px;
         padding: 20px;
         padding-top:0px;
         color: #042538;
