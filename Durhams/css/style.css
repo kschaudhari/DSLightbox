@@ -101,17 +101,22 @@ body {
 .ContentBox{
     /* width:83.1%; */
     margin: 0px auto 0;
-    position: relative;
+    position: absolute;
+    top:0px;
+    left:0px;
+    right:0px;
+    bottom:0px;
     height: 100%;
     /* background: #ccc; */
     /* max-width: 660px; */
+    z-index:10000;
 }
 .MainContentBox {
      display: block;
-     height: 100% !important;
+     height: 100%;
      overflow:hidden;
-     margin: 0px auto;
-     width: 100%;
+     /* margin: 0px auto; */
+     /* width: 100%; */
      /* max-width: 660px; */
 }
 .page-details{
@@ -192,6 +197,8 @@ body {
     bottom: 0px;
     left: 0px;
     opacity:0.3;
+    z-index:0;
+    
 }
 .content-para {
     background-size: cover;
@@ -348,9 +355,4 @@ outline:none;
     font-size: 1.1em;
     line-height: 22px;
     letter-spacing: 0.3px;
-}
-.MainContaintArea.MainContentBox.scroll-content.scroll-scrolly_visible{
-    overflow-x:hidden;
-    overflow-y:auto;
-    
 }
