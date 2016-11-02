@@ -152,6 +152,8 @@ function detailPageLoaded() {
 
 function loadTab() {
     // load video
+    var activeTab = $(".lighbox-container .MainContaintArea");
+    activeTab.scrollTop(0);
     window.setTimeout(function () {
         detailPageLoaded();
         setScrollBar();

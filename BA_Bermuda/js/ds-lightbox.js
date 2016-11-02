@@ -1,10 +1,19 @@
 ﻿function isMobile() {
     return $(".mobDetector").is(":visible");
 }
+function getQueryStringParameter(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
 $(document).ready(function () {
     var type = window.location.hash.substr(1);
-    if (document.referrer) {
+    if (document.referrer || getQueryStringParameter('site') == 'mrandmrssmith') {
         var is_mrs_reffer = document.referrer.indexOf("mrandmrssmith.com") > -1;
+        if (!is_mrs_reffer) {
+            is_mrs_reffer = getQueryStringParameter('site') == 'mrandmrssmith'
+        }
         if (is_mrs_reffer) {
             $(".lighbox-container").addClass("smithSource");
         }
