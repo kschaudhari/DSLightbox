@@ -60,7 +60,8 @@ font-family: "adobe-caslon-pro",serif;
 
 #contents {
 display:inline-block;
-max-width:100%;
+width:100%;
+max-width:600px;
 padding: 5px;
 box-sizing: border-box;
 }
@@ -69,8 +70,9 @@ box-sizing: border-box;
 box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.5);  
 }
 .feature {
-	width: 800px;
-	max-width:100%;
+    width: 100%;
+    max-width: 100%;
+    max-width: 600px;
 }
 .panview{
 	position: relative;
@@ -112,11 +114,11 @@ box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.5);
 
 	border-radius:60px;
 	border: 0px solid #000;
-	
+/*	
 -webkit-box-shadow: inset 0px 0px 17px 8px rgba(0,0,0,0.75);
 -moz-box-shadow: inset 0px 0px 17px 8px rgba(0,0,0,0.75);
 box-shadow: inset 0px 0px 17px 8px rgba(0,0,0,0.75);	
-
+    */
     background: url(drag.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -226,13 +228,18 @@ text-align: center;
     width: 178px;
     height: 58px;
     background-color: #c5e1e0;
-    margin-bottom:1px;
+    margin-bottom:2px;
     transition: width .2s;
 }
 #nav li:hover {
     width: 188px;
     background-color: #7dc3c0;
+        border-bottom: 2px solid #397472;
 }
+    #nav li div span {
+        position:relative;
+        top:5px;
+    }
 #nav li div {
     height: 58px;
     width: 178px;
@@ -259,8 +266,128 @@ transition: width .2s;
     text-decoration: none;
     color: #171717;
 }
+/* New Design */
+.CloseBtn {
+    position: absolute;
+    top: -8px;
+    right: -52px;
+    z-index: 12;
+    width: 60px;
+    height: 60px;
+    background-image: url(../images/Close.png);
+    display: block;
+}
+.MainWrapper {
+    position:relative;
+    max-width: 1000px;
+    max-height: 650px;
+    margin: 0 auto;
+    height: 100%;
+}
+.MainWrapper .view {
+    left: 0px;
+    right:0px;
+    width: 100%;
+    height: 100%;
+    max-width: 1000px;
+    max-height: 606px;
+    margin: 0 auto;
+}
+.MainWrapper #footer {
+    position:absolute;
+    line-height:44px;
+    height:44px;
+}
+.MainWrapper #footer img{
+    margin: 15px 8px !important;
+}
+.MainWrapper #footer .followText {
+    float:left;
+    color:#7dc1c0;
+    font-size:12px;
+    margin-left:26px;
+}
+.MainWrapper #footer a {
+    color: #fff;
+    text-decoration: none;
+    text-align: right;
+    float: right;
+    margin-right:30px;
+}
+#menu {
+    display:none;
+}
+.panview {
+    border-radius:50px;
+    border:0px;
+    box-shadow:none;
+}
+.img-pan-container {
+    border-radius:50px;
+}
+.BannerCaption {
+    font-size: 13px;
+    font-style: italic;
+    color: #fff;
+    position: absolute;
+    right: 35px;
+    bottom: 11px;
+    text-align: center;
+    width: 28%;
+}
+.BanerTopArrow {
+    position: absolute;
+    z-index:1;
+    width:100px;
+    height:27px;
+    top:-4px;
+    left:50%;
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-image: url(../images/bannerTopImg.png);
+}
+.BanerBottomArrow {
+    position: absolute;
+    z-index:1;
+    width:100px;
+    height:27px;
+    bottom:-4px;
+    left:50%;
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-image: url(../images/bannerBottomImg.png);
+}
+.readNext {
+  /*background-image: url(../images/nextArrowImg.png);
+  background-repeat:no-repeat;*/
+  background-color:#c5e2e0;
+  border:0px;
+  height:50px;
+  padding:0px 13px;
+  line-height: 50px;
+  cursor:pointer;
+}
+.readNext:focus {
+    outline:none;
+}
+.readNext .threeArrow {
+    position:relative;
+    -moz-transform: translateY(25%);
+    -webkit-transform: translateY(25%);
+    -ms-transform: translateY(25%);
+    transform: translateY(25%);
+   
+}
+.textCenter {text-align:center;}
+.copy .readNext span.img-caption {
+    display:none;
+}
 
-@media all and (max-width: 1000px) {
+@media all and (max-width: 910px) {
 #logo, #menu {
 position:absolute;
 }
@@ -379,6 +506,9 @@ border-radius:27px;
     height: 100% !important;
     position: relative;
     width: auto !important;
+
+ /*   max-width:1000px;
+    max-height:600px;*/
 }
 .scrollbar-external {
     height: 100%;
