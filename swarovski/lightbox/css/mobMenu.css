@@ -5,5 +5,8 @@
     .CloseBtn {
         right: 1px;
     }
+    .topMobMenuBar {
+        display:block;
+    }
 
 }
