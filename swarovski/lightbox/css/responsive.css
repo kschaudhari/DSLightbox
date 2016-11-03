@@ -1,0 +1,9 @@
+﻿@media all and (min-width: 1000px) and (max-width: 1100px){
+    .MainWrapper .view{
+      width: 90%;
+    }
+    .MainWrapper {
+      width: 90%;
+   }
+    
+}

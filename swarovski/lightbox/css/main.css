@@ -386,8 +386,15 @@ transition: width .2s;
 .copy .readNext span.img-caption {
     display:none;
 }
-
-@media all and (max-width: 910px) {
+@media all and (min-width: 768px) and (max-width: 940px){
+    #nav li {
+       width: 130px;
+    }
+    #nav li:hover {
+        width:150px;
+    }
+}
+@media all and (max-width: 850px) {
 #logo, #menu {
 position:absolute;
 }
@@ -399,6 +406,16 @@ visibility: hidden;
 }
 }
 
+@media all and (max-width: 768px){
+    .MainWrapper #footer a {
+        margin-right: 11px;
+    }
+    .MainWrapper #footer .followText {
+        margin-left: 11px;
+    }
+    
+}
+
 @media all and (max-width: 720px) {
 .panview {
 height:260px;
@@ -407,6 +424,7 @@ border-radius:40px;
 .img-pan-container{
 border-radius:37px;
 }
+
 }
 
 @media all and (max-width: 600px) {

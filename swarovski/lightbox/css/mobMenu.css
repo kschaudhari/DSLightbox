@@ -1,0 +1,9 @@
+﻿@media all and (max-width: 850px){
+    #menu {
+        display:block;
+    }
+    .CloseBtn {
+        right: 1px;
+    }
+
+}
