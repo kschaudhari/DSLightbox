@@ -198,7 +198,7 @@
 		  }
     });
 
-  
+    
 });$(window).load(function () {
     lazyLoadImages();
 });
@@ -227,12 +227,12 @@ function lazyLoadImages() {
 
     $('[data-image]').each(function (__, item) {
         var $item = $(item);
-        var imageUrl = $(item).attr("data-background-image");
+        var imageUrl = $(item).attr("data-image");
         if (isMobile()) {
-            imageUrl = $(item).attr("data-background-image-mobile");
+            imageUrl = $(item).attr("data-image-mobile");
         }
         else if (isTablet()) {
-            imageUrl = $(item).attr("data-background-image-tablet");
+            imageUrl = $(item).attr("data-image-tablet");
         }
 
         if ($item.find('.contentImage').length == 0) {

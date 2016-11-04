@@ -639,3 +639,22 @@ border-radius:27px;
 .tabletDetector {
     display:none;
 }
+.content-image {
+    position: relative;
+}
+.contentImageCaption {
+    position:absolute;
+    font-size:13px;
+    color:#fff;
+    font-style:italic;
+    width:100%;
+    bottom:10px;
+    text-align:center;
+}
+
+#nav ul {
+    left:-130px;
+}
+#nav ul:hover {
+    left:0px;
+}
