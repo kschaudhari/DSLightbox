@@ -29,7 +29,9 @@
     .scrollbar-external_wrapper {
         max-width: 96%;
     }
-    
+    .tabletDetector {
+        display:block;
+    }
    
 }
 @media all and (max-width: 768px){
@@ -39,5 +41,11 @@
     .scrollbar-external_wrapper {
         max-width: 100%;
     }
-
+    .mobDetector{display:block;}
 }
+@media all and (max-width: 767px){
+    .scrollbar-external_wrapper {
+       background: #fff;
+    }
+}
+

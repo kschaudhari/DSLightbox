@@ -269,15 +269,16 @@ transition: width .2s;
 }
 /* New Design */
 .CloseBtn {
-    position: absolute;
-    top: 0px;
-    right: 0px;
+        position: absolute;
+    top: -7px;
+    right: -3px;
     z-index: 12;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     background-image: url(../images/Close.png);
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     display: block;
+    background-size: cover;
 }
 .MainWrapper {
     position:relative;
@@ -420,9 +421,6 @@ visibility: hidden;
         display: inline-block;
         width: 90%;
     }
-    .scrollbar-external_wrapper {
-        background: #fff;
-    }
 }
 
 @media all and (max-width: 720px) {
@@ -552,7 +550,7 @@ border-radius:27px;
     cursor: pointer;
     display: none;
     position: absolute;
-    background: #313e39;
+    background: #fff;
     box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.09);
 }
  
@@ -568,9 +566,9 @@ border-radius:27px;
 .external-scroll_y.scroll-scrolly_visible {
     display: block;
     height: 200px;
-      -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    border-radius: 8px;
+      -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
     right: -25px;
     margin-top: -100px;
     top: 50%;
@@ -599,12 +597,12 @@ border-radius:27px;
 }
 .external-scroll_y .scroll-bar {
     height: 20%;
-      -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    border-radius: 8px;
+      -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
     background: #7dc3c0;
     width: 5px;
-    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.7);
+/*    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.7);*/
 }
 
 #nav input[type=checkbox] {
@@ -631,4 +629,13 @@ border-radius:27px;
     bottom:0px;
     left:0px;
     z-index:-2;
+    background-size: cover;
+    background-position: center center;
+}
+
+.mobDetector {
+    display: none;
+}
+.tabletDetector {
+    display:none;
 }

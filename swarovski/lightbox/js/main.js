@@ -196,7 +196,49 @@
               .insertAfter(this);
           }
 		  }
-     });
+    });
 
+  
+});$(window).load(function () {
+    lazyLoadImages();
 });
 })(jQuery);
+function isMobile() {
+    return $(".mobDetector").is(":visible");
+}
+
+function isTablet() {
+    return $(".tabletDetector").is(":visible");
+}
+
+function lazyLoadImages() {
+
+    $('[data-background-image]').each(function (__, item) {
+        var $item = $(item);
+        var imageUrl = $(item).attr("data-background-image");
+        if (isMobile()) {
+            imageUrl = $(item).attr("data-background-image-mobile");
+        }
+        else if (isTablet()) {
+            imageUrl = $(item).attr("data-background-image-tablet");
+        }
+        $item.css("background-image", 'url(' + imageUrl + ')');
+    });
+
+    $('[data-image]').each(function (__, item) {
+        var $item = $(item);
+        var imageUrl = $(item).attr("data-background-image");
+        if (isMobile()) {
+            imageUrl = $(item).attr("data-background-image-mobile");
+        }
+        else if (isTablet()) {
+            imageUrl = $(item).attr("data-background-image-tablet");
+        }
+
+        if ($item.find('.contentImage').length == 0) {
+            $img = $('<img class="contentImage" src="' + imageUrl + '"/>');
+            $item.append($img);
+        }
+
+    });
+}
