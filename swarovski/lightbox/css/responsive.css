@@ -32,6 +32,9 @@
     .tabletDetector {
         display:block;
     }
+    #nav ul.move-left {
+        left: -107px;
+    }
    
 }
 @media all and (max-width: 768px){

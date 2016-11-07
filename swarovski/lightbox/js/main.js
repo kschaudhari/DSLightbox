@@ -204,6 +204,17 @@
     lazyLoadImages();
 });
 
+$('.scrollbar-external').scroll(function () {
+    if ($(this).scrollTop() > 0) {
+        $('#nav ul').addClass("move-left");
+    }
+    else {
+        $('#nav ul').removeClass("move-left");
+    }
+});
+
+
+
 })(jQuery);
 function isMobile() {
     return $(".mobDetector").is(":visible");
