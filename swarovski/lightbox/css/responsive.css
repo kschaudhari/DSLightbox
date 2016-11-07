@@ -35,6 +35,9 @@
     #nav ul.move-left {
         left: -107px;
     }
+    #contents {
+        width: 62%;
+    }
    
 }
 @media all and (max-width: 768px){
@@ -45,6 +48,12 @@
         max-width: 100%;
     }
     .mobDetector{display:block;}
+    #contents {
+        width: 100%;
+    }
+    .panViewOverlay {
+        border-radius: 30px;
+    }
 }
 @media all and (max-width: 767px){
     .scrollbar-external_wrapper {
