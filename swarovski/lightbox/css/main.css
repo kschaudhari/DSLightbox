@@ -653,6 +653,27 @@ border-radius:27px;
     text-align:center;
 }
 
+.panViewOverlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-position: center center;
+    background-size: cover;
+        z-index: -1;
+    /*background-image: url('../images/panViewOverlay.png');*/
+        border-radius: 50px;
+    -webkit-box-shadow: inset 0px 0px 7px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: inset 0px 0px 7px 0px rgba(0,0,0,0.75);
+box-shadow: inset 0px 0px 7px 0px rgba(0,0,0,0.75);
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+65,000000+100&0+65,1+100,1+100 */
+background: -moz-linear-gradient(top,  rgba(0,0,0,0) 65%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 65%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(0,0,0,0) 65%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+
+}
 /*
 #nav ul {
     left:-130px;

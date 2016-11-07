@@ -174,7 +174,8 @@
         "autoScrollSize": false,
         "scrolly": $('.external-scroll_y'),
         "disableBodyScroll": true,
-        "ignoreMobile": true
+        "ignoreMobile": true,
+
     }).scrollTop(0);
 
     $("#contents").fitVids();
@@ -202,6 +203,7 @@
 });$(window).load(function () {
     lazyLoadImages();
 });
+
 })(jQuery);
 function isMobile() {
     return $(".mobDetector").is(":visible");
