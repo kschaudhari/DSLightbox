@@ -309,6 +309,7 @@ transition: width .2s;
     color:#7dc1c0;
     font-size:12px;
     margin-left:26px;
+    margin-right: 4px;
 }
 .MainWrapper #footer a {
     color: #fff;
@@ -652,9 +653,11 @@ border-radius:27px;
     text-align:center;
 }
 
+/*
 #nav ul {
     left:-130px;
 }
 #nav ul:hover {
     left:0px;
 }
+*/
