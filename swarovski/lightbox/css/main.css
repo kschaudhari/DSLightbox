@@ -175,7 +175,7 @@ line-height: 24px;
 a {
 color: #313E39;
 }
-#logo {
+#logo{
 position:fixed;
 top:0px;
 right:30px;
@@ -732,4 +732,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 }
 #logo {
     display:block !important;
+}
+.logoImg {
+    position: fixed;
+    top: 0px;
+    right: 30px;
+    margin: 10px 30px;
+    width: 9.5%;
+}
+.logoImg img {
+    width:100%;
 }

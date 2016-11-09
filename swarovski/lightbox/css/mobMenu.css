@@ -28,6 +28,8 @@
     width: 18%;
     right: 24%;
     bottom: 8px;
+    margin: 0;
+    top: initial;
 }
 .mobSwaroLogo img {
     width:100%;
