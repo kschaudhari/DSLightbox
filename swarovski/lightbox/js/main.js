@@ -213,6 +213,7 @@ function loadPageDetails() {
         nextButton();
         $(".mobileMenuCarosel .mobmainDiv .mobdiv[data-id='" + $('body').attr('data-id') + "']").addClass('active');
         $(".mobileMenuCarosel .Bullets .Dots[data-id='" + $('body').attr('data-id') + "']").addClass('active');
+        $("#menuList li[data-id='" + $('body').attr('data-id') + "']").addClass('active');
         return;
     }
     

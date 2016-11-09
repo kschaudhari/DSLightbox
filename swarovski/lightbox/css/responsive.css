@@ -15,7 +15,7 @@
 }
 @media all and (max-width: 1024px){
     #nav li, #nav li:hover {
-        width: 155px;
+        width: 170px;
     }
     #bkg{
          width: 165.2%;
@@ -33,7 +33,7 @@
         display:block;
     }
     #nav ul.move-left {
-        left: -107px;
+        left: -123px;
     }
     #contents {
         width: 62%;

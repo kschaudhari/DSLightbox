@@ -760,7 +760,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
     margin-right:0px;
     /* width:10%; */
     text-align:center;
-    margin: 0px 2%;
+    margin: 0px 2.4%;
     line-height:0px;
     position: relative;
     top: 50%;
@@ -773,4 +773,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
     margin:0px!important;
     /* width: 100%; */
     max-height:20px;
+}
+#menuList li.active {
+    width: 182px;
+    background-color: #7dc3c0;
+    border-bottom: 2px solid #397472;
 }

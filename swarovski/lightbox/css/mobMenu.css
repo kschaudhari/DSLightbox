@@ -9,7 +9,7 @@
 }
 .TextLogo {
     position:absolute;
-    width:70%;
+    width:55%;
     margin:0 auto;
     max-width:160px;
     text-align:center;
@@ -138,7 +138,7 @@ display:none;
     }
 
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     #nav ul {
         display:none;
     }
@@ -208,6 +208,19 @@ display:none;
     #title {
         display:none;
     }
-    
+    .TextLogo {
+        max-width:28%;
+    }
+    .mobSwaroLogo {
+        width: 11%;
+    }
        
+}
+@media (max-width: 767px) {
+    .logo {
+        display:none;
+    }
+    .TextLogo {
+        max-width: 100%
+    }
 }
