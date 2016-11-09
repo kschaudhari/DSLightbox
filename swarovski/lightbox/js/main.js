@@ -210,6 +210,7 @@ function loadPageDetails() {
     if ($('#nav ul').length > 0) {
         lazyLoadImages();
         mobMenuNavigation();
+        nextButton();
         $(".mobileMenuCarosel .mobmainDiv .mobdiv[data-id='" + $('body').attr('data-id') + "']").addClass('active');
         $(".mobileMenuCarosel .Bullets .Dots[data-id='" + $('body').attr('data-id') + "']").addClass('active');
         return;
@@ -241,6 +242,20 @@ function isTablet() {
 }
 
 function lazyLoadImages() {
+    $('[data-image-preview]').each(function (__, item) {
+        var $item = $(item);
+        var imageUrl = $(item).attr("data-image-preview");
+        if (isMobile()) {
+            imageUrl = $(item).attr("data-image-preview-mobile");
+        }
+        else if (isTablet()) {
+            imageUrl = $(item).attr("data-image-preview-tablet");
+        }
+        if ($item.find('.img-pan-container').length == 0) {
+            $("#panimage" ).attr("src", imageUrl);
+        
+        }
+    });
 
     $('[data-background-image]').each(function (__, item) {
         var $item = $(item);
@@ -269,6 +284,15 @@ function lazyLoadImages() {
             $item.append($img);
         }
 
+
+    });
+}
+function nextButton() {
+    $(".readNext").click(function () {
+        var nextPageId = parseInt($("body").attr("data-id")) + 1;
+        if (nextPageId > $("#menuList li").length)
+            nextPageId = 1;
+        window.location.href = $($("#menuList li").get(nextPageId - 1)).find('a').attr("href");
     });
 }
 function mobMenuNavigation() {
