@@ -211,10 +211,14 @@ function loadPageDetails() {
         lazyLoadImages();
         mobMenuNavigation();
         $(".mobileMenuCarosel .mobmainDiv .mobdiv[data-id='" + $('body').attr('data-id') + "']").addClass('active');
+        $(".mobileMenuCarosel .Bullets .Dots[data-id='" + $('body').attr('data-id') + "']").addClass('active');
         return;
     }
+    
     window.setTimeout(loadPageDetails, 100);
+    
 }
+
 
 $('.scrollbar-external').scroll(function () {
     if ($(this).scrollTop() > 0) {

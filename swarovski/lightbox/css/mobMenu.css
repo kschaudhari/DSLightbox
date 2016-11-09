@@ -40,15 +40,16 @@
     background-image: url(../images/mobMnuBg.png);
     overflow: hidden;
 	width:100%;
+       -webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
 }
 #mobMenu.mobileMenuCarosel .mobmainDiv .mobdiv{
 	width:auto;
 	width:100%;
 	height:90px;
     text-align:center;
-    -webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+ 
 display:none;
 }
 #mobMenu.mobileMenuCarosel .mobmainDiv .mobdiv.active{
@@ -83,6 +84,7 @@ display:none;
     border: none;
     color: #fff;
     font-family: "adobe-caslon-pro",serif;
+    outline:none;
 }
 
 #prev.button .ArrowImg{
@@ -103,6 +105,24 @@ display:none;
     position:absolute;
     right:0px;
 }
+.Bullets {
+    position:absolute;
+    bottom:10px;
+    width: 100%;
+    z-index: 1;
+    height: 10px;
+    text-align: center;
+}
+.Bullets .Dots {
+    width:8px;
+    border-radius:10px;
+    height:8px;
+    background-color:#fff;
+    display: inline-block;
+}
+.Bullets .Dots.active{
+    background-color:#313e39;
+}
 @media all and (max-width: 850px){
     #menu {
         display:block;
@@ -121,7 +141,8 @@ display:none;
     }
 
     #mobMenu.mobileMenuCarosel {
-        display:block !important;
+        /*display:block !important;*/
+        display:none !important;
     }
     .CloseBtn {
         position: fixed;
