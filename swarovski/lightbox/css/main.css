@@ -743,3 +743,34 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 .logoImg img {
     width:100%;
 }
+.MainWrapper #footer .socialIcons {
+    float:left;
+    width: 34%;
+    text-align:left;
+    height:20px;
+    position: relative;
+    top: 50%;
+    -moz-transform:translateY(-50%);
+    -webkit-transform:translateY(-50%);
+    -ms-transform:translateY(-50%);
+    transform:translateY(-50%);
+}
+.MainWrapper #footer .socialIcons a {
+    float:left;
+    margin-right:0px;
+    /* width:10%; */
+    text-align:center;
+    margin: 0px 2%;
+    line-height:0px;
+    position: relative;
+    top: 50%;
+    -moz-transform:translateY(-50%);
+    -webkit-transform:translateY(-50%);
+    -ms-transform:translateY(-50%);
+    transform:translateY(-50%);
+}
+.MainWrapper #footer .socialIcons a img {
+    margin:0px!important;
+    /* width: 100%; */
+    max-height:20px;
+}

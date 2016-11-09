@@ -36,15 +36,25 @@ body {
         <iframe name="view" src="overview.html" class="view" frameborder="0" scrolling="no"></iframe>
         <div id="footer">
             <span class="followText">follow</span>
-         <img src="css/social.png" style="float:left;margin:8px;" usemap="#map-social" class="editable" id="untitled-region-1" />
+            <div class="socialIcons">
+                <a href="#" class="sociallogo"><img class="s-logo" data-social-logo="images/twitter.png" data-social-logo-mobile="images/twitter@2x.png" data-social-logo-tablet="images/twitter@3x.png" /></a>
+                <a href="#" class="sociallogo"><img class="s-logo" data-social-logo="images/facebook.png" data-social-logo-mobile="images/facebook@2x.png" data-social-logo-tablet="images/facebook@3x.png" /></a>
+                <a href="#" class="sociallogo"><img class="s-logo" data-social-logo="images/instagram.png" data-social-logo-mobile="images/instagram@2x.png" data-social-logo-tablet="images/instagram@3x.png" /></a>
+            </div>
+            <a href="http://po.st/oxESVX" target="_blank">visit swarovskioptik.com<a>
+        </div>
+         <!--<img src="css/social.png" style="float:left;margin:8px;" usemap="#map-social" class="editable" id="untitled-region-1" />
         <a href="http://po.st/oxESVX" target="_blank">visit swarovskioptik.com<a></div>
         <map id="map1456451873090" name="map-social">
             <area shape="rect" coords="0,0,19,15" title="twitter" alt="twitter" href="http://po.st/bflG8F" target="_blank">
             <area shape="rect" coords="32,0,52,15" title="facebook" alt="facebook" href="http://po.st/jeDSEh" target="_blank">
             <area shape="rect" coords="67,0,86,15" title="email" alt="email" href="http://po.st/rkqgYh" target="_blank">
-        </map>
+        </map>-->
         <!-- Start of Woopra Code -->
     </div>
+    <div class="mobDetector"></div>
+    <div class="tabletDetector"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script>
 (function(){
         var t,i,e,n=window,o=document,a=arguments,s="script",r=["config","track","identify","visit","push","call","trackForm","trackClick"],c=function(){var t,i=this;for(i._e=[],t=0;r.length>t;t++)(function(t){i[t]=function(){return i._e.push([t].concat(Array.prototype.slice.call(arguments,0))),i}})(r[t])};for(n._w=n._w||{},t=0;a.length>t;t++)n._w[a[t]]=n[a[t]]=n[a[t]]||new c;i=o.createElement(s),i.async=1,i.src="//static.woopra.com/js/w.js",e=o.getElementsByTagName(s)[0],e.parentNode.insertBefore(i,e)
@@ -55,6 +65,38 @@ woopra.config({
 	outgoing_tracking: true
 });
 woopra.track();
+
+$(document).ready(function () {
+    loadPageDetails();
+});
+function loadPageDetails() {
+    lazyLoadImages();
+    window.setTimeout(loadPageDetails, 100);
+}
+
+function isMobile() {
+    return $(".mobDetector").is(":visible");
+}
+
+function isTablet() {
+    return $(".tabletDetector").is(":visible");
+}
+
+function lazyLoadImages() {
+
+    $('[data-social-logo]').each(function (__, item) {
+        var $item = $(item);
+        var imageUrl = $(item).attr("data-social-logo");
+        if (isMobile()) {
+            imageUrl = $(item).attr("data-social-logo-mobile");
+        }
+        else if (isTablet()) {
+            imageUrl = $(item).attr("data-social-logo-tablet");
+        }
+        $item.attr("src", imageUrl);
+
+    });
+}
 </script>
 
 <!-- End of Woopra Code -->

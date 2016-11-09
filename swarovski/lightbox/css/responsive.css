@@ -111,5 +111,11 @@
     .panview {
         margin-top: 11px;
     }
+    .MainWrapper #footer .socialIcons a {
+        margin: 0px 5%;
+    }
+    .MainWrapper #footer .socialIcons a img {
+        max-height: 14px;
+    }
 }
 

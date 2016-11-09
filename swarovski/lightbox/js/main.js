@@ -242,6 +242,7 @@ function isTablet() {
 }
 
 function lazyLoadImages() {
+
     $('[data-logo]').each(function (__, item) {
         var $item = $(item);
         var imageUrl = $(item).attr("data-logo");
@@ -256,7 +257,7 @@ function lazyLoadImages() {
 
         }
     });
-
+   
     $('[data-image-preview]').each(function (__, item) {
         var $item = $(item);
         var imageUrl = $(item).attr("data-image-preview");
