@@ -123,6 +123,7 @@ display:none;
 .Bullets .Dots.active{
     background-color:#313e39;
 }
+
 @media all and (max-width: 850px){
     #menu {
         display:block;
@@ -139,10 +140,59 @@ display:none;
     #nav ul {
         display:none;
     }
-
+    .mobCloseBurger {
+        display:block !important;
+    }
+    #nav #menuList {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 12;
+    left: 0;
+    height: 100%;
+    margin-top: 0px;
+    transform: translateX(0px);
+    
+}
+#nav #menuList li{
+    background-color:#c5e1e0;
+}
+#nav #menuList li, #nav #menuList li div {
+    width:100%;
+    text-align: center;
+    margin-bottom:0px;
+    display: inline-block;
+    line-height: 50px;
+    border-bottom:1px solid #fff;
+}
+#nav #menuList li div span:after {
+    display:none;
+}
+#nav #menuList li a{
+    display: inline-block;
+    width:100%;
+}
+#nav #menuList li div span {
+    font-size: 20px;
+}
+#nav #menuList li:hover {
+    border-bottom: 0px;
+}
+.mobCloseBurger {
+     height:50px;
+     background-color: #c5e1e0;
+}
+.ClickTocliseList {
+    position: absolute;
+    width: 10%;
+    left: 10px;
+    top: 16px;
+}
+.mobCloseBurger img {
+    width:100%;
+}
     #mobMenu.mobileMenuCarosel {
-        /*display:block !important;*/
-        display:none !important;
+        display:block !important;
     }
     .CloseBtn {
         position: fixed;

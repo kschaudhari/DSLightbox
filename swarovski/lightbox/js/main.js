@@ -296,6 +296,7 @@ function nextButton() {
     });
 }
 function mobMenuNavigation() {
+    
     $("#next").click(function () {
         
        // var x = $(".mobileMenuCarosel .mobmainDiv .mobdiv:visible").next().find("a").attr("href");
@@ -317,5 +318,16 @@ function mobMenuNavigation() {
         window.location.href = $($("#menuList li").get(nextPageId - 1)).find('a').attr("href");
         //alert(x);
         return false;
+    });
+
+    $(".mobBurger").click(function () {
+        $("#menuList").slideDown( 500, function(){ 
+            $("#menuList").show();
+        });
+    });
+    $(".ClickTocliseList").click(function () {
+        $("#menuList").slideUp('fast', function () {
+            $("#menuList").hide();
+        });
     });
 }
