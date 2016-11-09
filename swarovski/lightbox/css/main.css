@@ -729,3 +729,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 #nav ul:hover {
     left:0px;
 }
+#logo {
+    display:block !important;
+}

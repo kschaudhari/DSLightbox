@@ -1,6 +1,6 @@
 <input type="checkbox" id="show-menu" role="button" style="position: fixed;top: 0px;left: 0px;">
 
-<ul id="">
+<ul id="menuList">
     <li><a href="overview.html" target="view"><div><span>Overview</span></div></a></li>
     <li><a href="city.html" target="view"><div><span>City</span></div></a></li>
     <li><a href="coast.html" target="view"><div><span>Coast</span></div></a></li>
@@ -10,3 +10,19 @@
 
 
 </ul>
+<div id="mobMenu" class="mobileMenuCarosel" style="display:none;">
+    <div class="mobBurger"><img src="images/mobMenu.png" /></div>
+    <div class="TextLogo"><img src="images/see_the_unseen.png"></div>
+    <div class="mobSwaroLogo"><img src="images/swarovskioptik_logo.png"></div>
+    <div class="mobmainDiv">
+        <div class="mobdiv" data-id="1"><div><span>Overview</span></div></div>
+        <div class="mobdiv" data-id="2"><div><span>City</span></div></div>
+        <div class="mobdiv" data-id="3"><div><span>Coast</span></div></div>
+        <div class="mobdiv" data-id="4"><div><span>Nature</span></div></div>
+        <div class="mobdiv" data-id="5"><div><span>Scenery</span></div></div>
+        <div class="mobdiv" data-id="6"><div><span>Swarovski Optik</span></div></div>
+    </div>
+
+    <button id="prev" class="button"><span class="ArrowImg"></span>PREV</button>
+    <button id="next" class="button">NEXT<span class="ArrowImg"></span></button>
+</div>

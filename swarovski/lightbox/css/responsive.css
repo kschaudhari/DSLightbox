@@ -54,10 +54,62 @@
     .panViewOverlay {
         border-radius: 30px;
     }
+    
 }
 @media all and (max-width: 767px){
+    #logo {
+        display:none !important;
+    }
     .scrollbar-external_wrapper {
        background: #fff;
+    }
+    .MainWrapper #footer a {
+        font-size: 12px;
+    }
+    .BanerTopArrow {
+        width: 64px;
+        height: 16px;
+        background-size: cover;
+    }
+    .BanerBottomArrow {
+        width: 64px;
+        height: 16px;
+        background-size: cover;
+    }
+    #contents {
+        width: 85%;
+        margin-top: 96px;
+        margin-bottom:30px;
+    }
+    .MainWrapper {
+        max-height: 100%;
+    }
+    .scrollbar-external_wrapper {
+        max-height: 100%;
+    }
+    .MainWrapper .view {
+        max-height: 100%;
+    }
+    .MainWrapper #footer {
+        line-height: 30px;
+        height: 30px;
+    }
+    .MainWrapper #footer img {
+        margin: 7px 8px !important;
+    }
+    .leadfirst {
+        text-align: center;
+        font-size: 17px;
+    }
+    p {
+        font-size: 12px;
+        line-height: 17px;
+    }
+    #subtitle {
+        display: none;
+    }
+    .panview {
+        margin-top: 11px;
     }
 }
 

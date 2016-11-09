@@ -200,9 +200,21 @@
     });
 
     
+    mobMenuNavigation();
+    loadPageDetails();
 });$(window).load(function () {
-    lazyLoadImages();
+
+    
 });
+function loadPageDetails() {
+    if ($('#nav ul').length > 0) {
+        lazyLoadImages();
+        mobMenuNavigation();
+        $(".mobileMenuCarosel .mobmainDiv .mobdiv[data-id='" + $('body').attr('data-id') + "']").addClass('active');
+        return;
+    }
+    window.setTimeout(loadPageDetails, 100);
+}
 
 $('.scrollbar-external').scroll(function () {
     if ($(this).scrollTop() > 0) {
@@ -253,5 +265,29 @@ function lazyLoadImages() {
             $item.append($img);
         }
 
+    });
+}
+function mobMenuNavigation() {
+    $("#next").click(function () {
+        
+       // var x = $(".mobileMenuCarosel .mobmainDiv .mobdiv:visible").next().find("a").attr("href");
+        // window.location.href = x;
+        var nextPageId = parseInt($("body").attr("data-id")) + 1;
+        if (nextPageId > $("#menuList li").length)
+            nextPageId = 1;
+        window.location.href = $($("#menuList li").get(nextPageId - 1)).find('a').attr("href");
+        //alert(x);
+        return false;
+    });
+
+    $("#prev").click(function () {
+        // var x = $(".mobileMenuCarosel .mobmainDiv .mobdiv:visible").next().find("a").attr("href");
+        // window.location.href = x;
+        var nextPageId = parseInt($("body").attr("data-id")) - 1;
+        if (nextPageId > $("#menuList li").length)
+            nextPageId = 1;
+        window.location.href = $($("#menuList li").get(nextPageId - 1)).find('a').attr("href");
+        //alert(x);
+        return false;
     });
 }
