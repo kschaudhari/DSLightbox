@@ -32,8 +32,8 @@ body {
 </head>
 <body>
     <div class="MainWrapper">
-        <a href="javascript:void(0)" id="lightbox-exit" class="CloseBtn removePopup"></a>        
-        <iframe name="view" src="overview.html" class="view" frameborder="0" scrolling="no"></iframe>
+        <a href="javascript:hideLightboxPopup()" id="lightbox-exit" class="CloseBtn removePopup"></a>        
+        <iframe name="view" src="" class="view" frameborder="0" scrolling="no"></iframe>
         <div id="footer">
             <span class="followText">follow</span>
             <div class="socialIcons">
@@ -56,23 +56,39 @@ body {
     <div class="tabletDetector"></div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script>
-(function(){
-        var t,i,e,n=window,o=document,a=arguments,s="script",r=["config","track","identify","visit","push","call","trackForm","trackClick"],c=function(){var t,i=this;for(i._e=[],t=0;r.length>t;t++)(function(t){i[t]=function(){return i._e.push([t].concat(Array.prototype.slice.call(arguments,0))),i}})(r[t])};for(n._w=n._w||{},t=0;a.length>t;t++)n._w[a[t]]=n[a[t]]=n[a[t]]||new c;i=o.createElement(s),i.async=1,i.src="//static.woopra.com/js/w.js",e=o.getElementsByTagName(s)[0],e.parentNode.insertBefore(i,e)
-})("woopra");
-
-woopra.config({
-    domain: 'swarovski.dslabs.io',
-	outgoing_tracking: true
-});
-woopra.track();
 
 $(document).ready(function () {
     loadPageDetails();
+    if(!inIframe())
+    {
+        loadPage();
+    }
 });
 function loadPageDetails() {
     lazyLoadImages();
     window.setTimeout(loadPageDetails, 100);
 }
+function inIframe() {
+    try {
+        return window.self !== window.top;
+    } catch (e) {
+        return true;
+    }
+}
+
+
+function hideLightboxPopup() {
+    if (window.parent) {
+
+        window.parent.postMessage('LB_CLOSE', '*');
+        //ga('send', 'event', { 'sessionControl': 'end' });
+        //var trackers = ga.getAll();
+        //trackers.forEach(function (tracker) {
+        //    ga.remove(tracker.get('name'));
+        //});
+    }
+}
+
 
 function isMobile() {
     return $(".mobDetector").is(":visible");
