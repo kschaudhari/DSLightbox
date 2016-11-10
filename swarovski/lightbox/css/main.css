@@ -369,7 +369,7 @@ vertical-align: middle;
 .panview {
     border-radius:50px;
     border:0px;
-    box-shadow:none;
+   box-shadow: 0 0 60px rgba(255,255,255,.4);
 }
 .img-pan-container {
     border-radius:50px;
