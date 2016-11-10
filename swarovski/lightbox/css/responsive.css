@@ -102,8 +102,8 @@
         font-size: 17px;
     }
     p {
-        font-size: 12px;
-        line-height: 17px;
+        font-size: 14px;
+        line-height: 19px;
     }
     #subtitle {
         display: none;
@@ -112,7 +112,7 @@
         margin-top: 11px;
     }
     .MainWrapper #footer .socialIcons a {
-        margin: 0px 5%;
+        margin: 0px 8%;
     }
     .MainWrapper #footer .socialIcons a img {
         max-height: 14px;

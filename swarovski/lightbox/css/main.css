@@ -420,7 +420,10 @@ vertical-align: middle;
   height:50px;
   padding:0px 13px;
   line-height: 50px;
+  font-family: "adobe-caslon-pro",serif;
+  font-size:15px;
   cursor:pointer;
+  color:#000;
 }
 .readNext:focus {
     outline:none;
@@ -700,6 +703,9 @@ border-radius:27px;
     text-align:center;
     font-family: 'Proxima-Nova-Regular-Italic';
     letter-spacing:0.7px;
+    background-color: rgba(204, 204, 204, 0.7);
+    padding: 10px 0px;
+    bottom: 4px;
 }
 
 .panViewOverlay {
@@ -778,4 +784,30 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
     width: 182px;
     background-color: #7dc3c0;
     border-bottom: 2px solid #397472;
+}
+.seeTheLogo {
+    color:#003f28;
+    font-family: "adobe-caslon-pro",serif;
+    font-size: 33px;
+}
+.LinkBtn {
+    background-color: #c5e2e0;
+    padding: 0px 13px;
+    line-height: 50px;
+    cursor: pointer;
+    height: 50px;
+    color: #000;
+    text-decoration: none;
+    font-size: 15px;
+    display: inline-block;
+}
+.LinkBtn .threeArrow {
+    position: relative;
+    -moz-transform: translateY(30%);
+    -webkit-transform: translateY(30%);
+    -ms-transform: translateY(30%);
+    transform: translateY(30%);
+}
+.LinkBtn .img-caption {
+    display:none !important;
 }

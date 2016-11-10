@@ -3,6 +3,7 @@
     width: 10%;
     left: 10px;
     top:16px;
+    z-index:1;
 }
 .mobBurger img {
     width:100%;
@@ -27,12 +28,13 @@
     position: absolute;
     width: 18%;
     right: 24%;
-    bottom: 8px;
+    bottom: 11px;
     margin: 0;
     top: initial;
 }
 .mobSwaroLogo img {
     width:100%;
+    max-width: 70px;
 }
 #mobMenu.mobileMenuCarosel{
     position: fixed;
@@ -72,14 +74,14 @@ display:none;
     top:55px;
     left:10px;
     padding-left: 20px;
-    line-height: 25px;
+    line-height: 26px;
 }
 #next {
      position:absolute;
     top:55px;
     right:10px;
     padding-right: 20px;
-    line-height: 25px;
+    line-height: 26px;
 }
 .button {
     background: none;
@@ -91,29 +93,46 @@ display:none;
 
 #prev.button .ArrowImg{
     background-image: url(../images/prevmobArrow.png);
-        width: 14px;
-    height: 25px;
+    width: 15px;
+    height: 26px;
     display: inline-block;
     background-size: contain;
     position:absolute;
     left:0px;
 }
+#prev.button:hover, #prev.button:active {
+    color:#313e39;
+}
+#prev.button:hover .ArrowImg, #prev.button:active .ArrowImg {
+    background-image: url(../images/prevmobActArrow.png);
+}
 #next.button .ArrowImg{
-     background-image: url(../images/nextmobArrow.png);
-         width: 14px;
-    height: 25px;
+    background-image: url(../images/nextmobArrow.png);
+    width: 15px;
+    height: 26px;
     display: inline-block;
     background-size: contain;
     position:absolute;
     right:0px;
 }
+#next.button:hover, #next.button:active {
+    color:#313e39;
+}
+#next.button:hover .ArrowImg, #next.button:active .ArrowImg {
+    background-image: url(../images/nextmobActArrow.png);
+}
 .Bullets {
     position:absolute;
-    bottom:10px;
-    width: 100%;
+    bottom:11px;
+    width: 50%;
     z-index: 1;
     height: 10px;
     text-align: center;
+    left:50%;
+     -moz-transform:translateX(-50%);
+    -webkit-transform:translateX(-50%);
+    -ms-transform:translateX(-50%);
+    transform:translateX(-50%);
 }
 .Bullets .Dots {
     width:8px;
@@ -125,7 +144,21 @@ display:none;
 .Bullets .Dots.active{
     background-color:#313e39;
 }
-
+.seeTheLogoMob {
+    color:#003f28;
+    font-family: "adobe-caslon-pro",serif;
+    font-size: 21px;
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    top: 12px;
+    left: 50%;
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
 @media all and (max-width: 850px){
     #menu {
         display:block;
@@ -212,13 +245,16 @@ display:none;
         max-width:28%;
     }
     .mobSwaroLogo {
-        width: 11%;
+        width: 15%;
     }
        
 }
 @media (max-width: 767px) {
     .logo {
         display:none;
+    }
+    .mobSwaroLogo .logo {
+        display:block;
     }
     .TextLogo {
         max-width: 280px;
