@@ -112,7 +112,7 @@
         margin-top: 11px;
     }
     .MainWrapper #footer .socialIcons a {
-        margin: 0px 8%;
+        padding: 0px 8%;
     }
     .MainWrapper #footer .socialIcons a img {
         max-height: 14px;
