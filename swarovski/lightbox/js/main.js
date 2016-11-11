@@ -316,6 +316,7 @@ function lazyLoadImages() {
 
 
     });
+    //chooseCap();
 }
 function nextButton() {
     $(".readNext").click(function () {

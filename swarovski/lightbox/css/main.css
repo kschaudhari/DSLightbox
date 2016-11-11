@@ -160,7 +160,7 @@ height: auto;
 }
 .leadfirst {
 text-align:center;
-font-size: 23px;
+font-size: 21px;
 line-height: 26px;
 margin: 33px 0 0;
 }
@@ -380,7 +380,7 @@ vertical-align: middle;
     color: #fff;
     position: absolute;
     right: 9.5%;
-    bottom: 11px;
+    bottom: 22px;
     text-align: right;
     width: 100%;
     font-family: 'Proxima-Nova-Regular-Italic';
@@ -703,7 +703,7 @@ border-radius:27px;
     text-align:center;
     font-family: 'Proxima-Nova-Regular-Italic';
     letter-spacing:0.7px;
-    background-color: rgba(204, 204, 204, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 10px 0px;
     bottom: 4px;
 }

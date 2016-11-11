@@ -103,7 +103,7 @@
     }
     p {
         font-size: 15px;
-        line-height: 19px;
+        line-height: 22px;
     }
     #subtitle {
         display: none;
@@ -116,6 +116,11 @@
     }
     .MainWrapper #footer .socialIcons a img {
         max-height: 14px;
+    }
+    .BannerCaption {
+        bottom: 11px;
+        width: 81%;
+        text-align:center;
     }
 }
 

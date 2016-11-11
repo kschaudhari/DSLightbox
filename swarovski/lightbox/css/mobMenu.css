@@ -190,14 +190,14 @@ display:none;
     
 }
 #nav #menuList li{
-    background-color:#c5e1e0;
+    background-color:#003f28;
 }
 #nav #menuList li, #nav #menuList li div {
     width:100%;
     text-align: center;
     margin-bottom:0px;
     display: inline-block;
-    line-height: 50px;
+    line-height: 43px;
     border-bottom:1px solid #fff;
 }
 #nav #menuList li div span:after {
@@ -209,13 +209,14 @@ display:none;
 }
 #nav #menuList li div span {
     font-size: 20px;
+    color:#fff;
 }
 #nav #menuList li:hover {
     border-bottom: 0px;
 }
 .mobCloseBurger {
      height:50px;
-     background-color: #c5e1e0;
+     background-color: #003f28;
 }
 .ClickTocliseList {
     position: absolute;
