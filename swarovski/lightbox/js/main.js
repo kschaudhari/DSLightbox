@@ -90,7 +90,20 @@
 				});
 			//panning animation 60FPS
 			if(timer) clearInterval(timer);
-			timer=setInterval(function(){
+			timer = setInterval(function () {
+			    if (dest[0] < 0)
+			        dest[0] = 0;
+			    if (dest[1] < 0)
+			        dest[1] = 0;
+
+			    var parentWidth = $this.parent().width();
+			    var parentHeight = $this.parent().height();
+			    if (dest[0] > $this.outerHeight(true) - parentHeight)
+			        dest[0] = $this.outerHeight(true) - parentHeight;
+
+			    if (dest[1] > $this.outerWidth(true) - parentWidth)
+			        dest[1] = $this.outerWidth(true) - parentWidth;
+
 				_tweenTo($this[0],"top",-dest[0],speed);
 				_tweenTo($this[0],"left",-dest[1],speed);
 			},16.6);
