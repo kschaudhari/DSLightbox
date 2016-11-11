@@ -379,10 +379,10 @@ vertical-align: middle;
     font-style: italic;
     color: #fff;
     position: absolute;
-    right: 35px;
+    right: 9.5%;
     bottom: 11px;
-    text-align: center;
-    width: 28%;
+    text-align: right;
+    width: 100%;
     font-family: 'Proxima-Nova-Regular-Italic';
     letter-spacing:0.7px;
 }
