@@ -28,6 +28,7 @@ text-decoration:none;
 body {
     background-color: rgba(0, 0, 0, 0.701961);
 }
+    
 </style>
 </head>
 <body>
@@ -41,7 +42,7 @@ body {
                 <a href="http://po.st/jeDSEh" target="_blank" class="sociallogo"><img class="s-logo" data-social-logo="images/facebook.png" data-social-logo-mobile="images/facebook@2x.png" data-social-logo-tablet="images/facebook@3x.png" /></a>
                 <a href="http://po.st/rkqgYh" target="_blank" class="sociallogo"><img class="s-logo" data-social-logo="images/instagram.png" data-social-logo-mobile="images/instagram@2x.png" data-social-logo-tablet="images/instagram@3x.png" /></a>
             </div>
-            <a href="http://po.st/oxESVX" target="_blank">visit swarovskioptik.com<a>
+            <a href="http://po.st/oxESVX" target="_blank">visit swarovskioptik.com</a>
         </div>
          <!--<img src="css/social.png" style="float:left;margin:8px;" usemap="#map-social" class="editable" id="untitled-region-1" />
         <a href="http://po.st/oxESVX" target="_blank">visit swarovskioptik.com<a></div>
@@ -113,6 +114,33 @@ function lazyLoadImages() {
 
     });
 }
+
+window.addEventListener("message", receiveFrameMessage, false);
+
+function receiveFrameMessage(event) {
+    if (!event.data)
+        return;
+    var data = JSON.parse(event.data);
+    if (!data || !data.message)
+        return;
+    switch (data.message) {
+        case "Frame_Change":
+            //lbclose();
+            // fade out and on complete fade in
+            $('.MainWrapper iframe').fadeIn(400);
+
+            break;
+
+        case "Frame_Change_Out":
+            
+            $('.MainWrapper iframe').fadeOut(400, function () {
+                $('.MainWrapper iframe').attr("src", data.url);
+                
+            });
+            break;
+    }
+}
+
 </script>
 
 <!-- End of Woopra Code -->

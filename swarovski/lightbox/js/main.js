@@ -215,9 +215,13 @@
     
     mobMenuNavigation();
     loadPageDetails();
-});$(window).load(function () {
 
     
+     
+    
+}); $(window).load(function () {
+
+   
 });
 function loadPageDetails() {
     if ($('#nav ul').length > 0) {
@@ -227,6 +231,19 @@ function loadPageDetails() {
         $(".mobileMenuCarosel .mobmainDiv .mobdiv[data-id='" + $('body').attr('data-id') + "']").addClass('active');
         $(".mobileMenuCarosel .Bullets .Dots[data-id='" + $('body').attr('data-id') + "']").addClass('active');
         $("#menuList li[data-id='" + $('body').attr('data-id') + "']").addClass('active');
+
+        //window.parent.postMessage('Frame_Change', '*');
+        var data = {
+            message: "Frame_Change",
+        }
+        window.parent.postMessage(JSON.stringify(data), '*');
+
+        $('#nav ul li a').click(function () {
+            var iframeSrc = $(this).attr('href');
+            changePage(iframeSrc);
+            return false;
+        });
+
         return;
     }
     
@@ -320,20 +337,30 @@ function lazyLoadImages() {
 }
 function nextButton() {
     $(".readNext").click(function () {
-        var nextPageId = parseInt($("body").attr("data-id")) + 1;
-        if (nextPageId > $("#menuList li").length)
-            nextPageId = 1;
-        window.location.href = $($("#menuList li").get(nextPageId - 1)).find('a').attr("href");
+        moveNext();
     });
+}
+function moveNext()
+{
+    var nextPageId = parseInt($("body").attr("data-id")) + 1;
+    if (nextPageId > $("#menuList li").length)
+        nextPageId = 1;
+    changePage($($("#menuList li").get(nextPageId - 1)).find('a').attr("href"));
+}
+function changePage(url)
+{
+    var data = {
+        message: "Frame_Change_Out",
+        url: url
+    }
+    window.parent.postMessage(JSON.stringify(data), '*');
+    //window.location.href = url;
 }
 function mobMenuNavigation() {
     
     $("#next").click(function () {
         
-        var nextPageId = parseInt($("body").attr("data-id")) + 1;
-        if (nextPageId > $("#menuList li").length)
-            nextPageId = 1;
-        window.location.href = $($("#menuList li").get(nextPageId - 1)).find('a').attr("href");
+        moveNext();
         return false;
     });
 
@@ -342,7 +369,7 @@ function mobMenuNavigation() {
         var nextPageId = parseInt($("body").attr("data-id")) - 1;
         if (nextPageId > $("#menuList li").length)
             nextPageId = 1;
-        window.location.href = $($("#menuList li").get(nextPageId - 1)).find('a').attr("href");
+        changePage($($("#menuList li").get(nextPageId - 1)).find('a').attr("href"));
         return false;
     });
 
