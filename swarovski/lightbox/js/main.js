@@ -283,6 +283,15 @@ function lazyLoadImages() {
         else if (isTablet()) {
             imageUrl = $(item).attr("data-logo-tablet");
         }
+        else {
+            var cap = chooseCap(3);
+            if (cap == 2) {
+                imageUrl = $(item).attr("data-logo-mobile");
+            }
+            else if (cap == 3) {
+                imageUrl = $(item).attr("data-logo-tablet");
+            }
+        }
         if ($item.find('.logoImg').length == 0) {
             $(".logo").attr("src", imageUrl);
 
@@ -297,6 +306,15 @@ function lazyLoadImages() {
         }
         else if (isTablet()) {
             imageUrl = $(item).attr("data-image-preview-tablet");
+        }
+        else {
+            var cap = chooseCap(3);
+            if (cap == 2) {
+                imageUrl = $(item).attr("data-image-preview-mobile");
+            }
+            else if (cap == 3) {
+                imageUrl = $(item).attr("data-image-preview-tablet");
+            }
         }
         if ($item.find('.img-pan-container').length == 0) {
             $("#panimage" ).attr("src", imageUrl);
@@ -313,6 +331,15 @@ function lazyLoadImages() {
         else if (isTablet()) {
             imageUrl = $(item).attr("data-background-image-tablet");
         }
+        else {
+            var cap = chooseCap(3);
+            if (cap == 2) {
+                imageUrl = $(item).attr("data-background-image-mobile");
+            }
+            else if (cap == 3) {
+                imageUrl = $(item).attr("data-background-image-tablet");
+            }
+        }
         $item.css("background-image", 'url(' + imageUrl + ')');
     });
 
@@ -325,6 +352,15 @@ function lazyLoadImages() {
         else if (isTablet()) {
             imageUrl = $(item).attr("data-image-tablet");
         }
+        else {
+            var cap = chooseCap(3);
+            if (cap == 2) {
+                imageUrl = $(item).attr("data-image-mobile");
+            }
+            else if (cap == 3) {
+                imageUrl = $(item).attr("data-image-tablet");
+            }
+        }
 
         if ($item.find('.contentImage').length == 0) {
             $img = $('<img class="contentImage" src="' + imageUrl + '"/>');
@@ -333,7 +369,7 @@ function lazyLoadImages() {
 
 
     });
-    //chooseCap();
+    
 }
 function nextButton() {
     $(".readNext").click(function () {

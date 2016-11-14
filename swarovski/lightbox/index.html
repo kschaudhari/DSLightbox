@@ -58,6 +58,7 @@ body {
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script>
 
+
 $(document).ready(function () {
     loadPageDetails();
     if(!inIframe())
@@ -110,6 +111,15 @@ function lazyLoadImages() {
         else if (isTablet()) {
             imageUrl = $(item).attr("data-social-logo-tablet");
         }
+        else {
+            var cap = chooseCap(3);
+            if (cap == 2) {
+                imageUrl = $(item).attr("data-social-logo-mobile");
+            }
+            else if (cap == 3) {
+                imageUrl = $(item).attr("data-social-logo-tablet");
+            }
+        }
         $item.attr("src", imageUrl);
 
     });
@@ -127,22 +137,25 @@ function receiveFrameMessage(event) {
         case "Frame_Change":
             //lbclose();
             // fade out and on complete fade in
-            $('.MainWrapper iframe').fadeIn(400);
+            $('.MainWrapper iframe').fadeIn(200);
 
             break;
 
         case "Frame_Change_Out":
             
-            $('.MainWrapper iframe').fadeOut(400, function () {
+            $('.MainWrapper iframe').fadeOut(300, function () {
                 $('.MainWrapper iframe').attr("src", data.url);
                 
             });
+            //window.setTimeout(function () {
+            //    $('.MainWrapper iframe').fadeIn(500);
+            //}, 300);
             break;
     }
 }
 
 </script>
-
+    <script src="js/retina.js"></script>
 <!-- End of Woopra Code -->
 </body>
 </html>
