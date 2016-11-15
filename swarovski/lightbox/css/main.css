@@ -99,6 +99,7 @@ box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.5);
 	box-sizing:border-box;
 	border: 3px solid #313e39;
 	border-radius:64px;
+    -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
 }
 
 .panview img{
