@@ -8,7 +8,7 @@
  * high-resolution images to devices with retina displays.
  */
 'use strict';
-
+var exports = {};
 Object.defineProperty(exports, "__esModule", {
   value: true
 });

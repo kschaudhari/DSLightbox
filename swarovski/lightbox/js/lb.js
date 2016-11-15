@@ -7,9 +7,7 @@ function lbopen() {
     console.log("LB OPEN");
 
     loadPage();
-    var axel = Math.random() + "";
-    var a = axel * 10000000000000;
-    document.write('<iframe src="https://5411306.fls.doubleclick.net/activityi;src=5411306;type=swaro0;cat=swaro0;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>');
+    
 
 	//window.location.hash = "#/section/1";
    // dataLayer.push({
@@ -39,7 +37,11 @@ function loadPage()
             src = "product";
             break;
     }
-    $(".MainWrapper iframe.view").attr("src", src + ".html")
+    $(".MainWrapper iframe.view").attr("src", src + ".html");
+    var axel = Math.random() + "";
+    var a = axel * 10000000000000;
+    var iframe = $('<iframe src="https://5411306.fls.doubleclick.net/activityi;src=5411306;type=swaro0;cat=swaro0;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>');
+    $('body').append(iframe);
 }
 window.addEventListener("message", receiveMessage, false);
 
