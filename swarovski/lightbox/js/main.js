@@ -183,7 +183,7 @@
 	};
 
 $(document).ready(function(){
-	$(".panview img").imagePanning();
+	
 
     $('.scrollbar-external').scrollbar({
         "autoScrollSize": false,
@@ -228,6 +228,7 @@
 function loadPageDetails() {
     if ($('#nav ul').length > 0) {
         lazyLoadImages();
+        $(".panview img").imagePanning();
         mobMenuNavigation();
         nextButton();
         $(".mobileMenuCarosel .mobmainDiv .mobdiv[data-id='" + $('body').attr('data-id') + "']").addClass('active');
