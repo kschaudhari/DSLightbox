@@ -244,16 +244,16 @@ function loadPageDetails() {
             return false;
         });
 
-        $("#wrapper").each(function (__, tabPage) {
-            swipedetect(tabPage, function (swipedir) {
-                if (swipedir == "left") {
-                    moveNext();
-                }
-                else if (swipedir == "right") {
-                    movePrevious();
-                }
-            })
-        });
+        //$("#wrapper").each(function (__, tabPage) {
+        //    swipedetect(tabPage, function (swipedir) {
+        //        if (swipedir == "left") {
+        //            moveNext();
+        //        }
+        //        else if (swipedir == "right") {
+        //            movePrevious();
+        //        }
+        //    })
+        //});
         return;
     }
     
