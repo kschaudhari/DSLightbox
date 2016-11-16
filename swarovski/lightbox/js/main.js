@@ -91,6 +91,8 @@
 			//panning animation 60FPS
 			if(timer) clearInterval(timer);
 			timer = setInterval(function () {
+			    if (!dest || dest.length == 0)
+			        return;
 			    if (dest[0] < 0)
 			        dest[0] = 0;
 			    if (dest[1] < 0)
@@ -244,16 +246,16 @@ function loadPageDetails() {
             return false;
         });
 
-        //$("#wrapper").each(function (__, tabPage) {
-        //    swipedetect(tabPage, function (swipedir) {
-        //        if (swipedir == "left") {
-        //            moveNext();
-        //        }
-        //        else if (swipedir == "right") {
-        //            movePrevious();
-        //        }
-        //    })
-        //});
+        $("#wrapper").each(function (__, tabPage) {
+            swipedetect(tabPage, function (swipedir) {
+                if (swipedir == "left") {
+                    moveNext();
+                }
+                else if (swipedir == "right") {
+                    movePrevious();
+                }
+            })
+        });
         return;
     }
     
