@@ -33,8 +33,15 @@
         display:block;
     }
     #nav ul.move-left {
-        left: -123px;
+        left: 0px;
     }
+    #menuList li.active {
+        width: 170px;
+    }
+    #nav li, #nav li:hover {
+        width: 160px;
+    }
+
     #contents {
         width: 62%;
     }
