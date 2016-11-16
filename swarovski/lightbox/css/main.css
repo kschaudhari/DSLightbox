@@ -419,7 +419,7 @@ vertical-align: middle;
 }
 .BanerTopArrow {
     position: absolute;
-    z-index:1;
+    z-index:10;
     width:100px;
     height:27px;
     top:-4px;
@@ -429,10 +429,12 @@ vertical-align: middle;
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     background-image: url(../images/bannerTopImg.png);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 .BanerBottomArrow {
     position: absolute;
-    z-index:1;
+    z-index:10;
     width:100px;
     height:27px;
     bottom:-4px;
@@ -442,6 +444,8 @@ vertical-align: middle;
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     background-image: url(../images/bannerBottomImg.png);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 .readNext {
   /*background-image: url(../images/nextArrowImg.png);
