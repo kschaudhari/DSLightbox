@@ -65,7 +65,21 @@
 				.after("<div class='resize' style='position:absolute; width:auto; height:auto; top:0; right:0; bottom:0; left:0; margin:0; padding:0; overflow:hidden; visibility:hidden; z-index:-1'><iframe style='width:100%; height:0; border:0; visibility:visible; margin:0' /><iframe style='width:0; height:100%; border:0; visibility:visible; margin:0' /></div>")
 				//image loaded fn
 				.one("load",function(){
-					setTimeout(function(){ $this.addClass("loaded").trigger("mousemove",1); },200);
+				    setTimeout(function () {
+				        $this.addClass("loaded").trigger("mousemove", 1);
+
+				        window.setTimeout(function () {
+				            $("#BanerTopArrow").addClass("BanerTopArrow");
+				            $("#BanerBottomArrow").addClass("BanerBottomArrow");
+				            $("#BannerCaption").addClass("BannerCaption");
+				            $("#panViewOverlay").addClass("panViewOverlay");
+
+				            $("#BanerBottomArrow").css("bottom", "-5px;");
+				            window.setTimeout(function () {
+				                $("#BanerBottomArrow").css("bottom", "-4px;");
+				            }, 100);
+				        }, 500);
+				    }, 200);
 				}).each(function(){ //run load fn even if cached
 					if(this.complete) $(this).load();
 				})
@@ -380,6 +394,12 @@ function lazyLoadImages() {
         $("#panimage").attr("src", imageUrl);
         $(".panview img").imagePanning();
     });
+
+    $("#BanerTopArrow").removeClass("BanerTopArrow");
+    $("#BanerBottomArrow").removeClass("BanerBottomArrow");
+    $("#BannerCaption").removeClass("BannerCaption");
+    $("#panViewOverlay").removeClass("panViewOverlay");
+
 
 }
 function nextButton() {
