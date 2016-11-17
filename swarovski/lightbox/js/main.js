@@ -65,7 +65,7 @@
 				.after("<div class='resize' style='position:absolute; width:auto; height:auto; top:0; right:0; bottom:0; left:0; margin:0; padding:0; overflow:hidden; visibility:hidden; z-index:-1'><iframe style='width:100%; height:0; border:0; visibility:visible; margin:0' /><iframe style='width:0; height:100%; border:0; visibility:visible; margin:0' /></div>")
 				//image loaded fn
 				.one("load",function(){
-					setTimeout(function(){ $this.addClass("loaded").trigger("mousemove",1); },1);
+					setTimeout(function(){ $this.addClass("loaded").trigger("mousemove",1); },200);
 				}).each(function(){ //run load fn even if cached
 					if(this.complete) $(this).load();
 				})
@@ -228,7 +228,7 @@
 function loadPageDetails() {
     if ($('#nav ul').length > 0) {
         lazyLoadImages();
-        $(".panview img").imagePanning();
+        
         mobMenuNavigation();
         nextButton();
         $(".mobileMenuCarosel .mobmainDiv .mobdiv[data-id='" + $('body').attr('data-id') + "']").addClass('active');
@@ -311,30 +311,6 @@ function lazyLoadImages() {
         }
     });
    
-    $('[data-image-preview]').each(function (__, item) {
-        var $item = $(item);
-        var imageUrl = $(item).attr("data-image-preview");
-        if (isMobile()) {
-            imageUrl = $(item).attr("data-image-preview-mobile");
-        }
-        else if (isTablet()) {
-            imageUrl = $(item).attr("data-image-preview-tablet");
-        }
-        else {
-            var cap = chooseCap(3);
-            if (cap == 2) {
-                imageUrl = $(item).attr("data-image-preview-mobile");
-            }
-            else if (cap == 3) {
-                imageUrl = $(item).attr("data-image-preview-tablet");
-            }
-        }
-        if ($item.find('.img-pan-container').length == 0) {
-            $("#panimage" ).attr("src", imageUrl);
-        
-        }
-    });
-
     $('[data-background-image]').each(function (__, item) {
         var $item = $(item);
         var imageUrl = $(item).attr("data-background-image");
@@ -382,7 +358,29 @@ function lazyLoadImages() {
 
 
     });
-    
+
+    $('[data-image-preview]').each(function (__, item) {
+        var $item = $(item);
+        var imageUrl = $(item).attr("data-image-preview");
+        if (isMobile()) {
+            imageUrl = $(item).attr("data-image-preview-mobile");
+        }
+        else if (isTablet()) {
+            imageUrl = $(item).attr("data-image-preview-tablet");
+        }
+        else {
+            var cap = chooseCap(3);
+            if (cap == 2) {
+                imageUrl = $(item).attr("data-image-preview-mobile");
+            }
+            else if (cap == 3) {
+                imageUrl = $(item).attr("data-image-preview-tablet");
+            }
+        }
+        $("#panimage").attr("src", imageUrl);
+        $(".panview img").imagePanning();
+    });
+
 }
 function nextButton() {
     $(".readNext").click(function () {
