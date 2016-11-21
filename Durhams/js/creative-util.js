@@ -27,6 +27,8 @@ function hideLightboxPopup() {
         trackers.forEach(function (tracker) {
             ga.remove(tracker.get('name'));
         });
+
+        window.clearTimeout(gaTimeout);
     }
 }
 
@@ -40,7 +42,8 @@ function sendTrackerInfo() {
         window.clearTimeout(loadedTimerForTracker);
         if (typeof ga !== "undefined") {
             ga('create', 'UA-75055673-16', 'auto');
-            ga('send', 'pageview', {'sessionControl': 'start'});
+            ga('send', 'pageview', { 'sessionControl': 'start' });
+            setGAAlive();
         }
         //add any pixel info to track
         //trackloadpixel();
@@ -53,6 +56,21 @@ function sendTrackerInfo() {
         return;
     }
     loadedTimerForTracker = window.setTimeout(sendTrackerInfo, 500);
+}
+
+var gaTimeout = null;
+function setGAAlive() {
+    gaTimeout = window.setTimeout(function () {
+        if (typeof ga !== "undefined") {
+            ga('send', {
+                hitType: 'event',
+                eventCategory: 'NoBounce',
+                eventAction: 'NoBounce',
+                eventLabel: 'Over 30 seconds'
+            });
+            setGAAlive();
+        }
+    }, 30000);
 }
 
 window.addEventListener("message", receiveMessage, false);
@@ -133,3 +151,4 @@ function handleStopEvent()
         e.stopPropagation()
     })
 }
+
