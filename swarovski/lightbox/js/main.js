@@ -203,9 +203,8 @@
     $('.scrollbar-external').scrollbar({
         "autoScrollSize": false,
         "scrolly": $('.external-scroll_y'),
-        "disableBodyScroll": true,
         "ignoreMobile": true,
-
+        "duration":10
     }).scrollTop(0);
 
     $("#contents").fitVids();
