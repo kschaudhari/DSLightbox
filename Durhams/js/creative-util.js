@@ -16,12 +16,12 @@ function showLightboxPopup(type) {
 
 }
 
-function hideLightboxPopup() {
+function hideLightboxPopup(skipEventRaise) {
     //$(".removePopup").trigger("click");
     stopVideos();
     if (window.parent) {
-        
-        window.parent.postMessage('LB_CLOSE', '*');
+        if (!skipEventRaise)
+            window.parent.postMessage('LB_CLOSE', '*');
         ga('send', 'event', { 'sessionControl': 'end' });
         var trackers = ga.getAll();
         trackers.forEach(function (tracker) {
@@ -80,7 +80,7 @@ function receiveMessage(event) {
             sendTrackerAndAutoplayVideo();
             break;
         case "Slide_close":
-            stopVideos();
+            hideLightboxPopup(true);
             break;
     }
 }
