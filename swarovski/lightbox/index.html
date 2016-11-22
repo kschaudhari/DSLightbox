@@ -28,12 +28,28 @@ text-decoration:none;
 body {
     
 }
+.dummyBackground{
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    max-width: 1000px;
+    max-height: 606px;
+    background-color:#fff;
+    z-index:-1;
+    /* border-bottom: 1px solid #1b2421; */
+    /* background-color: #fff; */
+
+}
     
 </style>
 </head>
 <body>
     <div class="MainWrapper">
-        <a href="javascript:hideLightboxPopup()" id="lightbox-exit" class="CloseBtn removePopup"></a>        
+        <a href="javascript:hideLightboxPopup()" id="lightbox-exit" class="CloseBtn removePopup"></a>
+        <div class="dummyBackground">
+
+        </div>        
         <iframe name="view" src="" class="view" frameborder="0" scrolling="no"></iframe>
         <div id="footer">
             <span class="followText">follow</span>

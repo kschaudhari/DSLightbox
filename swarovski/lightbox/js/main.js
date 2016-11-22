@@ -88,6 +88,7 @@
 				.parent().on("mousemove touchmove MSPointerMove pointermove",function(e,p){
 					var cont=$(this);
 					e.preventDefault();
+					e.stopPropagation();
 					var contH=cont.height(),contW=cont.width(),
 						isTouch=e.type.indexOf("touch")!==-1,isPointer=e.type.indexOf("pointer")!==-1,
 						evt=isPointer ? e.originalEvent : isTouch ? e.originalEvent.touches[0] || e.originalEvent.changedTouches[0] : e,
@@ -97,6 +98,11 @@
 						];
 					dest=[Math.round(($this.outerHeight(true)-contH)*(coords[0]/contH)),Math.round(($this.outerWidth(true)-contW)*(coords[1]/contW))];
 				})
+                .parent().on("touchstart touchend", function (e, p) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    
+                })
 				//resize fn
 				.find(".resize iframe").each(function(){
 					$(this.contentWindow || this).on("resize",function(){

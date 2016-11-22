@@ -129,8 +129,13 @@ $(document).ready(function () {
     $(window).resize(function (e) {
         if(isMobile())
         {
-            activeTabId = $(".topMobMenuBar .mobNavigatorContent .mobCurrentTab .mobTab.active").attr("data-tab").replace("tab", "");
-            handleMobNavigation(activeTabId, true);
+            var tabName = $(".topMobMenuBar .mobNavigatorContent .mobCurrentTab .mobTab.active").attr("data-tab");
+            if (!tabName)
+                tabName = "tab1";
+            if (tabName) {
+                activeTabId = tabName.replace("tab", "");
+                handleMobNavigation(activeTabId, true);
+            }
         }
     })
 });
