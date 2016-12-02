@@ -200,6 +200,7 @@
 				$this.wrap('<div class="fluid-width-video-wrapper"></div>').parent('.fluid-width-video-wrapper').css('padding-top', (aspectRatio * 100) + '%');
 				$this.removeAttr('height').removeAttr('width');
 			});
+			
 		});
 	};
 
@@ -277,6 +278,7 @@ function loadPageDetails() {
                 }
             })
         });
+        
         return;
     }
     
@@ -512,3 +514,18 @@ function swipedetect(el, callback) {
     }, false)
 }
 
+
+
+window.addEventListener("message", receiveInnerContentMessage, false);
+
+function receiveInnerContentMessage(event) {
+    switch (event.data) {
+        case "Stop_Videos":
+            
+            var iframe = $("#fitvid18719")[0].contentWindow;
+            iframe.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+               
+            
+            break;
+    }
+}

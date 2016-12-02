@@ -48,10 +48,17 @@ window.addEventListener("message", receiveMessage, false);
 function receiveMessage(event) {
 	switch (event.data) {
 		case "Slide_close":
-			lbclose();
+		    lbclose();
+		    $(".MainWrapper iframe.view").attr("src", "");
 			break;
 		case "Slide_open":
 			lbopen();
 			break;
 	}
+}
+
+function openInNewWindow(url)
+{
+    window.open(url);
+    $("#insideContents").get(0).contentWindow.postMessage("Stop_Videos", '*');
 }
