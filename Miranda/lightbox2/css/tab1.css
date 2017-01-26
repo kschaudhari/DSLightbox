@@ -1,0 +1,89 @@
+.tab1 .hero-img {background-image: url('../images/tab1/hero-img.jpg');}
+
+.tab1 .tab-title {
+    position: absolute;
+    top:20px;
+    left:20px;    
+    border-top: solid 1px rgba(255,255,255,0.5);
+    border-bottom: solid 1px rgba(255,255,255,0.5);
+    padding-top: 5px;
+    padding-bottom: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.tab1 .text-australian {
+  font-size: 36px;
+  font-family: "Proxima Nova",helvetica,arial;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  z-index: 72;
+  font-weight: 100;
+  margin-bottom: 0px;
+  margin-top:0px;
+}
+
+.tab1 .text-adventure {
+  font-size: 36px;
+  font-family: "Proxima Nova";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  z-index: 71;
+  margin-bottom: 0px;
+  margin-top:0px;
+}
+
+.tab1 .content {
+  font-size: 16px;
+  font-family: "Proxima Nova";
+  color: rgb(0, 79, 118);
+  line-height: 1.5;
+  text-align: justify;
+  top: 420px;
+  position: relative;
+}
+
+.tab1 .smith-logo {
+    float: right;
+    max-width: 80px;
+    display: block;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: -moz-optimize-contrast;
+    image-rendering: -o-optimize-contrast;
+    margin-top:10px;
+}
+
+.tab1 .curated
+{
+    font-size: 14px;
+    float: right;
+    margin-top:20px;
+    margin-right: 20px;
+}
+
+.tab1 .logos-container {
+    position: absolute;
+    right:20px;
+    top:220px;
+}
+
+
+.tab1 .oz-logo {max-width: 70px;margin-left:10px;}
+.tab1 .sa-logo {max-width: 60px;margin-left:17px;}
+.tab1 .logos-container img {
+    
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: -moz-optimize-contrast;
+    image-rendering: -o-optimize-contrast;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.tab1 .logos-text
+{
+    font-family: "Proxima Nova",Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    color: rgba(255,255,255,0.8);
+}

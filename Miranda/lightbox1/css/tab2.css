@@ -1,0 +1,47 @@
+.tab2 .hero-img {background-image: url('../images/tab2/bkg.jpg');}
+
+.tab2 .hero-title {
+    margin-top:35px;
+    font-size: 18px;
+    font-family: "Proxima Nova",Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.333;
+    text-align: justify;
+    margin-bottom: 0px;
+}
+
+.tab2 .hero-text
+{
+    margin-top:30px;
+    margin-bottom: 0px;
+    font-size: 16px;
+    font-family: "Proxima Nova",Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.533;
+    text-align: justify;
+    font-weight: 300;
+}
+
+.tab2 .trailfinders, .tab2 .brought {
+    float: right;
+}
+
+.tab2 .trailfinders {
+    display: block;
+    max-width: 240px;
+    margin-top: 110px;
+        image-rendering: -webkit-optimize-contrast;
+    image-rendering: -moz-optimize-contrast;
+    image-rendering: -o-optimize-contrast;
+}
+
+.tab2 .brought {
+    margin-top: 110px;
+    color: rgba(255,255,255,0.8);
+    margin-right: 10px;
+    font-size: 14px;
+    font-family: "Proxima Nova",Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+

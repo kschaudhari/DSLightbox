@@ -1,0 +1,262 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lightbox</title>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,500i" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/font.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/Tabs.css" />
+    <link rel="stylesheet" type="text/css" href="css/tab1.css" />
+    <link rel="stylesheet" type="text/css" href="css/tab2.css" />
+    <link rel="stylesheet" type="text/css" href="css/tab3.css" />
+    <link rel="stylesheet" type="text/css" href="css/mobile.css" />
+    <link rel="stylesheet" type="text/css" href="css/Responsive.css" />
+    <!--[if IE]>
+        <link type="text/css" href="css/ie.css" rel="stylesheet" />
+    <![endif]-->
+    <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    </script>
+    
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <script type="text/javascript">
+        var tag = document.createElement('script');
+        tag.id = 'iframe-demo';
+        tag.src = 'https://www.youtube.com/iframe_api';
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    </script>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/customscroll.js"></script>
+    <script src="js/creative-util.js"></script>
+    <script src="js/ds-lightbox.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.5/TweenMax.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.6/utils/Draggable.min.js"></script>
+    
+
+    <script>
+        var clickTagTweet = "https://twitter.com/WestAustralia";
+        var clickTagFb = "https://www.facebook.com/ExtraordinaryWesternAustralia";
+        var clickTagInsta = "https://www.instagram.com/westernaustralia/";
+        var clickTagYou = "https://www.youtube.com/user/westernaustralia";
+
+        var clickTabPage1ReadMore1 = "http://www.thetimes.co.uk/static/just-another-day-in-western-australia/welcome-to-the-real-australia/";
+        var clickTabPage1ReadMore3 = "http://www.thetimes.co.uk/static/just-another-day-in-western-australia/perths-best-kept-secrets/";
+        var clickTabPage1ReadMore2 = "http://www.thetimes.co.uk/static/just-another-day-in-western-australia/i-walked-onto-a-landscape-that-i-could-imagine-mars-looks-like/";
+        var clickTabPage1ReadMore4 = "http://www.thetimes.co.uk/static/just-another-day-in-western-australia/three-days-in-perth/";
+    </script>
+    <!-- url prefix for s3 https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/ -->
+</head>
+<body style="height:1000px;">
+
+    <div id="mydiv">
+        <div id="mydiv-content">
+
+            <div class="topMobMenuBar tab1Active">
+                <div class="topMobItem MobMenuBar">
+                    <div class="mobMenu">
+                        <div class="mobMenuIcon menuElement">
+                            <img src="images/mobMenu.png" />
+                        </div>
+                    </div>
+                    <div class="mobMenuLogos menuElement">
+
+                        <div class="mobWALogo">
+                            <img src="images/mobWALogo.png" />
+                        </div>
+                        <div class="mobDiscoverLogo">
+                            <img src="images/mobQatarLogo.png" />
+                        </div>
+                    </div>
+                    <div id="lightbox-mobile-exit" class="mobMenuClose menuElement">
+                        <img class="removePopup" src="images/mobClose.png" />
+                    </div>
+                </div>
+                <div class="mobDropdownMenu">
+                    <div class="mobDropdownMenuItem" data-tab="tab1">
+                        WESTERN AUSTRALIA
+                    </div>
+                    <div class="mobDropdownMenuItem" data-tab="tab2">food & WINE</div>
+                    <div class="mobDropdownMenuItem" data-tab="tab3">coastal & ACQUATIC</div>
+                </div>
+                <div class="topMobItem mobNavigator">
+
+                    <div class="mobNavigatorContent">
+                        <div class="mobPrevTab">
+                            <div class="navArrow">
+                                <img src="images/mobArrow.png" />
+                            </div>
+                        </div>
+                        <div class="mobNextTab">
+                            <div class="navArrow">
+                                <img src="images/mobArrow.png" />
+                            </div>
+                        </div>
+                        <div class="mobCurrentTab">
+                            <div class="mobNavigationTabs">
+                                <div class="mobTab1 mobTab active" data-tab="tab1">
+                                    <div class="mobCurrentTabLogo">
+                                        <span class="capitalCaseTitle">WESTERN AUSTRALIA</span>
+                                    </div>
+                                </div>
+                                <div class="mobTab2 mobTab" data-tab="tab2">
+                                    <div class="mobCurrentTabLogo">
+                                        <span class="capitalCaseTitle">FOOD & WINE</span>
+                                    </div>
+                                </div>
+                                <div class="mobTab3 mobTab" data-tab="tab3">
+                                    <div class="mobCurrentTabLogo">
+                                        <span class="capitalCaseTitle">COASTAL & AQUATIC</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="lighbox-container">
+                <div class="lightbox-content">
+                    <a href="javascript:void(0)" id="lightbox-exit" class="CloseBtn removePopup"></a>
+                    <div class="lightbox-detailsPage">
+
+                        <div class="tabs-container">
+                            
+                            <div class="tab tab1" data-tab="tab1">
+                                <div class="hero-img">
+                                    <div class="tab-title">
+                                        <p class="text-australian">Australian</p>
+                                        <p class="text-adventure">Adventure</p> 
+                                    </div>
+                                    <div class="logos-container">
+                                        <div class="logos-text">brought to you by</div>
+                                        <img class="oz-logo" src="../lightbox1/images/TA_URL_REVKylnW_S_CMYK@3x.png"/>
+                                        <img class="sa-logo" src="../lightbox1/images/SIA stacked_FC REV CMYK@3x.png"/>
+                                    </div>
+                                </div>
+                                <div class="content tab-container clearfix">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.
+            
+                                    <img class="smith-logo" src="../lightbox1/images/tab1/SMith logo@3x.png" />
+                                    <div class="curated">curated by</div>
+                                </div>
+                                
+                            </div>
+                            <div class="tab tab2" data-tab="tab2">
+                                <div class="hero-img">
+                                    <div class="tab-container">
+                                        <p class="hero-title">Holidays come in all shapes and sizes. Make sure yours is the perfect fit</p>
+                                        <p class="hero-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id  st laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
+                                        <img class="trailfinders" src="../lightbox1/images/tab2/TRAILFINDERS_CMYK_WHITE OUT_new@3x.png" />
+                                        <div class="brought">brought to you by</div>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="tab tab3" data-tab="tab3">
+                                <div class="hero-img">
+                                    <div id="map-container">
+                                        <img id="map" class="map" src="../lightbox1/images/tab3/test.svg" />
+                                    </div>
+                                    <img class="sia" src="../lightbox1/images/tab3/SIA logo@3x.png" />
+                                    <div class="zoom-container">
+                                        <img class="plus" src="../lightbox1/images/tab3/plus@3x.png" />
+                                        <img class="minus" src="../lightbox1/images/tab3/minus@3x.png" />
+                                    </div>
+                                </div>
+                             </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="lightbox-footer">
+                    <div class="lightbox-footer-top">
+                    </div>
+                    <div class="lightbox-footer-container">
+
+                        <div class="tab-menus-bottom-position">
+                            <div class="tab-menus-container">
+                                
+                                <div class="tab-menu tab-menu-1" data-tab="tab1">
+                                    <div class="tab-menu-text">
+                                        Australian Adventure
+                                    </div>
+                                </div>
+
+                                <div class="tab-menu tab-menu-2" data-tab="tab2">
+                                    <div class="tab-menu-text">
+                                        Plan Your Trip
+                                    </div>
+                                </div>
+
+                                <div class="tab-menu tab-menu-3" data-tab="tab3">
+                                    <div class="tab-menu-text">
+                                        Fly Singapore Airlines
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+                    <div class="tab-menu1-preload"></div>
+                    <div class="tab-menu2-preload"></div>
+                    <div class="tab-menu3-preload"></div>
+
+                    <div class="external-scroll_y">
+                        <div style="position:relative">
+                            <div class="scroll-element_outer">
+                                <div class="scroll-element_size"></div>
+                                <div class="scroll-element_track"></div>
+                                <div class="scroll-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            
+            <div class="mobDetector"></div> <!-- this class used to detect mobile in javascript -->
+        </div>
+    </div>
+
+    <script>
+
+         function inIframe() {
+             try {
+                 return window.self !== window.top;
+             } catch (e) {
+                 return true;
+             }
+         }
+         if (!inIframe())
+         {
+             var ligthbox = document.getElementById("mydiv");
+             ligthbox.style.backgroundColor = "rgba(0,0,0,0.7)";
+         }
+    </script>
+
+     <script>
+        Draggable.create("#map", {
+        type:"x,y",
+        bounds: "#map-container",
+        edgeResistance:1.0
+        });
+    </script>
+
+</body>
+</html>

@@ -529,3 +529,10 @@ function receiveInnerContentMessage(event) {
             break;
     }
 }
+
+function openInNewWindow(url)
+{
+    window.open(url);
+    var iframe = $("#fitvid18719")[0].contentWindow;
+    iframe.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+}

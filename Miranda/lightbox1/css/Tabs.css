@@ -1,0 +1,90 @@
+.tab-menus-bottom-position
+{
+    position: absolute;
+    bottom: 0px;
+    width:  100%;
+    overflow: visible;
+}
+
+.tab-menus-container
+{
+    position: relative;
+    margin: 0 auto;
+    z-index: 10;
+    width:765px;
+    overflow: visible;
+
+}
+
+.tab-menu {
+    width:252px;
+
+    margin-right: 0px;
+    display: inline-block;
+    margin-bottom: -30px;
+    position: relative;
+
+    transition: margin-bottom 0.2s ease-in-out;
+    height: 92px;
+    background-size: cover;
+    
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: -moz-optimize-contrast;
+    image-rendering: -o-optimize-contrast;
+    
+}
+
+.tab-menu:last-child {margin-right: 0px !important;}
+.tab-menu:hover {
+    margin-bottom: -15px;
+    cursor: pointer;
+}
+
+
+.tab-menu-1 {
+    background-image: url('../images/tab1/tab 1@3x.png');
+}
+.tab-menu1-preload {background-image: url('../images/tab1/selected@3x.png');}
+.tab-menu-1:hover {
+    background-image: url('../images/tab1/selected@3x.png');
+}
+
+.tab-menu-2 {
+    background-image: url('../images/tab2/tab 2@3x.png');
+}
+.tab-menu2-preload {background-image: url('../images/tab2/selected3@3x.png');}
+.tab-menu-2:hover {
+    background-image: url('../images/tab2/selected3@3x.png');
+}
+
+.tab-menu-3 {
+    background-image: url('../images/tab3/tab 3@3x.png');
+}
+.tab-menu3-preload {background-image: url('../images/tab3/selected2@3x.png');}
+.tab-menu-3:hover {
+    background-image: url('../images/tab3/selected2@3x.png');
+}
+
+
+.tab-menu-text {
+  font-size: 16px;
+  font-family: "Proxima Nova";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  text-shadow: 0px 1px 1.96px rgba(0, 29, 44, 0.6);
+  position: absolute;
+  z-index: 6;
+  margin-left: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.tab-menu-1 .tab-menu-text, .tab-menu-2 .tab-menu-text {margin-top: 30px;}
+.tab-menu-3 .tab-menu-text {margin-top: 19px;}
+
+.tab {display:none;}
+.tab.active {display: block;}
+
+

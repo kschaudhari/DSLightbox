@@ -1,0 +1,133 @@
+@media screen and (max-height: 670px)  {
+    
+}
+@media screen and (max-width: 767px) , screen and (max-height: 570px){
+	#mydiv-content {
+       top: 0;
+       -webkit-transform: translate(-50%, 0%);
+       -ms-transform: translate(-50%, 0%);
+	    transform: translate(-50%, 0%);
+		height:100vh;
+    }
+	.MobMenuBtn{
+		z-index:10;
+		display:block;
+	}
+	.topMobMenuBar{
+		display:block;
+	}
+	
+	.CloseBtn{
+		display: none;
+	}
+    .mobDetector{display:block;}
+    .topMobMenuBar .CloseBtn{
+		display: block;
+	}
+	.MenuMob {
+         display: table;
+         width: 100%;
+    }
+    
+    .lightbox-footer{
+        display:none;
+    }
+    .lighbox-container{
+            margin: 0px auto;
+    margin-top: 20vh;
+    height: 100vh;
+    position: relative;
+    padding: 0px;
+            padding-top: 0px;
+            width: 100%;
+    }
+    .lighbox-container .lightbox-detailsPage .tab{
+        top: 0;
+		-webkit-transform: initial;
+		-moz-transform: initial;
+    	-ms-transform: initial;
+        transform: initial;
+        left: 0;
+        width: 100%;
+        /* bottom: 0; */
+        /* height: 105%; */
+        padding-bottom: 20px;
+        background: #fff;
+    }
+    
+    .lighbox-container .external-scroll_y.scroll-scrolly_visible{
+
+        display:none !important;
+    }
+    
+    .MainContentBox {
+        width:100%;
+        margin-left:0px;
+        overflow: initial !important;
+    }
+    .MainContentBox .detail-page-text {
+        /*width: -webkit-calc(100% - 20px);
+		width: -moz-calc(100% - 20px);
+        width: calc(100% - 20px);*/
+        width:100%;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top: 11px;
+        /* margin-bottom:280px; */
+    }
+    .FooterBox {
+        
+        width: -webkit-calc(100% - 20px);
+        width: -moz-calc(100% - 20px);
+        width: calc(100% - 20px);
+        margin-left:auto;
+        margin-right:auto;
+        float:none;
+        display: block;
+        margin-bottom: 130px;
+    }
+    
+    .HideMob {
+         display: block;
+    }
+    
+}
+
+@media screen and (min-width: 768px) {
+	.mobMenuContainer{
+		display:none !important;
+	}
+
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    
+}
+@media screen and (max-width: 1078px) and (min-width: 768px) {
+    #mydiv-content{
+        width: 75%;
+    }
+
+}
+
+@media screen and (max-width: 767px)  and (orientation : landscape) , screen and (max-height: 570px) and (orientation : landscape) {
+    .topMobMenuBar{
+        height:91px;
+    }
+    .lighbox-container{
+        margin-top: 91px;
+    }
+    .lightbox-detailsPage{
+        height:100%;
+    }
+    .lighbox-container .lightbox-detailsPage .tab .BannerContentBox{
+        min-height:400px;
+    }
+}
+/* Safari CSS */
+@media screen and (min-color-index:0) and (webkit-min-device-pixel-ratio:0) { @media
+{
+	@media screen and (max-width: 767px) {
+    
+	}
+}}
+/* Safari CSS end */
