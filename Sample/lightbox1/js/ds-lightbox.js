@@ -1,10 +1,9 @@
 ﻿function isMobile() {
     return $(".mobDetector").is(":visible");
 }
-var totalTabs = 0;
 $(document).ready(function () {
     
-    totalTabs = $(".lighbox-container .lightbox-detailsPage .tab").length;
+    
     $(".removePopup").click(function () {
         hideLightboxPopup();
         
@@ -13,7 +12,7 @@ $(document).ready(function () {
         showDefaultView();
     });
    
-    $(".lighbox-container .tab-menu").click(function (e) {
+    $(".lighbox-container .lightbox-content .lightbox-tab-menu-item").click(function (e) {
         e.stopPropagation();
         handleMobNavigation($(this).attr("data-tab").replace("tab", ''), true);
     });
@@ -21,31 +20,7 @@ $(document).ready(function () {
     $(".lighbox-container .lightbox-detailsPage .tab .readNextBox").click(function (e) {
         e.stopPropagation();
         moveToNext();
-    });
-
-
-
-    $(".tab3 .zoom-container .plus").click(function (){
-        //alert('plus');
-        var currentWidth = $(".tab3 .map").width();
-        //alert (currentWidth);
-        currentWidth += 300;
-        $(".tab3 .map").width(currentWidth);
-        //set left and top position
-        //jquery to get left and top 
-        
-    });
-
-
-    $(".tab3 .zoom-container .minus").click(function (){
-        var currentWidth = $(".tab3 .map").width();
-        //alert (currentWidth);
-        currentWidth -= 300;
-        $(".tab3 .map").width(currentWidth);
-    });
-
-
-
+    })
 
     $(".lighbox-container .lightbox-defaultTab .default-navigator .prevTab").click(function (e) {
         moveToPrevious();
@@ -103,10 +78,7 @@ $(document).ready(function () {
     if (!inIframe()) {
         showLightboxPopup();
     }
-    if (typeof setVideoPlayer !== "undefined")
-        setVideoPlayer();
 });
-
 
 function detailPageLoaded()
 {
@@ -188,7 +160,7 @@ function showTab(tabId, allowReLoad, slideDir) {
     
     //Following code for dynamic loading of tab htmls
     //TODO: get the tab releated html using ajax call and on success call detailPageLoaded
-    /*if (!activeTab.attr('data-loaded')) {
+    if (!activeTab.attr('data-loaded')) {
         $.get("tab-" + tabId + ".html", function (data) {
             activeTab.html(data);
             activeTab.attr('data-loaded', true);
@@ -196,9 +168,9 @@ function showTab(tabId, allowReLoad, slideDir) {
         });
     }
     else
-    {*/
+    {
         detailPageLoaded();
-    //}
+    }
 }
 
 function sendAnalyticsEvent() {
@@ -339,8 +311,6 @@ function swipedetect(el, callback) {
         e.preventDefault()
     }, false)
 }
-
-
 
 
 

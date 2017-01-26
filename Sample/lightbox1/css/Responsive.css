@@ -1,0 +1,577 @@
+@media screen and (max-height: 670px)  {
+    .ContentVideo {
+        position: absolute;
+        width: 37%;
+        left:25%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+}
+@media screen and (max-width: 767px) , screen and (max-height: 570px){
+	#mydiv-content {
+       top: 0;
+       -webkit-transform: translate(-50%, 0%);
+       -ms-transform: translate(-50%, 0%);
+	    transform: translate(-50%, 0%);
+		height:100vh;
+    }
+	.MobMenuBtn{
+		z-index:10;
+		display:block;
+	}
+	.topMobMenuBar{
+		display:block;
+	}
+	
+	.CloseBtn{
+		display: none;
+	}
+    .mobDetector{display:block;}
+    .topMobMenuBar .CloseBtn{
+		display: block;
+	}
+	.MenuMob {
+         display: table;
+         width: 100%;
+    }
+    .lightbox-defaultTab{
+        display:none !important;
+    }
+    .lightbox-detailsPage{
+        display:block !important;
+        opacity: 1;
+        visibility:visible;
+    }	
+    .lightbox-bootmGrad{
+        display:none;
+    }
+    .lightbox-footer{
+        display:none;
+    }
+    .lighbox-container{
+            margin: 0px auto;
+    margin-top: 20vh;
+    height: 100vh;
+    position: relative;
+    padding: 0px;
+            padding-top: 0px;
+            width: 100%;
+    }
+    .lighbox-container .lightbox-title{
+        display:none;
+    }
+    .lighbox-container .lightbox-detailsPage .tab{
+        top: 0;
+		-webkit-transform: initial;
+		-moz-transform: initial;
+    	-ms-transform: initial;
+        transform: initial;
+        left: 0;
+        width: 100%;
+        /* bottom: 0; */
+        /* height: 105%; */
+        padding-bottom: 20px;
+        background: #fff;
+    }
+    .lighbox-container .lightbox-detailsPage .ContentTextBox
+    {
+        width: 100%;
+        margin: 0 auto;
+        padding:0px;
+        float: inherit;
+        text-align:center;
+    }
+    
+        .lighbox-container .lightbox-detailsPage .tab .BannerContentBox{
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            /* display: table; */
+            height: 100%;
+            width: 100%;
+            background-size: 100% 100%;
+            /* position: absolute; */
+        }
+    .lighbox-container .lightbox-detailsPage .lightbox-tab1 .BannerContentBox
+    {
+        background-image: url(../images/MobTabBanner1.jpg);
+    }
+    .lighbox-container .lightbox-detailsPage .lightbox-tab2 .BannerContentBox
+    {
+        background-image: url(../images/MobTabBanner2.jpg);
+    }
+    .lighbox-container .lightbox-detailsPage .lightbox-tab3 .BannerContentBox
+    {
+        background-image: url(../images/Banners/ExpandedScreen-930x530-bkg-tab3a.jpg);
+    }
+    .lighbox-container .lightbox-detailsPage .lightbox-tab4 .BannerContentBox
+    {
+        background-image: url(../images/Banners/ExpandedScreen-930x530-bkg-tab4a.jpg);
+    }
+   .lighbox-container .lightbox-detailsPage .lightbox-tab5 .BannerContentBox
+    {
+        background-image: url(../images/Banners/ExpandedScreen-930x530-bkg-tab5a.jpg);
+    }
+    .lighbox-container .lightbox-detailsPage .lightbox-tab6 .BannerContentBox
+    {
+           background-image: url('../images/tab6ContentBg.jpg');
+    }
+    .lighbox-container .lightbox-detailsPage .tab .BannerContentBox .TextBanner{
+        vertical-align: middle;
+        padding-left: 0px;
+        margin: 0;
+        /*padding-top: 9.5%;*/
+        display:table-cell;
+        z-index: 1;
+        width:50%;
+    }
+
+    .lighbox-container .lightbox-detailsPage .tab .BannerContentBox .TextBanner .SmallBnnerText{
+        line-height: 20px;
+        font-size: 0.5em;
+        display: block;
+        /*padding-left: 2%;*/
+    }
+    .lighbox-container .lightbox-detailsPage .tab .BannerContentBox .TextBanner .BigBnnerText{
+        line-height: 21px;
+        font-size: 0.5em;
+        display: block;
+    }
+    .OtherBox .LeftImgBox {
+        width:25%;
+        float:left;
+		max-width:100px;
+    }
+    .OtherBox .OtherDetailBox {
+        width:68%;
+		float:left;
+		margin-left:4%;
+    }
+    .OtherBox .LeftImgBox .OtherImg{
+        border: none;
+       /* -webkit-transform: translateY(-39%);
+        -ms-transform: translateY(-39%);
+        transform: translateY(-39%);
+        -moz-transform: translateY(-39%);*/
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+
+    
+    }
+    .OtherBox .LeftImgBox img {
+        border: 2px solid #fff;
+        webkit-box-shadow: 0px 1px 2px 0px rgba(12,67,99,1);
+        -moz-box-shadow: 0px 1px 2px 0px rgba(12,67,99,1);
+        box-shadow: 0px 1px 2px 0px rgba(12,67,99,1);
+        height: 95%;
+        width: 95%;
+        max-width: 100px;
+    }
+    .ShareBox {
+       width: 100%;
+       float: left;
+    }
+    /*.ShareBox .Sharelabel {
+        font-size: 0.7em;
+        width:40%;
+    }
+    .ShareBox a.tweet{
+        background-image:url('../images/mobTweetIcon.png');
+        background-size:22px;
+    }
+    .ShareBox a.fb {
+        background-image:url('../images/mobFbIcon.png');
+        background-size:22px;
+    }
+        */
+    .OtherBox .OtherName {
+        font-size: 0.55em;
+    }
+    .OtherBox .OtherDesignation {
+        font-size: 0.55em;
+    }
+    .OtherBox .OtherDetailBox {
+        margin-top: 24px;
+        text-align: left;
+    }
+    .readNextBox {
+        width: 100%;
+    }
+    .TextBgImg img.TextBgImageMob {
+        display:block;
+        margin-top: -10px;
+        margin-bottom: 7px;
+    }
+    .TextBanner .tab1Bannersmalltesxt {
+        padding-left: 2%;
+    }
+    .TextBanner .tab2SmalltextAlignmnt1 {
+        padding-left: 2%;
+    }
+    .TextBanner .tab2SmalltextAlignmnt {
+        padding-left: 18%;
+    }
+    .TextBanner .tab3BigtextAligning {
+        padding-left: 13%;
+    }
+    .TextBanner .tab4Bannersmalltesxt1 {
+        padding-left: 0%;
+    }
+    .TextBanner .tab4Bannersmalltesxt2 {
+        padding-left: 26%;
+    }
+    .TextBanner .tab4BannerBigtesxt1 {
+        padding-left: 15%;
+    }
+    .TextBanner .tab4BannerBigtesxt2{
+        padding-left: 9%;
+    }
+    .TextBanner .tab5Bannersmalltesxt1 {
+        padding-left: 4%;
+    }
+    .TextBanner .tab5Bannersmalltesxt2 {
+        padding-left: 28%;
+    }
+    .TextBanner .tab5BannerBigtesxt1 {
+        padding-left: 0%;
+    }
+    .TextBanner .tab5BannerBigtesxt2{
+        padding-left: 9%;
+    }
+    .TextBanner .tab6Bannersmalltesxt {
+        padding-left: 2%;
+    } 
+    .TextBanner .tab6BannerBigtesxt {
+        padding-left: 1%;
+    }
+    .ContentTextBox .DetailDescription h3.DescriptionTextHeading {
+        padding:0px 10px;
+            text-align: left;
+    }
+    .ContentTextBox .DetailDescription p.DescriptionTextTab2, .ContentTextBox .DetailDescription p.DescriptionTextTab1 {
+        padding:0px 10px;
+            text-align: left;
+    }
+    .ContentFooter{
+		width: -webkit-calc(100% - 20px);
+		width: -moz-calc(100% - 20px);
+        width: calc(100% - 20px);
+    }
+    .NeedToKnowBox {
+		width: -webkit-calc(100% - 20px);
+		width: -moz-calc(100% - 20px);
+        width: calc(100% - 20px);
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .OtherBox{
+		width: -webkit-calc(100% - 20px);
+		width: -moz-calc(100% - 20px);
+        width: calc(100% - 20px);
+        margin: 0 auto;
+        display: inline-block;
+        float: inherit;
+    }
+    .ContentTextBox .WhaleText {
+		width: -webkit-calc(100% - 20px);
+		width: -moz-calc(100% - 20px);
+        width: calc(100% - 20px);
+        margin: 0 auto;
+        text-align:left;
+    }
+    .HeighLights, .SubHeadBoxTab6 {
+        text-align:left;
+		width: -webkit-calc(100% - 20px);
+		width: -moz-calc(100% - 20px);
+        width: calc(100% - 20px);
+        margin: 0 auto;
+    }
+    .Tab6SeprationBorder {
+        width: -webkit-calc(100% - 20px);
+		width: -moz-calc(100% - 20px);
+        width: calc(100% - 20px);
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .Tab6Desc .HeadingLink .tab5Heading {
+      text-align:left;
+      padding: 0px 10px;
+     }
+    .Tab5DescBox {
+        text-align:left;
+    }
+    .Tab5DescBox .TabBText, .Tab5DescBox .tab5Heading {
+        padding:0px 10px;
+    }
+    .Tab2Headingsplit2lines {
+        width:100%;
+    }
+    .lightbox-detailsPage .MainContaintArea .BigbagImg{
+        width: 100%;
+        overflow: hidden;
+    }
+    .lighbox-container .external-scroll_y.scroll-scrolly_visible{
+
+        display:none !important;
+    }
+    .Tab5MontSaprator {
+        width: -webkit-calc(100% - 20px);
+		width: -moz-calc(100% - 20px);
+        width: calc(100% - 20px);
+        margin-left:auto;
+        margin-right:auto;
+        margin-bottom: 40px;
+    }
+    #TabbackToMain {
+        display:none;
+    }
+    .lighbox-container .lightbox-content .lightbox-tab-menu{
+        display:none;
+    }
+    .lightbox-detailsPage .lightbox-detail-booklet .page-background-images{
+        display:none;
+    }
+    .lightbox-detailsPage .lightbox-detail-booklet .page-content{
+        width:100%;
+        box-shadow:none;
+        position: relative;
+        overflow: auto;
+    }
+
+    .DetailBannerText {
+        left:0px;
+    }
+    .lighbox-container .lightbox-detailsPage .tab .BannerContentBox {
+    /*    background-image:url(../images/Banner/details-page-Tab1.jpg);*/
+    }
+    .MainContentBox {
+        width:100%;
+        margin-left:0px;
+        overflow: initial !important;
+    }
+    .MainContentBox .detail-page-text {
+        /*width: -webkit-calc(100% - 20px);
+		width: -moz-calc(100% - 20px);
+        width: calc(100% - 20px);*/
+        width:100%;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top: 11px;
+        /* margin-bottom:280px; */
+    }
+    .FooterBox {
+        
+        width: -webkit-calc(100% - 20px);
+        width: -moz-calc(100% - 20px);
+        width: calc(100% - 20px);
+        margin-left:auto;
+        margin-right:auto;
+        float:none;
+        display: block;
+        margin-bottom: 130px;
+    }
+    .BannerContentBox {
+        left:0px;
+    }
+    .DetailBannerText {
+        position:relative;
+    }
+    .BannerBottomRightLogo {
+        display:none;
+    }
+    .ShoowMob {
+        display:block !important;
+        width: 100%;
+    }
+    .DetailBannerText .BannerContentBox {
+        left:0px;
+        position: absolute;
+        top: 0;
+    }
+    .DetailBannerText .BannerContentBox .TextBanner{
+        width:95%;
+         top:10px;
+         left:50%;
+         -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        transform: translateX(-50%);
+        position:absolute;
+    }
+.lighbox-container .lightbox-detailsPage .tab .BannerContentBox .TextBanner .detailtabTitleImg {
+    width:100%;
+}
+    .DetailBannerText .TextBanner .tab1BannerBigtesxt1 {
+         padding-left: 12.5%;
+    }
+    .DetailBannerText .TextBanner .tab1BannerBigtesxt2 {
+         padding-left: 10%;
+    }
+    .DetailBannerText .TextBanner .tab1BannerBigtesxt3 {
+         padding-left: 17%;
+    }
+    .MainContentBox .detail-page-text .detail-page-header{
+           color: #288dc8;
+           font-size: 1.1em;
+           font-weight: 400;
+               margin: 0px 10px;
+    }
+    .MainContentBox .detail-page-text p.DescriptionText {
+        
+        text-align: left;
+    }
+    .MainContentBox .detail-page-text .detail-page-description{
+        padding: 0px 10px;
+    }
+    .image-Caption {
+        display:none;
+    }
+    .HideMob {
+         display: block;
+    }
+    .BannerTextShowmob {
+         display:block;
+    }
+    .ShareBox {
+        float: none;
+        width: 100%;
+        display:block !important;
+        height: 40px;
+    }
+    .ShareBox .Sharelabel {
+        background-color: #00314f;
+        color: #fff;
+        display: block;
+        float: left;
+        font-family: "Fira Sans",sans-serif;
+        font-size: 0.73em;
+        font-weight: 400;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        width: 28%;
+    }
+    .SocialBox {
+        display: inline-flex;
+        float: left;
+        width: calc(100% - 28%);
+    }
+    .ShareBox a {
+        background-color: #00314f;
+        background-position: center center;
+        background-repeat: no-repeat;
+        border-left: 1px solid #d2dbe0;
+        display: block;
+        float: left;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        width: 24.8%;
+    }
+    .ShareBox a:hover {
+        background-color: #003f66;
+    }
+    .ShareBox a:active {
+        background-color: #00263d;
+    }
+    .ShareBox a.fb {
+        background-image: url("../images/fbN.png");
+    }
+    .ShareBox a.tweet {
+        background-image: url("../images/twiiter.png");
+    }
+    .ShareBox a.youtube {
+        background-image: url("../images/youTube.png");
+    }
+    .ShareBox a.insta {
+        background-image: url("../images/insta.png");
+    }
+    .ContentVideo {
+        display: inline-table;
+        position: absolute;
+        width: 80%;
+        margin: 0 auto;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        z-index: 0;
+    }
+    .UnderContentImage {
+         width:100%;
+        display:block;
+    }
+    .page-content.tab5-page-content .detail-page-text
+    {
+        padding:0px 10px;
+         width: -webkit-calc(100% - 20px);
+        width: -moz-calc(100% - 20px);
+        width: calc(100% - 20px);
+    }
+}
+
+@media screen and (min-width: 768px) {
+	.mobMenuContainer{
+		display:none !important;
+	}
+
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .lightbox-menuItem-boxed .lighbox-menuContent .hoverContent {
+        top: 27%;
+    }
+    .DetailBannerText .TextBanner {
+        font-size:1.8em;
+        line-height: 28px;
+    }
+    .DetailBannerText .TextBanner .SmallBnnerText {
+        line-height: 25px;
+    }
+    .DetailBannerText .TextBanner .tab1BannerBigtesxt1 {
+         padding-left: 19.5%;
+    }
+    .DetailBannerText .TextBanner .tab1BannerBigtesxt2 {
+         padding-left: 16%;
+    }
+    .DetailBannerText .TextBanner .tab1BannerBigtesxt3 {
+        padding-left: 28%;
+    }   
+    .DetailBannerText .DetailTextTab2 .TextBanner .tab1BannerBigtesxt1 {
+        padding-left: 5.5%;
+        display: block;
+    }
+}
+@media screen and (max-width: 1078px) and (min-width: 768px) {
+    #mydiv-content{
+        width: 75%;
+    }
+
+}
+
+@media screen and (max-width: 767px)  and (orientation : landscape) , screen and (max-height: 570px) and (orientation : landscape) {
+    .topMobMenuBar{
+        height:91px;
+    }
+    .lighbox-container{
+        margin-top: 91px;
+    }
+    .lightbox-detailsPage{
+        height:100%;
+    }
+    .lighbox-container .lightbox-detailsPage .tab .BannerContentBox{
+        min-height:400px;
+    }
+}
+/* Safari CSS */
+@media screen and (min-color-index:0) and (webkit-min-device-pixel-ratio:0) { @media
+{
+	@media screen and (max-width: 767px) {
+    
+	}
+}}
+/* Safari CSS end */

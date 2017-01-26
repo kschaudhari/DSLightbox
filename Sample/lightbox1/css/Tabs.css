@@ -1,0 +1,741 @@
+.lighbox-container .tab{
+    width: 100%;
+    height: 99.9%;
+    position: relative;
+    display:none;
+    transition: display 0.5s ease-in-out;
+}
+.lighbox-container .tab .active{
+    display: block;
+}
+.lightbox-detail-booklet .page-background-images{
+    position: absolute;
+    height:100%;
+    width:100%;
+    z-index:0;
+}
+.lightbox-detail-booklet .page-background-images .page-background{
+    height:100%;
+    width:100%;
+    display:none;
+   /* background-color:antiquewhite;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-position:center center;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+.lightbox-detail-booklet .page-content{
+    position:absolute;
+    top: 0;
+    right:0;
+    width:50%;
+    height:100%;
+    background-color: rgba(255,255,255, 0.8);
+    -webkit-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.35) inset;
+    -moz-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.35) inset;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.35) inset;
+    
+
+}
+
+.MainContentBox {
+     display: block;
+     height: 100% !important;
+     overflow:hidden;
+     margin: 0px auto;
+}
+.MainContentBox .detail-page-text{
+    width:93%;
+    margin: 0px auto;
+    margin-top:30px;
+    margin-bottom:25px;
+}
+
+.lightbox-detail-booklet .bb-content {
+	width: 200% !important;
+}
+.lightbox-detail-booklet  .bb-content .page-content
+{
+    left: 0px;
+}
+.lightbox-detail-booklet .bb-page .bb-back  .bb-content .page-content{
+    left:initial;
+}
+
+.lightbox-default-booklet .bb-item{
+    background:transparent;
+}
+
+.lightbox-default-booklet .detail-navigator{
+    position:absolute;
+    bottom: -1px;
+    left: 0px;
+    width: 70px;
+    /* display:table; */
+    height: 11.475%;
+    max-height: 70px;
+    min-height: 70px;
+    background-color: #fff;
+    max-width:200px;
+    z-index:105;
+    background-image: url(../images/navigaterBg.png);
+}
+.lightbox-default-booklet .detail-navigator .detail-navigator-container{
+    position:absolute;
+    width:100%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
+} 
+    .lightbox-default-booklet .detail-navigator .mainMenu {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        margin-top: 1.64%;
+        width: 25%;
+        cursor:pointer;
+         font-family: 'Fira Sans';
+         font-size:0.9em;
+         color:#5e6a71;
+    }
+.lightbox-default-booklet .detail-navigator .mainMenu:hover {
+    color:#7A8890;
+}
+.lightbox-default-booklet .detail-navigator .mainMenu:active {
+    color:#4A5459;
+}
+    .lightbox-default-booklet .detail-navigator .image-carousel-controls {
+        display:table-cell;
+        vertical-align: middle;
+        text-align: center;
+        margin-top:1.64%;
+        width: 74%;
+        width: -webkit-calc(75%-1px);
+        width: -moz-calc(75%-1px);
+        width: calc(75%-1px);
+        border: 1px solid #dddddd;
+        border-top: 0px;
+        border-bottom: 0px;
+        border-right: 0px;
+        /* cursor:pointer; */
+    }
+    .lightbox-default-booklet .detail-navigator .image-carousel-controls .image-carousel-control-container{
+        display:table;
+        width:100%;
+        height:100%;
+    }
+.detail-navigator .image-carousel-controls .prev-image{
+    display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        width: 26.85%;
+        cursor:pointer;
+        background-repeat:no-repeat;
+        background-position:center;
+        background-image:url(../images/Control-arrow-Prev.png);
+}
+.detail-navigator .image-carousel-controls .prev-image:hover {
+    background-image:url(../images/Control-arrow-PrevHover.png);
+}
+.detail-navigator .image-carousel-controls .prev-image:active {
+    background-image:url(../images/Control-arrow-PrevActive.png);
+}
+.detail-navigator .image-carousel-controls .next-image{
+    display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        width: 26.85%;
+        cursor:pointer;
+        background-repeat:no-repeat;
+        background-position:center;
+        background-image:url(../images/Control-arrow-Next.png);
+
+}
+.detail-navigator .image-carousel-controls .next-image:hover {
+    background-image:url(../images/Control-arrow-NextHover.png);
+}
+.detail-navigator .image-carousel-controls .next-image:active {
+    background-image:url(../images/Control-arrow-NextActive.png);
+}
+
+.detail-navigator .image-carousel-controls .image-bullet-container{
+    display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        width: 46.3%;
+}
+.detail-navigator .image-carousel-controls .image-bullet-container .carousel-bullet-item{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #a9aeb2;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+}
+.detail-navigator .image-carousel-controls .image-bullet-container .carousel-bullet-item:hover,
+.detail-navigator .image-carousel-controls .image-bullet-container .carousel-bullet-item.current{
+    -ms-transform: scale(1.5); /* IE 9 */
+    -moz-transform: scale(1.5);
+    -webkit-transform: scale(1.5); /* Safari */
+    transform: scale(1.5);
+    background-color:#5e6a71;
+}
+ .lightbox-default-booklet .page-content{
+    font-family: "expo-sans-pro-condensed",sans-serif;
+    
+}
+.MainContentBox .detail-page-text .detail-page-header {
+    font-size: 1.2em;
+    color: #288dc8;
+    font-weight:bold;
+    
+}
+.MainContentBox .detail-page-text p.DescriptionText{
+    font-size: 1.02em;
+    letter-spacing: 0.01px;
+    line-height: 25.5px;
+    margin: 15px 0;
+    word-spacing: 2px;
+    padding: 0;
+    color: #00324f;
+    text-align: justify;
+    font-family: "expo-sans-pro",sans-serif;
+}
+
+.page-content .readMore{
+    height:25px;
+    width:100%;
+    display: table;
+    font-weight:bold;
+    font-style:italic;
+    margin-bottom:20px;
+}
+.page-content .readMore .readMoreLine{
+    width: 100%;
+    display: table-cell;
+    vertical-align:middle;
+    height: 100%;
+    padding-right: 20px;
+}
+.page-content .readMore .readMoreLine div{
+    background-color:#0f9fd6;
+    height:1px;
+    width:100%;
+}
+.page-content .readMore .buttonPart{
+    display: table-cell;
+    vertical-align:middle;
+    text-align: right;
+    min-width: 150px;
+    max-width: 150px;
+    position: relative;
+    /* padding-left: 20px; */
+    background-color: #6eb7d3;
+    border-radius: 12.5px;
+    cursor: pointer;
+}.page-content .readMore .buttonPart:after{
+     clear:both;
+ }
+.page-content .readMore .buttonPart .button{
+    color: #fff;
+    background-color:#22a4d5;
+    text-align:center;
+    border-radius: 12.5px;
+    float:left;
+    /* margin-left: 20px; */
+    width: 130px;
+    height: 100%;
+    vertical-align: middle;
+    line-height: 24px;
+    z-index: 1;
+}
+.page-content .readMore .buttonPart .button:hover {
+    background-color:#50BBE2;
+}
+.page-content .readMore .buttonPart .button:active {
+    background-color:#3D97B8;
+}
+.page-content .readMore .buttonPart .plus{
+    float:right;
+    width: 20px;
+    height: 100%;
+    background-image: url(../images/plusIcon.png);
+    background-repeat:no-repeat;
+    background-position: 4px 7px;
+    right: 0px;
+    z-index: 0;
+    border-radius: 12.5px;
+}
+.page-content .para-heading{
+    font-style:italic;
+    font-size: 1.2em;
+    color: #288dc8;
+    padding-left:20px;
+    background-image: url(../images/paraBullet.png);
+    background-repeat:no-repeat;
+    background-position-y: 4px;
+    margin-bottom:20px;
+}
+.page-content .para-tag-line{
+    font-style:italic;
+    font-size: 1.2em;
+    color: #288dc8;
+}
+
+.page-content .para-heading-separator {
+    width:100%;
+    max-width: 185px;
+    margin-top:20px;
+    margin-bottom:20px;
+    height:1px;
+    background-color:#288dc8;
+}
+
+.page-content.tab5-page-content{
+    font-family:'Jotia-Regular';
+
+}
+.page-content .para-description-tag-line{
+    font-size: 1.02em;
+    color: #288dc8;
+    width:100%;
+}
+.page-content.tab5-page-content p.DescriptionText{
+    font-family:'Jotia-Regular';
+    color:#3d0421;
+    font-size: 0.95em;
+    word-spacing: 1px;
+}
+.tab5-page-content .para-heading {
+    color:#662046;
+    background-image:none;
+    font-style:normal;
+    padding-left:0px;
+    font-size: 1.6em;
+}
+.tab5-page-content .para-heading-separator 
+{
+    background-color:#a9aeb2
+}
+.tab5-page-content .readMore .readMoreLine div
+{
+    display:none;
+}
+.tab5-page-content .readMore .buttonPart
+{
+    min-width: 240px;
+    max-width: 240px;
+    background-color: #780842;
+}
+.tab5-page-content .readMore .buttonPart .button{
+    width: 220px;
+    background-color: #3d0421;
+}
+.tab5-page-content .readMore .buttonPart .button:hover
+{
+    background-color: #600634;
+}
+.tab5-page-content .readMore .buttonPart .button:active
+{
+    background-color: #30031a;
+}
+.tab5-page-content .readMore .buttonPart .plus{
+    height: 20px;
+}
+.feature-list{
+    font-family:'Jotia-Regular';
+    color:#3d0421;
+    font-size: 0.95em;
+}
+.conditions-appiled{
+    font-family:'Jotia-Regular';
+    color:#3d0421;
+    font-size: 0.7em;
+    text-align:right;
+}
+/******************* EXTERNAL SCROLLBAR *******************/
+/*  scrol bar */
+.scrollbar-external_wrapper {
+   /* position:absolute;*/
+   height: 150px;
+   right: -30px;
+   width: 4px;
+   position: absolute;
+   top: 50%;
+   -webkit-transform: translateY(-50%);
+   -ms-transform: translateY(-50%);
+   transform: translateY(-50%);
+   display:none;
+}
+.scrollbar-external {
+   /* height: 590px; !important;*/
+    overflow: auto;
+    overflow: hidden;
+}
+ 
+
+ 
+.external-scroll_x,
+.external-scroll_y {
+    cursor: pointer;
+    display: none;
+    /* position: absolute; */
+    border-radius: 0px;
+    background-color: #5e6a71;
+    width: 4px !important;
+}
+ 
+.external-scroll_x.scroll-scrollx_visible {
+    display: block;
+    height: 10px;
+    left: 0;
+    top: 410px;
+    width: 200px;
+}
+ 
+.external-scroll_y.scroll-scrolly_visible {
+    display: block;
+    height: 100%;
+}
+ 
+.external-scroll_x div,
+.external-scroll_y div
+{
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+}
+ 
+.external-scroll_x .scroll-bar,
+.external-scroll_y .scroll-bar {
+    z-index: 12;
+    width: 4px;
+    border-radius:0px;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 0px 14px 0px rgba(255,255,255,1);
+-moz-box-shadow: 0px 0px 14px 0px rgba(255,255,255,1);
+box-shadow: 0px 0px 14px 0px rgba(255,255,255,1);
+}
+ 
+.external-scroll_x .scroll-bar {
+    width: 100px;
+}
+.external-scroll_y .scroll-bar {
+    height: 70px;
+}
+.scroll-wrapper > .scroll-content::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+}
+/*  scroll bar end  */
+.DetailBannerText {
+    position:absolute;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:-100%;
+}
+.DetailBannerText .BannerContentBox {
+    height: auto;
+    top: 17px;
+    position:absolute;
+    left: 20px;
+    text-align: right;
+    width: 32.4%;
+    margin-right: 0;
+}
+.DetailBannerText .TextBanner {
+  	font-family: 'Proxima-Nova-Condensed-Semibold';
+    color:#fff;
+    font-size:2.5em;
+    width: 100%;
+    float:right;
+    text-align: left;
+    line-height: 35px;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+.DetailBannerText .TextBanner .detailtabTitleImg {
+    width:100%;
+}
+.DetailBannerText .TextBanner .SmallBnnerText {
+    display:block;
+    padding-left:0%;
+    line-height: 45px;
+    font-family: 'Proxima-Nova-Condensed';
+    font-style:italic;
+}
+.DetailBannerText .tab1Bannersmalltesxt {
+        padding-bottom: 10px;
+}
+.DetailBannerText .tab2Bannersmalltesxt {
+    padding-right:31%;
+}
+
+.DetailBannerText .BannerBottomRightLogo {
+    height: auto;
+    position: absolute;
+    left: 19px;
+    bottom: 14%;
+    width: 191px;
+}
+.DetailBannerText .BannerBottomRightLogo .BottomLogoimgBox {
+    margin-top:21px;
+    display: inline-block;
+    width: 100%;
+}
+.DetailBannerText .BannerBottomRightLogo .BottomLogoimgBox .LogoBox {
+    width:46%;
+    float:left;
+} 
+.DetailBannerText .BannerBottomRightLogo .BottomLogoimgBox .WALogo {
+    
+}
+.DetailBannerText .BannerBottomRightLogo .BottomLogoimgBox .QatarLogo {
+    
+}
+.DetailBannerText .BannerBottomRightLogo .BottomLogoTitle {
+    font-family: 'Proxima-Nova';
+    letter-spacing:1px;
+    font-size:0.8em;
+    font-style:italic;
+    color:#fff;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+.DetailBannerText .TextBanner .tab1Bannersmalltesxt  {
+}
+.DetailBannerText .TextBanner .tab1BannerBigtesxt1  {
+    padding-left: 27.5%;
+}
+.DetailBannerText .TextBanner .tab1BannerBigtesxt2  {
+    padding-left: 22%;
+}
+.DetailBannerText .TextBanner .tab1BannerBigtesxt3  {
+     padding-left: 45%;
+} 
+.DetailBannerText .DetailTextTab2 .TextBanner .tab2Bannersmalltesxt {
+    padding-left: 7%;
+}
+.DetailBannerText .DetailTextTab2 .TextBanner .tab1BannerBigtesxt1  {
+    padding-left: 5.5%;
+}
+.DetailBannerText .DetailTextTab2 .TextBanner .tab1BannerBigtesxt2  {
+    padding-left: -0;
+}
+.DetailBannerText .DetailTextTab2 .TextBanner .tab1BannerBigtesxt3  {
+    padding-left: 11.5%;
+}
+.image-Caption {
+    position:absolute;
+    bottom:0px;
+    font-size:0.8em;
+    color:#fff;
+    font-family: 'Proxima-Nova';
+    letter-spacing: 1px;
+    font-style: italic;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+        width: 26%;
+        text-align:center;
+        bottom:29px;
+        left:24.1%;
+}
+.readNextBox {
+    background-image: url(../images/QatarBg.jpg);
+    height: 70px;
+    width: 185px;
+    background-size: cover;
+    display: block;
+    cursor: pointer;
+    margin: 0px auto;
+    width: 230px;
+}
+.NextTabArrow {
+    float: right;
+    height: 19px;
+    margin-right: 5%;
+    position: relative;
+    top: 50%;
+    -mz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 10px;
+    display:inline-block;
+    background-image: url(../images/Control-arrow-Next.png);
+}
+.readNextBox:hover .NextTabArrow{
+    background-image: url(../images/Control-arrow-NextHover.png);
+}
+.readNextBox:active .NextTabArrow{
+    background-image: url(../images/Control-arrow-NextActive.png);
+}
+.readNextBox:hover .NextTabLabel, .readNextBox:hover .ReadNext {
+    color:#2DB9F0;
+}
+.readNextBox:active .NextTabLabel, .readNextBox:active .ReadNext{
+    color:#0B7099;
+}
+
+.readNextBox img {
+    float: right;
+    height: 20px;
+    margin-right: 5%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 27px;
+}
+.readNextBox .ReadNext {
+    color: #0f9fd6;
+    float: left;
+    font-family: "Fira Sans",sans-serif;
+    font-size: 0.73em;
+    font-weight: 400;
+    line-height: 70px;
+    padding-left: 5%;
+    position: relative;
+    /*width: 26%;*/
+    width: 34%;
+}
+.readNextBox .NextTabLabel {
+    float: left;
+    height: 53px;
+    position: relative;
+    text-align: right;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    /*width: 46.8965%;*/
+    width: 41%;
+    color:#0f9fd6;
+    font-family: 'Proxima-Nova';
+    text-align:left;
+    font-size:1em;
+}
+.readNextBox .NextTabLabel .smallLabelforNext {
+    width: 100%;
+    display: inline-block;
+    line-height: 2.1;
+}
+.readNextBox .NextTabLabel .BigLabelforNext {
+    
+    top: -6px;
+    position: relative;
+}
+.readNextBox .NextTabLabel img.NextLogo {
+    height: auto;
+    margin: 0;
+    width: 100%;
+}
+.readNextBox .NextTabLabel .topLineText {
+    display: block;
+    font-size: 2.5em;
+    letter-spacing: 3px;
+}
+.readNextBox .NextTabLabel .BottomlineText {
+    font-size: 1.3em;
+    letter-spacing: 1px;
+}
+.readNextBox .NextTabLabel .TextAlignforNext {
+    position: absolute;
+    top: 21px;
+    width: 100%;
+}
+.readNextBox .NextTabLabel .Nexttab6Ttextalign {
+    font-size: 0.9em;
+}
+.readNextBox .NextTabLabel .TextAlignforNext .BottomlineText {
+    display: inline-block;
+    float: left;
+    font-size: 0.9em;
+    text-align: left;
+}
+.readNextBox .NextTabLabel .TextAlignforNext .topLineText {
+    display: inline-block;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    padding-left: 6%;
+    text-align: right;
+}
+
+.BannerTextShowmob {
+    display:none;
+}
+.UnderContentImage {
+    display:none;
+}
+.ContentVideo {
+    position: absolute;
+    width: 47%;
+    margin: 0 auto;
+    left: 1.5%;
+    top: 50%;
+
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
+    /*
+    position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;*/
+
+}
+.embed-container {
+     position: relative; 
+     padding-bottom: 56.25%; 
+     height: 0; 
+     overflow: hidden; 
+     max-width: 100%; 
+     background-color:#000;
+} 
+.embed-container iframe, .embed-container object, .embed-container embed { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+}
+.FooterBox {
+    display: block;
+    /* float:right; */
+    width: 100%;
+    background-image: url(../images/QatarBg.jpg);
+}
+.MainContaintArea.MainContentBox.scroll-content.scroll-scrolly_visible{
+    overflow: scroll;
+    overflow-x:hidden;
+}
+
+.lightbox-default-booklet.bb-bookblock .bb-page:nth-child(2) .bb-front .bb-content{
+    left: -100%;
+}
+.lightbox-default-booklet.bb-bookblock .bb-page:nth-child(3)  .bb-content{
+    left: -100%;
+}
+.lightbox-default-booklet.bb-bookblock .bb-page  .bb-content iframe{
+    display:none;
+}
+.lightbox-detail-booklet.bb-bookblock .bb-page:nth-child(2) .bb-front .bb-content{
+    left: 0;
+}
+.lightbox-detail-booklet.bb-bookblock .bb-page:nth-child(3)  .bb-content{
+    left: 0;
+}
+/*  ie Only  */
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .scroll-wrapper.MainContentBox {
+        max-height:100% !important;
+    }
+    .MainContaintArea {
+        height:103.8% !important;
+    }
+}

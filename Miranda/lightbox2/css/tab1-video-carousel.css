@@ -1,0 +1,36 @@
+.player-container {
+    width: 73%;
+    /* vertical-align: top; */
+}
+
+.play-list-section-separator {
+    width: 15px;
+}
+
+.video-player-wrapper {
+    max-width: 630px;
+}
+
+.play-list-container {
+    margin: 20px;
+}
+
+.play-list-header {
+    margin-bottom: 29px;
+    line-height: 0px;
+}
+.carousel-navigation {
+    font-size: 4.5em;
+}
+
+.carousel-navigation .arrow.up:before {
+    top: -31px;
+}
+
+.play-list-carousel {
+    margin: 1px 0px 5px;
+}
+
+.video-player {
+    padding-bottom: 57.3492%;
+}
