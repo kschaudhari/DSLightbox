@@ -12,7 +12,7 @@
     display:none;
     z-index:10;
     min-height: 91px;
-    background-color: rgba(15,159,214,1) !important;
+    background-color: rgba(0,79,118,1) !important;
 }
 .topMobMenuBar.tab1Active {
     background-color: rgba(143,88,87,1)
@@ -35,7 +35,7 @@
     position:relative;
 }
 .topMobMenuBar .topMobItem.MobMenuBar{
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #003a56;
     overflow:hidden;
 }
 .topMobMenuBar .topMobItem .menuElement{
