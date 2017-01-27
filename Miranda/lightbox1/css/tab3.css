@@ -61,4 +61,7 @@
     z-index: 99;
 }
 
-.tab3 .zoom-container img:hover {cursor: pointer;}
+.tab3 .zoom-container img:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    }

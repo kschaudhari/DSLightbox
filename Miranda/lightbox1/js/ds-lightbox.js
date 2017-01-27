@@ -26,22 +26,76 @@ $(document).ready(function () {
 
 
     $(".tab3 .zoom-container .plus").click(function (){
-        //alert('plus');
         var currentWidth = $(".tab3 .map").width();
-        //alert (currentWidth);
+        var currentHeight = $(".tab3 .map").height();
+
+        // Get center coordinates
+        var location = $(".tab3 .map").position();
+        var center = new Object();
+        center.x = location.left + ($(".tab3 .map").width() / 2);
+        center.y = location.top + ($(".tab3 .map").height() / 2);
+
+        // Set new width (i.e. zoom in)
         currentWidth += 300;
+
+        // Get transform values, to offset the center with
+        var matrix = $(".tab3 .map").css('transform');
+        var values = matrix.match(/-?[\d\.]+/g);
+        var xTransform = values[4];
+        var yTransform = values[5];
+
+        // Calculate new left position based on new width, keeping the same center x-coordinate
+        var newLeft = (center.x - xTransform) - (currentWidth/2) ;
+
+        // Set new width and new left
         $(".tab3 .map").width(currentWidth);
-        //set left and top position
-        //jquery to get left and top 
+        $(".tab3 .map").css( { left: newLeft });
+
+        // New height is adjusted dynamically, for width increment of 300 this is constant value of 274
+        var currentHeightNew = currentHeight + 274;
         
+        // Calculate new top position based on new height, keeping the same center y-coordinate
+        var newTop = (center.y - yTransform) - (currentHeightNew/2);
+
+        // Set new top
+        $(".tab3 .map").css( { top: newTop });
     });
 
 
     $(".tab3 .zoom-container .minus").click(function (){
         var currentWidth = $(".tab3 .map").width();
-        //alert (currentWidth);
+        var currentHeight = $(".tab3 .map").height();
+
+        // Get center coordinates
+        var location = $(".tab3 .map").position();
+        var center = new Object();
+        center.x = location.left + ($(".tab3 .map").width() / 2);
+        center.y = location.top + ($(".tab3 .map").height() / 2);
+
+        // Set new width (i.e. zoom out)
         currentWidth -= 300;
+
+        // Get transform values, to offset the center with
+        var matrix = $(".tab3 .map").css('transform');
+        var values = matrix.match(/-?[\d\.]+/g);
+        var xTransform = values[4];
+        var yTransform = values[5];
+
+        // Calculate new left position based on new widht, keeping the same center x-coordinate
+        var newLeft = (center.x - xTransform) - (currentWidth/2);
+
+        // Set new width and left   
         $(".tab3 .map").width(currentWidth);
+        $(".tab3 .map").css( { left: newLeft });
+
+        // New height is adjusted dynamically, for width decrease of 300 this is constant value of 274
+        var currentHeightNew = currentHeight - 274;
+        
+        // Calculate new top position based on new height, keeping the same center y-coordinate
+        var newTop = (center.y - yTransform) - (currentHeightNew/2);  
+
+        // Set new top
+        $(".tab3 .map").css( { top: newTop });
     });
 
 
@@ -183,6 +237,8 @@ function showTab(tabId, allowReLoad, slideDir) {
     activeTab.addClass("active");
     $(".lighbox-container .lightbox-detailsPage .lightbox-top-menu-item[data-tab='tab" + tabId + "']").addClass("active");
 
+    $(".lighbox-container .lightbox-footer .tab-menu").removeClass("active");
+    $(".lighbox-container .lightbox-footer .tab-menu[data-tab='tab" + tabId + "']").addClass("active");
     
     //Following code for dynamic loading of tab htmls
     //TODO: get the tab releated html using ajax call and on success call detailPageLoaded

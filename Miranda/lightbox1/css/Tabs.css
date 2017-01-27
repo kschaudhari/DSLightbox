@@ -40,6 +40,10 @@
     cursor: pointer;
 }
 
+.tab-menu.active {
+    margin-bottom: -15px;
+    cursor: pointer;
+}
 
 .tab-menu-1 {
     background-image: url('../images/tab1/tab 1@3x.png');

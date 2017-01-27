@@ -101,6 +101,14 @@
     margin-right: 125px;
 }
 
+.image_full{
+    display:block;
+}
+
+ .image_mobile{
+    display:none;
+ }
+
 
 
 
