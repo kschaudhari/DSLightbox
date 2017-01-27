@@ -23,7 +23,13 @@ $(document).ready(function () {
         moveToNext();
     });
 
+    $(".tab3 .zoom-container .plus").on('mousedown', function() {
+        $(".tab3 .zoom-container .plus").attr('src',"images/tab3/plus_click.png");
+    });
 
+    $(".tab3 .zoom-container .plus").on('mouseup', function() {
+        $(".tab3 .zoom-container .plus").attr('src',"images/tab3/plus@3x.png");
+    });
 
     $(".tab3 .zoom-container .plus").click(function (){
         var currentWidth = $(".tab3 .map").width();
@@ -61,6 +67,13 @@ $(document).ready(function () {
         $(".tab3 .map").css( { top: newTop });
     });
 
+    $(".tab3 .zoom-container .minus").on('mousedown', function() {
+        $(".tab3 .zoom-container .minus").attr('src',"images/tab3/minus_click.png");
+    });
+
+    $(".tab3 .zoom-container .minus").on('mouseup', function() {
+        $(".tab3 .zoom-container .minus").attr('src',"images/tab3/minus@3x.png");
+    });
 
     $(".tab3 .zoom-container .minus").click(function (){
         var currentWidth = $(".tab3 .map").width();
