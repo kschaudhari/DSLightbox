@@ -163,13 +163,28 @@ $(document).ready(function () {
         e.stopPropagation();
         moveToPrevious();
     });
+
+    $(".topMobMenuBar .mobNavigator .mobPrevTab .navArrow .prev").on('touchstart', function() {
+        $(".topMobMenuBar .mobNavigator .mobPrevTab .navArrow .prev").attr('src',"images/mobPrev_click.png");
+    });
+
+    $(".topMobMenuBar .mobNavigator .mobPrevTab .navArrow .prev").on('touchend', function() {
+        $(".topMobMenuBar .mobNavigator .mobPrevTab .navArrow .prev").attr('src',"images/mobPrev.png");
+    });
     
     $(".topMobMenuBar .mobNavigator .mobNextTab .navArrow").click(function (e) {
         e.stopPropagation();
         moveToNext();
     });
 
-    
+    $(".topMobMenuBar .mobNavigator .mobNextTab .navArrow .next").on('touchstart', function() {
+        $(".topMobMenuBar .mobNavigator .mobNextTab .navArrow .next").attr('src',"images/mobNext_click.png");
+    });
+
+    $(".topMobMenuBar .mobNavigator .mobNextTab .navArrow .next").on('touchend', function() {
+        $(".topMobMenuBar .mobNavigator .mobNextTab .navArrow .next").attr('src',"images/mobNext.png");
+    });
+   
     $(".lighbox-container .lightbox-detailsPage .tab").each(function (__, tabPage) {
         swipedetect(tabPage, function (swipedir) {
             if(swipedir == "left")
