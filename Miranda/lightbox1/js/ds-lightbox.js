@@ -31,6 +31,14 @@ $(document).ready(function () {
         $(".tab3 .zoom-container .plus").attr('src',"images/tab3/plus@3x.png");
     });
 
+    $(".tab3 .zoom-container .plus").on('touchstart', function() {
+        $(".tab3 .zoom-container .plus").attr('src',"images/tab3/plus_click.png");
+    });
+
+    $(".tab3 .zoom-container .plus").on('touchend', function() {
+        $(".tab3 .zoom-container .plus").attr('src',"images/tab3/plus@3x.png");
+    });
+
     $(".tab3 .zoom-container .plus").click(function (){
         var currentWidth = $(".tab3 .map").width();
         var currentHeight = $(".tab3 .map").height();
@@ -72,6 +80,14 @@ $(document).ready(function () {
     });
 
     $(".tab3 .zoom-container .minus").on('mouseup', function() {
+        $(".tab3 .zoom-container .minus").attr('src',"images/tab3/minus@3x.png");
+    });
+
+    $(".tab3 .zoom-container .minus").on('touchstart', function() {
+        $(".tab3 .zoom-container .minus").attr('src',"images/tab3/minus_click.png");
+    });
+
+    $(".tab3 .zoom-container .minus").on('touchend', function() {
         $(".tab3 .zoom-container .minus").attr('src',"images/tab3/minus@3x.png");
     });
 
