@@ -66,7 +66,7 @@ $(document).ready(function () {
         $(".tab3 .map").css( { left: newLeft });
 
         // New height is adjusted dynamically, for width increment of 300 this is constant value of 274
-        var currentHeightNew = currentHeight + 274;
+        var currentHeightNew = currentHeight + 334;
         
         // Calculate new top position based on new height, keeping the same center y-coordinate
         var newTop = (center.y - yTransform) - (currentHeightNew/2);
@@ -125,6 +125,9 @@ $(document).ready(function () {
 
         // Set new top
         $(".tab3 .map").css( { top: newTop });
+        
+        //$(".tab3 .map").css( 'top', newTop + 'px' );
+        //console.log('newtop',newTop );
     });
 
 

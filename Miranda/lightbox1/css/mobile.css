@@ -159,7 +159,9 @@
     background-color: #008c7f;
     width: 100%;
     max-height:900px;
-    z-index: 2;
+    z-index: 7000;
+    opacity: 1;
+
 }
     .topMobMenuBar .mobDropdownMenu .mobDropdownMenuItem {
         height:10vh;
@@ -170,7 +172,10 @@
         vertical-align: middle;
         text-align: center;
         color:#fff;
+         z-index: 7000;
+    opacity: 1;
     }
+
 .topMobMenuBar .mobNavigator{
     width:100%;
     overflow:hidden;
