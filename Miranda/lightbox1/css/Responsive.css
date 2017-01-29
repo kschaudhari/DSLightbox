@@ -16,7 +16,7 @@
 	}
 	.topMobMenuBar{
 		display:block;
-        z-index: 100;
+		z-index: 100;
 	}
 	
 	.CloseBtn{
@@ -118,7 +118,6 @@
     .tab3 .hero-img {
         height: 50%;
     }
-
     
     .MainContentBox {
         width:100%;
@@ -164,7 +163,14 @@
 }
 @media screen and (max-width: 1078px) and (min-width: 768px) {
     #mydiv-content{
-        width: 75%;
+        width: calc(100% - 50px);
+        width: -webkit-calc(100% - 50px);
+        width: -moz-calc(100% - 50px);
+        left: 0;
+        -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+        -moz-transform: translate(0, -50%);
+        transform: translate(0, -50%);
     }
 
 }
