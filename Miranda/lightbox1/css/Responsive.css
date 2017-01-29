@@ -16,6 +16,7 @@
 	}
 	.topMobMenuBar{
 		display:block;
+        z-index: 100;
 	}
 	
 	.CloseBtn{
