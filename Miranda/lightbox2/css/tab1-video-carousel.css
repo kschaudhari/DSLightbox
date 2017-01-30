@@ -34,3 +34,39 @@
 .video-player {
     padding-bottom: 57.3492%;
 }
+@media screen and (max-width: 767px) {
+    .play-list-container {
+        margin: auto;
+        display: table;
+        margin-top:2em;
+        max-width: 90%;
+        width: 100%
+    }
+    .play-list-carousel{
+        margin:auto;
+    }
+    .play-list{
+        max-width:100%;
+    }
+    .player-container {
+        width:100%;
+    }
+    .play-list-carousel-container{
+        display:inline-block;
+    }
+    .player-container .video-player-wrapper{
+        max-width:100%;
+    }
+    .video-player{
+            padding-bottom: 18.3492%;
+            height: 29vh;
+    }
+    .lighbox-container .lightbox-detailsPage .tab{
+        position:relative;
+       
+    }
+   /* .hero-img{
+        height:auto;
+    }*/
+
+}
