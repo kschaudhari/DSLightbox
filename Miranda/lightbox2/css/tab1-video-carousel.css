@@ -34,19 +34,27 @@
 .video-player {
     padding-bottom: 57.3492%;
 }
+.mobile-showDiv{
+    display:none;
+    
+}
 @media screen and (max-width: 767px) {
     .play-list-container {
         margin: auto;
         display: table;
-        margin-top:2em;
         max-width: 90%;
         width: 100%
+    }
+    .mobile-showDiv{
+        display:block;
+        height:27px;
     }
     .play-list-carousel{
         margin:auto;
     }
     .play-list{
         max-width:100%;
+        margin-top:0.5em;
     }
     .player-container {
         width:100%;
@@ -55,7 +63,7 @@
         display:inline-block;
     }
     .player-container .video-player-wrapper{
-        max-width:100%;
+        max-width:90%;
     }
     .video-player{
             padding-bottom: 18.3492%;
