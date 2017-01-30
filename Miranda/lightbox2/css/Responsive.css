@@ -1,7 +1,17 @@
-@media screen and (max-height: 670px)  {
-    
+@media screen and (max-width: 1078px) and (min-width: 768px) {
+    #mydiv-content{
+        width: calc(100% - 50px);
+        width: -webkit-calc(100% - 50px);
+        width: -moz-calc(100% - 50px);
+        left: 0;
+        -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+        -moz-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+    }
+
 }
-@media screen and (max-width: 767px) , screen and (max-height: 570px){
+@media screen and (max-width: 930px) , screen and (max-height: 570px){
     #mydiv{
         position:fixed;
         top:0px;
@@ -12,11 +22,13 @@
 	
 	#mydiv-content {
        top: 0;
-       -webkit-transform: translate(-50%, 0%);
-       -ms-transform: translate(-50%, 0%);
-	    transform: translate(-50%, 0%);
+       -webkit-transform: none;
+       -ms-transform: none;
+	    transform: none;
 		height:100vh;
 	    background-color: #fff;
+        width: 100%;
+        left:0px;
     }
 	.MobMenuBtn{
 		z-index:10;
@@ -79,6 +91,9 @@
         width: 80%;
         margin: 0px auto;
     }
+    .tab2 .tab-container {
+        width: 100%;
+    }
     .created-by.tab-container {
         display:inline-block;
         margin-right:0px;
@@ -88,6 +103,9 @@
     .tab.active .MainContaintArea{
         height:auto;
         max-height:unset;
+    }
+    .tab2.active .MainContaintArea, .tab3.active .MainContaintArea{
+        margin-bottom:100px;
     }
     .image_full{
         display:none;
@@ -116,7 +134,7 @@
     }
 
     .tab2 .hero-img {
-        background-image: url('../images/tab2/bkg_full.jpg');
+        /* background-image: url('../images/tab2/bkg_full.jpg'); */
         height: 100%;
     }
 
@@ -176,22 +194,8 @@
 	}
 
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    
-}
-@media screen and (max-width: 1078px) and (min-width: 768px) {
-    #mydiv-content{
-        width: calc(100% - 50px);
-        width: -webkit-calc(100% - 50px);
-        width: -moz-calc(100% - 50px);
-        left: 0;
-        -webkit-transform: translate(0, -50%);
-        -ms-transform: translate(0, -50%);
-        -moz-transform: translate(0, -50%);
-        transform: translate(0, -50%);
-    }
 
-}
+
 
 @media screen and (max-width: 767px)  and (orientation : landscape) , screen and (max-height: 570px) and (orientation : landscape) {
     .topMobMenuBar{
@@ -207,11 +211,3 @@
         min-height:400px;
     }
 }
-/* Safari CSS */
-@media screen and (min-color-index:0) and (webkit-min-device-pixel-ratio:0) { @media
-{
-	@media screen and (max-width: 767px) {
-    
-	}
-}}
-/* Safari CSS end */
