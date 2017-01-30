@@ -8,6 +8,7 @@
        -ms-transform: translate(-50%, 0%);
 	    transform: translate(-50%, 0%);
 		height:100vh;
+	    background-color: #fff;
     }
 	.MobMenuBtn{
 		z-index:10;
@@ -15,6 +16,7 @@
 	}
 	.topMobMenuBar{
 		display:block;
+		z-index: 100;
 	}
 	
 	.CloseBtn{
@@ -58,6 +60,63 @@
     .lighbox-container .external-scroll_y.scroll-scrolly_visible{
 
         display:none !important;
+    }
+    
+    .lighbox-container .logos-container{
+        display:none !important;
+    }
+
+    .tab-container {
+        margin-left: 3.75%;
+        margin-right: 3.75%;
+    }
+
+    .image_full{
+        display:none;
+    }
+
+    .image_mobile{
+        display:block;
+    }
+
+    .tab2 .brought {
+        font-size: 10px;
+        font-weight: 100;
+    }
+
+    .tab2 .trailfinders {
+        max-width: 130px;
+        margin-top: 20px;
+    }
+
+    .tab2 .brought{
+        margin-top: 20px;
+    }
+
+    .tab2 .hero-text{
+        margin-top:10px;
+    }
+
+    .tab2 .hero-img {
+        background-image: url('../images/tab2/bkg_full.jpg');
+        height: 100%;
+    }
+
+    .tab3 .sia {
+        right: 10px;
+        max-width: 45px;
+    }
+
+    .tab3 .zoom-container {
+        right: 10px;
+    }
+
+    .tab3 .zoom-container img {
+        max-width: 50px;
+    }
+
+    .tab3 .hero-img {
+        height: 50%;
     }
     
     .MainContentBox {
@@ -104,7 +163,14 @@
 }
 @media screen and (max-width: 1078px) and (min-width: 768px) {
     #mydiv-content{
-        width: 75%;
+        width: calc(100% - 50px);
+        width: -webkit-calc(100% - 50px);
+        width: -moz-calc(100% - 50px);
+        left: 0;
+        -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+        -moz-transform: translate(0, -50%);
+        transform: translate(0, -50%);
     }
 
 }
