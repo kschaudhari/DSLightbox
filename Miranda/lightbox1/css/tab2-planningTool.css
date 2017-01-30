@@ -1,0 +1,24 @@
+.planning-tool-container{position:relative;width:100%}
+.plaiingToll {
+    background: none;
+}
+.toolBox {
+    max-width: 920px;
+}
+
+.rightBtn {
+    right: 0%;
+    width: 170px;
+}
+
+.rightBtn button {
+    padding: 0px;
+}
+@media only screen and (max-width: 849px){
+    .plaiingToll {
+        position: relative;
+    }
+    .toolBox{
+         position: relative;
+    }
+}

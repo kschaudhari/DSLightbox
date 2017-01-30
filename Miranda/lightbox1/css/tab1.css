@@ -14,7 +14,7 @@
 
 .tab1 .text-australian {
   font-size: 36px;
-  font-family: "Proxima Nova",helvetica,arial;
+  font-family: "Proxima-Nova",helvetica,arial;
   color: rgb(255, 255, 255);
   text-transform: uppercase;
   z-index: 72;
@@ -25,7 +25,7 @@
 
 .tab1 .text-adventure {
   font-size: 36px;
-  font-family: "Proxima Nova";
+  font-family: "Proxima-Nova";
   color: rgb(255, 255, 255);
   text-transform: uppercase;
   z-index: 71;
@@ -35,12 +35,12 @@
 
 .tab1 .content {
   font-size: 16px;
-  font-family: "Proxima Nova";
+  font-family: "Proxima-Nova";
   color: rgb(0, 79, 118);
   line-height: 1.5;
   text-align: justify;
-  top: 420px;
   position: relative;
+  margin-top: 15px;
 }
 
 .tab1 .smith-logo {
@@ -82,8 +82,17 @@
 
 .tab1 .logos-text
 {
-    font-family: "Proxima Nova",Arial, Helvetica, sans-serif;
+    font-family: "Proxima-Nova",Arial, Helvetica, sans-serif;
     font-size: 12px;
     font-weight: 300;
     color: rgba(255,255,255,0.8);
+}
+.tab1 .MainContaintArea{
+    height: calc(100% - 120px);
+    height: -webkit-calc(100% - 120px);
+    height: -moz-calc(100% - 120px);
+}
+.created-by.tab-container {
+    color: rgb(0, 79, 118);
+    font-family: 'Proxima-Nova';
 }

@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Lightbox</title>
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,500i" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/font.css" />
     <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/Tabs.css" />
@@ -43,6 +41,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.5/TweenMax.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.6/utils/Draggable.min.js"></script>
     
+    <script src="https://use.typekit.net/zbu3uej.js"></script>
+    <script>try { Typekit.load({ async: true }); } catch ( e ) { }</script>
 
     <script>
         var clickTagTweet = "https://twitter.com/WestAustralia";
@@ -50,10 +50,10 @@
         var clickTagInsta = "https://www.instagram.com/westernaustralia/";
         var clickTagYou = "https://www.youtube.com/user/westernaustralia";
 
-        var clickTabPage1ReadMore1 = "http://www.thetimes.co.uk/static/just-another-day-in-western-australia/welcome-to-the-real-australia/";
-        var clickTabPage1ReadMore3 = "http://www.thetimes.co.uk/static/just-another-day-in-western-australia/perths-best-kept-secrets/";
-        var clickTabPage1ReadMore2 = "http://www.thetimes.co.uk/static/just-another-day-in-western-australia/i-walked-onto-a-landscape-that-i-could-imagine-mars-looks-like/";
-        var clickTabPage1ReadMore4 = "http://www.thetimes.co.uk/static/just-another-day-in-western-australia/three-days-in-perth/";
+        var clickTab1ExploreMore1 = "http://www.thetimes.co.uk/static/just-another-day-in-western-australia/welcome-to-the-real-australia/";
+        var clickTab1ExploreMore2 = "http://www.thetimes.co.uk/static/just-another-day-in-western-australia/perths-best-kept-secrets/";
+        var clickTab1ExploreMore3 = "http://www.thetimes.co.uk/static/just-another-day-in-western-australia/i-walked-onto-a-landscape-that-i-could-imagine-mars-looks-like/";
+        
     </script>
     <!-- url prefix for s3 https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/ -->
 </head>
@@ -139,48 +139,222 @@
                         <div class="tabs-container">
                             
                             <div class="tab tab1" data-tab="tab1">
-                                <div class="hero-img">
-                                    <div class="tab-title">
-                                        <p class="text-australian">Australian</p>
-                                        <p class="text-adventure">Adventure</p> 
+                                <div class="tab-details">
+                                    <div class="MainContaintArea">
+                                        <div class="hero-img">
+                                            <div class="play-list-container">
+
+                                                <div class="play-list">
+                                                    <div class="play-list-header">
+                                                        <img class="play-list-img" src="images/AA-logo.png">
+                                                    </div>
+                                                    <div class="carousel-navigation up"><div class="arrow up fa fa-angle-up"></div></div>
+                                                    <div class="play-list-carousel">
+
+                                                        <div class="play-list-carousel-container">
+                                                            <div class="play-list-item" data-video-url="https://www.youtube.com/embed/wt99b5ccwqk">
+                                                                <div class="play-list-item-container">
+                                                                    <div class="play-list-thumb" style="background-image:url('http://192.168.1.25/wp-content/uploads/2017/01/WLG_99999999_145719362_5760x3840-300x200.jpg')"></div>
+                                                                    <div class="play-list-info">
+                                                                        <div class="play-list-title">Singapore Airlines</div>
+                                                                        <div class="play-list-subhead">lorem ipsum <span><i class="fa fa-angle-right" aria-hidden="true"></i></span></div>
+                                                                        <span><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                                                                    </div>
+
+
+                                                                </div>
+                                                            </div>
+                                                            <div class="play-list-item" data-video-url="https://www.youtube.com/embed/eclPvG5kEp0">
+                                                                <div class="play-list-item-container">
+                                                                    <div class="play-list-thumb" style="background-image:url('')"></div>
+                                                                    <div class="play-list-info">
+                                                                        <div class="play-list-title">Perth</div>
+                                                                        <div class="play-list-subhead">lorem ipsum <span><i class="fa fa-angle-right" aria-hidden="true"></i></span></div>
+                                                                        <span><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                                                                    </div>
+
+
+                                                                </div>
+                                                            </div>
+                                                            <div class="play-list-item" data-video-url="https://www.youtube.com/embed/MHfZG7TT9yc">
+                                                                <div class="play-list-item-container">
+                                                                    <div class="play-list-thumb" style="background-image:url('')"></div>
+                                                                    <div class="play-list-info">
+                                                                        <div class="play-list-title">Darwin</div>
+                                                                        <div class="play-list-subhead">lorem ipsum <span><i class="fa fa-angle-right" aria-hidden="true"></i></span></div>
+                                                                        <span><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                                                                    </div>
+
+
+                                                                </div>
+                                                            </div>
+                                                            <div class="play-list-item" data-video-url="https://www.youtube.com/embed/YGuH0Zuivbc">
+                                                                <div class="play-list-item-container">
+                                                                    <div class="play-list-thumb" style="background-image:url('')"></div>
+                                                                    <div class="play-list-info">
+                                                                        <div class="play-list-title">Cairns</div>
+                                                                        <div class="play-list-subhead">lorem ipsum <span><i class="fa fa-angle-right" aria-hidden="true"></i></span></div>
+                                                                        <span><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                                                                    </div>
+
+
+                                                                </div>
+                                                            </div>
+                                                            <div class="play-list-item" data-video-url="https://www.youtube.com/embed/ecWjFufDNCQ">
+                                                                <div class="play-list-item-container">
+                                                                    <div class="play-list-thumb" style="background-image:url('')"></div>
+                                                                    <div class="play-list-info">
+                                                                        <div class="play-list-title">Brisbane</div>
+                                                                        <div class="play-list-subhead">lorem ipsum <span><i class="fa fa-angle-right" aria-hidden="true"></i></span></div>
+                                                                        <span><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                                                                    </div>
+
+
+                                                                </div>
+                                                            </div>
+                                                            <div class="play-list-item active" data-video-url="https://www.youtube.com/embed/7590aIHO2aY">
+                                                                <div class="play-list-item-container">
+                                                                    <div class="play-list-thumb" style="background-image:url('')"></div>
+                                                                    <div class="play-list-info">
+                                                                        <div class="play-list-title">Overview</div>
+                                                                        <div class="play-list-subhead">lorem ipsum <span><i class="fa fa-angle-right" aria-hidden="true"></i></span></div>
+                                                                        <span><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                                                                    </div>
+
+
+                                                                </div>
+                                                            </div>
+                                                            <div class="play-list-item" data-video-url="https://www.youtube.com/embed/QA_SY4b1tNI">
+                                                                <div class="play-list-item-container">
+                                                                    <div class="play-list-thumb" style="background-image:url('http://192.168.1.25/wp-content/uploads/2017/01/CIT_HR_24-300x200.jpg')"></div>
+                                                                    <div class="play-list-info">
+                                                                        <div class="play-list-title">Sydeny</div>
+                                                                        <div class="play-list-subhead">lorem ipsum <span><i class="fa fa-angle-right" aria-hidden="true"></i></span></div>
+                                                                        <span><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                                                                    </div>
+
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-navigation down"><div class="arrow down fa fa-angle-down"></div></div>
+                                                </div>
+                                                <div class="play-list-section-separator"></div>
+                                                <div class="player-container">
+                                                    <div class="video-player-wrapper">
+                                                        <div class="video-player"><iframe src="https://www.youtube.com/embed/7590aIHO2aY?enablejsapi=1&amp;autoplay=1" allowfullscreen="" frameborder="0"></iframe></div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="logos-container">
+                                                <div class="logos-text">brought to you by</div>
+                                                <img class="oz-logo" src="./images/TA_URL_REVKylnW_S_CMYK.png" srcset="images/TA_URL_REVKylnW_S_CMYK.png 1x,images/TA_URL_REVKylnW_S_CMYK@2x.png 2x,images/TA_URL_REVKylnW_S_CMYK@3x.png 3x" />
+                                                <img class="sa-logo" src="./images/SIA stacked_FC REV CMYK.png" srcset="images/SIA stacked_FC REV CMYK.png 1x,images/SIA stacked_FC REV CMYK@2x.png 2x,images/SIA stacked_FC REV CMYK@3x.png 3x" />
+                                            </div>
+                                        </div>
+                                        <div class="content tab-container clearfix">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.
+
+                                        </div>
                                     </div>
-                                    <div class="logos-container">
-                                        <div class="logos-text">brought to you by</div>
-                                        <img class="oz-logo" src="./images/TA_URL_REVKylnW_S_CMYK@3x.png"/>
-                                        <img class="sa-logo" src="./images/SIA stacked_FC REV CMYK@3x.png"/>
+                                    <div class="created-by tab-container">
+                                        <img class="smith-logo" src="./images/tab1/SMith logo.png" srcset="images/tab1/SMith logo.png 1x,images/tab1/SMith logo@2x.png 2x,images/tab1/SMith logo@3x.png 3x"/>
+                                        <div class="curated">created by</div>
                                     </div>
                                 </div>
-                                <div class="content tab-container clearfix">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.
-            
-                                    <img class="smith-logo" src="./images/tab1/SMith logo@3x.png" />
-                                    <div class="curated">curated by</div>
-                                </div>
-                                
                             </div>
                             <div class="tab tab2" data-tab="tab2">
-                                <div class="hero-img">
-                                    <div class="tab-container">
-                                        <p class="hero-title">Holidays come in all shapes and sizes. Make sure yours is the perfect fit</p>
-                                        <p class="hero-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id  st laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
-                                        <img class="trailfinders image_full" src="./images/tab2/TRAILFINDERS_CMYK_WHITE OUT_new@3x.png" />
-                                        <img class="trailfinders image_mobile" src="./images/tab2/TRAILFINDERS_CMYK_WHITE OUT_new.png" />
-                                        <div class="brought">brought to you by</div>
+                                <div class="tab-details">
+                                    <div class="MainContaintArea">
+                                        <div class="hero-img">
+                                            <div class="tab-container">
+                                                <p class="hero-title">Holidays come in all shapes and sizes. Make sure yours is the perfect fit</p>
+                                                <p class="hero-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id  st laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
+                                                <img class="trailfinders image_full" src="./images/tab2/TRAILFINDERS_CMYK_WHITE OUT_new.png" srcset="images/tab2/TRAILFINDERS_CMYK_WHITE OUT_new.png 1x, images/tab2/TRAILFINDERS_CMYK_WHITE OUT_new@2x.png 2x, images/tab2/TRAILFINDERS_CMYK_WHITE OUT_new@3x.png 3x" />
+                                                <img class="trailfinders image_mobile" src="./images/tab2/TRAILFINDERS_CMYK_WHITE OUT_new.png"/>
+                                                <div class="brought">brought to you by</div>
+                                            </div>
+                                        </div>
+                                        <div class="explore-content">
+                                            <div class="explore-content-row">
+                                                <div class="explore-thumbnail bgimg" bg-srcset='images/tab2/promo-1.jpg'></div>
+                                                <div class="explore-details">
+                                                    <div class="explore-heading">PROMO TITLE</div>
+                                                    <div class="explore-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,</div>
+                                                </div>
+                                                <div class="explore-btns bgimg" onclick="javascript: openNewWindow(window.clickTab2ExploreMore1)" bg-srcset='images/explore.png 1x, images/explore@2x.png 2x, images/explore@3x.png 3x '></div>
+                                            </div>
+                                            <div class="explore-content-row">
+                                                <div class="explore-thumbnail bgimg" bg-srcset='images/tab2/promo-2.jpg'></div>
+                                                <div class="explore-details">
+                                                    <div class="explore-heading">GOURMET FOOD</div>
+                                                    <div class="explore-description">The Premium Economy Book the Cook service lets you reserve your main course up to 24 hours before you fly. Alternatively, pick from three delicious meal choices onboard – including Singaporean, Asian and international flavours – and add a glass or two of fine wine or champagne.</div>
+                                                </div>
+                                                <div class="explore-btns bgimg" onclick="javascript: openNewWindow(window.clickTab2ExploreMore2)" bg-srcset='images/explore.png 1x, images/explore@2x.png 2x, images/explore@3x.png 3x '></div>
+                                            </div>
+                                            <div class="explore-content-row ">
+                                                <div class="explore-thumbnail bgimg" bg-srcset='images/tab2/promo-1.jpg'></div>
+                                                <div class="explore-details">
+                                                    <div class="explore-heading">PROMO TITLE</div>
+                                                    <div class="explore-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,</div>
+                                                </div>
+                                                <div class="explore-btns bgimg" onclick="javascript: openNewWindow(window.clickTab2ExploreMore3)" bg-srcset='images/explore.png 1x, images/explore@2x.png 2x, images/explore@3x.png 3x '></div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                             <div class="tab tab3" data-tab="tab3">
-                                <div class="hero-img">
-                                    <div id="map-container">
-                                        <img id="map" class="map" src="./images/tab3/test.svg" />
-                                    </div>
-                                    <img class="sia" src="./images/tab3/SIA logo@3x.png" />
-                                    <div class="zoom-container">
-                                        <img class="plus" src="./images/tab3/plus@3x.png" />
-                                        <img class="minus" src="./images/tab3/minus@3x.png" />
+                            <div class="tab tab3" data-tab="tab3">
+                                <div class="tab-details">
+                                    <div class="MainContaintArea">
+                                        <div class="hero-img">
+                                            <div id="map-container">
+                                                <img id="map" class="map" src="./images/tab3/test.svg" />
+                                            </div>
+                                            <img class="sia" src="./images/tab3/SIA logo@3x.png" />
+                                            <div class="zoom-container">
+                                                <img class="plus" src="./images/tab3/plus@3x.png" />
+                                                <img class="minus" src="./images/tab3/minus@3x.png" />
+                                            </div>
+                                        </div>
+                                        <div class="explore-content">
+                                            <div class="explore-content-row">
+                                                <div class="explore-thumbnail bgimg" bg-srcset='images/tab3/promo-1.jpg'></div>
+                                                <div class="explore-details">
+                                                    <div class="explore-heading">GREATER SPACE</div>
+                                                    <div class="explore-description">Flying Economy won’t equate to bruised knees with Singapore Airlines, our cabins are designed to give passengers plenty of room. In the New Economy Class, an innovative seat design provides more legroom and 115° of recline so you can relax. Preferred Seats, near the exits, benefit from extra legroom and are hotly sought after.</div>
+                                                </div>
+                                                <div class="explore-btns bgimg" onclick="javascript: openNewWindow(window.clickTab3ExploreMore1)" bg-srcset='images/explore.png 1x, images/explore@2x.png 2x, images/explore@3x.png 3x '></div>
+                                            </div>
+                                            <div class="explore-content-row">
+                                                <div class="explore-thumbnail bgimg" bg-srcset='images/tab2/promo-2.jpg'></div>
+                                                <div class="explore-details">
+                                                    <div class="explore-heading">GOURMET FOOD</div>
+                                                    <div class="explore-description">The Premium Economy Book the Cook service lets you reserve your main course up to 24 hours before you fly. Alternatively, pick from three delicious meal choices onboard – including Singaporean, Asian and international flavours – and add a glass or two of fine wine or champagne.</div>
+                                                </div>
+                                                <div class="explore-btns bgimg" onclick="javascript: openNewWindow(window.clickTab3ExploreMore2)" bg-srcset='images/explore.png 1x, images/explore@2x.png 2x, images/explore@3x.png 3x '></div>
+                                            </div>
+                                            <div class="explore-content-row ">
+                                                <div class="explore-thumbnail bgimg" bg-srcset='images/tab3/promo-1.jpg'></div>
+                                                <div class="explore-details">
+                                                    <div class="explore-heading">PROMO TITLE</div>
+                                                    <div class="explore-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,</div>
+                                                </div>
+                                                <div class="explore-btns bgimg" onclick="javascript: openNewWindow(window.clickTab3ExploreMore3)" bg-srcset='images/explore.png 1x, images/explore@2x.png 2x, images/explore@3x.png 3x '></div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                             </div>
+                            </div>
                         </div>
 
                     </div>
@@ -222,7 +396,7 @@
                     <div class="tab-menu1-preload"></div>
                     <div class="tab-menu2-preload"></div>
                     <div class="tab-menu3-preload"></div>
-
+                <div class="scrollbar-external_wrapper">
                     <div class="external-scroll_y">
                         <div style="position:relative">
                             <div class="scroll-element_outer">
@@ -232,8 +406,8 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
+            </div>
             
             <div class="mobDetector"></div> <!-- this class used to detect mobile in javascript -->
         </div>
@@ -262,6 +436,12 @@
         edgeResistance:1.0
         });
     </script>
-
+    
+    <div calss="video-carousel-scripts">
+        <link rel='stylesheet' id='font-awesome-css' href='css/font-awesome.min.css' type='text/css' media='all' />
+        <link rel="stylesheet" type="text/css" href="http://miranda.dslabs.io/wp-content/themes/wpex-luxmag/css/video-carousel.css">
+        <link rel="stylesheet" type="text/css" href="css/tab1-video-carousel.css" />
+        <script src="http://miranda.dslabs.io/wp-content/themes/wpex-luxmag/js/video-carousel.js"></script>
+    </div>
 </body>
 </html>

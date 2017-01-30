@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Lightbox</title>
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,500i" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/font.css" />
     <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/Tabs.css" />
@@ -45,16 +43,19 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.6/utils/Draggable.min.js"></script>
     
 
+    <script src="https://use.typekit.net/zbu3uej.js"></script>
+    <script>try { Typekit.load({ async: true }); } catch ( e ) { }</script>
+
     <script>
         var clickTagTweet = "https://twitter.com/WestAustralia";
         var clickTagFb = "https://www.facebook.com/ExtraordinaryWesternAustralia";
         var clickTagInsta = "https://www.instagram.com/westernaustralia/";
         var clickTagYou = "https://www.youtube.com/user/westernaustralia";
 
-        var clickTabPage1ReadMore1 = "http://www.thetimes.co.uk/static/just-another-day-in-western-australia/welcome-to-the-real-australia/";
-        var clickTabPage1ReadMore3 = "http://www.thetimes.co.uk/static/just-another-day-in-western-australia/perths-best-kept-secrets/";
-        var clickTabPage1ReadMore2 = "http://www.thetimes.co.uk/static/just-another-day-in-western-australia/i-walked-onto-a-landscape-that-i-could-imagine-mars-looks-like/";
-        var clickTabPage1ReadMore4 = "http://www.thetimes.co.uk/static/just-another-day-in-western-australia/three-days-in-perth/";
+        var clickTab1ExploreMore1 = "http://www.thetimes.co.uk/static/just-another-day-in-western-australia/welcome-to-the-real-australia/";
+        var clickTab1ExploreMore2 = "http://www.thetimes.co.uk/static/just-another-day-in-western-australia/perths-best-kept-secrets/";
+        var clickTab1ExploreMore3 = "http://www.thetimes.co.uk/static/just-another-day-in-western-australia/i-walked-onto-a-landscape-that-i-could-imagine-mars-looks-like/";
+
     </script>
     <!-- url prefix for s3 https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/ -->
 </head>
@@ -136,215 +137,282 @@
                         <div class="tabs-container">
                             
                             <div class="tab tab1" data-tab="tab1">
-                                <div class="hero-img">
-                                    <div class="play-list-container">
+                                <div class="tab-details">
+                                    <div class="MainContaintArea">
+                                        <div class="hero-img">
+                                            <div class="play-list-container">
 
-                                        <div class="play-list">
-                                            <div class="play-list-header">
-                                                <img class="play-list-img" src="http://192.168.1.25/wp-content/themes/wpex-luxmag/images/AA-logo.png">
-                                            </div>
-                                            <div class="carousel-navigation up"><div class="arrow up fa fa-angle-up"></div></div>
-                                            <div class="play-list-carousel">
+                                                <div class="play-list">
+                                                    <div class="play-list-header">
+                                                        <img class="play-list-img" src="images/AA-logo.png">
+                                                    </div>
+                                                    <div class="carousel-navigation up"><div class="arrow up fa fa-angle-up"></div></div>
+                                                    <div class="play-list-carousel">
 
-                                                <div class="play-list-carousel-container">
-                                                    <div class="play-list-item" data-video-url="https://www.youtube.com/embed/wt99b5ccwqk">
-                                                        <div class="play-list-item-container">
-                                                            <div class="play-list-thumb" style="background-image:url('http://192.168.1.25/wp-content/uploads/2017/01/WLG_99999999_145719362_5760x3840-300x200.jpg')"></div>
-                                                            <div class="play-list-info">
-                                                                <div class="play-list-title">Singapore Airlines</div>
-                                                                <div class="play-list-subhead">lorem ipsum <span><i class="fa fa-angle-right" aria-hidden="true"></i></span></div>
-                                                                <span><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                                                        <div class="play-list-carousel-container">
+                                                            <div class="play-list-item" data-video-url="https://www.youtube.com/embed/wt99b5ccwqk">
+                                                                <div class="play-list-item-container">
+                                                                    <div class="play-list-thumb" style="background-image:url('http://192.168.1.25/wp-content/uploads/2017/01/WLG_99999999_145719362_5760x3840-300x200.jpg')"></div>
+                                                                    <div class="play-list-info">
+                                                                        <div class="play-list-title">Singapore Airlines</div>
+                                                                        <div class="play-list-subhead">lorem ipsum <span><i class="fa fa-angle-right" aria-hidden="true"></i></span></div>
+                                                                        <span><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                                                                    </div>
+
+
+                                                                </div>
                                                             </div>
+                                                            <div class="play-list-item" data-video-url="https://www.youtube.com/embed/eclPvG5kEp0">
+                                                                <div class="play-list-item-container">
+                                                                    <div class="play-list-thumb" style="background-image:url('')"></div>
+                                                                    <div class="play-list-info">
+                                                                        <div class="play-list-title">Perth</div>
+                                                                        <div class="play-list-subhead">lorem ipsum <span><i class="fa fa-angle-right" aria-hidden="true"></i></span></div>
+                                                                        <span><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                                                                    </div>
 
 
+                                                                </div>
+                                                            </div>
+                                                            <div class="play-list-item" data-video-url="https://www.youtube.com/embed/MHfZG7TT9yc">
+                                                                <div class="play-list-item-container">
+                                                                    <div class="play-list-thumb" style="background-image:url('')"></div>
+                                                                    <div class="play-list-info">
+                                                                        <div class="play-list-title">Darwin</div>
+                                                                        <div class="play-list-subhead">lorem ipsum <span><i class="fa fa-angle-right" aria-hidden="true"></i></span></div>
+                                                                        <span><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                                                                    </div>
+
+
+                                                                </div>
+                                                            </div>
+                                                            <div class="play-list-item" data-video-url="https://www.youtube.com/embed/YGuH0Zuivbc">
+                                                                <div class="play-list-item-container">
+                                                                    <div class="play-list-thumb" style="background-image:url('')"></div>
+                                                                    <div class="play-list-info">
+                                                                        <div class="play-list-title">Cairns</div>
+                                                                        <div class="play-list-subhead">lorem ipsum <span><i class="fa fa-angle-right" aria-hidden="true"></i></span></div>
+                                                                        <span><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                                                                    </div>
+
+
+                                                                </div>
+                                                            </div>
+                                                            <div class="play-list-item" data-video-url="https://www.youtube.com/embed/ecWjFufDNCQ">
+                                                                <div class="play-list-item-container">
+                                                                    <div class="play-list-thumb" style="background-image:url('')"></div>
+                                                                    <div class="play-list-info">
+                                                                        <div class="play-list-title">Brisbane</div>
+                                                                        <div class="play-list-subhead">lorem ipsum <span><i class="fa fa-angle-right" aria-hidden="true"></i></span></div>
+                                                                        <span><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                                                                    </div>
+
+
+                                                                </div>
+                                                            </div>
+                                                            <div class="play-list-item active" data-video-url="https://www.youtube.com/embed/7590aIHO2aY">
+                                                                <div class="play-list-item-container">
+                                                                    <div class="play-list-thumb" style="background-image:url('')"></div>
+                                                                    <div class="play-list-info">
+                                                                        <div class="play-list-title">Overview</div>
+                                                                        <div class="play-list-subhead">lorem ipsum <span><i class="fa fa-angle-right" aria-hidden="true"></i></span></div>
+                                                                        <span><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                                                                    </div>
+
+
+                                                                </div>
+                                                            </div>
+                                                            <div class="play-list-item" data-video-url="https://www.youtube.com/embed/QA_SY4b1tNI">
+                                                                <div class="play-list-item-container">
+                                                                    <div class="play-list-thumb" style="background-image:url('http://192.168.1.25/wp-content/uploads/2017/01/CIT_HR_24-300x200.jpg')"></div>
+                                                                    <div class="play-list-info">
+                                                                        <div class="play-list-title">Sydeny</div>
+                                                                        <div class="play-list-subhead">lorem ipsum <span><i class="fa fa-angle-right" aria-hidden="true"></i></span></div>
+                                                                        <span><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                                                                    </div>
+
+
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="play-list-item" data-video-url="https://www.youtube.com/embed/eclPvG5kEp0">
-                                                        <div class="play-list-item-container">
-                                                            <div class="play-list-thumb" style="background-image:url('')"></div>
-                                                            <div class="play-list-info">
-                                                                <div class="play-list-title">Perth</div>
-                                                                <div class="play-list-subhead">lorem ipsum <span><i class="fa fa-angle-right" aria-hidden="true"></i></span></div>
-                                                                <span><i class="fa fa-angle-right" aria-hidden="true"></i></span>
-                                                            </div>
-
-
-                                                        </div>
-                                                    </div>
-                                                    <div class="play-list-item" data-video-url="https://www.youtube.com/embed/MHfZG7TT9yc">
-                                                        <div class="play-list-item-container">
-                                                            <div class="play-list-thumb" style="background-image:url('')"></div>
-                                                            <div class="play-list-info">
-                                                                <div class="play-list-title">Darwin</div>
-                                                                <div class="play-list-subhead">lorem ipsum <span><i class="fa fa-angle-right" aria-hidden="true"></i></span></div>
-                                                                <span><i class="fa fa-angle-right" aria-hidden="true"></i></span>
-                                                            </div>
-
-
-                                                        </div>
-                                                    </div>
-                                                    <div class="play-list-item" data-video-url="https://www.youtube.com/embed/YGuH0Zuivbc">
-                                                        <div class="play-list-item-container">
-                                                            <div class="play-list-thumb" style="background-image:url('')"></div>
-                                                            <div class="play-list-info">
-                                                                <div class="play-list-title">Cairns</div>
-                                                                <div class="play-list-subhead">lorem ipsum <span><i class="fa fa-angle-right" aria-hidden="true"></i></span></div>
-                                                                <span><i class="fa fa-angle-right" aria-hidden="true"></i></span>
-                                                            </div>
-
-
-                                                        </div>
-                                                    </div>
-                                                    <div class="play-list-item" data-video-url="https://www.youtube.com/embed/ecWjFufDNCQ">
-                                                        <div class="play-list-item-container">
-                                                            <div class="play-list-thumb" style="background-image:url('')"></div>
-                                                            <div class="play-list-info">
-                                                                <div class="play-list-title">Brisbane</div>
-                                                                <div class="play-list-subhead">lorem ipsum <span><i class="fa fa-angle-right" aria-hidden="true"></i></span></div>
-                                                                <span><i class="fa fa-angle-right" aria-hidden="true"></i></span>
-                                                            </div>
-
-
-                                                        </div>
-                                                    </div>
-                                                    <div class="play-list-item active" data-video-url="https://www.youtube.com/embed/7590aIHO2aY">
-                                                        <div class="play-list-item-container">
-                                                            <div class="play-list-thumb" style="background-image:url('')"></div>
-                                                            <div class="play-list-info">
-                                                                <div class="play-list-title">Overview</div>
-                                                                <div class="play-list-subhead">lorem ipsum <span><i class="fa fa-angle-right" aria-hidden="true"></i></span></div>
-                                                                <span><i class="fa fa-angle-right" aria-hidden="true"></i></span>
-                                                            </div>
-
-
-                                                        </div>
-                                                    </div>
-                                                    <div class="play-list-item" data-video-url="https://www.youtube.com/embed/QA_SY4b1tNI">
-                                                        <div class="play-list-item-container">
-                                                            <div class="play-list-thumb" style="background-image:url('http://192.168.1.25/wp-content/uploads/2017/01/CIT_HR_24-300x200.jpg')"></div>
-                                                            <div class="play-list-info">
-                                                                <div class="play-list-title">Sydeny</div>
-                                                                <div class="play-list-subhead">lorem ipsum <span><i class="fa fa-angle-right" aria-hidden="true"></i></span></div>
-                                                                <span><i class="fa fa-angle-right" aria-hidden="true"></i></span>
-                                                            </div>
-
-
-                                                        </div>
+                                                    <div class="carousel-navigation down"><div class="arrow down fa fa-angle-down"></div></div>
+                                                </div>
+                                                <div class="play-list-section-separator"></div>
+                                                <div class="player-container">
+                                                    <div class="video-player-wrapper">
+                                                        <div class="video-player"><iframe src="https://www.youtube.com/embed/7590aIHO2aY?enablejsapi=1&amp;autoplay=1" allowfullscreen="" frameborder="0"></iframe></div>
                                                     </div>
                                                 </div>
+
                                             </div>
-                                            <div class="carousel-navigation down"><div class="arrow down fa fa-angle-down"></div></div>
+                                            <div class="logos-container">
+                                                <div class="logos-text">brought to you by</div>
+                                                <img class="oz-logo" src="images/TA_URL_REVKylnW_S_CMYK@3x.png" />
+                                                <img class="sa-logo" src="images/SIA stacked_FC REV CMYK@3x.png" />
+                                            </div>
                                         </div>
-                                        <div class="play-list-section-separator"></div>
-                                        <div class="player-container">
-                                            <div class="video-player-wrapper">
-                                                <div class="video-player"><iframe src="https://www.youtube.com/embed/7590aIHO2aY?enablejsapi=1&amp;autoplay=1" allowfullscreen="" frameborder="0"></iframe></div>
-                                            </div>
+                                        <div class="content tab-container clearfix">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.
                                         </div>
-
                                     </div>
-                                    <div class="logos-container">
-                                        <div class="logos-text">brought to you by</div>
-                                        <img class="oz-logo" src="images/TA_URL_REVKylnW_S_CMYK@3x.png"/>
-                                        <img class="sa-logo" src="images/SIA stacked_FC REV CMYK@3x.png"/>
-                                    </div>
-                                </div>
-                                <div class="content tab-container clearfix">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.
-            
-                                    <img class="smith-logo" src="images/tab1/SMith logo@3x.png" />
-                                    <div class="curated">curated by</div>
-                                </div>
-                                
-                            </div>
-                            <div class="tab tab2" data-tab="tab2">
-                                <div class="hero-img">
-                                    <div class="tab-container">
-                                        <p class="hero-title">Holidays come in all shapes and sizes. Make sure yours is the perfect fit</p>                                     
-                                    </div>
-                                    <div class="planning-tool-container">
-                                        <div class="plaiingToll">
-                                            <div class="toolBox">
-                                                <!--<img class="toolBgImg" src="~/Content/images/Escape/toolBg1.jpg" />-->
-                                                <div class="adventureLogo">
-                                                    <img class="topLogo" src="images/tab2/AA-logo.png" srcset="images/tab2/AA-logo.png 1x,images/tab2/AA-logo@2x.png 2x,images/tab2/AA-logo@3x.png 3x">
-                                                    <img class="bottomLogo" src="images/tab2/campaign-logos.png" srcset="images/tab2/campaign-logos.png 1x, images/tab2/campaign-logos@2x.png 2x, images/tab2/campaign-logos@3x.png 3x">
-                                                </div>
-                                                <span class="MobtopGrove"></span>
-                                                <div class="TollBoxContent">
-                                                    <h5><span class="LeftgrooveImg"></span>Tailor your own itinerary<span class="rightgrooveImg"></span></h5>
-
-                                                    <div class="slideBoxes" data-id="16">
-                                                        <div class="leftLabel whiteShaddow"><span>GOURMET</span></div>
-                                                        <div class="slider">
-                                                            <div class="sliderContent ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all ui-slider-pips ui-slider-float"><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 50%;"></span><span class="ui-slider-pip ui-slider-pip-first ui-slider-pip-number" style="left: 0%;"><span class="ui-slider-line ui-slider-line0"></span><span class="ui-slider-number">0</span></span><span class="ui-slider-pip" style="left: 25%;"><span class="ui-slider-line ui-slider-line1"></span><span class="ui-slider-number">1</span></span><span class="ui-slider-pip" style="left: 50%;"><span class="ui-slider-line ui-slider-line2"></span><span class="ui-slider-number">2</span></span><span class="ui-slider-pip" style="left: 75%;"><span class="ui-slider-line ui-slider-line3"></span><span class="ui-slider-number">3</span></span><span class="ui-slider-pip ui-slider-pip-last ui-slider-pip-number" style="left: 100%;"><span class="ui-slider-line ui-slider-line4"></span><span class="ui-slider-number">4</span></span></div>
-
-                                                        </div>
-                                                        <div class="rightLabel whiteShaddow"><span>CASUAL DINING</span></div>
-                                                    </div><!-- 1slide -->
-                                                    <div class="slideBoxes" data-id="17">
-                                                        <div class="leftLabel whiteShaddow"><span>ADVENTURE</span></div>
-                                                        <div class="slider">
-                                                            <div class="sliderContent ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all ui-slider-pips ui-slider-float"><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 50%;"></span><span class="ui-slider-pip ui-slider-pip-first ui-slider-pip-number" style="left: 0%;"><span class="ui-slider-line ui-slider-line0"></span><span class="ui-slider-number">0</span></span><span class="ui-slider-pip" style="left: 25%;"><span class="ui-slider-line ui-slider-line1"></span><span class="ui-slider-number">1</span></span><span class="ui-slider-pip" style="left: 50%;"><span class="ui-slider-line ui-slider-line2"></span><span class="ui-slider-number">2</span></span><span class="ui-slider-pip" style="left: 75%;"><span class="ui-slider-line ui-slider-line3"></span><span class="ui-slider-number">3</span></span><span class="ui-slider-pip ui-slider-pip-last ui-slider-pip-number" style="left: 100%;"><span class="ui-slider-line ui-slider-line4"></span><span class="ui-slider-number">4</span></span></div>
-
-                                                        </div>
-                                                        <div class="rightLabel whiteShaddow"><span>RELAXING</span></div>
-                                                    </div><!-- 1slide -->
-                                                    <div class="slideBoxes" data-id="18">
-                                                        <div class="leftLabel whiteShaddow"><span>CITY</span></div>
-                                                        <div class="slider">
-                                                            <div class="sliderContent ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all ui-slider-pips ui-slider-float"><span class="ui-slider-handle ui-state-default ui-corner-all Fwhite" tabindex="0" style="left: 50%;"></span><span class="ui-slider-pip ui-slider-pip-first ui-slider-pip-number" style="left: 0%;"><span class="ui-slider-line ui-slider-line0"></span><span class="ui-slider-number">0</span></span><span class="ui-slider-pip" style="left: 25%;"><span class="ui-slider-line ui-slider-line1"></span><span class="ui-slider-number">1</span></span><span class="ui-slider-pip" style="left: 50%;"><span class="ui-slider-line ui-slider-line2"></span><span class="ui-slider-number">2</span></span><span class="ui-slider-pip" style="left: 75%;"><span class="ui-slider-line ui-slider-line3"></span><span class="ui-slider-number">3</span></span><span class="ui-slider-pip ui-slider-pip-last ui-slider-pip-number" style="left: 100%;"><span class="ui-slider-line ui-slider-line4"></span><span class="ui-slider-number">4</span></span></div>
-
-                                                        </div>
-                                                        <div class="rightLabel whiteShaddow"><span>NATURE</span></div>
-                                                    </div><!-- 1slide -->
-                                                    <h6><span class="LeftgrooveImg"></span>Select your cabin experience<span class="rightgrooveImg"></span></h6>
-                                                    <div class="classesSec">
-                                                        <ul>
-                                                            <li class="activeFlightClass" data-id="4"><input id="radio1" type="radio" name="radio" value="4" checked=""><label class="hiddenlabel" for="checkbox3">&nbsp;</label><br>Economy</li>
-                                                            <li class="" data-id="3"><input id="radio1" type="radio" name="radio" value="3"><label class="hiddenlabel" for="checkbox3">&nbsp;</label><br>Premium Economy</li>
-                                                            <li class="" data-id="2"><input id="radio1" type="radio" name="radio" value="2"><label class="hiddenlabel" for="checkbox3">&nbsp;</label><br>Business Class</li>
-                                                            <li class="" data-id="1"><input id="radio1" type="radio" name="radio" value="1"><label class="hiddenlabel" for="checkbox3">&nbsp;</label><br>1st Class/Suites</li>
-
-
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="rightBtn">
-                                                    <button id="btnCreateEscape" class="selectorPageStart"></button>
-                                                </div>
-                                            </div>
-                                            <form action="/Escape/ShowEscape" id="frmCreateEscape" method="post" style="display:none">
-                                                <input type="hidden" name="categoryCount" value="3">
-                                                <input type="hidden" id="CampignId" value="16" name="CampaignId">
-                                                <input type="hidden" id="FlightClassId" name="FlightClassId">
-                                                <input name="Categories0" id="Categories0" type="hidden" value="16">
-                                                <input type="range" name="Rating0" id="Rating0" data-cat-id="16" class="myRange categoryRange" min="-1" max="1" step="any" style="display:none">
-                                                <input name="Categories1" id="Categories1" type="hidden" value="17">
-                                                <input type="range" name="Rating1" id="Rating1" data-cat-id="17" class="myRange categoryRange" min="-1" max="1" step="any" style="display:none">
-                                                <input name="Categories2" id="Categories2" type="hidden" value="18">
-                                                <input type="range" name="Rating2" id="Rating2" data-cat-id="18" class="myRange categoryRange" min="-1" max="1" step="any" style="display:none">
-                                            </form>
-                                        </div>
+                                    <div class="created-by tab-container">
+                                        <img class="smith-logo" src="./images/tab1/SMith logo.png" srcset="images/tab1/SMith logo.png 1x,images/tab1/SMith logo@2x.png 2x,images/tab1/SMith logo@3x.png 3x" />
+                                        <div class="curated">created by</div>
                                     </div>
                                 </div>
                             </div>
-                             <div class="tab tab3" data-tab="tab3">
-                                <div class="hero-img">
-                                    <div id="map-container">
-                                        <img id="map" class="map" src="images/tab3/test.svg" />
-                                    </div>
-                                    <img class="sia" src="images/tab3/SIA logo@3x.png" />
-                                    <div class="zoom-container">
-                                        <img class="plus" src="images/tab3/plus@3x.png" />
-                                        <img class="minus" src="images/tab3/minus@3x.png" />
+                            <div class="tab tab2" data-tab="tab2">
+                                <div class="tab-details">
+                                    <div class="MainContaintArea">
+                                        <div class="hero-img">
+                                            <div class="tab-container">
+                                                <p class="hero-title" style="text-align:center">Holidays come in all shapes and sizes. Make sure yours is the perfect fit with our handy online planning tool, which matches your tastes with tailored travel itineraries.</p>
+                                            </div>
+                                            <div class="planning-tool-container">
+                                                <div class="plaiingToll">
+                                                    <div class="toolBox">
+                                                        <!--<img class="toolBgImg" src="~/Content/images/Escape/toolBg1.jpg" />-->
+                                                        <div class="adventureLogo">
+                                                            <img class="topLogo" src="images/tab2/AA-logo.png" srcset="images/tab2/AA-logo.png 1x,images/tab2/AA-logo@2x.png 2x,images/tab2/AA-logo@3x.png 3x">
+                                                            <img class="bottomLogo" src="images/tab2/campaign-logos.png" srcset="images/tab2/campaign-logos.png 1x, images/tab2/campaign-logos@2x.png 2x, images/tab2/campaign-logos@3x.png 3x">
+                                                        </div>
+                                                        <span class="MobtopGrove"></span>
+                                                        <div class="TollBoxContent">
+                                                            <h5><span class="LeftgrooveImg"></span>Tailor your own itinerary<span class="rightgrooveImg"></span></h5>
+
+                                                            <div class="slideBoxes" data-id="16">
+                                                                <div class="leftLabel whiteShaddow"><span>GOURMET</span></div>
+                                                                <div class="slider">
+                                                                    <div class="sliderContent ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all ui-slider-pips ui-slider-float"><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 50%;"></span><span class="ui-slider-pip ui-slider-pip-first ui-slider-pip-number" style="left: 0%;"><span class="ui-slider-line ui-slider-line0"></span><span class="ui-slider-number">0</span></span><span class="ui-slider-pip" style="left: 25%;"><span class="ui-slider-line ui-slider-line1"></span><span class="ui-slider-number">1</span></span><span class="ui-slider-pip" style="left: 50%;"><span class="ui-slider-line ui-slider-line2"></span><span class="ui-slider-number">2</span></span><span class="ui-slider-pip" style="left: 75%;"><span class="ui-slider-line ui-slider-line3"></span><span class="ui-slider-number">3</span></span><span class="ui-slider-pip ui-slider-pip-last ui-slider-pip-number" style="left: 100%;"><span class="ui-slider-line ui-slider-line4"></span><span class="ui-slider-number">4</span></span></div>
+
+                                                                </div>
+                                                                <div class="rightLabel whiteShaddow"><span>CASUAL DINING</span></div>
+                                                            </div><!-- 1slide -->
+                                                            <div class="slideBoxes" data-id="17">
+                                                                <div class="leftLabel whiteShaddow"><span>ADVENTURE</span></div>
+                                                                <div class="slider">
+                                                                    <div class="sliderContent ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all ui-slider-pips ui-slider-float"><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 50%;"></span><span class="ui-slider-pip ui-slider-pip-first ui-slider-pip-number" style="left: 0%;"><span class="ui-slider-line ui-slider-line0"></span><span class="ui-slider-number">0</span></span><span class="ui-slider-pip" style="left: 25%;"><span class="ui-slider-line ui-slider-line1"></span><span class="ui-slider-number">1</span></span><span class="ui-slider-pip" style="left: 50%;"><span class="ui-slider-line ui-slider-line2"></span><span class="ui-slider-number">2</span></span><span class="ui-slider-pip" style="left: 75%;"><span class="ui-slider-line ui-slider-line3"></span><span class="ui-slider-number">3</span></span><span class="ui-slider-pip ui-slider-pip-last ui-slider-pip-number" style="left: 100%;"><span class="ui-slider-line ui-slider-line4"></span><span class="ui-slider-number">4</span></span></div>
+
+                                                                </div>
+                                                                <div class="rightLabel whiteShaddow"><span>RELAXING</span></div>
+                                                            </div><!-- 1slide -->
+                                                            <div class="slideBoxes" data-id="18">
+                                                                <div class="leftLabel whiteShaddow"><span>CITY</span></div>
+                                                                <div class="slider">
+                                                                    <div class="sliderContent ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all ui-slider-pips ui-slider-float"><span class="ui-slider-handle ui-state-default ui-corner-all Fwhite" tabindex="0" style="left: 50%;"></span><span class="ui-slider-pip ui-slider-pip-first ui-slider-pip-number" style="left: 0%;"><span class="ui-slider-line ui-slider-line0"></span><span class="ui-slider-number">0</span></span><span class="ui-slider-pip" style="left: 25%;"><span class="ui-slider-line ui-slider-line1"></span><span class="ui-slider-number">1</span></span><span class="ui-slider-pip" style="left: 50%;"><span class="ui-slider-line ui-slider-line2"></span><span class="ui-slider-number">2</span></span><span class="ui-slider-pip" style="left: 75%;"><span class="ui-slider-line ui-slider-line3"></span><span class="ui-slider-number">3</span></span><span class="ui-slider-pip ui-slider-pip-last ui-slider-pip-number" style="left: 100%;"><span class="ui-slider-line ui-slider-line4"></span><span class="ui-slider-number">4</span></span></div>
+
+                                                                </div>
+                                                                <div class="rightLabel whiteShaddow"><span>NATURE</span></div>
+                                                            </div><!-- 1slide -->
+                                                            <h6><span class="LeftgrooveImg"></span>Select your cabin experience<span class="rightgrooveImg"></span></h6>
+                                                            <div class="classesSec">
+                                                                <ul>
+                                                                    <li class="activeFlightClass" data-id="4"><input id="radio1" type="radio" name="radio" value="4" checked=""><label class="hiddenlabel" for="checkbox3">&nbsp;</label><br>Economy</li>
+                                                                    <li class="" data-id="3"><input id="radio1" type="radio" name="radio" value="3"><label class="hiddenlabel" for="checkbox3">&nbsp;</label><br>Premium Economy</li>
+                                                                    <li class="" data-id="2"><input id="radio1" type="radio" name="radio" value="2"><label class="hiddenlabel" for="checkbox3">&nbsp;</label><br>Business Class</li>
+                                                                    <li class="" data-id="1"><input id="radio1" type="radio" name="radio" value="1"><label class="hiddenlabel" for="checkbox3">&nbsp;</label><br>1st Class/Suites</li>
+
+
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="rightBtn">
+                                                            <button id="btnCreateEscape" class="selectorPageStart"></button>
+                                                        </div>
+                                                    </div>
+                                                    <form action="/Escape/ShowEscape" id="frmCreateEscape" method="post" style="display:none">
+                                                        <input type="hidden" name="categoryCount" value="3">
+                                                        <input type="hidden" id="CampignId" value="16" name="CampaignId">
+                                                        <input type="hidden" id="FlightClassId" name="FlightClassId">
+                                                        <input name="Categories0" id="Categories0" type="hidden" value="16">
+                                                        <input type="range" name="Rating0" id="Rating0" data-cat-id="16" class="myRange categoryRange" min="-1" max="1" step="any" style="display:none">
+                                                        <input name="Categories1" id="Categories1" type="hidden" value="17">
+                                                        <input type="range" name="Rating1" id="Rating1" data-cat-id="17" class="myRange categoryRange" min="-1" max="1" step="any" style="display:none">
+                                                        <input name="Categories2" id="Categories2" type="hidden" value="18">
+                                                        <input type="range" name="Rating2" id="Rating2" data-cat-id="18" class="myRange categoryRange" min="-1" max="1" step="any" style="display:none">
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="explore-content">
+                                            <div class="explore-content-row">
+                                                <div class="explore-thumbnail bgimg" bg-srcset='images/tab2/promo-1.jpg'></div>
+                                                <div class="explore-details">
+                                                    <div class="explore-heading">PROMO TITLE</div>
+                                                    <div class="explore-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,</div>
+                                                </div>
+                                                <div class="explore-btns bgimg" onclick="javascript: openNewWindow(window.clickTab2ExploreMore1)" bg-srcset='images/explore.png 1x, images/explore@2x.png 2x, images/explore@3x.png 3x '></div>
+                                            </div>
+                                            <div class="explore-content-row">
+                                                <div class="explore-thumbnail bgimg" bg-srcset='images/tab2/promo-2.jpg'></div>
+                                                <div class="explore-details">
+                                                    <div class="explore-heading">GOURMET FOOD</div>
+                                                    <div class="explore-description">The Premium Economy Book the Cook service lets you reserve your main course up to 24 hours before you fly. Alternatively, pick from three delicious meal choices onboard – including Singaporean, Asian and international flavours – and add a glass or two of fine wine or champagne.</div>
+                                                </div>
+                                                <div class="explore-btns bgimg" onclick="javascript: openNewWindow(window.clickTab2ExploreMore2)" bg-srcset='images/explore.png 1x, images/explore@2x.png 2x, images/explore@3x.png 3x '></div>
+                                            </div>
+                                            <div class="explore-content-row ">
+                                                <div class="explore-thumbnail bgimg" bg-srcset='images/tab2/promo-1.jpg'></div>
+                                                <div class="explore-details">
+                                                    <div class="explore-heading">PROMO TITLE</div>
+                                                    <div class="explore-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,</div>
+                                                </div>
+                                                <div class="explore-btns bgimg" onclick="javascript: openNewWindow(window.clickTab2ExploreMore3)" bg-srcset='images/explore.png 1x, images/explore@2x.png 2x, images/explore@3x.png 3x '></div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                             </div>
+                                    </div>
+                            <div class="tab tab3" data-tab="tab3">
+                                <div class="tab-details">
+                                    <div class="MainContaintArea">
+                                        <div class="hero-img">
+                                            <div id="map-container">
+                                                <img id="map" class="map" src="images/tab3/test.svg" />
+                                            </div>
+                                            <img class="sia" src="images/tab3/SIA logo@3x.png" />
+                                            <div class="zoom-container">
+                                                <img class="plus" src="images/tab3/plus@3x.png" />
+                                                <img class="minus" src="images/tab3/minus@3x.png" />
+                                            </div>
+                                        </div>
+                                        <div class="explore-content">
+                                            <div class="explore-content-row">
+                                                <div class="explore-thumbnail bgimg" bg-srcset='images/tab3/promo-1.jpg'></div>
+                                                <div class="explore-details">
+                                                    <div class="explore-heading">GREATER SPACE</div>
+                                                    <div class="explore-description">Flying Economy won’t equate to bruised knees with Singapore Airlines, our cabins are designed to give passengers plenty of room. In the New Economy Class, an innovative seat design provides more legroom and 115° of recline so you can relax. Preferred Seats, near the exits, benefit from extra legroom and are hotly sought after.</div>
+                                                </div>
+                                                <div class="explore-btns bgimg" onclick="javascript: openNewWindow(window.clickTab3ExploreMore1)" bg-srcset='images/explore.png 1x, images/explore@2x.png 2x, images/explore@3x.png 3x '></div>
+                                            </div>
+                                            <div class="explore-content-row">
+                                                <div class="explore-thumbnail bgimg" bg-srcset='images/tab2/promo-2.jpg'></div>
+                                                <div class="explore-details">
+                                                    <div class="explore-heading">GOURMET FOOD</div>
+                                                    <div class="explore-description">The Premium Economy Book the Cook service lets you reserve your main course up to 24 hours before you fly. Alternatively, pick from three delicious meal choices onboard – including Singaporean, Asian and international flavours – and add a glass or two of fine wine or champagne.</div>
+                                                </div>
+                                                <div class="explore-btns bgimg" onclick="javascript: openNewWindow(window.clickTab3ExploreMore2)" bg-srcset='images/explore.png 1x, images/explore@2x.png 2x, images/explore@3x.png 3x '></div>
+                                            </div>
+                                            <div class="explore-content-row ">
+                                                <div class="explore-thumbnail bgimg" bg-srcset='images/tab3/promo-1.jpg'></div>
+                                                <div class="explore-details">
+                                                    <div class="explore-heading">PROMO TITLE</div>
+                                                    <div class="explore-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,</div>
+                                                </div>
+                                                <div class="explore-btns bgimg" onclick="javascript: openNewWindow(window.clickTab3ExploreMore3)" bg-srcset='images/explore.png 1x, images/explore@2x.png 2x, images/explore@3x.png 3x '></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
-                    </div>
                 </div>
+            </div>
 
                 <div class="lightbox-footer">
                     <div class="lightbox-footer-top">
@@ -379,10 +447,11 @@
 
                 </div>
 
-                    <div class="tab-menu1-preload"></div>
-                    <div class="tab-menu2-preload"></div>
-                    <div class="tab-menu3-preload"></div>
+                <div class="tab-menu1-preload"></div>
+                <div class="tab-menu2-preload"></div>
+                <div class="tab-menu3-preload"></div>
 
+                <div class="scrollbar-external_wrapper">
                     <div class="external-scroll_y">
                         <div style="position:relative">
                             <div class="scroll-element_outer">
@@ -392,8 +461,9 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
+
+            </div>
             
             <div class="mobDetector"></div> <!-- this class used to detect mobile in javascript -->
         </div>

@@ -36,10 +36,26 @@
 
 .tab-menu:last-child {margin-right: 0px !important;}
 .tab-menu:hover {
-    margin-bottom: -15px;
+    margin-bottom: -20px;
     cursor: pointer;
 }
 
+.tab-menu.active {
+    margin-bottom: -20px;
+    cursor: pointer;
+}
+
+.tab-menu-1.active {
+     background-image: url('../images/tab1/selected@3x.png');   
+}
+
+.tab-menu-2.active {
+     background-image: url('../images/tab2/selected3@3x.png');   
+}
+
+.tab-menu-3.active {
+     background-image: url('../images/tab3/selected2@3x.png');   
+}
 
 .tab-menu-1 {
     background-image: url('../images/tab1/tab 1@3x.png');
@@ -68,7 +84,7 @@
 
 .tab-menu-text {
   font-size: 16px;
-  font-family: "Proxima Nova";
+  font-family: "Proxima-Nova";
   color: rgb(255, 255, 255);
   text-transform: uppercase;
   line-height: 1.2;
@@ -88,3 +104,95 @@
 .tab.active {display: block;}
 
 
+.MainContaintArea {
+    height: 100%;
+    overflow: hidden;
+}
+
+.tabs-container {
+    width: 100%;
+    height: 100%;
+}
+
+.tab {
+    width: 100%;
+    height: 100%;
+}
+
+.tab-details {
+    width: 100%;
+    height: 100%;
+}
+/******************* EXTERNAL SCROLLBAR *******************/
+/*  scrol bar */
+.scrollbar-external_wrapper {
+   /* position:absolute;*/
+   height: 150px;
+   right: -30px;
+   width: 4px;
+   position: absolute;
+   top: 50%;
+   -webkit-transform: translateY(-50%);
+   -ms-transform: translateY(-50%);
+   transform: translateY(-50%);
+}
+.scrollbar-external {
+   /* height: 590px; !important;*/
+    overflow: auto;
+    overflow: hidden;
+}
+ 
+
+ 
+.external-scroll_x,
+.external-scroll_y {
+    cursor: pointer;
+    display: none;
+    /* position: absolute; */
+    border-radius: 0px;
+    background-color: #fff;
+    width: 4px !important;
+}
+ 
+.external-scroll_x.scroll-scrollx_visible {
+    display: block;
+    height: 10px;
+    left: 0;
+    top: 410px;
+    width: 200px;
+}
+ 
+.external-scroll_y.scroll-scrolly_visible {
+    display: block;
+    height: 100%;
+}
+ 
+.external-scroll_x div,
+.external-scroll_y div
+{
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+}
+ 
+.external-scroll_x .scroll-bar,
+.external-scroll_y .scroll-bar {
+    z-index: 12;
+    width: 4px;
+    border-radius:0px;
+    background-color: #27c4f3;
+}
+ 
+.external-scroll_x .scroll-bar {
+    width: 100px;
+}
+.external-scroll_y .scroll-bar {
+    height: 70px;
+}
+.scroll-wrapper > .scroll-content::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+}
+/*  scroll bar end  */

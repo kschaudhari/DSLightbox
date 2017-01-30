@@ -1,14 +1,14 @@
 .tab2 .hero-img {background-image: url('../images/tab2/bkg.jpg');}
 
 .tab2 .hero-title {
-    margin-top:35px;
+    padding-top:35px;
     font-size: 18px;
-    font-family: "Proxima Nova",Arial, Helvetica, sans-serif;
+    font-family: "Proxima-Nova",Arial, Helvetica, sans-serif;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     line-height: 1.333;
     text-align: justify;
-    margin-bottom: 0px;
+    margin: 0px;
 }
 
 .tab2 .hero-text
@@ -16,7 +16,7 @@
     margin-top:30px;
     margin-bottom: 0px;
     font-size: 16px;
-    font-family: "Proxima Nova",Arial, Helvetica, sans-serif;
+    font-family: "Proxima-Nova",Arial, Helvetica, sans-serif;
     color: rgb(255, 255, 255);
     line-height: 1.533;
     text-align: justify;
@@ -28,7 +28,6 @@
 }
 
 .tab2 .trailfinders {
-    display: block;
     max-width: 240px;
     margin-top: 110px;
         image-rendering: -webkit-optimize-contrast;
@@ -41,7 +40,74 @@
     color: rgba(255,255,255,0.8);
     margin-right: 10px;
     font-size: 14px;
-    font-family: "Proxima Nova",Arial, Helvetica, sans-serif;
+    font-family: "Proxima-Nova",Arial, Helvetica, sans-serif;
     font-weight: 300;
 }
 
+.explore-content{
+    width: calc(100% - 80px);
+    width: -webkit-calc(100% - 80px);
+    width: -moz-calc(100% - 80px);
+    margin: 0px auto;
+
+    max-width:920px;
+    margin-top:20px;
+}
+.explore-content-row{
+    display:inline-block;
+    width: 100%;
+    font-family: "Proxima-Nova";
+    font-weight: 300;
+    font-size: 15px;
+    position: relative;
+    color: #093566;
+    margin-bottom: 20px;
+    
+}
+.explore-content-row .explore-thumbnail{
+    width: 39.1304%;
+    
+    float:left;
+    height: 150px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    background-color:#004f76;
+    box-shadow: inset 0px 5px 4.75px 0.25px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: inset 0px 5px 4.75px 0.25px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: inset 0px 5px 4.75px 0.25px rgba(0, 0, 0, 0.3);
+    vertical-align: top;
+    background-size:cover;
+    background-position: center center;
+    background-repeat:no-repeat;
+}
+.explore-content-row .explore-details{
+    width: calc(48.3696% - 30px);
+    width: -webkit-calc(48.3696% - 30px);
+    width: -moz-calc(48.3696% - 30px);
+    float:left;
+    padding-right:10px;
+    padding-left:20px;
+    vertical-align: top;
+    min-height: 149px;
+    border-bottom : 1px solid #d1dce1;
+}
+.explore-content-row .explore-heading{
+    font-size:22px;
+    font-weight:500;
+    padding-bottom: 5px;
+}
+.explore-content-row .explore-btns{
+    width:12.5%;
+    float:left;
+    background-image:url(../images/explore.png);
+    height:40px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    cursor: pointer;
+}
+.tab2 .MainContaintArea, .tab3 .MainContaintArea{
+    height: calc(100% - 80px);
+    height: -webkit-calc(100% - 80px);
+    height: -moz-calc(100% - 80px);
+}

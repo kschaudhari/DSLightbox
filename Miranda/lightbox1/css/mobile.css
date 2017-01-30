@@ -89,7 +89,7 @@
 .topMobMenuBar .topMobItem .mobMenuLogos .tab-title .text-australian {
   
     font-size: 16px;
-    font-family: "Proxima Nova",helvetica,arial;
+    font-family: "Proxima-Nova",helvetica,arial;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     z-index: 72;
@@ -101,7 +101,7 @@
 
 .topMobMenuBar .topMobItem .mobMenuLogos .tab-title .text-adventure {
     font-size: 16px;
-    font-family: "Proxima Nova",helvetica,arial;
+    font-family: "Proxima-Nova",helvetica,arial;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     z-index: 71;
@@ -111,7 +111,7 @@
 }
 
 .topMobMenuBar .topMobItem .mobMenuLogos .logos-text{
-    font-family: "Proxima Nova",Arial, Helvetica, sans-serif;
+    font-family: "Proxima-Nova",Arial, Helvetica, sans-serif;
     font-size: 6px;
     font-weight: 300;
     color: rgba(255,255,255,0.8);

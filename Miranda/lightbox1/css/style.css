@@ -12,8 +12,8 @@
 #mydiv-content {
     width: 100%;
     max-width: 1000px;
-    height: 650px; /*was 85vh */
-    max-height:650px;
+    height: 630px; /*was 85vh */
+    max-height:630px;
     margin:0 auto;
     padding: 0px;
     background-color: #fff9f0;
@@ -24,7 +24,7 @@
     -ms-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    font-family: 'Fira Sans';
+    font-family: 'Proxima-Nova';
 }
 .CloseBtn{
 	position:absolute;
@@ -85,7 +85,7 @@
 }
 
 .hero-img {
-    position: absolute;
+    position: relative;
     height: 400px;
     width: 100%;
     background-size: cover;

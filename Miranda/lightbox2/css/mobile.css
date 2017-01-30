@@ -12,7 +12,7 @@
     display:none;
     z-index:10;
     min-height: 91px;
-    background-color: rgba(15,159,214,1) !important;
+    background-color: rgba(0,79,118,1) !important;
 }
 .topMobMenuBar.tab1Active {
     background-color: rgba(143,88,87,1)
@@ -35,7 +35,7 @@
     position:relative;
 }
 .topMobMenuBar .topMobItem.MobMenuBar{
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #003a56;
     overflow:hidden;
 }
 .topMobMenuBar .topMobItem .menuElement{
@@ -70,19 +70,78 @@
     -ms-transform: translate(-50%,-50%);
     -moz-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
-    width: 46.875%;
+    width: 60.00%;
+    height: 80.00%;
 }
 
-.topMobMenuBar .topMobItem .mobMenuLogos .mobDiscoverLogo{
-    float:right;
-    width: 48.67%;
+.topMobMenuBar .topMobItem .mobMenuLogos .tab-title { 
+    border-top: solid 1px rgba(255,255,255,0.5);
+    border-bottom: solid 1px rgba(255,255,255,0.5);
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+    width: 50.00%;
+    position: absolute;
+    top: 5px;
+}
+
+.topMobMenuBar .topMobItem .mobMenuLogos .tab-title .text-australian {
+  
+    font-size: 16px;
+    font-family: "Proxima-Nova",helvetica,arial;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    z-index: 72;
+    font-weight: 100;
+    margin-bottom: 0px;
+    margin-top:0px;
+    text-align: center;
+}
+
+.topMobMenuBar .topMobItem .mobMenuLogos .tab-title .text-adventure {
+    font-size: 16px;
+    font-family: "Proxima-Nova",helvetica,arial;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    z-index: 71;
+    margin-bottom: 0px;
+    margin-top:0px;
+    text-align: center;
+}
+
+.topMobMenuBar .topMobItem .mobMenuLogos .logos-text{
+    font-family: "Proxima-Nova",Arial, Helvetica, sans-serif;
+    font-size: 6px;
+    font-weight: 300;
+    color: rgba(255,255,255,0.8);
+    width: 18%;
+    position: absolute;
+    top: 5px;
+    left: 60%;
+    padding-left: 2px;
+    padding-right: 2px;
 }
 
 .topMobMenuBar .topMobItem .mobMenuLogos .mobWALogo{
-    float:left;
-    width: 37.33%;
+    position: absolute;
+    bottom: 5px;
+    left: 60%;
+    width: 18%;
     margin-top: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
 }
+
+.topMobMenuBar .topMobItem .mobMenuLogos .mobDiscoverLogo{
+    width: 18%;
+    position: absolute;
+    right: 0%;
+    top: 5px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
 .topMobMenuBar .topMobItem .mobMenuClose
 {
     right: 3.125%;
@@ -97,22 +156,26 @@
     display:none;
     position: absolute;
     top: 10vh;
-    background-color: #288dc8;
+    background-color: #008c7f;
     width: 100%;
     max-height:900px;
-    border-bottom:1px solid #0f9fd6;
-    z-index: 2;
+    z-index: 7000;
+    opacity: 1;
+
 }
     .topMobMenuBar .mobDropdownMenu .mobDropdownMenuItem {
         height:10vh;
         max-height:150px;
-        border-bottom:1px solid #0f9fd6;
+        border-bottom:1px solid #ffffff;
         line-height: 10vh;
-        font-size: 1.5em;
+        font-size: 1.0em;
         vertical-align: middle;
         text-align: center;
         color:#fff;
+         z-index: 7000;
+    opacity: 1;
     }
+
 .topMobMenuBar .mobNavigator{
     width:100%;
     overflow:hidden;
@@ -125,7 +188,7 @@
 .topMobMenuBar .mobNavigator .mobNavigatorContent .mobNextTab{float:right;height:100%}
 .topMobMenuBar .mobNavigator .mobNavigatorContent .navArrow{
     position:absolute;
-    width:8.75%;
+    width:12%;
     top: 50%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
@@ -138,13 +201,6 @@
 
 .topMobMenuBar .mobNavigator .mobNavigatorContent .navArrow img{width:100%; vertical-align:middle}
 
-.topMobMenuBar .mobNavigator .mobNavigatorContent .mobNextTab img{
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    transform: rotate(180deg);
-}
 .topMobMenuBar .mobNavigator .mobNavigatorContent .mobCurrentTab{
     /* width: 100%; */
     height: 100%;
