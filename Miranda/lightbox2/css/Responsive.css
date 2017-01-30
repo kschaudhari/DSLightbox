@@ -2,6 +2,14 @@
     
 }
 @media screen and (max-width: 767px) , screen and (max-height: 570px){
+    #mydiv{
+        position:fixed;
+        top:0px;
+        bottom:0px;
+        left:0px;
+        right:0px;
+    }
+	
 	#mydiv-content {
        top: 0;
        -webkit-transform: translate(-50%, 0%);
@@ -56,7 +64,9 @@
         padding-bottom: 20px;
         background: #fff;
     }
-    
+    .tab-details{
+        overflow:auto;
+    }
     .lighbox-container .external-scroll_y.scroll-scrolly_visible{
 
         display:none !important;
@@ -65,12 +75,20 @@
     .lighbox-container .logos-container{
         display:none !important;
     }
-
     .tab-container {
-        margin-left: 3.75%;
-        margin-right: 3.75%;
+        width: 80%;
+        margin: 0px auto;
     }
-
+    .created-by.tab-container {
+        display:inline-block;
+        margin-right:0px;
+        height: 200px;
+        margin-bottom: 100px;
+    }
+    .tab.active .MainContaintArea{
+        height:auto;
+        max-height:unset;
+    }
     .image_full{
         display:none;
     }
