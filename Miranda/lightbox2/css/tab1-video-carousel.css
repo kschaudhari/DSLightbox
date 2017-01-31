@@ -43,11 +43,12 @@
         margin: auto;
         display: table;
         max-width: 90%;
-        width: 100%
+        width: 100%;
+        padding-bottom: 0px;
     }
     .mobile-showDiv{
         display:block;
-        height:27px;
+        height: 10px;
     }
     .play-list-carousel{
         margin:auto;
@@ -55,12 +56,14 @@
     .play-list{
         max-width:100%;
         margin-top:0.5em;
+        margin-bottom: 0.4em;
     }
     .player-container {
         width:100%;
     }
     .play-list-carousel-container{
         display:inline-block;
+        width: 1425px !important;
     }
     .player-container .video-player-wrapper{
         max-width:90%;

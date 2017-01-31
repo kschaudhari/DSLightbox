@@ -44,7 +44,7 @@
         bottom: 0;
         left: 0;
         right: 0;
-        min-height: 590px;
+        min-height: 460px;
         text-align: center;
     }
     .MobtopGrove {
@@ -57,6 +57,7 @@
        margin: 10px auto;
        height: auto;
        display: inline-block;
+       display: none;
     }
     .TollBoxContent {
         top: 107px;

@@ -94,6 +94,7 @@
     .tab2 .tab-container {
         width: 100%;
     }
+    .tab1 .hero-img{height:auto;}
     .created-by.tab-container {
         display:inline-block;
         margin-right:0px;
@@ -114,12 +115,16 @@
     .image_mobile{
         display:block;
     }
-
+    .tab2 .hero-title {
+        padding-top: 5px;
+    }
     .tab2 .brought {
         font-size: 10px;
         font-weight: 100;
     }
-
+    .tab2 .tab-description{
+        margin-bottom:50px;
+    }
     .tab2 .trailfinders {
         max-width: 130px;
         margin-top: 20px;
@@ -137,7 +142,44 @@
         /* background-image: url('../images/tab2/bkg_full.jpg'); */
         height: 100%;
     }
+    .explore-content {
+        margin-bottom: 50px;
+    }
+    .explore-content-row {
+        border-radius: 0px;
+    }
+    .explore-content-row .explore-mobile-heading{
+        display:block;
+        padding-bottom: 18px;
+    }
+    .explore-content-row .explore-heading{display:none;}
+    .explore-content-row .explore-thumbnail {
+        width: 100%;
+        float: none;
+        margin-bottom: 25px;
+    }
 
+    .explore-content-row .explore-details {
+        width: 100%;
+        float: none;
+        padding: 0px;
+        margin-bottom: 20px;
+        line-height: 25px;
+        min-height: initial;
+    }
+
+    .explore-content-row .explore-btns {
+        width: 116px;
+        background-repeat: no-repeat;
+        background-position: right;
+        float: right;
+        position: relative;
+        display:none;
+        background-size: contain;
+    }
+    .explore-content-row .explore-btns.explore-mobile-btns{
+        display:block;
+    }
     .tab3 .sia {
         right: 10px;
         max-width: 45px;
@@ -152,9 +194,11 @@
     }
 
     .tab3 .hero-img {
-        height: 50%;
+        height: 50vh;
     }
-    
+    .tab3 .map{  
+        transform: translate3d(-397px, -4px, 0px);
+    }
     .MainContentBox {
         width:100%;
         margin-left:0px;
@@ -199,7 +243,7 @@
 
 @media screen and (max-width: 767px)  and (orientation : landscape) , screen and (max-height: 570px) and (orientation : landscape) {
     .topMobMenuBar{
-        height:91px;
+        min-height: 91px;
     }
     .lighbox-container{
         margin-top: 91px;
