@@ -53,7 +53,7 @@
         height:100%;
         cursor: pointer;
     }.topMobMenuBar .topMobItem .mobMenu.active {
-        background-color:#288dc8;
+        background-color: #008c7f;
     }
 .topMobMenuBar .topMobItem .mobMenuIcon{
     left: 50%;
@@ -71,7 +71,7 @@
     -moz-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
     width: 60.00%;
-    height: 80.00%;
+    /* height: 80.00%; */
 }
 
 .topMobMenuBar .topMobItem .mobMenuLogos .tab-title { 
@@ -124,22 +124,19 @@
 }
 
 .topMobMenuBar .topMobItem .mobMenuLogos .mobWALogo{
-    position: absolute;
-    bottom: 5px;
-    left: 60%;
-    width: 18%;
-    margin-top: 2px;
-    padding-left: 2px;
-    padding-right: 2px;
+    left: 0;
+    width: 55.5185%;
+    max-width: 160px;
 }
 
 .topMobMenuBar .topMobItem .mobMenuLogos .mobDiscoverLogo{
-    width: 18%;
+    width: 30%;
     position: absolute;
     right: 0%;
-    top: 5px;
+    top: 0px;
     padding-left: 2px;
     padding-right: 2px;
+    max-width: 92px;
 }
 
 .topMobMenuBar .topMobItem .mobMenuClose
@@ -200,7 +197,12 @@
 .topMobMenuBar .mobNavigator .mobNavigatorContent .mobNextTab .navArrow{right: 3.75%;}
 
 .topMobMenuBar .mobNavigator .mobNavigatorContent .navArrow img{width:100%; vertical-align:middle}
-
+.topMobMenuBar .mobNavigator .mobNextTab .navArrow img {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+}
 .topMobMenuBar .mobNavigator .mobNavigatorContent .mobCurrentTab{
     /* width: 100%; */
     height: 100%;
@@ -249,6 +251,9 @@
     font-size: 1em;
     margin-left: 5px;
     letter-spacing: 2px;
+    width: 150px;
+    margin: 0px auto;
+    display: block;
 }
 .topMobMenuBar .mobNavigator .mobNavigatorContent .mobCurrentTab .mobTab .mobCurrentTabLogo .capitalCaseTitle span{
     position: relative;

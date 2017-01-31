@@ -13,6 +13,16 @@
 }
 
 
+.gradient {
+  background-image: url("gradient.png");
+  position: absolute;
+  left: 721px;
+  top: 0px;
+  width: 719px;
+  height: 2786px;
+  z-index: 273;
+}
+
 
 .tab3 .map {
     z-index: 99;
@@ -21,8 +31,10 @@
     width:1100px;
     top:-460px;
     left:-180px;
-
-    transition: all 0.2s ease-in-out;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: -moz-optimize-contrast;
+    image-rendering: -o-optimize-contrast;
+    transition: width 0.2s ease-in-out;
     
 }
 
@@ -48,3 +60,5 @@
     margin-bottom:10px;
     z-index: 99;
 }
+
+.tab3 .zoom-container img:hover {cursor: pointer;}

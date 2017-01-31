@@ -117,6 +117,7 @@
     right: 0px;
     cursor: pointer;
 }
+.explore-content-row .explore-btns.explore-mobile-btns{display:none;}
 .tab2 .MainContaintArea, .tab3 .MainContaintArea{
     height: calc(100% - 80px);
     height: -webkit-calc(100% - 80px);
