@@ -71,6 +71,7 @@
     left: 20px;
     top: auto;
     bottom: 0px;
+        width: 200px;
 }
 
 .tab1 .oz-logo {max-width: 70px;margin-left:10px;}

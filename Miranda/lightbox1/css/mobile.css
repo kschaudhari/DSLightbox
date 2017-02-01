@@ -233,7 +233,7 @@
     vertical-align: middle;
     width: 100%;
     color: #fff;
-    font-family: 'Proxima-Nova-Condensed-Semibold';
+    font-family: 'Proxima-Nova';
 }
 .topMobMenuBar .mobNavigator .mobNavigatorContent .mobCurrentTab .mobTab .mobCurrentTabLogo img{width: 15%;position: relative;top: -1px;max-width: 53px;}
 .topMobMenuBar .mobNavigator .mobNavigatorContent .mobCurrentTab .mobTab .mobCurrentTabLogo .smallCaseTitle{position:relative;top: -4px;padding-left: 3px;}
@@ -249,6 +249,8 @@
     width: 150px;
     margin: 0px auto;
     display: block;
+    font-family: 'Proxima-Nova';
+    font-weight: 600;
 }
 .topMobMenuBar .mobNavigator .mobNavigatorContent .mobCurrentTab .mobTab .mobCurrentTabLogo .capitalCaseTitle span{
     position: relative;

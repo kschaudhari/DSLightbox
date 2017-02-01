@@ -118,6 +118,24 @@
     cursor: pointer;
     background-size:contain;
 }
+.explore-content-row .explore-btns:after{
+    background-color:rgba(255,255,255,0.1);
+    position:absolute;
+    top:0px;
+    left:0px;
+    bottom:0px;
+    right:0px;
+    display:block;
+}
+.explore-content-row .explore-btns:hover::after{
+    content:"";
+}
+.explore-content-row .explore-btns:active::after{
+    content:"";
+    background-color: rgba(0, 51, 77,0.1);
+    border-top-left-radius: 90px;
+    left: 4px;
+}
 .explore-content-row .explore-btns.explore-mobile-btns{display:none;}
 .tab2 .MainContaintArea, .tab3 .MainContaintArea{
     height: calc(100% - 80px);
