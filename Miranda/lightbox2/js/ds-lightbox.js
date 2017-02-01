@@ -3,16 +3,16 @@
 }
 var totalTabs = 0;
 $(document).ready(function () {
-    
+
     totalTabs = $(".lighbox-container .lightbox-detailsPage .tab").length;
     $(".removePopup").click(function () {
         hideLightboxPopup();
-        
+
     });
     $(".BackToMain").click(function () {
         showDefaultView();
     });
-   
+
     $(".lighbox-container .tab-menu").click(function (e) {
         e.stopPropagation();
         handleMobNavigation($(this).attr("data-tab").replace("tab", ''), true);
@@ -23,23 +23,23 @@ $(document).ready(function () {
         moveToNext();
     });
 
-    $(".tab3 .zoom-container .plus").on('mousedown', function() {
-        $(".tab3 .zoom-container .plus").attr('src',"images/tab3/plus_click.png");
+    $(".tab3 .zoom-container .plus").on('mousedown', function () {
+        $(".tab3 .zoom-container .plus").attr('src', "images/tab3/plus_click.png");
     });
 
-    $(".tab3 .zoom-container .plus").on('mouseup', function() {
-        $(".tab3 .zoom-container .plus").attr('src',"images/tab3/plus@3x.png");
+    $(".tab3 .zoom-container .plus").on('mouseup', function () {
+        $(".tab3 .zoom-container .plus").attr('src', "images/tab3/plus@3x.png");
     });
 
-    $(".tab3 .zoom-container .plus").on('touchstart', function() {
-        $(".tab3 .zoom-container .plus").attr('src',"images/tab3/plus_click.png");
+    $(".tab3 .zoom-container .plus").on('touchstart', function () {
+        $(".tab3 .zoom-container .plus").attr('src', "images/tab3/plus_click.png");
     });
 
-    $(".tab3 .zoom-container .plus").on('touchend', function() {
-        $(".tab3 .zoom-container .plus").attr('src',"images/tab3/plus@3x.png");
+    $(".tab3 .zoom-container .plus").on('touchend', function () {
+        $(".tab3 .zoom-container .plus").attr('src', "images/tab3/plus@3x.png");
     });
 
-    $(".tab3 .zoom-container .plus").click(function (){
+    $(".tab3 .zoom-container .plus").click(function () {
         var currentWidth = $(".tab3 .map").width();
         var currentHeight = $(".tab3 .map").height();
 
@@ -59,39 +59,39 @@ $(document).ready(function () {
         var yTransform = values[5];
 
         // Calculate new left position based on new width, keeping the same center x-coordinate
-        var newLeft = (center.x - xTransform) - (currentWidth/2) ;
+        var newLeft = (center.x - xTransform) - (currentWidth / 2);
 
         // Set new width and new left
         $(".tab3 .map").width(currentWidth);
-        $(".tab3 .map").css( { left: newLeft });
+        $(".tab3 .map").css({ left: newLeft });
 
         // New height is adjusted dynamically, for width increment of 300 this is constant value of 274
         var currentHeightNew = currentHeight + 334;
-        
+
         // Calculate new top position based on new height, keeping the same center y-coordinate
-        var newTop = (center.y - yTransform) - (currentHeightNew/2);
+        var newTop = (center.y - yTransform) - (currentHeightNew / 2);
 
         // Set new top
-        $(".tab3 .map").css( { top: newTop });
+        $(".tab3 .map").css({ top: newTop });
     });
 
-    $(".tab3 .zoom-container .minus").on('mousedown', function() {
-        $(".tab3 .zoom-container .minus").attr('src',"images/tab3/minus_click.png");
+    $(".tab3 .zoom-container .minus").on('mousedown', function () {
+        $(".tab3 .zoom-container .minus").attr('src', "images/tab3/minus_click.png");
     });
 
-    $(".tab3 .zoom-container .minus").on('mouseup', function() {
-        $(".tab3 .zoom-container .minus").attr('src',"images/tab3/minus@3x.png");
+    $(".tab3 .zoom-container .minus").on('mouseup', function () {
+        $(".tab3 .zoom-container .minus").attr('src', "images/tab3/minus@3x.png");
     });
 
-    $(".tab3 .zoom-container .minus").on('touchstart', function() {
-        $(".tab3 .zoom-container .minus").attr('src',"images/tab3/minus_click.png");
+    $(".tab3 .zoom-container .minus").on('touchstart', function () {
+        $(".tab3 .zoom-container .minus").attr('src', "images/tab3/minus_click.png");
     });
 
-    $(".tab3 .zoom-container .minus").on('touchend', function() {
-        $(".tab3 .zoom-container .minus").attr('src',"images/tab3/minus@3x.png");
+    $(".tab3 .zoom-container .minus").on('touchend', function () {
+        $(".tab3 .zoom-container .minus").attr('src', "images/tab3/minus@3x.png");
     });
 
-    $(".tab3 .zoom-container .minus").click(function (){
+    $(".tab3 .zoom-container .minus").click(function () {
         var currentWidth = $(".tab3 .map").width();
         var currentHeight = $(".tab3 .map").height();
 
@@ -111,21 +111,21 @@ $(document).ready(function () {
         var yTransform = values[5];
 
         // Calculate new left position based on new widht, keeping the same center x-coordinate
-        var newLeft = (center.x - xTransform) - (currentWidth/2);
+        var newLeft = (center.x - xTransform) - (currentWidth / 2);
 
         // Set new width and left   
         $(".tab3 .map").width(currentWidth);
-        $(".tab3 .map").css( { left: newLeft });
+        $(".tab3 .map").css({ left: newLeft });
 
         // New height is adjusted dynamically, for width decrease of 300 this is constant value of 274
         var currentHeightNew = currentHeight - 274;
-        
+
         // Calculate new top position based on new height, keeping the same center y-coordinate
-        var newTop = (center.y - yTransform) - (currentHeightNew/2);  
+        var newTop = (center.y - yTransform) - (currentHeightNew / 2);
 
         // Set new top
-        $(".tab3 .map").css( { top: newTop });
-        
+        $(".tab3 .map").css({ top: newTop });
+
         //$(".tab3 .map").css( 'top', newTop + 'px' );
         //console.log('newtop',newTop );
     });
@@ -167,35 +167,47 @@ $(document).ready(function () {
         moveToPrevious();
     });
 
-    $(".topMobMenuBar .mobNavigator .mobPrevTab .navArrow .prev").on('touchstart', function() {
-        $(".topMobMenuBar .mobNavigator .mobPrevTab .navArrow .prev").attr('src',"images/mobPrev_click.png");
+    $(".topMobMenuBar .mobNavigator .mobPrevTab .navArrow").on('touchstart', function () {
+        $(this).find('img').attr('src', "images/mobPrev_click.png");
     });
 
-    $(".topMobMenuBar .mobNavigator .mobPrevTab .navArrow .prev").on('touchend', function() {
-        $(".topMobMenuBar .mobNavigator .mobPrevTab .navArrow .prev").attr('src',"images/mobPrev.png");
+    $(".topMobMenuBar .mobNavigator .mobPrevTab .navArrow").on('touchend', function () {
+        $(this).find('img').attr('src', "images/mobPrev.png");
     });
-    
+
     $(".topMobMenuBar .mobNavigator .mobNextTab .navArrow").click(function (e) {
         e.stopPropagation();
         moveToNext();
     });
 
-    $(".topMobMenuBar .mobNavigator .mobNextTab .navArrow .next").on('touchstart', function() {
-        $(".topMobMenuBar .mobNavigator .mobNextTab .navArrow .next").attr('src',"images/mobNext_click.png");
+    $(".topMobMenuBar .mobNavigator .mobNextTab .navArrow").on('touchstart', function () {
+        $(this).find('img').attr('src', "images/mobNext_click.png");
     });
 
-    $(".topMobMenuBar .mobNavigator .mobNextTab .navArrow .next").on('touchend', function() {
-        $(".topMobMenuBar .mobNavigator .mobNextTab .navArrow .next").attr('src',"images/mobNext.png");
+    $(".topMobMenuBar .mobNavigator .mobNextTab .navArrow").on('touchend', function () {
+        $(this).find('img').attr('src', "images/mobNext.png");
     });
-   
+
+
+    $("#map-container").on('touchstart', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+    });
+
+    $("#map-container").on('touchmove', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+    });
+
+    $("#map-container").on('touchend', function (e) { e.preventDefault(); e.stopPropagation(); });
+
+
     $(".lighbox-container .lightbox-detailsPage .tab").each(function (__, tabPage) {
         swipedetect(tabPage, function (swipedir) {
-            if(swipedir == "left")
-            {
+            if (swipedir == "left") {
                 moveToNext();
             }
-            else if (swipedir == "right")
-            {
+            else if (swipedir == "right") {
                 moveToPrevious();
             }
         })
@@ -207,14 +219,13 @@ $(document).ready(function () {
 
 
     // set background images as per the ratina
-    
+
 
 
 });
 
 var bgss = null;
-function detailPageLoaded()
-{
+function detailPageLoaded() {
     window.setTimeout(function () {
         setScrollBar();
         sendAnalyticsEvent();
@@ -253,7 +264,7 @@ function detailPageLoaded()
 
 function startVideo(event) {
     var iframe = $(event.target.getIframe());
-    if(iframe.is(":visible"))
+    if (iframe.is(":visible"))
         event.target.playVideo();
 }
 function stopVideos(privousVideos) {
@@ -270,8 +281,7 @@ function stopVideos(privousVideos) {
     }
 }
 
-function setScrollBar(checkIfScrollApplied)
-{
+function setScrollBar(checkIfScrollApplied) {
     if (!checkIfScrollApplied || !$(".lighbox-container .lightbox-detailsPage .tab.active .MainContaintArea:first").hasClass("scroll-wrapper")) {
         $(".lighbox-container .lightbox-detailsPage .tab.active .MainContaintArea").scrollbar({
             "autoScrollSize": false,
@@ -281,8 +291,8 @@ function setScrollBar(checkIfScrollApplied)
             duration: 10
         });
     }
-        
-    
+
+
 }
 
 function showTab(tabId, allowReLoad, slideDir) {
@@ -290,9 +300,9 @@ function showTab(tabId, allowReLoad, slideDir) {
         return;
     }
     var detailsVisible = $(".lighbox-container .lightbox-detailsPage").is(":visible");
-    
+
     var previousTab = $(".lighbox-container .lightbox-detailsPage .tab.active");
-    
+
     $(".lighbox-container .lightbox-detailsPage .tab").removeClass("active");
     $(".lighbox-container .lightbox-detailsPage .lightbox-top-menu-item").removeClass("active");
     stopVideos();
@@ -302,7 +312,7 @@ function showTab(tabId, allowReLoad, slideDir) {
 
     $(".lighbox-container .lightbox-footer .tab-menu").removeClass("active");
     $(".lighbox-container .lightbox-footer .tab-menu[data-tab='tab" + tabId + "']").addClass("active");
-    
+
     //Following code for dynamic loading of tab htmls
     //TODO: get the tab releated html using ajax call and on success call detailPageLoaded
     /*if (!activeTab.attr('data-loaded')) {
@@ -314,7 +324,7 @@ function showTab(tabId, allowReLoad, slideDir) {
     }
     else
     {*/
-        detailPageLoaded();
+    detailPageLoaded();
     //}
 }
 
@@ -323,7 +333,7 @@ function sendAnalyticsEvent() {
 
     if (detailsVisible) {
         var tabId = $(".lighbox-container .lightbox-detailsPage .tab.active").attr("data-tab").replace("tab", "");
-        
+
         var tabName = "WESTERN AUSTRALIA";
         switch (parseInt(tabId)) {
             case 1:
@@ -391,7 +401,7 @@ function handleMobNavigation(tabId, allowReLoad, slideDir) {
     $(".topMobMenuBar .mobNavigatorContent .mobCurrentTab .mobTab[data-tab='tab" + tabId + "']").addClass("active");
 
     showTab(tabId, allowReLoad, slideDir);
-    
+
 
 }
 
@@ -453,7 +463,7 @@ function swipedetect(el, callback) {
         }
         handleswipe(swipedir)
         if (swipedir == "left" || swipedir == "right")
-        e.preventDefault()
+            e.preventDefault()
     }, false)
 }
 

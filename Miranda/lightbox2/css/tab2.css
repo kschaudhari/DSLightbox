@@ -108,7 +108,7 @@
     padding-bottom: 5px;
 }
 .explore-content-row .explore-btns{
-    width:12.5%;
+    width:115px;
     float:left;
     background-image:url(../images/explore.png);
     height:40px;
@@ -116,6 +116,7 @@
     bottom: 0px;
     right: 0px;
     cursor: pointer;
+    background-size:contain;
 }
 .explore-content-row .explore-btns.explore-mobile-btns{display:none;}
 .tab2 .MainContaintArea, .tab3 .MainContaintArea{

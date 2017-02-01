@@ -1,0 +1,237 @@
+.lighbox-container .tab .active{
+    display: block;
+}
+.lightbox-detail-booklet .page-background-images{
+    position: absolute;
+    height:100%;
+    width:100%;
+    z-index:0;
+}
+
+.tab-detail-page{
+    display:none;
+}
+.tab-container.active .default-tab-content{display:none}
+.tab-container.active .tab-detail-page{display:block;margin-right: 4px;}
+.MainContentBox {
+     display: block;
+     height: 100% !important;
+     overflow:hidden;
+     margin: 0px auto;
+}
+.lightbox-tab1 .tab-detail-page {
+    background-image: url('../tab1/hero.png');
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.content {
+    width: 100%;
+    top: 120px;
+    position: relative;
+}
+
+.content-top {
+    width: 776px;
+    height: 183px;
+    background-image: url('../tab1/curves.png');
+    background-size: cover;
+    z-index: 10;
+    position: relative;
+}
+
+.content-gradient {
+
+    width: 100%;
+    background: rgba(0,72,19,0.8);
+    padding-top: 30px;
+    color: #ffffff;
+
+    background: -webkit-linear-gradient(rgba(0,72,19,0.8), rgba(0,72,19,1)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(0,72,19,0.8), rgba(0,72,19,1)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(0,72,19,0.8), rgba(0,72,19,1)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(0,72,19,0.8), rgba(0,72,19,1)); /* Standard syntax */
+    position: relative;
+    height: 340px;
+}
+        
+.content-body {
+    width: 100%;
+    background-color: rgba(0,72,19,0.8);
+    color: #ffffff;
+    padding-bottom: 50px;
+    padding-top: 30px;
+}
+
+#tab1 .title{
+    text-align: center;
+    font-size: 19px;
+    text-transform: uppercase;
+}
+
+#tab1 .heather {
+    z-index: 20;
+    max-width: 75px;
+    top: 25px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+#tab1 .text {
+        font-size: 18px;
+        margin: 0px 90px auto;
+        text-align: justify-left;
+        line-height: 1.6;
+        margin-bottom: 70px;
+        position: relative;
+        color: rgba(255,255,255,0.8);
+}
+
+#tab1 .content-img {
+    max-width: 100%;
+    position: relative;
+
+}
+
+#tab1 .subhead {
+    font-size: 19px;
+    text-transform: uppercase;
+    line-height: 1.526;
+    text-align: left;
+    margin: 60px 90px auto;
+    position: relative;
+    margin-bottom: 10px;
+
+}
+
+#tab1 .promo-img {
+    max-width: 100%;
+    position: relative;
+    margin: 0px 90px auto;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+
+        
+#tab1 .promo-text {
+        font-size: 18px;
+        margin: 0px 90px auto;
+        text-align: justify-left;
+        line-height: 1.6;
+        margin-bottom: 10px;
+        position: relative;
+        color: rgba(255,255,255,0.8);
+}
+
+#tab1 .explore-img {
+    max-width: 600px;
+    position: relative;
+    margin: 0px 90px auto;
+}
+
+.line {
+    max-width: 600px;
+    margin: 0px 90px auto;
+    height: 20px;
+    border-top: solid 1px rgb(131,162,25);
+    position: relative;
+    margin-top: 20px;
+
+}
+
+.explore {
+    background-color: rgb(131,162,25);
+    float: right;
+    margin-top: -20px;
+    color: rgb(0,72,19);
+    font-size: 13px;
+    font-weight: 500;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+}
+
+#tab1 .promo-section .promo-img:first-child {
+    margin-top: 0px;
+}
+
+/******************* EXTERNAL SCROLLBAR *******************/
+/*  scrol bar */
+.MainContaintArea {
+    height: 100%;
+    overflow: hidden;
+}
+.scroll-content{overflow:scroll;}
+.scrollbar-external_wrapper {
+   /* position:absolute;*/
+   height: 150px;
+   right: 20px;
+   width: 4px;
+   position: absolute;
+   bottom: 65px;
+   z-index: 10;
+}
+.scrollbar-external {
+   /* height: 590px; !important;*/
+    overflow: auto;
+    overflow: hidden;
+}
+ 
+
+ 
+.external-scroll_x,
+.external-scroll_y {
+    cursor: pointer;
+    display: none;
+    /* position: absolute; */
+    border-radius: 0px;
+    background-color: #fff;
+    width: 4px !important;
+}
+ 
+.external-scroll_x.scroll-scrollx_visible {
+    display: block;
+    height: 10px;
+    left: 0;
+    top: 410px;
+    width: 200px;
+}
+ 
+.external-scroll_y.scroll-scrolly_visible {
+    display: block;
+    height: 100%;
+}
+ 
+.external-scroll_x div,
+.external-scroll_y div
+{
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+}
+ 
+.external-scroll_x .scroll-bar,
+.external-scroll_y .scroll-bar {
+    z-index: 12;
+    width: 4px;
+    border-radius:0px;
+    background-color: #f4dc00;
+}
+ 
+.external-scroll_x .scroll-bar {
+    width: 100px;
+}
+.external-scroll_y .scroll-bar {
+    height: 70px;
+}
+.scroll-wrapper > .scroll-content::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+}
+/*  scroll bar end  */

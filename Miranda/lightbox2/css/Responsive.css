@@ -197,7 +197,7 @@
         height: 50vh;
     }
     .tab3 .map{  
-        transform: translate3d(-397px, -4px, 0px);
+        left: -550px;
     }
     .MainContentBox {
         width:100%;

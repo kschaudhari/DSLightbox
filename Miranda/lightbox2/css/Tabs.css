@@ -125,6 +125,7 @@
 }
 /******************* EXTERNAL SCROLLBAR *******************/
 /*  scrol bar */
+.scroll-content{overflow:scroll;}
 .scrollbar-external_wrapper {
    /* position:absolute;*/
    height: 150px;

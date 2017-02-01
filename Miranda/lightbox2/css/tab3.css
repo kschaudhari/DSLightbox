@@ -34,8 +34,9 @@
     image-rendering: -webkit-optimize-contrast;
     image-rendering: -moz-optimize-contrast;
     image-rendering: -o-optimize-contrast;
-    transition: width 0.2s ease-in-out;
-    
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
 }
 
 .tab3 .sia {
