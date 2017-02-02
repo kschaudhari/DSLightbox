@@ -96,3 +96,26 @@
     color: rgb(0, 79, 118);
     font-family: 'Proxima-Nova';
 }
+
+.tab1 .content-heading {
+    color: rgb(9,53,102);
+    font-family: "Proxima-Nova",Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.tab1 .content-text {
+    color: rgb(9,53,102);
+    font-family: "Proxima-Nova",Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    margin-top: 0;
+
+}
+
+.tab1 .content-image {
+    width:100%;
+}
