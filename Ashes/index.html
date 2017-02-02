@@ -54,72 +54,8 @@
     <div id="mydiv">
         <div id="mydiv-content">
 
-            <div class="topMobMenuBar tab1Active">
-                <div class="topMobItem MobMenuBar">
-                    <div class="mobMenu">
-                        <div class="mobMenuIcon menuElement">
-                            <img src="images/mobMenu.png" />
-                        </div>
-                    </div>
-                    <div class="mobMenuLogos menuElement">
-
-                        <div class="mobWALogo">
-                            <img src="images/mobWALogo.png" />
-                        </div>
-                        <div class="mobDiscoverLogo">
-                            <img src="images/mobQatarLogo.png" />
-                        </div>
-                    </div>
-                    <div id="lightbox-mobile-exit" class="mobMenuClose menuElement">
-                        <img class="removePopup" src="images/mobClose.png" />
-                    </div>
-                </div>
-                <div class="mobDropdownMenu">
-                    <div class="mobDropdownMenuItem" data-tab="tab1">
-                        WESTERN AUSTRALIA
-                    </div>
-                    <div class="mobDropdownMenuItem" data-tab="tab2">food & WINE</div>
-                    <div class="mobDropdownMenuItem" data-tab="tab3">coastal & ACQUATIC</div>
-                </div>
-                <div class="topMobItem mobNavigator">
-
-                    <div class="mobNavigatorContent">
-                        <div class="mobPrevTab">
-                            <div class="navArrow">
-                                <img src="images/mobArrow.png" />
-                            </div>
-                        </div>
-                        <div class="mobNextTab">
-                            <div class="navArrow">
-                                <img src="images/mobArrow.png" />
-                            </div>
-                        </div>
-                        <div class="mobCurrentTab">
-                            <div class="mobNavigationTabs">
-                                <div class="mobTab1 mobTab" data-tab="tab1">
-                                    <div class="mobCurrentTabLogo">
-                                        <span class="capitalCaseTitle">WESTERN AUSTRALIA</span>
-                                    </div>
-                                </div>
-                                <div class="mobTab2 mobTab" data-tab="tab2">
-                                    <div class="mobCurrentTabLogo">
-                                        <span class="capitalCaseTitle">FOOD & WINE</span>
-                                    </div>
-                                </div>
-                                <div class="mobTab3 mobTab" data-tab="tab3">
-                                    <div class="mobCurrentTabLogo">
-                                        <span class="capitalCaseTitle">COASTAL & AQUATIC</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
             <div class="lighbox-container">
+                <a href="javascript:void(0)" id="lightbox-exit" class="CloseBtn removePopup"></a>
                 <div class="partner-logo"><img src="./home/partener-logo.png" srcset="./home/partener-logo.png 1x,./home/partener-logo@2x.png 2x,./home/partener-logo@3x.png 3x" /></div>
                 <div class="presented-by"><img src="./home/presented-by.png"  srcset="./home/presented-by.png 1x,./home/presented-by@2x.png 2x,./home/presented-by@3x.png 3x" /></div>
                 <div class="header">
@@ -211,32 +147,204 @@
                         </div>
                     </div>
                     <div class="tab lightbox-tab2 tab-container" data-tab="tab2">
-                        <div id="tab-2" class="big-tab">
-                            <img class="tab-bkg tab-2-bkg-unzoom" src="./home/onpitch.jpg" />
-                            <div class="tab-gradient tab-gradient-browse">
-                                <div class="tab-logo-container tab-logo-container-browse">
-                                    <img src="./home/icon bat.png" />
-                                    <img src="./home/On the Pitch.png" />
+                        <div class="default-tab-content">
+                            <div id="tab-2" class="big-tab">
+                                <img class="tab-bkg tab-2-bkg-unzoom" src="./home/onpitch.jpg" />
+                                <div class="tab-gradient tab-gradient-browse">
+                                    <div class="tab-logo-container tab-logo-container-browse">
+                                        <img src="./home/icon bat.png" />
+                                        <img src="./home/On the Pitch.png" />
+                                    </div>
+                                    <div class="tab-learn-more">
+                                        <img src="./home/learn-more.png" srcset="./home/learn-more.png 1x, ./home/learn-more@2x.png 2x, ./home/learn-more@3x.png 3x" />
+                                    </div>
+                                    <img class="arrow" src="./home/arrow-right.png" />
                                 </div>
-                                <div class="tab-learn-more">
-                                    <img src="./home/learn-more.png" srcset="./home/learn-more.png 1x, ./home/learn-more@2x.png 2x, ./home/learn-more@3x.png 3x" />
+                            </div>
+                        </div>
+                        <div class="tab-detail-page">
+                            <div class="MainContaintArea">
+                                <div id="tab2">
+                                    <div class="video-outer-container">
+                                        <div class="video-container">
+                                            <div class="video-navigator video-navigator-left">
+                                                <div class="navigation">
+                                                    <img class="left-arrow" src="./home/arrow-right.png"/>
+                                                    <div>Prev</div>
+                                                </div>
+                                            </div>
+                                            <div class="video-section ContentVideo">
+                                                <div class="video-player embed-container">
+                                                    <iframe id="firstVideo" class="video-iframe active" src="https://www.youtube.com/embed/wt99b5ccwqk?enablejsapi=1" allowfullscreen frameborder="0" volume="0"></iframe>
+                                                    <iframe id="secondVideo" class="video-iframe" src="https://www.youtube.com/embed/UnmWeeyZoKw?enablejsapi=1" allowfullscreen frameborder="0" volume="0"></iframe>
+                                                </div>
+                                            </div>
+
+                                            <div class="video-navigator video-navigator-right">
+                                                <div class="navigation active">
+                                                    <img class="right-arrow" src="./home/arrow-right.png" />
+                                                    <div>Next</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="content-top"></div>
+
+                                        <div class="content-body">
+                                            <div class="series-logo">
+                                                <div class="team1-captain circle green">
+                                                    <img class="team-pic" src="./tab2/team1-captain.png" />
+                                                </div>
+                                                <div class="team2-captain circle green">
+                                                    <img class="team-pic" src="./tab2/team2-captain.png" />
+                                                </div>
+                                                <div class="cup-image circle green">
+                                                    <img class="team-pic" src="./tab2/ashes-cup.png" />
+                                                </div>
+                                                
+                                            </div>
+                                            <p class="title">Lorem ipsum dolor sit amet</p>
+                                            <img class="heather" src="./tab1/heather.svg" />
+                                            <p class="text">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                            </p>
+                                            <img class="content-img" src="./tab2/tab2-img-1.png" />
+                                            <p class="subhead">Lorem ipsum dolor sit amet</p>
+                                            <p class="text">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                            </p>
+                                            <img class="content-img" src="./tab2/tab2-img-2.png" />
+                                            <p class="subhead">Lorem ipsum dolor sit amet</p>
+                                            <p class="text">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                            </p>
+                                            <div class="promo-section">
+                                                <img class="promo-img" src="./tab1/promo.png" />
+                                                <p class="promo-text">
+                                                    Explore the magnificent beaches, forests and mountains trails around beautiful Noosa, before heading through the UNESCO listed Great Sandy Biosphere to the world's largest sand island, Fraser Island. Here you will embark on a 4WD adventure of this very unique World Heritage site. This 7-day holiday offered by Freedom Australia includes car hire and accommodation. International flights are not included.
+                                                </p>
+                                                <div class="line clearfix">
+                                                    <a href="#"><div class="explore">Explore</div></a>
+                                                </div>
+                                                <img class="promo-img" src="./tab1/intlcrickettours.png" />
+                                                <p class="promo-text">
+                                                    Explore the magnificent beaches, forests and mountains trails around beautiful Noosa, before heading through the UNESCO listed Great Sandy Biosphere to the world's largest sand island, Fraser Island. Here you will embark on a 4WD adventure of this very unique World Heritage site. This 7-day holiday offered by Freedom Australia includes car hire and accommodation. International flights are not included.
+                                                </p>
+                                                <div class="line clearfix">
+                                                    <a href="#"><div class="explore">Explore</div></a>
+                                                </div>
+                                                <img class="promo-img" src="./tab1/gullivers.png" />
+                                                <p class="promo-text">
+                                                    Explore the magnificent beaches, forests and mountains trails around beautiful Noosa, before heading through the UNESCO listed Great Sandy Biosphere to the world's largest sand island, Fraser Island. Here you will embark on a 4WD adventure of this very unique World Heritage site. This 7-day holiday offered by Freedom Australia includes car hire and accommodation. International flights are not included.
+                                                </p>
+                                                <div class="line clearfix">
+                                                    <a href="#"><div class="explore">Explore</div></a>
+                                                </div>
+                                                <img class="promo-img" src="./tab1/barmy.png" />
+                                                <p class="promo-text">
+                                                    Explore the magnificent beaches, forests and mountains trails around beautiful Noosa, before heading through the UNESCO listed Great Sandy Biosphere to the world's largest sand island, Fraser Island. Here you will embark on a 4WD adventure of this very unique World Heritage site. This 7-day holiday offered by Freedom Australia includes car hire and accommodation. International flights are not included.
+                                                </p>
+                                                <div class="line clearfix">
+                                                    <a href="#"><div class="explore">Explore</div></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <img class="arrow" src="./home/arrow-right.png" />
+                            </div>
+                            <div class="scrollbar-external_wrapper">
+                                <div class="external-scroll_y">
+                                    <div style="position:relative">
+                                        <div class="scroll-element_outer">
+                                            <div class="scroll-element_size"></div>
+                                            <div class="scroll-element_track"></div>
+                                            <div class="scroll-bar"></div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="tab lightbox-tab3 tab-container"  data-tab="tab3">
-                        <div id="tab-3" class="big-tab">
-                            <img class="tab-bkg tab-3-bkg-unzoom" src="./home/offpitch.jpg" />
-                            <div class="tab-gradient tab-gradient-browse">
-                                <div class="tab-logo-container tab-logo-container-browse">
-                                    <img src="./home/icon kangaroo.png" />
-                                    <img src="./home/Off the pitch.png" />
+                        <div class="default-tab-content">
+                            <div id="tab-3" class="big-tab">
+                                <img class="tab-bkg tab-3-bkg-unzoom" src="./home/offpitch.jpg" />
+                                <div class="tab-gradient tab-gradient-browse">
+                                    <div class="tab-logo-container tab-logo-container-browse">
+                                        <img src="./home/icon kangaroo.png" />
+                                        <img src="./home/Off the pitch.png" />
+                                    </div>
+                                    <div class="tab-learn-more">
+                                        <img src="./home/learn-more.png" srcset="./home/learn-more.png 1x, ./home/learn-more@2x.png 2x, ./home/learn-more@3x.png 3x" />
+                                    </div>
+                                    <img class="arrow" src="./home/arrow-right.png" />
                                 </div>
-                                <div class="tab-learn-more">
-                                    <img src="./home/learn-more.png" srcset="./home/learn-more.png 1x, ./home/learn-more@2x.png 2x, ./home/learn-more@3x.png 3x" />
+                            </div>
+                        </div>
+                        <div class="tab-detail-page">
+                            <div class="MainContaintArea">
+                                <div id="tab3" class="content">
+                                    <div class="content-top"></div>
+                                    <div class="content-body">
+                                        <p class="title">Lorem ipsum dolor sit amet</p>
+                                        <img class="heather" src="./tab1/heather.svg" />
+                                        <p class="text">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        </p>
+                                        <img class="content-img" src="./tab3/tab3-img-1.png" />
+                                        <p class="subhead">Lorem ipsum dolor sit amet</p>
+                                        <p class="text">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        </p>
+                                        <img class="content-img" src="./tab1/southaus.png" />
+                                        <p class="subhead">Lorem ipsum dolor sit amet</p>
+                                        <p class="text">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        </p>
+                                        <div class="promo-section">
+                                            <img class="promo-img" src="./tab1/promo.png" />
+                                            <p class="promo-text">
+                                                Explore the magnificent beaches, forests and mountains trails around beautiful Noosa, before heading through the UNESCO listed Great Sandy Biosphere to the world's largest sand island, Fraser Island. Here you will embark on a 4WD adventure of this very unique World Heritage site. This 7-day holiday offered by Freedom Australia includes car hire and accommodation. International flights are not included.
+                                            </p>
+                                            <div class="line clearfix">
+                                                <a href="#"><div class="explore">Explore</div></a>
+                                            </div>
+                                            <img class="promo-img" src="./tab1/intlcrickettours.png" />
+                                            <p class="promo-text">
+                                                Explore the magnificent beaches, forests and mountains trails around beautiful Noosa, before heading through the UNESCO listed Great Sandy Biosphere to the world's largest sand island, Fraser Island. Here you will embark on a 4WD adventure of this very unique World Heritage site. This 7-day holiday offered by Freedom Australia includes car hire and accommodation. International flights are not included.
+                                            </p>
+                                            <div class="line clearfix">
+                                                <a href="#"><div class="explore">Explore</div></a>
+                                            </div>
+                                            <img class="promo-img" src="./tab1/gullivers.png" />
+                                            <p class="promo-text">
+                                                Explore the magnificent beaches, forests and mountains trails around beautiful Noosa, before heading through the UNESCO listed Great Sandy Biosphere to the world's largest sand island, Fraser Island. Here you will embark on a 4WD adventure of this very unique World Heritage site. This 7-day holiday offered by Freedom Australia includes car hire and accommodation. International flights are not included.
+                                            </p>
+                                            <div class="line clearfix">
+                                                <a href="#"><div class="explore">Explore</div></a>
+                                            </div>
+                                            <img class="promo-img" src="./tab1/barmy.png" />
+                                            <p class="promo-text">
+                                                Explore the magnificent beaches, forests and mountains trails around beautiful Noosa, before heading through the UNESCO listed Great Sandy Biosphere to the world's largest sand island, Fraser Island. Here you will embark on a 4WD adventure of this very unique World Heritage site. This 7-day holiday offered by Freedom Australia includes car hire and accommodation. International flights are not included.
+                                            </p>
+                                            <div class="line clearfix">
+                                                <a href="#"><div class="explore">Explore</div></a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <img class="arrow" src="./home/arrow-right.png" />
+                            </div>
+                            <div class="scrollbar-external_wrapper">
+                                <div class="external-scroll_y">
+                                    <div style="position:relative">
+                                        <div class="scroll-element_outer">
+                                            <div class="scroll-element_size"></div>
+                                            <div class="scroll-element_track"></div>
+                                            <div class="scroll-bar"></div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

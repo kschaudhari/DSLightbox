@@ -85,6 +85,22 @@ body {padding-top:50px;margin-left:200px;font-family: 'Fira+Sans+Extra+Condensed
 .expanded .tab-container{width:11%;}
 .expanded .tab-container.active{width:78%;}
 
+.expanded .tab-1-bkg-unzoom {
+    left: -378px;
+}
+
+.expanded .tab-1-bkg-zoom {
+    left: -378px;
+}
+
+.expanded .tab-3-bkg-unzoom {
+    left: -130px;
+}
+
+.expanded .tab-3-bkg-zoom {
+    left: -130px;
+}
+
 .lighbox-container #tab-1 {
 }
 .lighbox-container #tab-2 {
