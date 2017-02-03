@@ -1,4 +1,4 @@
-﻿################################################################################
+################################################################################
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
@@ -18,3 +18,5 @@
 /Sample/Miranda.sln
 /swarovski/lightbox/.vs/config
 *.suo
+
+swarovski/lightbox/images/Dubrovnik’s enchanting coastline. Photo by Mario Romulić; Dražen Stojčić, the Croatian Tourist Board.jpg
