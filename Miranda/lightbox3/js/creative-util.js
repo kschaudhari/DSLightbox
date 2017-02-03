@@ -8,14 +8,14 @@ function receiveMessage(event) {
     }
 }
 function showLightboxPopup() {
-    
+
     var defaultTab = 1;
     var type = window.location.hash.substr(1);
     if (type)
         defaultTab = type.replace("tab", '');
     if (defaultTab > 5 || defaultTab < 1)
         type = "";
-    
+
     sendTrackerInfo();
     handleMobNavigation(defaultTab, true);
 }
@@ -23,10 +23,8 @@ function showLightboxPopup() {
 function hideLightboxPopup() {
     //$(".removePopup").trigger("click");
     if (window.parent) {
-        var activeTabVideo = $(".lighbox-container .lightbox-detailsPage .tab.active .ContentVideo .embed-container iframe")
-        stopVideos(activeTabVideo);
-        
-        
+        stopVideos();
+        window.parent.postMessage("LB_CLOSE", "*");
     }
 }
 
@@ -41,7 +39,7 @@ function sendTrackerInfo() {
         //    ga('send', 'pageview', { 'sessionControl': 'start' });
         //}
         //add any pixel info to track
-        
+
         return;
     }
     loadedTimerForTracker = window.setTimeout(sendTrackerInfo, 500);
