@@ -64,13 +64,13 @@
     padding-top: 30px;
 }
 
-#tab1 .title{
+.title{
     text-align: center;
     font-size: 19px;
     text-transform: uppercase;
 }
 
-#tab1 .heather {
+.heather {
     z-index: 20;
     max-width: 75px;
     top: 25px;
@@ -81,7 +81,7 @@
     margin-bottom: 50px;
 }
 
-#tab1 .text {
+.text {
         font-size: 18px;
         margin: 0px 90px auto;
         text-align: justify-left;
@@ -91,13 +91,13 @@
         color: rgba(255,255,255,0.8);
 }
 
-#tab1 .content-img {
+.content-img {
     max-width: 100%;
     position: relative;
 
 }
 
-#tab1 .subhead {
+.subhead {
     font-size: 19px;
     text-transform: uppercase;
     line-height: 1.526;
@@ -108,16 +108,18 @@
 
 }
 
-#tab1 .promo-img {
+.promo-img {
     max-width: 100%;
     position: relative;
-    margin: 0px 90px auto;
+    margin: 0px auto;
     margin-bottom: 10px;
     margin-top: 50px;
+    display: block;
+    /* width: 100%; */
 }
 
         
-#tab1 .promo-text {
+.promo-text {
         font-size: 18px;
         margin: 0px 90px auto;
         text-align: justify-left;
@@ -127,7 +129,7 @@
         color: rgba(255,255,255,0.8);
 }
 
-#tab1 .explore-img {
+.explore-img {
     max-width: 600px;
     position: relative;
     margin: 0px 90px auto;
@@ -155,10 +157,123 @@
     text-transform: uppercase;
 }
 
-#tab1 .promo-section .promo-img:first-child {
+.promo-section .promo-img:first-child {
     margin-top: 0px;
 }
 
+.lightbox-tab2 .tab-detail-page {
+    background-image: url('../tab2/bkg.jpg');
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+#tab2{position:relative;}
+#tab2 .content-body{
+    padding-top:20px;
+}
+#tab2 .heather{top:6px; margin-bottom: 16px;}
+.video-outer-container{
+    display:block;
+    width: 100%;
+    position:absolute;
+    top: 15px;
+    left: 50%;
+    -ms-transform:translateX(-50%);
+    -moz-transform:translateX(-50%);
+    -webkit-transform:translateX(-50%);
+    transform:translateX(-50%);
+    z-index:20;
+}
+.video-container {
+    height: 100%;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    /* vertical-align: middle; */
+}
+.video-navigator{
+    width: 19.23%;
+    float:left;
+    font-size: 23px;
+    text-align: center;
+    line-height: 1.6;
+    /* color: rgba(0, 0, 0, 0.6); */
+    min-height: 100px;
+    position: relative;
+    height: 270px;
+    text-transform:uppercase;
+    text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+    letter-spacing: 2px;
+}
+.video-navigator .navigation{
+    position:absolute;
+    width:100%;
+    top:50%;
+    -ms-transform:translateY(-50%);
+    -moz-transform:translateY(-50%);
+    -webkit-transform:translateY(-50%);
+    transform:translateY(-50%);
+    display:none;
+    cursor:pointer;
+    -ms-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.video-navigator .navigation.active{
+    display:block;
+}
+.left-arrow{
+    -ms-transform:rotate(180deg);
+    -moz-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    transform:rotate(180deg);
+}
+.video-section{
+    /* float:left; */
+    width: 61.53846153846154%;
+    background-color: #000;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.video-player{
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+.video-player iframe, .video-player embed, .video-player object {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.video-iframe{display:none;}
+.video-iframe.active{display:block;}
+.series-logo{width:480px; margin:0px auto 30px}
+.series-logo:after{content:"";display:block;clear:both;}
+.circle{width:100px;height:100px;border-radius:50%; background-color:#004813;}
+.circle img{border-radius:50%;width:100%}
+.team1-captain{float:left;}
+.cup-image{margin:0px auto}
+.team2-captain{float:right;}
+
+
+.lightbox-tab3 .tab-detail-page {
+    background-image: url('../tab3/bkg.png');
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
 /******************* EXTERNAL SCROLLBAR *******************/
 /*  scrol bar */
 .MainContaintArea {
