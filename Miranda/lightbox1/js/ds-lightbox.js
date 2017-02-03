@@ -255,8 +255,10 @@ function detailPageLoaded() {
 
 function startVideo(event) {
     var iframe = $(event.target.getIframe());
-    if (iframe.is(":visible"))
+    if (iframe.is(":visible")) {
         event.target.playVideo();
+        event.target.mute();
+    }
 }
 function stopVideos(privousVideos) {
     if (!privousVideos)
