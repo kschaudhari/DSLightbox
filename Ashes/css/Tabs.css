@@ -111,9 +111,11 @@
 .promo-img {
     max-width: 100%;
     position: relative;
-    margin: 0px 90px auto;
+    margin: 0px auto;
     margin-bottom: 10px;
     margin-top: 50px;
+    display: block;
+    /* width: 100%; */
 }
 
         
@@ -173,7 +175,7 @@
 #tab2 .heather{top:6px; margin-bottom: 16px;}
 .video-outer-container{
     display:block;
-    width: 650px;
+    width: 100%;
     position:absolute;
     top: 15px;
     left: 50%;
@@ -187,9 +189,11 @@
     height: 100%;
     position: relative;
     display: inline-block;
+    width: 100%;
+    /* vertical-align: middle; */
 }
 .video-navigator{
-    width: 85px;
+    width: 19.23%;
     float:left;
     font-size: 23px;
     text-align: center;
@@ -227,9 +231,16 @@
     transform:rotate(180deg);
 }
 .video-section{
-    float:left;
-    width:480px;
+    /* float:left; */
+    width: 61.53846153846154%;
     background-color: #000;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 .video-player{
     position: relative;

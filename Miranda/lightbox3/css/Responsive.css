@@ -11,7 +11,7 @@
     }
 
 }
-@media screen and (max-width: 930px) , screen and (max-height: 570px){
+@media screen and (max-width: 930px){
     #mydiv{
         position:fixed;
         top:0px;
@@ -78,6 +78,15 @@
     }
     .tab-details{
         overflow:auto;
+    }
+    .tab3 .map {
+        width:1100px;
+        top:-460px;
+        left:-180px;
+        -ms-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
     }
     .lighbox-container .external-scroll_y.scroll-scrolly_visible{
 
@@ -250,8 +259,21 @@
 }
 
 
+@media screen and (min-width: 768px) and (max-device-width: 1024px)  and (orientation : landscape) {
+    .tab-details{
+        overflow:auto;
+    }
+    .tab.active .MainContaintArea{
+        height:auto;
+        max-height:unset;
+    }
+    .tab2.active .MainContaintArea, .tab3.active .MainContaintArea{
+        margin-bottom:100px;
+    }
+}
 
-@media screen and (max-width: 767px)  and (orientation : landscape) , screen and (max-height: 570px) and (orientation : landscape) {
+
+@media screen and (max-width: 767px)  and (orientation : landscape) {
     .topMobMenuBar{
         min-height: 91px;
     }
@@ -263,5 +285,10 @@
     }
     .lighbox-container .lightbox-detailsPage .tab .BannerContentBox{
         min-height:400px;
+    }
+    .MainContentBox {
+        width:100%;
+        margin-left:0px;
+        overflow: initial !important;
     }
 }
