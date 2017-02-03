@@ -54,7 +54,7 @@
 }
 
 .tab-menu-3.active {
-     background-image: url('../images/tab3/selected2@3x.png');   
+     background-image: url('../images/tab3/selected@3x.png');   
 }
 
 .tab-menu-1 {
@@ -76,9 +76,9 @@
 .tab-menu-3 {
     background-image: url('../images/tab3/tab 3@3x.png');
 }
-.tab-menu3-preload {background-image: url('../images/tab3/selected2@3x.png');}
+.tab-menu3-preload {background-image: url('../images/tab3/selected@3x.png');}
 .tab-menu-3:hover {
-    background-image: url('../images/tab3/selected2@3x.png');
+    background-image: url('../images/tab3/selected@3x.png');
 }
 
 
