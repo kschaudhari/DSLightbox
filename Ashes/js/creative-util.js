@@ -23,9 +23,8 @@ function showLightboxPopup() {
 function hideLightboxPopup() {
     //$(".removePopup").trigger("click");
     if (window.parent) {
-        var activeTabVideo = $(".lighbox-container .lightbox-detailsPage .tab.active .ContentVideo .embed-container iframe")
-        stopVideos(activeTabVideo);
-        
+        stopVideos();
+        window.parent.postMessage("LB_CLOSE", "*");
         
     }
 }

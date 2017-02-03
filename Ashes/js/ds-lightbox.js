@@ -121,7 +121,9 @@ function detailPageLoaded()
     }, 100);
     
     $(".lighbox-container .lightbox-detailsPage .tab.active .video-navigator .navigation").off("click");
-    $(".lighbox-container .lightbox-detailsPage .tab.active .video-navigator .navigation").click(function () {
+    $(".lighbox-container .lightbox-detailsPage .tab.active .video-navigator .navigation").click(function (e) {
+        e.stopPropagation();
+        e.preventDefault();
         $(".lighbox-container .lightbox-detailsPage .tab.active .video-navigator .navigation").toggleClass("active");
         $(".lighbox-container .lightbox-detailsPage .tab.active .video-iframe").toggleClass("active");
         stopVideos();
@@ -187,7 +189,7 @@ function setScrollBar(checkIfScrollApplied)
 }
 
 function showTab(tabId, allowReLoad, slideDir) {
-    if (!allowReLoad && $(".lighbox-container .lightbox-detailsPage .lightbox-tab" + tabId).hasClass(".active")) {
+    if (!allowReLoad && $(".lighbox-container .lightbox-detailsPage .lightbox-tab" + tabId).hasClass("active")) {
         return;
     }
     var detailsVisible = $(".lighbox-container .lightbox-detailsPage").is(":visible");

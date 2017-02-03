@@ -1,3 +1,10 @@
+@media screen and (max-width: 1024px)
+{
+    .CloseBtn{
+        top:45px;
+        right: -10px;
+    }
+}
 
 @media screen and (min-width: 768px) {
 	.mobMenuContainer{
@@ -6,10 +13,7 @@
     
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    .header {
-        position: relative;
-        top: -40px;
-    }
+    
     .lightbox-menuItem-boxed .lighbox-menuContent .hoverContent {
         top: 27%;
     }
@@ -32,6 +36,13 @@
     .DetailBannerText .DetailTextTab2 .TextBanner .tab1BannerBigtesxt1 {
         padding-left: 5.5%;
         display: block;
+    }
+
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation : portrait) {
+    .header {
+        position: relative;
+        top: -40px;
     }
 
 }
