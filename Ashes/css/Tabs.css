@@ -33,7 +33,7 @@
 }
 
 .content-top {
-    width: 776px;
+    width: 100%;
     height: 183px;
     background-image: url('../tab1/curves.png');
     background-size: cover;
@@ -261,7 +261,7 @@
 }
 .video-iframe{display:none;}
 .video-iframe.active{display:block;}
-.series-logo{width:480px; margin:0px auto 30px}
+.series-logo{width:61.8557%; margin:0px auto 30px}
 .series-logo:after{content:"";display:block;clear:both;}
 .circle{width:100px;height:100px;border-radius:50%; background-color:#004813;}
 .circle img{border-radius:50%;width:100%}

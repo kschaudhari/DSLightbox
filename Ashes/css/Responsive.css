@@ -46,9 +46,12 @@
     }
 
 }
-@media screen and (min-width: 768px) and (max-device-width: 1024px) {
+@media (max-device-width: 1024px) {
     
     .MainContaintArea{
         overflow:auto;
+    }
+    .mobDetector{
+        display:block;
     }
 }

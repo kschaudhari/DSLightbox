@@ -79,6 +79,8 @@ $(document).ready(function () {
     }
     $(".big-tab").hover(function () {
         var id = $(this).attr('id');
+        $(".big-tab").addClass("another-tab-hover");
+        $(this).removeClass("another-tab-hover");
         //alert(id);
         $("#" + id + " .tab-gradient").removeClass("tab-gradient-browse");
         $("#" + id + " .tab-gradient").addClass("tab-gradient-hover");
@@ -93,8 +95,10 @@ $(document).ready(function () {
         $("#" + id + " .arrow").addClass("arrow-bottom");
         $("#" + id + " .tab-learn-more").addClass("show");
 
+
     }, function () {
         var id = $(this).attr('id');
+        $(".big-tab").removeClass("another-tab-hover");
         $("#" + id + " .tab-gradient").removeClass("tab-gradient-hover");
         $("#" + id + " .tab-gradient").addClass("tab-gradient-browse");
 
@@ -110,6 +114,11 @@ $(document).ready(function () {
 
 
     });
+
+    if($(".mobDetector").is("visible"))
+    {
+        $(".big-tab").off("hover");
+    }
 });
 
 function detailPageLoaded()
