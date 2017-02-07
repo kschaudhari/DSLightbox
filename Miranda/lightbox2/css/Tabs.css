@@ -152,7 +152,7 @@
     /* position: absolute; */
     border-radius: 0px;
     background-color: #fff;
-    width: 4px !important;
+    width: 8px !important;
 }
  
 .external-scroll_x.scroll-scrollx_visible {
@@ -181,7 +181,7 @@
 .external-scroll_x .scroll-bar,
 .external-scroll_y .scroll-bar {
     z-index: 12;
-    width: 4px;
+    width: 8px;
     border-radius:0px;
     background-color: #27c4f3;
 }

@@ -78,6 +78,7 @@
     display: block;
     margin-top: 10px;
     margin-bottom: 20px;
+    height:100%;
 }
 
 .tab1 .logos-text
@@ -114,6 +115,10 @@
     font-size: 15px;
     margin-top: 0;
 
+}
+
+.tab1 .content-text a{
+    color:#27c4f3;
 }
 
 .tab1 .content-image {
