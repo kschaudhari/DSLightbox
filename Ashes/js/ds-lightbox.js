@@ -326,7 +326,7 @@ function setSVGImages() {
         }
 
         if (src && src != '') {
-            var obj = '<object class="' + $item.attr("class") + '" data="' + src + '" type="image/svg+xml" ><img src="' + $item.attr('src').replace(".svg", ".jpg") + '" /></object>';
+            var obj = '<object class="' + $item.attr("class") + '" data="' + src + '" type="image/svg+xml" ></object>';
             $(obj).insertBefore($item);
             $item.remove();
         }

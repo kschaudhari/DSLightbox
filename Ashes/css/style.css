@@ -77,9 +77,13 @@ body {padding-top:50px;margin-left:200px;font-family: 'futura-pt',sans-serif;fon
 .partner-logo{float:left; width:131px}
 .presented-by{float:right;width:92px;margin-right: 5px;}
 .partner-logo img, .partner-logo object{width:100%}
+.partner-logo .logos object, .partner-logo .logos img{
+    pointer-events: none;
+    cursor:pointer;
+}
 .adelaide-logo{max-width:70px}
 .wa-logo{max-width:50px}
-.presented-by img, .presented-by object{width:100%}{width:100%}
+.presented-by img, .presented-by object{width:100%}
 .header img {display: block;margin: 0 auto;}
 .in-association img{max-width:96px;}
 .body {width: 100%;box-sizing: border-box;}
