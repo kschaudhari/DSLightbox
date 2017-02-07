@@ -8,11 +8,14 @@
     z-index:0;
 }
 
+.expanded .tab-container .default-tab-content{opacity:1;-ms-transition:opacity 0.5s ease-in-out;-moz-transition:opacity 0.5s ease-in-out;-webkit-transition:opacity 0.5s ease-in-out;transition:opacity 0.5s ease-in-out;}
+.expanded .tab-container.active .default-tab-content{opacity:0; position:absolute;top:0;left:0;right:0;bottom:0}
+.expanded .big-tab .another-tab-hover-grad{opacity:1}
+.expanded .big-tab:hover .another-tab-hover-grad{opacity:0}
 .tab-detail-page{
-    display:none;
+    opacity:0;-ms-transition:opacity 1s ease-in-out;-moz-transition:opacity 1s ease-in-out;-webkit-transition:opacity 1s ease-in-out;transition:opacity 1s ease-in-out;
 }
-.tab-container.active .default-tab-content{display:none}
-.tab-container.active .tab-detail-page{display:block;margin-right: 4px;}
+.tab-container.active .tab-detail-page{opacity:1;margin-right: 4px; position:absolute;top:0;left:0;right:0;bottom:0;}
 .MainContentBox {
      display: block;
      height: 100% !important;
@@ -20,7 +23,7 @@
      margin: 0px auto;
 }
 .lightbox-tab1 .tab-detail-page {
-    background-image: url('../tab1/hero.png');
+    background-image: url('../tab1/hero-new.png');
     background-size: cover;
     height: 100%;
     overflow: hidden;
@@ -62,8 +65,15 @@
     color: #ffffff;
     padding-bottom: 50px;
     padding-top: 30px;
+    opacity:0;
 }
-
+.tab.active .content-body{
+    opacity:1;
+    -o-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -webkit-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
 .title{
     text-align: center;
     font-size: 19px;
@@ -83,18 +93,20 @@
 
 .text {
         font-size: 18px;
-        margin: 0px 90px auto;
+        margin: 0px 90px 30px;
         text-align: justify-left;
         line-height: 1.6;
-        margin-bottom: 70px;
         position: relative;
         color: rgba(255,255,255,0.8);
+        font-weight: normal;
+        /* word-spacing: 2px; */
+        letter-spacing: 1px;
 }
 
 .content-img {
     max-width: 100%;
     position: relative;
-
+    margin-bottom: 25px;
 }
 
 .subhead {
@@ -102,20 +114,60 @@
     text-transform: uppercase;
     line-height: 1.526;
     text-align: left;
-    margin: 60px 90px auto;
+    margin: 0px 90px auto;
     position: relative;
     margin-bottom: 10px;
-
+    text-align: center;
+    font-weight: 400;
+}
+.promo-section {
+    margin-top: 30px;
+}
+.promo-img-container {
+    max-width: 600px;
+    margin: 0px auto;
+    display: table;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.promo-img-container:after {
+    content:"";
+    display: block;
+    clear:both;
 }
 
+.promo-logo-container {
+    display: table-cell;
+    width: 50%;
+    height: 100%;
+    background-color: #83a219;
+    vertical-align: bottom;
+    text-align: center;
+    font-size: 18px;
+}
+
+.package-name {font-weight: 400;}
+.package-headline {
+    font-size: 15px;
+    max-width: 77%;
+    margin: 0px auto;
+}
+.promo-logo{
+
+padding-bottom: 18px;
+
+padding-top: 18px;
+}
+.promo-with{font-style:italic}
+.promo-logo img, .promo-logo object{
+    vertical-align:middle;
+}
 .promo-img {
-    max-width: 100%;
+    /* max-width: 50%; */
     position: relative;
     margin: 0px auto;
-    margin-bottom: 10px;
-    margin-top: 50px;
-    display: block;
-    /* width: 100%; */
+    display: table-cell;
+    width: 100%;
 }
 
         
@@ -127,6 +179,11 @@
         margin-bottom: 10px;
         position: relative;
         color: rgba(255,255,255,0.8);
+        padding-left: 17px;
+}
+.promo-text a{
+    color: #83a219;
+    font-weight:normal;
 }
 
 .explore-img {
@@ -142,7 +199,7 @@
     border-top: solid 1px rgb(131,162,25);
     position: relative;
     margin-top: 20px;
-
+    margin-bottom: 45px;
 }
 
 .explore {
@@ -155,8 +212,14 @@
     padding: 10px 20px;
     box-sizing: border-box;
     text-transform: uppercase;
+    cursor:pointer;
 }
-
+.explore:hover {
+    background-color: #9fc71f;
+}
+.explore:active {
+    background-color: #6a8415;
+}
 .promo-section .promo-img:first-child {
     margin-top: 0px;
 }

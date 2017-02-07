@@ -1,5 +1,5 @@
 .clear{ clear:both;}
-body {padding-top:50px;margin-left:200px;font-family: 'Fira+Sans+Extra+Condensed',sans-serif;font-weight: 300;position: relative;}
+body {padding-top:50px;margin-left:200px;font-family: 'futura-pt',sans-serif;font-weight: 300;position: relative;}
         * {margin:0;}
 
 #mydiv {
@@ -27,7 +27,7 @@ body {padding-top:50px;margin-left:200px;font-family: 'Fira+Sans+Extra+Condensed
     -ms-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    font-family: 'Fira Sans';
+    font-family: 'futura-pt';
 }
 .CloseBtn{
 	position:absolute;
@@ -76,13 +76,15 @@ body {padding-top:50px;margin-left:200px;font-family: 'Fira+Sans+Extra+Condensed
 
 .partner-logo{float:left; width:131px}
 .presented-by{float:right;width:92px;margin-right: 5px;}
-.partner-logo img{width:100%}
-.presented-by img{width:100%}
+.partner-logo img, .partner-logo object{width:100%}
+.adelaide-logo{max-width:70px}
+.wa-logo{max-width:50px}
+.presented-by img, .presented-by object{width:100%}{width:100%}
 .header img {display: block;margin: 0 auto;}
-
+.in-association img{max-width:96px;}
 .body {width: 100%;box-sizing: border-box;}
 
-.tab-container {width: 33.333333%;float: left;transition: all 0.5s ease-in-out;-webkit-transition: all 0.5s ease-in-out;-moz-transition: all 0.5s ease-in-out;height: 100%;}
+.tab-container {width: 33.333333%;float: left;position:relative;transition: all 0.5s ease-in-out;-webkit-transition: all 0.5s ease-in-out;-moz-transition: all 0.5s ease-in-out;height: 100%;}
 .expanded .tab-container{width:11%;}
 .expanded .tab-container.active{width:78%;}
 
@@ -212,11 +214,12 @@ body {padding-top:50px;margin-left:200px;font-family: 'Fira+Sans+Extra+Condensed
     margin-top: 30px;
 }
 
-.tab-logo-container img {
+.tab-logo-container img, .tab-logo-container object {
     display: block;
     margin: 0 auto;
     margin-bottom: 15px;
 }
+
 
 .arrow {
     display: block;
@@ -250,12 +253,17 @@ body {padding-top:50px;margin-left:200px;font-family: 'Fira+Sans+Extra+Condensed
     -webkit-transform:translate(-50%,-50%);
     -moz-transform:translate(-50%,-50%);
     transform:translate(-50%,-50%);
-     transition: all 0.5s ease-in-out;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
+     transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
     -webkit-backface-visibility: hidden;
     opacity:0;
 }
 .expanded .tab-learn-more{width:90px;}
-.show{opacity:1;}
+.show{opacity:1;
+      transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -webkit-backface-visibility: hidden;
+}
 .tab-learn-more img{width:100%}
