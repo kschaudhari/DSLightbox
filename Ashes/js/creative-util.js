@@ -47,3 +47,7 @@ function sendTrackerInfo() {
 }
 
 
+function openNewWindow(url) {
+    stopVideos();
+    window.open(url);
+}

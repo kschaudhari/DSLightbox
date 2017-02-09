@@ -158,25 +158,16 @@
     .play-list-container{z-index:1;position: static;margin: 0px auto;}
 }
 @media only screen and (max-width: 1200px) {
-    .banner-logo-container{
-		margin:auto;
-	}
-	.banner-logos{
-		position:relative;
-	}
+    
 	
 }
-@media only screen and (min-width: 980px) and (max-width: 1200px) {
-    
-	.banner-logos{
-		bottom:0px;
-	}
+@media only screen and (min-width: 980px) and (max-width: 1036px) {
+    .player-container{
+        width:70%;
+    }
 }
 @media only screen and (min-width: 767px) and (max-width: 1200px) {
-	.play-list-container {
-		max-width: 90%;
-		margin: auto;
-	}
+	
 }
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
     .player-container {

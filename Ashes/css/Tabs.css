@@ -103,10 +103,22 @@
         letter-spacing: 1px;
 }
 
+.content-img-container{
+    width:100%;
+    position: relative;
+}
 .content-img {
     max-width: 100%;
     position: relative;
     margin-bottom: 25px;
+}
+.img-caption{
+    width:auto;
+    position:absolute;
+    bottom:30px;
+    right:0px;
+    background-color:rgba(0,72,19,0.7);
+    padding:5px 10px;
 }
 
 .subhead {
@@ -334,7 +346,7 @@ padding-top: 18px;
 
 
 .lightbox-tab3 .tab-detail-page {
-    background-image: url('../tab3/bkg.png');
+    background-image: url('../tab3/Ashes-tab3-hero.jpg');
     background-size: cover;
     height: 100%;
     overflow: hidden;

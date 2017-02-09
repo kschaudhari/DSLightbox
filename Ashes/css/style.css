@@ -88,7 +88,7 @@ body {padding-top:50px;margin-left:200px;font-family: 'futura-pt',sans-serif;fon
 .in-association img{max-width:96px;}
 .body {width: 100%;box-sizing: border-box;}
 
-.tab-container {width: 33.333333%;float: left;position:relative;transition: all 0.5s ease-in-out;-webkit-transition: all 0.5s ease-in-out;-moz-transition: all 0.5s ease-in-out;height: 100%;}
+.tab-container {width: 33.333333%;float: left;position:relative;transition: all 0.5s ease-in-out;-webkit-transition: all 0.5s ease-in-out;-moz-transition: all 0.5s ease-in-out;height: 100%;overflow:hidden}
 .expanded .tab-container{width:11%;}
 .expanded .tab-container.active{width:78%;}
 

@@ -124,3 +124,7 @@
 .tab1 .content-image {
     width:100%;
 }
+.tab1 .explore-content-row{
+    height:40px;
+    border-bottom-left-radius:0px;
+}
