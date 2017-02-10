@@ -129,7 +129,7 @@ function detailPageLoaded()
     window.setTimeout(function () {
         setScrollBar();
         sendAnalyticsEvent();
-        setPlayer();
+        setPlayer(true);
     }, 100);
     
     $(".lighbox-container .lightbox-detailsPage .tab.active .video-navigator .navigation").off("click");
@@ -152,15 +152,32 @@ function detailPageLoaded()
         });
     }
 }
-function setPlayer()
+function setPlayer(randomize)
 {
+    if (randomize) {
+        if (!$(".lighbox-container .lightbox-detailsPage .tab.active").attr("data-loaded")) {
+            $(".lighbox-container .lightbox-detailsPage .tab.active .video-iframe").removeClass("active");
+            var random_boolean = (new Date().valueOf()) % 2;
+            if (random_boolean) {
+                $(".lighbox-container .lightbox-detailsPage .tab.active .video-iframe").last().addClass("active");
+            }
+            else
+                $(".lighbox-container .lightbox-detailsPage .tab.active .video-iframe").first().addClass("active");
+            $(".lighbox-container .lightbox-detailsPage .tab.active").attr("data-loaded", "true");
+        }
+        else
+        {
+            $(".lighbox-container .lightbox-detailsPage .tab.active .video-iframe").toggleClass("active");
+        }
+    }
     var iframes = $(".lighbox-container .lightbox-detailsPage .tab.active .ContentVideo .embed-container iframe:visible");
     if (iframes.length > 0) {
         var player = iframes.data("videoPlayer");
         if (!player) {
             player = new YT.Player(iframes.attr("id"), {
                 events: {
-                    'onReady': startVideo
+                    'onReady': startVideo,
+                    'onStateChange': onPlayerStateChange
                 }
             });
             iframes.data("videoPlayer", player);
@@ -177,6 +194,12 @@ function startVideo(event) {
     if (iframe.is(":visible")) {
         event.target.playVideo();
         event.target.mute();
+    }
+}
+function onPlayerStateChange(event) {
+    if (event.data === 0) {
+        $(".lighbox-container .lightbox-detailsPage .tab.active .video-iframe").toggleClass("active");
+        setPlayer();
     }
 }
 function stopVideos(privousVideos) {

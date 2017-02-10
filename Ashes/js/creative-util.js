@@ -43,6 +43,10 @@ function sendTrackerInfo() {
         
         //R1 pixel sent by Danilo
         (function (d, p) { var a = new Image(); a.onload = function () { a = null }; a.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//rs.gwallet.com/r1/pixel/x" + p + "r" + Math.round(1E9 * Math.random()) })(document, "42341");
+
+        //Tag from Danilo through Email on 10 Feb 2017
+        $('body').append("<ins class='dcmads' style='display:inline-block;width:1px;height:1px' data-dcm-placement='N3643.497583DIGITALSPRING/B10888452.146172653' data-dcm-rendering-mode='script' data-dcm-https-only data-dcm-resettable-device-id='' data-dcm-app-id=''> <script src='https://www.googletagservices.com/dcm/dcmads.js'></script> </ins>");
+
         return;
     }
     loadedTimerForTracker = window.setTimeout(sendTrackerInfo, 500);
