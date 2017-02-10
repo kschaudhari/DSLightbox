@@ -41,6 +41,8 @@ function sendTrackerInfo() {
         //}
         //add any pixel info to track
         
+        //R1 pixel sent by Danilo
+        (function (d, p) { var a = new Image(); a.onload = function () { a = null }; a.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//rs.gwallet.com/r1/pixel/x" + p + "r" + Math.round(1E9 * Math.random()) })(document, "42341");
         return;
     }
     loadedTimerForTracker = window.setTimeout(sendTrackerInfo, 500);
@@ -51,3 +53,4 @@ function openNewWindow(url) {
     stopVideos();
     window.open(url);
 }
+
