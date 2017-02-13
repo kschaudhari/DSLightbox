@@ -89,6 +89,7 @@
     margin: 0 auto;
     position: relative;
     margin-bottom: 50px;
+    width:100%;
 }
 
 .text {
@@ -126,7 +127,7 @@ background: linear-gradient(to top, rgba(0, 72, 19, 0.84) 0%, rgba(0, 72, 19, 0.
 .content-img {
     max-width: 100%;
     position: relative;
-    
+    width:100%;
 }
 .img-caption{
     width:auto;
@@ -350,6 +351,7 @@ padding-top: 18px;
     left: 0;
     width: 100%;
     height: 100%;
+    display: block;
 }
 .video-iframe{display:none;}
 .video-iframe.active{display:block;}
@@ -360,6 +362,9 @@ padding-top: 18px;
 .team1-captain{float:left;}
 .cup-image{margin:0px auto}
 .team2-captain{float:right;}
+.series-logo object {
+    width: 100%;
+}
 
 
 .lightbox-tab3 .tab-detail-page {
