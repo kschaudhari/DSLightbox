@@ -39,6 +39,16 @@
     
 }
 .light-box3 .carousel-navigation{display:none;}
+@media only screen and (min-width: 980px) and (max-width: 1036px) {
+    .player-container{
+        width:70%;
+    }
+}
+@media only screen and (min-width: 930px) and (max-width: 981px) {
+    .player-container{
+        width:67%;
+    }
+}
 @media screen and (max-width: 767px) {
     .play-list-container {
         margin: auto;
@@ -65,7 +75,7 @@
     }
     .play-list-carousel-container{
         display:inline-block;
-        width: 1425px !important;
+        width: 2242px !important;
     }
     .light-box3 .play-list-carousel-container {
         width: 405px !important;

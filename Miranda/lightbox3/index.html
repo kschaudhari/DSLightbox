@@ -23,8 +23,9 @@
           })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
     </script>
-    
+
     <script src="js/jquery-1.12.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
     <script type="text/javascript">
         var tag = document.createElement('script');
         tag.id = 'iframe-demo';
@@ -40,7 +41,8 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.5/TweenMax.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.11.6/utils/Draggable.min.js"></script>
-    
+
+
     <script src="https://use.typekit.net/zbu3uej.js"></script>
     <script>try { Typekit.load({ async: true }); } catch ( e ) { }</script>
 
@@ -50,10 +52,13 @@
         var clickTagInsta = "https://www.instagram.com/westernaustralia/";
         var clickTagYou = "https://www.youtube.com/user/westernaustralia";
 
-        var clickTab1ExploreMore1 = "//www.thetimes.co.uk/static/just-another-day-in-western-australia/welcome-to-the-real-australia/";
-        var clickTab1ExploreMore2 = "//www.thetimes.co.uk/static/just-another-day-in-western-australia/perths-best-kept-secrets/";
-        var clickTab1ExploreMore3 = "//www.thetimes.co.uk/static/just-another-day-in-western-australia/i-walked-onto-a-landscape-that-i-could-imagine-mars-looks-like/";
-        
+        var clickTab1ExploreMore1 = "http://australia.mrandmrssmith.com/";
+
+        var clickTab3ExploreMore1 = "//www.singaporeair.com/en_UK/gb/flying-withus/cabins/economy-class/";
+        var clickTab3ExploreMore2 = "//www.singaporeair.com/en_UK/gb/flying-withus/cabins/premium-economy-class/";
+        var clickTab3ExploreMore3 = "//www.singaporeair.com/en_UK/gb/flying-withus/cabins/business-class/";
+        var clickTab3ExploreMore4 = "//www.singaporeair.com/en_UK/gb/flying-withus/cabins/first-class/";
+
     </script>
     <!-- url prefix for s3 https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/ -->
 </head>
@@ -134,11 +139,12 @@
                     <div class="lightbox-detailsPage">
 
                         <div class="tabs-container">
-                            
+
                             <div class="tab tab1" data-tab="tab1">
                                 <div class="tab-details">
                                     <div class="MainContaintArea">
                                         <div class="hero-img">
+                                            <div class="mobile-showDiv"></div>
                                             <div class="play-list-container">
 
                                                 <div class="play-list">
@@ -150,7 +156,19 @@
 
                                                         <div class="play-list-carousel-container">
                                                             
-                                                            <div class="play-list-item active" data-video-url="https://www.youtube.com/embed/wt99b5ccwqk">
+                                                            <div class="play-list-item active" data-video-url="https://www.youtube.com/embed/uIr_pojdfx0">
+                                                                <div class="play-list-item-container">
+                                                                    <div class="play-list-thumb" style="background-image:url('../video/88x50-thumbnail-brisbane-01.jpg')"></div>
+                                                                    <div class="play-list-info">
+                                                                        <div class="play-list-title">Brisbane</div>
+                                                                        <div class="play-list-subhead">Everglades <span><i class="fa fa-angle-right" aria-hidden="true"></i></span></div>
+                                                                        <span><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                                                                    </div>
+
+
+                                                                </div>
+                                                            </div>
+                                                            <div class="play-list-item" data-video-url="https://www.youtube.com/embed/1GE9Sxxkxo0">
                                                                 <div class="play-list-item-container">
                                                                     <div class="play-list-thumb" style="background-image:url('../video/88x50-thumbnail-singapore-01.jpg')"></div>
                                                                     <div class="play-list-info">
@@ -158,21 +176,6 @@
                                                                         <div class="play-list-subhead">Airlines <span><i class="fa fa-angle-right" aria-hidden="true"></i></span></div>
                                                                         <span><i class="fa fa-angle-right" aria-hidden="true"></i></span>
                                                                     </div>
-
-
-                                                                </div>
-                                                            </div>
-                                                            
-                                                            <div class="play-list-item" data-video-url="https://www.youtube.com/embed/UnmWeeyZoKw">
-                                                                <div class="play-list-item-container">
-                                                                    <div class="play-list-thumb" style="background-image:url('../video/88x50-thumbnail-adelaide-02.jpg')"></div>
-                                                                    <div class="play-list-info">
-                                                                        <div class="play-list-title">Overview</div>
-                                                                        <div class="play-list-subhead">The Overview <span><i class="fa fa-angle-right" aria-hidden="true"></i></span></div>
-                                                                        <span><i class="fa fa-angle-right" aria-hidden="true"></i></span>
-                                                                    </div>
-
-
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -190,19 +193,53 @@
                                             <div class="showMobileCarousel"></div>
                                             <div class="logos-container lb3-brought-to-you">
                                                 <div class="logos-text">brought to you by</div>
-                                                <img class="oz-logo" src="./images/western-aus-logo.png" srcset="images/western-aus-logo.png 1x,images/western-aus-logo@2x.png 2x,images/western-aus-logo@3x.png 3x" />
+                                                <img class="oz-logo" src="./images/western-aus-logo.png" />
                                                 <img class="sa-logo" src="./images/SIA_stacked_FC_REV_CMYK.png" srcset="images/SIA_stacked_FC_REV_CMYK.png 1x,images/SIA_stacked_FC_REV_CMYK@2x.png 2x,images/SIA_stacked_FC_REV_CMYK@3x.png 3x" />
                                             </div>
                                         </div>
                                         <div class="content tab-container clearfix">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.
+
+                                            <p class="content-heading"><a style="text-decoration: none;color:inherit" href='http://australia.mrandmrssmith.com/'>AUSTRALIAN ADVENTURE</a></p>
+                                            <p class="content-text">
+                                                Welcome to Australian Adventure, your insider guide to this incredible country’s most exciting experiences and destinations.
+                                                We’ve considered where you might fly into – Melbourne, Sydney, Adelaide, Perth, Cairns, Brisbane, Canberra or Darwin – and shared some insider tips on what to do when you’re there (and where to sleep, natch). We’re on a mission to highlight Australia’s headline acts across three key themes: food and wine; coastal and aquatic; nature and wildlife.
+                                                <br><br>
+                                                Don’t just take our word for it, though: see what wildlife presenter Miranda Krestovnikoff got up to on her Australian adventure by watching our 10-part mini-series. Inspired by her trip? Use our <a href='http://australia.mrandmrssmith.com/planyourtrip/' target="_blank">bespoke planning tool</a> to create your own detailed two-week itineraries.
+                                                <br><br>
+                                                Kick-start your Australian adventure today with <a href='http://australia.mrandmrssmith.com/getting-there-with-singapore-airlines/'>Singapore Airlines</a>, who will make sure you get there in style. Enjoy.
+                                            </p>
+                                            <div class="explore-content-row">
+                                                <div class="explore-btns bgimg" onclick="javascript: openNewWindow(window.clickTab1ExploreMore1)" bg-srcset='images/explore.png 1x, images/explore@2x.png 2x, images/explore@3x.png 3x '></div>
+                                                <div class="explore-btns explore-mobile-btns bgimg" onclick="javascript: openNewWindow(window.clickTab1ExploreMore1)" bg-srcset='images/explore-mobile.png 1x, images/explore-mobile@2x.png 2x, images/explore-mobile@3x.png 3x '></div>
+                                            </div>
+
+
+                                            <p class="content-heading">Flavours of Australia</p>
+                                            <p class="content-text">
+                                                Food and wine are national passions in Australia, which puts some of the world’s most memorable wining-and-dining experiences on your plate. Where else can you watch kangaroos graze while eating just-caught seafood, taste top-notch wines whose flavour has been determined by limestone-rich soils, ocean breezes and generous amounts of sunshine, or sample indigenous plants and herbs prepared by innovative chefs and served in trend-setting city-laneway restaurants?
+                                            </p>
+
+                                            <img class="content-image" src="./images/tab1/740x270-AA-Ligthbox-tab1-img01.jpg" srcset="./images/tab1/740x270-AA-Ligthbox-tab1-img01.jpg 1x,./images/tab1/740x270-AA-Ligthbox-tab1-img01@2x.jpg 2x,./images/tab1/740x270-AA-Ligthbox-tab1-img01@3x.jpg 3x" />
+
+                                            <p class="content-heading">Coastal Playground</p>
+                                            <p class="content-text">
+                                                Australia offers a myriad reasons to go underwater, whether you want to snorkel the world-famous Great Barrier Reef, discover deserted coves and fish for barramundi with an Aboriginal guide, swim with friendly whale sharks or enjoy beach picnics on sun-kissed white sands while kangaroos graze close by. Here, you can combine city thrills with beach life and enjoy waveside walks, ocean-spying picnics, beach cricket, surfing and sea swims; further afield, coastal road trips await.
+                                            </p>
+
+                                            <img class="content-image" src="./images/tab1/740x270-AA-Ligthbox-tab1-img02.jpg" srcset="./images/tab1/740x270-AA-Ligthbox-tab1-img02.jpg 1x,./images/tab1/740x270-AA-Ligthbox-tab1-img02@2x.jpg 2x,./images/tab1/740x270-AA-Ligthbox-tab1-img02@3x.jpg 3x" />
+
+
+                                            <p class="content-heading">Where the wild things are</p>
+                                            <p class="content-text">
+                                                Encounter nature at its most inventive in Australia, whose belief-defying wildlife includes dozy koalas, dinosaur-like cassowaries (flightless birds), tree-climbing kangaroos, elusive platypus, choral kookaburras, ponderous dugongs, graceful manta rays, gentle whale sharks – and more. On dry land, join a nature tour run by dedicated guides or set off on a hike through some of the world’s oldest national parks, where you can learn all about the land’s rich Aboriginal history. Get up close to indigenous plants and herbs, admire ancient trees and take a dip in cooling, hidden-away waterholes. There’s plenty for water-babies here: sign up for a snorkelling expedition, go diving, enjoy a kayaking adventure or a trip on a glass-bottom boat, where you might see whales, dolphins, sharks, turtles and manta rays swimming beneath you.
+                                            </p>
+
+                                            <img class="content-image" src="./images/tab1/740x270-AA-Ligthbox-tab1-img03.jpg" srcset="./images/tab1/740x270-AA-Ligthbox-tab1-img03.jpg 1x,./images/tab1/740x270-AA-Ligthbox-tab1-img03@2x.jpg 2x,./images/tab1/740x270-AA-Ligthbox-tab1-img03@3x.jpg 3x" />
+
+                                            <p class="content-heading">Tastemakers, itineraries and a special prize...</p>
+                                            <p class="content-text">
+                                                Don’t just take our word for it, though; our band of trusted tastemakers – from wildlife experts and modern-day adventurers to top chefs – will add an extra layer of on-the-ground intelligence. We’ve also drawn up some handy itineraries and developed a nifty <a href='http://australia.mrandmrssmith.com/planyourtrip/' target="_blank">planning tool</a> to help you tailor-make your trip. You could even <a href="http://australia.mrandmrssmith.com/win/" target="_blank">win an Australian adventure</a> for two.
+                                            </p>
 
                                         </div>
                                     </div>
@@ -266,45 +303,87 @@
                                     <div class="MainContaintArea">
                                         <div class="hero-img">
                                             <div id="map-container">
-                                                <img id="map" class="map" src="./images/tab3/test.svg" />
+                                                <img id="map" class="map" src="images/tab3/map-new-version.svg" />
                                             </div>
-                                            <img class="sia" src="./images/tab3/SIA logo@3x.png" />
+                                            <img class="sia" src="images/tab3/SIA logo@3x.png" />
                                             <div class="zoom-container">
-                                                <img class="plus" src="./images/tab3/plus@3x.png" />
-                                                <img class="minus" src="./images/tab3/minus@3x.png" />
+                                                <img class="plus" src="images/tab3/plus@3x.png" />
+                                                <img class="minus" src="images/tab3/minus@3x.png" />
                                             </div>
                                         </div>
                                         <div class="explore-content">
+
                                             <div class="explore-content-row">
-                                                <div class="explore-mobile-heading">GREATER SPACE</div>
-                                                <div class="explore-thumbnail bgimg" bg-srcset='images/tab3/promo-1.jpg'></div>
+                                                <div class="explore-mobile-heading">Fly Singapore Airlines – Economy Class</div>
+                                                <div class="explore-thumbnail bgimg" bg-srcset='images/tab3/360x150-AA-lightbox-img03.png'></div>
                                                 <div class="explore-details">
-                                                    <div class="explore-heading">GREATER SPACE</div>
-                                                    <div class="explore-description">Flying Economy won’t equate to bruised knees with Singapore Airlines, our cabins are designed to give passengers plenty of room. In the New Economy Class, an innovative seat design provides more legroom and 115° of recline so you can relax. Preferred Seats, near the exits, benefit from extra legroom and are hotly sought after.</div>
+                                                    <div class="explore-heading">Fly Singapore Airlines – Economy Class</div>
+                                                    <div class="explore-description">
+
+                                                        Economy always exceeds expectations with Singapore Airlines, which never compromises on offering premium comfort at a great value price.
+                                                        <br /><br />
+                                                        Flying Economy won’t equate to bruised knees with Singapore Airlines, whose cabins are designed to give passengers plenty of room. The New Economy Class has an innovative seat design that provides more legroom and 115° of recline so you can relax and sleep.
+                                                        <br /><br />
+                                                        Singapore Airlines upgraded service leaves nothing to chance when it comes to comfort: an International Panel of Chefs consults on menus and dishes are taste-tested in a simulated pressurised cabin, so that they taste exactly as they should at 35,000 feet.
+                                                        <br /><br />
+                                                        And don’t worry if you forgot your book en route to the airport, Singapore Airlines’ KrisWorld inflight entertainment system puts 1,000 options – movies, television programmes, music, games and apps – at your disposal.
+                                                    </div>
                                                 </div>
                                                 <div class="explore-btns bgimg" onclick="javascript: openNewWindow(window.clickTab3ExploreMore1)" bg-srcset='images/explore.png 1x, images/explore@2x.png 2x, images/explore@3x.png 3x '></div>
                                                 <div class="explore-btns explore-mobile-btns bgimg" onclick="javascript: openNewWindow(window.clickTab3ExploreMore1)" bg-srcset='images/explore-mobile.png 1x, images/explore-mobile@2x.png 2x, images/explore-mobile@3x.png 3x '></div>
                                             </div>
+
                                             <div class="explore-content-row">
-                                                <div class="explore-mobile-heading">GOURMET FOOD</div>
-                                                <div class="explore-thumbnail bgimg" bg-srcset='images/tab2/promo-2.jpg'></div>
+                                                <div class="explore-mobile-heading">Fly Singapore Airlines – Premium Economy</div>
+                                                <div class="explore-thumbnail bgimg" bg-srcset='images/tab3/360x150-AA-lightbox-img01.png'></div>
                                                 <div class="explore-details">
-                                                    <div class="explore-heading">GOURMET FOOD</div>
-                                                    <div class="explore-description">The Premium Economy Book the Cook service lets you reserve your main course up to 24 hours before you fly. Alternatively, pick from three delicious meal choices onboard – including Singaporean, Asian and international flavours – and add a glass or two of fine wine or champagne.</div>
+                                                    <div class="explore-heading">Fly Singapore Airlines – Premium Economy</div>
+                                                    <div class="explore-description">
+
+                                                        Where comfort and convenience meets contemporary, the new Premium Economy is thoughtfully designed for the discerning traveller who wants a little more. Premium Economy offers increased personal space with more width, more legroom and a wide centre console.
+                                                        <br /><br />
+                                                        Extra choice, extra legroom, extra peace and quiet, extra productivity and extra tasty: flying Premium Economy with Singapore Airlines will have you feeling utterly spoiled from takeoff to touchdown. The perks begin before you even fly, thanks to the clever Book the Cook service…
+                                                    </div>
                                                 </div>
                                                 <div class="explore-btns bgimg" onclick="javascript: openNewWindow(window.clickTab3ExploreMore2)" bg-srcset='images/explore.png 1x, images/explore@2x.png 2x, images/explore@3x.png 3x '></div>
-                                                <div class="explore-btns explore-mobile-btns bgimg" onclick="javascript: openNewWindow(window.clickTab3ExploreMore1)" bg-srcset='images/explore-mobile.png 1x, images/explore-mobile@2x.png 2x, images/explore-mobile@3x.png 3x '></div>
+                                                <div class="explore-btns explore-mobile-btns bgimg" onclick="javascript: openNewWindow(window.clickTab3ExploreMore2)" bg-srcset='images/explore-mobile.png 1x, images/explore-mobile@2x.png 2x, images/explore-mobile@3x.png 3x '></div>
                                             </div>
-                                            <div class="explore-content-row ">
-                                                <div class="explore-mobile-heading">PROMO TITLE</div>
-                                                <div class="explore-thumbnail bgimg" bg-srcset='images/tab3/promo-1.jpg'></div>
+
+                                            <div class="explore-content-row">
+                                                <div class="explore-mobile-heading">Fly Singapore Airlines – Business Class</div>
+                                                <div class="explore-thumbnail bgimg" bg-srcset='images/tab3/360x150-AA-lightbox-img02.png'></div>
                                                 <div class="explore-details">
-                                                    <div class="explore-heading">PROMO TITLE</div>
-                                                    <div class="explore-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,</div>
+                                                    <div class="explore-heading">Fly Singapore Airlines – Business Class</div>
+                                                    <div class="explore-description">
+                                                        Whether you’re travelling for business or leisure, everything must go as planned. Like the meal you reserved with Book the Cook, and the uninterrupted sleep you’re looking forward to on your fully-flat bed. So you’re wide awake, refreshed and ready for the day ahead as soon as you land.
+                                                        <br /><br />
+                                                        Our fully-flat beds are Handcrafted from Scottish leather and diamond-stitched, and at 72cm they are among the widest Business Class seats in the skies. With Book the Cook you can reserve your signature main course up to 24 hours before you fly. Dine in a restaurant setting with full table service and food-paired wines.
+                                                        <br /><br />
+                                                        Fly Business Class or First Class from Heathrow and the luxury will begin before takeoff, thanks to Singapore Airlines’ SilverKris lounge at Terminal 2, whose ‘home from home’ philosophy is realised in relaxed spaces inspired by living areas, dining rooms and kitchens (albeit very stylish ones). Work effectively and comfortably in the productivity pods, admire the artworks on display, enjoy freshly prepared Asian and Western dishes – or just sink into one of the signature Singapore Airlines armchairs and relax…
+                                                    </div>
                                                 </div>
                                                 <div class="explore-btns bgimg" onclick="javascript: openNewWindow(window.clickTab3ExploreMore3)" bg-srcset='images/explore.png 1x, images/explore@2x.png 2x, images/explore@3x.png 3x '></div>
-                                                <div class="explore-btns explore-mobile-btns bgimg" onclick="javascript: openNewWindow(window.clickTab3ExploreMore1)" bg-srcset='images/explore-mobile.png 1x, images/explore-mobile@2x.png 2x, images/explore-mobile@3x.png 3x '></div>
+                                                <div class="explore-btns explore-mobile-btns bgimg" onclick="javascript: openNewWindow(window.clickTab3ExploreMore3)" bg-srcset='images/explore-mobile.png 1x, images/explore-mobile@2x.png 2x, images/explore-mobile@3x.png 3x '></div>
                                             </div>
+
+                                            <div class="explore-content-row">
+                                                <div class="explore-mobile-heading">Fly Singapore Airlines – First Class &amp; Suites</div>
+                                                <div class="explore-thumbnail bgimg" bg-srcset='images/tab3/360x150-AA-lightbox-img04.png'></div>
+                                                <div class="explore-details">
+                                                    <div class="explore-heading">Fly Singapore Airlines – First Class &amp; Suites</div>
+                                                    <div class="explore-description">
+                                                        Depending on which flight you choose, if you’re flying at the front of the plane, you’ll either find yourself in Suites or First Class.
+                                                        <br /><br />
+                                                        Enjoy world-beating attention to detail in Singapore Airlines’ first-class cabin, where treats include your favourite blend of tea, breakfast in bed or an extra-wide seat that’s fashioned from top to toe (yep, even the footrest) in hand-stitched leather. Enjoy gourmet food devised by top global chefs in a restaurant-style setting, with full table service and sommelier-selected vintages to match the food (and altitude). Post-meal, make the most of the extended curved partitions that provide privacy and kick back in your plush seat to watch a movie on the 24-inch screen, with your Bose noise-cancelling headphones plugged in.
+                                                        <br /><br />
+                                                        Suites, designed by French luxury yacht designer Jean-Jacques Coste, are individual cabins with a sliding door and window blinds to give you all the privacy you want. If you get tired of the Dom Pérignon, Krug, caviar, fine wines and gourmet meals, the crew will deploy your standalone full-sized bed. If you’re sitting in the central Suites, you can create the world’s first double bed in the sky.
+                                                    </div>
+                                                </div>
+                                                <div class="explore-btns bgimg" onclick="javascript: openNewWindow(window.clickTab3ExploreMore4)" bg-srcset='images/explore.png 1x, images/explore@2x.png 2x, images/explore@3x.png 3x '></div>
+                                                <div class="explore-btns explore-mobile-btns bgimg" onclick="javascript: openNewWindow(window.clickTab3ExploreMore4)" bg-srcset='images/explore-mobile.png 1x, images/explore-mobile@2x.png 2x, images/explore-mobile@3x.png 3x '></div>
+                                            </div>
+
+
                                         </div>
                                     </div>
                                 </div>
@@ -321,7 +400,7 @@
 
                         <div class="tab-menus-bottom-position">
                             <div class="tab-menus-container">
-                                
+
                                 <div class="tab-menu tab-menu-1" data-tab="tab1">
                                     <div class="tab-menu-text">
                                         Australian Adventure
@@ -342,14 +421,15 @@
 
                             </div>
                         </div>
-                        
+
                     </div>
 
                 </div>
 
-                    <div class="tab-menu1-preload"></div>
-                    <div class="tab-menu2-preload"></div>
-                    <div class="tab-menu3-preload"></div>
+                <div class="tab-menu1-preload"></div>
+                <div class="tab-menu2-preload"></div>
+                <div class="tab-menu3-preload"></div>
+
                 <div class="scrollbar-external_wrapper">
                     <div class="external-scroll_y">
                         <div style="position:relative">
@@ -361,8 +441,9 @@
                         </div>
                     </div>
                 </div>
+
             </div>
-            
+
             <div class="mobDetector"></div> <!-- this class used to detect mobile in javascript -->
         </div>
     </div>
@@ -383,14 +464,13 @@
          }
     </script>
 
-     <script>
+    <script>
         Draggable.create("#map", {
         type:"x,y",
         bounds: "#map-container",
         edgeResistance:1.0
         });
     </script>
-    
     <div calss="video-carousel-scripts">
         <link rel='stylesheet' id='font-awesome-css' href='css/font-awesome.min.css' type='text/css' media='all' />
         <link rel="stylesheet" type="text/css" href="../video/video-carousel.css">

@@ -28,16 +28,15 @@
     z-index: 99;
     display: block;
     position: absolute;
-    width:1100px;
-    top:-460px;
-    left:-180px;
+    width:1900px;
+    top:-1280px;
+    left:-1000px;
     image-rendering: -webkit-optimize-contrast;
     image-rendering: -moz-optimize-contrast;
     image-rendering: -o-optimize-contrast;
     transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
-    
 }
 
 .tab3 .sia {

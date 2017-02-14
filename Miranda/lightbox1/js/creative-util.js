@@ -8,14 +8,14 @@ function receiveMessage(event) {
     }
 }
 function showLightboxPopup() {
-    
+
     var defaultTab = 1;
     var type = window.location.hash.substr(1);
     if (type)
         defaultTab = type.replace("tab", '');
     if (defaultTab > 5 || defaultTab < 1)
         type = "";
-    
+
     sendTrackerInfo();
     handleMobNavigation(defaultTab, true);
 }
@@ -39,7 +39,7 @@ function sendTrackerInfo() {
         //    ga('send', 'pageview', { 'sessionControl': 'start' });
         //}
         //add any pixel info to track
-        
+
         return;
     }
     loadedTimerForTracker = window.setTimeout(sendTrackerInfo, 500);

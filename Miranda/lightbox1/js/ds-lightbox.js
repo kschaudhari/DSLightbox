@@ -305,7 +305,7 @@ function showTab(tabId, allowReLoad, slideDir) {
 
     $(".lighbox-container .lightbox-footer .tab-menu").removeClass("active");
     $(".lighbox-container .lightbox-footer .tab-menu[data-tab='tab" + tabId + "']").addClass("active");
-
+    $(".lighbox-container .lightbox-detailsPage .tab.active .MainContaintArea").scrollTop(0);
     //Following code for dynamic loading of tab htmls
     //TODO: get the tab releated html using ajax call and on success call detailPageLoaded
     /*if (!activeTab.attr('data-loaded')) {

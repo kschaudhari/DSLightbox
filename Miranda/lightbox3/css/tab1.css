@@ -66,7 +66,6 @@
     right:20px;
     top:220px;
 }
-
 .tab1 .logos-container.lb3-brought-to-you {
     left: 20px;
     top: auto;
@@ -84,6 +83,7 @@
     display: block;
     margin-top: 10px;
     margin-bottom: 20px;
+    height:100%;
 }
 
 .tab1 .logos-container.lb3-brought-to-you img {
@@ -104,4 +104,35 @@
 .created-by.tab-container {
     color: rgb(0, 79, 118);
     font-family: 'Proxima-Nova';
+}
+
+.tab1 .content-heading {
+    color: rgb(9,53,102);
+    font-family: "Proxima-Nova",Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.tab1 .content-text {
+    color: rgb(9,53,102);
+    font-family: "Proxima-Nova",Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    margin-top: 0;
+
+}
+
+.tab1 .content-text a{
+    color:#27c4f3;
+}
+
+.tab1 .content-image {
+    width:100%;
+}
+.tab1 .explore-content-row{
+    height:40px;
+    border-bottom-left-radius:0px;
 }

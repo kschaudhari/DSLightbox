@@ -79,8 +79,6 @@
     .tab-details{
         overflow:auto;
     }
-
-    
     .tab3 .map {
         width:1100px;
         top:-460px;
@@ -90,7 +88,6 @@
         -webkit-transition: all 0.2s ease-in-out;
         transition: all 0.2s ease-in-out;
     }
-
     .lighbox-container .external-scroll_y.scroll-scrolly_visible{
 
         display:none !important;
@@ -105,10 +102,6 @@
     }
     .tab2 .tab-container {
         width: 100%;
-    }
-    .tab2 .tab-container.trailfinders-container{width:90%;margin:0px auto;padding-bottom: 100px;min-height: 80vh;box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;}
-    .trailfinders-logo {
-        float: right;
     }
     .tab1 .hero-img{height:auto;}
     .created-by.tab-container {
@@ -133,7 +126,6 @@
     }
     .tab2 .hero-title {
         padding-top: 5px;
-        text-align: center;
     }
     .tab2 .brought {
         font-size: 10px;
@@ -145,8 +137,6 @@
     .tab2 .trailfinders {
         max-width: 130px;
         margin-top: 20px;
-        /* float: none; */
-        text-align: right;
     }
 
     .tab2 .brought{
@@ -155,14 +145,11 @@
 
     .tab2 .hero-text{
         margin-top:10px;
-        -moz-text-align-last: center;
-        text-align-last: center;
     }
 
     .tab2 .hero-img {
-        background-image: url('../images/tab2/bkg_full.jpg');
-        height: auto;
-        background-position: center center;
+        /* background-image: url('../images/tab2/bkg_full.jpg'); */
+        height: 100%;
     }
     .explore-content {
         margin-bottom: 50px;
@@ -260,6 +247,9 @@
 	}
 
 }
+
+
+
 @media screen and (min-width: 768px) and (max-device-width: 1024px) and (orientation : landscape) {
     .tab-details{
         overflow:auto;

@@ -91,6 +91,7 @@
     padding-left:20px;
     vertical-align: top;
     min-height: 149px;
+    margin-bottom: 20px;
 }
 .explore-content-row .explore-mobile-heading{display:none;font-size:22px;font-weight:500;}
 .explore-content-row .explore-heading{
@@ -109,7 +110,6 @@
     cursor: pointer;
     background-size:contain;
 }
-
 .explore-content-row .explore-btns:after{
     background-color:rgba(255,255,255,0.1);
     position:absolute;
@@ -128,7 +128,6 @@
     border-top-left-radius: 90px;
     left: 4px;
 }
-
 .explore-content-row .explore-btns.explore-mobile-btns{display:none;}
 .tab2 .MainContaintArea, .tab3 .MainContaintArea{
     height: calc(100% - 80px);
