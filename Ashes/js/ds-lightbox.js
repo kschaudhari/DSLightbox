@@ -76,9 +76,8 @@ $(document).ready(function () {
         })
     });
 
-    if (!inIframe()) {
-        showLightboxPopup();
-    }
+    showLightboxPopup();
+    
     $(".big-tab").hover(function () {
         var id = $(this).attr('id');
         $(".big-tab").addClass("another-tab-hover");
