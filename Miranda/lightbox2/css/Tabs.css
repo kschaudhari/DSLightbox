@@ -128,7 +128,7 @@
 .scroll-content{overflow:scroll;}
 .scrollbar-external_wrapper {
    /* position:absolute;*/
-   height: 150px;
+   height: 250px;
    right: -30px;
    width: 4px;
    position: absolute;
@@ -195,5 +195,12 @@
 .scroll-wrapper > .scroll-content::-webkit-scrollbar {
     height: 0;
     width: 0;
+}
+
+.sm-logo {
+    max-width: 70px;
+    float: right;
+    margin-right: 30px;
+    margin-top: 2px;
 }
 /*  scroll bar end  */
