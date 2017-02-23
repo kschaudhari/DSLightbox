@@ -1,0 +1,270 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lightbox</title>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,500i" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/font.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/Tabs.css" />
+    <link rel="stylesheet" type="text/css" href="css/mobile.css" />
+    <link rel="stylesheet" type="text/css" href="css/Responsive.css" />
+    <link rel="stylesheet" type="text/css" href="css/footer.css" />
+
+    <script src="https://use.typekit.net/qsv6lik.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+    <!--[if IE]>
+        <link type="text/css" href="css/ie.css" rel="stylesheet" />
+    <![endif]-->
+    <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    </script>
+    
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <script type="text/javascript">
+        var tag = document.createElement('script');
+        tag.id = 'iframe-demo';
+        tag.src = 'https://www.youtube.com/iframe_api';
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    </script>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/customscroll.js"></script>
+    <script src="js/creative-util.js"></script>
+    <script src="js/ds-lightbox.js"></script>
+    <script src="js/hawaii.js"></script>
+    
+    <script>
+        //var clickTagTweet = "https://twitter.com/WestAustralia";
+    </script>
+    <!-- url prefix for s3 https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/ -->
+</head>
+<body style="height:1000px;">
+
+    <div id="mydiv">
+        <div id="mydiv-content">
+
+            <div class="topMobMenuBar tab1Active">
+                <div class="topMobItem MobMenuBar">
+                    <div class="mobMenu">
+                        <div class="mobMenuIcon menuElement">
+                            <img src="images/mobMenu.png" />
+                        </div>
+                    </div>
+                    <div class="mobMenuLogos menuElement">
+
+                        <div class="mobWALogo">
+                            <img src="images/mobWALogo.png" />
+                        </div>
+                        <div class="mobDiscoverLogo">
+                            <img src="images/mobQatarLogo.png" />
+                        </div>
+                    </div>
+                    <div id="lightbox-mobile-exit" class="mobMenuClose menuElement">
+                        <img class="removePopup" src="images/mobClose.png" />
+                    </div>
+                </div>
+                <div class="mobDropdownMenu">
+                    <div class="mobDropdownMenuItem" data-tab="tab1">
+                        WESTERN AUSTRALIA
+                    </div>
+                    <div class="mobDropdownMenuItem" data-tab="tab2">food & WINE</div>
+                    <div class="mobDropdownMenuItem" data-tab="tab3">coastal & ACQUATIC</div>
+                </div>
+                <div class="topMobItem mobNavigator">
+
+                    <div class="mobNavigatorContent">
+                        <div class="mobPrevTab">
+                            <div class="navArrow">
+                                <img src="images/mobArrow.png" />
+                            </div>
+                        </div>
+                        <div class="mobNextTab">
+                            <div class="navArrow">
+                                <img src="images/mobArrow.png" />
+                            </div>
+                        </div>
+                        <div class="mobCurrentTab">
+                            <div class="mobNavigationTabs">
+                                <div class="mobTab1 mobTab active" data-tab="tab1">
+                                    <div class="mobCurrentTabLogo">
+                                        <span class="capitalCaseTitle">WESTERN AUSTRALIA</span>
+                                    </div>
+                                </div>
+                                <div class="mobTab2 mobTab" data-tab="tab2">
+                                    <div class="mobCurrentTabLogo">
+                                        <span class="capitalCaseTitle">FOOD & WINE</span>
+                                    </div>
+                                </div>
+                                <div class="mobTab3 mobTab" data-tab="tab3">
+                                    <div class="mobCurrentTabLogo">
+                                        <span class="capitalCaseTitle">COASTAL & AQUATIC</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="lighbox-container">
+                
+                <div class="lightbox-detailsPage">
+                    <div class="map">
+                        <img class="island kauai highlighted" src="images/kauai.svg" />
+                        <img class="island oahu highlighted" src="images/oahu.svg" />
+                    </div>
+                    <img class="background-icons" src="images/background-icons.svg" />
+                    <img class="big-palms" src="images/big-palms.svg" />
+
+                    <div class="textblock">
+                        <p class=""
+
+                    </div>
+                    <div id="dd-menu" class="popup">
+                        <div class="popup-close">
+                            <div class="cross">X</div>
+                            <div class="close-text">close</div>
+                        </div>
+
+                        <img class="head-img" src="images/color-palm.svg" />
+
+                        <ul>
+                            <img src="images/ddmenu-border.svg" />
+                            <li>kauao</li>
+                            <img src="images/ddmenu-border.svg" />
+                            <li>ohau</li>
+                            <img src="images/ddmenu-border.svg" />
+                            <li>molokay</li>
+                            <img src="images/ddmenu-border.svg" />
+                            <li>maui</li>
+                            <img src="images/ddmenu-border.svg" />
+                            <li>lanai</li>
+                            <img src="images/ddmenu-border.svg" />
+                            <li>hawaii</li>
+                        </ul>
+                    </div>
+
+                    <div id="video-popup" class="popup">
+                        <div class="popup-close clearfix">
+                            <div class="cross">X</div>
+                            <div class="close-text">close</div>
+                        </div>   
+                        <p class="head1">360&deg;</p>
+                        <p class="head2">video</p>
+                        <div class="titleblock">
+                            <img class="color-palm" src="images/color-palm.svg"/>
+                            <img class="line" src="images/ddmenu-border.svg" />
+                            <span class="title">drag around with your mouse</span>
+                            <img class="line" src="images/ddmenu-border.svg" />
+                            <img class="color-palm" src="images/color-palm.svg"/>
+                        </div>
+                        <div class="line-sep">
+                            <img class="line" src="images/ddmenu-border.svg" />
+                        </div>
+                        <div class="video-container">
+                            <div class="video">
+                                c
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="trip-popup" class="popup">
+                        <div class="popup-close clearfix">
+                            <div class="cross">X</div>
+                            <div class="close-text">close</div>
+                        </div>   
+                        <p class="head1">win a</p>
+                        <p class="head2">trip</p>
+
+                        <img class="pic-frame-l" src="images/pic-frame.svg" />
+                        <img class="pic-frame-r" src="images/pic-frame.svg" />
+                        
+                        <div class="separator">
+                            <img class="line" src="images/ddmenu-border.svg" />
+                            <img class="color-palm" src="images/color-palm.svg"/>
+                            <img class="line" src="images/ddmenu-border.svg" />
+                        </div>
+                        <p class="title">LOREM ipsum</p>
+
+                        <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                        </p>
+                        <img class="line" src="images/ddmenu-border.svg" />
+                    </div>
+
+                    <div class="tab lightbox-tab3"></div>
+                    <div class="gradient"></div>
+                </div>
+
+                <div class="lightbox-bootmGrad">
+
+                </div>
+                <div class="lightbox-footer">
+                    <img class="footer-palms" src="images/footer-palms.svg" />
+                    <div class="footer-menu">
+                        <div id="island" class="footer-menu-item">
+                            <span>select island</span>
+                            <img class="up" src="images/arrow-up.svg" />
+                            <img class="down" src="images/arrow-down.svg" />
+                        </div>
+                        <div id="video" class="footer-menu-item">
+                            <span>360&deg; video</span>
+                            <img class="up" src="images/arrow-up.svg" />
+                            <img class="down" src="images/arrow-down.svg" />
+                        </div>
+                        <div id="journey" class="footer-menu-item">
+                            <span>your journey</span>
+                            <img class="up" src="images/arrow-up.svg" />
+                            <img class="down" src="images/arrow-down.svg" />
+                        </div>
+                        <div id="trip" class="footer-menu-item">
+                            <span>win a trip</span>
+                            <img class="up" src="images/arrow-up.svg" />
+                            <img class="down" src="images/arrow-down.svg" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="external-scroll_y">
+                    <div style="position:relative">
+                        <div class="scroll-element_outer">
+                            <div class="scroll-element_size"></div>
+                            <div class="scroll-element_track"></div>
+                            <div class="scroll-bar"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="mobDetector"></div> <!-- this class used to detect mobile in javascript -->
+        </div>
+    </div>
+
+    <script>
+
+         function inIframe() {
+             try {
+                 return window.self !== window.top;
+             } catch (e) {
+                 return true;
+             }
+         }
+         if (!inIframe())
+         {
+             var ligthbox = document.getElementById("mydiv");
+             ligthbox.style.backgroundColor = "rgba(0,0,0,0.7)";
+         }
+    </script>
+</body>
+</html>
