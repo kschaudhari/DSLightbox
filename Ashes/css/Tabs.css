@@ -374,6 +374,10 @@ padding-top: 18px;
     overflow: hidden;
     position: relative;
 }
+span.clickOut {
+    cursor: pointer;
+    text-decoration: underline;
+}
 /******************* EXTERNAL SCROLLBAR *******************/
 /*  scrol bar */
 .MainContaintArea {
