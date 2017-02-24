@@ -1,4 +1,9 @@
-.tab1 .hero-img {background-image: url('../images/tab1/hero-img.jpg');}
+.tab1 .hero-img {
+    background-image: url('../images/tab1/hero-img.jpg');
+    height: 370px;
+    }
+
+
 
 .tab1 .tab-title {
     position: absolute;
@@ -64,7 +69,7 @@
 .tab1 .logos-container {
     position: absolute;
     right:20px;
-    top:220px;
+    top:200px;
 }
 
 
@@ -89,9 +94,9 @@
     color: rgba(255,255,255,0.8);
 }
 .tab1 .MainContaintArea{
-    height: calc(100% - 120px);
-    height: -webkit-calc(100% - 120px);
-    height: -moz-calc(100% - 120px);
+    height: calc(100% - 80px);
+    height: -webkit-calc(100% - 80px);
+    height: -moz-calc(100% - 80px);
 }
 .created-by.tab-container {
     color: rgb(0, 79, 118);

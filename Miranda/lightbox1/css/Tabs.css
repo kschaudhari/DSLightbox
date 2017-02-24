@@ -123,12 +123,19 @@
     width: 100%;
     height: 100%;
 }
+
+.sm-logo {
+    max-width: 111px;
+    float: right;
+    margin-right: 5px;
+    margin-top: 13px;
+}
 /******************* EXTERNAL SCROLLBAR *******************/
 /*  scrol bar */
 .scroll-content{overflow:scroll;}
 .scrollbar-external_wrapper {
    /* position:absolute;*/
-   height: 150px;
+   height: 250px;
    right: -30px;
    width: 4px;
    position: absolute;
@@ -196,4 +203,5 @@
     height: 0;
     width: 0;
 }
+
 /*  scroll bar end  */

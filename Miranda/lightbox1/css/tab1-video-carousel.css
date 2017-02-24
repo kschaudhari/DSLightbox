@@ -1,10 +1,10 @@
 .player-container {
-    width: 73%;
+    width: 71%;
     /* vertical-align: top; */
 }
 
 .play-list-section-separator {
-    width: 15px;
+    width: 25px;
 }
 
 .video-player-wrapper {
@@ -16,7 +16,7 @@
 }
 
 .play-list-header {
-    margin-bottom: 29px;
+    margin-bottom: 10px;
     line-height: 0px;
 }
 .carousel-navigation {
