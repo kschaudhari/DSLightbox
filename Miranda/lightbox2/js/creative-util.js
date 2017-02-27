@@ -34,10 +34,10 @@ function sendTrackerInfo() {
         window.clearTimeout(loadedTimerForTracker);
 
         ////fire ga code
-        if (typeof ga !== "undefined") {
-            ga('create', 'UA-75055673-17', 'auto');
-            ga('send', 'pageview', { 'sessionControl': 'start' });
-        }
+        //if (typeof ga !== "undefined") {
+        //    ga('create', 'UA-75055673-13', 'auto');
+        //    ga('send', 'pageview', { 'sessionControl': 'start' });
+        //}
         //add any pixel info to track
 
         return;
