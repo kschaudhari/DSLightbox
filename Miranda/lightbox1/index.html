@@ -16,13 +16,35 @@
     <!--[if IE]>
         <link type="text/css" href="css/ie.css" rel="stylesheet" />
     <![endif]-->
+
     <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-75055673-19', 'auto');
+            ga('send', 'pageview');
 
     </script>
+    <script type="text/javascript">
+        /* Start Config */
+        var ta_prodDomain = 'dslabs.io';
+        var ta_partner = 'partner:digital-spring-uk';
+        var ta_account;
+        /* End Config */
+
+        var ta_pageName = ta_partner + ':' + window.location.pathname;
+        var ta_server = window.location.hostname;
+        var ta_url = window.location.href;
+        var ta_cachebreak = new Date().getTime();
+        (window.location.hostname.indexOf(ta_prodDomain) > -1) ? ta_account = 'tuatourism-australia-global' : ta_account = 'tuata-dev-internal';
+        var ta_analyticsImgSrc = 'http://tourismaustralia.sc.omtrdc.net/b/ss/'+ta_account+'/1/H.26.2/s'+ta_cachebreak+'?AQB=1&ndh=0&ns=tourismaustralia&pageName='+escape(ta_pageName);
+        ta_analyticsImgSrc += '&g='+escape(ta_url)+'&server='+escape(ta_server)+'&v11='+escape(ta_partner)+'&AQE=1';
+        var ta_analyticsImg = document.createElement('img');
+        ta_analyticsImg.src = ta_analyticsImgSrc
+    </script>
+
 
     <script src="js/jquery-1.12.1.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
