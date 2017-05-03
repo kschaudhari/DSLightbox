@@ -1,0 +1,132 @@
+@import "colors";
+
+.island-content-container {
+
+    position: absolute;
+    width:440px;
+    right: 40px;
+    z-index: 50;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: visible;
+    top:620px;
+    transition: top 1s ease-in-out;
+
+    .island-content {
+        position: relative;
+        margin-top: 320px;
+        background-color: @peach;
+        padding-left: 10px;
+        padding-right: 10px;
+        color: @darkblue;
+        z-index: 50;
+        overflow: visible;
+
+        > .title {
+            margin-left:10px;
+            width: 270px;
+            margin-top:-70px;
+            text-transform: uppercase;
+        }
+
+        .separator {
+            text-align: center;
+            margin-top: -30px;
+            margin-bottom: -10px;
+        }
+
+        .subhead {
+            font-size: 24px;
+        }
+
+        .description {
+            font-size: 18px;
+            font-family: "Proxima Nova",Arial, Helvetica, sans-serif;
+            font-weight: 300;
+            margin-top: -15px;
+            line-height: 24px;
+
+        }
+
+        .tour-section {
+
+            overflow-x: visible;
+            z-index: 50;
+            margin-top: 80px;
+            
+            .tour {
+                position: relative;
+                overflow: visible;
+                z-index: 50;
+                margin-bottom: 40px;
+
+                .tour-image {
+                    position: absolute;
+                    top: -30px;
+                    left: -130px;
+                    width:270px;
+                    z-index: 50;
+                }
+
+                .header {
+
+                    margin-left: 150px;
+                    font-family: "Proxima Nova",Arial, Helvetica, sans-serif;
+                    font-size: 21px;
+                    p {
+                        margin-top: 0px;
+                        margin-bottom: 0px;
+                        font-weight: 400;
+                    }
+
+
+                    > .title {
+                        text-transform: uppercase;
+                    }
+
+                    > .description {
+                        text-transform: capitalize;
+                        
+                    }
+
+                    .islands {
+                        font-family: "chantal", Arial, Helvetica, sans-serif;
+                        color: @medblue;
+                    }
+
+                    > .logo {
+                        margin-top:30px;
+                        width: 220px;
+                    }
+
+                }
+
+                ul {
+                    margin-top: 100px;
+
+                    li {
+                        margin-left:-10px;
+                        font-family: "Proxima Nova",Arial, Helvetica, sans-serif;
+                        font-size: 18px;
+                        line-height: 24px;
+                        font-weight: 300;
+                        font-style: italic;
+                    }
+                }
+
+                .more {
+                    width:150px;
+                    margin: 0 auto;
+                    display: block;
+                    margin-top: 20px;
+                }
+                
+            }
+
+        }
+    }
+}
+
+.island-content-active {
+    top:0px !important;
+}

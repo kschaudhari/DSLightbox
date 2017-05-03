@@ -1,0 +1,463 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="Win a Trip to Hawaii" />
+    <meta property="og:description" content='I just entered the Hawaii - Through A Lens Competition, to win an amazing 12-night stay in Hawaii. Read my comment and enter yourself by clicking here' />
+    <meta property="og:image" content="https://dslabs.io/hawaiilens/HawaiiCompetition/images/circle-image-1.jpg" />
+
+    <title>Lightbox</title>
+
+    <script src="https://use.typekit.net/qsv6lik.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+    <script src="https://use.typekit.net/zbu3uej.js"></script>
+    <script>try { Typekit.load({ async: true }); } catch ( e ) { }</script>
+
+
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,500i" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/font.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/Tabs.css" />
+    <link rel="stylesheet" type="text/css" href="css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="css/camera-shutter.css" />
+    <link rel="stylesheet" type="text/css" href="css/island-content.css" />
+    <link rel="stylesheet" type="text/css" href="css/mobile.css" />
+    <link rel="stylesheet" type="text/css" href="css/Responsive.css" />
+    <link href="css/competition.css?v=1.0.0.1" rel="stylesheet" type="text/css" />
+    
+    <style>
+        @media screen and (max-width: 970px), screen and (max-height: 570px) {
+            .lighbox-container{
+                margin-top: 0px;
+                
+            }
+            .compititionForm{
+                width:95%;
+            }
+        }
+    </style>
+
+    <!--[if IE]>
+        <link type="text/css" href="css/ie.css" rel="stylesheet" />
+    <![endif]-->
+    <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    </script>
+    
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <script type="text/javascript">
+        var tag = document.createElement('script');
+        tag.id = 'iframe-demo';
+        tag.src = 'https://www.youtube.com/iframe_api';
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    </script>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/customscroll.js"></script>
+    <script src="js/creative-util.js"></script>
+    <script src="js/ds-lightbox.js"></script>
+    <script src="js/hawaii.js"></script>
+    <script src="js/customscroll.js"></script>
+    
+    <script type='text/javascript' src='//ds.media-flow.co.uk/competition/js/860'></script>
+    <script type='text/javascript'>
+       
+            
+        setTimeout(loadImage, 100);
+        function loadImage() {
+            if($(".compititionForm").length > 0)
+            {
+                
+               
+            }
+            else{
+                setTimeout(loadImage, 100);
+            }
+
+        }
+        $(document).ready(function () {
+            $("#trip-popup .island-content-container").show();
+            window.setTimeout(function () {
+                $(".scrollbar-external_wrapper.for-scroller").show();
+                $(".lighbox-container .lightbox-detailsPage .island-content-container .MainContaintArea").scrollTop(0);
+                $(".lighbox-container .lightbox-detailsPage #trip-popup .MainContaintArea").scrollbar({
+                    "autoScrollSize": false,
+                    "scrolly": $('.external-scroll_y'),
+                    ignoreMobile: true,
+                    duration: 10
+                });
+
+            }, 500);
+
+            var winSuccessTimeout = null;
+            function handleWinSuccessMessage() {
+                if (winSuccessTimeout)
+                    clearTimeout(winSuccessTimeout);
+
+                if ($(".compititionForm .verifySubmit .successMessage").is(":visible")) {
+                    $(".comp-area .comp-display-area").fadeOut(200);
+                    $(".comp-area .succesDiv").fadeIn(400, function () {
+                        $('.popup-details.MainContaintArea').animate({ scrollTop: $(".comp-area").position().top }, '500', 'swing');
+                    });
+                }
+                else
+                    winSuccessTimeout = window.setTimeout(handleWinSuccessMessage, 100);
+            }
+            handleWinSuccessMessage();
+
+            var competitionRenderTimeout = null;
+            function changeTermAndConditions() {
+                if (competitionRenderTimeout)
+                    clearTimeout(competitionRenderTimeout);
+
+                if ($(".compititionForm #divAcceptTnC").is(":visible")) {
+                    if (getQueryStringParameter("source") == "HayesAndJarvis") {
+                        $(".compititionForm #divAcceptTnC a").attr("href", "HayesAndJarvisTnC.html");
+                    }
+                }
+                else
+                    competitionRenderTimeout = window.setTimeout(changeTermAndConditions, 100);
+            }
+            changeTermAndConditions();
+        });
+        function getQueryStringParameter(name) {
+            name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+            var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+                results = regex.exec(location.search);
+            return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+        }
+    </script>
+
+    <script>
+        //var clickTagTweet = "https://twitter.com/WestAustralia";
+        var clickTagIsland1ReadMore1 = "";
+        var clickTagIsland1ReadMore2 = "";
+
+        var clickTagIsland2ReadMore1 = "";
+        var clickTagIsland2ReadMore2 = "";
+
+
+        var clickTagYourJourneyReadMore1 = "https://www.travelplanners.co.uk/holiday-types/multi-centre-holidays/item/564-best-of-hawaii";
+        var clickTagYourJourneyReadMore2 = "https://www.travelplanners.co.uk/destinations/more-usa-offers/item/500-the-modern-hawaii";
+        var clickTagYourJourneyReadMore3 = "https://www.travelplanners.co.uk/holiday-types/twin-centre-holidays/item/565-hawaii-maui";
+        var clickTagYourJourneyReadMore4 = "https://www.travelplanners.co.uk/holiday-types/twin-centre-holidays/item/566-hawaii-kauai"
+        var clickTagYourJourneyReadMore5 = "https://www.travelplanners.co.uk/holiday-types/twin-centre-holidays/item/524-oahu-maui";
+
+        var clickTagIsWinPageHawaiiForest= "https://www.fair-wind.com/cruise/afternoon-kealakekua-snorkel-cruise/"; 
+    </script>
+    <!-- url prefix for s3 https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/ -->
+</head>
+<body style="height:1000px;">
+
+    <div id="mydiv">
+        <div id="mydiv-content">
+
+            
+            <div class="lighbox-container">
+                <a href="javascript:void(0)" id="lightbox-exit" class="CloseBtn removePopup"></a>
+                <div class="lightbox-detailsPage">
+                    
+
+                    <img class="background-icons" src="images/background-icons.svg" />
+                    <img class="mob-background-icons" src="images/mobBackground.svg" />
+                    <img class="big-palms big-palm-left" src="images/left-big-palm.svg" />
+                    <img class="big-palms big-palm-middle" src="images/middle-big-palm.svg" />
+                    <img class="big-palms big-palm-right" src="images/right-big-palm.svg" />
+
+                    
+                        
+
+                    
+                    <div id="trip-popup" class="popup content-popup popup-active">
+                        
+                        <!--<span class="popup-close">close <span class="close-x">x</span></span>-->
+                        <div class="main-page-title content-title triptitle popup-title" style="display:inline-block;">
+                            <div class="title-small">
+                                Gewinnen Sie eine 
+                            </div>
+                            <div class="title-big">Reise</div>
+                        </div>
+                        <div class="scroll-top-shaddow-wrapper">
+                            <div class="scroll-top-shaddow"></div>
+                        </div>
+                        
+                        <div class="popup-details-wrapper">
+                            <div class="popup-details MainContaintArea">
+                                <div class="popup-content-wrapper">
+                                    <div class="pic-frame-l tour-image circle-image-frame" style="background-image:url('images/circle-image-1.jpg')">
+                                        <img src="images/pic-frame.svg" />
+                                    </div>
+                                    <div class="pic-frame-r tour-image circle-image-frame" style="background-image:url('images/circle-image-2.png')">
+                                        <img src="images/pic-frame.svg" />
+                                    </div>
+
+                                    <div class="separator">
+                                        <img class="line" src="images/ddmenu-border.svg" />
+                                        <img class="color-palm" src="images/color-palm.svg" />
+                                        <img class="line" src="images/ddmenu-border.svg" />
+                                    </div>
+                                    <p class="title">GEWINNEN SIE IHRE EIGENE HAWAII DURCH EINE LINSE ERFAHRUNG</p>
+
+                                    <p class="content">
+                                        Erleben Sie Ihr eigenes Hawaiianisches Abenteuer. Machen Sie mit, um eine Chance zu haben, eine 12-tägige Luxusreise für zweiPersonen nach Hawaii zu gewinnen. Und um sicherzustellen, dass Ihre 'Hawaii -durch eine Linse' Erfahrung komplett ist, haben wir uns mit Swarovski Optik zusammengetan, um ein CL Taschenfernglas von Swarovski Optik im Wert von €640 zu verschenken.
+                                    </p>
+                                    <img class="line" src="images/ddmenu-border.svg" />
+                                    <div class="comp-area">
+                                        <div id='winSpringCompDiv860' class="comp-display-area"></div>
+                                        <div class="succesDiv" style="display:none; padding-bottom:0px">
+                                            <h3>Erfolg! Viel Glück!</h3>
+                                            <h4>Teilen Sie es mit Ihren Freunden : </h4>
+                                            <div class="shareFriendBox">
+                                                Ich habe gerade am Wettbewerb  <strong>'Hawaii – durch eine Linse' teilgenommen</strong>, um einen sagenhaften 12-tägigen Aufenthalt in Hawaii zu gewinnen. Lies meinen Kommentar und nimm selber teil, indem du hier klickst:                                                
+					       <div><a href="http://po.st/5dusRh">http://po.st/5dusRh</a> #Hawaii #DurcheineLinse</div>
+                                            </div>
+                                            <div class="socialLinks">
+                                                <a class='twitter' target="_blank" href="https://twitter.com/share?url=http://po.st/5dusRh&text=Ich habe gerade am 'Hawaii - durch eine Linse ' Wettbewerb teilgenommen. Nehmen Sie selbst teil, indem Sie hier klicken &hashtags=#Hawaii#DurcheineLinse">Twitter</a>
+
+                                                <a class='facebook' target="_blank" href="https://www.facebook.com/429637687130501/posts/1288369041257357">Facebook</a>
+                                                
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    
+                                    <div class="island-trip-content island-content-container" id="trip-content">
+                                        <div class="tour-section">
+
+                                            <div class="tour">
+                                                <div class="journey-content-separator"></div>
+                                                <div class="header no-tour-image-header">
+
+                                                    <p class="title">Gewinndetails</p>
+                                                    <div class="journey-content-separator" style="max-width:200px; margin-top:15px"></div>
+                                                </div>
+                                                <div class="journey-content-separator"></div>
+                                                <ul class="no-tour-image-description">
+                                                    <li>Internationale Flüge angeboten von United Airlines</li>
+
+                                                    <li>Flüge von Insel zu Insel angeboten von Hawaiian Airlines in Zusammenarbeit mit Hawai‘i Tourism Europe</li>
+
+                                                    <li>O’ahu: drei Nächte im Hyatt Regency Waikīkī Beach Resort and Spa</li>
+
+                                                    <li>Kaua‘i: vier Nächte im Koa Kea Hotel und im Resort am Poipu Beach</li>
+
+                                                    <li>Hawai‘i: Drei Nächte im Fairmont Orchid Resort </li>
+
+                                                    <li>Smiths Family Garden Lū‘au angeboten von Smiths Family Lū‘au </li>
+
+                                                    <li>Fair Wind Schnorcheltour am Nachmittag oder Hula Kai Deluxe Schnorcheltour am Morgen angeboten von Fair Wind Cruises</li>
+                                                    <li>Geschenkgutschein für das Ala Moana Center im Wert von $100, angeboten vom Ala Moana Center</li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="tour">
+                                                <div class="journey-content-separator"></div>
+                                                <div class="tour-image circle-image-frame" style="background-image: url('images/DE Competition/1. Hyatt Regency Waikiki Beach/german comp image - Waikiki Regency hyatt.jpg');">
+                                                    <img src="images/pic-frame.svg" />
+                                                </div>
+                                                <div class="header">
+
+                                                    <p class="title">Hyatt Regency Waikiki Beach</p>
+                                                    <div class="journey-content-separator" style="max-width:200px; margin-top:15px"></div>
+                                                    <img class="logo" src="images/DE Competition/1. Hyatt Regency Waikiki Beach/HR Waikiki Beach Resort Logo.png"/>
+                                                </div>
+                                                <div class="journey-content-separator"></div>
+                                                <div class="tour-description">
+                                                    Das Hyatt Regenya Waikiki Beach Resort and Spa erweckt den uralten Aloha-Geist zum Leben. Perfekt gelegen zwischen dem traumhaften Waikiki Beach und der pulsierenden Innenstadt, bietet unser Hotel und Resort einen lebhaften Rückzugsort, der Erholung, Abenteuer und authentische hawaiianische Gastfreundschaft spielend kombiniert. Wir freuen uns auf Ihren Besuch und werden uns bestens um Sie kümmern.
+						</div>
+                                            </div>
+                                            <div class="tour">
+                                                <div class="journey-content-separator"></div>
+                                                <div class="tour-image circle-image-frame" style="background-image: url('images/DE Competition/2. Fairmont Orchid/German Prize-fairmont.jpg');">
+                                                    <img src="images/pic-frame.svg" />
+                                                </div>
+                                                <div class="header">
+
+                                                    <p class="title">Fairmont Orchid</p>
+                                                    <div class="journey-content-separator" style="max-width:200px; margin-top:15px"></div>
+                                                    <img class="logo" src="images/DE Competition/2. Fairmont Orchid/Fairmont Orchid.png" />
+                                                </div>
+                                                <div class="journey-content-separator"></div>
+                                                <div class="tour-description">
+                                                    Fairmont Orchid Hawaii ist ein knapp 130.000 Quadratmeter großes, AAA Four Diamond Luxus-Strandresort an der Kohala Coast Hawaiis. Es bietet eine Lagune mit strahlend weißem Sand, ein hawaiianisches Spa im Freien, Golf, Tennis, sechs Restaurants, großflächige Konferenz- und Eventräumlichkeiten und ein ganzjähriges Unterhaltungsprogramm für Kinder. 
+                                                </div>
+                                            </div>
+
+                                            <div class="tour">
+                                                <div class="journey-content-separator"></div>
+                                                <div class="tour-image circle-image-frame" style="background-size: cover;background-image: url('images/DE Competition/3. Koa Kea/German prize image - Koa Kea Hotel.jpg');">
+                                                    <img src="images/pic-frame.svg" />
+                                                </div>
+                                                <div class="header">
+
+                                                    <p class="title">Koa Kea</p>
+                                                    <div class="journey-content-separator" style="max-width:200px; margin-top:15px"></div>
+                                                    <img class="logo" src="images/DE Competition/3. Koa Kea/Koa Kea.png" />
+                                                </div>
+                                                <div class="journey-content-separator"></div>
+                                                <div class="tour-description ">
+                                                    Entspannen Sie an den goldenen Stränden Poipus und im Ko`a Kea Hotel & Resort, einem gehobenen 121-Zimmer Boutique-Hotel direkt am Strand gelegen, das von der Website Travel + Leisure zum besten Resort Kauais gekürt wurde. Kein hawaiianisches Resort liegt näher am Wasser und verspricht einen so intimen und romantischen Aufenthalt, gepaart mit luxuriösen Annehmlichkeiten. Ein Entspannungsbereich mit Salzwasserbecken, Strandhütten mit authentischem Spa-Service, ein Red Salt Restaurant, das von Besuchern ebenso geliebt wird wie von Einheimischen, wird alles durch einen preisgekrönten, individuellen und sympathischen Service ergänzt. Direkt hinter den Terrassen der Zimmer mit Meeresblick liegt Poipu Beach, einer der besten Wassersportstrände Kauais, der für seine hervorragenden Schnorchel-, Kajakfahrt-, Surf- und andere Wassersportmöglichkeiten beliebt ist.
+                                                </div>
+                                            </div>
+
+                                            <div class="tour">
+                                                <div class="journey-content-separator"></div>
+                                                <div class="tour-image circle-image-frame" style="background-image: url('images/DE Competition/4. Fair Wind Schnorcheltour am Nachmittag/german prize - Fair Wind.jpg');">
+                                                    <img src="images/pic-frame.svg" />
+                                                </div>
+                                                <div class="header">
+
+                                                    <p class="title">Fair Wind Schnorcheltour am Nachmittag</p>
+                                                    <div class="journey-content-separator" style="max-width:200px; margin-top:15px"></div>
+                                                    <img class="logo" src="images/DE Competition/4. Fair Wind Schnorcheltour am Nachmittag/Fair Wind.png" />
+                                                </div>
+                                                <div class="journey-content-separator" style="max-width:200px; margin-top:10px"></div>
+                                                <div class="tour-description">
+                                                    Dies ist eine kürzere Variante unserer beliebten morgendlichen Schnorcheltour – Abfahrt ist an der Keauhou Bay, dem Geburtsort von König Kamehameha III., Hawaiis am längsten regierenden Monarchen. Besucher werden auf eine historische Reise gehen, die Sie vom Geburtsort eines hawaiianischen Königs bis zum Todesort des berühmten Weltumseglers Captain James Cook bei Kealakekua Bay führt. Sie werden spannende Geschichten hören und historische Stätten bewundern, wie zum Beispiel den letzten Kampfposten auf dem Kaum’o-Schlachtfeld oder die größte und am besten erhaltene Lava-Rutsche im Bundestaat, die Royal Holua Slide,  die für die einheimische Tradition des Lava-Surfens genutzt wird und noch dazu ein historisches Wahrzeichen ist.  Durch die Fülle an hawaiianischer Geschichte werden Sie bestens unterhalten während Ihrer Fahrt nach Kealakekua Bay. Verpassen Sie nicht diese Schnorcheltour zur historischen Kealakekua Bay und dem dort gelegenen Captain Cook Denkmal. Die 3,5-stündige Tour beginnt in Keahou Bay und beinhaltet 1,5 Stunden Schnorchelzeit in der unberührten Kealakekua Bay, Schnorchelausrüstung, Einweisung, Treibausrüstung, Sprungbrett und zwei 4,5 Meter lange Rutschen. Es werden verschiedene Snacks serviert und während der letzten Stunde der Tour ist eine Bar geöffnet, an der Sie Getränke kaufen können. 
+                                                    
+                                                </div>
+                                            </div>
+
+                                            <div class="tour">
+						<div class="journey-content-separator"></div>
+                                                <div class="tour-image circle-image-frame" style="background-image: url('images/DE Competition/5. Hawaii Forest and Trail - Ein Abenteuerausflug auf eine Vulkaninsel/german prize - Hawaii Forest 2.jpg');">
+                                                    <img src="images/pic-frame.svg" />
+                                                </div>
+                                                <div class="header">
+						    <p onclick="openNewWindow(clickTagIsWinPageHawaiiForest)" class="title pointer" >Hawai’i Forest and Trail – Ein Abenteuerausflug auf eine Vulkaninsel</p>
+						    <div class="journey-content-separator" style="max-width:200px; margin-top:15px"></div>
+                                                    <img class="logo" src="images/DE Competition/5. Hawaii Forest and Trail - Ein Abenteuerausflug auf eine Vulkaninsel/Hawaii Forest and Trail logo.png" />
+                                                </div>
+                                                <div class="journey-content-separator"></div>
+                                                <div class="tour-description no-tour-image-description">
+                                                    Begleiten Sie uns auf dieser Entdeckungstour, bei der wir die Trampelpfade verlassen und die beeindruckendsten Orte unserer Insel besuchen. Diese Tagestour enthält alles was sie auf der Big Island erlebt haben müssen und noch mehr. Zusätzlich erhalten Sie ein nachhaltiges ‚vom Erzeuger zum Verbraucher‘ Feinschmeckermenü mit Inselklassikern und kulturspezifischen Delikatessen. Dieser unvergessliche Abenteuerausflug, mit einem speziell geschulten Reiseführer, ist eine einzigartige Mischung aus Geschichte und Kultur inmitten der atemberaubenden hawaiianischen Naturlandschaft. Nach dieser Tour werden Sie Hawaii in einem anderen Licht sehen. 
+                                                    <br /><br />
+                                                    
+                                                <ul class="no-tour-image-description">
+                                                    <li>Erkunden Sie einen Vulkan und alle wichtigen Sehenswürdigkeiten des Hawaii Volcanoes National Park</li>
+
+                                                    <li>Flüge von Insel zu Insel angeboten von Hawaiian Airlines in Zusammenarbeit mit Hawai‘i Tourism Europe</li>
+
+                                                    <li>Halten Sie Ausschau nach Schildkröten, während Sie im feinkörnigen, schwarzen Quarzsand von Punaluu schlendern.</li>
+
+                                                    <li>Erforschen Sie ein abgeschiedenes Höhlensystem und lernen Sie wie Lavaröhren entstehen.</li>
+
+                                                    <li>Genießen Sie bei Kona Joe‘s eine private Tour durch die Kona Kaffeeplantage und -mühle.</li>
+
+                                                    <li>Erkunden Sie eine tropische Obstplantage die sich über vier Quadratkilometer erstreckt und bewundern Sie die Rainbow Falls von einer privaten Aussichtsplattform aus.</li>
+
+                                                 </ul>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="tour">
+                                                <div class="journey-content-separator"></div>
+                                                <div class="tour-image circle-image-frame" style="background-image: url('images/DE Competition/6. Smiths Luau/german prize image - Smiths Kauai.jpg');">
+                                                    <img src="images/pic-frame.svg" />
+                                                </div>
+                                                <div class="header">
+
+                                                    <p class="title">Smiths Lū’au</p>
+                                                    <div class="journey-content-separator" style="max-width:200px; margin-top:15px"></div>
+                                                    <img class="logo" src="images/DE Competition/6. Smiths Luau/Smiths luau logo.png" />
+                                                </div>
+                                                <div class="journey-content-separator"></div>
+                                                <div class="tour-description">
+                                                    Die Familie Smith vermittelt seinen Besuchern seit nun schon fast 70 Jahren auf Kauai den Aloha-Geist und Kamaaina (die hawaiianische Sprache). Wir laden Sie ein, die einzigartigen Aromen Hawaiis und den Aloha-Rhythmus bei unserer Luau Familiengartenparty kennenzulernen! Schlendern Sie durch die sich über 120.000 Quadratmeter erstreckenden Gärten, um zum ersten Event des Abends zu gelangen, der Imu-Zeremonie. Nach stundenlanger Zubereitung in einem unterirdischen Ofen wird das Kalua Schwein als Hauptgericht serviert. Nach der Zeremonie können Sie Freigetränke an der Bar genießen, während wir Sie in der Luau Hale mit einer Auswahl an Liedern unterhalten. Das Herzstück der Luau ist das Festmahl, bei dem Sie sich an einem All-You-Can-Eat Buffet satt schlemmen können, das einheimische Lieblingsspeisen wie das schmackhafte Kalua Schwein, süß/ sauer Mahimahi, Teriyaki RInd und Adobo Hähnchen anbietet. Und wir bestehen darauf, dass Sie das Poi probieren! Nach all dem Essen und Trinken gehen wir auf einen kleinen Verdauungsspaziergang zu dem mit Fackeln beleuchteten Lagunen-Theater, wo durch Gesang und Tanz den kulturellen Traditionen Hawaiis und den Cousins und Cousinen des pazifischen Raumes die Ehre erwiesen wird. Der gefühlvolle Schwung des hawaiianischen Hulas, die farbenfrohe Genauigkeit des tahitianischen Otea und der aufregende samoanische Messertanz sprechen Bände über dieses Volk, dass unglaublich  stolz darauf ist, seinen eigenen Aloha-Rhythmus mit unseren Gästen zu teilen. 
+                                                </div>
+                                            </div>
+
+                                            <div class="tour">
+                                                <div class="journey-content-separator"></div>
+                                                <div class="tour-image circle-image-frame" style="background-image: url('images/DE Competition/7. Ala Moana Center/PTH_1524 med.jpg');">                <img src="images/pic-frame.svg" />
+                                                </div>
+                                                <div class="header">
+
+                                                    <p class="title">Ala Moana Center</p>
+                                                    <div class="journey-content-separator" style="max-width:200px; margin-top:15px"></div>
+                                                    <img class="logo" src="images/DE Competition/7. Ala Moana Center/Alamoana.png" />
+                                                </div>
+                                                <div class="journey-content-separator"></div>
+                                                <div class="tour-description">
+                                                    Das Ala Moana Center ist mit knapp 220.000 Quadratmetern das weltweit größte Open-Air-Shoppingcenter. Neben Bloomingdale’s, Neiman Marcus, Nordstrom und Macy’s ist das Grundstück das Zuhause von über 340 Geschäften und Restaurants, inklusive einer umfangreichen Auswahl an internationalen und luxuriösen Marken, Shops mit einzigartigen Spezialitäten und über 80 Speisemöglichkeiten. Das Center ist außerdem der am häufigsten besuchte Ort mit circa 48 Millionen Einkaufsbesuchern jährlich. Für mehr Informationen über das Ala Moana Center besuchen Sie bitte die Website: www.AlaMoanaCenter.com. Folgen Sie dem Ala Moana Center auf Twitter @AlaMoanaCenter, Facebook, und Instagram @AlaMoanaCenter.
+                                                </div>
+                                            </div>
+
+					    <div class="tour">
+                                                <div class="journey-content-separator"></div>
+                                                <div class="tour-image circle-image-frame" style="background-image: url('images/DE Competition/8. Swarovski/Swarovski Product Shot.jpg');">
+                                                    <img src="images/pic-frame.svg" />
+                                                </div>
+                                                <div class="header">
+
+                                                    <p class="title">Swarovski</p>
+                                                    <div class="journey-content-separator" style="max-width:200px; margin-top:15px"></div>
+                                                    <img class="logo" src="images/DE Competition/8. Swarovski/SwarovskiOptikLogo.png" />
+                                                </div>
+                                                <div class="journey-content-separator"></div>
+                                                <div class="tour-description top-margin-20">
+                                                    Das CL Pocket 8x25 sind faltbare, kompakte Ferngläser von herausragender Qualität. Sie überzeugen durch eine einfache Bedienung und bieten einen optimalen Betrachtungskomfort, auch während langen Zeiträumen. Die perfekte Ergänzung zu Ihrem ‚Hawaii, in Großaufnahme‘ Erlebnis.                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="tab lightbox-tab3"></div>
+                    <div class="gradient"></div>
+                </div>
+
+                <div class="lightbox-bootmGrad">
+
+                </div>
+                <div class="lightbox-footer">
+                    <img class="footer-palms" src="images/footer-palms.svg" />
+                    
+                </div>
+                <div class="scrollbar-external_wrapper for-scroller">
+                    <div class="external-scroll_y">
+                        <div style="position:relative">
+                            <div class="scroll-element_outer">
+                                <div class="scroll-element_size"></div>
+                                <div class="scroll-element_track"></div>
+                                <div class="scroll-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mobDetector"></div> <!-- this class used to detect mobile in javascript -->
+        </div>
+    </div>
+
+    <script>
+
+         function inIframe() {
+             try {
+                 return window.self !== window.top;
+             } catch (e) {
+                 return true;
+             }
+         }
+         if (!inIframe())
+         {
+             var ligthbox = document.getElementById("mydiv");
+             ligthbox.style.backgroundColor = "rgba(0,0,0,0.7)";
+         }
+    </script>
+</body>
+</html>

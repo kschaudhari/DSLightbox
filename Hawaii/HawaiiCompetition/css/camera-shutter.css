@@ -1,0 +1,240 @@
+﻿.island-details{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    display:none;
+    z-index:40;
+}
+.camera-shutter {
+  border-radius: 100%;
+  height: 125px;
+  width: 125px;
+  border:3px solid #479BB2;
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  /*transform:scale(0.19231, 0.19231);*/
+  
+  position:absolute;
+  top:50%;
+  left:50%;
+  -webkit-transform:translate(-50%,-50%);
+  -moz-transform:translate(-50%,-50%);
+  -ms-transform:translate(-50%,-50%);
+  transform:translate(-50%,-50%);
+  
+}
+
+.camera-shutter--no-animation{
+    -moz-transition:none !important;
+    -webkit-transition:none !important;
+    transition:none !important;
+}
+.camera-shutter .hero-image{
+    height:100%;
+    width:100%;
+    
+    position:absolute;
+    z-index:0;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    border-radius:50%;
+    -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  background-size:contain;
+  background-position:center;
+  font-size:1px;
+}
+.camera-shutter .hero-image.small-collapsed:after{
+    content:"";
+    background-color:#A4DEED;
+    opacity:1;
+    position:absolute;
+    border-radius:50%;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:0;
+}
+.camera-shutter.left-camera-shutter{left:32.5%}
+.camera-shutter .hero-image-caption{
+    position:absolute;
+    top:50%;
+    -moz-transform:translateY(-50%);
+    -webkit-transform:translateY(-50%);
+    -ms-transform:translateY(-50%);
+    transform:translateY(-50%);
+    left:3%;
+    color:#fff;
+    font-family: "Proxima Nova", Arial, Helvetica, sans-serif;
+}
+.camera-shutter .hero-image .capture-image{
+    position:absolute;
+    top:50%;
+    left:50%;
+    -moz-transform:translate(-50%, -50%);
+    -webkit-transform:translate(-50%, -50%);
+    -ms-transform:translate(-50%, -50%);
+    transform:translate(-50%, -50%);
+    width:0px;
+
+  height:0px;
+  background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.camera-shutter, .camera-shutter:after, .camera-shutter:before, .camera-shutter *, .camera-shutter *:after, .camera-shutter *:before {
+  box-sizing: border-box;
+}
+.camera-shutter__lens {
+  border-radius: 100%;
+  height: 100%;
+  overflow: hidden;
+  -webkit-transform: rotate(0);
+      -ms-transform: rotate(0);
+          transform: rotate(0);
+  width: 100%;
+  -webkit-mask-image: -webkit-radial-gradient(#A4DEED, #A4DEED);
+  /* scale transform and overflow:hidden on Safari http://stackoverflow.com/a/21088507/471720 */
+}
+.camera-shutter__triangles {
+  height: 100%;
+  position: relative;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+}
+.camera-shutter__triangle {
+  background: #000;
+  border: 3px solid #FFF;
+  height: 100%;
+  position: absolute;
+  -webkit-transform-origin: 100% 100%;
+      -ms-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
+  width: 100%;
+}
+.camera-shutter__lens, .camera-shutter__triangle {
+  -webkit-transition: -webkit-transform .3s ease-out;
+          transition: transform .3s ease-out;
+}
+.camera-shutter.camera-shutter--open .camera-shutter__lens {
+  -webkit-transform: rotate(30deg);
+      -ms-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
+
+/* === Aperture */
+.camera-shutter--f2 .camera-shutter__triangle--1 {
+  -webkit-transform: rotate(45deg) skew(15deg, 15deg) translate(7.5%, -7.5%);
+      -ms-transform: rotate(45deg) skew(15deg, 15deg) translate(7.5%, -7.5%);
+          transform: rotate(45deg) skew(15deg, 15deg) translate(7.5%, -7.5%);
+}
+.camera-shutter--f2 .camera-shutter__triangle--2 {
+  -webkit-transform: rotate(105deg) skew(15deg, 15deg) translate(7.5%, -7.5%);
+      -ms-transform: rotate(105deg) skew(15deg, 15deg) translate(7.5%, -7.5%);
+          transform: rotate(105deg) skew(15deg, 15deg) translate(7.5%, -7.5%);
+}
+.camera-shutter--f2 .camera-shutter__triangle--3 {
+  -webkit-transform: rotate(165deg) skew(15deg, 15deg) translate(7.5%, -7.5%);
+      -ms-transform: rotate(165deg) skew(15deg, 15deg) translate(7.5%, -7.5%);
+          transform: rotate(165deg) skew(15deg, 15deg) translate(7.5%, -7.5%);
+}
+.camera-shutter--f2 .camera-shutter__triangle--4 {
+  -webkit-transform: rotate(225deg) skew(15deg, 15deg) translate(7.5%, -7.5%);
+      -ms-transform: rotate(225deg) skew(15deg, 15deg) translate(7.5%, -7.5%);
+          transform: rotate(225deg) skew(15deg, 15deg) translate(7.5%, -7.5%);
+}
+.camera-shutter--f2 .camera-shutter__triangle--5 {
+  -webkit-transform: rotate(285deg) skew(15deg, 15deg) translate(7.5%, -7.5%);
+      -ms-transform: rotate(285deg) skew(15deg, 15deg) translate(7.5%, -7.5%);
+          transform: rotate(285deg) skew(15deg, 15deg) translate(7.5%, -7.5%);
+}
+.camera-shutter--f2 .camera-shutter__triangle--6 {
+  -webkit-transform: rotate(345deg) skew(15deg, 15deg) translate(7.5%, -7.5%);
+      -ms-transform: rotate(345deg) skew(15deg, 15deg) translate(7.5%, -7.5%);
+          transform: rotate(345deg) skew(15deg, 15deg) translate(7.5%, -7.5%);
+}
+
+.camera-shutter--f22 .camera-shutter__triangle--1 {
+  -webkit-transform: rotate(45deg) skew(15deg, 15deg) translate(33.75%, -33.75%);
+      -ms-transform: rotate(45deg) skew(15deg, 15deg) translate(33.75%, -33.75%);
+          transform: rotate(45deg) skew(15deg, 15deg) translate(33.75%, -33.75%);
+}
+.camera-shutter--f22 .camera-shutter__triangle--2 {
+  -webkit-transform: rotate(105deg) skew(15deg, 15deg) translate(33.75%, -33.75%);
+      -ms-transform: rotate(105deg) skew(15deg, 15deg) translate(33.75%, -33.75%);
+          transform: rotate(105deg) skew(15deg, 15deg) translate(33.75%, -33.75%);
+}
+.camera-shutter--f22 .camera-shutter__triangle--3 {
+  -webkit-transform: rotate(165deg) skew(15deg, 15deg) translate(33.75%, -33.75%);
+      -ms-transform: rotate(165deg) skew(15deg, 15deg) translate(33.75%, -33.75%);
+          transform: rotate(165deg) skew(15deg, 15deg) translate(33.75%, -33.75%);
+}
+.camera-shutter--f22 .camera-shutter__triangle--4 {
+  -webkit-transform: rotate(225deg) skew(15deg, 15deg) translate(33.75%, -33.75%);
+      -ms-transform: rotate(225deg) skew(15deg, 15deg) translate(33.75%, -33.75%);
+          transform: rotate(225deg) skew(15deg, 15deg) translate(33.75%, -33.75%);
+}
+.camera-shutter--f22 .camera-shutter__triangle--5 {
+  -webkit-transform: rotate(285deg) skew(15deg, 15deg) translate(33.75%, -33.75%);
+      -ms-transform: rotate(285deg) skew(15deg, 15deg) translate(33.75%, -33.75%);
+          transform: rotate(285deg) skew(15deg, 15deg) translate(33.75%, -33.75%);
+}
+.camera-shutter--f22 .camera-shutter__triangle--6 {
+  -webkit-transform: rotate(345deg) skew(15deg, 15deg) translate(33.75%, -33.75%);
+      -ms-transform: rotate(345deg) skew(15deg, 15deg) translate(33.75%, -33.75%);
+          transform: rotate(345deg) skew(15deg, 15deg) translate(33.75%, -33.75%);
+}
+
+/* === Themes */
+
+/* theme 2 */
+.camera-shutter--theme2 .camera-shutter__triangle {
+  background: transparent;
+  border: 0 none;
+  padding: 1px;
+  outline: 2px solid #479BB2;
+}
+.camera-shutter--theme2 .camera-shutter__triangle:after {
+  background: #A4DEED;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.camera-shutter--theme2 .camera-shutter__lens,
+.camera-shutter--theme2 .camera-shutter__triangle {
+  -webkit-transition: all 1s ease-out;
+          transition: all 1s ease-out;
+}
+.camera-shutter--theme2.camera-shutter--open, .island-active .camera-shutter--theme2{
+    width:650px;
+    height:650px;
+    border:0px;
+    /*transform:scale(1,1);*/
+}
+.camera-shutter--theme2.camera-shutter--open .hero-image:after{opacity:0;}
+.camera-shutter--theme2.camera-shutter--open .hero-image,.lightbox-detailsPage.island-active .camera-shutter--theme2 .hero-image{
+    font-size:15px;
+}
+.camera-shutter--theme2.camera-shutter--open .hero-image .capture-image,.lightbox-detailsPage.island-active .camera-shutter .hero-image .capture-image {
+    width:300px;
+    height:200px;
+}
+
+.camera-shutter--theme2.camera-shutter--open .camera-shutter__triangle {
+  padding: 20%;
+  outline: none;
+}
+.camera-shutter--theme2 .camera-shutter__triangle.camera-shutter__triangle_no_outline{
+    outline: none;
+}
+

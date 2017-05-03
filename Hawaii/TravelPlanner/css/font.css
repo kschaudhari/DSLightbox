@@ -1,0 +1,30 @@
+﻿
+@font-face {
+	font-family: 'Jotia-Regular';
+	src: url('../fonts/Jotia-Regular.eot');
+	src: local('☺'), url('../fonts/Jotia-Regular.woff') format('woff'), url('../fonts/Jotia-Regular.ttf') format('truetype'), url('../fonts/Jotia-Regular.svg') format('svg'), url('../fonts/Jotia-Regular.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima-Nova-Condensed-Semibold';
+    src: url('../fonts/Proxima-Nova-Condensed-Semibold.eot');
+	src: local('☺'), url('../fonts/Proxima-Nova-Condensed-Semibold.woff') format('woff'), url('../fonts/Proxima-Nova-Condensed-Semibold.ttf') format('truetype'), url('../fonts/Proxima-Nova-Condensed-Semibold.svg') format('svg'), url(../fonts/Proxima-Nova-Condensed-Semibold.otf) format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Proxima-Nova';
+    src: url('../fonts/Proxima-Nova.eot');
+	src: local('☺'), url('../fonts/Proxima-Nova.woff') format('woff'), url('../fonts/Proxima-Nova.ttf') format('truetype'), url('../fonts/Proxima-Nova.svg') format('svg'), url(../fonts/Proxima-Nova.otf) format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Proxima-Nova-Condensed';
+    src: url('../fonts/Proxima-Nova-Condensed.eot');
+	src: local('☺'), url('../fonts/Proxima-Nova-Condensed.woff') format('woff'), url('../fonts/Proxima-Nova-Condensed.ttf') format('truetype'), url('../fonts/Proxima-Nova-Condensed.svg') format('svg'), url(../fonts/Proxima-Nova-Condensed.otf) format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}

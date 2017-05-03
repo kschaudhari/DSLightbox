@@ -229,7 +229,7 @@ function sendEvent() {
             hitType: 'event',
             eventCategory: 'Tab',
             eventAction: 'TabView',
-            eventLabel: 'tab ' + tabId + ' - ' + tabName,
+            eventLabel: 'tab ' + tabId,
             transport: 'beacon'
         });
 

@@ -1,0 +1,815 @@
+﻿/*body{
+	margin:0;
+	padding:0;
+	font-size:14px;
+    font-family: 'Conv_MINI Serif-Regular';
+    color:#000;
+}*/
+button:focus {outline:0;}
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+/* common classes */
+.clear 				{clear: both}
+.alignleft  	{float: left;  margin: 0 0.618em 0.618em 0}
+.alignright 	{float: right; margin: 0 0 0.618em 0.618em}
+.aligncenter	{text-align: center}
+/* common classes */
+/*.container{ */
+	/*width: 840px;*/
+	/*width:100%;
+    margin: 0px auto;
+    padding-top: 35px;
+	max-width:1440px;
+}*/
+.content{
+	position:relative;
+	width:100%;
+	height:100%;
+	display: table;
+}
+.LeftContent{
+	width: 76%;
+	float:left;
+}
+.leftContainer{
+	width: 82%;
+	margin:0 auto;
+}
+.RightContent{
+	width: 24%;
+	float:left;
+    background-color:#f9f9f9;
+	-webkit-box-shadow: -4px 0px 8px -3px rgba(0,0,0,0.4);
+       -moz-box-shadow: -4px 0px 8px -3px rgba(0,0,0,0.4);
+            box-shadow: -4px 0px 8px -3px rgba(0,0,0,0.4);
+}
+.RightContent h3{
+   
+	margin:0px;
+	background:#000;
+	font-size:20px;
+	text-transform:uppercase;
+	color:#fff;
+	text-align:center;
+	width:100%;
+	line-height:30px;
+	font-weight: normal;
+}
+.LatestEnteries{
+	padding: 24px 20px 0 22px;
+   
+}
+.LatestEnteries:last-child{
+	margin-bottom:55px;
+}
+.LatestEnteries .bottomGrove{
+	background-image:url(../images/miniGroove.png);
+	background-repeat:repeat-x;
+	width:100%;
+	height:2px;
+	margin-top: 20px;
+}
+.LatestEnteries h4{
+	font-family: 'Slabo 27px', serif;
+	font-weight: 500;
+	font-size:15px;
+	margin:0;
+	text-transform:uppercase;
+}
+.LatestEnteries span{
+	font-size:14px;
+	margin-bottom: 4px;
+	width:100%;
+	 line-height: 17px;
+	display: block;
+}
+.LatestEnteries b{
+	line-height: 18px;
+	font-weight: 500;
+}
+.LatestEnteries p{
+	margin: 6px 0 0 0;
+}
+.BottomBlackBorder{
+	width: 40px;
+    height: 2px;
+    background: #000;
+    display: block;
+	margin-top: 10px;
+}
+.Header h1{
+	margin:0px;
+	text-transform:uppercase;
+	font-size:30px;
+	line-height: 28px;
+}
+.Header .leftSec{
+    width: 76%;
+    float: left;
+}
+.Header .Rightsec{
+	margin-top:15px;
+    width: 24%;
+    float: left;
+}
+.Header .leftBox {
+    width: 82%;
+    margin: 0 auto;
+
+}
+.leftBox .BottomBlackBorder{
+    margin-bottom:35px;
+}
+.Header .rightBox {
+}
+.Header .Rightsec .rightBox img:first-child{
+	margin-right:10px;
+}
+.Header .Rightsec .rightBox img:nth-child(2){
+    float:right;
+    margin-right:11px;
+}
+.ImageBox{
+}
+.ImageBox img{
+	width:100%;
+	margin:0;
+	padding:0;
+}
+.secondImagebox{
+	margin-top: 9px;
+}
+.secondImagebox img:first-child{
+	margin-right: 2%;
+	width:36%;
+	height:131px;
+}
+.secondImagebox img:nth-child(2){
+	width:61%;
+	height:131px;
+}
+.secondImagebox span{
+	height:131px;
+	display:block;
+	background-size:cover;
+	background-position:50% 50%;
+}
+.secondImagebox span:first-child{
+	margin-right: 2%;
+	width:36%;
+	float:left;
+}
+.secondImagebox span:nth-child(2){
+	width:61%;
+	float:right;
+}
+.secondImagebox img{
+	width:auto;
+}
+.discription{
+}
+.discription h3{
+	margin: 20px 0 0;
+	font-size:18px;
+	text-transform:uppercase;
+	color:#000;
+	line-height:25px;
+	font-weight: normal;
+}
+.discription div{
+	margin: 25px 0px;
+    line-height: 23px;
+    font-size: 18px;
+}
+.compititionForm{
+	/*border-top:1px solid #e4e4e4;*/
+	font-family: "Proxima-nova";
+	width: 60%;
+	color: #145d70;
+	margin: 0px auto;
+	padding-bottom: 130px;
+}
+.supplementary-questions h3{
+	text-align:center;
+	font-weight: 300;
+	font-size:18px;
+	margin: 17px auto 17px;
+	width: 100%;
+	/* width:70%; */
+	max-width: 356px;
+}
+.question-box p.header-text {
+    text-align:center;
+    font-weight: 300;
+    font-size:18px;
+    /* color: #000; */
+    /* display: none; */
+    margin: 17px auto 10px;
+    width: 100%;
+    /* width:61%; */
+    max-width: 309px;
+}
+.formDetail{
+}
+
+.fullwidth{
+}
+input[type="text"], textarea {
+    background-color: #fff !important;
+    border: 1px solid #145d70 !important;
+    border-radius: 0px !important;
+    /* color: #000 !important; */
+    height: 40px;
+    width: 100%;
+    font-size:14px !important;
+    outline: none;
+    font-family:'Proxima-Nova',sans-serif, 'Source Sans Pro', Georgia;
+    -webkit-box-sizing: border-box !important;
+    -moz-box-sizing: border-box !important;
+    -ms-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+}
+input[type="text"]{
+	 padding: 0px 3% 0px !important;
+	 display:inline-block !important;
+	 margin: 10px auto !important;
+}
+textarea {
+  outline: none;
+  margin: 10px auto !important;
+  margin-bottom: 20px !important;
+  padding: 2.01% 4% 0% !important;
+  height: 71px;
+  resize:none;
+}
+.compititionForm .Title{
+	width:26%;
+	float:left;
+	/*margin-right: 3%;*/
+	background-image:url(../images/down-arrow.png);
+	background-repeat:no-repeat;
+	background-position: 93% center;
+}
+.compititionForm .fullName{
+	width: 70%;
+	float:right;
+}
+.Title::-webkit-input-placeholder {
+    color:#145d70;
+	opacity:1;
+}
+.Title:-moz-placeholder {
+    color:#145d70;
+	opacity:1;
+}
+.Title::-moz-placeholder {
+    color:#145d70;
+	opacity:1;
+}
+.Title:-ms-input-placeholder {
+    color:#145d70;
+	opacity:1;
+}
+::-webkit-input-placeholder {
+  color:#145d70;
+  opacity:1;
+}
+:-moz-placeholder { /* Firefox 18- */
+   color:#145d70;  
+   opacity:1;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+   color:#145d70;
+   opacity:1;
+}
+:-ms-input-placeholder {  
+   color:#145d70;
+   opacity:1;
+}
+.Options{
+	margin-top: 8px;
+}
+.Options .optionbox span{
+	height:30px;
+	float:left;
+	width: 23px;
+}
+.optionbox{
+	line-height: 19px;
+}
+.optionbox a, #divAcceptTnC a{
+	color:#000;
+	text-decoration:none;
+	background-image:url(../images/bottomAnchegroove.png);
+	background-position:bottom;
+	background-repeat:repeat-x;
+	width:100%;
+	height:2px;
+	text-decoration: underline;
+}
+.captchaContainer{
+    margin-top: 24px;
+}
+.captcha{
+	/* background-color: #fff; */
+	border-radius: 4px;
+	height: 76px;
+	margin-top: 0;
+	width: 59%;
+	float: left;
+	/* display: inline-block; */
+}
+.submit-container{
+	background-color: #000;
+	border: 1px solid #d3d3d3;
+	border-radius: 2px;
+	float:right;
+	height: 76px;
+	margin-left: 2.6%;
+	margin-top: 0;
+	font-family:'Proxima-Nova',sans-serif, 'Source Sans Pro', Georgia;
+	text-align: center;
+	width: 37%;
+	/* display: inline-block; */
+}
+.submit-container button.form-submit{
+	background: #fff;
+    border: medium none;
+    border-radius: 0px;
+    color: #000;
+    cursor: pointer;
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding: 0px 30px;
+    text-align: center;
+    text-transform: uppercase;
+	font-family:'Proxima-Nova',sans-serif, 'Source Sans Pro', Georgia;
+	height:40px;
+	position:relative;
+	top:25%;
+}
+.captcha-text{
+    font-size: 11px;
+    /* color: #000; */
+    margin-top:8px;
+    text-align:left;
+    font-weight: 400;
+    width:100%;
+}
+.BottomLogo{
+	text-align:right;
+	margin:60px 0px;
+}
+.BottomLogo span {
+    width: 119px;
+    float: right;
+    height: 52px;
+    background-size: cover;
+    background-position: 50% 50%;
+    display: block;
+    margin-bottom: 60px;
+}
+.custDropdown{
+	/*width: 30%;
+    background: #fff;
+	position:absolute;
+	top:40px;
+	border:1px solid #000;
+	z-index:1;*/
+	color:#000;
+	width: 11.7%;
+    background: #fff;
+    position: absolute;
+    top: 140.9%;
+    border: 1px solid #000;
+    z-index: 1;
+    left: 23.1%;
+}
+.custDropdown div{
+	border-bottom:1px solid #ccc;
+	height:30px;
+	padding-left: 15%;
+	line-height:32px;
+}
+.succesDiv{
+	text-align:center;
+	font-size:14px;
+	width: 90%;
+	margin: 0px auto;
+}
+.succesDiv h3{
+	margin: 0px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #000;
+    line-height: 50px;
+    border-bottom: 1px solid #3d4b57;
+}
+.succesDiv h4{
+	font-size: 18px;
+	font-weight: 400;
+}
+.socialLinks{
+	margin-top: 65px;
+	position: relative;
+	width: 100%;
+	display: inline-block;
+	padding-bottom: 10px;
+}
+.socialLinks .twitter{
+	float: left;
+    position: relative;
+    width: 42.6%;
+}
+.socialLinks .facebook{
+	float: right;
+    width: 42.6%;
+    position: relative;
+}
+.succesDiv .shareFriendBox{
+	border: 1px solid #000;
+	text-align:left;
+	color: #000;
+	font-size: 20px;
+	font-weight: 400;
+	padding: 2em;
+	font-family: "Proxima-Nova";
+}
+.succesDiv .shareFriendBox a{
+	text-decoration:underline;
+	color:#000;
+}
+.succesDiv .socialLinks a{
+	padding: 0.8em;
+    background-color: #242e36;
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 300;
+}
+.socialLinks img{
+	margin-right:15px;
+}
+.options div p {
+    margin: 6px 0 20px 0;
+	color:#000;
+    font-size:14px;
+}
+#divAcceptTnC {
+    margin: 16px 0px 21px 0;
+    font-size: 14px;
+    /* color:#000; */
+    font-weight: 400;
+}
+.errorIndicator, .errorIndicator:focus {
+    border: 1px solid #FF5252 !important;
+    box-shadow: none;
+    outline-color: #FF5252;
+}
+.errorMessage {
+    width: 100%;
+    left: 0px !important;
+    position: absolute;
+    top: 0px;
+    height: 80px;
+    text-align: center;
+    background-color: #FF5252;
+    color: #ffffff;
+}
+.successMessage {
+    width: 100%;
+    left: 0px !important;
+    position: absolute;
+    top: 0px;
+    height: 80px;
+    text-align: center;
+    background-color: #AFFFE4;
+    color: #ffffff;
+}
+.verifySubmit {
+    position: relative;
+    width: 100%;
+    /* left: 0; */
+    float: left;
+}
+.imagesDiv-link, .imagesDiv-link-Left {
+    display:none;
+}
+.question-text {
+    text-align:center;
+    margin-top: 33px;
+    font-weight: 300;
+    font-family: "chantal", Arial, Helvetica, sans-serif;
+    /* color: #000; */
+    margin-bottom: 24px;
+    font-size:18px;
+}
+/*#answerChoice {
+    text-align:center;
+    font-size: 18px;
+    color: #000;
+	max-width:35%;
+	margin:auto;
+    font-weight: 400;
+}*/
+#answerChoice {
+    text-align: center;
+    font-size: 18px;
+    /* color: #000; */
+    font-weight: 300;
+    display: inline-block;
+    /* left: 50%; */
+    position: relative;
+}
+span.letter {
+    float: left;
+    /* margin-left: 5px; */
+}
+
+span.radio {
+    float: right;
+}
+
+span.answer {
+    float: left;
+    margin-left: 5px;
+}
+input[type="radio"] {
+    margin-top: 0px;
+    padding-bottom: 15px;
+}
+.answer-text:after {content: "";clear: both;display: block;}
+
+
+.answer-text {
+    display: inline-block;
+    /* width: 30%; */
+    margin: 0px auto;
+    /* width: 180px; */
+    float: left;
+    clear: both;
+    padding-bottom: 5px;
+}
+.answer-text:after {content: "";clear: both;display: block;}
+.text-input {
+    margin-top:25px;
+}
+
+input[type="checkbox"]{
+cursor: pointer;
+border-radius: 1px;
+position: relative;
+box-sizing: content-box ;
+border:1px solid #000;
+width: 16px;
+height: 16px;
+float: left;
+margin: 1px 4px 5px 0;
+}
+.rightBox span{
+    width: 84px;
+    float: right;
+    height: 37px;
+    background-size: cover;
+    background-position: 50% 50%;
+    display: block;
+     margin-right:11px;
+}
+/* term and condition */
+.TearmConditionDiv{
+ background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;
+    color: #fff;
+ position:fixed;
+     z-index: 100;
+ top:0px;
+ right:0;
+ width:100%;
+    height:100%;
+    display:none !important;
+}
+.island-content-container.island-trip-content .tour-section .tour ul li{
+    text-align:left;
+}
+/* terms condition end */
+@media only screen and (max-width: 767px) {
+	.socialLinks .twitter{
+		width:35%;
+	}
+	.socialLinks .facebook{
+		width:35%;
+	}
+    /*.container {
+        padding-top: 54px;
+        width:100%;
+    }*/
+    .leftContainer {
+        width: 92%;
+    }
+    .LeftContent {
+        width:100%;
+    }
+    .RightContent {
+       /* width: 50%;
+        margin-top: 30px;
+        position: relative;
+        left: 50%;*/
+    }
+    .captcha {
+        width: 59%;
+    }
+    .submit-container {
+        /* width:39%; */
+        /* margin-left:0px; */
+    }
+    .submit-container button.form-submit {
+        height: 24px;
+        width:77px;
+        text-align:center;
+        padding:0px;
+    }
+    .question-box p.header-text {
+        width:100%;
+    }
+    .supplementary-questions h3 {
+        width:100%;
+    }
+    /* Slide right div */
+    .imagesDiv-link {
+        display:block;
+        position:absolute;
+        top: 78px;
+        right:0px;
+    }
+    .imagesDiv-link-Left {
+        display:block;
+        position:absolute;
+        top: 0px;
+        left:0px;
+    }
+    .hidden {
+        background-color: yellow;
+        width: 50%;
+        height: auto%;
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        overflow: hidden; 
+    }
+    #imagesDiv {
+        width: 50%;
+        height: auto%;
+        position:absolute;
+        top: 78px;
+        bottom: 0px;
+        right: 0px;
+        overflow: hidden;
+        display: none;
+    }
+    #imagesDiv .RightContent {
+        margin-left: 21px;
+        width: 88%;
+    }
+    /* Slide right div */
+    .Header .leftSec {
+        width: 52%;
+    }
+    .Header .Rightsec {
+        width: 48%;
+    }
+    .Header .rightBox img {
+        width:62px;
+    }
+    .Header h1 {
+        font-size: 17px;
+        line-height: 17px;
+    }
+    .RightContent h3 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .options div p {
+       font-size: 12px;
+    }
+    .options div p span{
+        margin-top:3px;
+        float:left;
+    }
+    #divAcceptTnC {
+       font-size: 12px;
+       margin: 4px 0 8px;
+       line-height: 13px;
+    }
+    #divAcceptTnC input[type="checkbox"] {
+        position:relative;
+        top:-2px;
+    }
+    input[type="checkbox"] {
+        margin-right:10px;
+    }
+    input[type="text"]{
+        margin: 4px auto;
+        height:25px;
+    }
+    textarea{
+        margin: 4px auto;
+        height:36px;
+    }
+    .rightBox span {
+        width: 69px;
+        float: right;
+        height: 30px;
+        background-size: cover;
+        background-position: 50% 50%;
+        display: block;
+        margin-right: 11px;
+    }
+    .leftBox .BottomBlackBorder {
+       margin-bottom: 12px;
+       margin-top: 10px;
+    }
+    .secondImagebox span {
+        height: 74px;
+    }
+    .secondImagebox {
+        margin-top: 1px;
+    }
+    .discription h3 {
+        margin: 8px 0 0;
+        font-size: 14px;
+    }
+    .discription div {
+       margin: 12px 0px 15px;
+       font-size: 14px;
+       line-height: 18px;
+    }
+    .secondImagebox span:first-child {
+        margin-right: 0;
+       width: 37%;
+    }
+    .BottomBlackBorder {
+        margin-top:0px;
+    }
+    .ImageBox img {
+        height: 110px;
+    }
+    .question-box p.header-text {
+        font-size: 14px;
+        letter-spacing:1px;
+    }
+    .supplementary-questions h3 {
+        font-size: 14px;
+        margin: 3px auto 2px;
+    }
+    .question-text {
+        margin-top: 12px;
+        margin-bottom: 15px;
+        font-size: 18px;
+    }
+    #answerChoice {
+        font-size: 12px;
+   }
+    .text-input {
+        margin-top: 11px;
+   }
+    .BottomLogo {
+        margin: 45px 0px;
+   }
+   .BottomLogo span {
+        margin-bottom: 40px;
+   }
+   .captcha-text {
+       font-size: 10px;
+       margin-top: 2px;
+       line-height: 12px;
+   }
+   #trip-popup .island-content-container .tour-section .tour .header > .logo {
+        max-width: 150px;
+   }
+   .lightbox-detailsPage .popup-title{
+       margin-top:0px
+   }
+}
+@media only screen and (min-width: 959px) and (max-width: 1200px) {
+	.socialLinks .twitter{
+		width:42%;
+	}
+	.socialLinks .facebook{
+		width:42%;
+	}
+}

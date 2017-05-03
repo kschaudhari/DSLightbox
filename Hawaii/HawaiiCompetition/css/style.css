@@ -1,0 +1,608 @@
+.clear {
+  clear: both;
+}
+.clearfix:after {
+  content: " ";
+  /* Older browser do not support empty content */
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+#mydiv {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  left: 0%;
+  top: 0%;
+  position: fixed;
+  z-index: 200;
+  /*background-color:rgba(0,0,0,0.7);*/
+}
+#mydiv-content {
+  width: 100%;
+  max-width: 1000px;
+  height: 650px;
+  margin: 0 auto;
+  padding: 0px;
+  background-color: #c7ffff;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-family: "chantal", Arial, Helvetica, sans-serif;
+  /* overflow: hidden; */
+}
+.CloseBtn {
+  position: absolute;
+  top: -8px;
+  right: -52px;
+  z-index: 12;
+  width: 60px;
+  height: 60px;
+  background-image: url(../images/Close.png);
+  display: block;
+}
+.lightbox-detailsPage {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.togglecone.expandedcone {
+  background-color: green;
+}
+.mobDetector {
+  display: none;
+}
+.lightbox-detailsPage .big-palms {
+  position: absolute;
+  top: 0px;
+  z-index: 30;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+}
+.lightbox-detailsPage .big-palm-left {
+  height: 160px;
+  right: 200px;
+}
+.lightbox-detailsPage .big-palm-middle {
+  height: 110px;
+  right: 80px;
+}
+.lightbox-detailsPage .big-palm-right {
+  height: 300px;
+  right: 0px;
+}
+.lightbox-detailsPage .big-palm-left.hover-island {
+  top: -60px;
+}
+.lightbox-detailsPage .big-palm-middle.hover-island {
+  top: -50px;
+}
+.lightbox-detailsPage .big-palm-right.hover-island {
+  right: -66px;
+}
+.lightbox-detailsPage .big-palm-left.island-active {
+  top: -253px;
+}
+.lightbox-detailsPage .big-palm-middle.island-active {
+  top: -181px;
+}
+.lightbox-detailsPage .big-palm-right.island-active {
+  right: -190px;
+}
+.lightbox-detailsPage .background-icons {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+}
+.lightbox-detailsPage .gradient {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(200, 255, 255, 0.9);
+  z-index: 20;
+  display: none;
+}
+.lightbox-detailsPage .color-palm {
+  width: 50px;
+}
+.lightbox-detailsPage .line {
+  width: 100px;
+}
+.lightbox-detailsPage .map .island {
+  position: absolute;
+  z-index: 1;
+}
+.map .map-hover-img{
+    display:none;
+    max-width:30px;
+    position:absolute;
+    right:0;
+    bottom:0;
+}
+
+.lightbox-detailsPage .map .highlighted {
+  z-index: 30;
+}
+.lightbox-detailsPage .map .island:hover {
+  cursor: pointer;
+}
+.lightbox-detailsPage .map .island:hover .map-hover-img{display:block;}
+.lightbox-detailsPage .map .kauai {
+  top: 40px;
+  left: 190px;
+  width: 180px;
+}
+.lightbox-detailsPage .map .kauai .map-hover-img { bottom: 30px; right: -10px;}
+
+.lightbox-detailsPage .map .oahu {
+  top: 120px;
+  left: 495px;
+  width: 85px;
+}
+.lightbox-detailsPage .map .oahu .map-hover-img {bottom: -14px; right: -10px;}
+.lightbox-detailsPage .map .molokay {
+  top: 160px;
+  left: 620px;
+  width: 100px;
+}
+.lightbox-detailsPage .map .molokay .map-hover-img {bottom: 30px; right: -5px;}
+.lightbox-detailsPage .map .lanai {
+  top: 252px;
+  left: 584px;
+  width: 120px;
+}
+.lightbox-detailsPage .map .lanai .map-hover-img {bottom:-10px;right:30px}
+.lightbox-detailsPage .map .maui {
+  top: 217px;
+  left: 704px;
+  width: 100px;
+}
+.lightbox-detailsPage .map .maui .map-hover-img {}
+.lightbox-detailsPage .map .hawaii {
+  top: 327px;
+  left: 780px;
+  width: 170px;
+}
+.lightbox-detailsPage .map .hawaii .map-hover-img {right:75px;}
+.lightbox-detailsPage .map .island-name{
+    font-size:30px;
+    color:#27b3d9;
+    position: absolute;
+}
+.island.kauai .island-name {
+    top: -7px;
+    left: 103px;
+}
+
+.island.oahu .island-name {
+    top: -9px;
+}
+
+.island.molokay .island-name {
+    top: -9px;
+    left: -6px;
+}
+
+.island.lanai .island-name {
+    top: 5px;
+}
+
+.island.maui .island-name {
+    top: -4px;
+    left: 20px;
+}
+
+.island.hawaii .island-name {
+    top: -7px;
+    left: 43px;
+}
+.lightbox-detailsPage .map {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+}
+.lightbox-detailsPage .map.island-active {
+  left: 43px;
+  top: -106px;
+}
+.lightbox-detailsPage .background-icons.island-active {
+  top: -106px !important;
+  left: 45px;
+}
+.lightbox-detailsPage .home-text-block {
+     position: absolute;
+    top: 150px;
+    width: 450px;
+    left: 40px;
+    text-align: center;
+    z-index: 40;
+}
+.lightbox-detailsPage .home-text-block .title {
+  width: 300px;
+  position: relative;
+  margin: 0px auto;
+}
+.lightbox-detailsPage .home-text-block .home-page-title {
+    font-size: 90px;
+    color: #ECBE63;
+    text-shadow: 5px 3px 2px #27b3d9;
+}
+
+.lightbox-detailsPage .home-text-block .home-page-sub-title {
+    font-size: 30px;
+    color: #27B3D9;
+}
+.lightbox-detailsPage .home-text-block p {
+  color: #145d70;
+  font-family: "Proxima-Nova", Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-size: 15px;
+  line-height: 20px;
+}
+.lightbox-detailsPage .home-text-block .click {
+    width: 166px;
+    margin: 20px auto 0px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #ECBE63;
+    font-style:italic;
+}
+.lightbox-detailsPage .popup {
+  background-color: rgba(248, 239, 220, 0.95);
+  position: absolute;
+  z-index: 60;
+  transition: bottom 0.5s ease-in-out;
+}
+.lightbox-detailsPage .popup .popup-close {
+      width: 80px;
+      position: absolute;
+      right: 17px;
+      top: 5px;
+      font-size: 20px;
+      font-weight: 500;
+      color: #786132;
+      vertical-align: middle;
+      z-index: 105;
+}
+.lightbox-detailsPage .popup .popup-close .close-x{
+        font-size: 55px;
+    line-height: 10px;
+    vertical-align: middle;
+}
+.lightbox-detailsPage .popup .popup-close:hover {
+  cursor: pointer;
+}
+.lightbox-detailsPage .popup p {
+  text-align: center;
+}
+.lightbox-detailsPage .popup p.head1 {
+  color: #edbf5a;
+  font-size: 36px;
+  margin-top: -20px;
+  margin-bottom: 0px;
+}
+.lightbox-detailsPage .popup p.head2 {
+  color: #edbf5a;
+  font-size: 120px;
+  line-height: 0px;
+  margin-top: 45px;
+  margin-bottom: 0px;
+}
+.lightbox-detailsPage .popup .title {
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #145d70;
+  font-size: 24px;
+}
+.lightbox-detailsPage .popup-big {
+  left: 40px;
+  right: 40px;
+  height: 560px;
+  bottom: -600px;
+}
+.lightbox-detailsPage #dd-menu {
+  width: 190px;
+  bottom: -350px;
+  left: 210px;
+  padding-bottom: 50px;
+  text-align: center;
+  z-index: 61;
+}
+.lightbox-detailsPage #dd-menu.popup .popup-close{
+    top:auto;
+    bottom: 35px;
+}
+.lightbox-detailsPage #dd-menu .head-img {
+  margin-top: 10px;
+  text-align: center;
+  height: 40px;
+}
+.lightbox-detailsPage #dd-menu ul {
+  margin-top: 5px;
+  position: relative;
+  list-style: none;
+  text-align: center;
+  width: 100%;
+  padding-left: 0;
+}
+.lightbox-detailsPage #dd-menu ul li {
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #145d70;
+  font-size: 28px;
+  font-weight: 300;
+}
+.lightbox-detailsPage #dd-menu ul li:hover {
+  color: #27b3d9;
+  cursor: pointer;
+}
+.lightbox-detailsPage #dd-menu ul img {
+  width: 100px;
+}
+.lightbox-detailsPage .popup-active {
+  bottom: 60px !important;
+}
+.lightbox-detailsPage #video-popup .titleblock {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.lightbox-detailsPage #video-popup .line-sep {
+  text-align: center;
+  margin: 10px auto 20px;
+}
+.lightbox-detailsPage #video-popup .line-sep img {
+  width: 100px;
+}
+.lightbox-detailsPage #video-popup .video-container {
+  width: 100%;
+}
+.lightbox-detailsPage #video-popup .video {
+  max-width: 530px;
+  width:100%;
+  background-color: #145d70;
+  margin: 0px auto;
+  position: relative;
+  padding-bottom: 32%;
+}
+.lightbox-detailsPage #video-popup .video-container #video1Player {top: 0;left: 0;width: 100%;height: 100%;position: absolute;}
+
+.lightbox-detailsPage #trip-popup .separator {
+  text-align: center;
+  margin-top: -20px;
+}
+
+.lightbox-detailsPage #trip-popup .title {
+  padding-top: 30px;
+  text-align: center;
+  width: 50%;
+  margin: 0px auto;
+}
+.lightbox-detailsPage #trip-popup .content {
+  width: 530px;
+  margin: 0 auto;
+  line-height: 22px;
+  font-size: 18px;
+  color: #145d70;
+  font-weight: 300;
+  font-family: "Proxima-Nova", Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+.lightbox-detailsPage #trip-popup .pic-frame {
+  position: absolute;
+  width: 230px;
+  top: 40px;
+}
+.lightbox-detailsPage #trip-popup .pic-frame-l {
+  position: absolute;
+  /* width: 230px; */
+  top: -90px;
+  left: 20px;
+  z-index: 100;
+}
+.lightbox-detailsPage #trip-popup .pic-frame-r {
+  position: absolute;
+  /* width: 230px; */
+  top: -90px;
+  right: 20px;
+  z-index: 100;
+}
+.popup-details-wrapper{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+}
+.popup-content-wrapper{
+    position:relative;
+    margin-top:140px;
+}
+#journey-popup .popup-content-wrapper{margin-top:168px;}
+.content-popup .scroll-top-shaddow-wrapper{
+    position:absolute;
+    z-index:0;
+    height:100px;
+    position:absolute;
+    z-index:52;
+    top:0;
+    left:0;
+    height:120px;
+    overflow:hidden;
+    width:100%;
+}
+.content-popup .scroll-top-shaddow{
+    width:100%;
+    height:100px;
+    background-color:#f8efdc;
+    -webkit-box-shadow: 0px 0px 20px 20px #f8efdc;
+    -moz-box-shadow: 0px 0px 20px 20px #f8efdc;
+    box-shadow: 0px 0px 20px 20px #f8efdc;
+}
+.main-page-title{
+    margin-top:-23px;
+}
+.title-small{
+  font-family: "chantal", Arial, Helvetica, sans-serif;
+  color: #eec162;
+  font-size: 38px;
+  
+}
+.title-big{
+  font-family: "chantal", Arial, Helvetica, sans-serif;
+  color: #eec162;
+  font-size:108px;
+  text-shadow: 5px 3px 2px #27b3d9;
+  line-height: 68px;
+  margin-bottom: 50px;
+}
+.circle-image-frame{
+    width:200px;
+    height:200px;
+    border:12px solid #ECBE63;
+    border-radius:50%;
+    background-position: center center;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.75);
+    background-size: cover;
+}
+.circle-image-frame img{
+    position: absolute;
+    width: 240px;
+    top: -15px;
+    left: -19px;
+}
+
+/*journey popup*/
+.lightbox-detailsPage .content-popup {
+  left: 40px;
+  right: 40px;
+  height: 560px;
+  bottom: -600px;
+  text-align: center;
+}
+.lightbox-detailsPage #journey-popup #journey-content, .lightbox-detailsPage #trip-popup #trip-content{
+    padding-bottom: 250px;
+    max-width: 500px;
+    width: 100%;
+    margin: 0px auto;
+    position: relative;
+    top: auto;
+    right: auto;
+    height:auto;
+}
+
+.lightbox-detailsPage #journey-popup .separator {
+  text-align: center;
+  margin-top: -42px;
+}
+.lightbox-detailsPage .popup-title {
+  text-align: center;
+  margin-top: -23px;
+  margin-bottom: 0px;
+  width: 100%;
+  position: absolute;
+  z-index: 53;
+  top: 0px;
+  left: 0;
+}
+.lightbox-detailsPage #journey-popup .title {
+  margin-top: 24px;
+  text-align: center;
+}
+.lightbox-detailsPage #journey-popup .content {
+  max-width: 530px;
+  width: 95%;
+  margin: 0 auto;
+  line-height: 22px;
+  font-size: 18px;
+  color: #145d70;
+  font-weight: 300;
+  font-family: "Proxima Nova", Arial, Helvetica, sans-serif;
+}
+.lightbox-detailsPage #journey-popup .pic-frame {
+  position: absolute;
+  width: 230px;
+  top: 40px;
+}
+.lightbox-detailsPage #journey-popup .pic-frame-l {
+  position: absolute;
+    width: 230px;
+    top: 300px;
+    left: 107px;
+}
+.lightbox-detailsPage #journey-popup .pic-frame-r {
+  position: absolute;
+  width: 230px;
+  top: 40px;
+  right: 20px;
+}
+.journey-title-small {
+    /* margin-left:-57px; */
+}
+#journey-popup .island-content-container .tour-section .tour .tour-image{
+    top:-10px;
+}
+#trip-popup .island-content-container .tour-section .tour .tour-description {
+    margin: 50px auto 50px;
+    width: 90%;
+    font-family: "Proxima-Nova", Arial, Helvetica, sans-serif;
+    padding-bottom: 10px;
+}
+
+#trip-popup .island-content-container .tour-section .tour .tour-description.top-margin-20{
+    margin-top:20px;
+}
+#trip-popup .island-content-container .tour-section .tour .no-tour-image-description{
+    margin: 10px auto 50px;
+}
+.lightbox-detailsPage #journey-popup .island-content-container .title{padding-top:15px;}
+#journey-popup .island-content-container .tour-section{margin-top:30px;}
+#trip-popup .island-content-container .tour-section{margin-top:0px;}
+#journey-popup .journey-content-separator, #trip-popup .journey-content-separator{background-image:url(../images/journy-content-separator.svg); width:100%; height:4px;}
+#journey-popup .island-content-container .tour-section .tour .header > .logo{margin-top:15px;}
+#trip-popup .island-content-container .tour-section .tour .header > .logo{margin-top:0px;margin-left:0px;text-align:left;max-width: 250px;} /*max-width: 150px;*/
+#journey-popup .island-content-container .tour-section .tour ul{margin-top:15px;}
+.lightbox-detailsPage #journey-popup .island-journey-content .title, .lightbox-detailsPage #trip-popup .island-trip-content .title{text-align:left}
+.lightbox-detailsPage #trip-popup .island-trip-content .title{padding-top:55px;width: 100%;text-align: center;}
+.lightbox-detailsPage .popup .island-journey-content p, .lightbox-detailsPage .popup .island-trip-content p{text-align:left}
+#journey-popup .island-content-container .tour-section .tour .header{text-align:left}
+#trip-popup .island-content-container .tour-section .tour .header{text-align: center;}
+.lightbox-detailsPage .popup-content-wrapper .island-content-container .tour-section .tour{background-color: #F6EAD6;margin-bottom:60px;color: #145D70;}
+#journey-popup .island-content-container .tour-section .tour .find-out-more-container {position:relative;  top:25px;}
+#trip-popup .island-content-container .tour-section .tour .header.no-tour-image-header {
+    margin-left: 0px;
+}
+#trip-popup .find-out-more-container {
+    padding-bottom: 10px;
+}
+.removePopup {
+        cursor: pointer;
+}
+
+.CloseBtn {
+    position: absolute;
+    top: -8px;
+    right: -42px;
+    z-index: 12;
+    width: 60px;
+    height: 60px;
+    background-image: url('../images/Close.png');
+    display: block;
+}
