@@ -1,0 +1,10 @@
+﻿[
+  {
+    "outputFile": "css/Tabs.css",
+    "inputFile": "css/Tabs.less"
+  },
+  {
+    "outputFile": "css/style.css",
+    "inputFile": "css/style.less"
+  }
+]

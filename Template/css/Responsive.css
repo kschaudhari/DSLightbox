@@ -1,0 +1,173 @@
+@media screen and (max-height: 670px)  {
+    .ContentVideo {
+        
+    }
+}
+@media (max-device-width: 1024px) {
+    .MainContentArea{
+        overflow:auto;
+    }
+}
+@media screen and (max-width: 767px) , screen and (max-height: 300px){
+    html{
+        overflow: hidden;
+        width:100%;
+    }
+    body{
+        height:100%;
+        position:fixed; 
+        overflow-y:scroll;
+        -webkit-overflow-scrolling: touch; 
+        width:100%;
+    }
+	#mydiv-content {
+       top: 0;
+       -webkit-transform: translate(-50%, 0%);
+       -ms-transform: translate(-50%, 0%);
+       transform: translate(-50%, 0%);
+       height:100vh;
+       max-height: none;
+    }
+	.MobMenuBtn{
+		z-index:10;
+		display:block;
+	}
+	.topMobMenuBar{
+		display:block;
+	}
+	
+	.CloseBtn{
+		display: none;
+	}
+    .mobDetector{display:block;}
+    .topMobMenuBar .CloseBtn{
+		display: block;
+	}
+	.MenuMob {
+         display: table;
+         width: 100%;
+    }
+    
+    .lightbox-footer{
+        display:none;
+    }
+    .lightbox-container{
+        margin: 0px auto;
+        margin-top: 20vh;
+        height: 80vh;
+        position: relative;
+        padding: 0px;
+        padding-top: 0px;
+        width: 100%;
+    }
+    .lightbox-container .lightbox-header {
+        display: none;
+    }
+
+    .lightbox-container .lightbox-tabs {
+        height: 100%;
+    }
+    .lightbox-container .tab{
+        top: 0;
+		-webkit-transform: initial;
+		-moz-transform: initial;
+    	-ms-transform: initial;
+        transform: initial;
+        left: 0;
+        width: 100%;
+        /* bottom: 0; */
+        /* height: 105%; */
+        padding-bottom: 20px;
+        background: #fff;
+        display:none;
+        width:100%;
+    }
+    .lightbox-container .tab.active{
+        display:block;
+    }
+    .lightbox-container .lightbox-tabs.expanded .tab.active{
+        width:100%;
+        /* overflow: auto; */
+    }
+    .lightbox-container .tab.active .collapsed-detail-container{
+        display:none;
+    }
+    .lightbox-container .tab.active .expanded-detail-container{
+        display:block;
+        z-index:1;
+        opacity:1;
+        /* position: relative; */
+    }
+    
+    .lightbox-container .external-scroll_y.scroll-scrolly_visible{
+
+        display:none !important;
+    }
+    
+    .MainContentArea {
+        width:100%;
+        margin-left:0px;
+        overflow: auto;
+        /* height: auto !important; */
+    }
+    
+    .ShoowMob {
+        display:block !important;
+        width: 100%;
+    }
+    .image-Caption {
+        display:none;
+    }
+    .HideMob {
+         display: block;
+    }
+    .BannerTextShowmob {
+         display:block;
+    }
+    
+    .ContentVideo {
+        display: inline-table;
+        position: absolute;
+        width: 80%;
+        margin: 0 auto;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        z-index: 0;
+    }
+    
+}
+
+@media screen and (min-width: 768px) {
+	.mobMenuContainer{
+		display:none !important;
+	}
+
+}
+
+@media screen and (max-width: 1078px) and (min-width: 768px) {
+    #mydiv-content{
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width: 767px)  and (orientation : landscape)  {
+    .topMobMenuBar{
+        height:91px;
+    }
+    .lightbox-container{
+        margin-top: 91px;
+    }
+}
+/* Safari CSS */
+@media screen and (min-color-index:0) and (webkit-min-device-pixel-ratio:0) { @media
+{
+	@media screen and (max-width: 767px) {
+    
+	}
+}}
+/* Safari CSS end */

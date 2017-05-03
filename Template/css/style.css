@@ -1,0 +1,73 @@
+﻿.clear {
+  clear: both;
+}
+#mydiv {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  left: 0%;
+  top: 0%;
+  position: fixed;
+  z-index: 200;
+  /*background-color:rgba(0,0,0,0.7);*/
+}
+#mydiv-content {
+  width: 100%;
+  max-width: 1000px;
+  height: 95vh;
+  max-height: 650px;
+  margin: 0 auto;
+  padding: 0px;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-family: 'Fira Sans';
+}
+.CloseBtn {
+  position: absolute;
+  top: -8px;
+  right: -52px;
+  z-index: 12;
+  width: 60px;
+  height: 60px;
+  background-image: url(../images/Close.png);
+  display: block;
+}
+.togglecone.expandedcone {
+  background-color: green;
+}
+.mobDetector {
+  display: none;
+}
+.lightbox-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.lightbox-container .lightbox-header {
+  height: 100px;
+  margin-bottom: 5px;
+  background-color: #fff;
+}
+.lightbox-container .lightbox-content {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.lightbox-container .lightbox-tabs {
+  width: 100%;
+  height: 83.84615385%;
+  height: -webkit-calc(100% - 105px);
+  height: -moz-calc(100% - 105px);
+  height: -o-calc(100% - 105px);
+  height: calc(100% - 105px);
+  /* background: #fff; */
+}
+.lightbox-container .lightbox-footer {
+  height: 0px;
+  overflow: hidden;
+}

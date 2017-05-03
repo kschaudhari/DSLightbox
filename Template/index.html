@@ -1,0 +1,251 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lightbox</title>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,500i" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/font.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/Tabs.css" />
+    <link rel="stylesheet" type="text/css" href="css/mobile.css" />
+    <link rel="stylesheet" type="text/css" href="css/Responsive.css" />
+    <!--[if IE]>
+        <link type="text/css" href="css/ie.css" rel="stylesheet" />
+    <![endif]-->
+    <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    </script>
+    <script src="https://use.typekit.net/qwc2fep.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+    <script type="text/javascript">
+        var tag = document.createElement('script');
+        tag.id = 'iframe-demo';
+        tag.src = 'https://www.youtube.com/iframe_api';
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    </script>
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/customscroll.js"></script>
+    <script src="js/creative-util.js"></script>
+    <script src="js/ds-lightbox.js"></script>
+    <script>
+        var clickTag = "";
+    </script>
+    <!-- url prefix for s3 https://s3-eu-west-1.amazonaws.com/dslabs.io/WA_WildLife/lightbox/ -->
+</head>
+<body style="height:1000px;">
+
+    <div id="mydiv">
+        <div id="mydiv-content">
+
+            <div class="topMobMenuBar tab1Active">
+                <div class="topMobItem MobMenuBar">
+                    <div class="mobMenu">
+                        <div class="mobMenuIcon menuElement">
+                            <img src="images/mobMenu.png" />
+                        </div>
+                    </div>
+                    <div class="mobMenuLogos menuElement">
+
+                        <div class="mobWALogo">
+                            <img src="images/mobWALogo.png" />
+                        </div>
+                        <div class="mobDiscoverLogo">
+                            <img src="images/mobQatarLogo.png" />
+                        </div>
+                    </div>
+                    <div id="lightbox-mobile-exit" class="mobMenuClose menuElement">
+                        <img class="removePopup" src="images/mobClose.png" />
+                    </div>
+                </div>
+                <div class="mobDropdownMenu">
+                    <div class="mobDropdownMenuItem" data-tab="tab1">
+                        Tab 1
+                    </div>
+                    <div class="mobDropdownMenuItem" data-tab="tab2">Tab 2</div>
+                    <div class="mobDropdownMenuItem" data-tab="tab3">Tab 3</div>
+                </div>
+                <div class="topMobItem mobNavigator">
+
+                    <div class="mobNavigatorContent">
+                        <div class="mobPrevTab">
+                            <div class="navArrow">
+                                <img src="images/mob-arrow-white.svg" />
+                                <span>Prev</span>
+                            </div>
+                        </div>
+                        <div class="mobNextTab">
+                            <div class="navArrow">
+                                <span>Next</span>
+                                <img src="images/mob-arrow-white.svg" />
+
+                            </div>
+                        </div>
+                        <div class="mobCurrentTab">
+                            <div class="mobNavigationTabs">
+                                <div class="carousel-circle mobTab active" data-tab="tab1"></div>
+                                <div class="carousel-circle mobTab" data-tab="tab2"></div>
+                                <div class="carousel-circle mobTab" data-tab="tab3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="lightbox-container">
+
+                <div class="lightbox-content">
+                    <a href="javascript:void(0)" id="lightbox-exit" class="CloseBtn removePopup"></a>
+                    <div class="lightbox-header">
+                        Header
+                    </div>
+                    <div class="lightbox-tabs">
+                        <div class="tab" data-tab="tab1">
+                            <div class="collapsed-detail-container">
+                                <div class="collapsed-details">
+                                    <div class="title">Tab 1</div>
+                                    <div class="explore-button">Explore</div>
+                                </div>
+                            </div>
+                            <div class="expanded-detail-container">
+                                <div class="expanded-details">
+                                    <div class="MainContentArea">
+                                        <div class="tab-details">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at posuere leo. Morbi laoreet eget felis eu pharetra. Vivamus sed sodales odio, at congue nunc. Quisque cursus mi eu velit commodo, ut tempor eros lacinia. In non odio eu magna ornare commodo in a dolor. Vestibulum eget urna at mauris lacinia ornare. Vivamus maximus nisl nunc, quis varius eros fringilla eu. Donec gravida augue erat, nec rhoncus sem molestie non. Curabitur elit augue, molestie nec tellus at, sodales interdum mi. Quisque vel purus tellus. Praesent pellentesque eu odio quis congue.
+
+                                            Vivamus efficitur mattis felis eu pellentesque. Duis ac suscipit orci, eu rutrum magna. Curabitur congue, lacus vitae condimentum euismod, nunc velit volutpat tortor, dictum dignissim enim nisi vitae mauris. Nunc magna massa, dignissim a ornare a, dictum at mi. Morbi semper fermentum turpis in tempus. Nulla facilisi. Praesent faucibus ante nisl, ut tincidunt libero mattis at. Nullam faucibus turpis justo, vel condimentum orci venenatis vitae. Mauris quis risus eget orci ornare tempor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras tincidunt diam vehicula ultrices blandit. Quisque vehicula, leo a feugiat commodo, massa nibh scelerisque odio, non sagittis orci metus vel odio.
+
+                                            Mauris enim metus, congue a tempor quis, rhoncus in magna. Fusce tincidunt purus in libero tempor, eu malesuada felis sodales. Morbi imperdiet quam sit amet dictum volutpat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed commodo, odio non scelerisque vulputate, erat felis fringilla nisl, eu suscipit felis sapien sed purus. Morbi at urna risus. Duis a sodales lorem, id volutpat nibh. Quisque suscipit rutrum ullamcorper. Nam mattis sed ante at varius. Donec pharetra iaculis nunc et fringilla. Sed id eros velit. Integer at dui quis metus vestibulum pretium. Cras sed elit vel lacus convallis viverra ac eu velit.
+
+                                            Vivamus eu dolor pellentesque, tristique ipsum ut, lacinia ligula. Mauris eu faucibus nisl. Maecenas quam odio, volutpat sed velit nec, tempus condimentum elit. Mauris ultrices ut risus vitae interdum. Suspendisse turpis nulla, dapibus eget sapien id, efficitur euismod est. Quisque metus eros, convallis quis dui sed, posuere semper quam. Sed vestibulum et magna in condimentum. Cras finibus dignissim lectus id blandit. Aenean ullamcorper at magna nec faucibus. Pellentesque elementum pellentesque aliquet. In hac habitasse platea dictumst. Ut eu lacus sit amet mi fringilla tempus. Quisque sed luctus nisi. Suspendisse id leo eu justo consectetur ornare posuere sit amet metus. Sed bibendum erat ac enim molestie rutrum.
+
+                                            Aenean sit amet volutpat nulla. Vivamus nec nisi vel neque viverra facilisis. Sed tellus tellus, elementum ornare condimentum vel, rhoncus a ex. Morbi blandit lectus quam, sit amet ultricies dolor semper in. Pellentesque vitae rhoncus purus, sed eleifend lorem. Vivamus ornare lorem nunc, a malesuada massa dignissim lacinia. Phasellus velit sapien, elementum lacinia vestibulum sed, molestie ut nibh. Nunc consectetur, lorem sed luctus cursus, nibh neque fermentum felis, eget iaculis turpis dui id odio. In ac laoreet tellus. Nulla facilisi. Suspendisse vitae vulputate justo.
+                                        </div>
+                                    </div>
+                                    <div class="scrollbar-external_wrapper">
+                                        <div class="external-scroll_y">
+                                            <div style="position:relative">
+                                                <div class="scroll-element_outer">
+                                                    <div class="scroll-element_size"></div>
+                                                    <div class="scroll-element_track"></div>
+                                                    <div class="scroll-bar"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab" data-tab="tab2">
+                            <div class="collapsed-detail-container">
+                                <div class="collapsed-details">
+                                    <div class="title">Tab 2</div>
+                                    <div class="explore-button"></div>
+                                </div>
+                            </div>
+                            <div class="expanded-detail-container">
+                                <div class="expanded-details">
+                                    <div class="MainContentArea">
+                                        <div class="tab-details">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at posuere leo. Morbi laoreet eget felis eu pharetra. Vivamus sed sodales odio, at congue nunc. Quisque cursus mi eu velit commodo, ut tempor eros lacinia. In non odio eu magna ornare commodo in a dolor. Vestibulum eget urna at mauris lacinia ornare. Vivamus maximus nisl nunc, quis varius eros fringilla eu. Donec gravida augue erat, nec rhoncus sem molestie non. Curabitur elit augue, molestie nec tellus at, sodales interdum mi. Quisque vel purus tellus. Praesent pellentesque eu odio quis congue.
+
+                                            Vivamus efficitur mattis felis eu pellentesque. Duis ac suscipit orci, eu rutrum magna. Curabitur congue, lacus vitae condimentum euismod, nunc velit volutpat tortor, dictum dignissim enim nisi vitae mauris. Nunc magna massa, dignissim a ornare a, dictum at mi. Morbi semper fermentum turpis in tempus. Nulla facilisi. Praesent faucibus ante nisl, ut tincidunt libero mattis at. Nullam faucibus turpis justo, vel condimentum orci venenatis vitae. Mauris quis risus eget orci ornare tempor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras tincidunt diam vehicula ultrices blandit. Quisque vehicula, leo a feugiat commodo, massa nibh scelerisque odio, non sagittis orci metus vel odio.
+
+                                            Mauris enim metus, congue a tempor quis, rhoncus in magna. Fusce tincidunt purus in libero tempor, eu malesuada felis sodales. Morbi imperdiet quam sit amet dictum volutpat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed commodo, odio non scelerisque vulputate, erat felis fringilla nisl, eu suscipit felis sapien sed purus. Morbi at urna risus. Duis a sodales lorem, id volutpat nibh. Quisque suscipit rutrum ullamcorper. Nam mattis sed ante at varius. Donec pharetra iaculis nunc et fringilla. Sed id eros velit. Integer at dui quis metus vestibulum pretium. Cras sed elit vel lacus convallis viverra ac eu velit.
+
+                                            Vivamus eu dolor pellentesque, tristique ipsum ut, lacinia ligula. Mauris eu faucibus nisl. Maecenas quam odio, volutpat sed velit nec, tempus condimentum elit. Mauris ultrices ut risus vitae interdum. Suspendisse turpis nulla, dapibus eget sapien id, efficitur euismod est. Quisque metus eros, convallis quis dui sed, posuere semper quam. Sed vestibulum et magna in condimentum. Cras finibus dignissim lectus id blandit. Aenean ullamcorper at magna nec faucibus. Pellentesque elementum pellentesque aliquet. In hac habitasse platea dictumst. Ut eu lacus sit amet mi fringilla tempus. Quisque sed luctus nisi. Suspendisse id leo eu justo consectetur ornare posuere sit amet metus. Sed bibendum erat ac enim molestie rutrum.
+
+                                            Aenean sit amet volutpat nulla. Vivamus nec nisi vel neque viverra facilisis. Sed tellus tellus, elementum ornare condimentum vel, rhoncus a ex. Morbi blandit lectus quam, sit amet ultricies dolor semper in. Pellentesque vitae rhoncus purus, sed eleifend lorem. Vivamus ornare lorem nunc, a malesuada massa dignissim lacinia. Phasellus velit sapien, elementum lacinia vestibulum sed, molestie ut nibh. Nunc consectetur, lorem sed luctus cursus, nibh neque fermentum felis, eget iaculis turpis dui id odio. In ac laoreet tellus. Nulla facilisi. Suspendisse vitae vulputate justo.
+                                        </div>
+                                    </div>
+                                    <div class="scrollbar-external_wrapper">
+                                        <div class="external-scroll_y">
+                                            <div style="position:relative">
+                                                <div class="scroll-element_outer">
+                                                    <div class="scroll-element_size"></div>
+                                                    <div class="scroll-element_track"></div>
+                                                    <div class="scroll-bar"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab" data-tab="tab3">
+                            <div class="collapsed-detail-container">
+                                <div class="collapsed-details">
+                                    <div class="title">Tab 3</div>
+                                    <div class="explore-button"></div>
+                                </div>
+                            </div>
+                            <div class="expanded-detail-container">
+                                <div class="expanded-details">
+                                    <div class="MainContentArea">
+                                        <div class="tab-details">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at posuere leo. Morbi laoreet eget felis eu pharetra. Vivamus sed sodales odio, at congue nunc. Quisque cursus mi eu velit commodo, ut tempor eros lacinia. In non odio eu magna ornare commodo in a dolor. Vestibulum eget urna at mauris lacinia ornare. Vivamus maximus nisl nunc, quis varius eros fringilla eu. Donec gravida augue erat, nec rhoncus sem molestie non. Curabitur elit augue, molestie nec tellus at, sodales interdum mi. Quisque vel purus tellus. Praesent pellentesque eu odio quis congue.
+
+                                            Vivamus efficitur mattis felis eu pellentesque. Duis ac suscipit orci, eu rutrum magna. Curabitur congue, lacus vitae condimentum euismod, nunc velit volutpat tortor, dictum dignissim enim nisi vitae mauris. Nunc magna massa, dignissim a ornare a, dictum at mi. Morbi semper fermentum turpis in tempus. Nulla facilisi. Praesent faucibus ante nisl, ut tincidunt libero mattis at. Nullam faucibus turpis justo, vel condimentum orci venenatis vitae. Mauris quis risus eget orci ornare tempor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras tincidunt diam vehicula ultrices blandit. Quisque vehicula, leo a feugiat commodo, massa nibh scelerisque odio, non sagittis orci metus vel odio.
+
+                                            Mauris enim metus, congue a tempor quis, rhoncus in magna. Fusce tincidunt purus in libero tempor, eu malesuada felis sodales. Morbi imperdiet quam sit amet dictum volutpat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed commodo, odio non scelerisque vulputate, erat felis fringilla nisl, eu suscipit felis sapien sed purus. Morbi at urna risus. Duis a sodales lorem, id volutpat nibh. Quisque suscipit rutrum ullamcorper. Nam mattis sed ante at varius. Donec pharetra iaculis nunc et fringilla. Sed id eros velit. Integer at dui quis metus vestibulum pretium. Cras sed elit vel lacus convallis viverra ac eu velit.
+
+                                            Vivamus eu dolor pellentesque, tristique ipsum ut, lacinia ligula. Mauris eu faucibus nisl. Maecenas quam odio, volutpat sed velit nec, tempus condimentum elit. Mauris ultrices ut risus vitae interdum. Suspendisse turpis nulla, dapibus eget sapien id, efficitur euismod est. Quisque metus eros, convallis quis dui sed, posuere semper quam. Sed vestibulum et magna in condimentum. Cras finibus dignissim lectus id blandit. Aenean ullamcorper at magna nec faucibus. Pellentesque elementum pellentesque aliquet. In hac habitasse platea dictumst. Ut eu lacus sit amet mi fringilla tempus. Quisque sed luctus nisi. Suspendisse id leo eu justo consectetur ornare posuere sit amet metus. Sed bibendum erat ac enim molestie rutrum.
+
+                                            Aenean sit amet volutpat nulla. Vivamus nec nisi vel neque viverra facilisis. Sed tellus tellus, elementum ornare condimentum vel, rhoncus a ex. Morbi blandit lectus quam, sit amet ultricies dolor semper in. Pellentesque vitae rhoncus purus, sed eleifend lorem. Vivamus ornare lorem nunc, a malesuada massa dignissim lacinia. Phasellus velit sapien, elementum lacinia vestibulum sed, molestie ut nibh. Nunc consectetur, lorem sed luctus cursus, nibh neque fermentum felis, eget iaculis turpis dui id odio. In ac laoreet tellus. Nulla facilisi. Suspendisse vitae vulputate justo.
+                                        </div>
+                                    </div>
+                                    <div class="scrollbar-external_wrapper">
+                                        <div class="external-scroll_y">
+                                            <div style="position:relative">
+                                                <div class="scroll-element_outer">
+                                                    <div class="scroll-element_size"></div>
+                                                    <div class="scroll-element_track"></div>
+                                                    <div class="scroll-bar"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="lightbox-footer">
+                        Footer
+                    </div>
+                </div>
+                
+
+
+            </div>
+           
+            <div class="mobDetector"></div>
+        </div>
+    </div>
+
+    <script>
+
+         function inIframe() {
+             try {
+                 return window.self !== window.top;
+             } catch (e) {
+                 return true;
+             }
+         }
+         if (!inIframe())
+         {
+             var ligthbox = document.getElementById("mydiv");
+             ligthbox.style.backgroundColor = "rgba(0,0,0,0.7)";
+         }
+    </script>
+</body>
+</html>

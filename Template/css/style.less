@@ -1,0 +1,76 @@
+@lb-width:1000;
+@lb-height:650;
+@header-height: 100;
+@header-margin: 5;
+@tab-height: (@lb-height - @header-height - @header-margin)/@lb-height*100;
+
+.clear{ clear:both;}
+#mydiv {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    left: 0%;
+    top: 0%;
+    position:fixed;
+    z-index: 200;
+    /*background-color:rgba(0,0,0,0.7);*/
+}
+#mydiv-content {
+    width: 100%;
+    max-width: unit(@lb-width,px);
+    height: 95vh;
+    max-height:unit(@lb-height,px);
+    margin:0 auto;
+    padding: 0px;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-family: 'Fira Sans';
+}
+.CloseBtn{
+	position:absolute;
+	top: -8px;
+	right: -52px;
+	z-index:12;
+	width: 60px;
+	height: 60px;
+	background-image:url(../images/Close.png);
+	display:block;
+}
+.togglecone.expandedcone{
+	background-color:green;
+}
+.mobDetector{display:none;}
+.lightbox-container
+{
+    width: 100%;
+    height:100%;
+    position: relative;
+}
+.lightbox-container .lightbox-header{
+    height:unit(@header-height,px);
+    margin-bottom:5px;
+    background-color:#fff;
+}
+.lightbox-container .lightbox-content {
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+.lightbox-container .lightbox-tabs{
+    width:100%;
+    height: unit(@tab-height,%);
+    height: -webkit-calc(~'100%' - unit(@header-height +  @header-margin,px));
+    height: -moz-calc(~'100%' - unit(@header-height +  @header-margin,px));
+    height: -o-calc(~'100%' - unit(@header-height +  @header-margin,px));
+    height: calc(~'100%' - unit(@header-height +  @header-margin,px));
+    /* background: #fff; */
+}
+.lightbox-container .lightbox-footer{
+    height:0px;
+    overflow:hidden;
+}
