@@ -16,21 +16,23 @@ function showLightboxPopup(type) {
 function hideLightboxPopup() {
     //$(".removePopup").trigger("click");
     if (window.parent) {
-        var activeTabVideo = $(".lightbox-container .lightbox-detailsPage .tab.active .ContentVideo .embed-container iframe")
-        stopVideos(activeTabVideo);
-
+        
+        closeLB();
         window.parent.postMessage('LB_CLOSE', '*');
-        ga('send', 'pageview', { 'sessionControl': 'end' });
     }
 }
 
+function closeLB() {
+    var activeTabVideo = $(".lightbox-container .lightbox-detailsPage .tab.active .ContentVideo .embed-container iframe")
+    stopVideos(activeTabVideo);
+}
 var loadedTimerForTracker = null;
 function sendTrackerInfo() {
     if ($(".lightbox-container").is(":visible")) {
         window.clearTimeout(loadedTimerForTracker);
         if (typeof ga !== "undefined") {
-            ga('create', 'UA-98422839-1', 'auto');
-            ga('send', 'pageview');
+            //ga('create', 'UA-98422839-1', 'auto');
+            //ga('send', 'pageview');
         }
         //add any pixel info to track
 
@@ -47,7 +49,7 @@ function receiveMessage(event) {
             sendTrackerInfo();
             break;
         case "Slide_close":
-            hideLightboxPopup();
+            closeLB();
             break;
     }
 }
