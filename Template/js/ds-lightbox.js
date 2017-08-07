@@ -210,32 +210,16 @@ function sendEvent() {
     if (detailsVisible) {
         var tabId = $(".lightbox-container .tab.active").attr("data-tab").replace("tab", "");
 
-        var tabName = "Tab 1";
-        switch (parseInt(tabId)) {
-            case 1:
-                tabName = "Tab 1";
-                break;
-            case 2:
-                tabName = "Tab 2";
-                break;
-            case 3:
-                tabName = "Tab 3";
-                break;
-            case 4:
-                tabName = "Tab 4";
-                break;
-        }
+        
         ga('send', {
             hitType: 'event',
             eventCategory: 'Tab',
             eventAction: 'TabView',
             eventLabel: 'tab ' + tabId,
-            transport: 'beacon'
         });
 
         var isPixelSent = $(".lightbox-container .tab.active").attr("data-is-pixel-sent") == "true";
         if (!isPixelSent) {
-            (function (d, p) { var a = new Image(); a.onload = function () { a = null }; a.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//rs.gwallet.com/r1/pixel/x" + p + "r" + Math.round(1E9 * Math.random()) })(document, "40229");
             $(".lightbox-container .tab.active").attr("data-is-pixel-sent", "true");
         }
 
@@ -317,4 +301,9 @@ function swipedetect(el, callback) {
         if (swipedir == "left" || swipedir == "right")
             e.preventDefault()
     }, false)
+}
+function renderTracker(trackerString) {
+    var randomNumber = Math.round(1E9 * Math.random());
+    trackerString = trackerString.replace('[timestamp]', randomNumber).replace('[timestamp]', randomNumber);
+    $('body').append(trackerString)
 }
